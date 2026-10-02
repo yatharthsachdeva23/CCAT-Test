@@ -102,6 +102,8 @@ export function getSpatialQuestionsForTest(testNumber) {
 
     questions.push({
       question: \`[Simulation #\${t} - Series 1] Which rotating arrow and satellite indicator figure logically comes next in this sequence?\`,
+      figureType: 'sequence',
+      sequenceFrames: series,
       svgSeries: series,
       options,
       correctOption,
@@ -142,6 +144,8 @@ export function getSpatialQuestionsForTest(testNumber) {
 
     questions.push({
       question: \`[Simulation #\${t} - Series 2] Which polygon figure correctly completes this vertex-increment sequence?\`,
+      figureType: 'sequence',
+      sequenceFrames: series,
       svgSeries: series,
       options,
       correctOption,
@@ -185,6 +189,8 @@ export function getSpatialQuestionsForTest(testNumber) {
 
     questions.push({
       question: \`[Simulation #\${t} - Series 3] Which sector figure logically continues this circular sector rotation?\`,
+      figureType: 'sequence',
+      sequenceFrames: series,
       svgSeries: series,
       options,
       correctOption,
@@ -221,6 +227,8 @@ export function getSpatialQuestionsForTest(testNumber) {
 
     questions.push({
       question: \`[Simulation #\${t} - Series 4] Which concentric ring figure correctly continues this alternating core symbol sequence?\`,
+      figureType: 'sequence',
+      sequenceFrames: series,
       svgSeries: series,
       options,
       correctOption,
@@ -275,6 +283,8 @@ export function getSpatialQuestionsForTest(testNumber) {
 
     questions.push({
       question: \`[Simulation #\${t} - Matrix 1] Which oriented figure correctly completes the rotational logic in the bottom-right cell of this 3×3 matrix?\`,
+      figureType: 'matrix',
+      matrixCells: matrixData.map(c => c.isMissing ? '?' : c.svg),
       matrixData,
       options,
       correctOption,
@@ -333,6 +343,8 @@ export function getSpatialQuestionsForTest(testNumber) {
 
     questions.push({
       question: \`[Simulation #\${t} - Matrix 2] Which dot configuration logically satisfies the additive row rule in this 3×3 matrix?\`,
+      figureType: 'matrix',
+      matrixCells: matrixData.map(c => c.isMissing ? '?' : c.svg),
       matrixData,
       options,
       correctOption,
@@ -382,6 +394,8 @@ export function getSpatialQuestionsForTest(testNumber) {
 
     questions.push({
       question: \`[Simulation #\${t} - Matrix 3] Which geometric shape completes the Latin-square permutation in the bottom-right cell?\`,
+      figureType: 'matrix',
+      matrixCells: matrixData.map(c => c.isMissing ? '?' : c.svg),
       matrixData,
       options,
       correctOption,
@@ -411,6 +425,7 @@ export function getSpatialQuestionsForTest(testNumber) {
 
     questions.push({
       question: \`[Simulation #\${t} - Odd Figure 1] Which of the following five geometric figures is the ODD ONE OUT (lacks reflective symmetry)?\`,
+      figureType: 'options_only',
       options,
       correctOption,
       explanation: \`**Correct Answer: \${correctOption}**\\n\\n**Geometric Rule:**\\nFour figures possess reflective line symmetry. Only the irregular quadrilateral is completely asymmetrical.\`,
@@ -448,6 +463,7 @@ export function getSpatialQuestionsForTest(testNumber) {
 
     questions.push({
       question: \`[Simulation #\${t} - Odd Figure 2] Which radial star figure does NOT follow the group arm-count parity rule?\`,
+      figureType: 'options_only',
       options,
       correctOption,
       explanation: \`**Correct Answer: \${correctOption}**\\n\\n**Rule:**\\nAll other figures contain an even number of radial arms (4, 6, 8). Only this figure contains an odd number of arms (5 arms).\`,
@@ -475,6 +491,7 @@ export function getSpatialQuestionsForTest(testNumber) {
 
     questions.push({
       question: \`[Simulation #\${t} - Spatial Analogy 1] Figure A relates to Figure B via axial reflection and fill inversion. Which figure completes the analogy for Figure C?\`,
+      figureType: 'analogy',
       contextSvg: {
         figA: svgA,
         figB: svgB,
@@ -507,6 +524,7 @@ export function getSpatialQuestionsForTest(testNumber) {
 
     questions.push({
       question: \`[Simulation #\${t} - Spatial Analogy 2] Figure A transforms to Figure B via concentric containment inversion. Which figure completes the analogy for Figure C?\`,
+      figureType: 'analogy',
       contextSvg: {
         figA: svgA,
         figB: svgB,
