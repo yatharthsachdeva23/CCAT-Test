@@ -9,1085 +9,7 @@
   "spatialCount": 11,
   "questions": [
     {
-      "subType": "data_chart",
-      "category": "math",
-      "question": "Based on the divisional revenue chart below, what was the average revenue across all four quarters?",
-      "figureType": "chart",
-      "chartSvg": "<svg viewBox=\"0 0 360 220\" class=\"w-full max-w-[420px] mx-auto rounded-xl bg-slate-900 border border-slate-700/60 p-2 shadow-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n      <text x=\"180\" y=\"22\" text-anchor=\"middle\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"bold\">Quarterly Operating Revenue ($ in Millions)</text>\n      <!-- Grid lines -->\n      <line x1=\"45\" y1=\"35\" x2=\"330\" y2=\"35\" stroke=\"#334155\" stroke-dasharray=\"3,3\" stroke-width=\"1\"/>\n      <line x1=\"45\" y1=\"107.5\" x2=\"330\" y2=\"107.5\" stroke=\"#334155\" stroke-dasharray=\"3,3\" stroke-width=\"1\"/>\n      <line x1=\"45\" y1=\"180\" x2=\"330\" y2=\"180\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n      <!-- Y-axis values -->\n      <text x=\"37\" y=\"39\" text-anchor=\"end\" fill=\"#94a3b8\" font-size=\"10\">100M</text>\n      <text x=\"37\" y=\"111.5\" text-anchor=\"end\" fill=\"#94a3b8\" font-size=\"10\">50M</text>\n      <text x=\"37\" y=\"184\" text-anchor=\"end\" fill=\"#94a3b8\" font-size=\"10\">0</text>\n      \n      <g class=\"bar-group\">\n        <rect x=\"61.03125\" y=\"110.4\" width=\"39.1875\" height=\"69.6\" rx=\"4\" fill=\"#38bdf8\" opacity=\"0.9\"/>\n        <text x=\"80.625\" y=\"104.4\" text-anchor=\"middle\" fill=\"#f8fafc\" font-size=\"11\" font-weight=\"600\">48M</text>\n        <text x=\"80.625\" y=\"198\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"500\">Q1</text>\n      </g>\n    \n      <g class=\"bar-group\">\n        <rect x=\"132.28125\" y=\"75.60000000000001\" width=\"39.1875\" height=\"104.39999999999999\" rx=\"4\" fill=\"#38bdf8\" opacity=\"0.9\"/>\n        <text x=\"151.875\" y=\"69.60000000000001\" text-anchor=\"middle\" fill=\"#f8fafc\" font-size=\"11\" font-weight=\"600\">72M</text>\n        <text x=\"151.875\" y=\"198\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"500\">Q2</text>\n      </g>\n    \n      <g class=\"bar-group\">\n        <rect x=\"203.53125\" y=\"40.80000000000001\" width=\"39.1875\" height=\"139.2\" rx=\"4\" fill=\"#38bdf8\" opacity=\"0.9\"/>\n        <text x=\"223.125\" y=\"34.80000000000001\" text-anchor=\"middle\" fill=\"#f8fafc\" font-size=\"11\" font-weight=\"600\">96M</text>\n        <text x=\"223.125\" y=\"198\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"500\">Q3</text>\n      </g>\n    \n      <g class=\"bar-group\">\n        <rect x=\"274.78125\" y=\"87.2\" width=\"39.1875\" height=\"92.8\" rx=\"4\" fill=\"#38bdf8\" opacity=\"0.9\"/>\n        <text x=\"294.375\" y=\"81.2\" text-anchor=\"middle\" fill=\"#f8fafc\" font-size=\"11\" font-weight=\"600\">64M</text>\n        <text x=\"294.375\" y=\"198\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"500\">Q4</text>\n      </g>\n    \n    </svg>",
-      "options": [
-        {
-          "id": "A",
-          "text": "$68M"
-        },
-        {
-          "id": "B",
-          "text": "$65M"
-        },
-        {
-          "id": "C",
-          "text": "$72M"
-        },
-        {
-          "id": "D",
-          "text": "$70M"
-        },
-        {
-          "id": "E",
-          "text": "$75M"
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "Sum = 48 + 72 + 96 + 64 = 280. Average = 280 / 4 = $70M.",
-      "id": 1,
-      "testId": "test-26"
-    },
-    {
-      "subType": "analogy",
-      "question": "DELETERIOUS is to BENEFICIAL as PERNICIOUS is to:",
-      "options": [
-        {
-          "id": "A",
-          "text": "Malevolent"
-        },
-        {
-          "id": "B",
-          "text": "Salubrious"
-        },
-        {
-          "id": "C",
-          "text": "Destructive"
-        },
-        {
-          "id": "D",
-          "text": "Fatal"
-        },
-        {
-          "id": "E",
-          "text": "Noxious"
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "Relationship: Antonyms. Deleterious is the opposite of Beneficial. Pernicious (harmful, damaging) is the opposite of Salubrious (health-giving, favorable).",
-      "id": 2,
-      "category": "verbal",
-      "testId": "test-26"
-    },
-    {
-      "subType": "spatial_matrix",
-      "category": "spatial",
-      "question": "Which figure completes the 3×3 matrix according to the row and column logic?",
-      "figureType": "matrix",
-      "matrixCells": [
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"15.399999999999999\" y=\"15.399999999999999\" width=\"39.2\" height=\"39.2\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" rx=\"4\" />\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,15.399999999999999 18.0264,48.72 51.973600000000005,48.72\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" />\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(0 35 35)\">\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n      </g>\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,15.399999999999999 18.0264,48.72 51.973600000000005,48.72\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" />\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(0 35 35)\">\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n      </g>\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"15.399999999999999\" y=\"15.399999999999999\" width=\"39.2\" height=\"39.2\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" rx=\"4\" />\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(0 35 35)\">\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n      </g>\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"15.399999999999999\" y=\"15.399999999999999\" width=\"39.2\" height=\"39.2\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" rx=\"4\" />\n      \n    </svg>",
-        "?"
-      ],
-      "options": [
-        {
-          "id": "A",
-          "text": "Diamond",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,11.48 52.64,35 35,58.519999999999996 17.36,35\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" />\n      \n    </svg>"
-        },
-        {
-          "id": "B",
-          "text": "Arrow",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(0 35 35)\">\n        <line x1=\"35\" y1=\"61.46000000000001\" x2=\"35\" y2=\"8.539999999999996\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"25.2,18.339999999999996 35,8.539999999999996 44.8,18.339999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "C",
-          "text": "Square",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"15.399999999999999\" y=\"15.399999999999999\" width=\"39.2\" height=\"39.2\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" rx=\"4\" />\n      \n    </svg>"
-        },
-        {
-          "id": "D",
-          "text": "Triangle",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,15.399999999999999 18.0264,48.72 51.973600000000005,48.72\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" />\n      \n    </svg>"
-        },
-        {
-          "id": "E",
-          "text": "Cross",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(0 35 35)\">\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n      </g>\n      \n    </svg>"
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "Latin Square rule: Each row and each column must contain exactly one Square, one Triangle, and one Cross. The third row lacks a Triangle.",
-      "id": 3,
-      "testId": "test-26"
-    },
-    {
-      "subType": "number_series",
-      "category": "math",
-      "question": "Find the next term in the series:\n3, 6, 4, 8, 6, 12, 10, ?",
-      "options": [
-        {
-          "id": "A",
-          "text": "16"
-        },
-        {
-          "id": "B",
-          "text": "24"
-        },
-        {
-          "id": "C",
-          "text": "18"
-        },
-        {
-          "id": "D",
-          "text": "20"
-        },
-        {
-          "id": "E",
-          "text": "22"
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "Pattern alternates (*2) then (-2): 3*2=6; 6-2=4; 4*2=8; 8-2=6; 6*2=12; 12-2=10; 10*2=20.",
-      "id": 4,
-      "testId": "test-26"
-    },
-    {
-      "subType": "syllogism",
-      "question": "All prime numbers greater than 2 are odd. Number X is a prime number. Number X is not odd.\nWhat is Number X?",
-      "options": [
-        {
-          "id": "A",
-          "text": "2"
-        },
-        {
-          "id": "B",
-          "text": "3"
-        },
-        {
-          "id": "C",
-          "text": "Cannot be determined"
-        },
-        {
-          "id": "D",
-          "text": "1"
-        },
-        {
-          "id": "E",
-          "text": "0"
-        }
-      ],
-      "correctOption": "A",
-      "explanation": "The only prime number that is not odd is 2.",
-      "id": 5,
-      "category": "verbal",
-      "testId": "test-26"
-    },
-    {
-      "subType": "word_problem",
-      "category": "math",
-      "question": "At exactly 3:40, what is the measure of the smaller angle formed between the hour hand and minute hand of an analog clock?",
-      "options": [
-        {
-          "id": "A",
-          "text": "130°"
-        },
-        {
-          "id": "B",
-          "text": "135°"
-        },
-        {
-          "id": "C",
-          "text": "120°"
-        },
-        {
-          "id": "D",
-          "text": "125°"
-        },
-        {
-          "id": "E",
-          "text": "140°"
-        }
-      ],
-      "correctOption": "A",
-      "explanation": "Formula: |30*H - 5.5*M| = |30(3) - 5.5(40)| = |90 - 220| = |-130| = 130°.",
-      "id": 6,
-      "testId": "test-26"
-    },
-    {
-      "subType": "next_in_series",
-      "category": "spatial",
-      "question": "Which arrow comes next in the 45-degree series?",
-      "figureType": "sequence",
-      "sequenceFrames": [
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(45 35 35)\">\n        <line x1=\"35\" y1=\"61.46000000000001\" x2=\"35\" y2=\"8.539999999999996\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"25.2,18.339999999999996 35,8.539999999999996 44.8,18.339999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(90 35 35)\">\n        <line x1=\"35\" y1=\"61.46000000000001\" x2=\"35\" y2=\"8.539999999999996\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"25.2,18.339999999999996 35,8.539999999999996 44.8,18.339999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(135 35 35)\">\n        <line x1=\"35\" y1=\"61.46000000000001\" x2=\"35\" y2=\"8.539999999999996\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"25.2,18.339999999999996 35,8.539999999999996 44.8,18.339999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(180 35 35)\">\n        <line x1=\"35\" y1=\"61.46000000000001\" x2=\"35\" y2=\"8.539999999999996\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"25.2,18.339999999999996 35,8.539999999999996 44.8,18.339999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>"
-      ],
-      "options": [
-        {
-          "id": "A",
-          "text": "0° (North)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(0 35 35)\">\n        <line x1=\"35\" y1=\"61.46000000000001\" x2=\"35\" y2=\"8.539999999999996\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"25.2,18.339999999999996 35,8.539999999999996 44.8,18.339999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "B",
-          "text": "225° (South-West)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(225 35 35)\">\n        <line x1=\"35\" y1=\"61.46000000000001\" x2=\"35\" y2=\"8.539999999999996\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"25.2,18.339999999999996 35,8.539999999999996 44.8,18.339999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "C",
-          "text": "Cross",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(225 35 35)\">\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "D",
-          "text": "45° (North-East)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(45 35 35)\">\n        <line x1=\"35\" y1=\"61.46000000000001\" x2=\"35\" y2=\"8.539999999999996\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"25.2,18.339999999999996 35,8.539999999999996 44.8,18.339999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "E",
-          "text": "270° (West)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(270 35 35)\">\n        <line x1=\"35\" y1=\"61.46000000000001\" x2=\"35\" y2=\"8.539999999999996\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"25.2,18.339999999999996 35,8.539999999999996 44.8,18.339999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>"
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "Clockwise rotation by 45°: 180° + 45° = 225° (pointing South-West).",
-      "id": 7,
-      "testId": "test-26"
-    },
-    {
-      "subType": "syllogism",
-      "question": "All quantum systems exhibit superposition. No macroscopic objects exhibit superposition. Some macroscopic objects are computers.\nWhich conclusion MUST be true?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Some computers are not quantum systems."
-        },
-        {
-          "id": "B",
-          "text": "All computers are macroscopic objects."
-        },
-        {
-          "id": "C",
-          "text": "Some quantum systems are computers."
-        },
-        {
-          "id": "D",
-          "text": "No computers are quantum systems."
-        },
-        {
-          "id": "E",
-          "text": "No macroscopic objects are computers."
-        }
-      ],
-      "correctOption": "A",
-      "explanation": "Since \"Some macroscopic objects are computers\", and \"No macroscopic objects exhibit superposition\" (while ALL quantum systems DO), those computer objects cannot be quantum systems. Hence, \"Some computers are not quantum systems\" must be true.",
-      "id": 8,
-      "category": "verbal",
-      "testId": "test-26"
-    },
-    {
-      "subType": "word_problem",
-      "category": "math",
-      "question": "Machine Alpha is twice as fast as Machine Beta. If Machine Beta takes 18 minutes to assemble a batch of circuits, how many minutes will it take both machines operating simultaneously to assemble the batch?",
-      "options": [
-        {
-          "id": "A",
-          "text": "4.5 minutes"
-        },
-        {
-          "id": "B",
-          "text": "6 minutes"
-        },
-        {
-          "id": "C",
-          "text": "9 minutes"
-        },
-        {
-          "id": "D",
-          "text": "5 minutes"
-        },
-        {
-          "id": "E",
-          "text": "8 minutes"
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "Machine Beta time = 18 min. Alpha is twice as fast -> Alpha time = 9 min. Together: (18 * 9) / (18 + 9) = 162 / 27 = 6 minutes.",
-      "id": 9,
-      "testId": "test-26"
-    },
-    {
-      "subType": "analogy",
-      "question": "HERMIT is to CLANDESTINE as PEDANT is to:",
-      "options": [
-        {
-          "id": "A",
-          "text": "Careless"
-        },
-        {
-          "id": "B",
-          "text": "Gregarious"
-        },
-        {
-          "id": "C",
-          "text": "Ignorant"
-        },
-        {
-          "id": "D",
-          "text": "Humble"
-        },
-        {
-          "id": "E",
-          "text": "Dogmatic"
-        }
-      ],
-      "correctOption": "E",
-      "explanation": "A hermit is characterized by seclusion; a pedant is characterized by dogmatic insistence on strict rules or minor details.",
-      "id": 10,
-      "category": "verbal",
-      "testId": "test-26"
-    },
-    {
-      "subType": "word_problem",
-      "category": "math",
-      "question": "How many liters of pure water must be added to 30 liters of a 40% acid solution to dilute it to a 25% acid concentration?",
-      "options": [
-        {
-          "id": "A",
-          "text": "20 liters"
-        },
-        {
-          "id": "B",
-          "text": "24 liters"
-        },
-        {
-          "id": "C",
-          "text": "12 liters"
-        },
-        {
-          "id": "D",
-          "text": "15 liters"
-        },
-        {
-          "id": "E",
-          "text": "18 liters"
-        }
-      ],
-      "correctOption": "E",
-      "explanation": "Pure acid present = 40% of 30L = 12L. For 12L to be 25% (1/4) of total volume, total volume must be 12 * 4 = 48L. Water added = 48 - 30 = 18 liters.",
-      "id": 11,
-      "testId": "test-26"
-    },
-    {
-      "subType": "odd_one_out",
-      "category": "spatial",
-      "question": "Which of the following figures is the odd one out?",
-      "figureType": "options_only",
-      "options": [
-        {
-          "id": "A",
-          "text": "D: Dot 2",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"16.499999999999996\" y=\"16.499999999999996\" width=\"42.00000000000001\" height=\"42.00000000000001\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 37.5 37.5)\" rx=\"4\" />\n      <circle cx=\"9\" cy=\"37.5\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        },
-        {
-          "id": "B",
-          "text": "E: Dot 3",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"16.499999999999996\" y=\"16.499999999999996\" width=\"42.00000000000001\" height=\"42.00000000000001\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 37.5 37.5)\" rx=\"4\" />\n      <circle cx=\"37.49999999999999\" cy=\"9\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        },
-        {
-          "id": "C",
-          "text": "B: Dot 0",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"16.499999999999996\" y=\"16.499999999999996\" width=\"42.00000000000001\" height=\"42.00000000000001\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 37.5 37.5)\" rx=\"4\" />\n      <circle cx=\"66\" cy=\"37.5\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        },
-        {
-          "id": "D",
-          "text": "A: No Dot",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"16.499999999999996\" y=\"16.499999999999996\" width=\"42.00000000000001\" height=\"42.00000000000001\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 37.5 37.5)\" rx=\"4\" />\n      \n    </svg>"
-        },
-        {
-          "id": "E",
-          "text": "C: Dot 1",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"16.499999999999996\" y=\"16.499999999999996\" width=\"42.00000000000001\" height=\"42.00000000000001\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 37.5 37.5)\" rx=\"4\" />\n      <circle cx=\"37.5\" cy=\"66\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "Figures B, C, D, and E all have an external orbiting indicator dot. Figure A has no dot.",
-      "id": 12,
-      "testId": "test-26"
-    },
-    {
-      "subType": "word_problem",
-      "category": "math",
-      "question": "If 35% of a number is 140, what is 60% of that same number?",
-      "options": [
-        {
-          "id": "A",
-          "text": "280"
-        },
-        {
-          "id": "B",
-          "text": "210"
-        },
-        {
-          "id": "C",
-          "text": "300"
-        },
-        {
-          "id": "D",
-          "text": "240"
-        },
-        {
-          "id": "E",
-          "text": "200"
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "35% is 140 -> 1% is 140/35 = 4. 60% is 60 * 4 = 240.",
-      "id": 13,
-      "testId": "test-26"
-    },
-    {
-      "subType": "antonym_synonym",
-      "question": "Choose the word that is most nearly OPPOSITE in meaning to \"EQUIVOCAL\":",
-      "options": [
-        {
-          "id": "A",
-          "text": "Opaque"
-        },
-        {
-          "id": "B",
-          "text": "Dubious"
-        },
-        {
-          "id": "C",
-          "text": "Nebulous"
-        },
-        {
-          "id": "D",
-          "text": "Unambiguous"
-        },
-        {
-          "id": "E",
-          "text": "Ambivalent"
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "Equivocal means open to more than one interpretation; ambiguous. The direct antonym is \"Unambiguous\".",
-      "id": 14,
-      "category": "verbal",
-      "testId": "test-26"
-    },
-    {
-      "subType": "number_series",
-      "category": "math",
-      "question": "What is the next number in this sequence?\n6, 11, 21, 36, 56, ?",
-      "options": [
-        {
-          "id": "A",
-          "text": "81"
-        },
-        {
-          "id": "B",
-          "text": "84"
-        },
-        {
-          "id": "C",
-          "text": "86"
-        },
-        {
-          "id": "D",
-          "text": "88"
-        },
-        {
-          "id": "E",
-          "text": "78"
-        }
-      ],
-      "correctOption": "A",
-      "explanation": "Differences: +5, +10, +15, +20. Next difference is +25. 56 + 25 = 81.",
-      "id": 15,
-      "testId": "test-26"
-    },
-    {
-      "subType": "next_in_series",
-      "category": "spatial",
-      "question": "Which quadrant figure comes next in this rotation sequence?",
-      "figureType": "sequence",
-      "sequenceFrames": [
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(0 35 35)\">\n        <circle cx=\"35\" cy=\"35\" r=\"19.6\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/>\n        <path d=\"M 35 35 L 54.6 35 A 19.6 19.6 0 0 1 35 54.6 Z\" fill=\"#38bdf8\"/>\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n      </g>\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(90 35 35)\">\n        <circle cx=\"35\" cy=\"35\" r=\"19.6\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/>\n        <path d=\"M 35 35 L 54.6 35 A 19.6 19.6 0 0 1 35 54.6 Z\" fill=\"#38bdf8\"/>\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n      </g>\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(180 35 35)\">\n        <circle cx=\"35\" cy=\"35\" r=\"19.6\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/>\n        <path d=\"M 35 35 L 54.6 35 A 19.6 19.6 0 0 1 35 54.6 Z\" fill=\"#38bdf8\"/>\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n      </g>\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(270 35 35)\">\n        <circle cx=\"35\" cy=\"35\" r=\"19.6\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/>\n        <path d=\"M 35 35 L 54.6 35 A 19.6 19.6 0 0 1 35 54.6 Z\" fill=\"#38bdf8\"/>\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n      </g>\n      \n    </svg>"
-      ],
-      "options": [
-        {
-          "id": "A",
-          "text": "Quadrant (45°)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(45 35 35)\">\n        <circle cx=\"35\" cy=\"35\" r=\"19.6\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/>\n        <path d=\"M 35 35 L 54.6 35 A 19.6 19.6 0 0 1 35 54.6 Z\" fill=\"#38bdf8\"/>\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "B",
-          "text": "Quadrant 3 (180°)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(180 35 35)\">\n        <circle cx=\"35\" cy=\"35\" r=\"19.6\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/>\n        <path d=\"M 35 35 L 54.6 35 A 19.6 19.6 0 0 1 35 54.6 Z\" fill=\"#38bdf8\"/>\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "C",
-          "text": "Quadrant 1 (0°)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(0 35 35)\">\n        <circle cx=\"35\" cy=\"35\" r=\"19.6\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/>\n        <path d=\"M 35 35 L 54.6 35 A 19.6 19.6 0 0 1 35 54.6 Z\" fill=\"#38bdf8\"/>\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "D",
-          "text": "Quadrant 2 (90°)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(90 35 35)\">\n        <circle cx=\"35\" cy=\"35\" r=\"19.6\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/>\n        <path d=\"M 35 35 L 54.6 35 A 19.6 19.6 0 0 1 35 54.6 Z\" fill=\"#38bdf8\"/>\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "E",
-          "text": "Cross",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(0 35 35)\">\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n      </g>\n      \n    </svg>"
-        }
-      ],
-      "correctOption": "C",
-      "explanation": "The shaded sector advances 90° clockwise every step, cycling back to position 0°.",
-      "id": 16,
-      "testId": "test-26"
-    },
-    {
-      "subType": "antonym_synonym",
-      "question": "Which word is the closest SYNONYM for \"LACONIC\"?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Terse"
-        },
-        {
-          "id": "B",
-          "text": "Prolix"
-        },
-        {
-          "id": "C",
-          "text": "Garrulous"
-        },
-        {
-          "id": "D",
-          "text": "Verbose"
-        },
-        {
-          "id": "E",
-          "text": "Loquacious"
-        }
-      ],
-      "correctOption": "A",
-      "explanation": "Laconic means using very few words; \"Terse\" or concise.",
-      "id": 17,
-      "category": "verbal",
-      "testId": "test-26"
-    },
-    {
-      "subType": "number_series",
-      "category": "math",
-      "question": "What is the missing number in the sequence?\n2, 9, 28, 65, 126, ?",
-      "options": [
-        {
-          "id": "A",
-          "text": "243"
-        },
-        {
-          "id": "B",
-          "text": "215"
-        },
-        {
-          "id": "C",
-          "text": "217"
-        },
-        {
-          "id": "D",
-          "text": "224"
-        },
-        {
-          "id": "E",
-          "text": "198"
-        }
-      ],
-      "correctOption": "C",
-      "explanation": "Cubes plus 1 pattern: 1^3 + 1 = 2; 2^3 + 1 = 9; 3^3 + 1 = 28; 4^3 + 1 = 65; 5^3 + 1 = 126; 6^3 + 1 = 216 + 1 = 217.",
-      "id": 18,
-      "testId": "test-26"
-    },
-    {
-      "subType": "sentence_completion",
-      "question": "Far from being _______, the economic forecast was quite _______, predicting robust multi-year capital expansion.",
-      "options": [
-        {
-          "id": "A",
-          "text": "accurate ... dubious"
-        },
-        {
-          "id": "B",
-          "text": "sanguine ... alarming"
-        },
-        {
-          "id": "C",
-          "text": "pessimistic ... catastrophic"
-        },
-        {
-          "id": "D",
-          "text": "bleak ... auspicious"
-        },
-        {
-          "id": "E",
-          "text": "promising ... dismal"
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "\"Far from being bleak, it was auspicious (favorable), predicting robust expansion.\"",
-      "id": 19,
-      "category": "verbal",
-      "testId": "test-26"
-    },
-    {
-      "subType": "word_problem",
-      "category": "math",
-      "question": "An initial investment of $8,000 earns 5% annual interest compounded annually. What is the total accumulated value after 2 years?",
-      "options": [
-        {
-          "id": "A",
-          "text": "$9,000"
-        },
-        {
-          "id": "B",
-          "text": "$8,750"
-        },
-        {
-          "id": "C",
-          "text": "$8,800"
-        },
-        {
-          "id": "D",
-          "text": "$8,820"
-        },
-        {
-          "id": "E",
-          "text": "$8,900"
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "Year 1: 8,000 + 400 = $8,400. Year 2: 5% of 8,400 is 420. Total = 8,400 + 420 = $8,820.",
-      "id": 20,
-      "testId": "test-26"
-    },
-    {
-      "subType": "odd_one_out",
-      "category": "spatial",
-      "question": "Which figure does NOT follow the common orientation rule (Odd One Out)?",
-      "figureType": "options_only",
-      "options": [
-        {
-          "id": "A",
-          "text": "D: 180°",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(180 37.5 37.5)\">\n        <line x1=\"37.5\" y1=\"65.85000000000001\" x2=\"37.5\" y2=\"9.149999999999995\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"27,19.65 37.5,9.149999999999995 48,19.65\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "B",
-          "text": "E: 270°",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(270 37.5 37.5)\">\n        <line x1=\"37.5\" y1=\"65.85000000000001\" x2=\"37.5\" y2=\"9.149999999999995\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"27,19.65 37.5,9.149999999999995 48,19.65\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "C",
-          "text": "B: 0°",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(0 37.5 37.5)\">\n        <line x1=\"37.5\" y1=\"65.85000000000001\" x2=\"37.5\" y2=\"9.149999999999995\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"27,19.65 37.5,9.149999999999995 48,19.65\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "D",
-          "text": "A: 45°",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(45 37.5 37.5)\">\n        <line x1=\"37.5\" y1=\"65.85000000000001\" x2=\"37.5\" y2=\"9.149999999999995\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"27,19.65 37.5,9.149999999999995 48,19.65\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "E",
-          "text": "C: 90°",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(90 37.5 37.5)\">\n        <line x1=\"37.5\" y1=\"65.85000000000001\" x2=\"37.5\" y2=\"9.149999999999995\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"27,19.65 37.5,9.149999999999995 48,19.65\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>"
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "Figures B, C, D, and E point directly along cardinal axes (North, East, South, West). Figure A points along an intercardinal diagonal (45°).",
-      "id": 21,
-      "testId": "test-26"
-    },
-    {
-      "subType": "word_problem",
-      "category": "math",
-      "question": "To qualify for an executive fellowship, an applicant must maintain an average score of at least 88 across 5 aptitude evaluations. If her scores on the first 4 exams were 84, 91, 85, and 92, what minimum score does she need on the 5th exam?",
-      "options": [
-        {
-          "id": "A",
-          "text": "90"
-        },
-        {
-          "id": "B",
-          "text": "92"
-        },
-        {
-          "id": "C",
-          "text": "86"
-        },
-        {
-          "id": "D",
-          "text": "88"
-        },
-        {
-          "id": "E",
-          "text": "89"
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "Total required points = 88 * 5 = 440. Sum of first 4 scores = 84 + 91 + 85 + 92 = 352. Needed on 5th exam = 440 - 352 = 88.",
-      "id": 22,
-      "testId": "test-26"
-    },
-    {
-      "subType": "analogy",
-      "question": "METAPHOR is to FIGURATIVE as SYLLOGISM is to:",
-      "options": [
-        {
-          "id": "A",
-          "text": "Allegorical"
-        },
-        {
-          "id": "B",
-          "text": "Satirical"
-        },
-        {
-          "id": "C",
-          "text": "Hyperbolic"
-        },
-        {
-          "id": "D",
-          "text": "Metrical"
-        },
-        {
-          "id": "E",
-          "text": "Deductive"
-        }
-      ],
-      "correctOption": "E",
-      "explanation": "A metaphor is fundamentally figurative; a syllogism is fundamentally deductive.",
-      "id": 23,
-      "category": "verbal",
-      "testId": "test-26"
-    },
-    {
-      "subType": "number_series",
-      "category": "math",
-      "question": "Identify the next number in this sequence:\n7, 9, 12, 17, 24, 35, ?",
-      "options": [
-        {
-          "id": "A",
-          "text": "46"
-        },
-        {
-          "id": "B",
-          "text": "50"
-        },
-        {
-          "id": "C",
-          "text": "52"
-        },
-        {
-          "id": "D",
-          "text": "48"
-        },
-        {
-          "id": "E",
-          "text": "49"
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "Differences between terms are consecutive prime numbers: +2, +3, +5, +7, +11. Next difference must be +13. 35 + 13 = 48.",
-      "id": 24,
-      "testId": "test-26"
-    },
-    {
-      "subType": "spatial_matrix",
-      "category": "spatial",
-      "question": "Which figure correctly replaces the question mark in this matrix?",
-      "figureType": "matrix",
-      "matrixCells": [
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(0 35 35)\">\n        <line x1=\"35\" y1=\"61.46000000000001\" x2=\"35\" y2=\"8.539999999999996\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"25.2,18.339999999999996 35,8.539999999999996 44.8,18.339999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(45 35 35)\">\n        <line x1=\"35\" y1=\"61.46000000000001\" x2=\"35\" y2=\"8.539999999999996\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"25.2,18.339999999999996 35,8.539999999999996 44.8,18.339999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(90 35 35)\">\n        <line x1=\"35\" y1=\"61.46000000000001\" x2=\"35\" y2=\"8.539999999999996\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"25.2,18.339999999999996 35,8.539999999999996 44.8,18.339999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,11.48 52.64,35 35,58.519999999999996 17.36,35\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" />\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,11.48 52.64,35 35,58.519999999999996 17.36,35\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(45 35 35)\" />\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,11.48 52.64,35 35,58.519999999999996 17.36,35\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(90 35 35)\" />\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(0 35 35)\">\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n      </g>\n      \n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(45 35 35)\">\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n      </g>\n      \n    </svg>",
-        "?"
-      ],
-      "options": [
-        {
-          "id": "A",
-          "text": "Cross (90°)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(90 35 35)\">\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "B",
-          "text": "Cross (0°)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(0 35 35)\">\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "C",
-          "text": "Arrow (90°)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(90 35 35)\">\n        <line x1=\"35\" y1=\"61.46000000000001\" x2=\"35\" y2=\"8.539999999999996\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <polyline points=\"25.2,18.339999999999996 35,8.539999999999996 44.8,18.339999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "D",
-          "text": "Cross (135°)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(135 35 35)\">\n        <line x1=\"15.399999999999999\" y1=\"35\" x2=\"54.6\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n        <line x1=\"35\" y1=\"15.399999999999999\" x2=\"35\" y2=\"54.6\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "E",
-          "text": "Diamond (90°)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,11.48 52.64,35 35,58.519999999999996 17.36,35\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(90 35 35)\" />\n      \n    </svg>"
-        }
-      ],
-      "correctOption": "A",
-      "explanation": "Across rows: the shape family is preserved (Row 1: Arrow, Row 2: Diamond, Row 3: Cross). Across columns: each shape rotates +45° clockwise (0° -> 45° -> 90°). Cell 9 is a Cross at 90°.",
-      "id": 25,
-      "testId": "test-26"
-    },
-    {
-      "subType": "antonym_synonym",
-      "question": "Which word is the closest SYNONYM for \"OBSEQUIOUS\"?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Defiant"
-        },
-        {
-          "id": "B",
-          "text": "Imperious"
-        },
-        {
-          "id": "C",
-          "text": "Insolent"
-        },
-        {
-          "id": "D",
-          "text": "Belligerent"
-        },
-        {
-          "id": "E",
-          "text": "Servile"
-        }
-      ],
-      "correctOption": "E",
-      "explanation": "Obsequious means obedient or attentive to an excessive or fawning degree; \"Servile\" or sycophantic.",
-      "id": 26,
-      "category": "verbal",
-      "testId": "test-26"
-    },
-    {
-      "subType": "word_problem",
-      "category": "math",
-      "question": "If the diameter of a circle is tripled, by what factor is its surface area multiplied?",
-      "options": [
-        {
-          "id": "A",
-          "text": "12 times"
-        },
-        {
-          "id": "B",
-          "text": "9 times"
-        },
-        {
-          "id": "C",
-          "text": "3 times"
-        },
-        {
-          "id": "D",
-          "text": "6 times"
-        },
-        {
-          "id": "E",
-          "text": "27 times"
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "Area is proportional to radius squared. (3r)^2 = 9r^2, so area is multiplied by 9.",
-      "id": 27,
-      "testId": "test-26"
-    },
-    {
-      "subType": "antonym_synonym",
-      "question": "Which word is most OPPOSITE to \"EPHEMERAL\"?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Fleeting"
-        },
-        {
-          "id": "B",
-          "text": "Permanent"
-        },
-        {
-          "id": "C",
-          "text": "Evanescent"
-        },
-        {
-          "id": "D",
-          "text": "Momentary"
-        },
-        {
-          "id": "E",
-          "text": "Transient"
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "Ephemeral means short-lived. Permanent is the opposite.",
-      "id": 28,
-      "category": "verbal",
-      "testId": "test-26"
-    },
-    {
-      "subType": "word_problem",
-      "category": "math",
-      "question": "If a runner completes 3.6 kilometers in 12 minutes, what is the runner's average speed in kilometers per hour?",
-      "options": [
-        {
-          "id": "A",
-          "text": "19.2 km/h"
-        },
-        {
-          "id": "B",
-          "text": "15 km/h"
-        },
-        {
-          "id": "C",
-          "text": "21.6 km/h"
-        },
-        {
-          "id": "D",
-          "text": "18 km/h"
-        },
-        {
-          "id": "E",
-          "text": "16.5 km/h"
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "12 minutes is exactly 1/5 of an hour. Speed = 3.6 km / (1/5 h) = 3.6 * 5 = 18 km/h.",
-      "id": 29,
-      "testId": "test-26"
-    },
-    {
-      "subType": "next_in_series",
-      "category": "spatial",
-      "question": "Which star figure comes next in the sequence?",
-      "figureType": "sequence",
-      "sequenceFrames": [
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,11.48 41.33632501971286,26.278796800638066 57.36884926326201,27.731920292301236 45.25238924566176,38.33120319936193 48.82470913391897,54.028079707698765 35,45.78 21.175290866081035,54.028079707698765 24.747610754338243,38.33120319936194 12.63115073673799,27.73192029230123 28.663674980287137,26.278796800638066\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\" transform=\"rotate(0 35 35)\" />\n      <circle cx=\"61.6\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,11.48 41.33632501971286,26.278796800638066 57.36884926326201,27.731920292301236 45.25238924566176,38.33120319936193 48.82470913391897,54.028079707698765 35,45.78 21.175290866081035,54.028079707698765 24.747610754338243,38.33120319936194 12.63115073673799,27.73192029230123 28.663674980287137,26.278796800638066\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\" transform=\"rotate(36 35 35)\" />\n      <circle cx=\"35\" cy=\"61.6\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,11.48 41.33632501971286,26.278796800638066 57.36884926326201,27.731920292301236 45.25238924566176,38.33120319936193 48.82470913391897,54.028079707698765 35,45.78 21.175290866081035,54.028079707698765 24.747610754338243,38.33120319936194 12.63115073673799,27.73192029230123 28.663674980287137,26.278796800638066\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\" transform=\"rotate(72 35 35)\" />\n      <circle cx=\"8.399999999999999\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,11.48 41.33632501971286,26.278796800638066 57.36884926326201,27.731920292301236 45.25238924566176,38.33120319936193 48.82470913391897,54.028079707698765 35,45.78 21.175290866081035,54.028079707698765 24.747610754338243,38.33120319936194 12.63115073673799,27.73192029230123 28.663674980287137,26.278796800638066\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\" transform=\"rotate(108 35 35)\" />\n      <circle cx=\"34.99999999999999\" cy=\"8.399999999999999\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-      ],
-      "options": [
-        {
-          "id": "A",
-          "text": "Star (180°, Dot 0)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,11.48 41.33632501971286,26.278796800638066 57.36884926326201,27.731920292301236 45.25238924566176,38.33120319936193 48.82470913391897,54.028079707698765 35,45.78 21.175290866081035,54.028079707698765 24.747610754338243,38.33120319936194 12.63115073673799,27.73192029230123 28.663674980287137,26.278796800638066\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\" transform=\"rotate(180 35 35)\" />\n      <circle cx=\"61.6\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        },
-        {
-          "id": "B",
-          "text": "Star (144°, Dot 0)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,11.48 41.33632501971286,26.278796800638066 57.36884926326201,27.731920292301236 45.25238924566176,38.33120319936193 48.82470913391897,54.028079707698765 35,45.78 21.175290866081035,54.028079707698765 24.747610754338243,38.33120319936194 12.63115073673799,27.73192029230123 28.663674980287137,26.278796800638066\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\" transform=\"rotate(144 35 35)\" />\n      <circle cx=\"61.6\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        },
-        {
-          "id": "C",
-          "text": "Diamond",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,11.48 52.64,35 35,58.519999999999996 17.36,35\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(144 35 35)\" />\n      <circle cx=\"61.6\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        },
-        {
-          "id": "D",
-          "text": "Star (108°)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,11.48 41.33632501971286,26.278796800638066 57.36884926326201,27.731920292301236 45.25238924566176,38.33120319936193 48.82470913391897,54.028079707698765 35,45.78 21.175290866081035,54.028079707698765 24.747610754338243,38.33120319936194 12.63115073673799,27.73192029230123 28.663674980287137,26.278796800638066\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\" transform=\"rotate(108 35 35)\" />\n      <circle cx=\"8.399999999999999\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        },
-        {
-          "id": "E",
-          "text": "Star (144°, Dot 1)",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,11.48 41.33632501971286,26.278796800638066 57.36884926326201,27.731920292301236 45.25238924566176,38.33120319936193 48.82470913391897,54.028079707698765 35,45.78 21.175290866081035,54.028079707698765 24.747610754338243,38.33120319936194 12.63115073673799,27.73192029230123 28.663674980287137,26.278796800638066\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\" transform=\"rotate(144 35 35)\" />\n      <circle cx=\"35\" cy=\"61.6\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "Star rotates by +36° per frame (108° + 36° = 144°). The dot cycles positions 0 -> 1 -> 2 -> 3 -> 0.",
-      "id": 30,
-      "testId": "test-26"
-    },
-    {
-      "subType": "analogy",
-      "question": "DISINTERESTED is to IMPARTIAL as MERCENARY is to:",
-      "options": [
-        {
-          "id": "A",
-          "text": "Generous"
-        },
-        {
-          "id": "B",
-          "text": "Altruistic"
-        },
-        {
-          "id": "C",
-          "text": "Honorable"
-        },
-        {
-          "id": "D",
-          "text": "Venal"
-        },
-        {
-          "id": "E",
-          "text": "Scholarly"
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "Disinterested is synonymous with impartial. Mercenary (motivated solely by money) is synonymous with \"Venal\" (open to bribery, corrupt).",
-      "id": 31,
-      "category": "verbal",
-      "testId": "test-26"
-    },
-    {
-      "subType": "word_problem",
-      "category": "math",
-      "question": "In a hedge fund, the ratio of equities to bonds is 4:3, and the ratio of bonds to commodities is 5:2. If the total fund assets equal $820 million, what is the total allocation in equities?",
-      "options": [
-        {
-          "id": "A",
-          "text": "$450 million"
-        },
-        {
-          "id": "B",
-          "text": "$380 million"
-        },
-        {
-          "id": "C",
-          "text": "$350 million"
-        },
-        {
-          "id": "D",
-          "text": "$420 million"
-        },
-        {
-          "id": "E",
-          "text": "$400 million"
-        }
-      ],
-      "correctOption": "E",
-      "explanation": "Combine ratios using common Bond term: Equities : Bonds = 20 : 15. Bonds : Commodities = 15 : 6. Compound ratio = 20 : 15 : 6. Total parts = 20 + 15 + 6 = 41 parts. Each part = $820M / 41 = $20M. Equities = 20 * $20M = $400 million.",
-      "id": 32,
-      "testId": "test-26"
-    },
-    {
-      "subType": "word_problem",
-      "category": "math",
-      "question": "A freight train departs a station traveling at 45 mph. Exactly two hours later, an express train leaves from the same depot traveling in the same direction at 75 mph. How many hours will it take the express train to overtake the freight train?",
+      "question": "Two freight trains leave Raleigh and Greensboro, located 276 miles apart, traveling toward each other on parallel tracks. Train 1 travels at 64 mph and Train 2 travels at 74 mph. In how many hours will they pass each other?",
       "options": [
         {
           "id": "A",
@@ -1095,11 +17,11 @@
         },
         {
           "id": "B",
-          "text": "5 hours"
+          "text": "2 hours"
         },
         {
           "id": "C",
-          "text": "2.5 hours"
+          "text": "1.5 hours"
         },
         {
           "id": "D",
@@ -1110,558 +32,92 @@
           "text": "3 hours"
         }
       ],
-      "correctOption": "E",
-      "explanation": "Lead distance = 45 mph * 2 hours = 90 miles. Relative speed = 75 - 45 = 30 mph. Time to overtake = 90 / 30 = 3 hours.",
-      "id": 33,
-      "testId": "test-26"
-    },
-    {
-      "subType": "spatial_matrix",
-      "category": "spatial",
-      "question": "Determine the missing element in the 3×3 matrix:",
-      "figureType": "matrix",
-      "matrixCells": [
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"15.399999999999999\" y=\"15.399999999999999\" width=\"39.2\" height=\"39.2\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" rx=\"4\" />\n      <circle cx=\"61.6\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"15.399999999999999\" y=\"15.399999999999999\" width=\"39.2\" height=\"39.2\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" rx=\"4\" />\n      <circle cx=\"35\" cy=\"61.6\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"15.399999999999999\" y=\"15.399999999999999\" width=\"39.2\" height=\"39.2\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" rx=\"4\" />\n      <circle cx=\"8.399999999999999\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,15.399999999999999 53.640707719385006,28.94326691025103 46.52059094493247,50.85673308974897 23.479409055067528,50.85673308974897 16.35929228061499,28.943266910251026\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" />\n      <circle cx=\"61.6\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,15.399999999999999 53.640707719385006,28.94326691025103 46.52059094493247,50.85673308974897 23.479409055067528,50.85673308974897 16.35929228061499,28.943266910251026\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" />\n      <circle cx=\"35\" cy=\"61.6\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,15.399999999999999 53.640707719385006,28.94326691025103 46.52059094493247,50.85673308974897 23.479409055067528,50.85673308974897 16.35929228061499,28.943266910251026\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" />\n      <circle cx=\"8.399999999999999\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,15.399999999999999 51.974097914175005,25.200000000000003 51.974097914175005,44.8 35,54.6 18.025902085825,44.8 18.025902085825003,25.199999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" />\n      <circle cx=\"61.6\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,15.399999999999999 51.974097914175005,25.200000000000003 51.974097914175005,44.8 35,54.6 18.025902085825,44.8 18.025902085825003,25.199999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" />\n      <circle cx=\"35\" cy=\"61.6\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>",
-        "?"
-      ],
-      "options": [
-        {
-          "id": "A",
-          "text": "Hexagon Dot 3",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,15.399999999999999 51.974097914175005,25.200000000000003 51.974097914175005,44.8 35,54.6 18.025902085825,44.8 18.025902085825003,25.199999999999996\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" />\n      <circle cx=\"34.99999999999999\" cy=\"8.399999999999999\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        },
-        {
-          "id": "B",
-          "text": "Hexagon Shaded",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,15.399999999999999 51.974097914175005,25.200000000000003 51.974097914175005,44.8 35,54.6 18.025902085825,44.8 18.025902085825003,25.199999999999996\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" />\n      <circle cx=\"8.399999999999999\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        },
-        {
-          "id": "C",
-          "text": "Hexagon Clear",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,15.399999999999999 51.974097914175005,25.200000000000003 51.974097914175005,44.8 35,54.6 18.025902085825,44.8 18.025902085825003,25.199999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" />\n      <circle cx=\"8.399999999999999\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        },
-        {
-          "id": "D",
-          "text": "Diamond",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,11.48 52.64,35 35,58.519999999999996 17.36,35\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" />\n      <circle cx=\"8.399999999999999\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        },
-        {
-          "id": "E",
-          "text": "Pentagon Shaded",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"35,15.399999999999999 53.640707719385006,28.94326691025103 46.52059094493247,50.85673308974897 23.479409055067528,50.85673308974897 16.35929228061499,28.943266910251026\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" />\n      <circle cx=\"8.399999999999999\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        }
-      ],
       "correctOption": "B",
-      "explanation": "Row 3 contains hexagons. Across columns, the dot moves from pos 0 to 1 to 2, and the third column is shaded solid blue.",
-      "id": 34,
+      "explanation": "**Correct Answer: B** (2 hours)\n\n**Step-by-step Solution:**\n1. Relative closing speed = 64 + 74 = 138 mph.\n2. Time to meet = Total Distance / Relative Speed = 276 / 138 = **2 hours**.\n\n💡 **Speed Tip:** When objects move toward each other, add speeds together immediately.",
+      "category": "math",
+      "subType": "word_problem",
+      "id": 1,
       "testId": "test-26"
     },
     {
-      "subType": "sentence_completion",
-      "question": "The diplomat’s statement was deliberately _______, permitting all negotiating parties to interpret it to their own advantage.",
+      "question": "Which of the following words is most SIMILAR in meaning to \"BANAL\"?",
       "options": [
         {
           "id": "A",
-          "text": "trenchant"
+          "text": "Profound"
         },
         {
           "id": "B",
-          "text": "unilateral"
+          "text": "Fresh"
         },
         {
           "id": "C",
-          "text": "dogmatic"
+          "text": "Novel"
         },
         {
           "id": "D",
-          "text": "ambiguous"
+          "text": "Hackneyed"
         },
         {
           "id": "E",
-          "text": "strident"
+          "text": "Exciting"
         }
       ],
       "correctOption": "D",
-      "explanation": "Allowing multiple interpretations means ambiguous or equivocal.",
-      "id": 35,
+      "explanation": "**Correct Answer: D**\n\nBanal means so lacking in originality as to be boring.\n\n💡 **Speed Tip:** Rapidly eliminate choices that belong to the wrong category. Target <8 seconds.",
       "category": "verbal",
+      "subType": "synonym",
+      "id": 2,
       "testId": "test-26"
     },
     {
-      "subType": "word_problem",
-      "category": "math",
-      "question": "A merchant marks up wholesale merchandise by 60% above cost, then offers a promotional storewide discount of 25%. What is the merchant's actual net percentage profit on cost?",
+      "question": "[Simulation #26 - Series 1] Which rotating arrow and satellite indicator figure logically comes next in this sequence?",
+      "svgSeries": [
+        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"26\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" />\n        <line x1=\"35\" y1=\"35\" x2=\"57\" y2=\"35\" stroke=\"#ec4899\" stroke-width=\"3\" stroke-linecap=\"round\" />\n        <circle cx=\"57\" cy=\"35\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n        <circle cx=\"35\" cy=\"47\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>",
+        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"26\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" />\n        <line x1=\"35\" y1=\"35\" x2=\"50.55634918610404\" y2=\"50.55634918610404\" stroke=\"#ec4899\" stroke-width=\"3\" stroke-linecap=\"round\" />\n        <circle cx=\"50.55634918610404\" cy=\"50.55634918610404\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n        <circle cx=\"26.514718625761432\" cy=\"43.48528137423857\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>",
+        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"26\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" />\n        <line x1=\"35\" y1=\"35\" x2=\"35\" y2=\"57\" stroke=\"#ec4899\" stroke-width=\"3\" stroke-linecap=\"round\" />\n        <circle cx=\"35\" cy=\"57\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n        <circle cx=\"23\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>",
+        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"26\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" />\n        <line x1=\"35\" y1=\"35\" x2=\"19.443650813895957\" y2=\"50.55634918610404\" stroke=\"#ec4899\" stroke-width=\"3\" stroke-linecap=\"round\" />\n        <circle cx=\"19.443650813895957\" cy=\"50.55634918610404\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n        <circle cx=\"26.51471862576143\" cy=\"26.514718625761432\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+      ],
       "options": [
         {
           "id": "A",
-          "text": "25%"
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"26\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" />\n        <line x1=\"35\" y1=\"35\" x2=\"34.99999999999999\" y2=\"13\" stroke=\"#ec4899\" stroke-width=\"3\" stroke-linecap=\"round\" />\n        <circle cx=\"34.99999999999999\" cy=\"13\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n        <circle cx=\"47\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
         },
         {
           "id": "B",
-          "text": "35%"
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"26\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" />\n        <line x1=\"35\" y1=\"35\" x2=\"19.44365081389595\" y2=\"19.443650813895957\" stroke=\"#ec4899\" stroke-width=\"3\" stroke-linecap=\"round\" />\n        <circle cx=\"19.44365081389595\" cy=\"19.443650813895957\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n        <circle cx=\"43.48528137423857\" cy=\"26.51471862576143\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
         },
         {
           "id": "C",
-          "text": "20%"
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"26\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" />\n        <line x1=\"35\" y1=\"35\" x2=\"13\" y2=\"35\" stroke=\"#ec4899\" stroke-width=\"3\" stroke-linecap=\"round\" />\n        <circle cx=\"13\" cy=\"35\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n        <circle cx=\"35\" cy=\"23\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
         },
         {
           "id": "D",
-          "text": "15%"
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"26\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" />\n        <line x1=\"35\" y1=\"35\" x2=\"57\" y2=\"35\" stroke=\"#ec4899\" stroke-width=\"3\" stroke-linecap=\"round\" />\n        <circle cx=\"57\" cy=\"35\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n        <circle cx=\"35\" cy=\"47\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
         },
         {
           "id": "E",
-          "text": "30%"
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"26\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" />\n        <line x1=\"35\" y1=\"35\" x2=\"19.443650813895957\" y2=\"50.55634918610404\" stroke=\"#ec4899\" stroke-width=\"3\" stroke-linecap=\"round\" />\n        <circle cx=\"19.443650813895957\" cy=\"50.55634918610404\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n        <circle cx=\"26.51471862576143\" cy=\"26.514718625761432\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
         }
       ],
       "correctOption": "C",
-      "explanation": "Let wholesale cost = $100. Marked up price = $160. 25% discount on $160 = $40. Sale price = 160 - 40 = $120. Net profit = $20 on $100 = 20%.",
-      "id": 36,
-      "testId": "test-26"
-    },
-    {
-      "subType": "analogy",
-      "question": "TACITURN is to CONVERSATION as ASCETIC is to:",
-      "options": [
-        {
-          "id": "A",
-          "text": "Speech"
-        },
-        {
-          "id": "B",
-          "text": "Solitude"
-        },
-        {
-          "id": "C",
-          "text": "Luxury"
-        },
-        {
-          "id": "D",
-          "text": "Religion"
-        },
-        {
-          "id": "E",
-          "text": "Discipline"
-        }
-      ],
-      "correctOption": "C",
-      "explanation": "A taciturn person refrains from conversation; an ascetic person refrains from luxury or physical indulgence.",
-      "id": 37,
-      "category": "verbal",
-      "testId": "test-26"
-    },
-    {
-      "subType": "data_chart",
-      "category": "math",
-      "question": "According to the production data chart below, what was the percentage increase in units between Q1 and Q3?",
-      "figureType": "chart",
-      "chartSvg": "<svg viewBox=\"0 0 360 220\" class=\"w-full max-w-[420px] mx-auto rounded-xl bg-slate-900 border border-slate-700/60 p-2 shadow-lg\" xmlns=\"http://www.w3.org/2000/svg\">\n      <text x=\"180\" y=\"22\" text-anchor=\"middle\" fill=\"#e2e8f0\" font-size=\"13\" font-weight=\"bold\">Factory Output (Thousands of Units)</text>\n      <!-- Grid lines -->\n      <line x1=\"45\" y1=\"35\" x2=\"330\" y2=\"35\" stroke=\"#334155\" stroke-dasharray=\"3,3\" stroke-width=\"1\"/>\n      <line x1=\"45\" y1=\"107.5\" x2=\"330\" y2=\"107.5\" stroke=\"#334155\" stroke-dasharray=\"3,3\" stroke-width=\"1\"/>\n      <line x1=\"45\" y1=\"180\" x2=\"330\" y2=\"180\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n      <!-- Y-axis values -->\n      <text x=\"37\" y=\"39\" text-anchor=\"end\" fill=\"#94a3b8\" font-size=\"10\">125k</text>\n      <text x=\"37\" y=\"111.5\" text-anchor=\"end\" fill=\"#94a3b8\" font-size=\"10\">63k</text>\n      <text x=\"37\" y=\"184\" text-anchor=\"end\" fill=\"#94a3b8\" font-size=\"10\">0</text>\n      \n      <g class=\"bar-group\">\n        <rect x=\"61.03125\" y=\"122\" width=\"39.1875\" height=\"58\" rx=\"4\" fill=\"#38bdf8\" opacity=\"0.9\"/>\n        <text x=\"80.625\" y=\"116\" text-anchor=\"middle\" fill=\"#f8fafc\" font-size=\"11\" font-weight=\"600\">50k</text>\n        <text x=\"80.625\" y=\"198\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"500\">Q1</text>\n      </g>\n    \n      <g class=\"bar-group\">\n        <rect x=\"132.28125\" y=\"93\" width=\"39.1875\" height=\"87\" rx=\"4\" fill=\"#38bdf8\" opacity=\"0.9\"/>\n        <text x=\"151.875\" y=\"87\" text-anchor=\"middle\" fill=\"#f8fafc\" font-size=\"11\" font-weight=\"600\">75k</text>\n        <text x=\"151.875\" y=\"198\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"500\">Q2</text>\n      </g>\n    \n      <g class=\"bar-group\">\n        <rect x=\"203.53125\" y=\"35\" width=\"39.1875\" height=\"145\" rx=\"4\" fill=\"#38bdf8\" opacity=\"0.9\"/>\n        <text x=\"223.125\" y=\"29\" text-anchor=\"middle\" fill=\"#f8fafc\" font-size=\"11\" font-weight=\"600\">125k</text>\n        <text x=\"223.125\" y=\"198\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"500\">Q3</text>\n      </g>\n    \n      <g class=\"bar-group\">\n        <rect x=\"274.78125\" y=\"75.60000000000001\" width=\"39.1875\" height=\"104.39999999999999\" rx=\"4\" fill=\"#38bdf8\" opacity=\"0.9\"/>\n        <text x=\"294.375\" y=\"69.60000000000001\" text-anchor=\"middle\" fill=\"#f8fafc\" font-size=\"11\" font-weight=\"600\">90k</text>\n        <text x=\"294.375\" y=\"198\" text-anchor=\"middle\" fill=\"#94a3b8\" font-size=\"12\" font-weight=\"500\">Q4</text>\n      </g>\n    \n    </svg>",
-      "options": [
-        {
-          "id": "A",
-          "text": "125%"
-        },
-        {
-          "id": "B",
-          "text": "150%"
-        },
-        {
-          "id": "C",
-          "text": "75%"
-        },
-        {
-          "id": "D",
-          "text": "100%"
-        },
-        {
-          "id": "E",
-          "text": "250%"
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "Q1 = 50k, Q3 = 125k. Increase = 125 - 50 = 75k. Percentage increase = (75 / 50) * 100% = 150%.",
-      "id": 38,
-      "testId": "test-26"
-    },
-    {
-      "subType": "odd_one_out",
+      "explanation": "**Correct Answer: C**\n\n**Pattern:**\n1. The pointer rotates clockwise by 45° in each successive frame.\n2. The satellite dot maintains a perpendicular offset from the pointer.\n\n💡 **Speed Tip:** Determine the angular velocity from Frame 1 to Frame 2 (45° clockwise) and project to the 5th frame.",
       "category": "spatial",
-      "question": "Which figure is the ODD ONE OUT?",
-      "figureType": "options_only",
-      "options": [
-        {
-          "id": "A",
-          "text": "D: Pentagon",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"37.5,16.499999999999996 57.47218684219823,31.010643118126104 49.84349029814194,54.4893568818739 25.156509701858063,54.4893568818739 17.527813157801774,31.010643118126097\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 37.5 37.5)\" />\n      \n    </svg>"
-        },
-        {
-          "id": "B",
-          "text": "A: Sector",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      \n      <g transform=\"rotate(0 37.5 37.5)\">\n        <circle cx=\"37.5\" cy=\"37.5\" r=\"21.000000000000004\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/>\n        <path d=\"M 37.5 37.5 L 58.5 37.5 A 21.000000000000004 21.000000000000004 0 0 1 37.5 58.5 Z\" fill=\"#38bdf8\"/>\n        <line x1=\"16.499999999999996\" y1=\"37.5\" x2=\"58.5\" y2=\"37.5\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n        <line x1=\"37.5\" y1=\"16.499999999999996\" x2=\"37.5\" y2=\"58.5\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n      </g>\n      \n    </svg>"
-        },
-        {
-          "id": "C",
-          "text": "B: Square",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"16.499999999999996\" y=\"16.499999999999996\" width=\"42.00000000000001\" height=\"42.00000000000001\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 37.5 37.5)\" rx=\"4\" />\n      \n    </svg>"
-        },
-        {
-          "id": "D",
-          "text": "C: Triangle",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"37.5,16.499999999999996 19.313999999999997,52.2 55.68600000000001,52.2\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 37.5 37.5)\" />\n      \n    </svg>"
-        },
-        {
-          "id": "E",
-          "text": "E: Hexagon",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"37.5,16.499999999999996 55.68653347947321,27 55.68653347947321,48 37.5,58.5 19.313466520526784,48 19.313466520526788,26.999999999999996\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 37.5 37.5)\" />\n      \n    </svg>"
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "Shapes B, C, D, and E are strictly linear regular polygons composed exclusively of straight line segments. Shape A contains a circular curved arc.",
-      "id": 39,
+      "subType": "series",
+      "id": 3,
       "testId": "test-26"
     },
     {
-      "subType": "sentence_completion",
-      "question": "The executive was criticized for her _______ leadership style, which brooked no disagreement and alienated senior directors.",
+      "question": "Senior technician Benjamin can calibrate a quantum server rack in 6 hours, while technician Chloe requires 12 hours for the identical task. Working concurrently at constant rates, how many hours will both technicians take to complete the calibration?",
       "options": [
         {
           "id": "A",
-          "text": "conciliatory"
-        },
-        {
-          "id": "B",
-          "text": "autocratic"
-        },
-        {
-          "id": "C",
-          "text": "circumspect"
-        },
-        {
-          "id": "D",
-          "text": "vacillating"
-        },
-        {
-          "id": "E",
-          "text": "egalitarian"
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "\"Brooking no disagreement\" defines an autocratic or domineering ruler/leader.",
-      "id": 40,
-      "category": "verbal",
-      "testId": "test-26"
-    },
-    {
-      "subType": "word_problem",
-      "category": "math",
-      "question": "A quality inspector tests a shipment containing 6 pristine components and 4 defective components. If 2 components are chosen at random without replacement, what is the probability that BOTH components are pristine?",
-      "options": [
-        {
-          "id": "A",
-          "text": "3/10"
-        },
-        {
-          "id": "B",
-          "text": "1/2"
-        },
-        {
-          "id": "C",
-          "text": "1/3"
-        },
-        {
-          "id": "D",
-          "text": "4/15"
-        },
-        {
-          "id": "E",
-          "text": "2/5"
-        }
-      ],
-      "correctOption": "C",
-      "explanation": "P(First pristine) = 6/10. P(Second pristine) = 5/9. Joint probability = (6/10) * (5/9) = 30/90 = 1/3.",
-      "id": 41,
-      "testId": "test-26"
-    },
-    {
-      "subType": "word_problem",
-      "category": "math",
-      "question": "What is (3/4) divided by (5/8)?",
-      "options": [
-        {
-          "id": "A",
-          "text": "5/6"
-        },
-        {
-          "id": "B",
-          "text": "7/8"
-        },
-        {
-          "id": "C",
-          "text": "8/15"
-        },
-        {
-          "id": "D",
-          "text": "6/5 (or 1.2)"
-        },
-        {
-          "id": "E",
-          "text": "15/32"
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "(3/4) * (8/5) = 24/20 = 6/5 = 1.2.",
-      "id": 42,
-      "testId": "test-26"
-    },
-    {
-      "subType": "odd_one_out",
-      "category": "spatial",
-      "question": "Identify the odd one out among these 5 geometric figures:",
-      "figureType": "options_only",
-      "options": [
-        {
-          "id": "A",
-          "text": "C: Outline",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"37.5,12.299999999999997 56.400000000000006,37.5 37.5,62.7 18.599999999999998,37.5\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(90 37.5 37.5)\" />\n      \n    </svg>"
-        },
-        {
-          "id": "B",
-          "text": "E: Filled",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"37.5,12.299999999999997 56.400000000000006,37.5 37.5,62.7 18.599999999999998,37.5\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(180 37.5 37.5)\" />\n      \n    </svg>"
-        },
-        {
-          "id": "C",
-          "text": "B: Filled",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"37.5,12.299999999999997 56.400000000000006,37.5 37.5,62.7 18.599999999999998,37.5\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(45 37.5 37.5)\" />\n      \n    </svg>"
-        },
-        {
-          "id": "D",
-          "text": "D: Filled",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"37.5,12.299999999999997 56.400000000000006,37.5 37.5,62.7 18.599999999999998,37.5\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(135 37.5 37.5)\" />\n      \n    </svg>"
-        },
-        {
-          "id": "E",
-          "text": "A: Filled",
-          "svg": "<svg viewBox=\"0 0 75 75\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"75\" height=\"75\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <polygon points=\"37.5,12.299999999999997 56.400000000000006,37.5 37.5,62.7 18.599999999999998,37.5\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 37.5 37.5)\" />\n      \n    </svg>"
-        }
-      ],
-      "correctOption": "A",
-      "explanation": "Figures A, B, D, and E are all solid filled polygons. Figure C is the only unfilled outline.",
-      "id": 43,
-      "testId": "test-26"
-    },
-    {
-      "subType": "analogy",
-      "question": "QUERULOUS is to COMPLAIN as MELLIFLUOUS is to:",
-      "options": [
-        {
-          "id": "A",
-          "text": "Deceive"
-        },
-        {
-          "id": "B",
-          "text": "Screech"
-        },
-        {
-          "id": "C",
-          "text": "Stammer"
-        },
-        {
-          "id": "D",
-          "text": "Harass"
-        },
-        {
-          "id": "E",
-          "text": "Soothe"
-        }
-      ],
-      "correctOption": "E",
-      "explanation": "A querulous person tends to complain; a mellifluous sound or voice tends to soothe (sweet or musical).",
-      "id": 44,
-      "category": "verbal",
-      "testId": "test-26"
-    },
-    {
-      "subType": "number_series",
-      "category": "math",
-      "question": "Identify the missing number in the progression:\n1, 3, 7, 15, 31, 63, ?",
-      "options": [
-        {
-          "id": "A",
-          "text": "128"
-        },
-        {
-          "id": "B",
-          "text": "142"
-        },
-        {
-          "id": "C",
-          "text": "131"
-        },
-        {
-          "id": "D",
-          "text": "125"
-        },
-        {
-          "id": "E",
-          "text": "127"
-        }
-      ],
-      "correctOption": "E",
-      "explanation": "Formula 2^n - 1 or (Term * 2 + 1): 1*2+1=3; 3*2+1=7; 7*2+1=15; 15*2+1=31; 31*2+1=63; 63*2+1 = 127.",
-      "id": 45,
-      "testId": "test-26"
-    },
-    {
-      "subType": "sentence_completion",
-      "question": "Although the startup founder was praised for his _______ vision, his inability to manage daily cash flow led to _______ operations.",
-      "options": [
-        {
-          "id": "A",
-          "text": "visionary ... insolvent"
-        },
-        {
-          "id": "B",
-          "text": "cautious ... expansive"
-        },
-        {
-          "id": "C",
-          "text": "myopic ... flourishing"
-        },
-        {
-          "id": "D",
-          "text": "reckless ... stable"
-        },
-        {
-          "id": "E",
-          "text": "mundane ... profitable"
-        }
-      ],
-      "correctOption": "A",
-      "explanation": "Visionary contrasts with inability to manage cash flow leading to insolvent (bankrupt) operations.",
-      "id": 46,
-      "category": "verbal",
-      "testId": "test-26"
-    },
-    {
-      "subType": "number_series",
-      "category": "math",
-      "question": "What is the next number in this sequence?\n10, 12, 16, 24, 40, ?",
-      "options": [
-        {
-          "id": "A",
-          "text": "80"
-        },
-        {
-          "id": "B",
-          "text": "68"
-        },
-        {
-          "id": "C",
-          "text": "64"
-        },
-        {
-          "id": "D",
-          "text": "56"
-        },
-        {
-          "id": "E",
-          "text": "72"
-        }
-      ],
-      "correctOption": "E",
-      "explanation": "Differences double: +2, +4, +8, +16. Next difference is +32. 40 + 32 = 72.",
-      "id": 47,
-      "testId": "test-26"
-    },
-    {
-      "subType": "next_in_series",
-      "category": "spatial",
-      "question": "Which figure comes next in the sequence?",
-      "figureType": "sequence",
-      "sequenceFrames": [
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"15.399999999999999\" y=\"15.399999999999999\" width=\"39.2\" height=\"39.2\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(0 35 35)\" rx=\"4\" />\n      <circle cx=\"61.6\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"15.399999999999999\" y=\"15.399999999999999\" width=\"39.2\" height=\"39.2\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(45 35 35)\" rx=\"4\" />\n      <circle cx=\"35\" cy=\"61.6\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"15.399999999999999\" y=\"15.399999999999999\" width=\"39.2\" height=\"39.2\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(90 35 35)\" rx=\"4\" />\n      <circle cx=\"8.399999999999999\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>",
-        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"15.399999999999999\" y=\"15.399999999999999\" width=\"39.2\" height=\"39.2\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(135 35 35)\" rx=\"4\" />\n      <circle cx=\"34.99999999999999\" cy=\"8.399999999999999\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-      ],
-      "options": [
-        {
-          "id": "A",
-          "text": "Option E",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"15.399999999999999\" y=\"15.399999999999999\" width=\"39.2\" height=\"39.2\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(180 35 35)\" rx=\"4\" />\n      <circle cx=\"8.399999999999999\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        },
-        {
-          "id": "B",
-          "text": "Option A",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"15.399999999999999\" y=\"15.399999999999999\" width=\"39.2\" height=\"39.2\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(180 35 35)\" rx=\"4\" />\n      <circle cx=\"61.6\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        },
-        {
-          "id": "C",
-          "text": "Option C",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"15.399999999999999\" y=\"15.399999999999999\" width=\"39.2\" height=\"39.2\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(135 35 35)\" rx=\"4\" />\n      <circle cx=\"61.6\" cy=\"35\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        },
-        {
-          "id": "D",
-          "text": "Option D",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"15.399999999999999\" y=\"15.399999999999999\" width=\"39.2\" height=\"39.2\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(90 35 35)\" rx=\"4\" />\n      <circle cx=\"34.99999999999999\" cy=\"8.399999999999999\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        },
-        {
-          "id": "E",
-          "text": "Option B",
-          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect width=\"70\" height=\"70\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n      <rect x=\"15.399999999999999\" y=\"15.399999999999999\" width=\"39.2\" height=\"39.2\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\" transform=\"rotate(180 35 35)\" rx=\"4\" />\n      <circle cx=\"35\" cy=\"61.6\" r=\"5.5\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"2\" />\n    </svg>"
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "Square rotates 45° clockwise each step (135° -> 180°). Orbiting dot steps clockwise through corners (0 -> 1 -> 2 -> 3 -> 0).",
-      "id": 48,
-      "testId": "test-26"
-    },
-    {
-      "subType": "antonym_synonym",
-      "question": "Which word is the best SYNONYM for \"INDEFATIGABLE\"?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Sluggish"
-        },
-        {
-          "id": "B",
-          "text": "Untiring"
-        },
-        {
-          "id": "C",
-          "text": "Weary"
-        },
-        {
-          "id": "D",
-          "text": "Lethargic"
-        },
-        {
-          "id": "E",
-          "text": "Timid"
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "Indefatigable means persisting tirelessly; incapable of being fatigued.",
-      "id": 49,
-      "category": "verbal",
-      "testId": "test-26"
-    },
-    {
-      "subType": "word_problem",
-      "category": "math",
-      "question": "Pipes A and B can fill an industrial reservoir in 12 hours and 15 hours respectively, while drain Pipe C can empty it in 20 hours. If all three pipes operate concurrently, how many hours will it take to fill the reservoir?",
-      "options": [
-        {
-          "id": "A",
-          "text": "7.5 hours"
+          "text": "9 hours"
         },
         {
           "id": "B",
@@ -1669,19 +125,1666 @@
         },
         {
           "id": "C",
-          "text": "8.5 hours"
+          "text": "5 hours"
         },
         {
           "id": "D",
-          "text": "10 hours"
+          "text": "3 hours"
         },
         {
           "id": "E",
-          "text": "12 hours"
+          "text": "4 hours"
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "**Correct Answer: E** (4 hours)\n\n**Step-by-step Solution:**\n1. Formula: \\(T = \\frac{A \\times B}{A + B}\\).\n2. Since one worker is twice as fast as the other, combined time is \\(2/3 \\times A = 2/3 \\times 6 = 4\\).\n\n💡 **Speed Tip:** When worker B takes double worker A's time, combined time is always two-thirds of worker A's time!",
+      "category": "math",
+      "subType": "word_problem",
+      "id": 4,
+      "testId": "test-26"
+    },
+    {
+      "question": "Which of the following words is most SIMILAR in meaning to \"CASTIGATION\"?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Commendation"
+        },
+        {
+          "id": "B",
+          "text": "Reward"
+        },
+        {
+          "id": "C",
+          "text": "Compliment"
+        },
+        {
+          "id": "D",
+          "text": "Chastisement"
+        },
+        {
+          "id": "E",
+          "text": "Praise"
         }
       ],
       "correctOption": "D",
-      "explanation": "Rate equation: 1/12 + 1/15 - 1/20. Common denominator = 60. (5 + 4 - 3)/60 = 6/60 = 1/10. Time = 10 hours.",
+      "explanation": "**Correct Answer: D**\n\nCastigation means severe punishment or criticism.\n\n💡 **Speed Tip:** Rapidly eliminate choices that belong to the wrong category. Target <8 seconds.",
+      "category": "verbal",
+      "subType": "synonym",
+      "id": 5,
+      "testId": "test-26"
+    },
+    {
+      "question": "A studio condenser microphone originally priced at $390 is placed on clearance with a 20% discount. At checkout, an additional 10% coupon is applied to the discounted price. What is the final price of the studio condenser microphone?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$281"
+        },
+        {
+          "id": "B",
+          "text": "$273"
+        },
+        {
+          "id": "C",
+          "text": "$289"
+        },
+        {
+          "id": "D",
+          "text": "$295"
+        },
+        {
+          "id": "E",
+          "text": "$275"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "**Correct Answer: A** ($281)\n\n**Step-by-step Solution:**\n1. Price after 20% discount: $390 \\times 0.80 = $312.\n2. Price after additional 10% coupon: $312 \\times 0.90 = $281.\n\n💡 **Speed Tip:** Multiply discount factors directly: 390 \\times 0.80 \\times 0.90 = $281.",
+      "category": "math",
+      "subType": "percentage",
+      "id": 6,
+      "testId": "test-26"
+    },
+    {
+      "question": "[Simulation #26 - Series 2] Which polygon figure correctly completes this vertex-increment sequence?",
+      "svgSeries": [
+        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,11.0 55.8,47.0 14.2,47.0\" fill=\"rgba(56, 189, 248, 0.15)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>",
+        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,11.0 59.0,35.0 35.0,59.0 11.0,35.0\" fill=\"rgba(56, 189, 248, 0.15)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>",
+        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,11.0 57.8,27.6 49.1,54.4 20.9,54.4 12.2,27.6\" fill=\"rgba(56, 189, 248, 0.15)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>",
+        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,11.0 55.8,23.0 55.8,47.0 35.0,59.0 14.2,47.0 14.2,23.0\" fill=\"rgba(56, 189, 248, 0.15)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,11.0 55.8,23.0 55.8,47.0 35.0,59.0 14.2,47.0 14.2,23.0\" fill=\"rgba(56, 189, 248, 0.15)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        },
+        {
+          "id": "B",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,11.0 52.0,18.0 59.0,35.0 52.0,52.0 35.0,59.0 18.0,52.0 11.0,35.0 18.0,18.0\" fill=\"rgba(56, 189, 248, 0.15)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        },
+        {
+          "id": "C",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,11.0 53.8,20.0 58.4,40.3 45.4,56.6 24.6,56.6 11.6,40.3 16.2,20.0\" fill=\"rgba(56, 189, 248, 0.15)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        },
+        {
+          "id": "D",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,11.0 57.8,27.6 49.1,54.4 20.9,54.4 12.2,27.6\" fill=\"rgba(56, 189, 248, 0.15)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        },
+        {
+          "id": "E",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,11.0 59.0,35.0 35.0,59.0 11.0,35.0\" fill=\"rgba(56, 189, 248, 0.15)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "**Correct Answer: C**\n\n**Pattern:**\nEach frame increments polygon vertices by 1: 3 sides -> 4 -> 5 -> 6.\nThe next figure must have **7 sides**.",
+      "category": "spatial",
+      "subType": "series",
+      "id": 7,
+      "testId": "test-26"
+    },
+    {
+      "question": "Which of the following words is most SIMILAR in meaning to \"DEFICIENCY\"?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wealth"
+        },
+        {
+          "id": "B",
+          "text": "Surplus"
+        },
+        {
+          "id": "C",
+          "text": "Shortage"
+        },
+        {
+          "id": "D",
+          "text": "Excess"
+        },
+        {
+          "id": "E",
+          "text": "Sufficiency"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "**Correct Answer: C**\n\nDeficiency means a lack or shortage.\n\n💡 **Speed Tip:** Rapidly eliminate choices that belong to the wrong category. Target <8 seconds.",
+      "category": "verbal",
+      "subType": "synonym",
+      "id": 8,
+      "testId": "test-26"
+    },
+    {
+      "question": "A quarterly operational budget of $23,000 is allocated between Satellite Telecom and Ground in the ratio of 3 : 2. How much funding does the primary division with the larger share receive?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$13,800"
+        },
+        {
+          "id": "B",
+          "text": "$9,200"
+        },
+        {
+          "id": "C",
+          "text": "$11,500"
+        },
+        {
+          "id": "D",
+          "text": "$18,400"
+        },
+        {
+          "id": "E",
+          "text": "$9,200"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "**Correct Answer: A** ($13,800)\n\n**Step-by-step Solution:**\n1. Total parts in ratio = 3 + 2 = 5.\n2. Value per part = $23000 / 5 = $4600.\n3. Larger share (3 parts) = 3 \\times $4600 = **$13,800**.",
+      "category": "math",
+      "subType": "word_problem",
+      "id": 9,
+      "testId": "test-26"
+    },
+    {
+      "question": "Which of the following words is most SIMILAR in meaning to \"EMULATE\"?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Oppose"
+        },
+        {
+          "id": "B",
+          "text": "Imitate"
+        },
+        {
+          "id": "C",
+          "text": "Reject"
+        },
+        {
+          "id": "D",
+          "text": "Differ"
+        },
+        {
+          "id": "E",
+          "text": "Neglect"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "**Correct Answer: B**\n\nEmulate means to match or imitate through effort.\n\n💡 **Speed Tip:** Rapidly eliminate choices that belong to the wrong category. Target <8 seconds.",
+      "category": "verbal",
+      "subType": "synonym",
+      "id": 10,
+      "testId": "test-26"
+    },
+    {
+      "question": "What is the next number in this sequence?\n82, 84, 88, 94, 102, ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "112"
+        },
+        {
+          "id": "B",
+          "text": "110"
+        },
+        {
+          "id": "C",
+          "text": "114"
+        },
+        {
+          "id": "D",
+          "text": "110"
+        },
+        {
+          "id": "E",
+          "text": "116"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "**Correct Answer: A** (112)\n\n**Pattern:**\nConsecutive differences increase by 2 each time: +2, +4, +6, +8.\nThe next step is +10: 102 + 10 = **112**.",
+      "category": "math",
+      "subType": "number_series",
+      "id": 11,
+      "testId": "test-26"
+    },
+    {
+      "question": "[Simulation #26 - Series 3] Which sector figure logically continues this circular sector rotation?",
+      "svgSeries": [
+        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"24\" fill=\"rgba(15, 23, 42, 0.6)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <line x1=\"11\" y1=\"35\" x2=\"59\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" />\n        <line x1=\"35\" y1=\"11\" x2=\"35\" y2=\"59\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" />\n        <path d=\"M 35 35 L 59 35 A 24 24 0 0 0 35 11 Z\" fill=\"#ec4899\" stroke=\"#0284c7\" stroke-width=\"1.5\" />\n      </svg>",
+        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"24\" fill=\"rgba(15, 23, 42, 0.6)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <line x1=\"11\" y1=\"35\" x2=\"59\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" />\n        <line x1=\"35\" y1=\"11\" x2=\"35\" y2=\"59\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" />\n        <path d=\"M 35 35 L 59 35 A 24 24 0 0 1 35 59 Z\" fill=\"#ec4899\" stroke=\"#0284c7\" stroke-width=\"1.5\" />\n      </svg>",
+        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"24\" fill=\"rgba(15, 23, 42, 0.6)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <line x1=\"11\" y1=\"35\" x2=\"59\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" />\n        <line x1=\"35\" y1=\"11\" x2=\"35\" y2=\"59\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" />\n        <path d=\"M 35 35 L 35 59 A 24 24 0 0 1 11 35 Z\" fill=\"#ec4899\" stroke=\"#0284c7\" stroke-width=\"1.5\" />\n      </svg>",
+        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"24\" fill=\"rgba(15, 23, 42, 0.6)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <line x1=\"11\" y1=\"35\" x2=\"59\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" />\n        <line x1=\"35\" y1=\"11\" x2=\"35\" y2=\"59\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" />\n        <path d=\"M 35 35 L 11 35 A 24 24 0 0 1 35 11 Z\" fill=\"#ec4899\" stroke=\"#0284c7\" stroke-width=\"1.5\" />\n      </svg>"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"24\" fill=\"rgba(15, 23, 42, 0.6)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <line x1=\"11\" y1=\"35\" x2=\"59\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" />\n        <line x1=\"35\" y1=\"11\" x2=\"35\" y2=\"59\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" />\n        <path d=\"M 35 35 L 11 35 A 24 24 0 0 1 35 11 Z\" fill=\"#ec4899\" stroke=\"#0284c7\" stroke-width=\"1.5\" />\n      </svg>"
+        },
+        {
+          "id": "B",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"24\" fill=\"rgba(15, 23, 42, 0.6)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <line x1=\"11\" y1=\"35\" x2=\"59\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" />\n        <line x1=\"35\" y1=\"11\" x2=\"35\" y2=\"59\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" />\n        <path d=\"M 35 35 L 35 59 A 24 24 0 0 1 11 35 Z\" fill=\"#ec4899\" stroke=\"#0284c7\" stroke-width=\"1.5\" />\n      </svg>"
+        },
+        {
+          "id": "C",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"24\" fill=\"rgba(15, 23, 42, 0.6)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <line x1=\"11\" y1=\"35\" x2=\"59\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" />\n        <line x1=\"35\" y1=\"11\" x2=\"35\" y2=\"59\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" />\n        <path d=\"M 35 35 L 59 35 A 24 24 0 0 0 35 11 Z\" fill=\"#ec4899\" stroke=\"#0284c7\" stroke-width=\"1.5\" />\n      </svg>"
+        },
+        {
+          "id": "D",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"24\" fill=\"rgba(15, 23, 42, 0.6)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <line x1=\"11\" y1=\"35\" x2=\"59\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" />\n        <line x1=\"35\" y1=\"11\" x2=\"35\" y2=\"59\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" />\n        <path d=\"M 35 35 L 59 35 A 24 24 0 0 1 35 59 Z\" fill=\"#ec4899\" stroke=\"#0284c7\" stroke-width=\"1.5\" />\n      </svg>"
+        },
+        {
+          "id": "E",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"24\" fill=\"#ec4899\" stroke=\"#0284c7\" stroke-width=\"2\" /></svg>"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "**Correct Answer: C**\n\n**Pattern:**\nThe shaded sector advances by 90° clockwise in each consecutive frame.",
+      "category": "spatial",
+      "subType": "series",
+      "id": 12,
+      "testId": "test-26"
+    },
+    {
+      "question": "Determine the next number in this progression:\n27, 53, 105, 209, 417, ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "832"
+        },
+        {
+          "id": "B",
+          "text": "833"
+        },
+        {
+          "id": "C",
+          "text": "834"
+        },
+        {
+          "id": "D",
+          "text": "837"
+        },
+        {
+          "id": "E",
+          "text": "830"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "**Correct Answer: B** (833)\n\n**Pattern:**\nEach term is multiplied by 2 and then subtracted by 1: \\(417 \\times 2 - 1 = 833\\).",
+      "category": "math",
+      "subType": "number_series",
+      "id": 13,
+      "testId": "test-26"
+    },
+    {
+      "question": "Which of the following words is most SIMILAR in meaning to \"FEASIBLE\"?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Unworkable"
+        },
+        {
+          "id": "B",
+          "text": "Impractical"
+        },
+        {
+          "id": "C",
+          "text": "Utopian"
+        },
+        {
+          "id": "D",
+          "text": "Impossible"
+        },
+        {
+          "id": "E",
+          "text": "Viable"
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "**Correct Answer: E**\n\nFeasible means possible and practical to do.\n\n💡 **Speed Tip:** Rapidly eliminate choices that belong to the wrong category. Target <8 seconds.",
+      "category": "verbal",
+      "subType": "synonym",
+      "id": 14,
+      "testId": "test-26"
+    },
+    {
+      "question": "What number replaces the question mark in this alternating sequence?\n60, 142, 63, 138, 66, 134, ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "72"
+        },
+        {
+          "id": "B",
+          "text": "67"
+        },
+        {
+          "id": "C",
+          "text": "69"
+        },
+        {
+          "id": "D",
+          "text": "130"
+        },
+        {
+          "id": "E",
+          "text": "70"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "**Correct Answer: C** (69)\n\n**Pattern:**\nTwo interleaved sequences:\n- Odd terms (1st, 3rd, 5th, 7th): 60 -> 63 -> 66 -> ? (+3) = **69**.\n- Even terms: 142 -> 138 -> 134 (-4).",
+      "category": "math",
+      "subType": "number_series",
+      "id": 15,
+      "testId": "test-26"
+    },
+    {
+      "question": "[Simulation #26 - Series 4] Which concentric ring figure correctly continues this alternating core symbol sequence?",
+      "svgSeries": [
+        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"25\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" />\n        <circle cx=\"35\" cy=\"35\" r=\"16\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" />\n        <circle cx=\"35\" cy=\"35\" r=\"7\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1\" />\n        <line x1=\"35\" y1=\"10\" x2=\"35\" y2=\"60\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"10\" y1=\"35\" x2=\"60\" y2=\"35\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" />\n      </svg>",
+        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"25\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" />\n        <circle cx=\"35\" cy=\"35\" r=\"16\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" />\n        <circle cx=\"35\" cy=\"35\" r=\"7\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\" />\n        <line x1=\"17\" y1=\"17\" x2=\"53\" y2=\"53\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"53\" y1=\"17\" x2=\"17\" y2=\"53\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\" />\n      </svg>",
+        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"25\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" />\n        <circle cx=\"35\" cy=\"35\" r=\"16\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" />\n        <circle cx=\"35\" cy=\"35\" r=\"7\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1\" />\n        <line x1=\"35\" y1=\"10\" x2=\"35\" y2=\"60\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"10\" y1=\"35\" x2=\"60\" y2=\"35\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" />\n      </svg>",
+        "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"25\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" />\n        <circle cx=\"35\" cy=\"35\" r=\"16\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" />\n        <circle cx=\"35\" cy=\"35\" r=\"7\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\" />\n        <line x1=\"17\" y1=\"17\" x2=\"53\" y2=\"53\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"53\" y1=\"17\" x2=\"17\" y2=\"53\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\" />\n      </svg>"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"25\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" />\n        <circle cx=\"35\" cy=\"35\" r=\"16\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" />\n        <circle cx=\"35\" cy=\"35\" r=\"7\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1\" />\n        <line x1=\"35\" y1=\"10\" x2=\"35\" y2=\"60\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"10\" y1=\"35\" x2=\"60\" y2=\"35\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" />\n      </svg>"
+        },
+        {
+          "id": "B",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"25\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" />\n        <circle cx=\"35\" cy=\"35\" r=\"16\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" />\n        <circle cx=\"35\" cy=\"35\" r=\"7\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\" />\n        <line x1=\"17\" y1=\"17\" x2=\"53\" y2=\"53\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"53\" y1=\"17\" x2=\"17\" y2=\"53\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\" />\n      </svg>"
+        },
+        {
+          "id": "C",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"25\" fill=\"#ec4899\" stroke=\"#0284c7\" stroke-width=\"2\" /></svg>"
+        },
+        {
+          "id": "D",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"35\" cy=\"35\" r=\"25\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" />\n        <circle cx=\"35\" cy=\"35\" r=\"16\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" />\n        <circle cx=\"35\" cy=\"35\" r=\"7\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\" />\n        <line x1=\"17\" y1=\"17\" x2=\"53\" y2=\"53\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"53\" y1=\"17\" x2=\"17\" y2=\"53\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\" />\n      </svg>"
+        },
+        {
+          "id": "E",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"25\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" /><circle cx=\"35\" cy=\"35\" r=\"16\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" /></svg>"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "**Correct Answer: A**\n\n**Pattern:**\nThe cross orientation alternates between perpendicular (+) and diagonal (X). Frame 5 returns to perpendicular (+).",
+      "category": "spatial",
+      "subType": "series",
+      "id": 16,
+      "testId": "test-26"
+    },
+    {
+      "question": "DRY DOCK : SHIPBUILDING is analogous to:",
+      "options": [
+        {
+          "id": "A",
+          "text": "SHIPBUILDING : DRY DOCK"
+        },
+        {
+          "id": "B",
+          "text": "CLEANROOM : MICROCHIPS"
+        },
+        {
+          "id": "C",
+          "text": "CLEANROOM : SINK"
+        },
+        {
+          "id": "D",
+          "text": "FAST : MOTION"
+        },
+        {
+          "id": "E",
+          "text": "TOOL : WORKER"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "**Correct Answer: B**\n\nBridge relationship: specialized industrial staging environment to manufactured good. DRY DOCK : SHIPBUILDING shares this exact relationship with CLEANROOM : MICROCHIPS.\n\n💡 **Speed Tip:** Build a precise bridge sentence: \"X is used to / is composed of Y\". Apply to find the exact match.",
+      "category": "verbal",
+      "subType": "analogy",
+      "id": 17,
+      "testId": "test-26"
+    },
+    {
+      "question": "Identify the next number in this mathematical series:\n54, 57, 62, 69, 78, ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "89"
+        },
+        {
+          "id": "B",
+          "text": "94"
+        },
+        {
+          "id": "C",
+          "text": "99"
+        },
+        {
+          "id": "D",
+          "text": "85"
+        },
+        {
+          "id": "E",
+          "text": "36"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "**Correct Answer: A** (89)\n\n**Pattern:**\nFormula is \\(n^2 + 53\\):\n- 1st: \\(1^2 + 53 = 54\\)\n- 2nd: \\(2^2 + 53 = 57\\)\n- 5th: \\(5^2 + 53 = 78\\)\n- Next (6th): \\(6^2 + 53 = 36 + 53 = **89**\\).",
+      "category": "math",
+      "subType": "number_series",
+      "id": 18,
+      "testId": "test-26"
+    },
+    {
+      "question": "MONOLITH : STONE is analogous to:",
+      "options": [
+        {
+          "id": "A",
+          "text": "INGOT : METAL"
+        },
+        {
+          "id": "B",
+          "text": "TOOL : WORKER"
+        },
+        {
+          "id": "C",
+          "text": "INGOT : SINK"
+        },
+        {
+          "id": "D",
+          "text": "FAST : MOTION"
+        },
+        {
+          "id": "E",
+          "text": "STONE : MONOLITH"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "**Correct Answer: A**\n\nBridge relationship: single continuous solid block to raw material. MONOLITH : STONE shares this exact relationship with INGOT : METAL.\n\n💡 **Speed Tip:** Build a precise bridge sentence: \"X is used to / is composed of Y\". Apply to find the exact match.",
+      "category": "verbal",
+      "subType": "analogy",
+      "id": 19,
+      "testId": "test-26"
+    },
+    {
+      "question": "If 4 times a number - 14 is equal to 2 times the number + 44, what is the number?",
+      "options": [
+        {
+          "id": "A",
+          "text": "31"
+        },
+        {
+          "id": "B",
+          "text": "27"
+        },
+        {
+          "id": "C",
+          "text": "29"
+        },
+        {
+          "id": "D",
+          "text": "33"
+        },
+        {
+          "id": "E",
+          "text": "28"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "**Correct Answer: C** (29)\n\n**Step-by-step Solution:**\n1. Equation: \\(4x - 14 = 2x + 44\\).\n2. Rearrange: \\(2x = 58\\).\n3. \\(x = 29\\).",
+      "category": "math",
+      "subType": "algebra",
+      "id": 20,
+      "testId": "test-26"
+    },
+    {
+      "question": "[Simulation #26 - Matrix 1] Which oriented figure correctly completes the rotational logic in the bottom-right cell of this 3×3 matrix?",
+      "matrixData": [
+        {
+          "row": 0,
+          "col": 0,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"55.0,35.0 25.0,52.3 25.0,17.7\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,55.0 17.7,25.0 52.3,25.0\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"15.0,35.0 45.0,17.7 45.0,52.3\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,55.0 17.7,25.0 52.3,25.0\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"15.0,35.0 45.0,17.7 45.0,52.3\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,15.0 52.3,45.0 17.7,45.0\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"15.0,35.0 45.0,17.7 45.0,52.3\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,15.0 52.3,45.0 17.7,45.0\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "isMissing": true
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"55.0,35.0 25.0,52.3 25.0,17.7\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        },
+        {
+          "id": "B",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"15.0,35.0 45.0,17.7 45.0,52.3\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        },
+        {
+          "id": "C",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,55.0 17.7,25.0 52.3,25.0\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        },
+        {
+          "id": "D",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,15.0 52.3,45.0 17.7,45.0\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        },
+        {
+          "id": "E",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"49.1,49.1 15.7,40.2 40.2,15.7\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3.5\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"1\" />\n      </svg>"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "**Correct Answer: A**\n\n**Matrix Logic:**\nAcross each row from left to right, the shape rotates 90° clockwise.",
+      "category": "spatial",
+      "subType": "matrix",
+      "id": 21,
+      "testId": "test-26"
+    },
+    {
+      "question": "The sum of 5 consecutive odd integers is 315. What is the value of the greatest of these integers?",
+      "options": [
+        {
+          "id": "A",
+          "text": "63"
+        },
+        {
+          "id": "B",
+          "text": "67"
+        },
+        {
+          "id": "C",
+          "text": "69"
+        },
+        {
+          "id": "D",
+          "text": "59"
+        },
+        {
+          "id": "E",
+          "text": "65"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "**Correct Answer: B** (67)\n\n**Step-by-step Solution:**\n1. The middle (3rd) integer is the average: 315 / 5 = 63.\n2. The greatest integer is the 5th: 63 + 4 = **67**.",
+      "category": "math",
+      "subType": "word_problem",
+      "id": 22,
+      "testId": "test-26"
+    },
+    {
+      "question": "WAVELENGTH : FREQUENCY is analogous to:",
+      "options": [
+        {
+          "id": "A",
+          "text": "RESISTANCE : SINK"
+        },
+        {
+          "id": "B",
+          "text": "RESISTANCE : CURRENT"
+        },
+        {
+          "id": "C",
+          "text": "FAST : MOTION"
+        },
+        {
+          "id": "D",
+          "text": "TOOL : WORKER"
+        },
+        {
+          "id": "E",
+          "text": "FREQUENCY : WAVELENGTH"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "**Correct Answer: B**\n\nBridge relationship: inverse physical relationship governed by fundamental law. WAVELENGTH : FREQUENCY shares this exact relationship with RESISTANCE : CURRENT.\n\n💡 **Speed Tip:** Build a precise bridge sentence: \"X is used to / is composed of Y\". Apply to find the exact match.",
+      "category": "verbal",
+      "subType": "analogy",
+      "id": 23,
+      "testId": "test-26"
+    },
+    {
+      "question": "An institutional investor deposits $8,000 into a commercial trust earning 8% simple annual interest. What will be the total balance of the account after 3 years if no withdrawals are made?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$9,820"
+        },
+        {
+          "id": "B",
+          "text": "$10,070"
+        },
+        {
+          "id": "C",
+          "text": "$10,880"
+        },
+        {
+          "id": "D",
+          "text": "$1,920"
+        },
+        {
+          "id": "E",
+          "text": "$9,920"
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "**Correct Answer: E** ($9,920)\n\n**Step-by-step Solution:**\n1. Interest = Principal \\times Rate \\times Time = $8000 \\times 0.08 \\times 3 = $1920.\n2. Total Balance = $8000 + $1920 = **$9,920**.",
+      "category": "math",
+      "subType": "word_problem",
+      "id": 24,
+      "testId": "test-26"
+    },
+    {
+      "question": "[Simulation #26 - Matrix 2] Which dot configuration logically satisfies the additive row rule in this 3×3 matrix?",
+      "matrixData": [
+        {
+          "row": 0,
+          "col": 0,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"12\" y=\"12\" width=\"46\" height=\"46\" rx=\"8\" fill=\"rgba(15, 23, 42, 0.4)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <circle cx=\"35\" cy=\"35\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n      </svg>"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"12\" y=\"12\" width=\"46\" height=\"46\" rx=\"8\" fill=\"rgba(15, 23, 42, 0.4)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <circle cx=\"24\" cy=\"35\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"46\" cy=\"35\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n      </svg>"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"12\" y=\"12\" width=\"46\" height=\"46\" rx=\"8\" fill=\"rgba(15, 23, 42, 0.4)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <circle cx=\"22\" cy=\"24\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"48\" cy=\"24\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"35\" cy=\"48\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n      </svg>"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"12\" y=\"12\" width=\"46\" height=\"46\" rx=\"8\" fill=\"rgba(15, 23, 42, 0.4)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <circle cx=\"24\" cy=\"35\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"46\" cy=\"35\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n      </svg>"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"12\" y=\"12\" width=\"46\" height=\"46\" rx=\"8\" fill=\"rgba(15, 23, 42, 0.4)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <circle cx=\"24\" cy=\"35\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"46\" cy=\"35\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n      </svg>"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"12\" y=\"12\" width=\"46\" height=\"46\" rx=\"8\" fill=\"rgba(15, 23, 42, 0.4)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <circle cx=\"24\" cy=\"24\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"46\" cy=\"24\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"24\" cy=\"46\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"46\" cy=\"46\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n      </svg>"
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"12\" y=\"12\" width=\"46\" height=\"46\" rx=\"8\" fill=\"rgba(15, 23, 42, 0.4)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <circle cx=\"35\" cy=\"35\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n      </svg>"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"12\" y=\"12\" width=\"46\" height=\"46\" rx=\"8\" fill=\"rgba(15, 23, 42, 0.4)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <circle cx=\"24\" cy=\"24\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"46\" cy=\"24\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"24\" cy=\"46\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"46\" cy=\"46\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n      </svg>"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "isMissing": true
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"12\" y=\"12\" width=\"46\" height=\"46\" rx=\"8\" fill=\"rgba(15, 23, 42, 0.4)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <circle cx=\"24\" cy=\"35\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"46\" cy=\"35\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n      </svg>"
+        },
+        {
+          "id": "B",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"12\" y=\"12\" width=\"46\" height=\"46\" rx=\"8\" fill=\"rgba(15, 23, 42, 0.4)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <circle cx=\"22\" cy=\"24\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"48\" cy=\"24\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"35\" cy=\"48\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n      </svg>"
+        },
+        {
+          "id": "C",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"12\" y=\"12\" width=\"46\" height=\"46\" rx=\"8\" fill=\"rgba(15, 23, 42, 0.4)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <circle cx=\"24\" cy=\"22\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"46\" cy=\"22\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"24\" cy=\"35\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"46\" cy=\"35\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"24\" cy=\"48\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"46\" cy=\"48\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n      </svg>"
+        },
+        {
+          "id": "D",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"12\" y=\"12\" width=\"46\" height=\"46\" rx=\"8\" fill=\"rgba(15, 23, 42, 0.4)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <circle cx=\"24\" cy=\"24\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"46\" cy=\"24\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"35\" cy=\"35\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"24\" cy=\"46\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"46\" cy=\"46\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n      </svg>"
+        },
+        {
+          "id": "E",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"12\" y=\"12\" width=\"46\" height=\"46\" rx=\"8\" fill=\"rgba(15, 23, 42, 0.4)\" stroke=\"#475569\" stroke-width=\"2\" />\n        <circle cx=\"24\" cy=\"24\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"46\" cy=\"24\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"24\" cy=\"46\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" /><circle cx=\"46\" cy=\"46\" r=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"1.5\" />\n      </svg>"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "**Correct Answer: D**\n\n**Matrix Logic:**\nAdditive rule across rows: Column 1 count + Column 2 count = Column 3 count (1 + 4 = 5 dots).",
+      "category": "spatial",
+      "subType": "matrix",
+      "id": 25,
+      "testId": "test-26"
+    },
+    {
+      "question": "PROPELLER : THRUST is analogous to:",
+      "options": [
+        {
+          "id": "A",
+          "text": "TOOL : WORKER"
+        },
+        {
+          "id": "B",
+          "text": "WHEEL : SINK"
+        },
+        {
+          "id": "C",
+          "text": "WHEEL : TRACTION"
+        },
+        {
+          "id": "D",
+          "text": "FAST : MOTION"
+        },
+        {
+          "id": "E",
+          "text": "THRUST : PROPELLER"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "**Correct Answer: C**\n\nBridge relationship: rotating mechanical contact component delivering kinetic drive. PROPELLER : THRUST shares this exact relationship with WHEEL : TRACTION.\n\n💡 **Speed Tip:** Build a precise bridge sentence: \"X is used to / is composed of Y\". Apply to find the exact match.",
+      "category": "verbal",
+      "subType": "analogy",
+      "id": 26,
+      "testId": "test-26"
+    },
+    {
+      "question": "An analyst candidate named Yosef scored 78, 87, 80, and 85 on their first 4 aptitude test modules. What score must Yosef achieve on the 5th module to attain an overall target average of 82?",
+      "options": [
+        {
+          "id": "A",
+          "text": "84"
+        },
+        {
+          "id": "B",
+          "text": "82"
+        },
+        {
+          "id": "C",
+          "text": "75"
+        },
+        {
+          "id": "D",
+          "text": "80"
+        },
+        {
+          "id": "E",
+          "text": "88"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "**Correct Answer: D** (80)\n\n**Step-by-step Solution:**\n1. Total points required = 5 \\times 82 = 410.\n2. Sum of first 4 tests = 330.\n3. Score needed on 5th test = 410 - 330 = **80**.",
+      "category": "math",
+      "subType": "word_problem",
+      "id": 27,
+      "testId": "test-26"
+    },
+    {
+      "question": "SUBPOENA : WITNESS is analogous to:",
+      "options": [
+        {
+          "id": "A",
+          "text": "FAST : MOTION"
+        },
+        {
+          "id": "B",
+          "text": "WITNESS : SUBPOENA"
+        },
+        {
+          "id": "C",
+          "text": "WARRANT : SEARCH"
+        },
+        {
+          "id": "D",
+          "text": "TOOL : WORKER"
+        },
+        {
+          "id": "E",
+          "text": "WARRANT : SINK"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "**Correct Answer: C**\n\nBridge relationship: formal judicial writ commanding participation. SUBPOENA : WITNESS shares this exact relationship with WARRANT : SEARCH.\n\n💡 **Speed Tip:** Build a precise bridge sentence: \"X is used to / is composed of Y\". Apply to find the exact match.",
+      "category": "verbal",
+      "subType": "analogy",
+      "id": 28,
+      "testId": "test-26"
+    },
+    {
+      "question": "A corporation named YieldMax Capital allocates 1/3 of its quarterly revenue to facility leases and 1/4 of its total revenue to operational software. If the remaining unallocated balance is $85,000, what was the company's total quarterly revenue?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$1,70,000"
+        },
+        {
+          "id": "B",
+          "text": "$1,92,000"
+        },
+        {
+          "id": "C",
+          "text": "$2,04,000"
+        },
+        {
+          "id": "D",
+          "text": "$2,28,000"
+        },
+        {
+          "id": "E",
+          "text": "$2,19,000"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "**Correct Answer: C** ($2,04,000)\n\n**Step-by-step Solution:**\n1. Fraction spent = 1/3 + 1/4 = 4/12 + 3/12 = 7/12.\n2. Remaining fraction = 1 - 7/12 = 5/12.\n3. Total = $85,000 \\times 12 / 5 = **$2,04,000**.",
+      "category": "math",
+      "subType": "word_problem",
+      "id": 29,
+      "testId": "test-26"
+    },
+    {
+      "question": "[Simulation #26 - Matrix 3] Which geometric shape completes the Latin-square permutation in the bottom-right cell?",
+      "matrixData": [
+        {
+          "row": 0,
+          "col": 0,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"20\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" /></svg>"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"16\" width=\"38\" height=\"38\" rx=\"4\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" /></svg>"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"35,14 56,35 35,56 14,35\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /></svg>"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"16\" width=\"38\" height=\"38\" rx=\"4\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" /></svg>"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"35,14 56,35 35,56 14,35\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /></svg>"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"20\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" /></svg>"
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"35,14 56,35 35,56 14,35\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /></svg>"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"20\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" /></svg>"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "isMissing": true
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"16\" width=\"38\" height=\"38\" rx=\"4\" fill=\"#ec4899\" stroke=\"#ec4899\" stroke-width=\"2.5\" /></svg>"
+        },
+        {
+          "id": "B",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"16\" y=\"16\" width=\"38\" height=\"38\" rx=\"4\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" /></svg>"
+        },
+        {
+          "id": "C",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"10\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"2\" /></svg>"
+        },
+        {
+          "id": "D",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"20\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" /></svg>"
+        },
+        {
+          "id": "E",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"35,14 56,35 35,56 14,35\" fill=\"rgba(56, 189, 248, 0.2)\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /></svg>"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "**Correct Answer: B**\n\n**Latin Square Logic:**\nEach row and column contains exactly one Circle, one Diamond, and one Square. Row 3 lacks the **Square**.",
+      "category": "spatial",
+      "subType": "matrix",
+      "id": 30,
+      "testId": "test-26"
+    },
+    {
+      "question": "[Scenario #97] Premise 1: All high-throughput optic fiber links rely on total internal reflection inside silica glass cores.\nPremise 2: The transatlantic cable Apollo is a high-throughput optic fiber link.\nWhich conclusion follows with absolute logical necessity?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No definitive deduction is logically warranted from the premises."
+        },
+        {
+          "id": "B",
+          "text": "Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores."
+        },
+        {
+          "id": "C",
+          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+        },
+        {
+          "id": "D",
+          "text": "Premise 1 contradicts Premise 2."
+        },
+        {
+          "id": "E",
+          "text": "The opposite of the stated conclusion must necessarily be valid."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "**Correct Answer: B**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "category": "verbal",
+      "subType": "syllogism",
+      "id": 31,
+      "testId": "test-26"
+    },
+    {
+      "question": "A senior partner is currently 3 times as old as an apprentice associate. In 10 years, the sum of their ages will be 148. What is the senior partner's current age?",
+      "options": [
+        {
+          "id": "A",
+          "text": "96 years"
+        },
+        {
+          "id": "B",
+          "text": "106 years"
+        },
+        {
+          "id": "C",
+          "text": "32 years"
+        },
+        {
+          "id": "D",
+          "text": "90 years"
+        },
+        {
+          "id": "E",
+          "text": "102 years"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "**Correct Answer: A** (96 years)\n\n**Step-by-step Solution:**\n1. Let apprentice's age = \\(s\\). Partner's age = \\(3s\\).\n2. In 10 years: \\((s + 10) + (3s + 10) = 4s + 20 = 148\\).\n3. \\(4s = 128\\); \\(s = 32\\).\n4. Senior partner's age = 3 \\times 32 = **96 years**.",
+      "category": "math",
+      "subType": "word_problem",
+      "id": 32,
+      "testId": "test-26"
+    },
+    {
+      "question": "At an equipment depot, 3 desk organizers and 2 mesh pencil holders cost $33. Meanwhile, 2 desk organizers and 4 mesh pencil holders cost $54. What is the price of a single mesh pencil holders?",
+      "options": [
+        {
+          "id": "A",
+          "text": "$12"
+        },
+        {
+          "id": "B",
+          "text": "$14"
+        },
+        {
+          "id": "C",
+          "text": "$15"
+        },
+        {
+          "id": "D",
+          "text": "$3"
+        },
+        {
+          "id": "E",
+          "text": "$11"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "**Correct Answer: A** ($12)\n\n**Step-by-step Solution:**\n1. Eq 1: \\(3A + 2B = 33\\)\n2. Eq 2: \\(2A + 4B = 54\\)\n3. Double Eq 1: \\(6A + 4B = 66\\)\n4. Subtract Eq 2: \\(4A = 12\\); \\(A = $3\\).\n5. \\(B = 12\\).",
+      "category": "math",
+      "subType": "algebra",
+      "id": 33,
+      "testId": "test-26"
+    },
+    {
+      "question": "[Simulation #26 - Odd Figure 1] Which of the following five geometric figures is the ODD ONE OUT (lacks reflective symmetry)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"35,14 56,35 35,56 14,35\" fill=\"none\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /></svg>"
+        },
+        {
+          "id": "B",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"18\" width=\"34\" height=\"34\" rx=\"0\" fill=\"none\" stroke=\"#ec4899\" stroke-width=\"2.5\" /></svg>"
+        },
+        {
+          "id": "C",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"16,16 54,26 40,56 12,48\" fill=\"none\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /></svg>"
+        },
+        {
+          "id": "D",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"35,14 54,56 16,56\" fill=\"none\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /></svg>"
+        },
+        {
+          "id": "E",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"20,18 50,18 42,52 28,52\" fill=\"none\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /></svg>"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "**Correct Answer: C**\n\n**Geometric Rule:**\nFour figures possess reflective line symmetry. Only the irregular quadrilateral is completely asymmetrical.",
+      "category": "spatial",
+      "subType": "odd_one_out",
+      "id": 34,
+      "testId": "test-26"
+    },
+    {
+      "question": "[Scenario #98] Premise 1: No organism lacking chloroplasts can perform oxygenic photosynthesis.\nPremise 2: The fungal mold Penicillium lacks chloroplasts.\nWhich conclusion follows with absolute logical necessity?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No definitive deduction is logically warranted from the premises."
+        },
+        {
+          "id": "B",
+          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+        },
+        {
+          "id": "C",
+          "text": "Premise 1 contradicts Premise 2."
+        },
+        {
+          "id": "D",
+          "text": "Conclusion: Penicillium cannot perform oxygenic photosynthesis."
+        },
+        {
+          "id": "E",
+          "text": "The opposite of the stated conclusion must necessarily be valid."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Penicillium cannot perform oxygenic photosynthesis.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "category": "verbal",
+      "subType": "syllogism",
+      "id": 35,
+      "testId": "test-26"
+    },
+    {
+      "question": "A assembly raffle crate contains 7 red tokens, 6 blue tokens, and 5 green tokens. If one token is drawn completely at random, what is the probability that it is EITHER red OR blue?",
+      "options": [
+        {
+          "id": "A",
+          "text": "13/18"
+        },
+        {
+          "id": "B",
+          "text": "6/18"
+        },
+        {
+          "id": "C",
+          "text": "11/18"
+        },
+        {
+          "id": "D",
+          "text": "5/18"
+        },
+        {
+          "id": "E",
+          "text": "7/18"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "**Correct Answer: A** (13/18)\n\n**Step-by-step Solution:**\n1. Total tokens = 7 + 6 + 5 = 18.\n2. Favorable = 7 + 6 = 13.\n3. Probability = 13/18.",
+      "category": "math",
+      "subType": "word_problem",
+      "id": 36,
+      "testId": "test-26"
+    },
+    {
+      "question": "[Scenario #99] Premise 1: All constitutional amendments requiring ratification must secure affirmative votes from three-fourths of state legislatures.\nPremise 2: Proposal 14 requires ratification as a constitutional amendment.\nWhich conclusion follows with absolute logical necessity?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Premise 1 contradicts Premise 2."
+        },
+        {
+          "id": "B",
+          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+        },
+        {
+          "id": "C",
+          "text": "No definitive deduction is logically warranted from the premises."
+        },
+        {
+          "id": "D",
+          "text": "Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures."
+        },
+        {
+          "id": "E",
+          "text": "The opposite of the stated conclusion must necessarily be valid."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "category": "verbal",
+      "subType": "syllogism",
+      "id": 37,
+      "testId": "test-26"
+    },
+    {
+      "question": "What is the measure of the smaller angle formed between the hour hand and the minute hand of an analog clock at exactly 2:50?",
+      "options": [
+        {
+          "id": "A",
+          "text": "145°"
+        },
+        {
+          "id": "B",
+          "text": "175°"
+        },
+        {
+          "id": "C",
+          "text": "60°"
+        },
+        {
+          "id": "D",
+          "text": "130°"
+        },
+        {
+          "id": "E",
+          "text": "160°"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "**Correct Answer: A** (145°)\n\n**Step-by-step Solution:**\n1. Hour hand position: \\(30 \\times 2 + 0.5 \\times 50 = 85°\\).\n2. Minute hand position: \\(6 \\times 50 = 300°\\).\n3. Angle difference: \\(|85 - 300| = 145°\\).",
+      "category": "math",
+      "subType": "word_problem",
+      "id": 38,
+      "testId": "test-26"
+    },
+    {
+      "question": "[Simulation #26 - Odd Figure 2] Which radial star figure does NOT follow the group arm-count parity rule?",
+      "options": [
+        {
+          "id": "A",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"26\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" /><line x1=\"35\" y1=\"35\" x2=\"59\" y2=\"35\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"35\" y2=\"59\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"11\" y2=\"35\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"34.99999999999999\" y2=\"11\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /></svg>"
+        },
+        {
+          "id": "B",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"26\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" /><line x1=\"35\" y1=\"35\" x2=\"59\" y2=\"35\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"51.97056274847714\" y2=\"51.970562748477136\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"35\" y2=\"59\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"18.02943725152286\" y2=\"51.97056274847714\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"11\" y2=\"35\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"18.029437251522857\" y2=\"18.02943725152286\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"34.99999999999999\" y2=\"11\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"51.970562748477136\" y2=\"18.029437251522857\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /></svg>"
+        },
+        {
+          "id": "C",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"26\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" /><line x1=\"35\" y1=\"35\" x2=\"59\" y2=\"35\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"47\" y2=\"55.78460969082653\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"23.000000000000007\" y2=\"55.78460969082653\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"11\" y2=\"35\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"22.99999999999999\" y2=\"14.215390309173475\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"47\" y2=\"14.215390309173472\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /></svg>"
+        },
+        {
+          "id": "D",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"12\" y1=\"12\" x2=\"58\" y2=\"58\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"12\" y1=\"58\" x2=\"58\" y2=\"12\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /></svg>"
+        },
+        {
+          "id": "E",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"26\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\" /><line x1=\"35\" y1=\"35\" x2=\"59\" y2=\"35\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"42.41640786499874\" y2=\"57.82535639108369\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"15.583592135001265\" y2=\"49.10684605501936\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"15.583592135001261\" y2=\"20.893153944980646\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /><line x1=\"35\" y1=\"35\" x2=\"42.41640786499873\" y2=\"12.174643608916313\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linecap=\"round\" /></svg>"
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "**Correct Answer: E**\n\n**Rule:**\nAll other figures contain an even number of radial arms (4, 6, 8). Only this figure contains an odd number of arms (5 arms).",
+      "category": "spatial",
+      "subType": "odd_one_out",
+      "id": 39,
+      "testId": "test-26"
+    },
+    {
+      "question": "[Scenario #100] Premise 1: Whenever a vehicle enters a geostationary transfer orbit, its apogee matches geosynchronous altitude.\nPremise 2: Satellite Echo entered a geostationary transfer orbit.\nWhich conclusion follows with absolute logical necessity?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The opposite of the stated conclusion must necessarily be valid."
+        },
+        {
+          "id": "B",
+          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+        },
+        {
+          "id": "C",
+          "text": "Premise 1 contradicts Premise 2."
+        },
+        {
+          "id": "D",
+          "text": "Conclusion: Satellite Echo's apogee matches geosynchronous altitude."
+        },
+        {
+          "id": "E",
+          "text": "No definitive deduction is logically warranted from the premises."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Satellite Echo's apogee matches geosynchronous altitude.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "category": "verbal",
+      "subType": "syllogism",
+      "id": 40,
+      "testId": "test-26"
+    },
+    {
+      "question": "A solar panel lamination warehouse has a length that is exactly twice its width. If the total perimeter of the facility is 216 meters, what is its total floor area?",
+      "options": [
+        {
+          "id": "A",
+          "text": "432 m²"
+        },
+        {
+          "id": "B",
+          "text": "2640 m²"
+        },
+        {
+          "id": "C",
+          "text": "2560 m²"
+        },
+        {
+          "id": "D",
+          "text": "2592 m²"
+        },
+        {
+          "id": "E",
+          "text": "1296 m²"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "**Correct Answer: D** (2592 m²)\n\n**Step-by-step Solution:**\n1. Let width = \\(w\\). Length = \\(2w\\).\n2. Perimeter = \\(2(w + 2w) = 6w = 216\\); \\(w = 36\\).\n3. Length = \\(2 \\times 36 = 72\\).\n4. Area = 72 \\times 36 = **2592 m²**.",
+      "category": "math",
+      "subType": "word_problem",
+      "id": 41,
+      "testId": "test-26"
+    },
+    {
+      "question": "A passenger train named Cascades Express measuring 380 meters in length is traveling at a constant speed of 72 km/h. How many seconds will it take to completely pass the Seattle King Street platform of length 400 meters?",
+      "options": [
+        {
+          "id": "A",
+          "text": "19 seconds"
+        },
+        {
+          "id": "B",
+          "text": "39 seconds"
+        },
+        {
+          "id": "C",
+          "text": "42 seconds"
+        },
+        {
+          "id": "D",
+          "text": "36.5 seconds"
+        },
+        {
+          "id": "E",
+          "text": "44 seconds"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "**Correct Answer: B** (39 seconds)\n\n**Step-by-step Solution:**\n1. Convert speed: 72 km/h = 20 m/s.\n2. Total distance to clear platform = 380 + 400 = 780 m.\n3. Time = 780 / 20 = **39 seconds**.",
+      "category": "math",
+      "subType": "word_problem",
+      "id": 42,
+      "testId": "test-26"
+    },
+    {
+      "question": "[Simulation #26 - Spatial Analogy 1] Figure A relates to Figure B via axial reflection and fill inversion. Which figure completes the analogy for Figure C?",
+      "contextSvg": {
+        "figA": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"20,35 50,18 50,52\" fill=\"none\" stroke=\"#ec4899\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /></svg>",
+        "figB": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"50,35 20,18 20,52\" fill=\"#ec4899\" stroke=\"#0284c7\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /></svg>",
+        "figC": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M 16 45 A 20 20 0 0 1 54 45 Z\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.5\" /></svg>"
+      },
+      "options": [
+        {
+          "id": "A",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M 16 25 A 20 20 0 0 0 54 25 Z\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"2.5\" /></svg>"
+        },
+        {
+          "id": "B",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M 16 25 A 20 20 0 0 0 54 25 Z\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.5\" /></svg>"
+        },
+        {
+          "id": "C",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"20\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"2\" /></svg>"
+        },
+        {
+          "id": "D",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"20,35 50,18 50,52\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /></svg>"
+        },
+        {
+          "id": "E",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M 16 45 A 20 20 0 0 1 54 45 Z\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"2.5\" /></svg>"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "**Correct Answer: A**\n\n**Analogy Rule:**\nTransformation reflects the figure across its horizontal baseline and inverts the interior from hollow to solid.",
+      "category": "spatial",
+      "subType": "analogy",
+      "id": 43,
+      "testId": "test-26"
+    },
+    {
+      "question": "In the domain of Paleontology, which word does NOT belong with the others?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stegosaurus"
+        },
+        {
+          "id": "B",
+          "text": "Mastodon"
+        },
+        {
+          "id": "C",
+          "text": "Velociraptor"
+        },
+        {
+          "id": "D",
+          "text": "Tyrannosaurus"
+        },
+        {
+          "id": "E",
+          "text": "Triceratops"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "**Correct Answer: B** (Mastodon)\n\nA mastodon is an extinct Cenozoic mammal; all others are Mesozoic dinosaurs.\n\n💡 **Speed Tip:** Identify the unifying trait uniting 4 options, isolate the outlier.",
+      "category": "verbal",
+      "subType": "odd_word",
+      "id": 44,
+      "testId": "test-26"
+    },
+    {
+      "question": "A specialty boutique merchant marks the retail price of a commercial grade juicer 80% above wholesale cost. During a seasonal promotion, a discount of 10% is applied to the marked price. What is the merchant's net percentage profit relative to wholesale cost?",
+      "options": [
+        {
+          "id": "A",
+          "text": "62%"
+        },
+        {
+          "id": "B",
+          "text": "57%"
+        },
+        {
+          "id": "C",
+          "text": "40%"
+        },
+        {
+          "id": "D",
+          "text": "70%"
+        },
+        {
+          "id": "E",
+          "text": "68%"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "**Correct Answer: A** (62%)\n\n**Step-by-step Solution:**\n1. Multiplier = (1 + 80%) \\times (1 - 10%) = 1.80 \\times 0.90 = 1.62.\n2. Net profit = **62%**.",
+      "category": "math",
+      "subType": "percentage",
+      "id": 45,
+      "testId": "test-26"
+    },
+    {
+      "question": "In the domain of Geological Eras, which word does NOT belong with the others?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cenozoic"
+        },
+        {
+          "id": "B",
+          "text": "Precambrian"
+        },
+        {
+          "id": "C",
+          "text": "Paleozoic"
+        },
+        {
+          "id": "D",
+          "text": "Equinox"
+        },
+        {
+          "id": "E",
+          "text": "Mesozoic"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "**Correct Answer: D** (Equinox)\n\nAn equinox is an astronomical calendar event; all others are major geological eras/eons.\n\n💡 **Speed Tip:** Identify the unifying trait uniting 4 options, isolate the outlier.",
+      "category": "verbal",
+      "subType": "odd_word",
+      "id": 46,
+      "testId": "test-26"
+    },
+    {
+      "question": "In an engineering team of 220 developers, 47 write Pascal and 42 write Delphi. If 14 developers actively program in both languages, how many program in NEITHER Pascal nor Delphi?",
+      "options": [
+        {
+          "id": "A",
+          "text": "145"
+        },
+        {
+          "id": "B",
+          "text": "141"
+        },
+        {
+          "id": "C",
+          "text": "151"
+        },
+        {
+          "id": "D",
+          "text": "159"
+        },
+        {
+          "id": "E",
+          "text": "143"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "**Correct Answer: A** (145)\n\n**Step-by-step Solution:**\n1. Developers using at least one = 47 + 42 - 14 = 75.\n2. Developers using neither = 220 - 75 = **145**.",
+      "category": "math",
+      "subType": "word_problem",
+      "id": 47,
+      "testId": "test-26"
+    },
+    {
+      "question": "[Simulation #26 - Spatial Analogy 2] Figure A transforms to Figure B via concentric containment inversion. Which figure completes the analogy for Figure C?",
+      "contextSvg": {
+        "figA": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"15\" y=\"15\" width=\"40\" height=\"40\" rx=\"0\" fill=\"none\" stroke=\"#ec4899\" stroke-width=\"2.5\" /><circle cx=\"35\" cy=\"35\" r=\"9\" fill=\"#ec4899\" stroke=\"#0284c7\" stroke-width=\"2\" /></svg>",
+        "figB": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"22\" fill=\"none\" stroke=\"#ec4899\" stroke-width=\"2.5\" /><rect x=\"27\" y=\"27\" width=\"16\" height=\"16\" rx=\"0\" fill=\"#ec4899\" stroke=\"#0284c7\" stroke-width=\"2\" /></svg>",
+        "figC": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"35,14 56,52 14,52\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /><polygon points=\"35,30 42,39 35,48 28,39\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"2\" stroke-linejoin=\"round\" /></svg>"
+      },
+      "options": [
+        {
+          "id": "A",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"35,14 56,52 14,52\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /></svg>"
+        },
+        {
+          "id": "B",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"35,14 56,52 14,52\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /><polygon points=\"35,30 42,39 35,48 28,39\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"2\" stroke-linejoin=\"round\" /></svg>"
+        },
+        {
+          "id": "C",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"18\" width=\"34\" height=\"34\" rx=\"0\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.5\" /></svg>"
+        },
+        {
+          "id": "D",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"35,12 58,35 35,58 12,35\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /><circle cx=\"35\" cy=\"35\" r=\"8\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"2\" /></svg>"
+        },
+        {
+          "id": "E",
+          "text": "",
+          "svg": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"35,12 58,35 35,58 12,35\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /><polygon points=\"35,28 44,44 26,44\" fill=\"#f59e0b\" stroke=\"#d97706\" stroke-width=\"2\" stroke-linejoin=\"round\" /></svg>"
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "**Correct Answer: E**\n\n**Analogy Rule:**\nThe outer shape becomes the inner solid element, while the inner shape becomes the outer outline element.",
+      "category": "spatial",
+      "subType": "analogy",
+      "id": 48,
+      "testId": "test-26"
+    },
+    {
+      "question": "In the domain of Volcanology, which word does NOT belong with the others?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Magma"
+        },
+        {
+          "id": "B",
+          "text": "Tundra"
+        },
+        {
+          "id": "C",
+          "text": "Caldera"
+        },
+        {
+          "id": "D",
+          "text": "Basalt"
+        },
+        {
+          "id": "E",
+          "text": "Pyroclastic Flow"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "**Correct Answer: B** (Tundra)\n\nTundra is a subarctic biome; all others are volcanic phenomena and products.\n\n💡 **Speed Tip:** Identify the unifying trait uniting 4 options, isolate the outlier.",
+      "category": "verbal",
+      "subType": "odd_word",
+      "id": 49,
+      "testId": "test-26"
+    },
+    {
+      "question": "When an unknown integer N is divided by 31, the remainder is 2. What is the remainder when 2N is divided by 31?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2"
+        },
+        {
+          "id": "B",
+          "text": "1"
+        },
+        {
+          "id": "C",
+          "text": "4"
+        },
+        {
+          "id": "D",
+          "text": "7"
+        },
+        {
+          "id": "E",
+          "text": "6"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "**Correct Answer: C** (4)\n\n**Step-by-step Solution:**\n1. Let \\(N = 2\\).\n2. \\(2N = 2 \\times 2 = 4\\).\n3. 4 divided by 31 leaves remainder **4**.",
+      "category": "math",
+      "subType": "algebra",
       "id": 50,
       "testId": "test-26"
     }

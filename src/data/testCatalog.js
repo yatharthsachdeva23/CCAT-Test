@@ -1,12 +1,16 @@
 import { getSpatialBank, getVerbalBank, getMathBank, randomizeOptions } from './questionPool.js';
+import { getVerbalQuestionsForTest } from './verbalBank.js';
+import { getMathQuestionsForTest } from './mathBank.js';
+import { getSpatialQuestionsForTest } from './spatialBank.js';
 
 /**
  * Procedural Test Synthesizer for Tests 1 through 30.
  * Guarantees:
  * 1. Exactly 50 unique questions per test (22 Math, 17 Verbal, 11 Spatial).
- * 2. ZERO repeating questions within any test.
- * 3. Options and correct answers are uniformly distributed across A, B, C, D, and E.
- * 4. No visible difficulty categorization on the test cards.
+ * 2. ZERO repeating questions between different tests (Tests 2-30 each receive brand new questions).
+ * 3. Test 1 remains exactly as originally completed by the user.
+ * 4. Options and correct answers are uniformly distributed across A, B, C, D, and E.
+ * 5. No visible difficulty categorization on the test cards.
  */
 
 function pseudoRandom(seed) {
@@ -36,41 +40,79 @@ const CCAT_INTERLEAVED_PATTERN = [
 ];
 
 export function buildTest(testNumber = 1) {
-  const seed = testNumber * 7919 + 31337;
-  const rand = pseudoRandom(seed);
+  // Test 1: Preserved exactly as originally practiced by the user
+  if (testNumber === 1) {
+    const seed = 1 * 7919 + 31337;
+    const rand = pseudoRandom(seed);
 
-  const rawMath = getMathBank(rand);
-  const rawVerbal = getVerbalBank();
-  const rawSpatial = getSpatialBank(rand);
+    const rawMath = getMathBank(rand);
+    const rawVerbal = getVerbalBank();
+    const rawSpatial = getSpatialBank(rand);
 
-  // Shuffle each pool with test seed
-  const shuffledMath = shuffleArray(rawMath, rand);
-  const shuffledVerbal = shuffleArray(rawVerbal, rand);
-  const shuffledSpatial = shuffleArray(rawSpatial, rand);
+    const shuffledMath = shuffleArray(rawMath, rand);
+    const shuffledVerbal = shuffleArray(rawVerbal, rand);
+    const shuffledSpatial = shuffleArray(rawSpatial, rand);
 
-  // Select EXACTLY 22 Math, 17 Verbal, 11 Spatial without duplicates!
-  const selectedMath = shuffledMath.slice(0, 22);
-  const selectedVerbal = shuffledVerbal.slice(0, 17);
-  const selectedSpatial = shuffledSpatial.slice(0, 11);
+    const selectedMath = shuffledMath.slice(0, 22);
+    const selectedVerbal = shuffledVerbal.slice(0, 17);
+    const selectedSpatial = shuffledSpatial.slice(0, 11);
+
+    let mIdx = 0, vIdx = 0, sIdx = 0;
+    const testQuestions = [];
+
+    CCAT_INTERLEAVED_PATTERN.forEach((category, i) => {
+      let baseQ;
+      if (category === 'math') {
+        baseQ = selectedMath[mIdx++];
+      } else if (category === 'verbal') {
+        baseQ = selectedVerbal[vIdx++];
+      } else {
+        baseQ = selectedSpatial[sIdx++];
+      }
+
+      const randomizedQ = randomizeOptions(baseQ, rand);
+
+      testQuestions.push({
+        ...randomizedQ,
+        id: i + 1,
+        category: category,
+        testId: `test-1`
+      });
+    });
+
+    return {
+      id: `test-1`,
+      testNumber: 1,
+      title: `CCAT Full Simulation #1`,
+      totalQuestions: 50,
+      timeLimitSec: 900,
+      mathCount: 22,
+      verbalCount: 17,
+      spatialCount: 11,
+      questions: testQuestions
+    };
+  }
+
+  // Tests 2 through 30: 100% Brand New, Dedicated Unique Questions
+  const mathQuestions = getMathQuestionsForTest(testNumber);
+  const verbalQuestions = getVerbalQuestionsForTest(testNumber);
+  const spatialQuestions = getSpatialQuestionsForTest(testNumber);
 
   let mIdx = 0, vIdx = 0, sIdx = 0;
   const testQuestions = [];
 
   CCAT_INTERLEAVED_PATTERN.forEach((category, i) => {
-    let baseQ;
+    let q;
     if (category === 'math') {
-      baseQ = selectedMath[mIdx++];
+      q = mathQuestions[mIdx++];
     } else if (category === 'verbal') {
-      baseQ = selectedVerbal[vIdx++];
+      q = verbalQuestions[vIdx++];
     } else {
-      baseQ = selectedSpatial[sIdx++];
+      q = spatialQuestions[sIdx++];
     }
 
-    // Randomize option order and assign correctOption uniformly across A, B, C, D, E!
-    const randomizedQ = randomizeOptions(baseQ, rand);
-
     testQuestions.push({
-      ...randomizedQ,
+      ...q,
       id: i + 1,
       category: category,
       testId: `test-${testNumber}`
