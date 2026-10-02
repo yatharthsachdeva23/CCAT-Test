@@ -41,20 +41,20 @@ export default function SVGQuestionRenderer({ question }) {
       return (
         <div className="my-6 p-4 sm:p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl flex flex-col items-center">
           <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 text-center">3×3 Spatial Matrix:</p>
-          <div className="grid grid-cols-3 gap-2 sm:gap-2.5 p-3 sm:p-4 bg-slate-950/90 border border-slate-700/80 rounded-2xl shadow-2xl">
+          <div className="grid grid-cols-3 gap-2.5 sm:gap-3 p-3.5 sm:p-4 bg-slate-950 border border-slate-700/90 rounded-2xl shadow-2xl">
             {question.matrixCells.map((cellSvg, idx) => {
               const isMissing = idx === 8 || cellSvg === '?';
               return (
                 <div 
                   key={idx} 
-                  className={`w-16 h-16 sm:w-20 sm:h-20 rounded-xl flex items-center justify-center p-1.5 shadow transition-all ${
+                  className={`w-18 h-18 sm:w-22 sm:h-22 rounded-xl flex items-center justify-center p-1 shadow transition-all ${
                     isMissing 
                       ? 'bg-sky-950/40 border-2 border-dashed border-sky-400' 
-                      : 'bg-slate-900 border border-slate-700/80'
+                      : 'bg-slate-900/80 border border-slate-700/60'
                   }`}
                 >
                   {isMissing ? (
-                    <span className="text-2xl font-black text-sky-400 animate-pulse">?</span>
+                    <span className="text-3xl font-black text-amber-400 animate-pulse">?</span>
                   ) : (
                     <div className="w-full h-full flex items-center justify-center" dangerouslySetInnerHTML={{ __html: cellSvg }} />
                   )}
@@ -67,12 +67,14 @@ export default function SVGQuestionRenderer({ question }) {
     }
 
     if (question.matrixSvg) {
+      // Auto-fix any legacy SVG that had mismatched viewBox 0 0 100 100
+      const correctedSvg = question.matrixSvg.replace(/viewBox="0 0 100 100"/g, 'viewBox="0 0 70 70"');
       return (
         <div className="my-6 p-4 sm:p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl flex flex-col items-center">
           <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 text-center">3×3 Spatial Matrix:</p>
           <div 
             className="w-full flex items-center justify-center"
-            dangerouslySetInnerHTML={{ __html: question.matrixSvg }}
+            dangerouslySetInnerHTML={{ __html: correctedSvg }}
           />
         </div>
       );

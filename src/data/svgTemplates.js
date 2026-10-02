@@ -125,11 +125,13 @@ export function generateMatrixGrid({ cells = [], size = 260 }) {
           </g>
         `;
       } else {
-        // Strip outer <svg> and insert raw shape with nested <svg> coordinate bounding
         const rawSvg = cells[idx] || '';
+        const vbMatch = rawSvg.match(/viewBox="([^"]+)"/);
+        const vb = vbMatch ? vbMatch[1] : '0 0 70 70';
+        const innerContent = rawSvg.replace(/<svg[^>]*>/, '').replace(/<\/svg>/, '');
         cellsMarkup += `
-          <svg x="${x}" y="${y}" width="${cellSize}" height="${cellSize}" viewBox="0 0 100 100">
-            ${rawSvg.replace(/<svg[^>]*>/, '').replace(/<\/svg>/, '')}
+          <svg x="${x}" y="${y}" width="${cellSize}" height="${cellSize}" viewBox="${vb}">
+            ${innerContent}
           </svg>
         `;
       }
