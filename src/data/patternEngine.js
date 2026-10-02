@@ -13,7 +13,7 @@ export function analyzeAttemptPatterns(attempt) {
 
   // 1. Time Traps (> 28s and incorrect)
   const timeTraps = responses.filter(r => !r.isCorrect && r.timeSpentSec >= 28);
-  const totalWastedTimeSec = timeTraps.reduce((acc, r) => acc + (r.timeSpentSec - 18), 0);
+  const totalWastedTimeSec = Math.max(0, timeTraps.reduce((acc, r) => acc + Math.max(0, r.timeSpentSec - 18), 0));
   const potentialLostQuestions = Math.floor(totalWastedTimeSec / 15);
 
   // 2. Rush Errors (< 8s and incorrect)
@@ -26,22 +26,39 @@ export function analyzeAttemptPatterns(attempt) {
     spatial: { name: 'Spatial Reasoning', total: 0, attempted: 0, correct: 0, totalTime: 0 }
   };
 
+  // Initialize totals from full test structure (never leave total at 0 or 1)
+  if (attempt.questions && Array.isArray(attempt.questions) && attempt.questions.length > 0) {
+    attempt.questions.forEach(q => {
+      const cat = q.category || 'math';
+      if (!categories[cat]) categories[cat] = { name: cat, total: 0, attempted: 0, correct: 0, totalTime: 0 };
+      categories[cat].total += 1;
+    });
+  } else {
+    // Official CCAT Standard Distribution (22 Math, 17 Verbal, 11 Spatial = 50 total)
+    categories.math.total = 22;
+    categories.verbal.total = 17;
+    categories.spatial.total = 11;
+  }
+
   responses.forEach(r => {
     const cat = r.category || 'math';
     if (!categories[cat]) categories[cat] = { name: cat, total: 0, attempted: 0, correct: 0, totalTime: 0 };
-    categories[cat].total += 1;
     categories[cat].totalTime += (r.timeSpentSec || 0);
     if (!r.isSkipped && r.selectedOption) categories[cat].attempted += 1;
     if (r.isCorrect) categories[cat].correct += 1;
   });
 
   const categoryStats = Object.entries(categories).map(([key, data]) => {
-    const avgTime = data.total > 0 ? (data.totalTime / data.total).toFixed(1) : 0;
+    const avgTime = data.attempted > 0 
+      ? (data.totalTime / data.attempted).toFixed(1)
+      : data.totalTime > 0
+      ? data.totalTime.toFixed(1)
+      : '0.0';
     const accuracy = data.attempted > 0 ? Math.round((data.correct / data.attempted) * 100) : 0;
     return {
       key,
       name: data.name,
-      total: data.total,
+      total: Math.max(1, data.total),
       attempted: data.attempted,
       correct: data.correct,
       avgTimeSec: parseFloat(avgTime),
@@ -62,7 +79,7 @@ export function analyzeAttemptPatterns(attempt) {
       correct,
       total: arr.length,
       attempted,
-      avgTime: (totalTime / arr.length).toFixed(1),
+      avgTime: attempted > 0 ? (totalTime / attempted).toFixed(1) : '0.0',
       accuracy: attempted > 0 ? Math.round((correct / attempted) * 100) : 0
     };
   };
@@ -71,9 +88,12 @@ export function analyzeAttemptPatterns(attempt) {
   const half2 = calcHalfStats(secondHalf);
   const staminaDecay = half1.accuracy > 0 ? (half1.accuracy - half2.accuracy) : 0;
 
-  // 5. Overall timing
+  // 5. Overall timing (calculated over touched questions to avoid dividing 0s for unreached)
+  const touchedQuestions = responses.filter(r => (r.timeSpentSec || 0) > 0 || (!r.isSkipped && r.selectedOption));
   const totalTimeSpent = responses.reduce((acc, r) => acc + (r.timeSpentSec || 0), 0);
-  const overallAvgTime = responses.length > 0 ? (totalTimeSpent / responses.length).toFixed(1) : 0;
+  const overallAvgTime = touchedQuestions.length > 0 
+    ? (totalTimeSpent / touchedQuestions.length).toFixed(1) 
+    : '0.0';
 
   return {
     score: correctCount,

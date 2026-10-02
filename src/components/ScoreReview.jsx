@@ -133,7 +133,7 @@ export default function ScoreReview({ attempt, onBackToDashboard, onRetakeTest, 
                 <span>Average Pace</span>
               </p>
               <p className="text-xl sm:text-2xl font-bold text-slate-100">{analysis.overallAvgTimeSec}s</p>
-              <p className="text-[11px] text-slate-500">Target: $\le$ 18.0s per Q</p>
+              <p className="text-[11px] text-slate-500">Target: ≤ 18.0s per Q</p>
             </div>
 
             <div className="bg-slate-950/60 border border-slate-800/80 rounded-2xl p-4">
@@ -142,7 +142,11 @@ export default function ScoreReview({ attempt, onBackToDashboard, onRetakeTest, 
                 <span>Time Traps (&gt;28s)</span>
               </p>
               <p className="text-xl sm:text-2xl font-bold text-amber-400">{analysis.timeTraps.count}</p>
-              <p className="text-[11px] text-slate-500">~{analysis.timeTraps.wastedSeconds}s lost on misses</p>
+              <p className="text-[11px] text-slate-500">
+                {analysis.timeTraps.count > 0 
+                  ? `~${Math.max(0, Math.round(analysis.timeTraps.wastedSeconds))}s lost on misses` 
+                  : 'No time traps detected'}
+              </p>
             </div>
 
             <div className="bg-slate-950/60 border border-slate-800/80 rounded-2xl p-4">
@@ -153,7 +157,9 @@ export default function ScoreReview({ attempt, onBackToDashboard, onRetakeTest, 
               <p className="text-xl sm:text-2xl font-bold text-slate-100">
                 {Math.floor(attempt.totalSecondsUsed / 60)}m {attempt.totalSecondsUsed % 60}s
               </p>
-              <p className="text-[11px] text-slate-500">{attempt.timeRanOut ? '⏰ Clock expired' : 'Finished test'}</p>
+              <p className="text-[11px] text-slate-500">
+                {attempt.timeRanOut ? '⏰ Clock expired' : attempt.endedEarly ? 'Ended early' : 'Completed test'}
+              </p>
             </div>
           </div>
 
@@ -167,8 +173,8 @@ export default function ScoreReview({ attempt, onBackToDashboard, onRetakeTest, 
                 </div>
                 <div className="w-full bg-slate-900 h-2 rounded-full overflow-hidden mb-2">
                   <div 
-                    className="bg-sky-500 h-full rounded-full" 
-                    style={{ width: `${Math.round((cat.correct / cat.total) * 100)}%` }} 
+                    className="bg-sky-500 h-full rounded-full transition-all duration-500" 
+                    style={{ width: `${cat.total > 0 ? Math.round((cat.correct / cat.total) * 100) : 0}%` }} 
                   />
                 </div>
                 <div className="flex items-center justify-between text-[11px] text-slate-400">

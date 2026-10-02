@@ -5,43 +5,50 @@ import SVGQuestionRenderer from './SVGQuestionRenderer.jsx';
 
 export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
   const questions = testData.questions;
+  const timeLimit = testData.timeLimitSec || 900; // 15 mins (900s)
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
-  const [timeLeft, setTimeLeft] = useState(testData.timeLimitSec || 900); // 15 mins (900s)
+  const [timeLeft, setTimeLeft] = useState(timeLimit);
   const [responses, setResponses] = useState({});
   const [isFinishing, setIsFinishing] = useState(false);
 
-  // High precision per-question timing
+  // High precision per-question timing & attempt timing refs
+  const testStartTimeRef = useRef(Date.now());
   const questionStartTimeRef = useRef(performance.now());
   const timerIntervalRef = useRef(null);
+  const isFinishingRef = useRef(false);
+  const responsesRef = useRef({});
 
   const currentQ = questions[currentIndex];
 
-  // 15-Minute Countdown Timer
+  // Wall-Clock Accurate 15-Minute Countdown Timer
   useEffect(() => {
-    timerIntervalRef.current = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev <= 1) {
-          clearInterval(timerIntervalRef.current);
-          handleTimeExpired();
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
+    testStartTimeRef.current = Date.now();
+    isFinishingRef.current = false;
+    responsesRef.current = {};
 
-    return () => clearInterval(timerIntervalRef.current);
-  }, []);
+    timerIntervalRef.current = setInterval(() => {
+      const elapsed = Math.floor((Date.now() - testStartTimeRef.current) / 1000);
+      const remaining = Math.max(0, timeLimit - elapsed);
+      setTimeLeft(remaining);
+
+      if (remaining <= 0 && !isFinishingRef.current) {
+        clearInterval(timerIntervalRef.current);
+        finishTest(true, false);
+      }
+    }, 500);
+
+    return () => {
+      if (timerIntervalRef.current) clearInterval(timerIntervalRef.current);
+    };
+  }, [testData.id]);
 
   // Reset question timer on current index change
   useEffect(() => {
     questionStartTimeRef.current = performance.now();
     setSelectedOption(null);
   }, [currentIndex]);
-
-  const handleTimeExpired = () => {
-    finishTest(true);
-  };
 
   const recordCurrentResponse = (chosenOption, isSkipped = false) => {
     const elapsedMs = performance.now() - questionStartTimeRef.current;
@@ -67,50 +74,92 @@ export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
     if (!selectedOption) return; // Prevent advancing without choice if Next is pressed
 
     const response = recordCurrentResponse(selectedOption, false);
-    const updatedResponses = { ...responses, [currentQ.id]: response };
+    const updatedResponses = { ...responsesRef.current, [currentQ.id]: response };
+    responsesRef.current = updatedResponses;
     setResponses(updatedResponses);
 
     if (currentIndex + 1 < questions.length) {
       setCurrentIndex(prev => prev + 1);
     } else {
-      finishTest(false, updatedResponses);
+      finishTest(false, false);
     }
   };
 
   const handleSkip = () => {
     const response = recordCurrentResponse(null, true);
-    const updatedResponses = { ...responses, [currentQ.id]: response };
+    const updatedResponses = { ...responsesRef.current, [currentQ.id]: response };
+    responsesRef.current = updatedResponses;
     setResponses(updatedResponses);
 
     if (currentIndex + 1 < questions.length) {
       setCurrentIndex(prev => prev + 1);
     } else {
-      finishTest(false, updatedResponses);
+      finishTest(false, false);
     }
   };
 
-  const finishTest = (timeRanOut = false, finalResponses = responses) => {
-    if (isFinishing) return;
+  const finishTest = (timeRanOut = false, endEarly = false) => {
+    if (isFinishingRef.current) return;
+    isFinishingRef.current = true;
     setIsFinishing(true);
     if (timerIntervalRef.current) clearInterval(timerIntervalRef.current);
 
-    // If time ran out, record the active question if not yet recorded
-    let completeResponses = { ...finalResponses };
-    if (timeRanOut && !completeResponses[currentQ.id]) {
-      const finalQResp = recordCurrentResponse(selectedOption, !selectedOption);
-      completeResponses[currentQ.id] = finalQResp;
+    const elapsedRealSec = Math.min(
+      timeLimit,
+      Math.max(1, Math.round((Date.now() - testStartTimeRef.current) / 1000))
+    );
+    const totalSecondsUsed = timeRanOut ? timeLimit : elapsedRealSec;
+
+    // Start with all recorded responses
+    let completeResponses = { ...responsesRef.current };
+
+    // Record the current question if not yet saved
+    if (!completeResponses[currentQ.id]) {
+      const activeElapsedMs = performance.now() - questionStartTimeRef.current;
+      const activeTimeSec = Math.max(0.5, Math.round(activeElapsedMs / 100) / 10);
+      const isSelected = selectedOption !== null;
+      const isCorrect = isSelected && selectedOption === currentQ.correctOption;
+
+      completeResponses[currentQ.id] = {
+        questionId: currentQ.id,
+        category: currentQ.category,
+        subType: currentQ.subType,
+        selectedOption: selectedOption || null,
+        correctOption: currentQ.correctOption,
+        isCorrect,
+        isSkipped: !isSelected,
+        timeSpentSec: activeTimeSec,
+        questionText: currentQ.question,
+        explanation: currentQ.explanation
+      };
     }
 
-    // Fire celebration confetti
+    // Backfill any remaining unreached questions so all 50 questions exist for score review
+    questions.forEach(q => {
+      if (!completeResponses[q.id]) {
+        completeResponses[q.id] = {
+          questionId: q.id,
+          category: q.category,
+          subType: q.subType,
+          selectedOption: null,
+          correctOption: q.correctOption,
+          isCorrect: false,
+          isSkipped: true,
+          timeSpentSec: 0,
+          questionText: q.question,
+          explanation: q.explanation
+        };
+      }
+    });
+
+    // Fire celebration confetti if candidate attempted questions
     try {
       confetti({
-        particleCount: 120,
+        particleCount: 100,
         spread: 70,
         origin: { y: 0.6 }
       });
     } catch (e) {}
-
-    const totalSecondsUsed = (testData.timeLimitSec || 900) - timeLeft;
 
     const attemptResult = {
       id: `attempt_${Date.now()}`,
@@ -118,9 +167,10 @@ export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
       testTitle: testData.title,
       timestamp: new Date().toISOString(),
       totalQuestions: questions.length,
-      timeLimitSec: testData.timeLimitSec || 900,
+      timeLimitSec: timeLimit,
       totalSecondsUsed,
       timeRanOut,
+      endedEarly: endEarly || (!timeRanOut && currentIndex + 1 < questions.length),
       responses: completeResponses,
       questions: questions
     };
@@ -179,11 +229,11 @@ export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
 
             <button
               onClick={() => {
-                if (window.confirm('Are you sure you want to end this CCAT attempt early?')) {
-                  finishTest(false);
+                if (window.confirm('Are you sure you want to end this CCAT attempt early? Your progress will be saved.')) {
+                  finishTest(false, true);
                 }
               }}
-              className="text-xs text-slate-400 hover:text-rose-400 px-3 py-1.5 rounded-lg border border-slate-800 hover:border-rose-900 transition-colors"
+              className="text-xs text-slate-400 hover:text-rose-400 px-3 py-1.5 rounded-lg border border-slate-800 hover:border-rose-900 transition-colors cursor-pointer"
             >
               End Test
             </button>
