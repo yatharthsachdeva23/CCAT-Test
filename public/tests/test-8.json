@@ -9,11 +9,11 @@
   "spatialCount": 11,
   "questions": [
     {
-      "question": "[Advisory Council 7] An advisory board consists of 11 senior scholars. When a founding member aged 64 steps down and is replaced by a newly inducted junior fellow, the average age of the board declines by exactly 2 years. What is the age of the newly inducted fellow?",
+      "question": "An advisory board consists of 11 senior scholars. When a founding member aged 64 steps down and is replaced by a newly inducted junior fellow, the average age of the board declines by exactly 2 years. What is the age of the newly inducted fellow?",
       "options": [
         {
           "id": "A",
-          "text": "62 years old"
+          "text": "52 years old"
         },
         {
           "id": "B",
@@ -25,7 +25,7 @@
         },
         {
           "id": "D",
-          "text": "42 years old"
+          "text": "34 years old"
         },
         {
           "id": "E",
@@ -71,7 +71,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Spatial Simulation #8 - Analogy] Figure A is to Figure B as Figure C is to which of the following choices?",
+      "question": "Figure A is to Figure B as Figure C is to which of the following choices?",
       "contextSvg": {
         "figA": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"15\" y=\"15\" width=\"40\" height=\"40\" rx=\"0\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\" /><circle cx=\"35\" cy=\"35\" r=\"10\" fill=\"rgba(245,158,11,0.3)\" stroke=\"#f59e0b\" stroke-width=\"1.8\" /></svg>",
         "figB": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"20\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\" /><rect x=\"27\" y=\"27\" width=\"16\" height=\"16\" rx=\"0\" fill=\"rgba(245,158,11,0.3)\" stroke=\"#f59e0b\" stroke-width=\"1.8\" /></svg>",
@@ -111,11 +111,11 @@
       "testId": "test-8"
     },
     {
-      "question": "[Team Dining 7] A team of 4 colleagues attends a project celebration with a food subtotal of $160.00. An 8% state sales tax and an 18% gratuity are both applied directly to the base food subtotal. If the colleagues divide the total cost equally, how much does each person pay?",
+      "question": "A team of 4 colleagues attends a project celebration with a food subtotal of $160.00. An 8% state sales tax and an 18% gratuity are both applied directly to the base food subtotal. If the colleagues divide the total cost equally, how much does each person pay?",
       "options": [
         {
           "id": "A",
-          "text": "$47.60"
+          "text": "$56.40"
         },
         {
           "id": "B",
@@ -127,11 +127,11 @@
         },
         {
           "id": "D",
-          "text": "$56.40"
+          "text": "$59.90"
         },
         {
           "id": "E",
-          "text": "$40.00"
+          "text": "$47.60"
         }
       ],
       "correctOption": "B",
@@ -173,7 +173,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Survey Boat 7] A hydrographic survey vessel has a top speed of 21 mph in still water. On a river flowing at 3 mph, the vessel travels 72 miles downstream in 3 hours. How many hours will it take to travel the same 72 miles back upstream against the current?",
+      "question": "A hydrographic survey vessel has a top speed of 21 mph in still water. On a river flowing at 3 mph, the vessel travels 72 miles downstream in 3 hours. How many hours will it take to travel the same 72 miles back upstream against the current?",
       "options": [
         {
           "id": "A",
@@ -181,19 +181,19 @@
         },
         {
           "id": "B",
-          "text": "3.1 hours"
+          "text": "2.9 hours"
         },
         {
           "id": "C",
-          "text": "4.5 hours"
+          "text": "7.2 hours"
         },
         {
           "id": "D",
-          "text": "6.0 hours"
+          "text": "9.0 hours"
         },
         {
           "id": "E",
-          "text": "5.2 hours"
+          "text": "5.5 hours"
         }
       ],
       "correctOption": "A",
@@ -204,7 +204,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Spatial Simulation #8 - Handedness] Which figure is the odd one out?",
+      "question": "Which figure is the odd one out?",
       "subType": "odd_one_out",
       "options": [
         {
@@ -271,15 +271,15 @@
       "testId": "test-8"
     },
     {
-      "question": "[Flight Segment 7] A regional commuter aircraft flies outbound between two cities at 38 knots against headwind, and returns along the exact identical flight path at 76 knots with tailwind. What was the aircraft's average speed across the complete round-trip journey?",
+      "question": "A regional commuter aircraft flies outbound between two cities at 38 knots against headwind, and returns along the exact identical flight path at 76 knots with tailwind. What was the aircraft's average speed across the complete round-trip journey?",
       "options": [
         {
           "id": "A",
-          "text": "57.0 knots"
+          "text": "54.9 knots"
         },
         {
           "id": "B",
-          "text": "47.6 knots"
+          "text": "58.2 knots"
         },
         {
           "id": "C",
@@ -287,11 +287,11 @@
         },
         {
           "id": "D",
-          "text": "46 knots"
+          "text": "44.5 knots"
         },
         {
           "id": "E",
-          "text": "54.9 knots"
+          "text": "47.6 knots"
         }
       ],
       "correctOption": "C",
@@ -333,7 +333,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Chemical Purification 7] How many liters of deionized water must be blended into 75 liters of a 40% cleaning solution to dilute its total concentration down to exactly 25%?",
+      "question": "How many liters of deionized water must be blended into 75 liters of a 40% cleaning solution to dilute its total concentration down to exactly 25%?",
       "options": [
         {
           "id": "A",
@@ -345,15 +345,15 @@
         },
         {
           "id": "C",
-          "text": "40 liters"
+          "text": "41 liters"
         },
         {
           "id": "D",
-          "text": "15 liters"
+          "text": "63 liters"
         },
         {
           "id": "E",
-          "text": "30 liters"
+          "text": "57 liters"
         }
       ],
       "correctOption": "B",
@@ -364,7 +364,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Spatial Simulation #8 - Matrix Reasoning] Which figure logically replaces the question mark in this 3×3 matrix?",
+      "question": "Which figure logically replaces the question mark in this 3×3 matrix?",
       "matrixCells": [
         "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"18\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\" /></svg>",
         "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"17\" y=\"17\" width=\"36\" height=\"36\" rx=\"0\" fill=\"rgba(56, 189, 248, 0.35)\" stroke=\"#38bdf8\" stroke-width=\"2\" /></svg>",
@@ -410,11 +410,11 @@
       "testId": "test-8"
     },
     {
-      "question": "[Treasury Bond 7] A venture incubator deposits $9,000 into a government infrastructure bond paying an annual simple interest rate of 5%. What total dollar amount of interest will accrue upon completion of a 3-year investment period?",
+      "question": "A venture incubator deposits $9,000 into a government infrastructure bond paying an annual simple interest rate of 5%. What total dollar amount of interest will accrue upon completion of a 3-year investment period?",
       "options": [
         {
           "id": "A",
-          "text": "$1,100"
+          "text": "$2,050"
         },
         {
           "id": "B",
@@ -422,11 +422,11 @@
         },
         {
           "id": "C",
-          "text": "$10,350"
+          "text": "$1,100"
         },
         {
           "id": "D",
-          "text": "$450"
+          "text": "$850"
         },
         {
           "id": "E",
@@ -472,19 +472,19 @@
       "testId": "test-8"
     },
     {
-      "question": "[Number Properties 7] The mathematical sum of five consecutive integers is verified to be 155. What is the exact value of the greatest integer in this group?",
+      "question": "The mathematical sum of five consecutive integers is verified to be 155. What is the exact value of the greatest integer in this group?",
       "options": [
         {
           "id": "A",
-          "text": "31"
+          "text": "34"
         },
         {
           "id": "B",
-          "text": "29"
+          "text": "32"
         },
         {
           "id": "C",
-          "text": "35"
+          "text": "36"
         },
         {
           "id": "D",
@@ -492,7 +492,7 @@
         },
         {
           "id": "E",
-          "text": "29"
+          "text": "30"
         }
       ],
       "correctOption": "D",
@@ -503,7 +503,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Spatial Simulation #8 - Paper Folding] A square sheet of paper is folded in half twice and punched with a circular hole as shown. Which figure represents the sheet when completely unfolded?",
+      "question": "A square sheet of paper is folded in half twice and punched with a circular hole as shown. Which figure represents the sheet when completely unfolded?",
       "figureSvg": "<svg viewBox=\"0 0 148 64\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <g stroke=\"#64748b\" stroke-width=\"1.5\" fill=\"none\">\n        <!-- Sheet 1: Fold left to right -->\n        <rect x=\"10\" y=\"10\" width=\"36\" height=\"36\" fill=\"rgba(30,41,59,0.6)\" />\n        <line x1=\"28\" y1=\"10\" x2=\"28\" y2=\"46\" stroke=\"#f59e0b\" stroke-dasharray=\"3,2\" />\n        <text x=\"28\" y=\"54\" fill=\"#94a3b8\" font-size=\"8\" font-family=\"monospace\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Fold ➔</text>\n\n        <!-- Sheet 2: Fold bottom to top -->\n        <rect x=\"65\" y=\"10\" width=\"18\" height=\"36\" fill=\"rgba(30,41,59,0.7)\" />\n        <line x1=\"65\" y1=\"28\" x2=\"83\" y2=\"28\" stroke=\"#f59e0b\" stroke-dasharray=\"3,2\" />\n        <text x=\"74\" y=\"54\" fill=\"#94a3b8\" font-size=\"8\" font-family=\"monospace\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Fold ⬆</text>\n\n        <!-- Sheet 3: Corner Punch -->\n        <rect x=\"110\" y=\"10\" width=\"18\" height=\"18\" fill=\"rgba(14,165,233,0.2)\" stroke=\"#38bdf8\" />\n        <circle cx=\"124\" cy=\"14\" r=\"3\" fill=\"#f43f5e\" stroke=\"#f43f5e\" />\n        <text x=\"119\" y=\"54\" fill=\"#f43f5e\" font-size=\"8\" font-family=\"monospace\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Punch ●</text>\n      </g>\n    </svg>",
       "figureLabel": "Paper Folding & Punch Sequence:",
       "options": [
@@ -571,19 +571,19 @@
       "testId": "test-8"
     },
     {
-      "question": "[Capital Budget 7] An organizational capital outlay of $17,500 is apportioned between Engineering and Research in the ratio of 4 : 3. How much funding does the primary division with the larger share receive?",
+      "question": "An organizational capital outlay of $17,500 is apportioned between Engineering and Research in the ratio of 4 : 3. How much funding does the primary division with the larger share receive?",
       "options": [
         {
           "id": "A",
-          "text": "$12,500"
+          "text": "$7,503"
         },
         {
           "id": "B",
-          "text": "$8,750"
+          "text": "$11,375"
         },
         {
           "id": "C",
-          "text": "$7,500"
+          "text": "$12,500"
         },
         {
           "id": "D",
@@ -633,11 +633,11 @@
       "testId": "test-8"
     },
     {
-      "question": "[Campus Park 7] An athletic pavilion features a rectangular turf arena measuring 34 meters long by 18 meters wide. A perimeter paved track of uniform width 2 meters is laid around all four outer sides. What is the surface area of the paved track alone?",
+      "question": "An athletic pavilion features a rectangular turf arena measuring 34 meters long by 18 meters wide. A perimeter paved track of uniform width 2 meters is laid around all four outer sides. What is the surface area of the paved track alone?",
       "options": [
         {
           "id": "A",
-          "text": "212 m²"
+          "text": "252 m²"
         },
         {
           "id": "B",
@@ -645,11 +645,11 @@
         },
         {
           "id": "C",
-          "text": "104 m²"
+          "text": "212 m²"
         },
         {
           "id": "D",
-          "text": "306 m²"
+          "text": "200 m²"
         },
         {
           "id": "E",
@@ -664,7 +664,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Spatial Simulation #8 - Symmetry] Which figure does NOT share the same geometric symmetry property as the others?",
+      "question": "Which figure does NOT share the same geometric symmetry property as the others?",
       "subType": "odd_one_out",
       "options": [
         {
@@ -700,7 +700,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Audit Cycle 7] Quality auditor Kiran is 60% more efficient than auditor Oscar. Working concurrently, they complete an organizational compliance audit in 12 days. How many days would Oscar require to complete the audit working alone?",
+      "question": "Quality auditor Kiran is 60% more efficient than auditor Oscar. Working concurrently, they complete an organizational compliance audit in 12 days. How many days would Oscar require to complete the audit working alone?",
       "options": [
         {
           "id": "A",
@@ -716,11 +716,11 @@
         },
         {
           "id": "D",
-          "text": "26 days"
+          "text": "27 days"
         },
         {
           "id": "E",
-          "text": "24 days"
+          "text": "43 days"
         }
       ],
       "correctOption": "C",
@@ -762,19 +762,19 @@
       "testId": "test-8"
     },
     {
-      "question": "[Payroll Account 7] A corporate software sales executive earns a monthly base salary of $3,600, plus a 7% commission on all gross sales closed beyond a monthly threshold of $25,000. If the executive closes $54,000 in sales, what is their total compensation?",
+      "question": "A corporate software sales executive earns a monthly base salary of $3,600, plus a 7% commission on all gross sales closed beyond a monthly threshold of $25,000. If the executive closes $54,000 in sales, what is their total compensation?",
       "options": [
         {
           "id": "A",
-          "text": "$3,780"
+          "text": "$6,280"
         },
         {
           "id": "B",
-          "text": "$7,380"
+          "text": "$4,730"
         },
         {
           "id": "C",
-          "text": "$6,280"
+          "text": "$6,830"
         },
         {
           "id": "D",
@@ -793,7 +793,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Spatial Simulation #8 - Additive Matrix] Which figure completes the third row of this matrix?",
+      "question": "Which figure completes the third row of this matrix?",
       "matrixCells": [
         "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"15\" y1=\"35\" x2=\"55\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"2.5\" stroke-linecap=\"round\" /></svg>",
         "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"35\" y1=\"15\" x2=\"35\" y2=\"55\" stroke=\"#38bdf8\" stroke-width=\"2.5\" stroke-linecap=\"round\" /></svg>",
@@ -870,11 +870,11 @@
       "testId": "test-8"
     },
     {
-      "question": "[Operational Chain 7] Identify the next number in this operational progression:\n6, 12, 8, 16, 12, ?",
+      "question": "Identify the next number in this operational progression:\n6, 12, 8, 16, 12, ?",
       "options": [
         {
           "id": "A",
-          "text": "32"
+          "text": "16"
         },
         {
           "id": "B",
@@ -890,7 +890,7 @@
         },
         {
           "id": "E",
-          "text": "8"
+          "text": "32"
         }
       ],
       "correctOption": "C",
@@ -932,7 +932,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Taskforce 7] Senior developer Ian can build a module in 12 days, while developer Laura takes 24 days. Both collaborate for 3 days, after which Ian departs for another project. How many total days does it take to complete the module?",
+      "question": "Senior developer Ian can build a module in 12 days, while developer Laura takes 24 days. Both collaborate for 3 days, after which Ian departs for another project. How many total days does it take to complete the module?",
       "options": [
         {
           "id": "A",
@@ -940,7 +940,7 @@
         },
         {
           "id": "B",
-          "text": "18 days"
+          "text": "24 days"
         },
         {
           "id": "C",
@@ -963,7 +963,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Spatial Simulation #8 - 3D Cube Folding] Which of the following 3D cubes CAN be formed by folding the flat net shown below?",
+      "question": "Which of the following 3D cubes CAN be formed by folding the flat net shown below?",
       "figureSvg": "<svg viewBox=\"0 0 148 88\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <g stroke=\"#475569\" stroke-width=\"1.5\" fill=\"none\">\n        <!-- Cross layout: Top(1), Mid(2,3,4,5), Bot(6) -->\n        <rect x=\"50\" y=\"8\" width=\"24\" height=\"24\" rx=\"2\" fill=\"rgba(30,41,59,0.7)\" />\n        <rect x=\"26\" y=\"32\" width=\"24\" height=\"24\" rx=\"2\" fill=\"rgba(30,41,59,0.7)\" />\n        <rect x=\"50\" y=\"32\" width=\"24\" height=\"24\" rx=\"2\" fill=\"rgba(30,41,59,0.7)\" />\n        <rect x=\"74\" y=\"32\" width=\"24\" height=\"24\" rx=\"2\" fill=\"rgba(30,41,59,0.7)\" />\n        <rect x=\"98\" y=\"32\" width=\"24\" height=\"24\" rx=\"2\" fill=\"rgba(30,41,59,0.7)\" />\n        <rect x=\"50\" y=\"56\" width=\"24\" height=\"24\" rx=\"2\" fill=\"rgba(30,41,59,0.7)\" />\n      </g>\n      <!-- Symbols -->\n      <circle cx=\"62\" cy=\"20\" r=\"6\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\" /> <!-- 1: Circle -->\n      <text x=\"38\" y=\"44\" fill=\"#f59e0b\" font-size=\"12\" font-family=\"monospace\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">★</text> <!-- 2: Star -->\n      <text x=\"62\" y=\"44\" fill=\"#ec4899\" font-size=\"14\" font-family=\"monospace\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">+</text> <!-- 3: Cross -->\n      <rect x=\"82\" y=\"38\" width=\"10\" height=\"10\" rx=\"0\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"1.8\" /> <!-- 4: Square -->\n      <polygon points=\"105,50 115,50 110,38\" fill=\"none\" stroke=\"#a855f7\" stroke-width=\"1.8\" stroke-linejoin=\"round\" /> <!-- 5: Triangle -->\n      <polygon points=\"62,60 69,68 62,76 55,68\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"1.8\" stroke-linejoin=\"round\" /> <!-- 6: Diamond -->\n    </svg>",
       "figureLabel": "Flat Cube Net (Unfolded):",
       "options": [
@@ -1031,19 +1031,19 @@
       "testId": "test-8"
     },
     {
-      "question": "[Rail Transit 7] Two freight locomotives leave Phoenix and Tucson, situated 220 miles apart, traveling directly toward each other on parallel tracks at constant velocities of 50 mph and 60 mph. In how many hours will they cross paths?",
+      "question": "Two freight locomotives leave Phoenix and Tucson, situated 220 miles apart, traveling directly toward each other on parallel tracks at constant velocities of 50 mph and 60 mph. In how many hours will they cross paths?",
       "options": [
         {
           "id": "A",
-          "text": "4 hours"
+          "text": "1 hours"
         },
         {
           "id": "B",
-          "text": "1.5 hours"
+          "text": "5 hours"
         },
         {
           "id": "C",
-          "text": "3.5 hours"
+          "text": "4 hours"
         },
         {
           "id": "D",
@@ -1062,11 +1062,11 @@
       "testId": "test-8"
     },
     {
-      "question": "[Sign Inversion Series 7] Determine the next number in this alternating geometric sequence:\n4, -8, 16, -32, 64, ?",
+      "question": "Determine the next number in this alternating geometric sequence:\n4, -8, 16, -32, 64, ?",
       "options": [
         {
           "id": "A",
-          "text": "128"
+          "text": "-144"
         },
         {
           "id": "B",
@@ -1074,11 +1074,11 @@
         },
         {
           "id": "C",
-          "text": "-144"
+          "text": "64"
         },
         {
           "id": "D",
-          "text": "-116"
+          "text": "-256"
         },
         {
           "id": "E",
@@ -1093,7 +1093,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Spatial Simulation #8 - Chirality] Which of the five figures below does NOT belong with the others?",
+      "question": "Which of the five figures below does NOT belong with the others?",
       "subType": "odd_one_out",
       "options": [
         {
@@ -1160,7 +1160,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Vault Deposit 7] A security deposit canister contains 40 metallic tokens consisting strictly of dimes ($0.10) and quarters ($0.25). If the total verified value of all tokens in the canister is $6.70, exactly how many quarters are in the canister?",
+      "question": "A security deposit canister contains 40 metallic tokens consisting strictly of dimes ($0.10) and quarters ($0.25). If the total verified value of all tokens in the canister is $6.70, exactly how many quarters are in the canister?",
       "options": [
         {
           "id": "A",
@@ -1168,19 +1168,19 @@
         },
         {
           "id": "B",
-          "text": "22"
-        },
-        {
-          "id": "C",
-          "text": "20"
-        },
-        {
-          "id": "D",
           "text": "21"
         },
         {
-          "id": "E",
+          "id": "C",
+          "text": "13"
+        },
+        {
+          "id": "D",
           "text": "16"
+        },
+        {
+          "id": "E",
+          "text": "24"
         }
       ],
       "correctOption": "A",
@@ -1222,7 +1222,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Operations Grid 7] Calibration specialist Julia can certify a server cluster in 10 hours alone, while technician Rachel requires 20 hours alone. Working concurrently at constant rates, how many hours will both specialists take to certify the cluster?",
+      "question": "Calibration specialist Julia can certify a server cluster in 10 hours alone, while technician Rachel requires 20 hours alone. Working concurrently at constant rates, how many hours will both specialists take to certify the cluster?",
       "options": [
         {
           "id": "A",
@@ -1230,11 +1230,11 @@
         },
         {
           "id": "B",
-          "text": "5.9 hours"
+          "text": "10.9 hours"
         },
         {
           "id": "C",
-          "text": "9.2 hours"
+          "text": "9.5 hours"
         },
         {
           "id": "D",
@@ -1242,7 +1242,7 @@
         },
         {
           "id": "E",
-          "text": "15 hours"
+          "text": "5.9 hours"
         }
       ],
       "correctOption": "A",
@@ -1253,7 +1253,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Spatial Simulation #8 - Vertex Sequence] Which polygon figure logically completes this sequence?",
+      "question": "Which polygon figure logically completes this sequence?",
       "sequenceFrames": [
         "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,15.0 52.3,45.0 17.7,45.0\" fill=\"rgba(16,185,129,0.2)\" stroke=\"#10b981\" stroke-width=\"2\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\" />\n      </svg>",
         "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,15.0 55.0,35.0 35.0,55.0 15.0,35.0\" fill=\"rgba(16,185,129,0.2)\" stroke=\"#10b981\" stroke-width=\"2\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\" />\n      </svg>",
@@ -1325,7 +1325,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Structural Survey 7] A maintenance ladder measuring 25 feet in length is placed against the vertical outer facade of a laboratory building. If the foot of the ladder is stationed 15 feet horizontally from the base of the wall, how many feet above ground does the top of the ladder reach?",
+      "question": "A maintenance ladder measuring 25 feet in length is placed against the vertical outer facade of a laboratory building. If the foot of the ladder is stationed 15 feet horizontally from the base of the wall, how many feet above ground does the top of the ladder reach?",
       "options": [
         {
           "id": "A",
@@ -1341,11 +1341,11 @@
         },
         {
           "id": "D",
-          "text": "19 feet"
+          "text": "16 feet"
         },
         {
           "id": "E",
-          "text": "24 feet"
+          "text": "26 feet"
         }
       ],
       "correctOption": "A",
@@ -1356,7 +1356,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Geometric Triangulation 7] Determine the next number in this sequence:\n4, 6, 9, 13, 18, ?",
+      "question": "Determine the next number in this sequence:\n4, 6, 9, 13, 18, ?",
       "options": [
         {
           "id": "A",
@@ -1368,11 +1368,11 @@
         },
         {
           "id": "C",
-          "text": "29"
+          "text": "30"
         },
         {
           "id": "D",
-          "text": "25"
+          "text": "19"
         },
         {
           "id": "E",
@@ -1387,7 +1387,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Spatial Simulation #8 - Dual Orbit] Which figure comes next in this orbital progression?",
+      "question": "Which figure comes next in this orbital progression?",
       "sequenceFrames": [
         "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,13.0 54.1,24.0 54.1,46.0 35.0,57.0 15.9,46.0 15.9,24.0\" fill=\"rgba(30,41,59,0.5)\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" />\n        <circle cx=\"35.0\" cy=\"13.0\" r=\"4\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\" />\n        <circle cx=\"35.0\" cy=\"13.0\" r=\"4\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\" />\n      </svg>",
         "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,13.0 54.1,24.0 54.1,46.0 35.0,57.0 15.9,46.0 15.9,24.0\" fill=\"rgba(30,41,59,0.5)\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" />\n        <circle cx=\"54.1\" cy=\"24.0\" r=\"4\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\" />\n        <circle cx=\"15.9\" cy=\"46.0\" r=\"4\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\" />\n      </svg>",
@@ -1459,7 +1459,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Aviation Dispatch 7] Two commercial jets depart simultaneously from the same metropolitan airport runway, Jet 1 flying due North at 510 mph and Jet 2 flying due South at 560 mph. In how many hours will the two aircraft be separated by exactly 2,850 miles?",
+      "question": "Two commercial jets depart simultaneously from the same metropolitan airport runway, Jet 1 flying due North at 510 mph and Jet 2 flying due South at 560 mph. In how many hours will the two aircraft be separated by exactly 2,850 miles?",
       "options": [
         {
           "id": "A",
@@ -1471,7 +1471,7 @@
         },
         {
           "id": "C",
-          "text": "3.86 hours"
+          "text": "4.46 hours"
         },
         {
           "id": "D",
@@ -1479,7 +1479,7 @@
         },
         {
           "id": "E",
-          "text": "3.50 hours"
+          "text": "3.86 hours"
         }
       ],
       "correctOption": "D",
@@ -1521,7 +1521,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Storage Bin 7] A robotics workshop storage bin holds 35 precision sensors colored cobalt and silver in a ratio of 3 : 2. How many additional silver sensors must be added to the bin to make the ratio of cobalt to silver sensors exactly 1 : 1?",
+      "question": "A robotics workshop storage bin holds 35 precision sensors colored cobalt and silver in a ratio of 3 : 2. How many additional silver sensors must be added to the bin to make the ratio of cobalt to silver sensors exactly 1 : 1?",
       "options": [
         {
           "id": "A",
@@ -1529,7 +1529,7 @@
         },
         {
           "id": "B",
-          "text": "14"
+          "text": "5"
         },
         {
           "id": "C",
@@ -1537,11 +1537,11 @@
         },
         {
           "id": "D",
-          "text": "5"
+          "text": "15"
         },
         {
           "id": "E",
-          "text": "21"
+          "text": "16"
         }
       ],
       "correctOption": "C",
@@ -1552,7 +1552,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Spatial Simulation #8 - Analogy Inversion] Figure A is to Figure B as Figure C is to which choice?",
+      "question": "Figure A is to Figure B as Figure C is to which choice?",
       "contextSvg": {
         "figA": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"35,16 48,34 40,34 40,54 30,54 30,34 22,34\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"1.5\" stroke-linejoin=\"round\" /></svg>",
         "figB": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"35,54 48,36 40,36 40,16 30,16 30,36 22,36\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-linejoin=\"round\" /></svg>",
@@ -1623,7 +1623,7 @@
       "testId": "test-8"
     },
     {
-      "question": "[Governance Taskforce 7] From a senior panel of 7 qualified systems engineers, in how many distinct combinations can an independent 3-member architecture review committee be formed?",
+      "question": "From a senior panel of 7 qualified systems engineers, in how many distinct combinations can an independent 3-member architecture review committee be formed?",
       "options": [
         {
           "id": "A",
@@ -1635,15 +1635,15 @@
         },
         {
           "id": "C",
-          "text": "21"
-        },
-        {
-          "id": "D",
           "text": "27"
         },
         {
+          "id": "D",
+          "text": "59"
+        },
+        {
           "id": "E",
-          "text": "42"
+          "text": "19"
         }
       ],
       "correctOption": "A",

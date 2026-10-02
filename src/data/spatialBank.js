@@ -101,7 +101,7 @@ export const SPATIAL_ARCHETYPES = [
     const rawOpts = [{ svg: outlierSvg }, ...normalSvgs.map(s => ({ svg: s }))];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
     return {
-      question: `[Spatial Simulation #${t} - Chirality] Which of the five figures below does NOT belong with the others?`,
+      question: `Which of the five figures below does NOT belong with the others?`,
       subType: 'odd_one_out',
       options,
       correctOption,
@@ -134,7 +134,7 @@ export const SPATIAL_ARCHETYPES = [
     const rawOpts = [{ svg: outlierSvg }, ...normalSvgs.map(s => ({ svg: s }))];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
     return {
-      question: `[Spatial Simulation #${t} - Handedness] Which figure is the odd one out?`,
+      question: `Which figure is the odd one out?`,
       subType: 'odd_one_out',
       options,
       correctOption,
@@ -205,7 +205,7 @@ export const SPATIAL_ARCHETYPES = [
     const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
     return {
-      question: `[Spatial Simulation #${t} - 3D Cube Folding] Which of the following 3D cubes CAN be formed by folding the flat net shown below?`,
+      question: `Which of the following 3D cubes CAN be formed by folding the flat net shown below?`,
       figureSvg: netSvg,
       figureLabel: 'Flat Cube Net (Unfolded):',
       options,
@@ -258,7 +258,7 @@ export const SPATIAL_ARCHETYPES = [
     const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
     return {
-      question: `[Spatial Simulation #${t} - Paper Folding] A square sheet of paper is folded in half twice and punched with a circular hole as shown. Which figure represents the sheet when completely unfolded?`,
+      question: `A square sheet of paper is folded in half twice and punched with a circular hole as shown. Which figure represents the sheet when completely unfolded?`,
       figureSvg: foldDiagram,
       figureLabel: 'Paper Folding & Punch Sequence:',
       options,
@@ -307,7 +307,7 @@ export const SPATIAL_ARCHETYPES = [
     const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
     return {
-      question: `[Spatial Simulation #${t} - Matrix Reasoning] Which figure logically replaces the question mark in this 3×3 matrix?`,
+      question: `Which figure logically replaces the question mark in this 3×3 matrix?`,
       matrixCells,
       options,
       correctOption,
@@ -350,7 +350,7 @@ export const SPATIAL_ARCHETYPES = [
     const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
     return {
-      question: `[Spatial Simulation #${t} - Additive Matrix] Which figure completes the third row of this matrix?`,
+      question: `Which figure completes the third row of this matrix?`,
       matrixCells,
       options,
       correctOption,
@@ -394,7 +394,7 @@ export const SPATIAL_ARCHETYPES = [
     const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
     return {
-      question: `[Spatial Simulation #${t} - Dual Orbit] Which figure comes next in this orbital progression?`,
+      question: `Which figure comes next in this orbital progression?`,
       sequenceFrames,
       options,
       correctOption,
@@ -431,7 +431,7 @@ export const SPATIAL_ARCHETYPES = [
     const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
     return {
-      question: `[Spatial Simulation #${t} - Vertex Sequence] Which polygon figure logically completes this sequence?`,
+      question: `Which polygon figure logically completes this sequence?`,
       sequenceFrames,
       options,
       correctOption,
@@ -461,7 +461,7 @@ export const SPATIAL_ARCHETYPES = [
     const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
     return {
-      question: `[Spatial Simulation #${t} - Analogy] Figure A is to Figure B as Figure C is to which of the following choices?`,
+      question: `Figure A is to Figure B as Figure C is to which of the following choices?`,
       contextSvg: { figA, figB, figC },
       options,
       correctOption,
@@ -491,7 +491,7 @@ export const SPATIAL_ARCHETYPES = [
     const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
     return {
-      question: `[Spatial Simulation #${t} - Analogy Inversion] Figure A is to Figure B as Figure C is to which choice?`,
+      question: `Figure A is to Figure B as Figure C is to which choice?`,
       contextSvg: { figA, figB, figC },
       options,
       correctOption,
@@ -513,7 +513,7 @@ export const SPATIAL_ARCHETYPES = [
     const rawOpts = [{ svg: asymmetric }, { svg: sym1 }, { svg: sym2 }, { svg: sym3 }, { svg: sym4 }];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
     return {
-      question: `[Spatial Simulation #${t} - Symmetry] Which figure does NOT share the same geometric symmetry property as the others?`,
+      question: `Which figure does NOT share the same geometric symmetry property as the others?`,
       subType: 'odd_one_out',
       options,
       correctOption,

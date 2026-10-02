@@ -9,11 +9,11 @@
   "spatialCount": 11,
   "questions": [
     {
-      "question": "[Campus Park 22] An athletic pavilion features a rectangular turf arena measuring 30 meters long by 18 meters wide. A perimeter paved track of uniform width 2 meters is laid around all four outer sides. What is the surface area of the paved track alone?",
+      "question": "An athletic pavilion features a rectangular turf arena measuring 30 meters long by 18 meters wide. A perimeter paved track of uniform width 2 meters is laid around all four outer sides. What is the surface area of the paved track alone?",
       "options": [
         {
           "id": "A",
-          "text": "196 m²"
+          "text": "236 m²"
         },
         {
           "id": "B",
@@ -21,7 +21,7 @@
         },
         {
           "id": "C",
-          "text": "270 m²"
+          "text": "184 m²"
         },
         {
           "id": "D",
@@ -29,7 +29,7 @@
         },
         {
           "id": "E",
-          "text": "96 m²"
+          "text": "196 m²"
         }
       ],
       "correctOption": "B",
@@ -71,7 +71,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Spatial Simulation #23 - Handedness] Which figure is the odd one out?",
+      "question": "Which figure is the odd one out?",
       "subType": "odd_one_out",
       "options": [
         {
@@ -107,7 +107,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Lab Assay 22] An analytical chemist requires 150 liters of a 24% reagent mixture, prepared by combining a weak 12% solution with a concentrated 42% solution. How many liters of the concentrated 42% solution must be included?",
+      "question": "An analytical chemist requires 150 liters of a 24% reagent mixture, prepared by combining a weak 12% solution with a concentrated 42% solution. How many liters of the concentrated 42% solution must be included?",
       "options": [
         {
           "id": "A",
@@ -123,7 +123,7 @@
         },
         {
           "id": "D",
-          "text": "75 liters"
+          "text": "72 liters"
         },
         {
           "id": "E",
@@ -169,15 +169,15 @@
       "testId": "test-23"
     },
     {
-      "question": "[Budget Allocation 22] A biotechnology researcher spends 1/3 of a monthly research stipend on cold-storage laboratory facilities, and 1/4 of the remaining balance on genomic assays. If $1,050 remains available for publication fees, what was the researcher's full monthly stipend?",
+      "question": "A biotechnology researcher spends 1/3 of a monthly research stipend on cold-storage laboratory facilities, and 1/4 of the remaining balance on genomic assays. If $1,050 remains available for publication fees, what was the researcher's full monthly stipend?",
       "options": [
         {
           "id": "A",
-          "text": "$2,520"
+          "text": "$1,500"
         },
         {
           "id": "B",
-          "text": "$3,150"
+          "text": "$3,000"
         },
         {
           "id": "C",
@@ -200,7 +200,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Spatial Simulation #23 - 3D Cube Folding] Which of the following 3D cubes CAN be formed by folding the flat net shown below?",
+      "question": "Which of the following 3D cubes CAN be formed by folding the flat net shown below?",
       "figureSvg": "<svg viewBox=\"0 0 148 88\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <g stroke=\"#475569\" stroke-width=\"1.5\" fill=\"none\">\n        <!-- Cross layout: Top(1), Mid(2,3,4,5), Bot(6) -->\n        <rect x=\"50\" y=\"8\" width=\"24\" height=\"24\" rx=\"2\" fill=\"rgba(30,41,59,0.7)\" />\n        <rect x=\"26\" y=\"32\" width=\"24\" height=\"24\" rx=\"2\" fill=\"rgba(30,41,59,0.7)\" />\n        <rect x=\"50\" y=\"32\" width=\"24\" height=\"24\" rx=\"2\" fill=\"rgba(30,41,59,0.7)\" />\n        <rect x=\"74\" y=\"32\" width=\"24\" height=\"24\" rx=\"2\" fill=\"rgba(30,41,59,0.7)\" />\n        <rect x=\"98\" y=\"32\" width=\"24\" height=\"24\" rx=\"2\" fill=\"rgba(30,41,59,0.7)\" />\n        <rect x=\"50\" y=\"56\" width=\"24\" height=\"24\" rx=\"2\" fill=\"rgba(30,41,59,0.7)\" />\n      </g>\n      <!-- Symbols -->\n      <circle cx=\"62\" cy=\"20\" r=\"6\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\" /> <!-- 1: Circle -->\n      <text x=\"38\" y=\"44\" fill=\"#f59e0b\" font-size=\"12\" font-family=\"monospace\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">★</text> <!-- 2: Star -->\n      <text x=\"62\" y=\"44\" fill=\"#ec4899\" font-size=\"14\" font-family=\"monospace\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">+</text> <!-- 3: Cross -->\n      <rect x=\"82\" y=\"38\" width=\"10\" height=\"10\" rx=\"0\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"1.8\" /> <!-- 4: Square -->\n      <polygon points=\"105,50 115,50 110,38\" fill=\"none\" stroke=\"#a855f7\" stroke-width=\"1.8\" stroke-linejoin=\"round\" /> <!-- 5: Triangle -->\n      <polygon points=\"62,60 69,68 62,76 55,68\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"1.8\" stroke-linejoin=\"round\" /> <!-- 6: Diamond -->\n    </svg>",
       "figureLabel": "Flat Cube Net (Unfolded):",
       "options": [
@@ -268,7 +268,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Exponential Series 22] What number logically replaces the question mark in this series?\n4, 11, 30, 67, ?",
+      "question": "What number logically replaces the question mark in this series?\n4, 11, 30, 67, ?",
       "options": [
         {
           "id": "A",
@@ -280,7 +280,7 @@
         },
         {
           "id": "C",
-          "text": "118"
+          "text": "116"
         },
         {
           "id": "D",
@@ -288,7 +288,7 @@
         },
         {
           "id": "E",
-          "text": "125"
+          "text": "143"
         }
       ],
       "correctOption": "A",
@@ -330,7 +330,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Team Dining 22] A team of 4 colleagues attends a project celebration with a food subtotal of $160.00. An 8% state sales tax and an 18% gratuity are both applied directly to the base food subtotal. If the colleagues divide the total cost equally, how much does each person pay?",
+      "question": "A team of 4 colleagues attends a project celebration with a food subtotal of $160.00. An 8% state sales tax and an 18% gratuity are both applied directly to the base food subtotal. If the colleagues divide the total cost equally, how much does each person pay?",
       "options": [
         {
           "id": "A",
@@ -338,7 +338,7 @@
         },
         {
           "id": "B",
-          "text": "$56.40"
+          "text": "$59.90"
         },
         {
           "id": "C",
@@ -346,11 +346,11 @@
         },
         {
           "id": "D",
-          "text": "$40.00"
+          "text": "$47.60"
         },
         {
           "id": "E",
-          "text": "$47.60"
+          "text": "$56.40"
         }
       ],
       "correctOption": "A",
@@ -361,7 +361,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Spatial Simulation #23 - Chirality] Which of the five figures below does NOT belong with the others?",
+      "question": "Which of the five figures below does NOT belong with the others?",
       "subType": "odd_one_out",
       "options": [
         {
@@ -397,19 +397,19 @@
       "testId": "test-23"
     },
     {
-      "question": "[Transit Metro 22] An express commuter train measuring 220 meters in length travels at a steady 90 km/h (25 m/s). How many seconds will it take for the train to completely clear a stationary covered station platform of length 370 meters?",
+      "question": "An express commuter train measuring 220 meters in length travels at a steady 90 km/h (25 m/s). How many seconds will it take for the train to completely clear a stationary covered station platform of length 370 meters?",
       "options": [
         {
           "id": "A",
-          "text": "28.1 seconds"
-        },
-        {
-          "id": "B",
           "text": "20.4 seconds"
         },
         {
+          "id": "B",
+          "text": "31.6 seconds"
+        },
+        {
           "id": "C",
-          "text": "14.8 seconds"
+          "text": "28.1 seconds"
         },
         {
           "id": "D",
@@ -417,7 +417,7 @@
         },
         {
           "id": "E",
-          "text": "8.8 seconds"
+          "text": "36.1 seconds"
         }
       ],
       "correctOption": "D",
@@ -459,7 +459,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Grant Program 22] A municipal innovation grant of $78,000 is divided among Solar Energy, Battery Storage, and Grid Resilience in the ratio of 3 : 4 : 5. How much funding does Battery Storage receive?",
+      "question": "A municipal innovation grant of $78,000 is divided among Solar Energy, Battery Storage, and Grid Resilience in the ratio of 3 : 4 : 5. How much funding does Battery Storage receive?",
       "options": [
         {
           "id": "A",
@@ -471,11 +471,11 @@
         },
         {
           "id": "C",
-          "text": "$32,500"
+          "text": "$35,100"
         },
         {
           "id": "D",
-          "text": "$26,000"
+          "text": "$15,600"
         },
         {
           "id": "E",
@@ -490,7 +490,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Spatial Simulation #23 - Matrix Reasoning] Which figure logically replaces the question mark in this 3×3 matrix?",
+      "question": "Which figure logically replaces the question mark in this 3×3 matrix?",
       "matrixCells": [
         "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"18\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\" /></svg>",
         "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"17\" y=\"17\" width=\"36\" height=\"36\" rx=\"0\" fill=\"rgba(56, 189, 248, 0.35)\" stroke=\"#38bdf8\" stroke-width=\"2\" /></svg>",
@@ -567,15 +567,15 @@
       "testId": "test-23"
     },
     {
-      "question": "[Interleaved Pattern 22] What number replaces the question mark in this alternating interleaved series?\n16, 72, 20, 67, 24, 62, ?",
+      "question": "What number replaces the question mark in this alternating interleaved series?\n16, 72, 20, 67, 24, 62, ?",
       "options": [
         {
           "id": "A",
-          "text": "25"
+          "text": "33"
         },
         {
           "id": "B",
-          "text": "30"
+          "text": "25"
         },
         {
           "id": "C",
@@ -583,11 +583,11 @@
         },
         {
           "id": "D",
-          "text": "33"
+          "text": "22"
         },
         {
           "id": "E",
-          "text": "57"
+          "text": "30"
         }
       ],
       "correctOption": "C",
@@ -629,7 +629,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Statistical Trial 22] During a Monte Carlo risk simulation using two fair standard six-sided dice, what is the exact probability of obtaining a combined sum of 10 or higher on a single roll?",
+      "question": "During a Monte Carlo risk simulation using two fair standard six-sided dice, what is the exact probability of obtaining a combined sum of 10 or higher on a single roll?",
       "options": [
         {
           "id": "A",
@@ -660,7 +660,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Spatial Simulation #23 - Dual Orbit] Which figure comes next in this orbital progression?",
+      "question": "Which figure comes next in this orbital progression?",
       "sequenceFrames": [
         "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,13.0 54.1,24.0 54.1,46.0 35.0,57.0 15.9,46.0 15.9,24.0\" fill=\"rgba(30,41,59,0.5)\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" />\n        <circle cx=\"35.0\" cy=\"13.0\" r=\"4\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\" />\n        <circle cx=\"35.0\" cy=\"13.0\" r=\"4\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\" />\n      </svg>",
         "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,13.0 54.1,24.0 54.1,46.0 35.0,57.0 15.9,46.0 15.9,24.0\" fill=\"rgba(30,41,59,0.5)\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\" />\n        <circle cx=\"54.1\" cy=\"24.0\" r=\"4\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\" />\n        <circle cx=\"15.9\" cy=\"46.0\" r=\"4\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\" />\n      </svg>",
@@ -701,15 +701,15 @@
       "testId": "test-23"
     },
     {
-      "question": "[Modular Engineering 22] If all three linear dimensions (length, breadth, and height) of a rectangular containment pod are uniformly expanded by a scaling factor of 3, by what overall factor does the internal volumetric capacity expand?",
+      "question": "If all three linear dimensions (length, breadth, and height) of a rectangular containment pod are uniformly expanded by a scaling factor of 3, by what overall factor does the internal volumetric capacity expand?",
       "options": [
         {
           "id": "A",
-          "text": "3 times"
+          "text": "9 times"
         },
         {
           "id": "B",
-          "text": "31 times"
+          "text": "81 times"
         },
         {
           "id": "C",
@@ -717,11 +717,11 @@
         },
         {
           "id": "D",
-          "text": "9 times"
+          "text": "18 times"
         },
         {
           "id": "E",
-          "text": "9 times"
+          "text": "36 times"
         }
       ],
       "correctOption": "C",
@@ -763,7 +763,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Project Alpha-22] Technician Valerie can audit an enterprise data pipeline in 6 days alone, while Technician Caleb requires 12 days alone. If they alternate working one day at a time, starting with Valerie on day 1, approximately how many total days will it take to finish the audit?",
+      "question": "Technician Valerie can audit an enterprise data pipeline in 6 days alone, while Technician Caleb requires 12 days alone. If they alternate working one day at a time, starting with Valerie on day 1, approximately how many total days will it take to finish the audit?",
       "options": [
         {
           "id": "A",
@@ -771,7 +771,7 @@
         },
         {
           "id": "B",
-          "text": "12 days"
+          "text": "15 days"
         },
         {
           "id": "C",
@@ -779,7 +779,7 @@
         },
         {
           "id": "D",
-          "text": "9 days"
+          "text": "13 days"
         },
         {
           "id": "E",
@@ -787,14 +787,14 @@
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (8 days)\n\n**Step-by-step Solution:**\n1. Combined work done in a 2-day cycle: \\(1/6 + 1/12 = 3/12\\).\n2. Cycles needed = \\(12 / 3 = 4.0\\). Multiplied by 2 days per cycle = **8 days**.",
+      "explanation": "**Correct Answer: A** (8 days)\n\n**Step-by-step Solution:**\n1. Combined work done in a 2-day cycle: \\(1/6 + 1/12 = 3/12\\).\n2. Total cycles needed = \\(12 / 3 = 4.0\\). Multiplied by 2 days per cycle = **8 days**.",
       "category": "math",
       "subType": "word_problem",
       "id": 24,
       "testId": "test-23"
     },
     {
-      "question": "[Spatial Simulation #23 - Vertex Sequence] Which polygon figure logically completes this sequence?",
+      "question": "Which polygon figure logically completes this sequence?",
       "sequenceFrames": [
         "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,15.0 55.0,35.0 35.0,55.0 15.0,35.0\" fill=\"rgba(16,185,129,0.2)\" stroke=\"#10b981\" stroke-width=\"2\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\" />\n      </svg>",
         "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n        <polygon points=\"35.0,15.0 54.0,28.8 46.8,51.2 23.2,51.2 16.0,28.8\" fill=\"rgba(16,185,129,0.2)\" stroke=\"#10b981\" stroke-width=\"2\" stroke-linejoin=\"round\" />\n        <circle cx=\"35\" cy=\"35\" r=\"3\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\" />\n      </svg>",
@@ -866,7 +866,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Logistics Route 22] A standard freight courier leaves a distribution center traveling at 54 mph. Exactly 2 hours later, an express intercept vehicle departs along the identical highway traveling at 78 mph. In how many hours will the express vehicle overtake the freight courier?",
+      "question": "A standard freight courier leaves a distribution center traveling at 54 mph. Exactly 2 hours later, an express intercept vehicle departs along the identical highway traveling at 78 mph. In how many hours will the express vehicle overtake the freight courier?",
       "options": [
         {
           "id": "A",
@@ -874,11 +874,11 @@
         },
         {
           "id": "B",
-          "text": "9 hours"
+          "text": "7.7 hours"
         },
         {
           "id": "C",
-          "text": "7.0 hours"
+          "text": "9.5 hours"
         },
         {
           "id": "D",
@@ -928,7 +928,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Market Volatility 22] Following macroeconomic adjustments, an index fund shares experience an immediate drop of exactly 20% in unit value. By what percentage must the new reduced share price increase to return to the original pre-decline value?",
+      "question": "Following macroeconomic adjustments, an index fund shares experience an immediate drop of exactly 20% in unit value. By what percentage must the new reduced share price increase to return to the original pre-decline value?",
       "options": [
         {
           "id": "A",
@@ -940,7 +940,7 @@
         },
         {
           "id": "C",
-          "text": "15.0%"
+          "text": "40.0%"
         },
         {
           "id": "D",
@@ -948,7 +948,7 @@
         },
         {
           "id": "E",
-          "text": "25.0%"
+          "text": "35.0%"
         }
       ],
       "correctOption": "B",
@@ -959,7 +959,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Spatial Simulation #23 - Analogy Inversion] Figure A is to Figure B as Figure C is to which choice?",
+      "question": "Figure A is to Figure B as Figure C is to which choice?",
       "contextSvg": {
         "figA": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"35,16 48,34 40,34 40,54 30,54 30,34 22,34\" fill=\"#38bdf8\" stroke=\"#38bdf8\" stroke-width=\"1.5\" stroke-linejoin=\"round\" /></svg>",
         "figB": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"35,54 48,36 40,36 40,16 30,16 30,36 22,36\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-linejoin=\"round\" /></svg>",
@@ -1030,7 +1030,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Chronology Case 22] Exactly 6 years ago, an aerospace architect was three times as old as their apprentice. In 6 years from now, the architect will be twice as old as the apprentice. How old is the architect today?",
+      "question": "Exactly 6 years ago, an aerospace architect was three times as old as their apprentice. In 6 years from now, the architect will be twice as old as the apprentice. How old is the architect today?",
       "options": [
         {
           "id": "A",
@@ -1038,7 +1038,7 @@
         },
         {
           "id": "B",
-          "text": "40 years old"
+          "text": "58 years old"
         },
         {
           "id": "C",
@@ -1050,7 +1050,7 @@
         },
         {
           "id": "E",
-          "text": "52 years old"
+          "text": "38 years old"
         }
       ],
       "correctOption": "C",
@@ -1061,19 +1061,19 @@
       "testId": "test-23"
     },
     {
-      "question": "[Operations Grid 22] Calibration specialist Yusuf can certify a server cluster in 10 hours alone, while technician Aaron requires 20 hours alone. Working concurrently at constant rates, how many hours will both specialists take to certify the cluster?",
+      "question": "Calibration specialist Yusuf can certify a server cluster in 10 hours alone, while technician Aaron requires 20 hours alone. Working concurrently at constant rates, how many hours will both specialists take to certify the cluster?",
       "options": [
         {
           "id": "A",
-          "text": "15 hours"
+          "text": "5.9 hours"
         },
         {
           "id": "B",
-          "text": "9.2 hours"
+          "text": "9.5 hours"
         },
         {
           "id": "C",
-          "text": "5.9 hours"
+          "text": "10.9 hours"
         },
         {
           "id": "D",
@@ -1092,7 +1092,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Spatial Simulation #23 - Analogy] Figure A is to Figure B as Figure C is to which of the following choices?",
+      "question": "Figure A is to Figure B as Figure C is to which of the following choices?",
       "contextSvg": {
         "figA": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"15\" y=\"15\" width=\"40\" height=\"40\" rx=\"0\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\" /><circle cx=\"35\" cy=\"35\" r=\"10\" fill=\"rgba(245,158,11,0.3)\" stroke=\"#f59e0b\" stroke-width=\"1.8\" /></svg>",
         "figB": "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"35\" cy=\"35\" r=\"20\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\" /><rect x=\"27\" y=\"27\" width=\"16\" height=\"16\" rx=\"0\" fill=\"rgba(245,158,11,0.3)\" stroke=\"#f59e0b\" stroke-width=\"1.8\" /></svg>",
@@ -1163,7 +1163,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Sequence Progression 22] Determine the next number in this sequence:\n10, 14, 21, 31, 44, ?",
+      "question": "Determine the next number in this sequence:\n10, 14, 21, 31, 44, ?",
       "options": [
         {
           "id": "A",
@@ -1175,7 +1175,7 @@
         },
         {
           "id": "C",
-          "text": "66"
+          "text": "67"
         },
         {
           "id": "D",
@@ -1183,7 +1183,7 @@
         },
         {
           "id": "E",
-          "text": "57"
+          "text": "54"
         }
       ],
       "correctOption": "D",
@@ -1225,11 +1225,11 @@
       "testId": "test-23"
     },
     {
-      "question": "[Academic Assessment 22] A candidate has achieved scores of 84, 88, and 94 on the first three evaluations of an executive training module. What score must they achieve on the fourth and final evaluation to attain a cumulative average of exactly 90?",
+      "question": "A candidate has achieved scores of 84, 88, and 94 on the first three evaluations of an executive training module. What score must they achieve on the fourth and final evaluation to attain a cumulative average of exactly 90?",
       "options": [
         {
           "id": "A",
-          "text": "100"
+          "text": "88"
         },
         {
           "id": "B",
@@ -1241,7 +1241,7 @@
         },
         {
           "id": "D",
-          "text": "96"
+          "text": "101"
         },
         {
           "id": "E",
@@ -1256,7 +1256,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Spatial Simulation #23 - Symmetry] Which figure does NOT share the same geometric symmetry property as the others?",
+      "question": "Which figure does NOT share the same geometric symmetry property as the others?",
       "subType": "odd_one_out",
       "options": [
         {
@@ -1323,7 +1323,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Promotion Engine 22] A commercial espresso machine priced at $220 is placed on seasonal clearance with a 20% discount. At checkout, a subscriber loyalty coupon applies an additional 10% discount to the already reduced price. What is the customer's final purchase price?",
+      "question": "A commercial espresso machine priced at $220 is placed on seasonal clearance with a 20% discount. At checkout, a subscriber loyalty coupon applies an additional 10% discount to the already reduced price. What is the customer's final purchase price?",
       "options": [
         {
           "id": "A",
@@ -1331,19 +1331,19 @@
         },
         {
           "id": "B",
-          "text": "$152"
+          "text": "$174"
         },
         {
           "id": "C",
-          "text": "$166"
+          "text": "$152"
         },
         {
           "id": "D",
-          "text": "$154"
+          "text": "$166"
         },
         {
           "id": "E",
-          "text": "$172"
+          "text": "$146"
         }
       ],
       "correctOption": "A",
@@ -1354,7 +1354,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Mental Calculus 22] Without using pencil or paper, quickly compute the following combined expression:\nWhat is 20% of 100 added to 30% of 80?",
+      "question": "Without using pencil or paper, quickly compute the following combined expression:\nWhat is 20% of 100 added to 30% of 80?",
       "options": [
         {
           "id": "A",
@@ -1362,7 +1362,7 @@
         },
         {
           "id": "B",
-          "text": "54"
+          "text": "56"
         },
         {
           "id": "C",
@@ -1370,7 +1370,7 @@
         },
         {
           "id": "D",
-          "text": "36"
+          "text": "34"
         },
         {
           "id": "E",
@@ -1385,7 +1385,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Spatial Simulation #23 - Paper Folding] A square sheet of paper is folded in half twice and punched with a circular hole as shown. Which figure represents the sheet when completely unfolded?",
+      "question": "A square sheet of paper is folded in half twice and punched with a circular hole as shown. Which figure represents the sheet when completely unfolded?",
       "figureSvg": "<svg viewBox=\"0 0 148 64\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\">\n      <g stroke=\"#64748b\" stroke-width=\"1.5\" fill=\"none\">\n        <!-- Sheet 1: Fold left to right -->\n        <rect x=\"10\" y=\"10\" width=\"36\" height=\"36\" fill=\"rgba(30,41,59,0.6)\" />\n        <line x1=\"28\" y1=\"10\" x2=\"28\" y2=\"46\" stroke=\"#f59e0b\" stroke-dasharray=\"3,2\" />\n        <text x=\"28\" y=\"54\" fill=\"#94a3b8\" font-size=\"8\" font-family=\"monospace\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Fold ➔</text>\n\n        <!-- Sheet 2: Fold bottom to top -->\n        <rect x=\"65\" y=\"10\" width=\"18\" height=\"36\" fill=\"rgba(30,41,59,0.7)\" />\n        <line x1=\"65\" y1=\"28\" x2=\"83\" y2=\"28\" stroke=\"#f59e0b\" stroke-dasharray=\"3,2\" />\n        <text x=\"74\" y=\"54\" fill=\"#94a3b8\" font-size=\"8\" font-family=\"monospace\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Fold ⬆</text>\n\n        <!-- Sheet 3: Corner Punch -->\n        <rect x=\"110\" y=\"10\" width=\"18\" height=\"18\" fill=\"rgba(14,165,233,0.2)\" stroke=\"#38bdf8\" />\n        <circle cx=\"124\" cy=\"14\" r=\"3\" fill=\"#f43f5e\" stroke=\"#f43f5e\" />\n        <text x=\"119\" y=\"54\" fill=\"#f43f5e\" font-size=\"8\" font-family=\"monospace\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Punch ●</text>\n      </g>\n    </svg>",
       "figureLabel": "Paper Folding & Punch Sequence:",
       "options": [
@@ -1453,11 +1453,11 @@
       "testId": "test-23"
     },
     {
-      "question": "[Sample Selection 22] A sampling vessel contains 4 red test vials and 7 blue test vials. If a lab technician selects two vials at random consecutively without replacement, what is the exact probability that both selected vials are red?",
+      "question": "A sampling vessel contains 4 red test vials and 7 blue test vials. If a lab technician selects two vials at random consecutively without replacement, what is the exact probability that both selected vials are red?",
       "options": [
         {
           "id": "A",
-          "text": "4/11"
+          "text": "6/58"
         },
         {
           "id": "B",
@@ -1465,7 +1465,7 @@
         },
         {
           "id": "C",
-          "text": "6/58"
+          "text": "7/55"
         },
         {
           "id": "D",
@@ -1473,7 +1473,7 @@
         },
         {
           "id": "E",
-          "text": "7/55"
+          "text": "1/3"
         }
       ],
       "correctOption": "D",
@@ -1515,11 +1515,11 @@
       "testId": "test-23"
     },
     {
-      "question": "[Line Batch 22] Three automated manufacturing robots A, B, and C can complete a precision fabrication run in 12 hours, 21 hours, and 30 hours respectively. Working simultaneously at constant speeds, how many hours will all three robots require to finish the run?",
+      "question": "Three automated manufacturing robots A, B, and C can complete a precision fabrication run in 12 hours, 21 hours, and 30 hours respectively. Working simultaneously at constant speeds, how many hours will all three robots require to finish the run?",
       "options": [
         {
           "id": "A",
-          "text": "9.6 hours"
+          "text": "11.6 hours"
         },
         {
           "id": "B",
@@ -1535,7 +1535,7 @@
         },
         {
           "id": "E",
-          "text": "21.0 hours"
+          "text": "9.6 hours"
         }
       ],
       "correctOption": "D",
@@ -1546,7 +1546,7 @@
       "testId": "test-23"
     },
     {
-      "question": "[Spatial Simulation #23 - Additive Matrix] Which figure completes the third row of this matrix?",
+      "question": "Which figure completes the third row of this matrix?",
       "matrixCells": [
         "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"15\" y1=\"35\" x2=\"55\" y2=\"35\" stroke=\"#38bdf8\" stroke-width=\"2.5\" stroke-linecap=\"round\" /></svg>",
         "<svg viewBox=\"0 0 70 70\" class=\"w-full h-full\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"35\" y1=\"15\" x2=\"35\" y2=\"55\" stroke=\"#38bdf8\" stroke-width=\"2.5\" stroke-linecap=\"round\" /></svg>",
@@ -1623,23 +1623,23 @@
       "testId": "test-23"
     },
     {
-      "question": "[Retail Pricing 22] A merchant buys wholesale deep-freeze storage unit for $185 each, applies a 50% markup to establish the catalog list price, and subsequently offers a 20% discount during a clearance sale. What is the merchant's net profit percentage relative to wholesale cost?",
+      "question": "A merchant buys wholesale deep-freeze storage unit for $185 each, applies a 50% markup to establish the catalog list price, and subsequently offers a 20% discount during a clearance sale. What is the merchant's net profit percentage relative to wholesale cost?",
       "options": [
         {
           "id": "A",
-          "text": "16%"
-        },
-        {
-          "id": "B",
           "text": "25%"
         },
         {
-          "id": "C",
+          "id": "B",
           "text": "15%"
         },
         {
-          "id": "D",
+          "id": "C",
           "text": "30%"
+        },
+        {
+          "id": "D",
+          "text": "10%"
         },
         {
           "id": "E",
