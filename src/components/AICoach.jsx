@@ -299,7 +299,8 @@ async function callGeminiWithTelemetry(query, attempt, allAttempts, apiKey, prev
     const list = Object.values(attempt.responses);
     detailedQuestionsSummary = list.map(r => {
       const outcome = r.isCorrect ? 'CORRECT' : r.isSkipped ? 'SKIPPED' : `WRONG (User: ${r.selectedOption}, Correct: ${r.correctOption})`;
-      return `Q#${r.questionId} [${r.category.toUpperCase()}] - Time: ${r.timeSpentSec}s - ${outcome}`;
+      const catName = (r.category || 'general').toUpperCase();
+      return `Q#${r.questionId} [${catName}] - Time: ${r.timeSpentSec}s - ${outcome}`;
     }).join('\n');
   }
 
