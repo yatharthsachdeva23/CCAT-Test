@@ -45,10 +45,18 @@ export function getSettings() {
     return {
       geminiApiKey: parsed.geminiApiKey || DEFAULT_GEMINI_KEY,
       soundEnabled: parsed.soundEnabled ?? true,
-      timerWarning: parsed.timerWarning ?? true
+      timerWarning: parsed.timerWarning ?? true,
+      preferredModel: parsed.preferredModel || 'auto',
+      autoDowngradeEnabled: parsed.autoDowngradeEnabled ?? true
     };
   } catch (err) {
-    return { geminiApiKey: DEFAULT_GEMINI_KEY, soundEnabled: true, timerWarning: true };
+    return { 
+      geminiApiKey: DEFAULT_GEMINI_KEY, 
+      soundEnabled: true, 
+      timerWarning: true,
+      preferredModel: 'auto',
+      autoDowngradeEnabled: true
+    };
   }
 }
 
