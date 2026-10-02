@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Sparkles, Send, Bot, User, AlertTriangle, Zap, Clock, Trophy, HelpCircle, Key, Check, Target, RefreshCw } from 'lucide-react';
 import { analyzeAttemptPatterns } from '../data/patternEngine.js';
 import { getSettings, saveSettings, DEFAULT_GEMINI_KEY } from '../utils/storage.js';
+import MarkdownView from './MarkdownView.jsx';
 
 export default function AICoach({ attempts = [], activeAttempt = null, onSelectAttempt }) {
   const [messages, setMessages] = useState([]);
@@ -218,9 +219,7 @@ Click any question below or type your own question to get real-time, personalize
                   ? 'bg-slate-950/90 border-slate-800 text-slate-200 shadow-md'
                   : 'bg-sky-600 text-white border-sky-500 shadow-lg shadow-sky-600/20'
               }`}>
-                <div className="prose prose-invert prose-xs max-w-none space-y-2">
-                  <div className="whitespace-pre-line">{m.text}</div>
-                </div>
+                <MarkdownView content={m.text} />
                 <div className={`text-[10px] mt-2 font-mono ${isAi ? 'text-slate-500' : 'text-sky-200 text-right'}`}>
                   {m.timestamp}
                 </div>

@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import SVGQuestionRenderer from './SVGQuestionRenderer.jsx';
 import { analyzeAttemptPatterns } from '../data/patternEngine.js';
+import MarkdownView from './MarkdownView.jsx';
 
 export default function ScoreReview({ attempt, onBackToDashboard, onRetakeTest, onAskCoach }) {
   const [filter, setFilter] = useState('all'); // 'all', 'incorrect', 'skipped', 'timetraps', 'math', 'verbal', 'spatial'
@@ -427,7 +428,7 @@ export default function ScoreReview({ attempt, onBackToDashboard, onRetakeTest, 
                   {isExpanded && (
                     <div className="mt-2.5 p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
                       <p className="font-semibold text-slate-200 mb-1">Solution Breakdown:</p>
-                      <p className="whitespace-pre-line text-slate-300">{q.explanation}</p>
+                      <MarkdownView content={q.explanation} />
                     </div>
                   )}
                 </div>
