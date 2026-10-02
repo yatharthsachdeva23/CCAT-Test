@@ -1203,31 +1203,31 @@
       "testId": "test-15"
     },
     {
-      "question": "[Scenario #53] Premise 1: All enzymes that catalyze phosphorylation reactions are classified as protein kinases.\nPremise 2: Enzyme P-38 catalyzes phosphorylation reactions.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All commercial banks in the Federal Reserve system are subject to mandatory statutory reserve requirements.\nPremise 2: Bank Metrolink is one of the commercial banks in the Federal Reserve system.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: Enzyme P-38 is classified as a protein kinase."
+          "text": "Bank Metrolink is subject to mandatory statutory reserve requirements."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Bank Metrolink is subject to mandatory statutory reserve requirements."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some commercial banks in the Federal Reserve system are subject to mandatory statutory reserve requirements."
         },
         {
           "id": "D",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are subject to mandatory statutory reserve requirements are commercial banks in the Federal Reserve system."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Bank Metrolink is not subject to mandatory statutory reserve requirements."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Enzyme P-38 is classified as a protein kinase.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Modus Ponens: Because Bank Metrolink belongs to commercial banks in the Federal Reserve system, and all commercial banks in the Federal Reserve system are subject to mandatory statutory reserve requirements, Bank Metrolink must be subject to mandatory statutory reserve requirements.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-15"
     },
     {
-      "question": "[Scenario #54] Premise 1: No supersonic passenger aircraft can operate economically without specialized afterburning turbofan engines.\nPremise 2: The Concorde is a supersonic passenger aircraft.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No commercial banks in the Federal Reserve system are subject to mandatory statutory reserve requirements.\nPremise 2: Bank Metrolink is classified as one of the commercial banks in the Federal Reserve system.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: The Concorde operated with specialized afterburning turbofans."
+          "text": "Bank Metrolink is not subject to mandatory statutory reserve requirements."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Bank Metrolink is subject to mandatory statutory reserve requirements."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some commercial banks in the Federal Reserve system can be subject to mandatory statutory reserve requirements under special conditions."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not subject to mandatory statutory reserve requirements are classified as commercial banks in the Federal Reserve system."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The Concorde operated with specialized afterburning turbofans.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-15"
     },
     {
-      "question": "[Scenario #55] Premise 1: All equilateral triangles have interior angles measuring exactly 60 degrees.\nPremise 2: Geometric Figure Alpha is an equilateral triangle.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the commercial banks in the Federal Reserve system, it must be subject to mandatory statutory reserve requirements.\nPremise 2: Specimen Bank Metrolink is verified to NOT be subject to mandatory statutory reserve requirements.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees."
+          "text": "Specimen Bank Metrolink is not one of the commercial banks in the Federal Reserve system."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are subject to mandatory statutory reserve requirements are commercial banks in the Federal Reserve system."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Bank Metrolink possesses some alternative attributes of commercial banks in the Federal Reserve system."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Bank Metrolink is completely indeterminate."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Bank Metrolink is one of the commercial banks in the Federal Reserve system."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-15"
     },
     {
-      "question": "[Scenario #56] Premise 1: If a legal contract lacks mutual consideration between parties, it is unenforceable in contract court.\nPremise 2: The partnership agreement between Smith and Jones lacked mutual consideration.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All commercial banks in the Federal Reserve system are subject to mandatory statutory reserve requirements.\nPremise 2: Some regional lending institutions are classified as commercial banks in the Federal Reserve system.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the commercial banks in the Federal Reserve system belong to regional lending institutions."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No regional lending institutions are subject to mandatory statutory reserve requirements."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All regional lending institutions are subject to mandatory statutory reserve requirements."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are subject to mandatory statutory reserve requirements are classified as regional lending institutions."
         },
         {
           "id": "E",
-          "text": "Conclusion: The partnership agreement is unenforceable in contract court."
+          "text": "Some regional lending institutions are subject to mandatory statutory reserve requirements."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The partnership agreement is unenforceable in contract court.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

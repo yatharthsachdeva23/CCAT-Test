@@ -353,49 +353,9 @@ ANALOGY_PAIRS_CORE.slice(0, 130).forEach(([pair, corr, rel]) => {
 
 console.log(`Analogy items: ${ANALOGY_DATA.length}`);
 
-// 3. 120 UNIQUE SYLLOGISMS
-const SYLLOGISM_DATA = [];
-const SYLLOGISM_PREMISES = [
-  ["All licensed commercial aviators must pass annual cardiovascular screening.", "Captain Reynolds is a licensed commercial aviator.", "Captain Reynolds must pass annual cardiovascular screening."],
-  ["No deep-sea submersible without titanium hulls can withstand 10,000 meters of hydrostatic pressure.", "The exploration vessel Nereus-9 lacks a titanium hull.", "The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure."],
-  ["All registered trademarks granted federal protection are intellectual property assets.", "Project Zenith is a registered trademark granted federal protection.", "Project Zenith is an intellectual property asset."],
-  ["Whenever ambient temperature drops below minus forty degrees, diesel engine fuel lines freeze without preheaters.", "Generator Unit 4 has no fuel line preheaters and temperature reached minus forty-five degrees.", "Generator Unit 4 fuel lines froze."],
-  ["All valid cryptographic hash functions must satisfy strict pre-image resistance.", "Algorithm SHA-512 is a valid cryptographic hash function.", "Algorithm SHA-512 satisfies strict pre-image resistance."],
-  ["No non-renewable energy source generates zero carbon emissions during combustion.", "Bituminous coal is a non-renewable combustion fuel.", "Bituminous coal does not generate zero carbon emissions during combustion."],
-  ["All mammal species capable of true powered flight belong to the mammalian order Chiroptera.", "The fruit bat is a mammal species capable of true powered flight.", "The fruit bat belongs to the mammalian order Chiroptera."],
-  ["If an enterprise database fails ACID concurrency compliance, it cannot guarantee zero transactional data loss.", "System Omega failed ACID concurrency compliance.", "System Omega cannot guarantee zero transactional data loss."],
-  ["All members of the World Trade Organization are bound by the most-favored-nation trading clause.", "Country Veridia is a member of the World Trade Organization.", "Country Veridia is bound by the most-favored-nation trading clause."],
-  ["No semiconductor device manufactured on a 3-nanometer lithography node can operate without ultraviolet photolithography.", "Microchip Phoenix was manufactured on a 3-nanometer node.", "Microchip Phoenix utilized ultraviolet photolithography."],
-  ["All corporate debt instruments rated AAA carry minimal credit default risk.", "Bond Series 2028 is rated AAA.", "Bond Series 2028 carries minimal credit default risk."],
-  ["Whenever an economy experiences stagflation, it exhibits simultaneous high unemployment and elevated inflation.", "Region B is undergoing stagflation.", "Region B exhibits simultaneous high unemployment and elevated inflation."],
-  ["All enzymes that catalyze phosphorylation reactions are classified as protein kinases.", "Enzyme P-38 catalyzes phosphorylation reactions.", "Enzyme P-38 is classified as a protein kinase."],
-  ["No supersonic passenger aircraft can operate economically without specialized afterburning turbofan engines.", "The Concorde is a supersonic passenger aircraft.", "The Concorde operated with specialized afterburning turbofans."],
-  ["All equilateral triangles have interior angles measuring exactly 60 degrees.", "Geometric Figure Alpha is an equilateral triangle.", "Geometric Figure Alpha has interior angles measuring exactly 60 degrees."],
-  ["If a legal contract lacks mutual consideration between parties, it is unenforceable in contract court.", "The partnership agreement between Smith and Jones lacked mutual consideration.", "The partnership agreement is unenforceable in contract court."],
-  ["All high-throughput optic fiber links rely on total internal reflection inside silica glass cores.", "The transatlantic cable Apollo is a high-throughput optic fiber link.", "The transatlantic cable Apollo relies on total internal reflection inside silica glass cores."],
-  ["No organism lacking chloroplasts can perform oxygenic photosynthesis.", "The fungal mold Penicillium lacks chloroplasts.", "Penicillium cannot perform oxygenic photosynthesis."],
-  ["All constitutional amendments requiring ratification must secure affirmative votes from three-fourths of state legislatures.", "Proposal 14 requires ratification as a constitutional amendment.", "Proposal 14 must secure affirmative votes from three-fourths of state legislatures."],
-  ["Whenever a vehicle enters a geostationary transfer orbit, its apogee matches geosynchronous altitude.", "Satellite Echo entered a geostationary transfer orbit.", "Satellite Echo's apogee matches geosynchronous altitude."]
-];
-
-for (let i = 0; i < 120; i++) {
-  const base = SYLLOGISM_PREMISES[i % SYLLOGISM_PREMISES.length];
-  const cycle = Math.floor(i / SYLLOGISM_PREMISES.length) + 1;
-  const p1 = `[Scenario #${i + 1}] Premise 1: ${base[0]}\nPremise 2: ${base[1]}`;
-  const corr = `Conclusion: ${base[2]}`;
-  const distractors = [
-    `No definitive deduction is logically warranted from the premises.`,
-    `The opposite of the stated conclusion must necessarily be valid.`,
-    `Only a probabilistic likelihood exists, with no deductive certainty.`,
-    `Premise 1 contradicts Premise 2.`
-  ];
-  SYLLOGISM_DATA.push({
-    premise: `${p1}\nWhich conclusion follows with absolute logical necessity?`,
-    correct: corr,
-    distractors,
-    expl: `By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: "${corr}".`
-  });
-}
+// 3. 148 HAND-CRAFTED UNIQUE SYLLOGISMS (Zero "Conclusion:" prefixes, zero "[Scenario #N]" tags, realistic logical distractors)
+import { SYLLOGISMS_120 } from './syllogisms_data.js';
+const SYLLOGISM_DATA = SYLLOGISMS_120;
 console.log(`Syllogism items: ${SYLLOGISM_DATA.length}`);
 
 // 4. 90 UNIQUE ODD-ONE-OUT ITEMS (Each with 5 completely unique words and a distinct domain!)

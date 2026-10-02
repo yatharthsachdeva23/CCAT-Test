@@ -1203,31 +1203,31 @@
       "testId": "test-8"
     },
     {
-      "question": "[Scenario #25] Premise 1: All valid cryptographic hash functions must satisfy strict pre-image resistance.\nPremise 2: Algorithm SHA-512 is a valid cryptographic hash function.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All relational databases that provide serializable isolation prevent phantom read anomalies.\nPremise 2: Database Engine Postgres-XL provides serializable isolation.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient information to evaluate Postgres-XL's anomaly protection."
         },
         {
           "id": "B",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Postgres-XL does not support concurrent transactions."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Any database that prevents phantom reads is Postgres-XL."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Postgres-XL frequently suffers from phantom read anomalies."
         },
         {
           "id": "E",
-          "text": "Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance."
+          "text": "Database Engine Postgres-XL prevents phantom read anomalies."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Modus Ponens.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-8"
     },
     {
-      "question": "[Scenario #26] Premise 1: No non-renewable energy source generates zero carbon emissions during combustion.\nPremise 2: Bituminous coal is a non-renewable combustion fuel.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No symmetric encryption cipher with a 56-bit key length is considered secure against brute-force attacks.\nPremise 2: Legacy Algorithm DES uses a 56-bit key length.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be substantiated regarding DES."
         },
         {
           "id": "B",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "DES is an asymmetric public-key cryptosystem."
         },
         {
           "id": "C",
-          "text": "Conclusion: Bituminous coal does not generate zero carbon emissions during combustion."
+          "text": "Legacy Algorithm DES is not considered secure against brute-force attacks."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All ciphers insecure against brute force use 56-bit keys."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Legacy Algorithm DES is considered completely secure against brute-force attacks."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Celarent.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-8"
     },
     {
-      "question": "[Scenario #27] Premise 1: All mammal species capable of true powered flight belong to the mammalian order Chiroptera.\nPremise 2: The fruit bat is a mammal species capable of true powered flight.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an enterprise cloud microservice is stateless, it stores no client session data in local node memory.\nPremise 2: Service Lambda-4 stores active client session data in local node memory.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All stateful services are named Lambda-4."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No valid deduction is warranted."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Service Lambda-4 stores session data in an external distributed cache."
         },
         {
           "id": "D",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Service Lambda-4 is a stateless microservice."
         },
         {
           "id": "E",
-          "text": "Conclusion: The fruit bat belongs to the mammalian order Chiroptera."
+          "text": "Service Lambda-4 is not a stateless microservice."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The fruit bat belongs to the mammalian order Chiroptera.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Modus Tollens.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-8"
     },
     {
-      "question": "[Scenario #28] Premise 1: If an enterprise database fails ACID concurrency compliance, it cannot guarantee zero transactional data loss.\nPremise 2: System Omega failed ACID concurrency compliance.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All compiled languages with guaranteed memory safety utilize borrow checkers or automatic garbage collection.\nPremise 2: Some systems programming tools are compiled languages with guaranteed memory safety.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "Memory safety can never be achieved in systems programming."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All systems programming tools utilize borrow checkers or garbage collection."
         },
         {
           "id": "C",
-          "text": "Conclusion: System Omega cannot guarantee zero transactional data loss."
+          "text": "Some systems programming tools utilize borrow checkers or automatic garbage collection."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Languages with garbage collection are always compiled systems tools."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No systems programming tools utilize borrow checkers or garbage collection."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: System Omega cannot guarantee zero transactional data loss.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Darii.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

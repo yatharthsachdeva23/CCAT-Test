@@ -1203,31 +1203,31 @@
       "testId": "test-28"
     },
     {
-      "question": "[Scenario #105] Premise 1: All valid cryptographic hash functions must satisfy strict pre-image resistance.\nPremise 2: Algorithm SHA-512 is a valid cryptographic hash function.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All halide perovskite solar cells are vulnerable to moisture-induced degradation in ambient humidity.\nPremise 2: Photovoltaic Cell P-10 is one of the halide perovskite solar cells.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Photovoltaic Cell P-10 is not vulnerable to moisture-induced degradation in ambient humidity."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are vulnerable to moisture-induced degradation in ambient humidity are halide perovskite solar cells."
         },
         {
           "id": "C",
-          "text": "Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance."
+          "text": "Photovoltaic Cell P-10 is vulnerable to moisture-induced degradation in ambient humidity."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some halide perovskite solar cells are vulnerable to moisture-induced degradation in ambient humidity."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Photovoltaic Cell P-10 is vulnerable to moisture-induced degradation in ambient humidity."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Modus Ponens: Because Photovoltaic Cell P-10 belongs to halide perovskite solar cells, and all halide perovskite solar cells are vulnerable to moisture-induced degradation in ambient humidity, Photovoltaic Cell P-10 must be vulnerable to moisture-induced degradation in ambient humidity.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-28"
     },
     {
-      "question": "[Scenario #106] Premise 1: No non-renewable energy source generates zero carbon emissions during combustion.\nPremise 2: Bituminous coal is a non-renewable combustion fuel.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No halide perovskite solar cells are vulnerable to moisture-induced degradation in ambient humidity.\nPremise 2: Photovoltaic Cell P-10 is classified as one of the halide perovskite solar cells.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some halide perovskite solar cells can be vulnerable to moisture-induced degradation in ambient humidity under special conditions."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Photovoltaic Cell P-10 is vulnerable to moisture-induced degradation in ambient humidity."
         },
         {
           "id": "C",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not vulnerable to moisture-induced degradation in ambient humidity are classified as halide perovskite solar cells."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         },
         {
           "id": "E",
-          "text": "Conclusion: Bituminous coal does not generate zero carbon emissions during combustion."
+          "text": "Photovoltaic Cell P-10 is not vulnerable to moisture-induced degradation in ambient humidity."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-28"
     },
     {
-      "question": "[Scenario #107] Premise 1: All mammal species capable of true powered flight belong to the mammalian order Chiroptera.\nPremise 2: The fruit bat is a mammal species capable of true powered flight.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the halide perovskite solar cells, it must be vulnerable to moisture-induced degradation in ambient humidity.\nPremise 2: Specimen Photovoltaic Cell P-10 is verified to NOT be vulnerable to moisture-induced degradation in ambient humidity.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Photovoltaic Cell P-10 is one of the halide perovskite solar cells."
         },
         {
           "id": "B",
-          "text": "Conclusion: The fruit bat belongs to the mammalian order Chiroptera."
+          "text": "Specimen Photovoltaic Cell P-10 is not one of the halide perovskite solar cells."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Photovoltaic Cell P-10 is completely indeterminate."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are vulnerable to moisture-induced degradation in ambient humidity are halide perovskite solar cells."
         },
         {
           "id": "E",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Photovoltaic Cell P-10 possesses some alternative attributes of halide perovskite solar cells."
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The fruit bat belongs to the mammalian order Chiroptera.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: B**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-28"
     },
     {
-      "question": "[Scenario #108] Premise 1: If an enterprise database fails ACID concurrency compliance, it cannot guarantee zero transactional data loss.\nPremise 2: System Omega failed ACID concurrency compliance.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All halide perovskite solar cells are vulnerable to moisture-induced degradation in ambient humidity.\nPremise 2: Some experimental solar absorbers are classified as halide perovskite solar cells.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the halide perovskite solar cells belong to experimental solar absorbers."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No experimental solar absorbers are vulnerable to moisture-induced degradation in ambient humidity."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are vulnerable to moisture-induced degradation in ambient humidity are classified as experimental solar absorbers."
         },
         {
           "id": "D",
-          "text": "Conclusion: System Omega cannot guarantee zero transactional data loss."
+          "text": "Some experimental solar absorbers are vulnerable to moisture-induced degradation in ambient humidity."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All experimental solar absorbers are vulnerable to moisture-induced degradation in ambient humidity."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: System Omega cannot guarantee zero transactional data loss.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

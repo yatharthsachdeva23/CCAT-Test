@@ -1203,31 +1203,31 @@
       "testId": "test-27"
     },
     {
-      "question": "[Scenario #101] Premise 1: All licensed commercial aviators must pass annual cardiovascular screening.\nPremise 2: Captain Reynolds is a licensed commercial aviator.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All martensitic stainless steel alloys are capable of achieving high Rockwell hardness through thermal quenching.\nPremise 2: Steel Alloy 440C is one of the martensitic stainless steel alloys.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some martensitic stainless steel alloys are capable of achieving high Rockwell hardness through thermal quenching."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are capable of achieving high Rockwell hardness through thermal quenching are martensitic stainless steel alloys."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Steel Alloy 440C is capable of achieving high Rockwell hardness through thermal quenching."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Steel Alloy 440C is not capable of achieving high Rockwell hardness through thermal quenching."
         },
         {
           "id": "E",
-          "text": "Conclusion: Captain Reynolds must pass annual cardiovascular screening."
+          "text": "Steel Alloy 440C is capable of achieving high Rockwell hardness through thermal quenching."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Captain Reynolds must pass annual cardiovascular screening.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Modus Ponens: Because Steel Alloy 440C belongs to martensitic stainless steel alloys, and all martensitic stainless steel alloys are capable of achieving high Rockwell hardness through thermal quenching, Steel Alloy 440C must be capable of achieving high Rockwell hardness through thermal quenching.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-27"
     },
     {
-      "question": "[Scenario #102] Premise 1: No deep-sea submersible without titanium hulls can withstand 10,000 meters of hydrostatic pressure.\nPremise 2: The exploration vessel Nereus-9 lacks a titanium hull.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No martensitic stainless steel alloys are capable of achieving high Rockwell hardness through thermal quenching.\nPremise 2: Steel Alloy 440C is classified as one of the martensitic stainless steel alloys.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some martensitic stainless steel alloys can be capable of achieving high Rockwell hardness through thermal quenching under special conditions."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not capable of achieving high Rockwell hardness through thermal quenching are classified as martensitic stainless steel alloys."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         },
         {
           "id": "D",
-          "text": "Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure."
+          "text": "Steel Alloy 440C is not capable of achieving high Rockwell hardness through thermal quenching."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Steel Alloy 440C is capable of achieving high Rockwell hardness through thermal quenching."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-27"
     },
     {
-      "question": "[Scenario #103] Premise 1: All registered trademarks granted federal protection are intellectual property assets.\nPremise 2: Project Zenith is a registered trademark granted federal protection.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the martensitic stainless steel alloys, it must be capable of achieving high Rockwell hardness through thermal quenching.\nPremise 2: Specimen Steel Alloy 440C is verified to NOT be capable of achieving high Rockwell hardness through thermal quenching.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Steel Alloy 440C is one of the martensitic stainless steel alloys."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Steel Alloy 440C is completely indeterminate."
         },
         {
           "id": "C",
-          "text": "Conclusion: Project Zenith is an intellectual property asset."
+          "text": "Specimen Steel Alloy 440C is not one of the martensitic stainless steel alloys."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Steel Alloy 440C possesses some alternative attributes of martensitic stainless steel alloys."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are capable of achieving high Rockwell hardness through thermal quenching are martensitic stainless steel alloys."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Project Zenith is an intellectual property asset.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-27"
     },
     {
-      "question": "[Scenario #104] Premise 1: Whenever ambient temperature drops below minus forty degrees, diesel engine fuel lines freeze without preheaters.\nPremise 2: Generator Unit 4 has no fuel line preheaters and temperature reached minus forty-five degrees.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All martensitic stainless steel alloys are capable of achieving high Rockwell hardness through thermal quenching.\nPremise 2: Some industrial metallurgical alloys are classified as martensitic stainless steel alloys.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: Generator Unit 4 fuel lines froze."
+          "text": "Some industrial metallurgical alloys are capable of achieving high Rockwell hardness through thermal quenching."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the martensitic stainless steel alloys belong to industrial metallurgical alloys."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are capable of achieving high Rockwell hardness through thermal quenching are classified as industrial metallurgical alloys."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No industrial metallurgical alloys are capable of achieving high Rockwell hardness through thermal quenching."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All industrial metallurgical alloys are capable of achieving high Rockwell hardness through thermal quenching."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Generator Unit 4 fuel lines froze.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

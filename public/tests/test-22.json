@@ -1203,31 +1203,31 @@
       "testId": "test-22"
     },
     {
-      "question": "[Scenario #81] Premise 1: All licensed commercial aviators must pass annual cardiovascular screening.\nPremise 2: Captain Reynolds is a licensed commercial aviator.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All clinical blood diagnostic tests are calibrated against standardized reference serum baselines.\nPremise 2: Assay Panel-9 is one of the clinical blood diagnostic tests.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some clinical blood diagnostic tests are calibrated against standardized reference serum baselines."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Assay Panel-9 is not calibrated against standardized reference serum baselines."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are calibrated against standardized reference serum baselines are clinical blood diagnostic tests."
         },
         {
           "id": "D",
-          "text": "Conclusion: Captain Reynolds must pass annual cardiovascular screening."
+          "text": "Assay Panel-9 is calibrated against standardized reference serum baselines."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Assay Panel-9 is calibrated against standardized reference serum baselines."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Captain Reynolds must pass annual cardiovascular screening.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Modus Ponens: Because Assay Panel-9 belongs to clinical blood diagnostic tests, and all clinical blood diagnostic tests are calibrated against standardized reference serum baselines, Assay Panel-9 must be calibrated against standardized reference serum baselines.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-22"
     },
     {
-      "question": "[Scenario #82] Premise 1: No deep-sea submersible without titanium hulls can withstand 10,000 meters of hydrostatic pressure.\nPremise 2: The exploration vessel Nereus-9 lacks a titanium hull.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No clinical blood diagnostic tests are calibrated against standardized reference serum baselines.\nPremise 2: Assay Panel-9 is classified as one of the clinical blood diagnostic tests.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure."
+          "text": "Assay Panel-9 is not calibrated against standardized reference serum baselines."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not calibrated against standardized reference serum baselines are classified as clinical blood diagnostic tests."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Assay Panel-9 is calibrated against standardized reference serum baselines."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         },
         {
           "id": "E",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some clinical blood diagnostic tests can be calibrated against standardized reference serum baselines under special conditions."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-22"
     },
     {
-      "question": "[Scenario #83] Premise 1: All registered trademarks granted federal protection are intellectual property assets.\nPremise 2: Project Zenith is a registered trademark granted federal protection.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the clinical blood diagnostic tests, it must be calibrated against standardized reference serum baselines.\nPremise 2: Specimen Assay Panel-9 is verified to NOT be calibrated against standardized reference serum baselines.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: Project Zenith is an intellectual property asset."
+          "text": "Specimen Assay Panel-9 is not one of the clinical blood diagnostic tests."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Assay Panel-9 is completely indeterminate."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Assay Panel-9 possesses some alternative attributes of clinical blood diagnostic tests."
         },
         {
           "id": "D",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Assay Panel-9 is one of the clinical blood diagnostic tests."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are calibrated against standardized reference serum baselines are clinical blood diagnostic tests."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Project Zenith is an intellectual property asset.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-22"
     },
     {
-      "question": "[Scenario #84] Premise 1: Whenever ambient temperature drops below minus forty degrees, diesel engine fuel lines freeze without preheaters.\nPremise 2: Generator Unit 4 has no fuel line preheaters and temperature reached minus forty-five degrees.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All clinical blood diagnostic tests are calibrated against standardized reference serum baselines.\nPremise 2: Some laboratory diagnostic assays are classified as clinical blood diagnostic tests.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All laboratory diagnostic assays are calibrated against standardized reference serum baselines."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the clinical blood diagnostic tests belong to laboratory diagnostic assays."
         },
         {
           "id": "C",
-          "text": "Conclusion: Generator Unit 4 fuel lines froze."
+          "text": "Some laboratory diagnostic assays are calibrated against standardized reference serum baselines."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No laboratory diagnostic assays are calibrated against standardized reference serum baselines."
         },
         {
           "id": "E",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are calibrated against standardized reference serum baselines are classified as laboratory diagnostic assays."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Generator Unit 4 fuel lines froze.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

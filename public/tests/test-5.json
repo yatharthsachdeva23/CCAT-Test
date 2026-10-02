@@ -1203,31 +1203,31 @@
       "testId": "test-5"
     },
     {
-      "question": "[Scenario #13] Premise 1: All enzymes that catalyze phosphorylation reactions are classified as protein kinases.\nPremise 2: Enzyme P-38 catalyzes phosphorylation reactions.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All mammal species capable of true powered flight belong to the biological order Chiroptera.\nPremise 2: The fruit bat is a mammal species capable of true powered flight.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All species in the order Chiroptera are fruit bats."
         },
         {
           "id": "B",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some fruit bats are incapable of true powered flight."
         },
         {
           "id": "C",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "The fruit bat does not belong to Chiroptera."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient information to classify the fruit bat."
         },
         {
           "id": "E",
-          "text": "Conclusion: Enzyme P-38 is classified as a protein kinase."
+          "text": "The fruit bat belongs to the biological order Chiroptera."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Enzyme P-38 is classified as a protein kinase.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Modus Ponens: The fruit bat is a member of the universal category.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-5"
     },
     {
-      "question": "[Scenario #14] Premise 1: No supersonic passenger aircraft can operate economically without specialized afterburning turbofan engines.\nPremise 2: The Concorde is a supersonic passenger aircraft.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No eukaryotic organisms lacking mitochondria can produce ATP through oxidative phosphorylation.\nPremise 2: Microorganism M lacks mitochondria.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No deduction can be verified regarding Microorganism M."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Microorganism M produces ATP through oxidative phosphorylation."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Microorganism M produces ATP faster than organisms with mitochondria."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All organisms with mitochondria are identical to Microorganism M."
         },
         {
           "id": "E",
-          "text": "Conclusion: The Concorde operated with specialized afterburning turbofans."
+          "text": "Microorganism M cannot produce ATP through oxidative phosphorylation."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The Concorde operated with specialized afterburning turbofans.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Universal Negative deduction.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-5"
     },
     {
-      "question": "[Scenario #15] Premise 1: All equilateral triangles have interior angles measuring exactly 60 degrees.\nPremise 2: Geometric Figure Alpha is an equilateral triangle.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If a plant species performs Crassulacean Acid Metabolism (CAM), its stomata open primarily at night.\nPremise 2: Specimen Flora-9 keeps its stomata closed throughout the night.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All plants that open stomata at night belong to Specimen Flora-9."
         },
         {
           "id": "B",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Flora-9 never opens its stomata during the day."
         },
         {
           "id": "C",
-          "text": "Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees."
+          "text": "Specimen Flora-9 does not perform Crassulacean Acid Metabolism."
         },
         {
           "id": "D",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Flora-9 performs Crassulacean Acid Metabolism."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No valid conclusion can be derived."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Modus Tollens.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-5"
     },
     {
-      "question": "[Scenario #16] Premise 1: If a legal contract lacks mutual consideration between parties, it is unenforceable in contract court.\nPremise 2: The partnership agreement between Smith and Jones lacked mutual consideration.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All leguminous plants form symbiotic root nodules with nitrogen-fixing bacteria.\nPremise 2: Some cultivated field crops are leguminous plants.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All cultivated field crops form symbiotic root nodules with nitrogen-fixing bacteria."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No cultivated field crops form root nodules."
         },
         {
           "id": "C",
-          "text": "Conclusion: The partnership agreement is unenforceable in contract court."
+          "text": "Some cultivated field crops form symbiotic root nodules with nitrogen-fixing bacteria."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "Leguminous plants never host nitrogen-fixing bacteria in field conditions."
         },
         {
           "id": "E",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All plants that form root nodules are cultivated field crops."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The partnership agreement is unenforceable in contract court.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Darii particular affirmative syllogism.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

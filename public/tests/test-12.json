@@ -1203,31 +1203,31 @@
       "testId": "test-12"
     },
     {
-      "question": "[Scenario #41] Premise 1: All licensed commercial aviators must pass annual cardiovascular screening.\nPremise 2: Captain Reynolds is a licensed commercial aviator.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All patent applications for software are statutorily barred from claiming abstract mathematical algorithms.\nPremise 2: Patent Claim 410 is one of the patent applications for software.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are statutorily barred from claiming abstract mathematical algorithms are patent applications for software."
         },
         {
           "id": "B",
-          "text": "Conclusion: Captain Reynolds must pass annual cardiovascular screening."
+          "text": "Patent Claim 410 is statutorily barred from claiming abstract mathematical algorithms."
         },
         {
           "id": "C",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Patent Claim 410 is not statutorily barred from claiming abstract mathematical algorithms."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Patent Claim 410 is statutorily barred from claiming abstract mathematical algorithms."
         },
         {
           "id": "E",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some patent applications for software are statutorily barred from claiming abstract mathematical algorithms."
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Captain Reynolds must pass annual cardiovascular screening.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: B**\n\nBy Modus Ponens: Because Patent Claim 410 belongs to patent applications for software, and all patent applications for software are statutorily barred from claiming abstract mathematical algorithms, Patent Claim 410 must be statutorily barred from claiming abstract mathematical algorithms.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-12"
     },
     {
-      "question": "[Scenario #42] Premise 1: No deep-sea submersible without titanium hulls can withstand 10,000 meters of hydrostatic pressure.\nPremise 2: The exploration vessel Nereus-9 lacks a titanium hull.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No patent applications for software are statutorily barred from claiming abstract mathematical algorithms.\nPremise 2: Patent Claim 410 is classified as one of the patent applications for software.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not statutorily barred from claiming abstract mathematical algorithms are classified as patent applications for software."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Patent Claim 410 is statutorily barred from claiming abstract mathematical algorithms."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some patent applications for software can be statutorily barred from claiming abstract mathematical algorithms under special conditions."
         },
         {
           "id": "E",
-          "text": "Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure."
+          "text": "Patent Claim 410 is not statutorily barred from claiming abstract mathematical algorithms."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-12"
     },
     {
-      "question": "[Scenario #43] Premise 1: All registered trademarks granted federal protection are intellectual property assets.\nPremise 2: Project Zenith is a registered trademark granted federal protection.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the patent applications for software, it must be statutorily barred from claiming abstract mathematical algorithms.\nPremise 2: Specimen Patent Claim 410 is verified to NOT be statutorily barred from claiming abstract mathematical algorithms.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are statutorily barred from claiming abstract mathematical algorithms are patent applications for software."
         },
         {
           "id": "B",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Patent Claim 410 possesses some alternative attributes of patent applications for software."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Patent Claim 410 is completely indeterminate."
         },
         {
           "id": "D",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Patent Claim 410 is one of the patent applications for software."
         },
         {
           "id": "E",
-          "text": "Conclusion: Project Zenith is an intellectual property asset."
+          "text": "Specimen Patent Claim 410 is not one of the patent applications for software."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Project Zenith is an intellectual property asset.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-12"
     },
     {
-      "question": "[Scenario #44] Premise 1: Whenever ambient temperature drops below minus forty degrees, diesel engine fuel lines freeze without preheaters.\nPremise 2: Generator Unit 4 has no fuel line preheaters and temperature reached minus forty-five degrees.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All patent applications for software are statutorily barred from claiming abstract mathematical algorithms.\nPremise 2: Some intellectual property filings are classified as patent applications for software.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are statutorily barred from claiming abstract mathematical algorithms are classified as intellectual property filings."
         },
         {
           "id": "B",
-          "text": "Conclusion: Generator Unit 4 fuel lines froze."
+          "text": "Some intellectual property filings are statutorily barred from claiming abstract mathematical algorithms."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the patent applications for software belong to intellectual property filings."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No intellectual property filings are statutorily barred from claiming abstract mathematical algorithms."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All intellectual property filings are statutorily barred from claiming abstract mathematical algorithms."
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Generator Unit 4 fuel lines froze.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: B**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

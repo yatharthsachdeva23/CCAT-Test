@@ -1203,31 +1203,31 @@
       "testId": "test-23"
     },
     {
-      "question": "[Scenario #85] Premise 1: All valid cryptographic hash functions must satisfy strict pre-image resistance.\nPremise 2: Algorithm SHA-512 is a valid cryptographic hash function.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All structural trusses in long-span suspension bridges are engineered to withstand tensile and aerodynamic torsional loads.\nPremise 2: Truss Assembly Bridge-8 is one of the structural trusses in long-span suspension bridges.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Truss Assembly Bridge-8 is engineered to withstand tensile and aerodynamic torsional loads."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Truss Assembly Bridge-8 is not engineered to withstand tensile and aerodynamic torsional loads."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are engineered to withstand tensile and aerodynamic torsional loads are structural trusses in long-span suspension bridges."
         },
         {
           "id": "D",
-          "text": "Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance."
+          "text": "Truss Assembly Bridge-8 is engineered to withstand tensile and aerodynamic torsional loads."
         },
         {
           "id": "E",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some structural trusses in long-span suspension bridges are engineered to withstand tensile and aerodynamic torsional loads."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Modus Ponens: Because Truss Assembly Bridge-8 belongs to structural trusses in long-span suspension bridges, and all structural trusses in long-span suspension bridges are engineered to withstand tensile and aerodynamic torsional loads, Truss Assembly Bridge-8 must be engineered to withstand tensile and aerodynamic torsional loads.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-23"
     },
     {
-      "question": "[Scenario #86] Premise 1: No non-renewable energy source generates zero carbon emissions during combustion.\nPremise 2: Bituminous coal is a non-renewable combustion fuel.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No structural trusses in long-span suspension bridges are engineered to withstand tensile and aerodynamic torsional loads.\nPremise 2: Truss Assembly Bridge-8 is classified as one of the structural trusses in long-span suspension bridges.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: Bituminous coal does not generate zero carbon emissions during combustion."
+          "text": "Truss Assembly Bridge-8 is not engineered to withstand tensile and aerodynamic torsional loads."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         },
         {
           "id": "C",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not engineered to withstand tensile and aerodynamic torsional loads are classified as structural trusses in long-span suspension bridges."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some structural trusses in long-span suspension bridges can be engineered to withstand tensile and aerodynamic torsional loads under special conditions."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Truss Assembly Bridge-8 is engineered to withstand tensile and aerodynamic torsional loads."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-23"
     },
     {
-      "question": "[Scenario #87] Premise 1: All mammal species capable of true powered flight belong to the mammalian order Chiroptera.\nPremise 2: The fruit bat is a mammal species capable of true powered flight.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the structural trusses in long-span suspension bridges, it must be engineered to withstand tensile and aerodynamic torsional loads.\nPremise 2: Specimen Truss Assembly Bridge-8 is verified to NOT be engineered to withstand tensile and aerodynamic torsional loads.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Truss Assembly Bridge-8 is completely indeterminate."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Truss Assembly Bridge-8 is one of the structural trusses in long-span suspension bridges."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Truss Assembly Bridge-8 possesses some alternative attributes of structural trusses in long-span suspension bridges."
         },
         {
           "id": "D",
-          "text": "Conclusion: The fruit bat belongs to the mammalian order Chiroptera."
+          "text": "Specimen Truss Assembly Bridge-8 is not one of the structural trusses in long-span suspension bridges."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are engineered to withstand tensile and aerodynamic torsional loads are structural trusses in long-span suspension bridges."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The fruit bat belongs to the mammalian order Chiroptera.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-23"
     },
     {
-      "question": "[Scenario #88] Premise 1: If an enterprise database fails ACID concurrency compliance, it cannot guarantee zero transactional data loss.\nPremise 2: System Omega failed ACID concurrency compliance.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All structural trusses in long-span suspension bridges are engineered to withstand tensile and aerodynamic torsional loads.\nPremise 2: Some civil engineering structural components are classified as structural trusses in long-span suspension bridges.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are engineered to withstand tensile and aerodynamic torsional loads are classified as civil engineering structural components."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the structural trusses in long-span suspension bridges belong to civil engineering structural components."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All civil engineering structural components are engineered to withstand tensile and aerodynamic torsional loads."
         },
         {
           "id": "D",
-          "text": "Conclusion: System Omega cannot guarantee zero transactional data loss."
+          "text": "Some civil engineering structural components are engineered to withstand tensile and aerodynamic torsional loads."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No civil engineering structural components are engineered to withstand tensile and aerodynamic torsional loads."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: System Omega cannot guarantee zero transactional data loss.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

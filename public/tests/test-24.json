@@ -1203,31 +1203,31 @@
       "testId": "test-24"
     },
     {
-      "question": "[Scenario #89] Premise 1: All members of the World Trade Organization are bound by the most-favored-nation trading clause.\nPremise 2: Country Veridia is a member of the World Trade Organization.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All high-voltage gas-insulated electrical substations are insulated using pressurized sulfur hexafluoride dielectric gas.\nPremise 2: Substation Station-K is one of the high-voltage gas-insulated electrical substations.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Substation Station-K is not insulated using pressurized sulfur hexafluoride dielectric gas."
         },
         {
           "id": "B",
-          "text": "Conclusion: Country Veridia is bound by the most-favored-nation trading clause."
+          "text": "Substation Station-K is insulated using pressurized sulfur hexafluoride dielectric gas."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some high-voltage gas-insulated electrical substations are insulated using pressurized sulfur hexafluoride dielectric gas."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Substation Station-K is insulated using pressurized sulfur hexafluoride dielectric gas."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are insulated using pressurized sulfur hexafluoride dielectric gas are high-voltage gas-insulated electrical substations."
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Country Veridia is bound by the most-favored-nation trading clause.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: B**\n\nBy Modus Ponens: Because Substation Station-K belongs to high-voltage gas-insulated electrical substations, and all high-voltage gas-insulated electrical substations are insulated using pressurized sulfur hexafluoride dielectric gas, Substation Station-K must be insulated using pressurized sulfur hexafluoride dielectric gas.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-24"
     },
     {
-      "question": "[Scenario #90] Premise 1: No semiconductor device manufactured on a 3-nanometer lithography node can operate without ultraviolet photolithography.\nPremise 2: Microchip Phoenix was manufactured on a 3-nanometer node.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No high-voltage gas-insulated electrical substations are insulated using pressurized sulfur hexafluoride dielectric gas.\nPremise 2: Substation Station-K is classified as one of the high-voltage gas-insulated electrical substations.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Substation Station-K is insulated using pressurized sulfur hexafluoride dielectric gas."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not insulated using pressurized sulfur hexafluoride dielectric gas are classified as high-voltage gas-insulated electrical substations."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some high-voltage gas-insulated electrical substations can be insulated using pressurized sulfur hexafluoride dielectric gas under special conditions."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         },
         {
           "id": "E",
-          "text": "Conclusion: Microchip Phoenix utilized ultraviolet photolithography."
+          "text": "Substation Station-K is not insulated using pressurized sulfur hexafluoride dielectric gas."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Microchip Phoenix utilized ultraviolet photolithography.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-24"
     },
     {
-      "question": "[Scenario #91] Premise 1: All corporate debt instruments rated AAA carry minimal credit default risk.\nPremise 2: Bond Series 2028 is rated AAA.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the high-voltage gas-insulated electrical substations, it must be insulated using pressurized sulfur hexafluoride dielectric gas.\nPremise 2: Specimen Substation Station-K is verified to NOT be insulated using pressurized sulfur hexafluoride dielectric gas.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: Bond Series 2028 carries minimal credit default risk."
+          "text": "Specimen Substation Station-K is not one of the high-voltage gas-insulated electrical substations."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Substation Station-K is one of the high-voltage gas-insulated electrical substations."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Substation Station-K is completely indeterminate."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Substation Station-K possesses some alternative attributes of high-voltage gas-insulated electrical substations."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are insulated using pressurized sulfur hexafluoride dielectric gas are high-voltage gas-insulated electrical substations."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bond Series 2028 carries minimal credit default risk.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-24"
     },
     {
-      "question": "[Scenario #92] Premise 1: Whenever an economy experiences stagflation, it exhibits simultaneous high unemployment and elevated inflation.\nPremise 2: Region B is undergoing stagflation.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All high-voltage gas-insulated electrical substations are insulated using pressurized sulfur hexafluoride dielectric gas.\nPremise 2: Some power grid distribution nodes are classified as high-voltage gas-insulated electrical substations.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are insulated using pressurized sulfur hexafluoride dielectric gas are classified as power grid distribution nodes."
         },
         {
           "id": "B",
-          "text": "Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation."
+          "text": "Some power grid distribution nodes are insulated using pressurized sulfur hexafluoride dielectric gas."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the high-voltage gas-insulated electrical substations belong to power grid distribution nodes."
         },
         {
           "id": "D",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All power grid distribution nodes are insulated using pressurized sulfur hexafluoride dielectric gas."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No power grid distribution nodes are insulated using pressurized sulfur hexafluoride dielectric gas."
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: B**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

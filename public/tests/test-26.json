@@ -1203,31 +1203,31 @@
       "testId": "test-26"
     },
     {
-      "question": "[Scenario #97] Premise 1: All high-throughput optic fiber links rely on total internal reflection inside silica glass cores.\nPremise 2: The transatlantic cable Apollo is a high-throughput optic fiber link.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All reinforced concrete structural pillars are embedded with internal deformed high-tensile steel rebar.\nPremise 2: Pillar Column-14 is one of the reinforced concrete structural pillars.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are embedded with internal deformed high-tensile steel rebar are reinforced concrete structural pillars."
         },
         {
           "id": "B",
-          "text": "Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores."
+          "text": "Pillar Column-14 is embedded with internal deformed high-tensile steel rebar."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some reinforced concrete structural pillars are embedded with internal deformed high-tensile steel rebar."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Pillar Column-14 is embedded with internal deformed high-tensile steel rebar."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Pillar Column-14 is not embedded with internal deformed high-tensile steel rebar."
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: B**\n\nBy Modus Ponens: Because Pillar Column-14 belongs to reinforced concrete structural pillars, and all reinforced concrete structural pillars are embedded with internal deformed high-tensile steel rebar, Pillar Column-14 must be embedded with internal deformed high-tensile steel rebar.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-26"
     },
     {
-      "question": "[Scenario #98] Premise 1: No organism lacking chloroplasts can perform oxygenic photosynthesis.\nPremise 2: The fungal mold Penicillium lacks chloroplasts.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No reinforced concrete structural pillars are embedded with internal deformed high-tensile steel rebar.\nPremise 2: Pillar Column-14 is classified as one of the reinforced concrete structural pillars.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Pillar Column-14 is embedded with internal deformed high-tensile steel rebar."
         },
         {
           "id": "B",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some reinforced concrete structural pillars can be embedded with internal deformed high-tensile steel rebar under special conditions."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         },
         {
           "id": "D",
-          "text": "Conclusion: Penicillium cannot perform oxygenic photosynthesis."
+          "text": "Pillar Column-14 is not embedded with internal deformed high-tensile steel rebar."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not embedded with internal deformed high-tensile steel rebar are classified as reinforced concrete structural pillars."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Penicillium cannot perform oxygenic photosynthesis.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-26"
     },
     {
-      "question": "[Scenario #99] Premise 1: All constitutional amendments requiring ratification must secure affirmative votes from three-fourths of state legislatures.\nPremise 2: Proposal 14 requires ratification as a constitutional amendment.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the reinforced concrete structural pillars, it must be embedded with internal deformed high-tensile steel rebar.\nPremise 2: Specimen Pillar Column-14 is verified to NOT be embedded with internal deformed high-tensile steel rebar.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Pillar Column-14 is completely indeterminate."
         },
         {
           "id": "B",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Pillar Column-14 possesses some alternative attributes of reinforced concrete structural pillars."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Pillar Column-14 is one of the reinforced concrete structural pillars."
         },
         {
           "id": "D",
-          "text": "Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures."
+          "text": "Specimen Pillar Column-14 is not one of the reinforced concrete structural pillars."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are embedded with internal deformed high-tensile steel rebar are reinforced concrete structural pillars."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-26"
     },
     {
-      "question": "[Scenario #100] Premise 1: Whenever a vehicle enters a geostationary transfer orbit, its apogee matches geosynchronous altitude.\nPremise 2: Satellite Echo entered a geostationary transfer orbit.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All reinforced concrete structural pillars are embedded with internal deformed high-tensile steel rebar.\nPremise 2: Some load-bearing building foundations are classified as reinforced concrete structural pillars.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No load-bearing building foundations are embedded with internal deformed high-tensile steel rebar."
         },
         {
           "id": "B",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are embedded with internal deformed high-tensile steel rebar are classified as load-bearing building foundations."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the reinforced concrete structural pillars belong to load-bearing building foundations."
         },
         {
           "id": "D",
-          "text": "Conclusion: Satellite Echo's apogee matches geosynchronous altitude."
+          "text": "Some load-bearing building foundations are embedded with internal deformed high-tensile steel rebar."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All load-bearing building foundations are embedded with internal deformed high-tensile steel rebar."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Satellite Echo's apogee matches geosynchronous altitude.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

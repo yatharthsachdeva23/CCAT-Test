@@ -1203,31 +1203,31 @@
       "testId": "test-25"
     },
     {
-      "question": "[Scenario #93] Premise 1: All enzymes that catalyze phosphorylation reactions are classified as protein kinases.\nPremise 2: Enzyme P-38 catalyzes phosphorylation reactions.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All combustion gas turbines operating in combined-cycle power plants are driving waste-heat recovery steam generators.\nPremise 2: Turbine Generator-1 is one of the combustion gas turbines operating in combined-cycle power plants.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some combustion gas turbines operating in combined-cycle power plants are driving waste-heat recovery steam generators."
         },
         {
           "id": "B",
-          "text": "Conclusion: Enzyme P-38 is classified as a protein kinase."
+          "text": "Turbine Generator-1 is driving waste-heat recovery steam generators."
         },
         {
           "id": "C",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Turbine Generator-1 is not driving waste-heat recovery steam generators."
         },
         {
           "id": "D",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are driving waste-heat recovery steam generators are combustion gas turbines operating in combined-cycle power plants."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Turbine Generator-1 is driving waste-heat recovery steam generators."
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Enzyme P-38 is classified as a protein kinase.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: B**\n\nBy Modus Ponens: Because Turbine Generator-1 belongs to combustion gas turbines operating in combined-cycle power plants, and all combustion gas turbines operating in combined-cycle power plants are driving waste-heat recovery steam generators, Turbine Generator-1 must be driving waste-heat recovery steam generators.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-25"
     },
     {
-      "question": "[Scenario #94] Premise 1: No supersonic passenger aircraft can operate economically without specialized afterburning turbofan engines.\nPremise 2: The Concorde is a supersonic passenger aircraft.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No combustion gas turbines operating in combined-cycle power plants are driving waste-heat recovery steam generators.\nPremise 2: Turbine Generator-1 is classified as one of the combustion gas turbines operating in combined-cycle power plants.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not driving waste-heat recovery steam generators are classified as combustion gas turbines operating in combined-cycle power plants."
         },
         {
           "id": "B",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some combustion gas turbines operating in combined-cycle power plants can be driving waste-heat recovery steam generators under special conditions."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Turbine Generator-1 is driving waste-heat recovery steam generators."
         },
         {
           "id": "D",
-          "text": "Conclusion: The Concorde operated with specialized afterburning turbofans."
+          "text": "Turbine Generator-1 is not driving waste-heat recovery steam generators."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The Concorde operated with specialized afterburning turbofans.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-25"
     },
     {
-      "question": "[Scenario #95] Premise 1: All equilateral triangles have interior angles measuring exactly 60 degrees.\nPremise 2: Geometric Figure Alpha is an equilateral triangle.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the combustion gas turbines operating in combined-cycle power plants, it must be driving waste-heat recovery steam generators.\nPremise 2: Specimen Turbine Generator-1 is verified to NOT be driving waste-heat recovery steam generators.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Turbine Generator-1 possesses some alternative attributes of combustion gas turbines operating in combined-cycle power plants."
         },
         {
           "id": "B",
-          "text": "Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees."
+          "text": "Specimen Turbine Generator-1 is not one of the combustion gas turbines operating in combined-cycle power plants."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Turbine Generator-1 is one of the combustion gas turbines operating in combined-cycle power plants."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Turbine Generator-1 is completely indeterminate."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are driving waste-heat recovery steam generators are combustion gas turbines operating in combined-cycle power plants."
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: B**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-25"
     },
     {
-      "question": "[Scenario #96] Premise 1: If a legal contract lacks mutual consideration between parties, it is unenforceable in contract court.\nPremise 2: The partnership agreement between Smith and Jones lacked mutual consideration.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All combustion gas turbines operating in combined-cycle power plants are driving waste-heat recovery steam generators.\nPremise 2: Some power plant prime movers are classified as combustion gas turbines operating in combined-cycle power plants.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the combustion gas turbines operating in combined-cycle power plants belong to power plant prime movers."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All power plant prime movers are driving waste-heat recovery steam generators."
         },
         {
           "id": "C",
-          "text": "Conclusion: The partnership agreement is unenforceable in contract court."
+          "text": "Some power plant prime movers are driving waste-heat recovery steam generators."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are driving waste-heat recovery steam generators are classified as power plant prime movers."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No power plant prime movers are driving waste-heat recovery steam generators."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The partnership agreement is unenforceable in contract court.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

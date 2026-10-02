@@ -1203,31 +1203,31 @@
       "testId": "test-21"
     },
     {
-      "question": "[Scenario #77] Premise 1: All high-throughput optic fiber links rely on total internal reflection inside silica glass cores.\nPremise 2: The transatlantic cable Apollo is a high-throughput optic fiber link.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All broad-spectrum cephalosporin antibiotics are effective at inhibiting bacterial peptidoglycan cell wall synthesis.\nPremise 2: Antibiotic Ceph-4 is one of the broad-spectrum cephalosporin antibiotics.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Antibiotic Ceph-4 is not effective at inhibiting bacterial peptidoglycan cell wall synthesis."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Antibiotic Ceph-4 is effective at inhibiting bacterial peptidoglycan cell wall synthesis."
         },
         {
           "id": "C",
-          "text": "Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores."
+          "text": "Antibiotic Ceph-4 is effective at inhibiting bacterial peptidoglycan cell wall synthesis."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some broad-spectrum cephalosporin antibiotics are effective at inhibiting bacterial peptidoglycan cell wall synthesis."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are effective at inhibiting bacterial peptidoglycan cell wall synthesis are broad-spectrum cephalosporin antibiotics."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Modus Ponens: Because Antibiotic Ceph-4 belongs to broad-spectrum cephalosporin antibiotics, and all broad-spectrum cephalosporin antibiotics are effective at inhibiting bacterial peptidoglycan cell wall synthesis, Antibiotic Ceph-4 must be effective at inhibiting bacterial peptidoglycan cell wall synthesis.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-21"
     },
     {
-      "question": "[Scenario #78] Premise 1: No organism lacking chloroplasts can perform oxygenic photosynthesis.\nPremise 2: The fungal mold Penicillium lacks chloroplasts.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No broad-spectrum cephalosporin antibiotics are effective at inhibiting bacterial peptidoglycan cell wall synthesis.\nPremise 2: Antibiotic Ceph-4 is classified as one of the broad-spectrum cephalosporin antibiotics.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Antibiotic Ceph-4 is effective at inhibiting bacterial peptidoglycan cell wall synthesis."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not effective at inhibiting bacterial peptidoglycan cell wall synthesis are classified as broad-spectrum cephalosporin antibiotics."
         },
         {
           "id": "C",
-          "text": "Conclusion: Penicillium cannot perform oxygenic photosynthesis."
+          "text": "Antibiotic Ceph-4 is not effective at inhibiting bacterial peptidoglycan cell wall synthesis."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some broad-spectrum cephalosporin antibiotics can be effective at inhibiting bacterial peptidoglycan cell wall synthesis under special conditions."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Penicillium cannot perform oxygenic photosynthesis.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-21"
     },
     {
-      "question": "[Scenario #79] Premise 1: All constitutional amendments requiring ratification must secure affirmative votes from three-fourths of state legislatures.\nPremise 2: Proposal 14 requires ratification as a constitutional amendment.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the broad-spectrum cephalosporin antibiotics, it must be effective at inhibiting bacterial peptidoglycan cell wall synthesis.\nPremise 2: Specimen Antibiotic Ceph-4 is verified to NOT be effective at inhibiting bacterial peptidoglycan cell wall synthesis.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures."
+          "text": "Specimen Antibiotic Ceph-4 is not one of the broad-spectrum cephalosporin antibiotics."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Antibiotic Ceph-4 is one of the broad-spectrum cephalosporin antibiotics."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Antibiotic Ceph-4 possesses some alternative attributes of broad-spectrum cephalosporin antibiotics."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Antibiotic Ceph-4 is completely indeterminate."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are effective at inhibiting bacterial peptidoglycan cell wall synthesis are broad-spectrum cephalosporin antibiotics."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-21"
     },
     {
-      "question": "[Scenario #80] Premise 1: Whenever a vehicle enters a geostationary transfer orbit, its apogee matches geosynchronous altitude.\nPremise 2: Satellite Echo entered a geostationary transfer orbit.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All broad-spectrum cephalosporin antibiotics are effective at inhibiting bacterial peptidoglycan cell wall synthesis.\nPremise 2: Some pharmaceutical therapeutic agents are classified as broad-spectrum cephalosporin antibiotics.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All pharmaceutical therapeutic agents are effective at inhibiting bacterial peptidoglycan cell wall synthesis."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the broad-spectrum cephalosporin antibiotics belong to pharmaceutical therapeutic agents."
         },
         {
           "id": "C",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No pharmaceutical therapeutic agents are effective at inhibiting bacterial peptidoglycan cell wall synthesis."
         },
         {
           "id": "D",
-          "text": "Conclusion: Satellite Echo's apogee matches geosynchronous altitude."
+          "text": "Some pharmaceutical therapeutic agents are effective at inhibiting bacterial peptidoglycan cell wall synthesis."
         },
         {
           "id": "E",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are effective at inhibiting bacterial peptidoglycan cell wall synthesis are classified as pharmaceutical therapeutic agents."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Satellite Echo's apogee matches geosynchronous altitude.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

@@ -1203,31 +1203,31 @@
       "testId": "test-7"
     },
     {
-      "question": "[Scenario #21] Premise 1: All licensed commercial aviators must pass annual cardiovascular screening.\nPremise 2: Captain Reynolds is a licensed commercial aviator.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All cetaceans breathe atmospheric air using lungs rather than gills.\nPremise 2: The humpback whale is a cetacean.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "The humpback whale is a fish."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "It cannot be determined how the humpback whale breathes."
         },
         {
           "id": "C",
-          "text": "Conclusion: Captain Reynolds must pass annual cardiovascular screening."
+          "text": "The humpback whale breathes atmospheric air using lungs rather than gills."
         },
         {
           "id": "D",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All animals that breathe using lungs are humpback whales."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "The humpback whale extracts oxygen from water through gills."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Captain Reynolds must pass annual cardiovascular screening.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Modus Ponens.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-7"
     },
     {
-      "question": "[Scenario #22] Premise 1: No deep-sea submersible without titanium hulls can withstand 10,000 meters of hydrostatic pressure.\nPremise 2: The exploration vessel Nereus-9 lacks a titanium hull.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No deciduous angiosperm trees retain green foliage throughout a subzero winter.\nPremise 2: The sugar maple is a deciduous angiosperm tree.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "The sugar maple is an evergreen conifer."
         },
         {
           "id": "B",
-          "text": "Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure."
+          "text": "The sugar maple does not retain green foliage throughout a subzero winter."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "The sugar maple retains green foliage throughout a subzero winter."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "Insufficient data to evaluate foliage behavior."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All trees that lose leaves in winter are sugar maples."
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: B**\n\nBy Celarent.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-7"
     },
     {
-      "question": "[Scenario #23] Premise 1: All registered trademarks granted federal protection are intellectual property assets.\nPremise 2: Project Zenith is a registered trademark granted federal protection.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If a compound functions as a competitive enzyme inhibitor, it binds directly to the active catalytic site.\nPremise 2: Molecule Z does not bind to the active catalytic site.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No logical conclusion is warranted."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Molecule Z functions as a competitive enzyme inhibitor."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Molecule Z accelerates enzymatic activity by ten times."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All molecules binding to the active site are Molecule Z."
         },
         {
           "id": "E",
-          "text": "Conclusion: Project Zenith is an intellectual property asset."
+          "text": "Molecule Z does not function as a competitive enzyme inhibitor."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Project Zenith is an intellectual property asset.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Modus Tollens.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-7"
     },
     {
-      "question": "[Scenario #24] Premise 1: Whenever ambient temperature drops below minus forty degrees, diesel engine fuel lines freeze without preheaters.\nPremise 2: Generator Unit 4 has no fuel line preheaters and temperature reached minus forty-five degrees.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All arthropods with chelicerae and four pairs of walking legs are classified as arachnids.\nPremise 2: Some predatory forest invertebrates have chelicerae and four pairs of walking legs.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All predatory forest invertebrates are arachnids."
         },
         {
           "id": "B",
-          "text": "Conclusion: Generator Unit 4 fuel lines froze."
+          "text": "Some predatory forest invertebrates are classified as arachnids."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "Invertebrates with four pairs of legs are never arachnids."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No predatory forest invertebrates are arachnids."
         },
         {
           "id": "E",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All arachnids live exclusively in predatory forest environments."
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Generator Unit 4 fuel lines froze.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: B**\n\nBy Darii.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

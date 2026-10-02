@@ -1203,31 +1203,31 @@
       "testId": "test-6"
     },
     {
-      "question": "[Scenario #17] Premise 1: All high-throughput optic fiber links rely on total internal reflection inside silica glass cores.\nPremise 2: The transatlantic cable Apollo is a high-throughput optic fiber link.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All enzymes classified as polymerases catalyze the synthesis of nucleic acid polymers.\nPremise 2: Taq polymerase is an enzyme classified as a polymerase.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Taq polymerase requires no cofactors to operate."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Taq polymerase breaks down nucleic acid polymers into simple sugars."
         },
         {
           "id": "C",
-          "text": "Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores."
+          "text": "Taq polymerase catalyzes the synthesis of nucleic acid polymers."
         },
         {
           "id": "D",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All enzymes that synthesize nucleic acids are Taq polymerase."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "Insufficient evidence exists regarding Taq polymerase."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Modus Ponens.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-6"
     },
     {
-      "question": "[Scenario #18] Premise 1: No organism lacking chloroplasts can perform oxygenic photosynthesis.\nPremise 2: The fungal mold Penicillium lacks chloroplasts.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No reptiles lacking specialized thermoreceptor organs can detect pit infrared radiation.\nPremise 2: The common garter snake lacks specialized thermoreceptor pit organs.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No deduction can be drawn."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "The common garter snake detects pit infrared radiation accurately."
         },
         {
           "id": "C",
-          "text": "Conclusion: Penicillium cannot perform oxygenic photosynthesis."
+          "text": "The common garter snake cannot detect pit infrared radiation."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All reptiles detect infrared radiation through specialized skin."
         },
         {
           "id": "E",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "The common garter snake detects infrared radiation only when warm."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Penicillium cannot perform oxygenic photosynthesis.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Celarent universal negative.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-6"
     },
     {
-      "question": "[Scenario #19] Premise 1: All constitutional amendments requiring ratification must secure affirmative votes from three-fourths of state legislatures.\nPremise 2: Proposal 14 requires ratification as a constitutional amendment.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If a cellular organism is a strict anaerobe, prolonged exposure to atmospheric oxygen is lethal to it.\nPremise 2: Bacterial Culture B thrives under prolonged exposure to atmospheric oxygen.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Bacterial Culture B requires pure nitrogen to survive."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Bacterial Culture B is a strict anaerobe."
         },
         {
           "id": "C",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All organisms killed by oxygen belong to Bacterial Culture B."
         },
         {
           "id": "D",
-          "text": "Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures."
+          "text": "Bacterial Culture B is not a strict anaerobe."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The atmospheric tolerance of Bacterial Culture B is indeterminate."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Modus Tollens.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-6"
     },
     {
-      "question": "[Scenario #20] Premise 1: Whenever a vehicle enters a geostationary transfer orbit, its apogee matches geosynchronous altitude.\nPremise 2: Satellite Echo entered a geostationary transfer orbit.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All avian species in the family Spheniscidae are flightless marine divers.\nPremise 2: Some Antarctic seabirds belong to the family Spheniscidae.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "Birds in the family Spheniscidae fly long distances over the ocean."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No Antarctic seabirds are flightless marine divers."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All Antarctic seabirds are flightless marine divers."
         },
         {
           "id": "D",
-          "text": "Conclusion: Satellite Echo's apogee matches geosynchronous altitude."
+          "text": "Some Antarctic seabirds are flightless marine divers."
         },
         {
           "id": "E",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All flightless marine divers are Antarctic seabirds."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Satellite Echo's apogee matches geosynchronous altitude.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Darii.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

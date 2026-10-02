@@ -1203,31 +1203,31 @@
       "testId": "test-18"
     },
     {
-      "question": "[Scenario #65] Premise 1: All valid cryptographic hash functions must satisfy strict pre-image resistance.\nPremise 2: Algorithm SHA-512 is a valid cryptographic hash function.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All national economies experiencing hyperinflation are seeing currency purchasing power halve within thirty days.\nPremise 2: Market Realm-B is one of the national economies experiencing hyperinflation.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are seeing currency purchasing power halve within thirty days are national economies experiencing hyperinflation."
         },
         {
           "id": "B",
-          "text": "Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance."
+          "text": "Market Realm-B is seeing currency purchasing power halve within thirty days."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some national economies experiencing hyperinflation are seeing currency purchasing power halve within thirty days."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Market Realm-B is seeing currency purchasing power halve within thirty days."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Market Realm-B is not seeing currency purchasing power halve within thirty days."
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: B**\n\nBy Modus Ponens: Because Market Realm-B belongs to national economies experiencing hyperinflation, and all national economies experiencing hyperinflation are seeing currency purchasing power halve within thirty days, Market Realm-B must be seeing currency purchasing power halve within thirty days.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-18"
     },
     {
-      "question": "[Scenario #66] Premise 1: No non-renewable energy source generates zero carbon emissions during combustion.\nPremise 2: Bituminous coal is a non-renewable combustion fuel.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No national economies experiencing hyperinflation are seeing currency purchasing power halve within thirty days.\nPremise 2: Market Realm-B is classified as one of the national economies experiencing hyperinflation.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: Bituminous coal does not generate zero carbon emissions during combustion."
+          "text": "Market Realm-B is not seeing currency purchasing power halve within thirty days."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Market Realm-B is seeing currency purchasing power halve within thirty days."
         },
         {
           "id": "C",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not seeing currency purchasing power halve within thirty days are classified as national economies experiencing hyperinflation."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         },
         {
           "id": "E",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some national economies experiencing hyperinflation can be seeing currency purchasing power halve within thirty days under special conditions."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-18"
     },
     {
-      "question": "[Scenario #67] Premise 1: All mammal species capable of true powered flight belong to the mammalian order Chiroptera.\nPremise 2: The fruit bat is a mammal species capable of true powered flight.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the national economies experiencing hyperinflation, it must be seeing currency purchasing power halve within thirty days.\nPremise 2: Specimen Market Realm-B is verified to NOT be seeing currency purchasing power halve within thirty days.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Market Realm-B possesses some alternative attributes of national economies experiencing hyperinflation."
         },
         {
           "id": "B",
-          "text": "Conclusion: The fruit bat belongs to the mammalian order Chiroptera."
+          "text": "Specimen Market Realm-B is not one of the national economies experiencing hyperinflation."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Market Realm-B is completely indeterminate."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are seeing currency purchasing power halve within thirty days are national economies experiencing hyperinflation."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Market Realm-B is one of the national economies experiencing hyperinflation."
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The fruit bat belongs to the mammalian order Chiroptera.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: B**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-18"
     },
     {
-      "question": "[Scenario #68] Premise 1: If an enterprise database fails ACID concurrency compliance, it cannot guarantee zero transactional data loss.\nPremise 2: System Omega failed ACID concurrency compliance.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All national economies experiencing hyperinflation are seeing currency purchasing power halve within thirty days.\nPremise 2: Some developing market economies are classified as national economies experiencing hyperinflation.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: System Omega cannot guarantee zero transactional data loss."
+          "text": "Some developing market economies are seeing currency purchasing power halve within thirty days."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All developing market economies are seeing currency purchasing power halve within thirty days."
         },
         {
           "id": "C",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No developing market economies are seeing currency purchasing power halve within thirty days."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are seeing currency purchasing power halve within thirty days are classified as developing market economies."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the national economies experiencing hyperinflation belong to developing market economies."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: System Omega cannot guarantee zero transactional data loss.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

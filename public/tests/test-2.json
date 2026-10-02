@@ -1203,31 +1203,31 @@
       "testId": "test-2"
     },
     {
-      "question": "[Scenario #1] Premise 1: All licensed commercial aviators must pass annual cardiovascular screening.\nPremise 2: Captain Reynolds is a licensed commercial aviator.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All commercial airline pilots are required to pass biannual flight simulator evaluations.\nPremise 2: Captain Mercer is an active commercial airline pilot.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: Captain Reynolds must pass annual cardiovascular screening."
+          "text": "Captain Mercer is required to pass biannual flight simulator evaluations."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Captain Mercer is exempt from flight simulator evaluations."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient information to determine Captain Mercer's simulator evaluation requirements."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Commercial airline pilots rarely need simulator evaluations."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Anyone who passes biannual flight simulator evaluations is a commercial airline pilot."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Captain Reynolds must pass annual cardiovascular screening.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Modus Ponens: All A are B; X is A; therefore X is B. Reversing the relationship is an illicit converse fallacy.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-2"
     },
     {
-      "question": "[Scenario #2] Premise 1: No deep-sea submersible without titanium hulls can withstand 10,000 meters of hydrostatic pressure.\nPremise 2: The exploration vessel Nereus-9 lacks a titanium hull.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No uncertified experimental aircraft are permitted to operate in controlled metropolitan airspace.\nPremise 2: Prototype Drone X-4 is an uncertified experimental aircraft.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure."
+          "text": "Prototype Drone X-4 is not permitted to operate in controlled metropolitan airspace."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Prototype Drone X-4 is permitted to operate in controlled metropolitan airspace with ATC approval."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No definitive conclusion can be drawn regarding Prototype Drone X-4."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All aircraft operating in controlled metropolitan airspace are experimental prototypes."
         },
         {
           "id": "E",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Prototype Drone X-4 can operate anywhere if altitude remains under 400 feet."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Universal Negative (No A is B; X is A; therefore X is not B).\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-2"
     },
     {
-      "question": "[Scenario #3] Premise 1: All registered trademarks granted federal protection are intellectual property assets.\nPremise 2: Project Zenith is a registered trademark granted federal protection.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an aircraft is cleared for transoceanic routes, it must be equipped with dual satellite communication transceivers.\nPremise 2: Cargo Jet 812 is not equipped with dual satellite communication transceivers.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Cargo Jet 812 is cleared for transoceanic routes."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All aircraft equipped with dual satellite transceivers fly transoceanic routes."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Cargo Jet 812 may fly transoceanic routes during daylight hours."
         },
         {
           "id": "D",
-          "text": "Conclusion: Project Zenith is an intellectual property asset."
+          "text": "Cargo Jet 812 is not cleared for transoceanic routes."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion regarding route clearance can be established."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Project Zenith is an intellectual property asset.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Modus Tollens: If P then Q; Not Q; therefore Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-2"
     },
     {
-      "question": "[Scenario #4] Premise 1: Whenever ambient temperature drops below minus forty degrees, diesel engine fuel lines freeze without preheaters.\nPremise 2: Generator Unit 4 has no fuel line preheaters and temperature reached minus forty-five degrees.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All high-speed rail trains in this transit corridor operate exclusively on electrified overhead catenary power.\nPremise 2: Some regional passenger expresses in this transit corridor are high-speed rail trains.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: Generator Unit 4 fuel lines froze."
+          "text": "Some regional passenger expresses in this transit corridor operate exclusively on electrified overhead catenary power."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All regional passenger expresses in this transit corridor operate on overhead catenary power."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All trains using overhead catenary power are regional passenger expresses."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No regional passenger expresses operate on overhead catenary power."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the high-speed rail trains carry regional passengers."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Generator Unit 4 fuel lines froze.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Darii: All A are B; Some C are A; therefore Some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

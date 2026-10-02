@@ -1203,31 +1203,31 @@
       "testId": "test-13"
     },
     {
-      "question": "[Scenario #45] Premise 1: All valid cryptographic hash functions must satisfy strict pre-image resistance.\nPremise 2: Algorithm SHA-512 is a valid cryptographic hash function.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All appellate court determinations are legally binding on subordinate trial courts within the same jurisdiction.\nPremise 2: Ruling Apex-4 is one of the appellate court determinations.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Ruling Apex-4 is legally binding on subordinate trial courts within the same jurisdiction."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Ruling Apex-4 is not legally binding on subordinate trial courts within the same jurisdiction."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some appellate court determinations are legally binding on subordinate trial courts within the same jurisdiction."
         },
         {
           "id": "D",
-          "text": "Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance."
+          "text": "Ruling Apex-4 is legally binding on subordinate trial courts within the same jurisdiction."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are legally binding on subordinate trial courts within the same jurisdiction are appellate court determinations."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Modus Ponens: Because Ruling Apex-4 belongs to appellate court determinations, and all appellate court determinations are legally binding on subordinate trial courts within the same jurisdiction, Ruling Apex-4 must be legally binding on subordinate trial courts within the same jurisdiction.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-13"
     },
     {
-      "question": "[Scenario #46] Premise 1: No non-renewable energy source generates zero carbon emissions during combustion.\nPremise 2: Bituminous coal is a non-renewable combustion fuel.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No appellate court determinations are legally binding on subordinate trial courts within the same jurisdiction.\nPremise 2: Ruling Apex-4 is classified as one of the appellate court determinations.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Ruling Apex-4 is legally binding on subordinate trial courts within the same jurisdiction."
         },
         {
           "id": "B",
-          "text": "Conclusion: Bituminous coal does not generate zero carbon emissions during combustion."
+          "text": "Ruling Apex-4 is not legally binding on subordinate trial courts within the same jurisdiction."
         },
         {
           "id": "C",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not legally binding on subordinate trial courts within the same jurisdiction are classified as appellate court determinations."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some appellate court determinations can be legally binding on subordinate trial courts within the same jurisdiction under special conditions."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: B**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-13"
     },
     {
-      "question": "[Scenario #47] Premise 1: All mammal species capable of true powered flight belong to the mammalian order Chiroptera.\nPremise 2: The fruit bat is a mammal species capable of true powered flight.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the appellate court determinations, it must be legally binding on subordinate trial courts within the same jurisdiction.\nPremise 2: Specimen Ruling Apex-4 is verified to NOT be legally binding on subordinate trial courts within the same jurisdiction.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are legally binding on subordinate trial courts within the same jurisdiction are appellate court determinations."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Ruling Apex-4 is one of the appellate court determinations."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Ruling Apex-4 is completely indeterminate."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Ruling Apex-4 possesses some alternative attributes of appellate court determinations."
         },
         {
           "id": "E",
-          "text": "Conclusion: The fruit bat belongs to the mammalian order Chiroptera."
+          "text": "Specimen Ruling Apex-4 is not one of the appellate court determinations."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The fruit bat belongs to the mammalian order Chiroptera.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-13"
     },
     {
-      "question": "[Scenario #48] Premise 1: If an enterprise database fails ACID concurrency compliance, it cannot guarantee zero transactional data loss.\nPremise 2: System Omega failed ACID concurrency compliance.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All appellate court determinations are legally binding on subordinate trial courts within the same jurisdiction.\nPremise 2: Some judicial rulings are classified as appellate court determinations.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: System Omega cannot guarantee zero transactional data loss."
+          "text": "Some judicial rulings are legally binding on subordinate trial courts within the same jurisdiction."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the appellate court determinations belong to judicial rulings."
         },
         {
           "id": "C",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No judicial rulings are legally binding on subordinate trial courts within the same jurisdiction."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are legally binding on subordinate trial courts within the same jurisdiction are classified as judicial rulings."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All judicial rulings are legally binding on subordinate trial courts within the same jurisdiction."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: System Omega cannot guarantee zero transactional data loss.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

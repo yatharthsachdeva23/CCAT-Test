@@ -1203,31 +1203,31 @@
       "testId": "test-4"
     },
     {
-      "question": "[Scenario #9] Premise 1: All members of the World Trade Organization are bound by the most-favored-nation trading clause.\nPremise 2: Country Veridia is a member of the World Trade Organization.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All commercial harbor pilots possess master mariner certification.\nPremise 2: Pilot Henderson is a commercial harbor pilot.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Pilot Henderson is the head of all harbor pilots."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Everyone who possesses master mariner certification works as a harbor pilot."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence regarding Pilot Henderson's certification."
         },
         {
           "id": "D",
-          "text": "Conclusion: Country Veridia is bound by the most-favored-nation trading clause."
+          "text": "Pilot Henderson possesses master mariner certification."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Pilot Henderson does not possess master mariner certification."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Country Veridia is bound by the most-favored-nation trading clause.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy direct universal affirmatory syllogism.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-4"
     },
     {
-      "question": "[Scenario #10] Premise 1: No semiconductor device manufactured on a 3-nanometer lithography node can operate without ultraviolet photolithography.\nPremise 2: Microchip Phoenix was manufactured on a 3-nanometer node.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No subway train cars operating on Track 3 draw traction power from a third rail.\nPremise 2: Train Set B-12 operates on Track 3.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Train Set B-12 draws power from overhead lines and third rails simultaneously."
         },
         {
           "id": "B",
-          "text": "Conclusion: Microchip Phoenix utilized ultraviolet photolithography."
+          "text": "Train Set B-12 does not draw traction power from a third rail."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "It is impossible to deduce Train Set B-12's power mechanism."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All trains that do not use a third rail operate on Track 3."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Train Set B-12 draws traction power from a third rail."
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Microchip Phoenix utilized ultraviolet photolithography.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: B**\n\nBy Universal Negative syllogism.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-4"
     },
     {
-      "question": "[Scenario #11] Premise 1: All corporate debt instruments rated AAA carry minimal credit default risk.\nPremise 2: Bond Series 2028 is rated AAA.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an aircraft is approved for Category III instrument landings, it must feature redundant autonomous autoland systems.\nPremise 2: Flight 402 lacks redundant autonomous autoland systems.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: Bond Series 2028 carries minimal credit default risk."
+          "text": "Flight 402 is not approved for Category III instrument landings."
         },
         {
           "id": "B",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Flight 402 can land in zero visibility under visual flight rules."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Flight 402 is approved for Category III instrument landings."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All aircraft with autoland systems fly Category III approaches."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "Deduction cannot be made from the premises."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bond Series 2028 carries minimal credit default risk.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Modus Tollens.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-4"
     },
     {
-      "question": "[Scenario #12] Premise 1: Whenever an economy experiences stagflation, it exhibits simultaneous high unemployment and elevated inflation.\nPremise 2: Region B is undergoing stagflation.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All supersonic military interceptors are equipped with titanium leading-edge wing spars.\nPremise 2: Some prototype aircraft in Squadron Seven are supersonic military interceptors.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation."
+          "text": "Some prototype aircraft in Squadron Seven are equipped with titanium leading-edge wing spars."
         },
         {
           "id": "B",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All aircraft with titanium wing spars belong to Squadron Seven."
         },
         {
           "id": "C",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No aircraft in Squadron Seven have titanium wing spars."
         },
         {
           "id": "D",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All prototype aircraft in Squadron Seven have titanium leading-edge wing spars."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "Squadron Seven contains no supersonic interceptors."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Darii syllogistic logic.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

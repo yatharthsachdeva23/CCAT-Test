@@ -1203,31 +1203,31 @@
       "testId": "test-20"
     },
     {
-      "question": "[Scenario #73] Premise 1: All enzymes that catalyze phosphorylation reactions are classified as protein kinases.\nPremise 2: Enzyme P-38 catalyzes phosphorylation reactions.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All Class III implantable medical devices are mandated to complete randomized clinical trials prior to commercial release.\nPremise 2: Pacemaker Cardio-V is one of the Class III implantable medical devices.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are mandated to complete randomized clinical trials prior to commercial release are Class III implantable medical devices."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Pacemaker Cardio-V is not mandated to complete randomized clinical trials prior to commercial release."
         },
         {
           "id": "C",
-          "text": "Conclusion: Enzyme P-38 is classified as a protein kinase."
+          "text": "Pacemaker Cardio-V is mandated to complete randomized clinical trials prior to commercial release."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Pacemaker Cardio-V is mandated to complete randomized clinical trials prior to commercial release."
         },
         {
           "id": "E",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some Class III implantable medical devices are mandated to complete randomized clinical trials prior to commercial release."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Enzyme P-38 is classified as a protein kinase.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Modus Ponens: Because Pacemaker Cardio-V belongs to Class III implantable medical devices, and all Class III implantable medical devices are mandated to complete randomized clinical trials prior to commercial release, Pacemaker Cardio-V must be mandated to complete randomized clinical trials prior to commercial release.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-20"
     },
     {
-      "question": "[Scenario #74] Premise 1: No supersonic passenger aircraft can operate economically without specialized afterburning turbofan engines.\nPremise 2: The Concorde is a supersonic passenger aircraft.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No Class III implantable medical devices are mandated to complete randomized clinical trials prior to commercial release.\nPremise 2: Pacemaker Cardio-V is classified as one of the Class III implantable medical devices.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not mandated to complete randomized clinical trials prior to commercial release are classified as Class III implantable medical devices."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Pacemaker Cardio-V is mandated to complete randomized clinical trials prior to commercial release."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some Class III implantable medical devices can be mandated to complete randomized clinical trials prior to commercial release under special conditions."
         },
         {
           "id": "E",
-          "text": "Conclusion: The Concorde operated with specialized afterburning turbofans."
+          "text": "Pacemaker Cardio-V is not mandated to complete randomized clinical trials prior to commercial release."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The Concorde operated with specialized afterburning turbofans.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-20"
     },
     {
-      "question": "[Scenario #75] Premise 1: All equilateral triangles have interior angles measuring exactly 60 degrees.\nPremise 2: Geometric Figure Alpha is an equilateral triangle.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the Class III implantable medical devices, it must be mandated to complete randomized clinical trials prior to commercial release.\nPremise 2: Specimen Pacemaker Cardio-V is verified to NOT be mandated to complete randomized clinical trials prior to commercial release.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Pacemaker Cardio-V is completely indeterminate."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are mandated to complete randomized clinical trials prior to commercial release are Class III implantable medical devices."
         },
         {
           "id": "C",
-          "text": "Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees."
+          "text": "Specimen Pacemaker Cardio-V is not one of the Class III implantable medical devices."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Pacemaker Cardio-V possesses some alternative attributes of Class III implantable medical devices."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Pacemaker Cardio-V is one of the Class III implantable medical devices."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-20"
     },
     {
-      "question": "[Scenario #76] Premise 1: If a legal contract lacks mutual consideration between parties, it is unenforceable in contract court.\nPremise 2: The partnership agreement between Smith and Jones lacked mutual consideration.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All Class III implantable medical devices are mandated to complete randomized clinical trials prior to commercial release.\nPremise 2: Some biomedical implants are classified as Class III implantable medical devices.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: The partnership agreement is unenforceable in contract court."
+          "text": "Some biomedical implants are mandated to complete randomized clinical trials prior to commercial release."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No biomedical implants are mandated to complete randomized clinical trials prior to commercial release."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All biomedical implants are mandated to complete randomized clinical trials prior to commercial release."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the Class III implantable medical devices belong to biomedical implants."
         },
         {
           "id": "E",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are mandated to complete randomized clinical trials prior to commercial release are classified as biomedical implants."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The partnership agreement is unenforceable in contract court.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

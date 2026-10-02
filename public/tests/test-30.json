@@ -1203,31 +1203,31 @@
       "testId": "test-30"
     },
     {
-      "question": "[Scenario #113] Premise 1: All enzymes that catalyze phosphorylation reactions are classified as protein kinases.\nPremise 2: Enzyme P-38 catalyzes phosphorylation reactions.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All carbon fiber reinforced thermoset polymers are possessing high specific tensile strength exceeding structural aluminum.\nPremise 2: Composite Sheet CF-7 is one of the carbon fiber reinforced thermoset polymers.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Composite Sheet CF-7 is possessing high specific tensile strength exceeding structural aluminum."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Composite Sheet CF-7 is not possessing high specific tensile strength exceeding structural aluminum."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are possessing high specific tensile strength exceeding structural aluminum are carbon fiber reinforced thermoset polymers."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some carbon fiber reinforced thermoset polymers are possessing high specific tensile strength exceeding structural aluminum."
         },
         {
           "id": "E",
-          "text": "Conclusion: Enzyme P-38 is classified as a protein kinase."
+          "text": "Composite Sheet CF-7 is possessing high specific tensile strength exceeding structural aluminum."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Enzyme P-38 is classified as a protein kinase.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Modus Ponens: Because Composite Sheet CF-7 belongs to carbon fiber reinforced thermoset polymers, and all carbon fiber reinforced thermoset polymers are possessing high specific tensile strength exceeding structural aluminum, Composite Sheet CF-7 must be possessing high specific tensile strength exceeding structural aluminum.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-30"
     },
     {
-      "question": "[Scenario #114] Premise 1: No supersonic passenger aircraft can operate economically without specialized afterburning turbofan engines.\nPremise 2: The Concorde is a supersonic passenger aircraft.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No carbon fiber reinforced thermoset polymers are possessing high specific tensile strength exceeding structural aluminum.\nPremise 2: Composite Sheet CF-7 is classified as one of the carbon fiber reinforced thermoset polymers.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         },
         {
           "id": "B",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some carbon fiber reinforced thermoset polymers can be possessing high specific tensile strength exceeding structural aluminum under special conditions."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Composite Sheet CF-7 is possessing high specific tensile strength exceeding structural aluminum."
         },
         {
           "id": "D",
-          "text": "Conclusion: The Concorde operated with specialized afterburning turbofans."
+          "text": "Composite Sheet CF-7 is not possessing high specific tensile strength exceeding structural aluminum."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not possessing high specific tensile strength exceeding structural aluminum are classified as carbon fiber reinforced thermoset polymers."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The Concorde operated with specialized afterburning turbofans.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-30"
     },
     {
-      "question": "[Scenario #115] Premise 1: All equilateral triangles have interior angles measuring exactly 60 degrees.\nPremise 2: Geometric Figure Alpha is an equilateral triangle.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the carbon fiber reinforced thermoset polymers, it must be possessing high specific tensile strength exceeding structural aluminum.\nPremise 2: Specimen Composite Sheet CF-7 is verified to NOT be possessing high specific tensile strength exceeding structural aluminum.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are possessing high specific tensile strength exceeding structural aluminum are carbon fiber reinforced thermoset polymers."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Composite Sheet CF-7 is one of the carbon fiber reinforced thermoset polymers."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Composite Sheet CF-7 is completely indeterminate."
         },
         {
           "id": "D",
-          "text": "Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees."
+          "text": "Specimen Composite Sheet CF-7 is not one of the carbon fiber reinforced thermoset polymers."
         },
         {
           "id": "E",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Composite Sheet CF-7 possesses some alternative attributes of carbon fiber reinforced thermoset polymers."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-30"
     },
     {
-      "question": "[Scenario #116] Premise 1: If a legal contract lacks mutual consideration between parties, it is unenforceable in contract court.\nPremise 2: The partnership agreement between Smith and Jones lacked mutual consideration.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All carbon fiber reinforced thermoset polymers are possessing high specific tensile strength exceeding structural aluminum.\nPremise 2: Some aerospace structural materials are classified as carbon fiber reinforced thermoset polymers.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the carbon fiber reinforced thermoset polymers belong to aerospace structural materials."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All aerospace structural materials are possessing high specific tensile strength exceeding structural aluminum."
         },
         {
           "id": "C",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No aerospace structural materials are possessing high specific tensile strength exceeding structural aluminum."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are possessing high specific tensile strength exceeding structural aluminum are classified as aerospace structural materials."
         },
         {
           "id": "E",
-          "text": "Conclusion: The partnership agreement is unenforceable in contract court."
+          "text": "Some aerospace structural materials are possessing high specific tensile strength exceeding structural aluminum."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The partnership agreement is unenforceable in contract court.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

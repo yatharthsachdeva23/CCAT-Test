@@ -1203,31 +1203,31 @@
       "testId": "test-11"
     },
     {
-      "question": "[Scenario #37] Premise 1: All high-throughput optic fiber links rely on total internal reflection inside silica glass cores.\nPremise 2: The transatlantic cable Apollo is a high-throughput optic fiber link.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All valid bilateral agreements are predicated on mutual consideration.\nPremise 2: Contract Agreement-8 is one of the valid bilateral agreements.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are predicated on mutual consideration are valid bilateral agreements."
         },
         {
           "id": "B",
-          "text": "Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores."
+          "text": "Contract Agreement-8 is predicated on mutual consideration."
         },
         {
           "id": "C",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Contract Agreement-8 is not predicated on mutual consideration."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some valid bilateral agreements are predicated on mutual consideration."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Contract Agreement-8 is predicated on mutual consideration."
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: B**\n\nBy Modus Ponens: Because Contract Agreement-8 belongs to valid bilateral agreements, and all valid bilateral agreements are predicated on mutual consideration, Contract Agreement-8 must be predicated on mutual consideration.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-11"
     },
     {
-      "question": "[Scenario #38] Premise 1: No organism lacking chloroplasts can perform oxygenic photosynthesis.\nPremise 2: The fungal mold Penicillium lacks chloroplasts.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No valid bilateral agreements are predicated on mutual consideration.\nPremise 2: Contract Agreement-8 is classified as one of the valid bilateral agreements.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Contract Agreement-8 is predicated on mutual consideration."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         },
         {
           "id": "C",
-          "text": "Conclusion: Penicillium cannot perform oxygenic photosynthesis."
+          "text": "Contract Agreement-8 is not predicated on mutual consideration."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some valid bilateral agreements can be predicated on mutual consideration under special conditions."
         },
         {
           "id": "E",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not predicated on mutual consideration are classified as valid bilateral agreements."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Penicillium cannot perform oxygenic photosynthesis.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-11"
     },
     {
-      "question": "[Scenario #39] Premise 1: All constitutional amendments requiring ratification must secure affirmative votes from three-fourths of state legislatures.\nPremise 2: Proposal 14 requires ratification as a constitutional amendment.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the valid bilateral agreements, it must be predicated on mutual consideration.\nPremise 2: Specimen Contract Agreement-8 is verified to NOT be predicated on mutual consideration.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Contract Agreement-8 possesses some alternative attributes of valid bilateral agreements."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Contract Agreement-8 is completely indeterminate."
         },
         {
           "id": "C",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Contract Agreement-8 is one of the valid bilateral agreements."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are predicated on mutual consideration are valid bilateral agreements."
         },
         {
           "id": "E",
-          "text": "Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures."
+          "text": "Specimen Contract Agreement-8 is not one of the valid bilateral agreements."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-11"
     },
     {
-      "question": "[Scenario #40] Premise 1: Whenever a vehicle enters a geostationary transfer orbit, its apogee matches geosynchronous altitude.\nPremise 2: Satellite Echo entered a geostationary transfer orbit.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All valid bilateral agreements are predicated on mutual consideration.\nPremise 2: Some commercial sales contracts are classified as valid bilateral agreements.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No commercial sales contracts are predicated on mutual consideration."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the valid bilateral agreements belong to commercial sales contracts."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are predicated on mutual consideration are classified as commercial sales contracts."
         },
         {
           "id": "D",
-          "text": "Conclusion: Satellite Echo's apogee matches geosynchronous altitude."
+          "text": "Some commercial sales contracts are predicated on mutual consideration."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All commercial sales contracts are predicated on mutual consideration."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Satellite Echo's apogee matches geosynchronous altitude.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

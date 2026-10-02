@@ -3606,1324 +3606,1632 @@ export const ANALOGY_BANK = [
 ];
 export const SYLLOGISM_BANK = [
   {
-    "premise": "[Scenario #1] Premise 1: All licensed commercial aviators must pass annual cardiovascular screening.\nPremise 2: Captain Reynolds is a licensed commercial aviator.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Captain Reynolds must pass annual cardiovascular screening.",
+    "premise": "Premise 1: All commercial airline pilots are required to pass biannual flight simulator evaluations.\nPremise 2: Captain Mercer is an active commercial airline pilot.\nWhich of the following conclusions logically follows?",
+    "correct": "Captain Mercer is required to pass biannual flight simulator evaluations.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Anyone who passes biannual flight simulator evaluations is a commercial airline pilot.",
+      "Captain Mercer is exempt from flight simulator evaluations.",
+      "Commercial airline pilots rarely need simulator evaluations.",
+      "There is insufficient information to determine Captain Mercer's simulator evaluation requirements."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Captain Reynolds must pass annual cardiovascular screening.\"."
+    "expl": "By Modus Ponens: All A are B; X is A; therefore X is B. Reversing the relationship is an illicit converse fallacy."
   },
   {
-    "premise": "[Scenario #2] Premise 1: No deep-sea submersible without titanium hulls can withstand 10,000 meters of hydrostatic pressure.\nPremise 2: The exploration vessel Nereus-9 lacks a titanium hull.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.",
+    "premise": "Premise 1: No uncertified experimental aircraft are permitted to operate in controlled metropolitan airspace.\nPremise 2: Prototype Drone X-4 is an uncertified experimental aircraft.\nWhich of the following conclusions logically follows?",
+    "correct": "Prototype Drone X-4 is not permitted to operate in controlled metropolitan airspace.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Prototype Drone X-4 is permitted to operate in controlled metropolitan airspace with ATC approval.",
+      "All aircraft operating in controlled metropolitan airspace are experimental prototypes.",
+      "Prototype Drone X-4 can operate anywhere if altitude remains under 400 feet.",
+      "No definitive conclusion can be drawn regarding Prototype Drone X-4."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.\"."
+    "expl": "By Universal Negative (No A is B; X is A; therefore X is not B)."
   },
   {
-    "premise": "[Scenario #3] Premise 1: All registered trademarks granted federal protection are intellectual property assets.\nPremise 2: Project Zenith is a registered trademark granted federal protection.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Project Zenith is an intellectual property asset.",
+    "premise": "Premise 1: If an aircraft is cleared for transoceanic routes, it must be equipped with dual satellite communication transceivers.\nPremise 2: Cargo Jet 812 is not equipped with dual satellite communication transceivers.\nWhich of the following conclusions logically follows?",
+    "correct": "Cargo Jet 812 is not cleared for transoceanic routes.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Cargo Jet 812 is cleared for transoceanic routes.",
+      "All aircraft equipped with dual satellite transceivers fly transoceanic routes.",
+      "Cargo Jet 812 may fly transoceanic routes during daylight hours.",
+      "No conclusion regarding route clearance can be established."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Project Zenith is an intellectual property asset.\"."
+    "expl": "By Modus Tollens: If P then Q; Not Q; therefore Not P."
   },
   {
-    "premise": "[Scenario #4] Premise 1: Whenever ambient temperature drops below minus forty degrees, diesel engine fuel lines freeze without preheaters.\nPremise 2: Generator Unit 4 has no fuel line preheaters and temperature reached minus forty-five degrees.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Generator Unit 4 fuel lines froze.",
+    "premise": "Premise 1: All high-speed rail trains in this transit corridor operate exclusively on electrified overhead catenary power.\nPremise 2: Some regional passenger expresses in this transit corridor are high-speed rail trains.\nWhich of the following conclusions logically follows?",
+    "correct": "Some regional passenger expresses in this transit corridor operate exclusively on electrified overhead catenary power.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All regional passenger expresses in this transit corridor operate on overhead catenary power.",
+      "No regional passenger expresses operate on overhead catenary power.",
+      "All trains using overhead catenary power are regional passenger expresses.",
+      "None of the high-speed rail trains carry regional passengers."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Generator Unit 4 fuel lines froze.\"."
+    "expl": "By Darii: All A are B; Some C are A; therefore Some C are B."
   },
   {
-    "premise": "[Scenario #5] Premise 1: All valid cryptographic hash functions must satisfy strict pre-image resistance.\nPremise 2: Algorithm SHA-512 is a valid cryptographic hash function.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.",
+    "premise": "Premise 1: All licensed marine navigators understand celestial positioning tables.\nPremise 2: First Officer Vance is a licensed marine navigator.\nWhich of the following conclusions logically follows?",
+    "correct": "First Officer Vance understands celestial positioning tables.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Anyone who understands celestial positioning tables is a licensed marine navigator.",
+      "First Officer Vance only uses GPS and does not understand celestial tables.",
+      "First Officer Vance teaches celestial positioning tables.",
+      "It cannot be determined whether First Officer Vance understands celestial tables."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.\"."
+    "expl": "By Modus Ponens: Vance possesses all properties common to all licensed marine navigators."
   },
   {
-    "premise": "[Scenario #6] Premise 1: No non-renewable energy source generates zero carbon emissions during combustion.\nPremise 2: Bituminous coal is a non-renewable combustion fuel.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.",
+    "premise": "Premise 1: No diesel locomotives lacking dynamic regenerative brakes can travel safely down the Alpine Pass gradient.\nPremise 2: Freight Engine 99 lacks dynamic regenerative brakes.\nWhich of the following conclusions logically follows?",
+    "correct": "Freight Engine 99 cannot travel safely down the Alpine Pass gradient.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Freight Engine 99 can travel safely down the gradient if moving slowly.",
+      "All locomotives with dynamic brakes are on the Alpine Pass.",
+      "Freight Engine 99 is the only train on the Alpine Pass.",
+      "Insufficient data to determine Freight Engine 99's safety status."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.\"."
+    "expl": "By Universal Negative deduction."
   },
   {
-    "premise": "[Scenario #7] Premise 1: All mammal species capable of true powered flight belong to the mammalian order Chiroptera.\nPremise 2: The fruit bat is a mammal species capable of true powered flight.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The fruit bat belongs to the mammalian order Chiroptera.",
+    "premise": "Premise 1: If a vessel is classified as an ocean-going container carrier, it must possess a reinforced double bottom hull.\nPremise 2: The freighter Pacific Pearl does not possess a reinforced double bottom hull.\nWhich of the following conclusions logically follows?",
+    "correct": "The freighter Pacific Pearl is not classified as an ocean-going container carrier.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "The freighter Pacific Pearl is an ocean-going container carrier.",
+      "All ships with double bottom hulls are ocean-going container carriers.",
+      "The Pacific Pearl can be classified as a container carrier in coastal waters.",
+      "No logical conclusion is substantiated by the premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The fruit bat belongs to the mammalian order Chiroptera.\"."
+    "expl": "By Modus Tollens."
   },
   {
-    "premise": "[Scenario #8] Premise 1: If an enterprise database fails ACID concurrency compliance, it cannot guarantee zero transactional data loss.\nPremise 2: System Omega failed ACID concurrency compliance.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: System Omega cannot guarantee zero transactional data loss.",
+    "premise": "Premise 1: All electric vehicles manufactured after 2024 include pedestrian acoustic warning sound generators.\nPremise 2: Some municipal fleet delivery vans are electric vehicles manufactured after 2024.\nWhich of the following conclusions logically follows?",
+    "correct": "Some municipal fleet delivery vans include pedestrian acoustic warning sound generators.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All municipal fleet delivery vans include pedestrian acoustic warning sound generators.",
+      "No municipal delivery vans have pedestrian acoustic warning generators.",
+      "Only municipal delivery vans have pedestrian acoustic warning generators.",
+      "Delivery vans manufactured before 2024 never produce acoustic warnings."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: System Omega cannot guarantee zero transactional data loss.\"."
+    "expl": "By Darii categorical deduction."
   },
   {
-    "premise": "[Scenario #9] Premise 1: All members of the World Trade Organization are bound by the most-favored-nation trading clause.\nPremise 2: Country Veridia is a member of the World Trade Organization.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Country Veridia is bound by the most-favored-nation trading clause.",
+    "premise": "Premise 1: All commercial harbor pilots possess master mariner certification.\nPremise 2: Pilot Henderson is a commercial harbor pilot.\nWhich of the following conclusions logically follows?",
+    "correct": "Pilot Henderson possesses master mariner certification.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Everyone who possesses master mariner certification works as a harbor pilot.",
+      "Pilot Henderson does not possess master mariner certification.",
+      "Pilot Henderson is the head of all harbor pilots.",
+      "There is insufficient evidence regarding Pilot Henderson's certification."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Country Veridia is bound by the most-favored-nation trading clause.\"."
+    "expl": "By direct universal affirmatory syllogism."
   },
   {
-    "premise": "[Scenario #10] Premise 1: No semiconductor device manufactured on a 3-nanometer lithography node can operate without ultraviolet photolithography.\nPremise 2: Microchip Phoenix was manufactured on a 3-nanometer node.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Microchip Phoenix utilized ultraviolet photolithography.",
+    "premise": "Premise 1: No subway train cars operating on Track 3 draw traction power from a third rail.\nPremise 2: Train Set B-12 operates on Track 3.\nWhich of the following conclusions logically follows?",
+    "correct": "Train Set B-12 does not draw traction power from a third rail.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Train Set B-12 draws traction power from a third rail.",
+      "All trains that do not use a third rail operate on Track 3.",
+      "Train Set B-12 draws power from overhead lines and third rails simultaneously.",
+      "It is impossible to deduce Train Set B-12's power mechanism."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Microchip Phoenix utilized ultraviolet photolithography.\"."
+    "expl": "By Universal Negative syllogism."
   },
   {
-    "premise": "[Scenario #11] Premise 1: All corporate debt instruments rated AAA carry minimal credit default risk.\nPremise 2: Bond Series 2028 is rated AAA.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Bond Series 2028 carries minimal credit default risk.",
+    "premise": "Premise 1: If an aircraft is approved for Category III instrument landings, it must feature redundant autonomous autoland systems.\nPremise 2: Flight 402 lacks redundant autonomous autoland systems.\nWhich of the following conclusions logically follows?",
+    "correct": "Flight 402 is not approved for Category III instrument landings.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Flight 402 is approved for Category III instrument landings.",
+      "All aircraft with autoland systems fly Category III approaches.",
+      "Flight 402 can land in zero visibility under visual flight rules.",
+      "Deduction cannot be made from the premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bond Series 2028 carries minimal credit default risk.\"."
+    "expl": "By Modus Tollens."
   },
   {
-    "premise": "[Scenario #12] Premise 1: Whenever an economy experiences stagflation, it exhibits simultaneous high unemployment and elevated inflation.\nPremise 2: Region B is undergoing stagflation.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation.",
+    "premise": "Premise 1: All supersonic military interceptors are equipped with titanium leading-edge wing spars.\nPremise 2: Some prototype aircraft in Squadron Seven are supersonic military interceptors.\nWhich of the following conclusions logically follows?",
+    "correct": "Some prototype aircraft in Squadron Seven are equipped with titanium leading-edge wing spars.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All prototype aircraft in Squadron Seven have titanium leading-edge wing spars.",
+      "No aircraft in Squadron Seven have titanium wing spars.",
+      "All aircraft with titanium wing spars belong to Squadron Seven.",
+      "Squadron Seven contains no supersonic interceptors."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation.\"."
+    "expl": "By Darii syllogistic logic."
   },
   {
-    "premise": "[Scenario #13] Premise 1: All enzymes that catalyze phosphorylation reactions are classified as protein kinases.\nPremise 2: Enzyme P-38 catalyzes phosphorylation reactions.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Enzyme P-38 is classified as a protein kinase.",
+    "premise": "Premise 1: All mammal species capable of true powered flight belong to the biological order Chiroptera.\nPremise 2: The fruit bat is a mammal species capable of true powered flight.\nWhich of the following conclusions logically follows?",
+    "correct": "The fruit bat belongs to the biological order Chiroptera.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All species in the order Chiroptera are fruit bats.",
+      "The fruit bat does not belong to Chiroptera.",
+      "Some fruit bats are incapable of true powered flight.",
+      "There is insufficient information to classify the fruit bat."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Enzyme P-38 is classified as a protein kinase.\"."
+    "expl": "By Modus Ponens: The fruit bat is a member of the universal category."
   },
   {
-    "premise": "[Scenario #14] Premise 1: No supersonic passenger aircraft can operate economically without specialized afterburning turbofan engines.\nPremise 2: The Concorde is a supersonic passenger aircraft.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The Concorde operated with specialized afterburning turbofans.",
+    "premise": "Premise 1: No eukaryotic organisms lacking mitochondria can produce ATP through oxidative phosphorylation.\nPremise 2: Microorganism M lacks mitochondria.\nWhich of the following conclusions logically follows?",
+    "correct": "Microorganism M cannot produce ATP through oxidative phosphorylation.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Microorganism M produces ATP through oxidative phosphorylation.",
+      "All organisms with mitochondria are identical to Microorganism M.",
+      "Microorganism M produces ATP faster than organisms with mitochondria.",
+      "No deduction can be verified regarding Microorganism M."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The Concorde operated with specialized afterburning turbofans.\"."
+    "expl": "By Universal Negative deduction."
   },
   {
-    "premise": "[Scenario #15] Premise 1: All equilateral triangles have interior angles measuring exactly 60 degrees.\nPremise 2: Geometric Figure Alpha is an equilateral triangle.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.",
+    "premise": "Premise 1: If a plant species performs Crassulacean Acid Metabolism (CAM), its stomata open primarily at night.\nPremise 2: Specimen Flora-9 keeps its stomata closed throughout the night.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Flora-9 does not perform Crassulacean Acid Metabolism.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Flora-9 performs Crassulacean Acid Metabolism.",
+      "All plants that open stomata at night belong to Specimen Flora-9.",
+      "Specimen Flora-9 never opens its stomata during the day.",
+      "No valid conclusion can be derived."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.\"."
+    "expl": "By Modus Tollens."
   },
   {
-    "premise": "[Scenario #16] Premise 1: If a legal contract lacks mutual consideration between parties, it is unenforceable in contract court.\nPremise 2: The partnership agreement between Smith and Jones lacked mutual consideration.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The partnership agreement is unenforceable in contract court.",
+    "premise": "Premise 1: All leguminous plants form symbiotic root nodules with nitrogen-fixing bacteria.\nPremise 2: Some cultivated field crops are leguminous plants.\nWhich of the following conclusions logically follows?",
+    "correct": "Some cultivated field crops form symbiotic root nodules with nitrogen-fixing bacteria.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All cultivated field crops form symbiotic root nodules with nitrogen-fixing bacteria.",
+      "No cultivated field crops form root nodules.",
+      "All plants that form root nodules are cultivated field crops.",
+      "Leguminous plants never host nitrogen-fixing bacteria in field conditions."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The partnership agreement is unenforceable in contract court.\"."
+    "expl": "By Darii particular affirmative syllogism."
   },
   {
-    "premise": "[Scenario #17] Premise 1: All high-throughput optic fiber links rely on total internal reflection inside silica glass cores.\nPremise 2: The transatlantic cable Apollo is a high-throughput optic fiber link.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.",
+    "premise": "Premise 1: All enzymes classified as polymerases catalyze the synthesis of nucleic acid polymers.\nPremise 2: Taq polymerase is an enzyme classified as a polymerase.\nWhich of the following conclusions logically follows?",
+    "correct": "Taq polymerase catalyzes the synthesis of nucleic acid polymers.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All enzymes that synthesize nucleic acids are Taq polymerase.",
+      "Taq polymerase breaks down nucleic acid polymers into simple sugars.",
+      "Taq polymerase requires no cofactors to operate.",
+      "Insufficient evidence exists regarding Taq polymerase."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.\"."
+    "expl": "By Modus Ponens."
   },
   {
-    "premise": "[Scenario #18] Premise 1: No organism lacking chloroplasts can perform oxygenic photosynthesis.\nPremise 2: The fungal mold Penicillium lacks chloroplasts.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Penicillium cannot perform oxygenic photosynthesis.",
+    "premise": "Premise 1: No reptiles lacking specialized thermoreceptor organs can detect pit infrared radiation.\nPremise 2: The common garter snake lacks specialized thermoreceptor pit organs.\nWhich of the following conclusions logically follows?",
+    "correct": "The common garter snake cannot detect pit infrared radiation.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "The common garter snake detects pit infrared radiation accurately.",
+      "All reptiles detect infrared radiation through specialized skin.",
+      "The common garter snake detects infrared radiation only when warm.",
+      "No deduction can be drawn."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Penicillium cannot perform oxygenic photosynthesis.\"."
+    "expl": "By Celarent universal negative."
   },
   {
-    "premise": "[Scenario #19] Premise 1: All constitutional amendments requiring ratification must secure affirmative votes from three-fourths of state legislatures.\nPremise 2: Proposal 14 requires ratification as a constitutional amendment.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.",
+    "premise": "Premise 1: If a cellular organism is a strict anaerobe, prolonged exposure to atmospheric oxygen is lethal to it.\nPremise 2: Bacterial Culture B thrives under prolonged exposure to atmospheric oxygen.\nWhich of the following conclusions logically follows?",
+    "correct": "Bacterial Culture B is not a strict anaerobe.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Bacterial Culture B is a strict anaerobe.",
+      "All organisms killed by oxygen belong to Bacterial Culture B.",
+      "Bacterial Culture B requires pure nitrogen to survive.",
+      "The atmospheric tolerance of Bacterial Culture B is indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.\"."
+    "expl": "By Modus Tollens."
   },
   {
-    "premise": "[Scenario #20] Premise 1: Whenever a vehicle enters a geostationary transfer orbit, its apogee matches geosynchronous altitude.\nPremise 2: Satellite Echo entered a geostationary transfer orbit.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Satellite Echo's apogee matches geosynchronous altitude.",
+    "premise": "Premise 1: All avian species in the family Spheniscidae are flightless marine divers.\nPremise 2: Some Antarctic seabirds belong to the family Spheniscidae.\nWhich of the following conclusions logically follows?",
+    "correct": "Some Antarctic seabirds are flightless marine divers.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All Antarctic seabirds are flightless marine divers.",
+      "No Antarctic seabirds are flightless marine divers.",
+      "All flightless marine divers are Antarctic seabirds.",
+      "Birds in the family Spheniscidae fly long distances over the ocean."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Satellite Echo's apogee matches geosynchronous altitude.\"."
+    "expl": "By Darii."
   },
   {
-    "premise": "[Scenario #21] Premise 1: All licensed commercial aviators must pass annual cardiovascular screening.\nPremise 2: Captain Reynolds is a licensed commercial aviator.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Captain Reynolds must pass annual cardiovascular screening.",
+    "premise": "Premise 1: All cetaceans breathe atmospheric air using lungs rather than gills.\nPremise 2: The humpback whale is a cetacean.\nWhich of the following conclusions logically follows?",
+    "correct": "The humpback whale breathes atmospheric air using lungs rather than gills.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All animals that breathe using lungs are humpback whales.",
+      "The humpback whale extracts oxygen from water through gills.",
+      "The humpback whale is a fish.",
+      "It cannot be determined how the humpback whale breathes."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Captain Reynolds must pass annual cardiovascular screening.\"."
+    "expl": "By Modus Ponens."
   },
   {
-    "premise": "[Scenario #22] Premise 1: No deep-sea submersible without titanium hulls can withstand 10,000 meters of hydrostatic pressure.\nPremise 2: The exploration vessel Nereus-9 lacks a titanium hull.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.",
+    "premise": "Premise 1: No deciduous angiosperm trees retain green foliage throughout a subzero winter.\nPremise 2: The sugar maple is a deciduous angiosperm tree.\nWhich of the following conclusions logically follows?",
+    "correct": "The sugar maple does not retain green foliage throughout a subzero winter.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "The sugar maple retains green foliage throughout a subzero winter.",
+      "All trees that lose leaves in winter are sugar maples.",
+      "The sugar maple is an evergreen conifer.",
+      "Insufficient data to evaluate foliage behavior."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.\"."
+    "expl": "By Celarent."
   },
   {
-    "premise": "[Scenario #23] Premise 1: All registered trademarks granted federal protection are intellectual property assets.\nPremise 2: Project Zenith is a registered trademark granted federal protection.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Project Zenith is an intellectual property asset.",
+    "premise": "Premise 1: If a compound functions as a competitive enzyme inhibitor, it binds directly to the active catalytic site.\nPremise 2: Molecule Z does not bind to the active catalytic site.\nWhich of the following conclusions logically follows?",
+    "correct": "Molecule Z does not function as a competitive enzyme inhibitor.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Molecule Z functions as a competitive enzyme inhibitor.",
+      "All molecules binding to the active site are Molecule Z.",
+      "Molecule Z accelerates enzymatic activity by ten times.",
+      "No logical conclusion is warranted."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Project Zenith is an intellectual property asset.\"."
+    "expl": "By Modus Tollens."
   },
   {
-    "premise": "[Scenario #24] Premise 1: Whenever ambient temperature drops below minus forty degrees, diesel engine fuel lines freeze without preheaters.\nPremise 2: Generator Unit 4 has no fuel line preheaters and temperature reached minus forty-five degrees.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Generator Unit 4 fuel lines froze.",
+    "premise": "Premise 1: All arthropods with chelicerae and four pairs of walking legs are classified as arachnids.\nPremise 2: Some predatory forest invertebrates have chelicerae and four pairs of walking legs.\nWhich of the following conclusions logically follows?",
+    "correct": "Some predatory forest invertebrates are classified as arachnids.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All predatory forest invertebrates are arachnids.",
+      "No predatory forest invertebrates are arachnids.",
+      "All arachnids live exclusively in predatory forest environments.",
+      "Invertebrates with four pairs of legs are never arachnids."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Generator Unit 4 fuel lines froze.\"."
+    "expl": "By Darii."
   },
   {
-    "premise": "[Scenario #25] Premise 1: All valid cryptographic hash functions must satisfy strict pre-image resistance.\nPremise 2: Algorithm SHA-512 is a valid cryptographic hash function.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.",
+    "premise": "Premise 1: All relational databases that provide serializable isolation prevent phantom read anomalies.\nPremise 2: Database Engine Postgres-XL provides serializable isolation.\nWhich of the following conclusions logically follows?",
+    "correct": "Database Engine Postgres-XL prevents phantom read anomalies.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Any database that prevents phantom reads is Postgres-XL.",
+      "Postgres-XL frequently suffers from phantom read anomalies.",
+      "Postgres-XL does not support concurrent transactions.",
+      "There is insufficient information to evaluate Postgres-XL's anomaly protection."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.\"."
+    "expl": "By Modus Ponens."
   },
   {
-    "premise": "[Scenario #26] Premise 1: No non-renewable energy source generates zero carbon emissions during combustion.\nPremise 2: Bituminous coal is a non-renewable combustion fuel.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.",
+    "premise": "Premise 1: No symmetric encryption cipher with a 56-bit key length is considered secure against brute-force attacks.\nPremise 2: Legacy Algorithm DES uses a 56-bit key length.\nWhich of the following conclusions logically follows?",
+    "correct": "Legacy Algorithm DES is not considered secure against brute-force attacks.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Legacy Algorithm DES is considered completely secure against brute-force attacks.",
+      "All ciphers insecure against brute force use 56-bit keys.",
+      "DES is an asymmetric public-key cryptosystem.",
+      "No conclusion can be substantiated regarding DES."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.\"."
+    "expl": "By Celarent."
   },
   {
-    "premise": "[Scenario #27] Premise 1: All mammal species capable of true powered flight belong to the mammalian order Chiroptera.\nPremise 2: The fruit bat is a mammal species capable of true powered flight.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The fruit bat belongs to the mammalian order Chiroptera.",
+    "premise": "Premise 1: If an enterprise cloud microservice is stateless, it stores no client session data in local node memory.\nPremise 2: Service Lambda-4 stores active client session data in local node memory.\nWhich of the following conclusions logically follows?",
+    "correct": "Service Lambda-4 is not a stateless microservice.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Service Lambda-4 is a stateless microservice.",
+      "All stateful services are named Lambda-4.",
+      "Service Lambda-4 stores session data in an external distributed cache.",
+      "No valid deduction is warranted."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The fruit bat belongs to the mammalian order Chiroptera.\"."
+    "expl": "By Modus Tollens."
   },
   {
-    "premise": "[Scenario #28] Premise 1: If an enterprise database fails ACID concurrency compliance, it cannot guarantee zero transactional data loss.\nPremise 2: System Omega failed ACID concurrency compliance.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: System Omega cannot guarantee zero transactional data loss.",
+    "premise": "Premise 1: All compiled languages with guaranteed memory safety utilize borrow checkers or automatic garbage collection.\nPremise 2: Some systems programming tools are compiled languages with guaranteed memory safety.\nWhich of the following conclusions logically follows?",
+    "correct": "Some systems programming tools utilize borrow checkers or automatic garbage collection.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All systems programming tools utilize borrow checkers or garbage collection.",
+      "No systems programming tools utilize borrow checkers or garbage collection.",
+      "Languages with garbage collection are always compiled systems tools.",
+      "Memory safety can never be achieved in systems programming."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: System Omega cannot guarantee zero transactional data loss.\"."
+    "expl": "By Darii."
   },
   {
-    "premise": "[Scenario #29] Premise 1: All members of the World Trade Organization are bound by the most-favored-nation trading clause.\nPremise 2: Country Veridia is a member of the World Trade Organization.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Country Veridia is bound by the most-favored-nation trading clause.",
+    "premise": "Premise 1: All CPU architectures implementing RISC-V utilize load-store instruction architectures.\nPremise 2: Microcontroller Chip Raven-64 implements RISC-V.\nWhich of the following conclusions logically follows?",
+    "correct": "Microcontroller Chip Raven-64 utilizes a load-store instruction architecture.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All processors with load-store architectures are Raven-64 chips.",
+      "Chip Raven-64 executes arithmetic operations directly in memory.",
+      "Chip Raven-64 has no register file.",
+      "It is impossible to verify Raven-64's instruction architecture."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Country Veridia is bound by the most-favored-nation trading clause.\"."
+    "expl": "By Modus Ponens."
   },
   {
-    "premise": "[Scenario #30] Premise 1: No semiconductor device manufactured on a 3-nanometer lithography node can operate without ultraviolet photolithography.\nPremise 2: Microchip Phoenix was manufactured on a 3-nanometer node.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Microchip Phoenix utilized ultraviolet photolithography.",
+    "premise": "Premise 1: No public key infrastructure certificate without a verified cryptographic root signature is trusted by modern browsers.\nPremise 2: Security Certificate Cert-99 lacks a verified cryptographic root signature.\nWhich of the following conclusions logically follows?",
+    "correct": "Security Certificate Cert-99 is not trusted by modern browsers.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Security Certificate Cert-99 is trusted by modern browsers automatically.",
+      "All untrusted certificates are Cert-99.",
+      "Modern browsers trust any certificate on intranet networks.",
+      "Certificate trust cannot be evaluated."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Microchip Phoenix utilized ultraviolet photolithography.\"."
+    "expl": "By Celarent."
   },
   {
-    "premise": "[Scenario #31] Premise 1: All corporate debt instruments rated AAA carry minimal credit default risk.\nPremise 2: Bond Series 2028 is rated AAA.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Bond Series 2028 carries minimal credit default risk.",
+    "premise": "Premise 1: If a software application is compiled to WebAssembly, it can execute natively inside sandbox client environments.\nPremise 2: Script Module Alpha cannot execute natively inside sandbox client environments.\nWhich of the following conclusions logically follows?",
+    "correct": "Script Module Alpha is not compiled to WebAssembly.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Script Module Alpha is compiled to WebAssembly.",
+      "All programs running in client sandboxes are WebAssembly modules.",
+      "Script Module Alpha runs faster than compiled WebAssembly.",
+      "The compilation format of Script Module Alpha cannot be determined."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bond Series 2028 carries minimal credit default risk.\"."
+    "expl": "By Modus Tollens."
   },
   {
-    "premise": "[Scenario #32] Premise 1: Whenever an economy experiences stagflation, it exhibits simultaneous high unemployment and elevated inflation.\nPremise 2: Region B is undergoing stagflation.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation.",
+    "premise": "Premise 1: All hash table implementations with open addressing require collision resolution probing strategies.\nPremise 2: Some standard library data structures are hash table implementations with open addressing.\nWhich of the following conclusions logically follows?",
+    "correct": "Some standard library data structures require collision resolution probing strategies.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All standard library data structures require collision resolution probing.",
+      "No standard library data structures require collision resolution probing.",
+      "Collision probing is never utilized in standard libraries.",
+      "Open addressing completely eliminates hash collisions."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation.\"."
+    "expl": "By Darii."
   },
   {
-    "premise": "[Scenario #33] Premise 1: All enzymes that catalyze phosphorylation reactions are classified as protein kinases.\nPremise 2: Enzyme P-38 catalyzes phosphorylation reactions.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Enzyme P-38 is classified as a protein kinase.",
+    "premise": "Premise 1: All cryptographic hash algorithms conforming to SHA-3 are built upon sponge construction permutations.\nPremise 2: Algorithm Keccak-256 conforms to SHA-3.\nWhich of the following conclusions logically follows?",
+    "correct": "Algorithm Keccak-256 is built upon sponge construction permutations.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All sponge construction algorithms are named Keccak-256.",
+      "Algorithm Keccak-256 relies on Merkle-Damgard block structures.",
+      "Keccak-256 is vulnerable to length extension attacks.",
+      "Insufficient information to determine the construction of Keccak-256."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Enzyme P-38 is classified as a protein kinase.\"."
+    "expl": "By Modus Ponens."
   },
   {
-    "premise": "[Scenario #34] Premise 1: No supersonic passenger aircraft can operate economically without specialized afterburning turbofan engines.\nPremise 2: The Concorde is a supersonic passenger aircraft.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The Concorde operated with specialized afterburning turbofans.",
+    "premise": "Premise 1: No lossless compression algorithm can guarantee reduced file size for every conceivable input byte sequence.\nPremise 2: Algorithm Deflate is a lossless compression algorithm.\nWhich of the following conclusions logically follows?",
+    "correct": "Algorithm Deflate cannot guarantee reduced file size for every conceivable input byte sequence.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Algorithm Deflate reduces file size for all conceivable input byte sequences.",
+      "All algorithms that fail to compress random data are Deflate.",
+      "Deflate is a lossy video encoding codec.",
+      "Deduction cannot be made from the premise."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The Concorde operated with specialized afterburning turbofans.\"."
+    "expl": "By Celarent."
   },
   {
-    "premise": "[Scenario #35] Premise 1: All equilateral triangles have interior angles measuring exactly 60 degrees.\nPremise 2: Geometric Figure Alpha is an equilateral triangle.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.",
+    "premise": "Premise 1: If an API architecture complies strictly with REST principles, all state transitions must be hypermedia-driven.\nPremise 2: Backend Interface Service-G does not feature hypermedia-driven state transitions.\nWhich of the following conclusions logically follows?",
+    "correct": "Backend Interface Service-G does not comply strictly with REST principles.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Backend Interface Service-G complies strictly with REST principles.",
+      "All hypermedia APIs are named Service-G.",
+      "Service-G is a GraphQL interface.",
+      "Compliance cannot be established."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.\"."
+    "expl": "By Modus Tollens."
   },
   {
-    "premise": "[Scenario #36] Premise 1: If a legal contract lacks mutual consideration between parties, it is unenforceable in contract court.\nPremise 2: The partnership agreement between Smith and Jones lacked mutual consideration.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The partnership agreement is unenforceable in contract court.",
+    "premise": "Premise 1: All operating system kernels employing microkernel architecture delegate device drivers to user space.\nPremise 2: Some embedded real-time operating systems employ microkernel architecture.\nWhich of the following conclusions logically follows?",
+    "correct": "Some embedded real-time operating systems delegate device drivers to user space.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All embedded real-time operating systems delegate device drivers to user space.",
+      "No embedded operating systems delegate device drivers to user space.",
+      "All systems running drivers in user space are real-time microkernels.",
+      "Microkernels never run on embedded hardware."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The partnership agreement is unenforceable in contract court.\"."
+    "expl": "By Darii."
   },
   {
-    "premise": "[Scenario #37] Premise 1: All high-throughput optic fiber links rely on total internal reflection inside silica glass cores.\nPremise 2: The transatlantic cable Apollo is a high-throughput optic fiber link.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.",
+    "premise": "Premise 1: All valid bilateral agreements are predicated on mutual consideration.\nPremise 2: Contract Agreement-8 is one of the valid bilateral agreements.\nWhich of the following conclusions logically follows?",
+    "correct": "Contract Agreement-8 is predicated on mutual consideration.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are predicated on mutual consideration are valid bilateral agreements.",
+      "Contract Agreement-8 is not predicated on mutual consideration.",
+      "Only some valid bilateral agreements are predicated on mutual consideration.",
+      "There is insufficient evidence to determine whether Contract Agreement-8 is predicated on mutual consideration."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.\"."
+    "expl": "By Modus Ponens: Because Contract Agreement-8 belongs to valid bilateral agreements, and all valid bilateral agreements are predicated on mutual consideration, Contract Agreement-8 must be predicated on mutual consideration."
   },
   {
-    "premise": "[Scenario #38] Premise 1: No organism lacking chloroplasts can perform oxygenic photosynthesis.\nPremise 2: The fungal mold Penicillium lacks chloroplasts.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Penicillium cannot perform oxygenic photosynthesis.",
+    "premise": "Premise 1: No valid bilateral agreements are predicated on mutual consideration.\nPremise 2: Contract Agreement-8 is classified as one of the valid bilateral agreements.\nWhich of the following conclusions logically follows?",
+    "correct": "Contract Agreement-8 is not predicated on mutual consideration.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Contract Agreement-8 is predicated on mutual consideration.",
+      "All entities that are not predicated on mutual consideration are classified as valid bilateral agreements.",
+      "Some valid bilateral agreements can be predicated on mutual consideration under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Penicillium cannot perform oxygenic photosynthesis.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #39] Premise 1: All constitutional amendments requiring ratification must secure affirmative votes from three-fourths of state legislatures.\nPremise 2: Proposal 14 requires ratification as a constitutional amendment.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.",
+    "premise": "Premise 1: If an entity is classified as one of the valid bilateral agreements, it must be predicated on mutual consideration.\nPremise 2: Specimen Contract Agreement-8 is verified to NOT be predicated on mutual consideration.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Contract Agreement-8 is not one of the valid bilateral agreements.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Contract Agreement-8 is one of the valid bilateral agreements.",
+      "All entities that are predicated on mutual consideration are valid bilateral agreements.",
+      "Specimen Contract Agreement-8 possesses some alternative attributes of valid bilateral agreements.",
+      "The classification of Specimen Contract Agreement-8 is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #40] Premise 1: Whenever a vehicle enters a geostationary transfer orbit, its apogee matches geosynchronous altitude.\nPremise 2: Satellite Echo entered a geostationary transfer orbit.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Satellite Echo's apogee matches geosynchronous altitude.",
+    "premise": "Premise 1: All valid bilateral agreements are predicated on mutual consideration.\nPremise 2: Some commercial sales contracts are classified as valid bilateral agreements.\nWhich of the following conclusions logically follows?",
+    "correct": "Some commercial sales contracts are predicated on mutual consideration.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All commercial sales contracts are predicated on mutual consideration.",
+      "No commercial sales contracts are predicated on mutual consideration.",
+      "All entities that are predicated on mutual consideration are classified as commercial sales contracts.",
+      "None of the valid bilateral agreements belong to commercial sales contracts."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Satellite Echo's apogee matches geosynchronous altitude.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #41] Premise 1: All licensed commercial aviators must pass annual cardiovascular screening.\nPremise 2: Captain Reynolds is a licensed commercial aviator.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Captain Reynolds must pass annual cardiovascular screening.",
+    "premise": "Premise 1: All patent applications for software are statutorily barred from claiming abstract mathematical algorithms.\nPremise 2: Patent Claim 410 is one of the patent applications for software.\nWhich of the following conclusions logically follows?",
+    "correct": "Patent Claim 410 is statutorily barred from claiming abstract mathematical algorithms.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are statutorily barred from claiming abstract mathematical algorithms are patent applications for software.",
+      "Patent Claim 410 is not statutorily barred from claiming abstract mathematical algorithms.",
+      "Only some patent applications for software are statutorily barred from claiming abstract mathematical algorithms.",
+      "There is insufficient evidence to determine whether Patent Claim 410 is statutorily barred from claiming abstract mathematical algorithms."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Captain Reynolds must pass annual cardiovascular screening.\"."
+    "expl": "By Modus Ponens: Because Patent Claim 410 belongs to patent applications for software, and all patent applications for software are statutorily barred from claiming abstract mathematical algorithms, Patent Claim 410 must be statutorily barred from claiming abstract mathematical algorithms."
   },
   {
-    "premise": "[Scenario #42] Premise 1: No deep-sea submersible without titanium hulls can withstand 10,000 meters of hydrostatic pressure.\nPremise 2: The exploration vessel Nereus-9 lacks a titanium hull.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.",
+    "premise": "Premise 1: No patent applications for software are statutorily barred from claiming abstract mathematical algorithms.\nPremise 2: Patent Claim 410 is classified as one of the patent applications for software.\nWhich of the following conclusions logically follows?",
+    "correct": "Patent Claim 410 is not statutorily barred from claiming abstract mathematical algorithms.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Patent Claim 410 is statutorily barred from claiming abstract mathematical algorithms.",
+      "All entities that are not statutorily barred from claiming abstract mathematical algorithms are classified as patent applications for software.",
+      "Some patent applications for software can be statutorily barred from claiming abstract mathematical algorithms under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #43] Premise 1: All registered trademarks granted federal protection are intellectual property assets.\nPremise 2: Project Zenith is a registered trademark granted federal protection.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Project Zenith is an intellectual property asset.",
+    "premise": "Premise 1: If an entity is classified as one of the patent applications for software, it must be statutorily barred from claiming abstract mathematical algorithms.\nPremise 2: Specimen Patent Claim 410 is verified to NOT be statutorily barred from claiming abstract mathematical algorithms.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Patent Claim 410 is not one of the patent applications for software.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Patent Claim 410 is one of the patent applications for software.",
+      "All entities that are statutorily barred from claiming abstract mathematical algorithms are patent applications for software.",
+      "Specimen Patent Claim 410 possesses some alternative attributes of patent applications for software.",
+      "The classification of Specimen Patent Claim 410 is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Project Zenith is an intellectual property asset.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #44] Premise 1: Whenever ambient temperature drops below minus forty degrees, diesel engine fuel lines freeze without preheaters.\nPremise 2: Generator Unit 4 has no fuel line preheaters and temperature reached minus forty-five degrees.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Generator Unit 4 fuel lines froze.",
+    "premise": "Premise 1: All patent applications for software are statutorily barred from claiming abstract mathematical algorithms.\nPremise 2: Some intellectual property filings are classified as patent applications for software.\nWhich of the following conclusions logically follows?",
+    "correct": "Some intellectual property filings are statutorily barred from claiming abstract mathematical algorithms.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All intellectual property filings are statutorily barred from claiming abstract mathematical algorithms.",
+      "No intellectual property filings are statutorily barred from claiming abstract mathematical algorithms.",
+      "All entities that are statutorily barred from claiming abstract mathematical algorithms are classified as intellectual property filings.",
+      "None of the patent applications for software belong to intellectual property filings."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Generator Unit 4 fuel lines froze.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #45] Premise 1: All valid cryptographic hash functions must satisfy strict pre-image resistance.\nPremise 2: Algorithm SHA-512 is a valid cryptographic hash function.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.",
+    "premise": "Premise 1: All appellate court determinations are legally binding on subordinate trial courts within the same jurisdiction.\nPremise 2: Ruling Apex-4 is one of the appellate court determinations.\nWhich of the following conclusions logically follows?",
+    "correct": "Ruling Apex-4 is legally binding on subordinate trial courts within the same jurisdiction.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are legally binding on subordinate trial courts within the same jurisdiction are appellate court determinations.",
+      "Ruling Apex-4 is not legally binding on subordinate trial courts within the same jurisdiction.",
+      "Only some appellate court determinations are legally binding on subordinate trial courts within the same jurisdiction.",
+      "There is insufficient evidence to determine whether Ruling Apex-4 is legally binding on subordinate trial courts within the same jurisdiction."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.\"."
+    "expl": "By Modus Ponens: Because Ruling Apex-4 belongs to appellate court determinations, and all appellate court determinations are legally binding on subordinate trial courts within the same jurisdiction, Ruling Apex-4 must be legally binding on subordinate trial courts within the same jurisdiction."
   },
   {
-    "premise": "[Scenario #46] Premise 1: No non-renewable energy source generates zero carbon emissions during combustion.\nPremise 2: Bituminous coal is a non-renewable combustion fuel.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.",
+    "premise": "Premise 1: No appellate court determinations are legally binding on subordinate trial courts within the same jurisdiction.\nPremise 2: Ruling Apex-4 is classified as one of the appellate court determinations.\nWhich of the following conclusions logically follows?",
+    "correct": "Ruling Apex-4 is not legally binding on subordinate trial courts within the same jurisdiction.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Ruling Apex-4 is legally binding on subordinate trial courts within the same jurisdiction.",
+      "All entities that are not legally binding on subordinate trial courts within the same jurisdiction are classified as appellate court determinations.",
+      "Some appellate court determinations can be legally binding on subordinate trial courts within the same jurisdiction under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #47] Premise 1: All mammal species capable of true powered flight belong to the mammalian order Chiroptera.\nPremise 2: The fruit bat is a mammal species capable of true powered flight.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The fruit bat belongs to the mammalian order Chiroptera.",
+    "premise": "Premise 1: If an entity is classified as one of the appellate court determinations, it must be legally binding on subordinate trial courts within the same jurisdiction.\nPremise 2: Specimen Ruling Apex-4 is verified to NOT be legally binding on subordinate trial courts within the same jurisdiction.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Ruling Apex-4 is not one of the appellate court determinations.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Ruling Apex-4 is one of the appellate court determinations.",
+      "All entities that are legally binding on subordinate trial courts within the same jurisdiction are appellate court determinations.",
+      "Specimen Ruling Apex-4 possesses some alternative attributes of appellate court determinations.",
+      "The classification of Specimen Ruling Apex-4 is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The fruit bat belongs to the mammalian order Chiroptera.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #48] Premise 1: If an enterprise database fails ACID concurrency compliance, it cannot guarantee zero transactional data loss.\nPremise 2: System Omega failed ACID concurrency compliance.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: System Omega cannot guarantee zero transactional data loss.",
+    "premise": "Premise 1: All appellate court determinations are legally binding on subordinate trial courts within the same jurisdiction.\nPremise 2: Some judicial rulings are classified as appellate court determinations.\nWhich of the following conclusions logically follows?",
+    "correct": "Some judicial rulings are legally binding on subordinate trial courts within the same jurisdiction.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All judicial rulings are legally binding on subordinate trial courts within the same jurisdiction.",
+      "No judicial rulings are legally binding on subordinate trial courts within the same jurisdiction.",
+      "All entities that are legally binding on subordinate trial courts within the same jurisdiction are classified as judicial rulings.",
+      "None of the appellate court determinations belong to judicial rulings."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: System Omega cannot guarantee zero transactional data loss.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #49] Premise 1: All members of the World Trade Organization are bound by the most-favored-nation trading clause.\nPremise 2: Country Veridia is a member of the World Trade Organization.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Country Veridia is bound by the most-favored-nation trading clause.",
+    "premise": "Premise 1: All constitutional referendum proposals are contingent upon two-thirds supermajority legislative approval.\nPremise 2: Amendment 45 is one of the constitutional referendum proposals.\nWhich of the following conclusions logically follows?",
+    "correct": "Amendment 45 is contingent upon two-thirds supermajority legislative approval.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are contingent upon two-thirds supermajority legislative approval are constitutional referendum proposals.",
+      "Amendment 45 is not contingent upon two-thirds supermajority legislative approval.",
+      "Only some constitutional referendum proposals are contingent upon two-thirds supermajority legislative approval.",
+      "There is insufficient evidence to determine whether Amendment 45 is contingent upon two-thirds supermajority legislative approval."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Country Veridia is bound by the most-favored-nation trading clause.\"."
+    "expl": "By Modus Ponens: Because Amendment 45 belongs to constitutional referendum proposals, and all constitutional referendum proposals are contingent upon two-thirds supermajority legislative approval, Amendment 45 must be contingent upon two-thirds supermajority legislative approval."
   },
   {
-    "premise": "[Scenario #50] Premise 1: No semiconductor device manufactured on a 3-nanometer lithography node can operate without ultraviolet photolithography.\nPremise 2: Microchip Phoenix was manufactured on a 3-nanometer node.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Microchip Phoenix utilized ultraviolet photolithography.",
+    "premise": "Premise 1: No constitutional referendum proposals are contingent upon two-thirds supermajority legislative approval.\nPremise 2: Amendment 45 is classified as one of the constitutional referendum proposals.\nWhich of the following conclusions logically follows?",
+    "correct": "Amendment 45 is not contingent upon two-thirds supermajority legislative approval.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Amendment 45 is contingent upon two-thirds supermajority legislative approval.",
+      "All entities that are not contingent upon two-thirds supermajority legislative approval are classified as constitutional referendum proposals.",
+      "Some constitutional referendum proposals can be contingent upon two-thirds supermajority legislative approval under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Microchip Phoenix utilized ultraviolet photolithography.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #51] Premise 1: All corporate debt instruments rated AAA carry minimal credit default risk.\nPremise 2: Bond Series 2028 is rated AAA.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Bond Series 2028 carries minimal credit default risk.",
+    "premise": "Premise 1: If an entity is classified as one of the constitutional referendum proposals, it must be contingent upon two-thirds supermajority legislative approval.\nPremise 2: Specimen Amendment 45 is verified to NOT be contingent upon two-thirds supermajority legislative approval.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Amendment 45 is not one of the constitutional referendum proposals.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Amendment 45 is one of the constitutional referendum proposals.",
+      "All entities that are contingent upon two-thirds supermajority legislative approval are constitutional referendum proposals.",
+      "Specimen Amendment 45 possesses some alternative attributes of constitutional referendum proposals.",
+      "The classification of Specimen Amendment 45 is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bond Series 2028 carries minimal credit default risk.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #52] Premise 1: Whenever an economy experiences stagflation, it exhibits simultaneous high unemployment and elevated inflation.\nPremise 2: Region B is undergoing stagflation.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation.",
+    "premise": "Premise 1: All constitutional referendum proposals are contingent upon two-thirds supermajority legislative approval.\nPremise 2: Some statutory proposals are classified as constitutional referendum proposals.\nWhich of the following conclusions logically follows?",
+    "correct": "Some statutory proposals are contingent upon two-thirds supermajority legislative approval.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All statutory proposals are contingent upon two-thirds supermajority legislative approval.",
+      "No statutory proposals are contingent upon two-thirds supermajority legislative approval.",
+      "All entities that are contingent upon two-thirds supermajority legislative approval are classified as statutory proposals.",
+      "None of the constitutional referendum proposals belong to statutory proposals."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #53] Premise 1: All enzymes that catalyze phosphorylation reactions are classified as protein kinases.\nPremise 2: Enzyme P-38 catalyzes phosphorylation reactions.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Enzyme P-38 is classified as a protein kinase.",
+    "premise": "Premise 1: All commercial banks in the Federal Reserve system are subject to mandatory statutory reserve requirements.\nPremise 2: Bank Metrolink is one of the commercial banks in the Federal Reserve system.\nWhich of the following conclusions logically follows?",
+    "correct": "Bank Metrolink is subject to mandatory statutory reserve requirements.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are subject to mandatory statutory reserve requirements are commercial banks in the Federal Reserve system.",
+      "Bank Metrolink is not subject to mandatory statutory reserve requirements.",
+      "Only some commercial banks in the Federal Reserve system are subject to mandatory statutory reserve requirements.",
+      "There is insufficient evidence to determine whether Bank Metrolink is subject to mandatory statutory reserve requirements."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Enzyme P-38 is classified as a protein kinase.\"."
+    "expl": "By Modus Ponens: Because Bank Metrolink belongs to commercial banks in the Federal Reserve system, and all commercial banks in the Federal Reserve system are subject to mandatory statutory reserve requirements, Bank Metrolink must be subject to mandatory statutory reserve requirements."
   },
   {
-    "premise": "[Scenario #54] Premise 1: No supersonic passenger aircraft can operate economically without specialized afterburning turbofan engines.\nPremise 2: The Concorde is a supersonic passenger aircraft.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The Concorde operated with specialized afterburning turbofans.",
+    "premise": "Premise 1: No commercial banks in the Federal Reserve system are subject to mandatory statutory reserve requirements.\nPremise 2: Bank Metrolink is classified as one of the commercial banks in the Federal Reserve system.\nWhich of the following conclusions logically follows?",
+    "correct": "Bank Metrolink is not subject to mandatory statutory reserve requirements.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Bank Metrolink is subject to mandatory statutory reserve requirements.",
+      "All entities that are not subject to mandatory statutory reserve requirements are classified as commercial banks in the Federal Reserve system.",
+      "Some commercial banks in the Federal Reserve system can be subject to mandatory statutory reserve requirements under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The Concorde operated with specialized afterburning turbofans.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #55] Premise 1: All equilateral triangles have interior angles measuring exactly 60 degrees.\nPremise 2: Geometric Figure Alpha is an equilateral triangle.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.",
+    "premise": "Premise 1: If an entity is classified as one of the commercial banks in the Federal Reserve system, it must be subject to mandatory statutory reserve requirements.\nPremise 2: Specimen Bank Metrolink is verified to NOT be subject to mandatory statutory reserve requirements.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Bank Metrolink is not one of the commercial banks in the Federal Reserve system.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Bank Metrolink is one of the commercial banks in the Federal Reserve system.",
+      "All entities that are subject to mandatory statutory reserve requirements are commercial banks in the Federal Reserve system.",
+      "Specimen Bank Metrolink possesses some alternative attributes of commercial banks in the Federal Reserve system.",
+      "The classification of Specimen Bank Metrolink is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #56] Premise 1: If a legal contract lacks mutual consideration between parties, it is unenforceable in contract court.\nPremise 2: The partnership agreement between Smith and Jones lacked mutual consideration.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The partnership agreement is unenforceable in contract court.",
+    "premise": "Premise 1: All commercial banks in the Federal Reserve system are subject to mandatory statutory reserve requirements.\nPremise 2: Some regional lending institutions are classified as commercial banks in the Federal Reserve system.\nWhich of the following conclusions logically follows?",
+    "correct": "Some regional lending institutions are subject to mandatory statutory reserve requirements.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All regional lending institutions are subject to mandatory statutory reserve requirements.",
+      "No regional lending institutions are subject to mandatory statutory reserve requirements.",
+      "All entities that are subject to mandatory statutory reserve requirements are classified as regional lending institutions.",
+      "None of the commercial banks in the Federal Reserve system belong to regional lending institutions."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The partnership agreement is unenforceable in contract court.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #57] Premise 1: All high-throughput optic fiber links rely on total internal reflection inside silica glass cores.\nPremise 2: The transatlantic cable Apollo is a high-throughput optic fiber link.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.",
+    "premise": "Premise 1: All fixed-rate municipal obligations are exempt from federal taxation on coupon distributions.\nPremise 2: Bond Issuance 2031 is one of the fixed-rate municipal obligations.\nWhich of the following conclusions logically follows?",
+    "correct": "Bond Issuance 2031 is exempt from federal taxation on coupon distributions.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are exempt from federal taxation on coupon distributions are fixed-rate municipal obligations.",
+      "Bond Issuance 2031 is not exempt from federal taxation on coupon distributions.",
+      "Only some fixed-rate municipal obligations are exempt from federal taxation on coupon distributions.",
+      "There is insufficient evidence to determine whether Bond Issuance 2031 is exempt from federal taxation on coupon distributions."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.\"."
+    "expl": "By Modus Ponens: Because Bond Issuance 2031 belongs to fixed-rate municipal obligations, and all fixed-rate municipal obligations are exempt from federal taxation on coupon distributions, Bond Issuance 2031 must be exempt from federal taxation on coupon distributions."
   },
   {
-    "premise": "[Scenario #58] Premise 1: No organism lacking chloroplasts can perform oxygenic photosynthesis.\nPremise 2: The fungal mold Penicillium lacks chloroplasts.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Penicillium cannot perform oxygenic photosynthesis.",
+    "premise": "Premise 1: No fixed-rate municipal obligations are exempt from federal taxation on coupon distributions.\nPremise 2: Bond Issuance 2031 is classified as one of the fixed-rate municipal obligations.\nWhich of the following conclusions logically follows?",
+    "correct": "Bond Issuance 2031 is not exempt from federal taxation on coupon distributions.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Bond Issuance 2031 is exempt from federal taxation on coupon distributions.",
+      "All entities that are not exempt from federal taxation on coupon distributions are classified as fixed-rate municipal obligations.",
+      "Some fixed-rate municipal obligations can be exempt from federal taxation on coupon distributions under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Penicillium cannot perform oxygenic photosynthesis.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #59] Premise 1: All constitutional amendments requiring ratification must secure affirmative votes from three-fourths of state legislatures.\nPremise 2: Proposal 14 requires ratification as a constitutional amendment.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.",
+    "premise": "Premise 1: If an entity is classified as one of the fixed-rate municipal obligations, it must be exempt from federal taxation on coupon distributions.\nPremise 2: Specimen Bond Issuance 2031 is verified to NOT be exempt from federal taxation on coupon distributions.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Bond Issuance 2031 is not one of the fixed-rate municipal obligations.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Bond Issuance 2031 is one of the fixed-rate municipal obligations.",
+      "All entities that are exempt from federal taxation on coupon distributions are fixed-rate municipal obligations.",
+      "Specimen Bond Issuance 2031 possesses some alternative attributes of fixed-rate municipal obligations.",
+      "The classification of Specimen Bond Issuance 2031 is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #60] Premise 1: Whenever a vehicle enters a geostationary transfer orbit, its apogee matches geosynchronous altitude.\nPremise 2: Satellite Echo entered a geostationary transfer orbit.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Satellite Echo's apogee matches geosynchronous altitude.",
+    "premise": "Premise 1: All fixed-rate municipal obligations are exempt from federal taxation on coupon distributions.\nPremise 2: Some debt instruments are classified as fixed-rate municipal obligations.\nWhich of the following conclusions logically follows?",
+    "correct": "Some debt instruments are exempt from federal taxation on coupon distributions.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All debt instruments are exempt from federal taxation on coupon distributions.",
+      "No debt instruments are exempt from federal taxation on coupon distributions.",
+      "All entities that are exempt from federal taxation on coupon distributions are classified as debt instruments.",
+      "None of the fixed-rate municipal obligations belong to debt instruments."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Satellite Echo's apogee matches geosynchronous altitude.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #61] Premise 1: All licensed commercial aviators must pass annual cardiovascular screening.\nPremise 2: Captain Reynolds is a licensed commercial aviator.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Captain Reynolds must pass annual cardiovascular screening.",
+    "premise": "Premise 1: All equities traded on national stock exchanges are required to file audited quarterly disclosures.\nPremise 2: Asset Stock-X is one of the equities traded on national stock exchanges.\nWhich of the following conclusions logically follows?",
+    "correct": "Asset Stock-X is required to file audited quarterly disclosures.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are required to file audited quarterly disclosures are equities traded on national stock exchanges.",
+      "Asset Stock-X is not required to file audited quarterly disclosures.",
+      "Only some equities traded on national stock exchanges are required to file audited quarterly disclosures.",
+      "There is insufficient evidence to determine whether Asset Stock-X is required to file audited quarterly disclosures."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Captain Reynolds must pass annual cardiovascular screening.\"."
+    "expl": "By Modus Ponens: Because Asset Stock-X belongs to equities traded on national stock exchanges, and all equities traded on national stock exchanges are required to file audited quarterly disclosures, Asset Stock-X must be required to file audited quarterly disclosures."
   },
   {
-    "premise": "[Scenario #62] Premise 1: No deep-sea submersible without titanium hulls can withstand 10,000 meters of hydrostatic pressure.\nPremise 2: The exploration vessel Nereus-9 lacks a titanium hull.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.",
+    "premise": "Premise 1: No equities traded on national stock exchanges are required to file audited quarterly disclosures.\nPremise 2: Asset Stock-X is classified as one of the equities traded on national stock exchanges.\nWhich of the following conclusions logically follows?",
+    "correct": "Asset Stock-X is not required to file audited quarterly disclosures.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Asset Stock-X is required to file audited quarterly disclosures.",
+      "All entities that are not required to file audited quarterly disclosures are classified as equities traded on national stock exchanges.",
+      "Some equities traded on national stock exchanges can be required to file audited quarterly disclosures under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #63] Premise 1: All registered trademarks granted federal protection are intellectual property assets.\nPremise 2: Project Zenith is a registered trademark granted federal protection.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Project Zenith is an intellectual property asset.",
+    "premise": "Premise 1: If an entity is classified as one of the equities traded on national stock exchanges, it must be required to file audited quarterly disclosures.\nPremise 2: Specimen Asset Stock-X is verified to NOT be required to file audited quarterly disclosures.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Asset Stock-X is not one of the equities traded on national stock exchanges.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Asset Stock-X is one of the equities traded on national stock exchanges.",
+      "All entities that are required to file audited quarterly disclosures are equities traded on national stock exchanges.",
+      "Specimen Asset Stock-X possesses some alternative attributes of equities traded on national stock exchanges.",
+      "The classification of Specimen Asset Stock-X is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Project Zenith is an intellectual property asset.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #64] Premise 1: Whenever ambient temperature drops below minus forty degrees, diesel engine fuel lines freeze without preheaters.\nPremise 2: Generator Unit 4 has no fuel line preheaters and temperature reached minus forty-five degrees.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Generator Unit 4 fuel lines froze.",
+    "premise": "Premise 1: All equities traded on national stock exchanges are required to file audited quarterly disclosures.\nPremise 2: Some corporate security holdings are classified as equities traded on national stock exchanges.\nWhich of the following conclusions logically follows?",
+    "correct": "Some corporate security holdings are required to file audited quarterly disclosures.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All corporate security holdings are required to file audited quarterly disclosures.",
+      "No corporate security holdings are required to file audited quarterly disclosures.",
+      "All entities that are required to file audited quarterly disclosures are classified as corporate security holdings.",
+      "None of the equities traded on national stock exchanges belong to corporate security holdings."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Generator Unit 4 fuel lines froze.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #65] Premise 1: All valid cryptographic hash functions must satisfy strict pre-image resistance.\nPremise 2: Algorithm SHA-512 is a valid cryptographic hash function.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.",
+    "premise": "Premise 1: All national economies experiencing hyperinflation are seeing currency purchasing power halve within thirty days.\nPremise 2: Market Realm-B is one of the national economies experiencing hyperinflation.\nWhich of the following conclusions logically follows?",
+    "correct": "Market Realm-B is seeing currency purchasing power halve within thirty days.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are seeing currency purchasing power halve within thirty days are national economies experiencing hyperinflation.",
+      "Market Realm-B is not seeing currency purchasing power halve within thirty days.",
+      "Only some national economies experiencing hyperinflation are seeing currency purchasing power halve within thirty days.",
+      "There is insufficient evidence to determine whether Market Realm-B is seeing currency purchasing power halve within thirty days."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.\"."
+    "expl": "By Modus Ponens: Because Market Realm-B belongs to national economies experiencing hyperinflation, and all national economies experiencing hyperinflation are seeing currency purchasing power halve within thirty days, Market Realm-B must be seeing currency purchasing power halve within thirty days."
   },
   {
-    "premise": "[Scenario #66] Premise 1: No non-renewable energy source generates zero carbon emissions during combustion.\nPremise 2: Bituminous coal is a non-renewable combustion fuel.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.",
+    "premise": "Premise 1: No national economies experiencing hyperinflation are seeing currency purchasing power halve within thirty days.\nPremise 2: Market Realm-B is classified as one of the national economies experiencing hyperinflation.\nWhich of the following conclusions logically follows?",
+    "correct": "Market Realm-B is not seeing currency purchasing power halve within thirty days.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Market Realm-B is seeing currency purchasing power halve within thirty days.",
+      "All entities that are not seeing currency purchasing power halve within thirty days are classified as national economies experiencing hyperinflation.",
+      "Some national economies experiencing hyperinflation can be seeing currency purchasing power halve within thirty days under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #67] Premise 1: All mammal species capable of true powered flight belong to the mammalian order Chiroptera.\nPremise 2: The fruit bat is a mammal species capable of true powered flight.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The fruit bat belongs to the mammalian order Chiroptera.",
+    "premise": "Premise 1: If an entity is classified as one of the national economies experiencing hyperinflation, it must be seeing currency purchasing power halve within thirty days.\nPremise 2: Specimen Market Realm-B is verified to NOT be seeing currency purchasing power halve within thirty days.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Market Realm-B is not one of the national economies experiencing hyperinflation.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Market Realm-B is one of the national economies experiencing hyperinflation.",
+      "All entities that are seeing currency purchasing power halve within thirty days are national economies experiencing hyperinflation.",
+      "Specimen Market Realm-B possesses some alternative attributes of national economies experiencing hyperinflation.",
+      "The classification of Specimen Market Realm-B is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The fruit bat belongs to the mammalian order Chiroptera.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #68] Premise 1: If an enterprise database fails ACID concurrency compliance, it cannot guarantee zero transactional data loss.\nPremise 2: System Omega failed ACID concurrency compliance.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: System Omega cannot guarantee zero transactional data loss.",
+    "premise": "Premise 1: All national economies experiencing hyperinflation are seeing currency purchasing power halve within thirty days.\nPremise 2: Some developing market economies are classified as national economies experiencing hyperinflation.\nWhich of the following conclusions logically follows?",
+    "correct": "Some developing market economies are seeing currency purchasing power halve within thirty days.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All developing market economies are seeing currency purchasing power halve within thirty days.",
+      "No developing market economies are seeing currency purchasing power halve within thirty days.",
+      "All entities that are seeing currency purchasing power halve within thirty days are classified as developing market economies.",
+      "None of the national economies experiencing hyperinflation belong to developing market economies."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: System Omega cannot guarantee zero transactional data loss.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #69] Premise 1: All members of the World Trade Organization are bound by the most-favored-nation trading clause.\nPremise 2: Country Veridia is a member of the World Trade Organization.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Country Veridia is bound by the most-favored-nation trading clause.",
+    "premise": "Premise 1: All registered anesthesiologists are certified in advanced airway management and life support.\nPremise 2: Dr. Sterling is one of the registered anesthesiologists.\nWhich of the following conclusions logically follows?",
+    "correct": "Dr. Sterling is certified in advanced airway management and life support.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are certified in advanced airway management and life support are registered anesthesiologists.",
+      "Dr. Sterling is not certified in advanced airway management and life support.",
+      "Only some registered anesthesiologists are certified in advanced airway management and life support.",
+      "There is insufficient evidence to determine whether Dr. Sterling is certified in advanced airway management and life support."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Country Veridia is bound by the most-favored-nation trading clause.\"."
+    "expl": "By Modus Ponens: Because Dr. Sterling belongs to registered anesthesiologists, and all registered anesthesiologists are certified in advanced airway management and life support, Dr. Sterling must be certified in advanced airway management and life support."
   },
   {
-    "premise": "[Scenario #70] Premise 1: No semiconductor device manufactured on a 3-nanometer lithography node can operate without ultraviolet photolithography.\nPremise 2: Microchip Phoenix was manufactured on a 3-nanometer node.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Microchip Phoenix utilized ultraviolet photolithography.",
+    "premise": "Premise 1: No registered anesthesiologists are certified in advanced airway management and life support.\nPremise 2: Dr. Sterling is classified as one of the registered anesthesiologists.\nWhich of the following conclusions logically follows?",
+    "correct": "Dr. Sterling is not certified in advanced airway management and life support.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Dr. Sterling is certified in advanced airway management and life support.",
+      "All entities that are not certified in advanced airway management and life support are classified as registered anesthesiologists.",
+      "Some registered anesthesiologists can be certified in advanced airway management and life support under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Microchip Phoenix utilized ultraviolet photolithography.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #71] Premise 1: All corporate debt instruments rated AAA carry minimal credit default risk.\nPremise 2: Bond Series 2028 is rated AAA.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Bond Series 2028 carries minimal credit default risk.",
+    "premise": "Premise 1: If an entity is classified as one of the registered anesthesiologists, it must be certified in advanced airway management and life support.\nPremise 2: Specimen Dr. Sterling is verified to NOT be certified in advanced airway management and life support.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Dr. Sterling is not one of the registered anesthesiologists.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Dr. Sterling is one of the registered anesthesiologists.",
+      "All entities that are certified in advanced airway management and life support are registered anesthesiologists.",
+      "Specimen Dr. Sterling possesses some alternative attributes of registered anesthesiologists.",
+      "The classification of Specimen Dr. Sterling is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bond Series 2028 carries minimal credit default risk.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #72] Premise 1: Whenever an economy experiences stagflation, it exhibits simultaneous high unemployment and elevated inflation.\nPremise 2: Region B is undergoing stagflation.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation.",
+    "premise": "Premise 1: All registered anesthesiologists are certified in advanced airway management and life support.\nPremise 2: Some hospital surgical clinicians are classified as registered anesthesiologists.\nWhich of the following conclusions logically follows?",
+    "correct": "Some hospital surgical clinicians are certified in advanced airway management and life support.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All hospital surgical clinicians are certified in advanced airway management and life support.",
+      "No hospital surgical clinicians are certified in advanced airway management and life support.",
+      "All entities that are certified in advanced airway management and life support are classified as hospital surgical clinicians.",
+      "None of the registered anesthesiologists belong to hospital surgical clinicians."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #73] Premise 1: All enzymes that catalyze phosphorylation reactions are classified as protein kinases.\nPremise 2: Enzyme P-38 catalyzes phosphorylation reactions.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Enzyme P-38 is classified as a protein kinase.",
+    "premise": "Premise 1: All Class III implantable medical devices are mandated to complete randomized clinical trials prior to commercial release.\nPremise 2: Pacemaker Cardio-V is one of the Class III implantable medical devices.\nWhich of the following conclusions logically follows?",
+    "correct": "Pacemaker Cardio-V is mandated to complete randomized clinical trials prior to commercial release.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are mandated to complete randomized clinical trials prior to commercial release are Class III implantable medical devices.",
+      "Pacemaker Cardio-V is not mandated to complete randomized clinical trials prior to commercial release.",
+      "Only some Class III implantable medical devices are mandated to complete randomized clinical trials prior to commercial release.",
+      "There is insufficient evidence to determine whether Pacemaker Cardio-V is mandated to complete randomized clinical trials prior to commercial release."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Enzyme P-38 is classified as a protein kinase.\"."
+    "expl": "By Modus Ponens: Because Pacemaker Cardio-V belongs to Class III implantable medical devices, and all Class III implantable medical devices are mandated to complete randomized clinical trials prior to commercial release, Pacemaker Cardio-V must be mandated to complete randomized clinical trials prior to commercial release."
   },
   {
-    "premise": "[Scenario #74] Premise 1: No supersonic passenger aircraft can operate economically without specialized afterburning turbofan engines.\nPremise 2: The Concorde is a supersonic passenger aircraft.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The Concorde operated with specialized afterburning turbofans.",
+    "premise": "Premise 1: No Class III implantable medical devices are mandated to complete randomized clinical trials prior to commercial release.\nPremise 2: Pacemaker Cardio-V is classified as one of the Class III implantable medical devices.\nWhich of the following conclusions logically follows?",
+    "correct": "Pacemaker Cardio-V is not mandated to complete randomized clinical trials prior to commercial release.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Pacemaker Cardio-V is mandated to complete randomized clinical trials prior to commercial release.",
+      "All entities that are not mandated to complete randomized clinical trials prior to commercial release are classified as Class III implantable medical devices.",
+      "Some Class III implantable medical devices can be mandated to complete randomized clinical trials prior to commercial release under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The Concorde operated with specialized afterburning turbofans.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #75] Premise 1: All equilateral triangles have interior angles measuring exactly 60 degrees.\nPremise 2: Geometric Figure Alpha is an equilateral triangle.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.",
+    "premise": "Premise 1: If an entity is classified as one of the Class III implantable medical devices, it must be mandated to complete randomized clinical trials prior to commercial release.\nPremise 2: Specimen Pacemaker Cardio-V is verified to NOT be mandated to complete randomized clinical trials prior to commercial release.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Pacemaker Cardio-V is not one of the Class III implantable medical devices.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Pacemaker Cardio-V is one of the Class III implantable medical devices.",
+      "All entities that are mandated to complete randomized clinical trials prior to commercial release are Class III implantable medical devices.",
+      "Specimen Pacemaker Cardio-V possesses some alternative attributes of Class III implantable medical devices.",
+      "The classification of Specimen Pacemaker Cardio-V is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #76] Premise 1: If a legal contract lacks mutual consideration between parties, it is unenforceable in contract court.\nPremise 2: The partnership agreement between Smith and Jones lacked mutual consideration.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The partnership agreement is unenforceable in contract court.",
+    "premise": "Premise 1: All Class III implantable medical devices are mandated to complete randomized clinical trials prior to commercial release.\nPremise 2: Some biomedical implants are classified as Class III implantable medical devices.\nWhich of the following conclusions logically follows?",
+    "correct": "Some biomedical implants are mandated to complete randomized clinical trials prior to commercial release.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All biomedical implants are mandated to complete randomized clinical trials prior to commercial release.",
+      "No biomedical implants are mandated to complete randomized clinical trials prior to commercial release.",
+      "All entities that are mandated to complete randomized clinical trials prior to commercial release are classified as biomedical implants.",
+      "None of the Class III implantable medical devices belong to biomedical implants."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The partnership agreement is unenforceable in contract court.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #77] Premise 1: All high-throughput optic fiber links rely on total internal reflection inside silica glass cores.\nPremise 2: The transatlantic cable Apollo is a high-throughput optic fiber link.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.",
+    "premise": "Premise 1: All broad-spectrum cephalosporin antibiotics are effective at inhibiting bacterial peptidoglycan cell wall synthesis.\nPremise 2: Antibiotic Ceph-4 is one of the broad-spectrum cephalosporin antibiotics.\nWhich of the following conclusions logically follows?",
+    "correct": "Antibiotic Ceph-4 is effective at inhibiting bacterial peptidoglycan cell wall synthesis.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are effective at inhibiting bacterial peptidoglycan cell wall synthesis are broad-spectrum cephalosporin antibiotics.",
+      "Antibiotic Ceph-4 is not effective at inhibiting bacterial peptidoglycan cell wall synthesis.",
+      "Only some broad-spectrum cephalosporin antibiotics are effective at inhibiting bacterial peptidoglycan cell wall synthesis.",
+      "There is insufficient evidence to determine whether Antibiotic Ceph-4 is effective at inhibiting bacterial peptidoglycan cell wall synthesis."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.\"."
+    "expl": "By Modus Ponens: Because Antibiotic Ceph-4 belongs to broad-spectrum cephalosporin antibiotics, and all broad-spectrum cephalosporin antibiotics are effective at inhibiting bacterial peptidoglycan cell wall synthesis, Antibiotic Ceph-4 must be effective at inhibiting bacterial peptidoglycan cell wall synthesis."
   },
   {
-    "premise": "[Scenario #78] Premise 1: No organism lacking chloroplasts can perform oxygenic photosynthesis.\nPremise 2: The fungal mold Penicillium lacks chloroplasts.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Penicillium cannot perform oxygenic photosynthesis.",
+    "premise": "Premise 1: No broad-spectrum cephalosporin antibiotics are effective at inhibiting bacterial peptidoglycan cell wall synthesis.\nPremise 2: Antibiotic Ceph-4 is classified as one of the broad-spectrum cephalosporin antibiotics.\nWhich of the following conclusions logically follows?",
+    "correct": "Antibiotic Ceph-4 is not effective at inhibiting bacterial peptidoglycan cell wall synthesis.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Antibiotic Ceph-4 is effective at inhibiting bacterial peptidoglycan cell wall synthesis.",
+      "All entities that are not effective at inhibiting bacterial peptidoglycan cell wall synthesis are classified as broad-spectrum cephalosporin antibiotics.",
+      "Some broad-spectrum cephalosporin antibiotics can be effective at inhibiting bacterial peptidoglycan cell wall synthesis under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Penicillium cannot perform oxygenic photosynthesis.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #79] Premise 1: All constitutional amendments requiring ratification must secure affirmative votes from three-fourths of state legislatures.\nPremise 2: Proposal 14 requires ratification as a constitutional amendment.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.",
+    "premise": "Premise 1: If an entity is classified as one of the broad-spectrum cephalosporin antibiotics, it must be effective at inhibiting bacterial peptidoglycan cell wall synthesis.\nPremise 2: Specimen Antibiotic Ceph-4 is verified to NOT be effective at inhibiting bacterial peptidoglycan cell wall synthesis.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Antibiotic Ceph-4 is not one of the broad-spectrum cephalosporin antibiotics.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Antibiotic Ceph-4 is one of the broad-spectrum cephalosporin antibiotics.",
+      "All entities that are effective at inhibiting bacterial peptidoglycan cell wall synthesis are broad-spectrum cephalosporin antibiotics.",
+      "Specimen Antibiotic Ceph-4 possesses some alternative attributes of broad-spectrum cephalosporin antibiotics.",
+      "The classification of Specimen Antibiotic Ceph-4 is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #80] Premise 1: Whenever a vehicle enters a geostationary transfer orbit, its apogee matches geosynchronous altitude.\nPremise 2: Satellite Echo entered a geostationary transfer orbit.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Satellite Echo's apogee matches geosynchronous altitude.",
+    "premise": "Premise 1: All broad-spectrum cephalosporin antibiotics are effective at inhibiting bacterial peptidoglycan cell wall synthesis.\nPremise 2: Some pharmaceutical therapeutic agents are classified as broad-spectrum cephalosporin antibiotics.\nWhich of the following conclusions logically follows?",
+    "correct": "Some pharmaceutical therapeutic agents are effective at inhibiting bacterial peptidoglycan cell wall synthesis.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All pharmaceutical therapeutic agents are effective at inhibiting bacterial peptidoglycan cell wall synthesis.",
+      "No pharmaceutical therapeutic agents are effective at inhibiting bacterial peptidoglycan cell wall synthesis.",
+      "All entities that are effective at inhibiting bacterial peptidoglycan cell wall synthesis are classified as pharmaceutical therapeutic agents.",
+      "None of the broad-spectrum cephalosporin antibiotics belong to pharmaceutical therapeutic agents."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Satellite Echo's apogee matches geosynchronous altitude.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #81] Premise 1: All licensed commercial aviators must pass annual cardiovascular screening.\nPremise 2: Captain Reynolds is a licensed commercial aviator.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Captain Reynolds must pass annual cardiovascular screening.",
+    "premise": "Premise 1: All clinical blood diagnostic tests are calibrated against standardized reference serum baselines.\nPremise 2: Assay Panel-9 is one of the clinical blood diagnostic tests.\nWhich of the following conclusions logically follows?",
+    "correct": "Assay Panel-9 is calibrated against standardized reference serum baselines.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are calibrated against standardized reference serum baselines are clinical blood diagnostic tests.",
+      "Assay Panel-9 is not calibrated against standardized reference serum baselines.",
+      "Only some clinical blood diagnostic tests are calibrated against standardized reference serum baselines.",
+      "There is insufficient evidence to determine whether Assay Panel-9 is calibrated against standardized reference serum baselines."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Captain Reynolds must pass annual cardiovascular screening.\"."
+    "expl": "By Modus Ponens: Because Assay Panel-9 belongs to clinical blood diagnostic tests, and all clinical blood diagnostic tests are calibrated against standardized reference serum baselines, Assay Panel-9 must be calibrated against standardized reference serum baselines."
   },
   {
-    "premise": "[Scenario #82] Premise 1: No deep-sea submersible without titanium hulls can withstand 10,000 meters of hydrostatic pressure.\nPremise 2: The exploration vessel Nereus-9 lacks a titanium hull.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.",
+    "premise": "Premise 1: No clinical blood diagnostic tests are calibrated against standardized reference serum baselines.\nPremise 2: Assay Panel-9 is classified as one of the clinical blood diagnostic tests.\nWhich of the following conclusions logically follows?",
+    "correct": "Assay Panel-9 is not calibrated against standardized reference serum baselines.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Assay Panel-9 is calibrated against standardized reference serum baselines.",
+      "All entities that are not calibrated against standardized reference serum baselines are classified as clinical blood diagnostic tests.",
+      "Some clinical blood diagnostic tests can be calibrated against standardized reference serum baselines under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #83] Premise 1: All registered trademarks granted federal protection are intellectual property assets.\nPremise 2: Project Zenith is a registered trademark granted federal protection.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Project Zenith is an intellectual property asset.",
+    "premise": "Premise 1: If an entity is classified as one of the clinical blood diagnostic tests, it must be calibrated against standardized reference serum baselines.\nPremise 2: Specimen Assay Panel-9 is verified to NOT be calibrated against standardized reference serum baselines.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Assay Panel-9 is not one of the clinical blood diagnostic tests.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Assay Panel-9 is one of the clinical blood diagnostic tests.",
+      "All entities that are calibrated against standardized reference serum baselines are clinical blood diagnostic tests.",
+      "Specimen Assay Panel-9 possesses some alternative attributes of clinical blood diagnostic tests.",
+      "The classification of Specimen Assay Panel-9 is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Project Zenith is an intellectual property asset.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #84] Premise 1: Whenever ambient temperature drops below minus forty degrees, diesel engine fuel lines freeze without preheaters.\nPremise 2: Generator Unit 4 has no fuel line preheaters and temperature reached minus forty-five degrees.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Generator Unit 4 fuel lines froze.",
+    "premise": "Premise 1: All clinical blood diagnostic tests are calibrated against standardized reference serum baselines.\nPremise 2: Some laboratory diagnostic assays are classified as clinical blood diagnostic tests.\nWhich of the following conclusions logically follows?",
+    "correct": "Some laboratory diagnostic assays are calibrated against standardized reference serum baselines.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All laboratory diagnostic assays are calibrated against standardized reference serum baselines.",
+      "No laboratory diagnostic assays are calibrated against standardized reference serum baselines.",
+      "All entities that are calibrated against standardized reference serum baselines are classified as laboratory diagnostic assays.",
+      "None of the clinical blood diagnostic tests belong to laboratory diagnostic assays."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Generator Unit 4 fuel lines froze.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #85] Premise 1: All valid cryptographic hash functions must satisfy strict pre-image resistance.\nPremise 2: Algorithm SHA-512 is a valid cryptographic hash function.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.",
+    "premise": "Premise 1: All structural trusses in long-span suspension bridges are engineered to withstand tensile and aerodynamic torsional loads.\nPremise 2: Truss Assembly Bridge-8 is one of the structural trusses in long-span suspension bridges.\nWhich of the following conclusions logically follows?",
+    "correct": "Truss Assembly Bridge-8 is engineered to withstand tensile and aerodynamic torsional loads.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are engineered to withstand tensile and aerodynamic torsional loads are structural trusses in long-span suspension bridges.",
+      "Truss Assembly Bridge-8 is not engineered to withstand tensile and aerodynamic torsional loads.",
+      "Only some structural trusses in long-span suspension bridges are engineered to withstand tensile and aerodynamic torsional loads.",
+      "There is insufficient evidence to determine whether Truss Assembly Bridge-8 is engineered to withstand tensile and aerodynamic torsional loads."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.\"."
+    "expl": "By Modus Ponens: Because Truss Assembly Bridge-8 belongs to structural trusses in long-span suspension bridges, and all structural trusses in long-span suspension bridges are engineered to withstand tensile and aerodynamic torsional loads, Truss Assembly Bridge-8 must be engineered to withstand tensile and aerodynamic torsional loads."
   },
   {
-    "premise": "[Scenario #86] Premise 1: No non-renewable energy source generates zero carbon emissions during combustion.\nPremise 2: Bituminous coal is a non-renewable combustion fuel.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.",
+    "premise": "Premise 1: No structural trusses in long-span suspension bridges are engineered to withstand tensile and aerodynamic torsional loads.\nPremise 2: Truss Assembly Bridge-8 is classified as one of the structural trusses in long-span suspension bridges.\nWhich of the following conclusions logically follows?",
+    "correct": "Truss Assembly Bridge-8 is not engineered to withstand tensile and aerodynamic torsional loads.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Truss Assembly Bridge-8 is engineered to withstand tensile and aerodynamic torsional loads.",
+      "All entities that are not engineered to withstand tensile and aerodynamic torsional loads are classified as structural trusses in long-span suspension bridges.",
+      "Some structural trusses in long-span suspension bridges can be engineered to withstand tensile and aerodynamic torsional loads under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #87] Premise 1: All mammal species capable of true powered flight belong to the mammalian order Chiroptera.\nPremise 2: The fruit bat is a mammal species capable of true powered flight.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The fruit bat belongs to the mammalian order Chiroptera.",
+    "premise": "Premise 1: If an entity is classified as one of the structural trusses in long-span suspension bridges, it must be engineered to withstand tensile and aerodynamic torsional loads.\nPremise 2: Specimen Truss Assembly Bridge-8 is verified to NOT be engineered to withstand tensile and aerodynamic torsional loads.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Truss Assembly Bridge-8 is not one of the structural trusses in long-span suspension bridges.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Truss Assembly Bridge-8 is one of the structural trusses in long-span suspension bridges.",
+      "All entities that are engineered to withstand tensile and aerodynamic torsional loads are structural trusses in long-span suspension bridges.",
+      "Specimen Truss Assembly Bridge-8 possesses some alternative attributes of structural trusses in long-span suspension bridges.",
+      "The classification of Specimen Truss Assembly Bridge-8 is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The fruit bat belongs to the mammalian order Chiroptera.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #88] Premise 1: If an enterprise database fails ACID concurrency compliance, it cannot guarantee zero transactional data loss.\nPremise 2: System Omega failed ACID concurrency compliance.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: System Omega cannot guarantee zero transactional data loss.",
+    "premise": "Premise 1: All structural trusses in long-span suspension bridges are engineered to withstand tensile and aerodynamic torsional loads.\nPremise 2: Some civil engineering structural components are classified as structural trusses in long-span suspension bridges.\nWhich of the following conclusions logically follows?",
+    "correct": "Some civil engineering structural components are engineered to withstand tensile and aerodynamic torsional loads.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All civil engineering structural components are engineered to withstand tensile and aerodynamic torsional loads.",
+      "No civil engineering structural components are engineered to withstand tensile and aerodynamic torsional loads.",
+      "All entities that are engineered to withstand tensile and aerodynamic torsional loads are classified as civil engineering structural components.",
+      "None of the structural trusses in long-span suspension bridges belong to civil engineering structural components."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: System Omega cannot guarantee zero transactional data loss.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #89] Premise 1: All members of the World Trade Organization are bound by the most-favored-nation trading clause.\nPremise 2: Country Veridia is a member of the World Trade Organization.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Country Veridia is bound by the most-favored-nation trading clause.",
+    "premise": "Premise 1: All high-voltage gas-insulated electrical substations are insulated using pressurized sulfur hexafluoride dielectric gas.\nPremise 2: Substation Station-K is one of the high-voltage gas-insulated electrical substations.\nWhich of the following conclusions logically follows?",
+    "correct": "Substation Station-K is insulated using pressurized sulfur hexafluoride dielectric gas.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are insulated using pressurized sulfur hexafluoride dielectric gas are high-voltage gas-insulated electrical substations.",
+      "Substation Station-K is not insulated using pressurized sulfur hexafluoride dielectric gas.",
+      "Only some high-voltage gas-insulated electrical substations are insulated using pressurized sulfur hexafluoride dielectric gas.",
+      "There is insufficient evidence to determine whether Substation Station-K is insulated using pressurized sulfur hexafluoride dielectric gas."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Country Veridia is bound by the most-favored-nation trading clause.\"."
+    "expl": "By Modus Ponens: Because Substation Station-K belongs to high-voltage gas-insulated electrical substations, and all high-voltage gas-insulated electrical substations are insulated using pressurized sulfur hexafluoride dielectric gas, Substation Station-K must be insulated using pressurized sulfur hexafluoride dielectric gas."
   },
   {
-    "premise": "[Scenario #90] Premise 1: No semiconductor device manufactured on a 3-nanometer lithography node can operate without ultraviolet photolithography.\nPremise 2: Microchip Phoenix was manufactured on a 3-nanometer node.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Microchip Phoenix utilized ultraviolet photolithography.",
+    "premise": "Premise 1: No high-voltage gas-insulated electrical substations are insulated using pressurized sulfur hexafluoride dielectric gas.\nPremise 2: Substation Station-K is classified as one of the high-voltage gas-insulated electrical substations.\nWhich of the following conclusions logically follows?",
+    "correct": "Substation Station-K is not insulated using pressurized sulfur hexafluoride dielectric gas.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Substation Station-K is insulated using pressurized sulfur hexafluoride dielectric gas.",
+      "All entities that are not insulated using pressurized sulfur hexafluoride dielectric gas are classified as high-voltage gas-insulated electrical substations.",
+      "Some high-voltage gas-insulated electrical substations can be insulated using pressurized sulfur hexafluoride dielectric gas under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Microchip Phoenix utilized ultraviolet photolithography.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #91] Premise 1: All corporate debt instruments rated AAA carry minimal credit default risk.\nPremise 2: Bond Series 2028 is rated AAA.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Bond Series 2028 carries minimal credit default risk.",
+    "premise": "Premise 1: If an entity is classified as one of the high-voltage gas-insulated electrical substations, it must be insulated using pressurized sulfur hexafluoride dielectric gas.\nPremise 2: Specimen Substation Station-K is verified to NOT be insulated using pressurized sulfur hexafluoride dielectric gas.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Substation Station-K is not one of the high-voltage gas-insulated electrical substations.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Substation Station-K is one of the high-voltage gas-insulated electrical substations.",
+      "All entities that are insulated using pressurized sulfur hexafluoride dielectric gas are high-voltage gas-insulated electrical substations.",
+      "Specimen Substation Station-K possesses some alternative attributes of high-voltage gas-insulated electrical substations.",
+      "The classification of Specimen Substation Station-K is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bond Series 2028 carries minimal credit default risk.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #92] Premise 1: Whenever an economy experiences stagflation, it exhibits simultaneous high unemployment and elevated inflation.\nPremise 2: Region B is undergoing stagflation.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation.",
+    "premise": "Premise 1: All high-voltage gas-insulated electrical substations are insulated using pressurized sulfur hexafluoride dielectric gas.\nPremise 2: Some power grid distribution nodes are classified as high-voltage gas-insulated electrical substations.\nWhich of the following conclusions logically follows?",
+    "correct": "Some power grid distribution nodes are insulated using pressurized sulfur hexafluoride dielectric gas.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All power grid distribution nodes are insulated using pressurized sulfur hexafluoride dielectric gas.",
+      "No power grid distribution nodes are insulated using pressurized sulfur hexafluoride dielectric gas.",
+      "All entities that are insulated using pressurized sulfur hexafluoride dielectric gas are classified as power grid distribution nodes.",
+      "None of the high-voltage gas-insulated electrical substations belong to power grid distribution nodes."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #93] Premise 1: All enzymes that catalyze phosphorylation reactions are classified as protein kinases.\nPremise 2: Enzyme P-38 catalyzes phosphorylation reactions.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Enzyme P-38 is classified as a protein kinase.",
+    "premise": "Premise 1: All combustion gas turbines operating in combined-cycle power plants are driving waste-heat recovery steam generators.\nPremise 2: Turbine Generator-1 is one of the combustion gas turbines operating in combined-cycle power plants.\nWhich of the following conclusions logically follows?",
+    "correct": "Turbine Generator-1 is driving waste-heat recovery steam generators.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are driving waste-heat recovery steam generators are combustion gas turbines operating in combined-cycle power plants.",
+      "Turbine Generator-1 is not driving waste-heat recovery steam generators.",
+      "Only some combustion gas turbines operating in combined-cycle power plants are driving waste-heat recovery steam generators.",
+      "There is insufficient evidence to determine whether Turbine Generator-1 is driving waste-heat recovery steam generators."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Enzyme P-38 is classified as a protein kinase.\"."
+    "expl": "By Modus Ponens: Because Turbine Generator-1 belongs to combustion gas turbines operating in combined-cycle power plants, and all combustion gas turbines operating in combined-cycle power plants are driving waste-heat recovery steam generators, Turbine Generator-1 must be driving waste-heat recovery steam generators."
   },
   {
-    "premise": "[Scenario #94] Premise 1: No supersonic passenger aircraft can operate economically without specialized afterburning turbofan engines.\nPremise 2: The Concorde is a supersonic passenger aircraft.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The Concorde operated with specialized afterburning turbofans.",
+    "premise": "Premise 1: No combustion gas turbines operating in combined-cycle power plants are driving waste-heat recovery steam generators.\nPremise 2: Turbine Generator-1 is classified as one of the combustion gas turbines operating in combined-cycle power plants.\nWhich of the following conclusions logically follows?",
+    "correct": "Turbine Generator-1 is not driving waste-heat recovery steam generators.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Turbine Generator-1 is driving waste-heat recovery steam generators.",
+      "All entities that are not driving waste-heat recovery steam generators are classified as combustion gas turbines operating in combined-cycle power plants.",
+      "Some combustion gas turbines operating in combined-cycle power plants can be driving waste-heat recovery steam generators under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The Concorde operated with specialized afterburning turbofans.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #95] Premise 1: All equilateral triangles have interior angles measuring exactly 60 degrees.\nPremise 2: Geometric Figure Alpha is an equilateral triangle.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.",
+    "premise": "Premise 1: If an entity is classified as one of the combustion gas turbines operating in combined-cycle power plants, it must be driving waste-heat recovery steam generators.\nPremise 2: Specimen Turbine Generator-1 is verified to NOT be driving waste-heat recovery steam generators.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Turbine Generator-1 is not one of the combustion gas turbines operating in combined-cycle power plants.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Turbine Generator-1 is one of the combustion gas turbines operating in combined-cycle power plants.",
+      "All entities that are driving waste-heat recovery steam generators are combustion gas turbines operating in combined-cycle power plants.",
+      "Specimen Turbine Generator-1 possesses some alternative attributes of combustion gas turbines operating in combined-cycle power plants.",
+      "The classification of Specimen Turbine Generator-1 is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #96] Premise 1: If a legal contract lacks mutual consideration between parties, it is unenforceable in contract court.\nPremise 2: The partnership agreement between Smith and Jones lacked mutual consideration.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The partnership agreement is unenforceable in contract court.",
+    "premise": "Premise 1: All combustion gas turbines operating in combined-cycle power plants are driving waste-heat recovery steam generators.\nPremise 2: Some power plant prime movers are classified as combustion gas turbines operating in combined-cycle power plants.\nWhich of the following conclusions logically follows?",
+    "correct": "Some power plant prime movers are driving waste-heat recovery steam generators.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All power plant prime movers are driving waste-heat recovery steam generators.",
+      "No power plant prime movers are driving waste-heat recovery steam generators.",
+      "All entities that are driving waste-heat recovery steam generators are classified as power plant prime movers.",
+      "None of the combustion gas turbines operating in combined-cycle power plants belong to power plant prime movers."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The partnership agreement is unenforceable in contract court.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #97] Premise 1: All high-throughput optic fiber links rely on total internal reflection inside silica glass cores.\nPremise 2: The transatlantic cable Apollo is a high-throughput optic fiber link.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.",
+    "premise": "Premise 1: All reinforced concrete structural pillars are embedded with internal deformed high-tensile steel rebar.\nPremise 2: Pillar Column-14 is one of the reinforced concrete structural pillars.\nWhich of the following conclusions logically follows?",
+    "correct": "Pillar Column-14 is embedded with internal deformed high-tensile steel rebar.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are embedded with internal deformed high-tensile steel rebar are reinforced concrete structural pillars.",
+      "Pillar Column-14 is not embedded with internal deformed high-tensile steel rebar.",
+      "Only some reinforced concrete structural pillars are embedded with internal deformed high-tensile steel rebar.",
+      "There is insufficient evidence to determine whether Pillar Column-14 is embedded with internal deformed high-tensile steel rebar."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.\"."
+    "expl": "By Modus Ponens: Because Pillar Column-14 belongs to reinforced concrete structural pillars, and all reinforced concrete structural pillars are embedded with internal deformed high-tensile steel rebar, Pillar Column-14 must be embedded with internal deformed high-tensile steel rebar."
   },
   {
-    "premise": "[Scenario #98] Premise 1: No organism lacking chloroplasts can perform oxygenic photosynthesis.\nPremise 2: The fungal mold Penicillium lacks chloroplasts.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Penicillium cannot perform oxygenic photosynthesis.",
+    "premise": "Premise 1: No reinforced concrete structural pillars are embedded with internal deformed high-tensile steel rebar.\nPremise 2: Pillar Column-14 is classified as one of the reinforced concrete structural pillars.\nWhich of the following conclusions logically follows?",
+    "correct": "Pillar Column-14 is not embedded with internal deformed high-tensile steel rebar.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Pillar Column-14 is embedded with internal deformed high-tensile steel rebar.",
+      "All entities that are not embedded with internal deformed high-tensile steel rebar are classified as reinforced concrete structural pillars.",
+      "Some reinforced concrete structural pillars can be embedded with internal deformed high-tensile steel rebar under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Penicillium cannot perform oxygenic photosynthesis.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #99] Premise 1: All constitutional amendments requiring ratification must secure affirmative votes from three-fourths of state legislatures.\nPremise 2: Proposal 14 requires ratification as a constitutional amendment.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.",
+    "premise": "Premise 1: If an entity is classified as one of the reinforced concrete structural pillars, it must be embedded with internal deformed high-tensile steel rebar.\nPremise 2: Specimen Pillar Column-14 is verified to NOT be embedded with internal deformed high-tensile steel rebar.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Pillar Column-14 is not one of the reinforced concrete structural pillars.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Pillar Column-14 is one of the reinforced concrete structural pillars.",
+      "All entities that are embedded with internal deformed high-tensile steel rebar are reinforced concrete structural pillars.",
+      "Specimen Pillar Column-14 possesses some alternative attributes of reinforced concrete structural pillars.",
+      "The classification of Specimen Pillar Column-14 is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #100] Premise 1: Whenever a vehicle enters a geostationary transfer orbit, its apogee matches geosynchronous altitude.\nPremise 2: Satellite Echo entered a geostationary transfer orbit.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Satellite Echo's apogee matches geosynchronous altitude.",
+    "premise": "Premise 1: All reinforced concrete structural pillars are embedded with internal deformed high-tensile steel rebar.\nPremise 2: Some load-bearing building foundations are classified as reinforced concrete structural pillars.\nWhich of the following conclusions logically follows?",
+    "correct": "Some load-bearing building foundations are embedded with internal deformed high-tensile steel rebar.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All load-bearing building foundations are embedded with internal deformed high-tensile steel rebar.",
+      "No load-bearing building foundations are embedded with internal deformed high-tensile steel rebar.",
+      "All entities that are embedded with internal deformed high-tensile steel rebar are classified as load-bearing building foundations.",
+      "None of the reinforced concrete structural pillars belong to load-bearing building foundations."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Satellite Echo's apogee matches geosynchronous altitude.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #101] Premise 1: All licensed commercial aviators must pass annual cardiovascular screening.\nPremise 2: Captain Reynolds is a licensed commercial aviator.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Captain Reynolds must pass annual cardiovascular screening.",
+    "premise": "Premise 1: All martensitic stainless steel alloys are capable of achieving high Rockwell hardness through thermal quenching.\nPremise 2: Steel Alloy 440C is one of the martensitic stainless steel alloys.\nWhich of the following conclusions logically follows?",
+    "correct": "Steel Alloy 440C is capable of achieving high Rockwell hardness through thermal quenching.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are capable of achieving high Rockwell hardness through thermal quenching are martensitic stainless steel alloys.",
+      "Steel Alloy 440C is not capable of achieving high Rockwell hardness through thermal quenching.",
+      "Only some martensitic stainless steel alloys are capable of achieving high Rockwell hardness through thermal quenching.",
+      "There is insufficient evidence to determine whether Steel Alloy 440C is capable of achieving high Rockwell hardness through thermal quenching."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Captain Reynolds must pass annual cardiovascular screening.\"."
+    "expl": "By Modus Ponens: Because Steel Alloy 440C belongs to martensitic stainless steel alloys, and all martensitic stainless steel alloys are capable of achieving high Rockwell hardness through thermal quenching, Steel Alloy 440C must be capable of achieving high Rockwell hardness through thermal quenching."
   },
   {
-    "premise": "[Scenario #102] Premise 1: No deep-sea submersible without titanium hulls can withstand 10,000 meters of hydrostatic pressure.\nPremise 2: The exploration vessel Nereus-9 lacks a titanium hull.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.",
+    "premise": "Premise 1: No martensitic stainless steel alloys are capable of achieving high Rockwell hardness through thermal quenching.\nPremise 2: Steel Alloy 440C is classified as one of the martensitic stainless steel alloys.\nWhich of the following conclusions logically follows?",
+    "correct": "Steel Alloy 440C is not capable of achieving high Rockwell hardness through thermal quenching.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Steel Alloy 440C is capable of achieving high Rockwell hardness through thermal quenching.",
+      "All entities that are not capable of achieving high Rockwell hardness through thermal quenching are classified as martensitic stainless steel alloys.",
+      "Some martensitic stainless steel alloys can be capable of achieving high Rockwell hardness through thermal quenching under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The exploration vessel Nereus-9 cannot withstand 10,000 meters of hydrostatic pressure.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #103] Premise 1: All registered trademarks granted federal protection are intellectual property assets.\nPremise 2: Project Zenith is a registered trademark granted federal protection.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Project Zenith is an intellectual property asset.",
+    "premise": "Premise 1: If an entity is classified as one of the martensitic stainless steel alloys, it must be capable of achieving high Rockwell hardness through thermal quenching.\nPremise 2: Specimen Steel Alloy 440C is verified to NOT be capable of achieving high Rockwell hardness through thermal quenching.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Steel Alloy 440C is not one of the martensitic stainless steel alloys.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Steel Alloy 440C is one of the martensitic stainless steel alloys.",
+      "All entities that are capable of achieving high Rockwell hardness through thermal quenching are martensitic stainless steel alloys.",
+      "Specimen Steel Alloy 440C possesses some alternative attributes of martensitic stainless steel alloys.",
+      "The classification of Specimen Steel Alloy 440C is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Project Zenith is an intellectual property asset.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #104] Premise 1: Whenever ambient temperature drops below minus forty degrees, diesel engine fuel lines freeze without preheaters.\nPremise 2: Generator Unit 4 has no fuel line preheaters and temperature reached minus forty-five degrees.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Generator Unit 4 fuel lines froze.",
+    "premise": "Premise 1: All martensitic stainless steel alloys are capable of achieving high Rockwell hardness through thermal quenching.\nPremise 2: Some industrial metallurgical alloys are classified as martensitic stainless steel alloys.\nWhich of the following conclusions logically follows?",
+    "correct": "Some industrial metallurgical alloys are capable of achieving high Rockwell hardness through thermal quenching.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All industrial metallurgical alloys are capable of achieving high Rockwell hardness through thermal quenching.",
+      "No industrial metallurgical alloys are capable of achieving high Rockwell hardness through thermal quenching.",
+      "All entities that are capable of achieving high Rockwell hardness through thermal quenching are classified as industrial metallurgical alloys.",
+      "None of the martensitic stainless steel alloys belong to industrial metallurgical alloys."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Generator Unit 4 fuel lines froze.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #105] Premise 1: All valid cryptographic hash functions must satisfy strict pre-image resistance.\nPremise 2: Algorithm SHA-512 is a valid cryptographic hash function.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.",
+    "premise": "Premise 1: All halide perovskite solar cells are vulnerable to moisture-induced degradation in ambient humidity.\nPremise 2: Photovoltaic Cell P-10 is one of the halide perovskite solar cells.\nWhich of the following conclusions logically follows?",
+    "correct": "Photovoltaic Cell P-10 is vulnerable to moisture-induced degradation in ambient humidity.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are vulnerable to moisture-induced degradation in ambient humidity are halide perovskite solar cells.",
+      "Photovoltaic Cell P-10 is not vulnerable to moisture-induced degradation in ambient humidity.",
+      "Only some halide perovskite solar cells are vulnerable to moisture-induced degradation in ambient humidity.",
+      "There is insufficient evidence to determine whether Photovoltaic Cell P-10 is vulnerable to moisture-induced degradation in ambient humidity."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Algorithm SHA-512 satisfies strict pre-image resistance.\"."
+    "expl": "By Modus Ponens: Because Photovoltaic Cell P-10 belongs to halide perovskite solar cells, and all halide perovskite solar cells are vulnerable to moisture-induced degradation in ambient humidity, Photovoltaic Cell P-10 must be vulnerable to moisture-induced degradation in ambient humidity."
   },
   {
-    "premise": "[Scenario #106] Premise 1: No non-renewable energy source generates zero carbon emissions during combustion.\nPremise 2: Bituminous coal is a non-renewable combustion fuel.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.",
+    "premise": "Premise 1: No halide perovskite solar cells are vulnerable to moisture-induced degradation in ambient humidity.\nPremise 2: Photovoltaic Cell P-10 is classified as one of the halide perovskite solar cells.\nWhich of the following conclusions logically follows?",
+    "correct": "Photovoltaic Cell P-10 is not vulnerable to moisture-induced degradation in ambient humidity.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Photovoltaic Cell P-10 is vulnerable to moisture-induced degradation in ambient humidity.",
+      "All entities that are not vulnerable to moisture-induced degradation in ambient humidity are classified as halide perovskite solar cells.",
+      "Some halide perovskite solar cells can be vulnerable to moisture-induced degradation in ambient humidity under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bituminous coal does not generate zero carbon emissions during combustion.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #107] Premise 1: All mammal species capable of true powered flight belong to the mammalian order Chiroptera.\nPremise 2: The fruit bat is a mammal species capable of true powered flight.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The fruit bat belongs to the mammalian order Chiroptera.",
+    "premise": "Premise 1: If an entity is classified as one of the halide perovskite solar cells, it must be vulnerable to moisture-induced degradation in ambient humidity.\nPremise 2: Specimen Photovoltaic Cell P-10 is verified to NOT be vulnerable to moisture-induced degradation in ambient humidity.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Photovoltaic Cell P-10 is not one of the halide perovskite solar cells.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Photovoltaic Cell P-10 is one of the halide perovskite solar cells.",
+      "All entities that are vulnerable to moisture-induced degradation in ambient humidity are halide perovskite solar cells.",
+      "Specimen Photovoltaic Cell P-10 possesses some alternative attributes of halide perovskite solar cells.",
+      "The classification of Specimen Photovoltaic Cell P-10 is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The fruit bat belongs to the mammalian order Chiroptera.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #108] Premise 1: If an enterprise database fails ACID concurrency compliance, it cannot guarantee zero transactional data loss.\nPremise 2: System Omega failed ACID concurrency compliance.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: System Omega cannot guarantee zero transactional data loss.",
+    "premise": "Premise 1: All halide perovskite solar cells are vulnerable to moisture-induced degradation in ambient humidity.\nPremise 2: Some experimental solar absorbers are classified as halide perovskite solar cells.\nWhich of the following conclusions logically follows?",
+    "correct": "Some experimental solar absorbers are vulnerable to moisture-induced degradation in ambient humidity.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All experimental solar absorbers are vulnerable to moisture-induced degradation in ambient humidity.",
+      "No experimental solar absorbers are vulnerable to moisture-induced degradation in ambient humidity.",
+      "All entities that are vulnerable to moisture-induced degradation in ambient humidity are classified as experimental solar absorbers.",
+      "None of the halide perovskite solar cells belong to experimental solar absorbers."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: System Omega cannot guarantee zero transactional data loss.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #109] Premise 1: All members of the World Trade Organization are bound by the most-favored-nation trading clause.\nPremise 2: Country Veridia is a member of the World Trade Organization.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Country Veridia is bound by the most-favored-nation trading clause.",
+    "premise": "Premise 1: All superconducting materials below critical temperature are completely expelling internal magnetic fields via the Meissner effect.\nPremise 2: Compound YBCO-1 is one of the superconducting materials below critical temperature.\nWhich of the following conclusions logically follows?",
+    "correct": "Compound YBCO-1 is completely expelling internal magnetic fields via the Meissner effect.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are completely expelling internal magnetic fields via the Meissner effect are superconducting materials below critical temperature.",
+      "Compound YBCO-1 is not completely expelling internal magnetic fields via the Meissner effect.",
+      "Only some superconducting materials below critical temperature are completely expelling internal magnetic fields via the Meissner effect.",
+      "There is insufficient evidence to determine whether Compound YBCO-1 is completely expelling internal magnetic fields via the Meissner effect."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Country Veridia is bound by the most-favored-nation trading clause.\"."
+    "expl": "By Modus Ponens: Because Compound YBCO-1 belongs to superconducting materials below critical temperature, and all superconducting materials below critical temperature are completely expelling internal magnetic fields via the Meissner effect, Compound YBCO-1 must be completely expelling internal magnetic fields via the Meissner effect."
   },
   {
-    "premise": "[Scenario #110] Premise 1: No semiconductor device manufactured on a 3-nanometer lithography node can operate without ultraviolet photolithography.\nPremise 2: Microchip Phoenix was manufactured on a 3-nanometer node.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Microchip Phoenix utilized ultraviolet photolithography.",
+    "premise": "Premise 1: No superconducting materials below critical temperature are completely expelling internal magnetic fields via the Meissner effect.\nPremise 2: Compound YBCO-1 is classified as one of the superconducting materials below critical temperature.\nWhich of the following conclusions logically follows?",
+    "correct": "Compound YBCO-1 is not completely expelling internal magnetic fields via the Meissner effect.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Compound YBCO-1 is completely expelling internal magnetic fields via the Meissner effect.",
+      "All entities that are not completely expelling internal magnetic fields via the Meissner effect are classified as superconducting materials below critical temperature.",
+      "Some superconducting materials below critical temperature can be completely expelling internal magnetic fields via the Meissner effect under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Microchip Phoenix utilized ultraviolet photolithography.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #111] Premise 1: All corporate debt instruments rated AAA carry minimal credit default risk.\nPremise 2: Bond Series 2028 is rated AAA.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Bond Series 2028 carries minimal credit default risk.",
+    "premise": "Premise 1: If an entity is classified as one of the superconducting materials below critical temperature, it must be completely expelling internal magnetic fields via the Meissner effect.\nPremise 2: Specimen Compound YBCO-1 is verified to NOT be completely expelling internal magnetic fields via the Meissner effect.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Compound YBCO-1 is not one of the superconducting materials below critical temperature.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Compound YBCO-1 is one of the superconducting materials below critical temperature.",
+      "All entities that are completely expelling internal magnetic fields via the Meissner effect are superconducting materials below critical temperature.",
+      "Specimen Compound YBCO-1 possesses some alternative attributes of superconducting materials below critical temperature.",
+      "The classification of Specimen Compound YBCO-1 is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bond Series 2028 carries minimal credit default risk.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #112] Premise 1: Whenever an economy experiences stagflation, it exhibits simultaneous high unemployment and elevated inflation.\nPremise 2: Region B is undergoing stagflation.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation.",
+    "premise": "Premise 1: All superconducting materials below critical temperature are completely expelling internal magnetic fields via the Meissner effect.\nPremise 2: Some low-temperature physical materials are classified as superconducting materials below critical temperature.\nWhich of the following conclusions logically follows?",
+    "correct": "Some low-temperature physical materials are completely expelling internal magnetic fields via the Meissner effect.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All low-temperature physical materials are completely expelling internal magnetic fields via the Meissner effect.",
+      "No low-temperature physical materials are completely expelling internal magnetic fields via the Meissner effect.",
+      "All entities that are completely expelling internal magnetic fields via the Meissner effect are classified as low-temperature physical materials.",
+      "None of the superconducting materials below critical temperature belong to low-temperature physical materials."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #113] Premise 1: All enzymes that catalyze phosphorylation reactions are classified as protein kinases.\nPremise 2: Enzyme P-38 catalyzes phosphorylation reactions.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Enzyme P-38 is classified as a protein kinase.",
+    "premise": "Premise 1: All carbon fiber reinforced thermoset polymers are possessing high specific tensile strength exceeding structural aluminum.\nPremise 2: Composite Sheet CF-7 is one of the carbon fiber reinforced thermoset polymers.\nWhich of the following conclusions logically follows?",
+    "correct": "Composite Sheet CF-7 is possessing high specific tensile strength exceeding structural aluminum.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are possessing high specific tensile strength exceeding structural aluminum are carbon fiber reinforced thermoset polymers.",
+      "Composite Sheet CF-7 is not possessing high specific tensile strength exceeding structural aluminum.",
+      "Only some carbon fiber reinforced thermoset polymers are possessing high specific tensile strength exceeding structural aluminum.",
+      "There is insufficient evidence to determine whether Composite Sheet CF-7 is possessing high specific tensile strength exceeding structural aluminum."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Enzyme P-38 is classified as a protein kinase.\"."
+    "expl": "By Modus Ponens: Because Composite Sheet CF-7 belongs to carbon fiber reinforced thermoset polymers, and all carbon fiber reinforced thermoset polymers are possessing high specific tensile strength exceeding structural aluminum, Composite Sheet CF-7 must be possessing high specific tensile strength exceeding structural aluminum."
   },
   {
-    "premise": "[Scenario #114] Premise 1: No supersonic passenger aircraft can operate economically without specialized afterburning turbofan engines.\nPremise 2: The Concorde is a supersonic passenger aircraft.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The Concorde operated with specialized afterburning turbofans.",
+    "premise": "Premise 1: No carbon fiber reinforced thermoset polymers are possessing high specific tensile strength exceeding structural aluminum.\nPremise 2: Composite Sheet CF-7 is classified as one of the carbon fiber reinforced thermoset polymers.\nWhich of the following conclusions logically follows?",
+    "correct": "Composite Sheet CF-7 is not possessing high specific tensile strength exceeding structural aluminum.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Composite Sheet CF-7 is possessing high specific tensile strength exceeding structural aluminum.",
+      "All entities that are not possessing high specific tensile strength exceeding structural aluminum are classified as carbon fiber reinforced thermoset polymers.",
+      "Some carbon fiber reinforced thermoset polymers can be possessing high specific tensile strength exceeding structural aluminum under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The Concorde operated with specialized afterburning turbofans.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #115] Premise 1: All equilateral triangles have interior angles measuring exactly 60 degrees.\nPremise 2: Geometric Figure Alpha is an equilateral triangle.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.",
+    "premise": "Premise 1: If an entity is classified as one of the carbon fiber reinforced thermoset polymers, it must be possessing high specific tensile strength exceeding structural aluminum.\nPremise 2: Specimen Composite Sheet CF-7 is verified to NOT be possessing high specific tensile strength exceeding structural aluminum.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Composite Sheet CF-7 is not one of the carbon fiber reinforced thermoset polymers.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Composite Sheet CF-7 is one of the carbon fiber reinforced thermoset polymers.",
+      "All entities that are possessing high specific tensile strength exceeding structural aluminum are carbon fiber reinforced thermoset polymers.",
+      "Specimen Composite Sheet CF-7 possesses some alternative attributes of carbon fiber reinforced thermoset polymers.",
+      "The classification of Specimen Composite Sheet CF-7 is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Geometric Figure Alpha has interior angles measuring exactly 60 degrees.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #116] Premise 1: If a legal contract lacks mutual consideration between parties, it is unenforceable in contract court.\nPremise 2: The partnership agreement between Smith and Jones lacked mutual consideration.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The partnership agreement is unenforceable in contract court.",
+    "premise": "Premise 1: All carbon fiber reinforced thermoset polymers are possessing high specific tensile strength exceeding structural aluminum.\nPremise 2: Some aerospace structural materials are classified as carbon fiber reinforced thermoset polymers.\nWhich of the following conclusions logically follows?",
+    "correct": "Some aerospace structural materials are possessing high specific tensile strength exceeding structural aluminum.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All aerospace structural materials are possessing high specific tensile strength exceeding structural aluminum.",
+      "No aerospace structural materials are possessing high specific tensile strength exceeding structural aluminum.",
+      "All entities that are possessing high specific tensile strength exceeding structural aluminum are classified as aerospace structural materials.",
+      "None of the carbon fiber reinforced thermoset polymers belong to aerospace structural materials."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The partnership agreement is unenforceable in contract court.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   },
   {
-    "premise": "[Scenario #117] Premise 1: All high-throughput optic fiber links rely on total internal reflection inside silica glass cores.\nPremise 2: The transatlantic cable Apollo is a high-throughput optic fiber link.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.",
+    "premise": "Premise 1: All geological strata classified as sedimentary formations are created by compaction and cementation of mineral particles over time.\nPremise 2: Formation Sandstone-4 is one of the geological strata classified as sedimentary formations.\nWhich of the following conclusions logically follows?",
+    "correct": "Formation Sandstone-4 is created by compaction and cementation of mineral particles over time.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All entities that are created by compaction and cementation of mineral particles over time are geological strata classified as sedimentary formations.",
+      "Formation Sandstone-4 is not created by compaction and cementation of mineral particles over time.",
+      "Only some geological strata classified as sedimentary formations are created by compaction and cementation of mineral particles over time.",
+      "There is insufficient evidence to determine whether Formation Sandstone-4 is created by compaction and cementation of mineral particles over time."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: The transatlantic cable Apollo relies on total internal reflection inside silica glass cores.\"."
+    "expl": "By Modus Ponens: Because Formation Sandstone-4 belongs to geological strata classified as sedimentary formations, and all geological strata classified as sedimentary formations are created by compaction and cementation of mineral particles over time, Formation Sandstone-4 must be created by compaction and cementation of mineral particles over time."
   },
   {
-    "premise": "[Scenario #118] Premise 1: No organism lacking chloroplasts can perform oxygenic photosynthesis.\nPremise 2: The fungal mold Penicillium lacks chloroplasts.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Penicillium cannot perform oxygenic photosynthesis.",
+    "premise": "Premise 1: No geological strata classified as sedimentary formations are created by compaction and cementation of mineral particles over time.\nPremise 2: Formation Sandstone-4 is classified as one of the geological strata classified as sedimentary formations.\nWhich of the following conclusions logically follows?",
+    "correct": "Formation Sandstone-4 is not created by compaction and cementation of mineral particles over time.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Formation Sandstone-4 is created by compaction and cementation of mineral particles over time.",
+      "All entities that are not created by compaction and cementation of mineral particles over time are classified as geological strata classified as sedimentary formations.",
+      "Some geological strata classified as sedimentary formations can be created by compaction and cementation of mineral particles over time under special conditions.",
+      "No conclusion can be deduced from the stated premises."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Penicillium cannot perform oxygenic photosynthesis.\"."
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
   },
   {
-    "premise": "[Scenario #119] Premise 1: All constitutional amendments requiring ratification must secure affirmative votes from three-fourths of state legislatures.\nPremise 2: Proposal 14 requires ratification as a constitutional amendment.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.",
+    "premise": "Premise 1: If an entity is classified as one of the geological strata classified as sedimentary formations, it must be created by compaction and cementation of mineral particles over time.\nPremise 2: Specimen Formation Sandstone-4 is verified to NOT be created by compaction and cementation of mineral particles over time.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Formation Sandstone-4 is not one of the geological strata classified as sedimentary formations.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "Specimen Formation Sandstone-4 is one of the geological strata classified as sedimentary formations.",
+      "All entities that are created by compaction and cementation of mineral particles over time are geological strata classified as sedimentary formations.",
+      "Specimen Formation Sandstone-4 possesses some alternative attributes of geological strata classified as sedimentary formations.",
+      "The classification of Specimen Formation Sandstone-4 is completely indeterminate."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Proposal 14 must secure affirmative votes from three-fourths of state legislatures.\"."
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
   },
   {
-    "premise": "[Scenario #120] Premise 1: Whenever a vehicle enters a geostationary transfer orbit, its apogee matches geosynchronous altitude.\nPremise 2: Satellite Echo entered a geostationary transfer orbit.\nWhich conclusion follows with absolute logical necessity?",
-    "correct": "Conclusion: Satellite Echo's apogee matches geosynchronous altitude.",
+    "premise": "Premise 1: All geological strata classified as sedimentary formations are created by compaction and cementation of mineral particles over time.\nPremise 2: Some continental geological rock units are classified as geological strata classified as sedimentary formations.\nWhich of the following conclusions logically follows?",
+    "correct": "Some continental geological rock units are created by compaction and cementation of mineral particles over time.",
     "distractors": [
-      "No definitive deduction is logically warranted from the premises.",
-      "The opposite of the stated conclusion must necessarily be valid.",
-      "Only a probabilistic likelihood exists, with no deductive certainty.",
-      "Premise 1 contradicts Premise 2."
+      "All continental geological rock units are created by compaction and cementation of mineral particles over time.",
+      "No continental geological rock units are created by compaction and cementation of mineral particles over time.",
+      "All entities that are created by compaction and cementation of mineral particles over time are classified as continental geological rock units.",
+      "None of the geological strata classified as sedimentary formations belong to continental geological rock units."
     ],
-    "expl": "By direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Satellite Echo's apogee matches geosynchronous altitude.\"."
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
+  },
+  {
+    "premise": "Premise 1: All deep-sea oceanic abyssal plains are shrouded in permanent aphotic darkness beneath 4,000 meters.\nPremise 2: Ocean Zone Abyssal-9 is one of the deep-sea oceanic abyssal plains.\nWhich of the following conclusions logically follows?",
+    "correct": "Ocean Zone Abyssal-9 is shrouded in permanent aphotic darkness beneath 4,000 meters.",
+    "distractors": [
+      "All entities that are shrouded in permanent aphotic darkness beneath 4,000 meters are deep-sea oceanic abyssal plains.",
+      "Ocean Zone Abyssal-9 is not shrouded in permanent aphotic darkness beneath 4,000 meters.",
+      "Only some deep-sea oceanic abyssal plains are shrouded in permanent aphotic darkness beneath 4,000 meters.",
+      "There is insufficient evidence to determine whether Ocean Zone Abyssal-9 is shrouded in permanent aphotic darkness beneath 4,000 meters."
+    ],
+    "expl": "By Modus Ponens: Because Ocean Zone Abyssal-9 belongs to deep-sea oceanic abyssal plains, and all deep-sea oceanic abyssal plains are shrouded in permanent aphotic darkness beneath 4,000 meters, Ocean Zone Abyssal-9 must be shrouded in permanent aphotic darkness beneath 4,000 meters."
+  },
+  {
+    "premise": "Premise 1: No deep-sea oceanic abyssal plains are shrouded in permanent aphotic darkness beneath 4,000 meters.\nPremise 2: Ocean Zone Abyssal-9 is classified as one of the deep-sea oceanic abyssal plains.\nWhich of the following conclusions logically follows?",
+    "correct": "Ocean Zone Abyssal-9 is not shrouded in permanent aphotic darkness beneath 4,000 meters.",
+    "distractors": [
+      "Ocean Zone Abyssal-9 is shrouded in permanent aphotic darkness beneath 4,000 meters.",
+      "All entities that are not shrouded in permanent aphotic darkness beneath 4,000 meters are classified as deep-sea oceanic abyssal plains.",
+      "Some deep-sea oceanic abyssal plains can be shrouded in permanent aphotic darkness beneath 4,000 meters under special conditions.",
+      "No conclusion can be deduced from the stated premises."
+    ],
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
+  },
+  {
+    "premise": "Premise 1: If an entity is classified as one of the deep-sea oceanic abyssal plains, it must be shrouded in permanent aphotic darkness beneath 4,000 meters.\nPremise 2: Specimen Ocean Zone Abyssal-9 is verified to NOT be shrouded in permanent aphotic darkness beneath 4,000 meters.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Ocean Zone Abyssal-9 is not one of the deep-sea oceanic abyssal plains.",
+    "distractors": [
+      "Specimen Ocean Zone Abyssal-9 is one of the deep-sea oceanic abyssal plains.",
+      "All entities that are shrouded in permanent aphotic darkness beneath 4,000 meters are deep-sea oceanic abyssal plains.",
+      "Specimen Ocean Zone Abyssal-9 possesses some alternative attributes of deep-sea oceanic abyssal plains.",
+      "The classification of Specimen Ocean Zone Abyssal-9 is completely indeterminate."
+    ],
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
+  },
+  {
+    "premise": "Premise 1: All deep-sea oceanic abyssal plains are shrouded in permanent aphotic darkness beneath 4,000 meters.\nPremise 2: Some marine pelagic environments are classified as deep-sea oceanic abyssal plains.\nWhich of the following conclusions logically follows?",
+    "correct": "Some marine pelagic environments are shrouded in permanent aphotic darkness beneath 4,000 meters.",
+    "distractors": [
+      "All marine pelagic environments are shrouded in permanent aphotic darkness beneath 4,000 meters.",
+      "No marine pelagic environments are shrouded in permanent aphotic darkness beneath 4,000 meters.",
+      "All entities that are shrouded in permanent aphotic darkness beneath 4,000 meters are classified as marine pelagic environments.",
+      "None of the deep-sea oceanic abyssal plains belong to marine pelagic environments."
+    ],
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
+  },
+  {
+    "premise": "Premise 1: All glaciers characterized by temperate thermal regimes are having basal ice at the pressure melting point throughout the year.\nPremise 2: Glacier Alpha-8 is one of the glaciers characterized by temperate thermal regimes.\nWhich of the following conclusions logically follows?",
+    "correct": "Glacier Alpha-8 is having basal ice at the pressure melting point throughout the year.",
+    "distractors": [
+      "All entities that are having basal ice at the pressure melting point throughout the year are glaciers characterized by temperate thermal regimes.",
+      "Glacier Alpha-8 is not having basal ice at the pressure melting point throughout the year.",
+      "Only some glaciers characterized by temperate thermal regimes are having basal ice at the pressure melting point throughout the year.",
+      "There is insufficient evidence to determine whether Glacier Alpha-8 is having basal ice at the pressure melting point throughout the year."
+    ],
+    "expl": "By Modus Ponens: Because Glacier Alpha-8 belongs to glaciers characterized by temperate thermal regimes, and all glaciers characterized by temperate thermal regimes are having basal ice at the pressure melting point throughout the year, Glacier Alpha-8 must be having basal ice at the pressure melting point throughout the year."
+  },
+  {
+    "premise": "Premise 1: No glaciers characterized by temperate thermal regimes are having basal ice at the pressure melting point throughout the year.\nPremise 2: Glacier Alpha-8 is classified as one of the glaciers characterized by temperate thermal regimes.\nWhich of the following conclusions logically follows?",
+    "correct": "Glacier Alpha-8 is not having basal ice at the pressure melting point throughout the year.",
+    "distractors": [
+      "Glacier Alpha-8 is having basal ice at the pressure melting point throughout the year.",
+      "All entities that are not having basal ice at the pressure melting point throughout the year are classified as glaciers characterized by temperate thermal regimes.",
+      "Some glaciers characterized by temperate thermal regimes can be having basal ice at the pressure melting point throughout the year under special conditions.",
+      "No conclusion can be deduced from the stated premises."
+    ],
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
+  },
+  {
+    "premise": "Premise 1: If an entity is classified as one of the glaciers characterized by temperate thermal regimes, it must be having basal ice at the pressure melting point throughout the year.\nPremise 2: Specimen Glacier Alpha-8 is verified to NOT be having basal ice at the pressure melting point throughout the year.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Glacier Alpha-8 is not one of the glaciers characterized by temperate thermal regimes.",
+    "distractors": [
+      "Specimen Glacier Alpha-8 is one of the glaciers characterized by temperate thermal regimes.",
+      "All entities that are having basal ice at the pressure melting point throughout the year are glaciers characterized by temperate thermal regimes.",
+      "Specimen Glacier Alpha-8 possesses some alternative attributes of glaciers characterized by temperate thermal regimes.",
+      "The classification of Specimen Glacier Alpha-8 is completely indeterminate."
+    ],
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
+  },
+  {
+    "premise": "Premise 1: All glaciers characterized by temperate thermal regimes are having basal ice at the pressure melting point throughout the year.\nPremise 2: Some alpine ice masses are classified as glaciers characterized by temperate thermal regimes.\nWhich of the following conclusions logically follows?",
+    "correct": "Some alpine ice masses are having basal ice at the pressure melting point throughout the year.",
+    "distractors": [
+      "All alpine ice masses are having basal ice at the pressure melting point throughout the year.",
+      "No alpine ice masses are having basal ice at the pressure melting point throughout the year.",
+      "All entities that are having basal ice at the pressure melting point throughout the year are classified as alpine ice masses.",
+      "None of the glaciers characterized by temperate thermal regimes belong to alpine ice masses."
+    ],
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
+  },
+  {
+    "premise": "Premise 1: All atmospheric vortex storms classified as tropical hurricanes are driven by latent heat energy released from warm ocean waters.\nPremise 2: Storm Hurricane-Leo is one of the atmospheric vortex storms classified as tropical hurricanes.\nWhich of the following conclusions logically follows?",
+    "correct": "Storm Hurricane-Leo is driven by latent heat energy released from warm ocean waters.",
+    "distractors": [
+      "All entities that are driven by latent heat energy released from warm ocean waters are atmospheric vortex storms classified as tropical hurricanes.",
+      "Storm Hurricane-Leo is not driven by latent heat energy released from warm ocean waters.",
+      "Only some atmospheric vortex storms classified as tropical hurricanes are driven by latent heat energy released from warm ocean waters.",
+      "There is insufficient evidence to determine whether Storm Hurricane-Leo is driven by latent heat energy released from warm ocean waters."
+    ],
+    "expl": "By Modus Ponens: Because Storm Hurricane-Leo belongs to atmospheric vortex storms classified as tropical hurricanes, and all atmospheric vortex storms classified as tropical hurricanes are driven by latent heat energy released from warm ocean waters, Storm Hurricane-Leo must be driven by latent heat energy released from warm ocean waters."
+  },
+  {
+    "premise": "Premise 1: No atmospheric vortex storms classified as tropical hurricanes are driven by latent heat energy released from warm ocean waters.\nPremise 2: Storm Hurricane-Leo is classified as one of the atmospheric vortex storms classified as tropical hurricanes.\nWhich of the following conclusions logically follows?",
+    "correct": "Storm Hurricane-Leo is not driven by latent heat energy released from warm ocean waters.",
+    "distractors": [
+      "Storm Hurricane-Leo is driven by latent heat energy released from warm ocean waters.",
+      "All entities that are not driven by latent heat energy released from warm ocean waters are classified as atmospheric vortex storms classified as tropical hurricanes.",
+      "Some atmospheric vortex storms classified as tropical hurricanes can be driven by latent heat energy released from warm ocean waters under special conditions.",
+      "No conclusion can be deduced from the stated premises."
+    ],
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
+  },
+  {
+    "premise": "Premise 1: If an entity is classified as one of the atmospheric vortex storms classified as tropical hurricanes, it must be driven by latent heat energy released from warm ocean waters.\nPremise 2: Specimen Storm Hurricane-Leo is verified to NOT be driven by latent heat energy released from warm ocean waters.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Storm Hurricane-Leo is not one of the atmospheric vortex storms classified as tropical hurricanes.",
+    "distractors": [
+      "Specimen Storm Hurricane-Leo is one of the atmospheric vortex storms classified as tropical hurricanes.",
+      "All entities that are driven by latent heat energy released from warm ocean waters are atmospheric vortex storms classified as tropical hurricanes.",
+      "Specimen Storm Hurricane-Leo possesses some alternative attributes of atmospheric vortex storms classified as tropical hurricanes.",
+      "The classification of Specimen Storm Hurricane-Leo is completely indeterminate."
+    ],
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
+  },
+  {
+    "premise": "Premise 1: All atmospheric vortex storms classified as tropical hurricanes are driven by latent heat energy released from warm ocean waters.\nPremise 2: Some cyclonic meteorological systems are classified as atmospheric vortex storms classified as tropical hurricanes.\nWhich of the following conclusions logically follows?",
+    "correct": "Some cyclonic meteorological systems are driven by latent heat energy released from warm ocean waters.",
+    "distractors": [
+      "All cyclonic meteorological systems are driven by latent heat energy released from warm ocean waters.",
+      "No cyclonic meteorological systems are driven by latent heat energy released from warm ocean waters.",
+      "All entities that are driven by latent heat energy released from warm ocean waters are classified as cyclonic meteorological systems.",
+      "None of the atmospheric vortex storms classified as tropical hurricanes belong to cyclonic meteorological systems."
+    ],
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
+  },
+  {
+    "premise": "Premise 1: All geostationary communication satellites are occupying circular equatorial orbits at approximately 35,786 kilometers altitude.\nPremise 2: Satellite Geo-Com-4 is one of the geostationary communication satellites.\nWhich of the following conclusions logically follows?",
+    "correct": "Satellite Geo-Com-4 is occupying circular equatorial orbits at approximately 35,786 kilometers altitude.",
+    "distractors": [
+      "All entities that are occupying circular equatorial orbits at approximately 35,786 kilometers altitude are geostationary communication satellites.",
+      "Satellite Geo-Com-4 is not occupying circular equatorial orbits at approximately 35,786 kilometers altitude.",
+      "Only some geostationary communication satellites are occupying circular equatorial orbits at approximately 35,786 kilometers altitude.",
+      "There is insufficient evidence to determine whether Satellite Geo-Com-4 is occupying circular equatorial orbits at approximately 35,786 kilometers altitude."
+    ],
+    "expl": "By Modus Ponens: Because Satellite Geo-Com-4 belongs to geostationary communication satellites, and all geostationary communication satellites are occupying circular equatorial orbits at approximately 35,786 kilometers altitude, Satellite Geo-Com-4 must be occupying circular equatorial orbits at approximately 35,786 kilometers altitude."
+  },
+  {
+    "premise": "Premise 1: No geostationary communication satellites are occupying circular equatorial orbits at approximately 35,786 kilometers altitude.\nPremise 2: Satellite Geo-Com-4 is classified as one of the geostationary communication satellites.\nWhich of the following conclusions logically follows?",
+    "correct": "Satellite Geo-Com-4 is not occupying circular equatorial orbits at approximately 35,786 kilometers altitude.",
+    "distractors": [
+      "Satellite Geo-Com-4 is occupying circular equatorial orbits at approximately 35,786 kilometers altitude.",
+      "All entities that are not occupying circular equatorial orbits at approximately 35,786 kilometers altitude are classified as geostationary communication satellites.",
+      "Some geostationary communication satellites can be occupying circular equatorial orbits at approximately 35,786 kilometers altitude under special conditions.",
+      "No conclusion can be deduced from the stated premises."
+    ],
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
+  },
+  {
+    "premise": "Premise 1: If an entity is classified as one of the geostationary communication satellites, it must be occupying circular equatorial orbits at approximately 35,786 kilometers altitude.\nPremise 2: Specimen Satellite Geo-Com-4 is verified to NOT be occupying circular equatorial orbits at approximately 35,786 kilometers altitude.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Satellite Geo-Com-4 is not one of the geostationary communication satellites.",
+    "distractors": [
+      "Specimen Satellite Geo-Com-4 is one of the geostationary communication satellites.",
+      "All entities that are occupying circular equatorial orbits at approximately 35,786 kilometers altitude are geostationary communication satellites.",
+      "Specimen Satellite Geo-Com-4 possesses some alternative attributes of geostationary communication satellites.",
+      "The classification of Specimen Satellite Geo-Com-4 is completely indeterminate."
+    ],
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
+  },
+  {
+    "premise": "Premise 1: All geostationary communication satellites are occupying circular equatorial orbits at approximately 35,786 kilometers altitude.\nPremise 2: Some orbital telecom spacecraft are classified as geostationary communication satellites.\nWhich of the following conclusions logically follows?",
+    "correct": "Some orbital telecom spacecraft are occupying circular equatorial orbits at approximately 35,786 kilometers altitude.",
+    "distractors": [
+      "All orbital telecom spacecraft are occupying circular equatorial orbits at approximately 35,786 kilometers altitude.",
+      "No orbital telecom spacecraft are occupying circular equatorial orbits at approximately 35,786 kilometers altitude.",
+      "All entities that are occupying circular equatorial orbits at approximately 35,786 kilometers altitude are classified as orbital telecom spacecraft.",
+      "None of the geostationary communication satellites belong to orbital telecom spacecraft."
+    ],
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
+  },
+  {
+    "premise": "Premise 1: All astronomical reflecting telescopes using Cassegrain designs are utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors.\nPremise 2: Observatory Scope C-2 is one of the astronomical reflecting telescopes using Cassegrain designs.\nWhich of the following conclusions logically follows?",
+    "correct": "Observatory Scope C-2 is utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors.",
+    "distractors": [
+      "All entities that are utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors are astronomical reflecting telescopes using Cassegrain designs.",
+      "Observatory Scope C-2 is not utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors.",
+      "Only some astronomical reflecting telescopes using Cassegrain designs are utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors.",
+      "There is insufficient evidence to determine whether Observatory Scope C-2 is utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors."
+    ],
+    "expl": "By Modus Ponens: Because Observatory Scope C-2 belongs to astronomical reflecting telescopes using Cassegrain designs, and all astronomical reflecting telescopes using Cassegrain designs are utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors, Observatory Scope C-2 must be utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors."
+  },
+  {
+    "premise": "Premise 1: No astronomical reflecting telescopes using Cassegrain designs are utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors.\nPremise 2: Observatory Scope C-2 is classified as one of the astronomical reflecting telescopes using Cassegrain designs.\nWhich of the following conclusions logically follows?",
+    "correct": "Observatory Scope C-2 is not utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors.",
+    "distractors": [
+      "Observatory Scope C-2 is utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors.",
+      "All entities that are not utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors are classified as astronomical reflecting telescopes using Cassegrain designs.",
+      "Some astronomical reflecting telescopes using Cassegrain designs can be utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors under special conditions.",
+      "No conclusion can be deduced from the stated premises."
+    ],
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
+  },
+  {
+    "premise": "Premise 1: If an entity is classified as one of the astronomical reflecting telescopes using Cassegrain designs, it must be utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors.\nPremise 2: Specimen Observatory Scope C-2 is verified to NOT be utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Observatory Scope C-2 is not one of the astronomical reflecting telescopes using Cassegrain designs.",
+    "distractors": [
+      "Specimen Observatory Scope C-2 is one of the astronomical reflecting telescopes using Cassegrain designs.",
+      "All entities that are utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors are astronomical reflecting telescopes using Cassegrain designs.",
+      "Specimen Observatory Scope C-2 possesses some alternative attributes of astronomical reflecting telescopes using Cassegrain designs.",
+      "The classification of Specimen Observatory Scope C-2 is completely indeterminate."
+    ],
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
+  },
+  {
+    "premise": "Premise 1: All astronomical reflecting telescopes using Cassegrain designs are utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors.\nPremise 2: Some astronomical research instruments are classified as astronomical reflecting telescopes using Cassegrain designs.\nWhich of the following conclusions logically follows?",
+    "correct": "Some astronomical research instruments are utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors.",
+    "distractors": [
+      "All astronomical research instruments are utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors.",
+      "No astronomical research instruments are utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors.",
+      "All entities that are utilizing folded optical paths between primary parabolic and secondary hyperbolic mirrors are classified as astronomical research instruments.",
+      "None of the astronomical reflecting telescopes using Cassegrain designs belong to astronomical research instruments."
+    ],
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
+  },
+  {
+    "premise": "Premise 1: All stellar remnants classified as white dwarfs are supported against gravitational collapse solely by electron degeneracy pressure.\nPremise 2: Stellar Object Sirius-B is one of the stellar remnants classified as white dwarfs.\nWhich of the following conclusions logically follows?",
+    "correct": "Stellar Object Sirius-B is supported against gravitational collapse solely by electron degeneracy pressure.",
+    "distractors": [
+      "All entities that are supported against gravitational collapse solely by electron degeneracy pressure are stellar remnants classified as white dwarfs.",
+      "Stellar Object Sirius-B is not supported against gravitational collapse solely by electron degeneracy pressure.",
+      "Only some stellar remnants classified as white dwarfs are supported against gravitational collapse solely by electron degeneracy pressure.",
+      "There is insufficient evidence to determine whether Stellar Object Sirius-B is supported against gravitational collapse solely by electron degeneracy pressure."
+    ],
+    "expl": "By Modus Ponens: Because Stellar Object Sirius-B belongs to stellar remnants classified as white dwarfs, and all stellar remnants classified as white dwarfs are supported against gravitational collapse solely by electron degeneracy pressure, Stellar Object Sirius-B must be supported against gravitational collapse solely by electron degeneracy pressure."
+  },
+  {
+    "premise": "Premise 1: No stellar remnants classified as white dwarfs are supported against gravitational collapse solely by electron degeneracy pressure.\nPremise 2: Stellar Object Sirius-B is classified as one of the stellar remnants classified as white dwarfs.\nWhich of the following conclusions logically follows?",
+    "correct": "Stellar Object Sirius-B is not supported against gravitational collapse solely by electron degeneracy pressure.",
+    "distractors": [
+      "Stellar Object Sirius-B is supported against gravitational collapse solely by electron degeneracy pressure.",
+      "All entities that are not supported against gravitational collapse solely by electron degeneracy pressure are classified as stellar remnants classified as white dwarfs.",
+      "Some stellar remnants classified as white dwarfs can be supported against gravitational collapse solely by electron degeneracy pressure under special conditions.",
+      "No conclusion can be deduced from the stated premises."
+    ],
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
+  },
+  {
+    "premise": "Premise 1: If an entity is classified as one of the stellar remnants classified as white dwarfs, it must be supported against gravitational collapse solely by electron degeneracy pressure.\nPremise 2: Specimen Stellar Object Sirius-B is verified to NOT be supported against gravitational collapse solely by electron degeneracy pressure.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Stellar Object Sirius-B is not one of the stellar remnants classified as white dwarfs.",
+    "distractors": [
+      "Specimen Stellar Object Sirius-B is one of the stellar remnants classified as white dwarfs.",
+      "All entities that are supported against gravitational collapse solely by electron degeneracy pressure are stellar remnants classified as white dwarfs.",
+      "Specimen Stellar Object Sirius-B possesses some alternative attributes of stellar remnants classified as white dwarfs.",
+      "The classification of Specimen Stellar Object Sirius-B is completely indeterminate."
+    ],
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
+  },
+  {
+    "premise": "Premise 1: All stellar remnants classified as white dwarfs are supported against gravitational collapse solely by electron degeneracy pressure.\nPremise 2: Some astrophysical compact stars are classified as stellar remnants classified as white dwarfs.\nWhich of the following conclusions logically follows?",
+    "correct": "Some astrophysical compact stars are supported against gravitational collapse solely by electron degeneracy pressure.",
+    "distractors": [
+      "All astrophysical compact stars are supported against gravitational collapse solely by electron degeneracy pressure.",
+      "No astrophysical compact stars are supported against gravitational collapse solely by electron degeneracy pressure.",
+      "All entities that are supported against gravitational collapse solely by electron degeneracy pressure are classified as astrophysical compact stars.",
+      "None of the stellar remnants classified as white dwarfs belong to astrophysical compact stars."
+    ],
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
+  },
+  {
+    "premise": "Premise 1: All spacecraft thermal protection heat shields are composed of phenolic-impregnated carbon ablative composites.\nPremise 2: Heat Shield Probe-7 is one of the spacecraft thermal protection heat shields.\nWhich of the following conclusions logically follows?",
+    "correct": "Heat Shield Probe-7 is composed of phenolic-impregnated carbon ablative composites.",
+    "distractors": [
+      "All entities that are composed of phenolic-impregnated carbon ablative composites are spacecraft thermal protection heat shields.",
+      "Heat Shield Probe-7 is not composed of phenolic-impregnated carbon ablative composites.",
+      "Only some spacecraft thermal protection heat shields are composed of phenolic-impregnated carbon ablative composites.",
+      "There is insufficient evidence to determine whether Heat Shield Probe-7 is composed of phenolic-impregnated carbon ablative composites."
+    ],
+    "expl": "By Modus Ponens: Because Heat Shield Probe-7 belongs to spacecraft thermal protection heat shields, and all spacecraft thermal protection heat shields are composed of phenolic-impregnated carbon ablative composites, Heat Shield Probe-7 must be composed of phenolic-impregnated carbon ablative composites."
+  },
+  {
+    "premise": "Premise 1: No spacecraft thermal protection heat shields are composed of phenolic-impregnated carbon ablative composites.\nPremise 2: Heat Shield Probe-7 is classified as one of the spacecraft thermal protection heat shields.\nWhich of the following conclusions logically follows?",
+    "correct": "Heat Shield Probe-7 is not composed of phenolic-impregnated carbon ablative composites.",
+    "distractors": [
+      "Heat Shield Probe-7 is composed of phenolic-impregnated carbon ablative composites.",
+      "All entities that are not composed of phenolic-impregnated carbon ablative composites are classified as spacecraft thermal protection heat shields.",
+      "Some spacecraft thermal protection heat shields can be composed of phenolic-impregnated carbon ablative composites under special conditions.",
+      "No conclusion can be deduced from the stated premises."
+    ],
+    "expl": "By Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B."
+  },
+  {
+    "premise": "Premise 1: If an entity is classified as one of the spacecraft thermal protection heat shields, it must be composed of phenolic-impregnated carbon ablative composites.\nPremise 2: Specimen Heat Shield Probe-7 is verified to NOT be composed of phenolic-impregnated carbon ablative composites.\nWhich of the following conclusions logically follows?",
+    "correct": "Specimen Heat Shield Probe-7 is not one of the spacecraft thermal protection heat shields.",
+    "distractors": [
+      "Specimen Heat Shield Probe-7 is one of the spacecraft thermal protection heat shields.",
+      "All entities that are composed of phenolic-impregnated carbon ablative composites are spacecraft thermal protection heat shields.",
+      "Specimen Heat Shield Probe-7 possesses some alternative attributes of spacecraft thermal protection heat shields.",
+      "The classification of Specimen Heat Shield Probe-7 is completely indeterminate."
+    ],
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P."
+  },
+  {
+    "premise": "Premise 1: All spacecraft thermal protection heat shields are composed of phenolic-impregnated carbon ablative composites.\nPremise 2: Some atmospheric reentry protective barriers are classified as spacecraft thermal protection heat shields.\nWhich of the following conclusions logically follows?",
+    "correct": "Some atmospheric reentry protective barriers are composed of phenolic-impregnated carbon ablative composites.",
+    "distractors": [
+      "All atmospheric reentry protective barriers are composed of phenolic-impregnated carbon ablative composites.",
+      "No atmospheric reentry protective barriers are composed of phenolic-impregnated carbon ablative composites.",
+      "All entities that are composed of phenolic-impregnated carbon ablative composites are classified as atmospheric reentry protective barriers.",
+      "None of the spacecraft thermal protection heat shields belong to atmospheric reentry protective barriers."
+    ],
+    "expl": "By Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B."
   }
 ];
 export const ODD_WORD_BANK = [

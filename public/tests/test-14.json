@@ -1203,31 +1203,31 @@
       "testId": "test-14"
     },
     {
-      "question": "[Scenario #49] Premise 1: All members of the World Trade Organization are bound by the most-favored-nation trading clause.\nPremise 2: Country Veridia is a member of the World Trade Organization.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All constitutional referendum proposals are contingent upon two-thirds supermajority legislative approval.\nPremise 2: Amendment 45 is one of the constitutional referendum proposals.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Amendment 45 is not contingent upon two-thirds supermajority legislative approval."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are contingent upon two-thirds supermajority legislative approval are constitutional referendum proposals."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some constitutional referendum proposals are contingent upon two-thirds supermajority legislative approval."
         },
         {
           "id": "D",
-          "text": "Conclusion: Country Veridia is bound by the most-favored-nation trading clause."
+          "text": "Amendment 45 is contingent upon two-thirds supermajority legislative approval."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Amendment 45 is contingent upon two-thirds supermajority legislative approval."
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Country Veridia is bound by the most-favored-nation trading clause.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: D**\n\nBy Modus Ponens: Because Amendment 45 belongs to constitutional referendum proposals, and all constitutional referendum proposals are contingent upon two-thirds supermajority legislative approval, Amendment 45 must be contingent upon two-thirds supermajority legislative approval.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-14"
     },
     {
-      "question": "[Scenario #50] Premise 1: No semiconductor device manufactured on a 3-nanometer lithography node can operate without ultraviolet photolithography.\nPremise 2: Microchip Phoenix was manufactured on a 3-nanometer node.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No constitutional referendum proposals are contingent upon two-thirds supermajority legislative approval.\nPremise 2: Amendment 45 is classified as one of the constitutional referendum proposals.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not contingent upon two-thirds supermajority legislative approval are classified as constitutional referendum proposals."
         },
         {
           "id": "B",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Amendment 45 is contingent upon two-thirds supermajority legislative approval."
         },
         {
           "id": "C",
-          "text": "Conclusion: Microchip Phoenix utilized ultraviolet photolithography."
+          "text": "Amendment 45 is not contingent upon two-thirds supermajority legislative approval."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         },
         {
           "id": "E",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some constitutional referendum proposals can be contingent upon two-thirds supermajority legislative approval under special conditions."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Microchip Phoenix utilized ultraviolet photolithography.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-14"
     },
     {
-      "question": "[Scenario #51] Premise 1: All corporate debt instruments rated AAA carry minimal credit default risk.\nPremise 2: Bond Series 2028 is rated AAA.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the constitutional referendum proposals, it must be contingent upon two-thirds supermajority legislative approval.\nPremise 2: Specimen Amendment 45 is verified to NOT be contingent upon two-thirds supermajority legislative approval.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Conclusion: Bond Series 2028 carries minimal credit default risk."
+          "text": "Specimen Amendment 45 is not one of the constitutional referendum proposals."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Amendment 45 is completely indeterminate."
         },
         {
           "id": "C",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Amendment 45 possesses some alternative attributes of constitutional referendum proposals."
         },
         {
           "id": "D",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are contingent upon two-thirds supermajority legislative approval are constitutional referendum proposals."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Amendment 45 is one of the constitutional referendum proposals."
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bond Series 2028 carries minimal credit default risk.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: A**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-14"
     },
     {
-      "question": "[Scenario #52] Premise 1: Whenever an economy experiences stagflation, it exhibits simultaneous high unemployment and elevated inflation.\nPremise 2: Region B is undergoing stagflation.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All constitutional referendum proposals are contingent upon two-thirds supermajority legislative approval.\nPremise 2: Some statutory proposals are classified as constitutional referendum proposals.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are contingent upon two-thirds supermajority legislative approval are classified as statutory proposals."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No statutory proposals are contingent upon two-thirds supermajority legislative approval."
         },
         {
           "id": "C",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the constitutional referendum proposals belong to statutory proposals."
         },
         {
           "id": "D",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All statutory proposals are contingent upon two-thirds supermajority legislative approval."
         },
         {
           "id": "E",
-          "text": "Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation."
+          "text": "Some statutory proposals are contingent upon two-thirds supermajority legislative approval."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,

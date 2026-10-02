@@ -1203,31 +1203,31 @@
       "testId": "test-19"
     },
     {
-      "question": "[Scenario #69] Premise 1: All members of the World Trade Organization are bound by the most-favored-nation trading clause.\nPremise 2: Country Veridia is a member of the World Trade Organization.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All registered anesthesiologists are certified in advanced airway management and life support.\nPremise 2: Dr. Sterling is one of the registered anesthesiologists.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All entities that are certified in advanced airway management and life support are registered anesthesiologists."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "There is insufficient evidence to determine whether Dr. Sterling is certified in advanced airway management and life support."
         },
         {
           "id": "C",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "Dr. Sterling is not certified in advanced airway management and life support."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Only some registered anesthesiologists are certified in advanced airway management and life support."
         },
         {
           "id": "E",
-          "text": "Conclusion: Country Veridia is bound by the most-favored-nation trading clause."
+          "text": "Dr. Sterling is certified in advanced airway management and life support."
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Country Veridia is bound by the most-favored-nation trading clause.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: E**\n\nBy Modus Ponens: Because Dr. Sterling belongs to registered anesthesiologists, and all registered anesthesiologists are certified in advanced airway management and life support, Dr. Sterling must be certified in advanced airway management and life support.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 31,
@@ -1333,31 +1333,31 @@
       "testId": "test-19"
     },
     {
-      "question": "[Scenario #70] Premise 1: No semiconductor device manufactured on a 3-nanometer lithography node can operate without ultraviolet photolithography.\nPremise 2: Microchip Phoenix was manufactured on a 3-nanometer node.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: No registered anesthesiologists are certified in advanced airway management and life support.\nPremise 2: Dr. Sterling is classified as one of the registered anesthesiologists.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are not certified in advanced airway management and life support are classified as registered anesthesiologists."
         },
         {
           "id": "B",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "No conclusion can be deduced from the stated premises."
         },
         {
           "id": "C",
-          "text": "Conclusion: Microchip Phoenix utilized ultraviolet photolithography."
+          "text": "Dr. Sterling is not certified in advanced airway management and life support."
         },
         {
           "id": "D",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Some registered anesthesiologists can be certified in advanced airway management and life support under special conditions."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Dr. Sterling is certified in advanced airway management and life support."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Microchip Phoenix utilized ultraviolet photolithography.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Celarent (Universal Negative): If set A has zero overlap with B, and X belongs to A, X cannot have property B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 35,
@@ -1395,31 +1395,31 @@
       "testId": "test-19"
     },
     {
-      "question": "[Scenario #71] Premise 1: All corporate debt instruments rated AAA carry minimal credit default risk.\nPremise 2: Bond Series 2028 is rated AAA.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: If an entity is classified as one of the registered anesthesiologists, it must be certified in advanced airway management and life support.\nPremise 2: Specimen Dr. Sterling is verified to NOT be certified in advanced airway management and life support.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "Specimen Dr. Sterling possesses some alternative attributes of registered anesthesiologists."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "All entities that are certified in advanced airway management and life support are registered anesthesiologists."
         },
         {
           "id": "C",
-          "text": "Conclusion: Bond Series 2028 carries minimal credit default risk."
+          "text": "Specimen Dr. Sterling is not one of the registered anesthesiologists."
         },
         {
           "id": "D",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "The classification of Specimen Dr. Sterling is completely indeterminate."
         },
         {
           "id": "E",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "Specimen Dr. Sterling is one of the registered anesthesiologists."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Bond Series 2028 carries minimal credit default risk.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Modus Tollens: If P implies Q, then Not Q implies Not P.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 37,
@@ -1494,31 +1494,31 @@
       "testId": "test-19"
     },
     {
-      "question": "[Scenario #72] Premise 1: Whenever an economy experiences stagflation, it exhibits simultaneous high unemployment and elevated inflation.\nPremise 2: Region B is undergoing stagflation.\nWhich conclusion follows with absolute logical necessity?",
+      "question": "Premise 1: All registered anesthesiologists are certified in advanced airway management and life support.\nPremise 2: Some hospital surgical clinicians are classified as registered anesthesiologists.\nWhich of the following conclusions logically follows?",
       "options": [
         {
           "id": "A",
-          "text": "Only a probabilistic likelihood exists, with no deductive certainty."
+          "text": "All entities that are certified in advanced airway management and life support are classified as hospital surgical clinicians."
         },
         {
           "id": "B",
-          "text": "The opposite of the stated conclusion must necessarily be valid."
+          "text": "No hospital surgical clinicians are certified in advanced airway management and life support."
         },
         {
           "id": "C",
-          "text": "Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation."
+          "text": "Some hospital surgical clinicians are certified in advanced airway management and life support."
         },
         {
           "id": "D",
-          "text": "No definitive deduction is logically warranted from the premises."
+          "text": "All hospital surgical clinicians are certified in advanced airway management and life support."
         },
         {
           "id": "E",
-          "text": "Premise 1 contradicts Premise 2."
+          "text": "None of the registered anesthesiologists belong to hospital surgical clinicians."
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C**\n\nBy direct deductive syllogism (Modus Ponens): Combining the universal premise with the particular factual observation yields: \"Conclusion: Region B exhibits simultaneous high unemployment and elevated inflation.\".\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
+      "explanation": "**Correct Answer: C**\n\nBy Darii: If all A are B, and some C are A, then those specific C that are A are also B. Therefore, some C are B.\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.",
       "category": "verbal",
       "subType": "syllogism",
       "id": 40,
