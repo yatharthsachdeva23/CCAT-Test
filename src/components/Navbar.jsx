@@ -56,6 +56,23 @@ export default function Navbar({ activeTab, setActiveTab, attemptsCount = 0, bes
           </button>
 
           <button
+            onClick={() => setActiveTab('ultrafast')}
+            className={`px-3 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 transition-all ${
+              activeTab === 'ultrafast'
+                ? 'bg-gradient-to-r from-amber-500/20 to-orange-500/20 text-amber-300 border border-amber-500/40 shadow-inner'
+                : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'
+            }`}
+          >
+            <Zap className="w-4 h-4 text-amber-400" />
+            <span className="flex items-center gap-1.5">
+              <span>Ultra Fast</span>
+              <span className="text-[10px] uppercase font-black px-1.5 py-0.2 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                1-Min
+              </span>
+            </span>
+          </button>
+
+          <button
             onClick={() => setActiveTab('coach')}
             className={`px-3 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 transition-all ${
               activeTab === 'coach'

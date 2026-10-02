@@ -4,6 +4,7 @@ import Dashboard from './components/Dashboard.jsx';
 import TestRunner from './components/TestRunner.jsx';
 import ScoreReview from './components/ScoreReview.jsx';
 import AICoach from './components/AICoach.jsx';
+import UltraFastMode from './components/UltraFastMode.jsx';
 import { buildTest } from './data/testCatalog.js';
 import { getAttempts, saveAttempt, clearAllAttempts, getActiveSession, clearActiveSession } from './utils/storage.js';
 
@@ -141,6 +142,7 @@ export default function App() {
             onReviewAttempt={handleReviewAttempt}
             onOpenCoach={() => setActiveTab('coach')}
             onClearHistory={handleClearHistory}
+            onOpenUltraFast={() => setActiveTab('ultrafast')}
           />
         )}
 
@@ -151,6 +153,14 @@ export default function App() {
             onReviewAttempt={handleReviewAttempt}
             onOpenCoach={() => setActiveTab('coach')}
             onClearHistory={handleClearHistory}
+            onOpenUltraFast={() => setActiveTab('ultrafast')}
+          />
+        )}
+
+        {activeTab === 'ultrafast' && (
+          <UltraFastMode
+            attempts={attempts}
+            onBackToDashboard={() => setActiveTab('dashboard')}
           />
         )}
 

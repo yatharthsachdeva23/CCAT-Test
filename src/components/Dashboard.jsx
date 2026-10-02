@@ -11,7 +11,8 @@ export default function Dashboard({
   onStartTest, 
   onReviewAttempt, 
   onOpenCoach,
-  onClearHistory
+  onClearHistory,
+  onOpenUltraFast
 }) {
   const latestAttempt = attempts[0] || null;
   const latestAnalysis = latestAttempt ? analyzeAttemptPatterns(latestAttempt) : null;
@@ -65,6 +66,14 @@ export default function Dashboard({
               >
                 <Play className="w-4 h-4 fill-white" />
                 <span>Start Simulation #1</span>
+              </button>
+
+              <button
+                onClick={onOpenUltraFast}
+                className="px-5 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500/20 to-orange-500/20 hover:from-amber-500/30 hover:to-orange-500/30 text-amber-300 border border-amber-500/40 font-bold text-sm flex items-center gap-2 transition-all hover:border-amber-500/60 cursor-pointer shadow-lg"
+              >
+                <Zap className="w-4 h-4 text-amber-400 fill-amber-400" />
+                <span>Ultra Fast Sprints (1-Min)</span>
               </button>
 
               <button
@@ -166,6 +175,34 @@ export default function Dashboard({
           </div>
         </div>
       )}
+
+      {/* --- ULTRA FAST SPEED SPRINTS CARD --- */}
+      <div className="bg-gradient-to-r from-amber-950/40 via-slate-900 to-orange-950/30 border border-amber-500/30 rounded-3xl p-6 shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-6 relative overflow-hidden">
+        <div className="space-y-2 max-w-2xl">
+          <div className="flex items-center gap-2">
+            <span className="px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30 text-xs font-black uppercase tracking-wider flex items-center gap-1">
+              <Zap className="w-3.5 h-3.5 fill-amber-400" />
+              <span>NEW: Ultra Fast Speed Protocol</span>
+            </span>
+            <span className="text-xs text-slate-400 font-mono">~1-Min Sprints</span>
+          </div>
+          <h3 className="text-xl font-extrabold text-white">
+            High-Speed Reflex Training by Subject
+          </h3>
+          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Targeted speed rounds in <strong>English (7s)</strong>, <strong>Maths (15s)</strong>, or <strong>Spatial (10s)</strong>.
+            Tests your rapid instinct using fresh variations of concepts you already practiced.
+          </p>
+        </div>
+
+        <button
+          onClick={onOpenUltraFast}
+          className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black text-sm shadow-xl shadow-amber-500/25 flex items-center justify-center gap-2 transition-all hover:scale-105 cursor-pointer shrink-0"
+        >
+          <Zap className="w-4 h-4 fill-slate-950" />
+          <span>Launch Ultra Fast Sprint</span>
+        </button>
+      </div>
 
       {/* --- 30 TEST SUITE SELECTOR (NO CATEGORIZATION) --- */}
       <div className="space-y-4">
