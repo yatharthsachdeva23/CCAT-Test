@@ -193,7 +193,24 @@ export default function SVGQuestionRenderer({ question }) {
     return (
       <div className="my-4 p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-center justify-center gap-2 text-slate-400 text-xs font-medium">
         <span className="text-sky-400 font-bold">ℹ️ Tip:</span>
-        <span>Carefully inspect each of the five figures below (A through E) to find the outlier that violates the geometric rule.</span>
+        <span>Carefully inspect each of the five figures below (A through E) to find the figure that violates the geometric rule.</span>
+      </div>
+    );
+  }
+
+  // Case 6: 3D Cube Nets, Paper Folding, or Reference Diagrams
+  if (question.figureSvg) {
+    return (
+      <div className="my-6 p-4 sm:p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl flex flex-col items-center">
+        {question.figureLabel && (
+          <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 text-center">
+            {question.figureLabel}
+          </p>
+        )}
+        <div 
+          className="w-full flex items-center justify-center max-w-sm"
+          dangerouslySetInnerHTML={{ __html: question.figureSvg }}
+        />
       </div>
     );
   }
