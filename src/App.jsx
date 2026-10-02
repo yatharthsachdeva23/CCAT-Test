@@ -1,122 +1,138 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import React, { useState, useEffect } from 'react';
+import Navbar from './components/Navbar.jsx';
+import Dashboard from './components/Dashboard.jsx';
+import TestRunner from './components/TestRunner.jsx';
+import ScoreReview from './components/ScoreReview.jsx';
+import AICoach from './components/AICoach.jsx';
+import { buildTest } from './data/testCatalog.js';
+import { getAttempts, saveAttempt, clearAllAttempts } from './utils/storage.js';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [activeTab, setActiveTab] = useState('dashboard'); // 'dashboard', 'tests', 'coach', 'runner', 'review'
+  const [attempts, setAttempts] = useState([]);
+  const [activeTest, setActiveTest] = useState(null);
+  const [activeReviewAttempt, setActiveReviewAttempt] = useState(null);
+
+  // Load saved attempts on mount
+  useEffect(() => {
+    const saved = getAttempts();
+    setAttempts(saved);
+  }, []);
+
+  const handleStartTest = (testNumber = 1) => {
+    const testData = buildTest(testNumber);
+    setActiveTest(testData);
+    setActiveTab('runner');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleCompleteTest = (attemptResult) => {
+    const updated = saveAttempt(attemptResult);
+    setAttempts(updated);
+    setActiveReviewAttempt(attemptResult);
+    setActiveTest(null);
+    setActiveTab('review');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleReviewAttempt = (attempt) => {
+    setActiveReviewAttempt(attempt);
+    setActiveTab('review');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleRetakeTest = (testId) => {
+    const match = testId.match(/test-(\d+)/);
+    const testNum = match ? parseInt(match[1], 10) : 1;
+    handleStartTest(testNum);
+  };
+
+  const handleAskCoach = (attempt) => {
+    setActiveReviewAttempt(attempt);
+    setActiveTab('coach');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleClearHistory = () => {
+    clearAllAttempts();
+    setAttempts([]);
+    setActiveReviewAttempt(null);
+  };
+
+  // Calculate best overall score for Navbar
+  const bestScore = attempts.reduce((max, a) => {
+    const score = Object.values(a.responses || {}).filter(r => r.isCorrect).length;
+    return Math.max(max, score);
+  }, 0);
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
+      
+      {/* Top Navigation Bar (Hidden during active test for full focus) */}
+      {activeTab !== 'runner' && (
+        <Navbar 
+          activeTab={activeTab} 
+          setActiveTab={setActiveTab} 
+          attemptsCount={attempts.length}
+          bestScore={bestScore}
+        />
+      )}
 
-      <div className="ticks"></div>
+      {/* Main Content Area */}
+      <main className="flex-1">
+        {activeTab === 'dashboard' && (
+          <Dashboard
+            attempts={attempts}
+            onStartTest={handleStartTest}
+            onReviewAttempt={handleReviewAttempt}
+            onOpenCoach={() => setActiveTab('coach')}
+            onClearHistory={handleClearHistory}
+          />
+        )}
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        {activeTab === 'tests' && (
+          <Dashboard
+            attempts={attempts}
+            onStartTest={handleStartTest}
+            onReviewAttempt={handleReviewAttempt}
+            onOpenCoach={() => setActiveTab('coach')}
+            onClearHistory={handleClearHistory}
+          />
+        )}
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+        {activeTab === 'runner' && activeTest && (
+          <TestRunner
+            testData={activeTest}
+            onCompleteTest={handleCompleteTest}
+            onExitTest={() => setActiveTab('dashboard')}
+          />
+        )}
+
+        {activeTab === 'review' && activeReviewAttempt && (
+          <ScoreReview
+            attempt={activeReviewAttempt}
+            onBackToDashboard={() => setActiveTab('dashboard')}
+            onRetakeTest={handleRetakeTest}
+            onAskCoach={handleAskCoach}
+          />
+        )}
+
+        {activeTab === 'coach' && (
+          <AICoach
+            attempts={attempts}
+            activeAttempt={activeReviewAttempt}
+            onSelectAttempt={handleReviewAttempt}
+          />
+        )}
+      </main>
+
+      {/* Footer (Hidden during active test) */}
+      {activeTab !== 'runner' && (
+        <footer className="border-t border-slate-900 py-6 text-center text-xs text-slate-500">
+          <p>Criteria Cognitive Aptitude Test (CCAT) Preparation Simulator • Strict Forward-Only • Pure Vector SVGs</p>
+        </footer>
+      )}
+
+    </div>
+  );
 }
-
-export default App
