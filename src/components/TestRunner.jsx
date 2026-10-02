@@ -2,71 +2,73 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Clock, AlertTriangle, ArrowRight, SkipForward, CheckCircle2 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import SVGQuestionRenderer from './SVGQuestionRenderer.jsx';
+import { saveActiveSession, getActiveSession, clearActiveSession } from '../utils/storage.js';
 
 export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
   const questions = testData.questions;
   const timeLimit = testData.timeLimitSec || 900; // 15 mins (900s)
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // Check if there is an active session in progress for this test
+  const existingSession = getActiveSession();
+  const isResuming = existingSession && existingSession.testId === testData.id;
+
+  const initialIndex = isResuming ? Math.min(questions.length - 1, existingSession.currentIndex || 0) : 0;
+  const initialResponses = isResuming && existingSession.responses ? existingSession.responses : {};
+  const initialStartTime = isResuming && existingSession.startTime ? existingSession.startTime : Date.now();
+
+  const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [selectedOption, setSelectedOption] = useState(null);
-  const [timeLeft, setTimeLeft] = useState(timeLimit);
-  const [responses, setResponses] = useState({});
+  const [timeLeft, setTimeLeft] = useState(() => {
+    const elapsed = Math.floor((Date.now() - initialStartTime) / 1000);
+    return Math.max(0, timeLimit - elapsed);
+  });
+  const [responses, setResponses] = useState(initialResponses);
   const [isFinishing, setIsFinishing] = useState(false);
 
   // High precision per-question timing & attempt timing refs
-  const testStartTimeRef = useRef(Date.now());
+  const testStartTimeRef = useRef(initialStartTime);
   const questionStartTimeRef = useRef(performance.now());
   const timerIntervalRef = useRef(null);
   const isFinishingRef = useRef(false);
-  const responsesRef = useRef({});
+  const responsesRef = useRef(initialResponses);
+  const currentIndexRef = useRef(initialIndex);
+  const selectedOptionRef = useRef(null);
+  const finishTestRef = useRef(null);
+
+  // Keep all refs in sync with live render state
+  useEffect(() => {
+    currentIndexRef.current = currentIndex;
+  }, [currentIndex]);
+
+  useEffect(() => {
+    selectedOptionRef.current = selectedOption;
+  }, [selectedOption]);
+
+  useEffect(() => {
+    responsesRef.current = responses;
+  }, [responses]);
 
   const currentQ = questions[currentIndex];
 
-  // Wall-Clock Accurate 15-Minute Countdown Timer
-  useEffect(() => {
-    testStartTimeRef.current = Date.now();
-    isFinishingRef.current = false;
-    responsesRef.current = {};
-
-    timerIntervalRef.current = setInterval(() => {
-      const elapsed = Math.floor((Date.now() - testStartTimeRef.current) / 1000);
-      const remaining = Math.max(0, timeLimit - elapsed);
-      setTimeLeft(remaining);
-
-      if (remaining <= 0 && !isFinishingRef.current) {
-        clearInterval(timerIntervalRef.current);
-        finishTest(true, false);
-      }
-    }, 500);
-
-    return () => {
-      if (timerIntervalRef.current) clearInterval(timerIntervalRef.current);
-    };
-  }, [testData.id]);
-
-  // Reset question timer on current index change
-  useEffect(() => {
-    questionStartTimeRef.current = performance.now();
-    setSelectedOption(null);
-  }, [currentIndex]);
-
   const recordCurrentResponse = (chosenOption, isSkipped = false) => {
+    const activeIdx = currentIndexRef.current;
+    const activeQ = questions[activeIdx] || currentQ;
     const elapsedMs = performance.now() - questionStartTimeRef.current;
     const timeSpentSec = Math.max(0.5, Math.round(elapsedMs / 100) / 10);
 
-    const isCorrect = !isSkipped && chosenOption === currentQ.correctOption;
+    const isCorrect = !isSkipped && chosenOption === activeQ.correctOption;
 
     return {
-      questionId: currentQ.id,
-      category: currentQ.category,
-      subType: currentQ.subType,
+      questionId: activeQ.id,
+      category: activeQ.category,
+      subType: activeQ.subType,
       selectedOption: chosenOption || null,
-      correctOption: currentQ.correctOption,
+      correctOption: activeQ.correctOption,
       isCorrect,
       isSkipped,
       timeSpentSec,
-      questionText: currentQ.question,
-      explanation: currentQ.explanation
+      questionText: activeQ.question,
+      explanation: activeQ.explanation
     };
   };
 
@@ -74,12 +76,24 @@ export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
     if (!selectedOption) return; // Prevent advancing without choice if Next is pressed
 
     const response = recordCurrentResponse(selectedOption, false);
-    const updatedResponses = { ...responsesRef.current, [currentQ.id]: response };
+    const updatedResponses = { ...responsesRef.current, [response.questionId]: response };
     responsesRef.current = updatedResponses;
     setResponses(updatedResponses);
 
-    if (currentIndex + 1 < questions.length) {
-      setCurrentIndex(prev => prev + 1);
+    const nextIndex = currentIndex + 1;
+
+    // Incremental Auto-Save to localStorage after every single question
+    saveActiveSession({
+      testId: testData.id,
+      testTitle: testData.title,
+      currentIndex: nextIndex,
+      responses: updatedResponses,
+      startTime: testStartTimeRef.current,
+      timeLimitSec: timeLimit
+    });
+
+    if (nextIndex < questions.length) {
+      setCurrentIndex(nextIndex);
     } else {
       finishTest(false, false);
     }
@@ -87,12 +101,24 @@ export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
 
   const handleSkip = () => {
     const response = recordCurrentResponse(null, true);
-    const updatedResponses = { ...responsesRef.current, [currentQ.id]: response };
+    const updatedResponses = { ...responsesRef.current, [response.questionId]: response };
     responsesRef.current = updatedResponses;
     setResponses(updatedResponses);
 
-    if (currentIndex + 1 < questions.length) {
-      setCurrentIndex(prev => prev + 1);
+    const nextIndex = currentIndex + 1;
+
+    // Incremental Auto-Save to localStorage after every single question
+    saveActiveSession({
+      testId: testData.id,
+      testTitle: testData.title,
+      currentIndex: nextIndex,
+      responses: updatedResponses,
+      startTime: testStartTimeRef.current,
+      timeLimitSec: timeLimit
+    });
+
+    if (nextIndex < questions.length) {
+      setCurrentIndex(nextIndex);
     } else {
       finishTest(false, false);
     }
@@ -110,27 +136,35 @@ export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
     );
     const totalSecondsUsed = timeRanOut ? timeLimit : elapsedRealSec;
 
-    // Start with all recorded responses
+    // Start with all recorded responses from ref and localStorage backup
     let completeResponses = { ...responsesRef.current };
+    const savedSession = getActiveSession();
+    if (savedSession && savedSession.testId === testData.id && savedSession.responses) {
+      completeResponses = { ...savedSession.responses, ...completeResponses };
+    }
 
-    // Record the current question if not yet saved
-    if (!completeResponses[currentQ.id]) {
+    const activeIdx = currentIndexRef.current;
+    const activeQ = questions[activeIdx] || questions[0];
+    const activeSelected = selectedOptionRef.current;
+
+    // Record the active question if not yet committed
+    if (activeQ && !completeResponses[activeQ.id]) {
       const activeElapsedMs = performance.now() - questionStartTimeRef.current;
       const activeTimeSec = Math.max(0.5, Math.round(activeElapsedMs / 100) / 10);
-      const isSelected = selectedOption !== null;
-      const isCorrect = isSelected && selectedOption === currentQ.correctOption;
+      const isSelected = activeSelected !== null;
+      const isCorrect = isSelected && activeSelected === activeQ.correctOption;
 
-      completeResponses[currentQ.id] = {
-        questionId: currentQ.id,
-        category: currentQ.category,
-        subType: currentQ.subType,
-        selectedOption: selectedOption || null,
-        correctOption: currentQ.correctOption,
+      completeResponses[activeQ.id] = {
+        questionId: activeQ.id,
+        category: activeQ.category,
+        subType: activeQ.subType,
+        selectedOption: activeSelected || null,
+        correctOption: activeQ.correctOption,
         isCorrect,
         isSkipped: !isSelected,
         timeSpentSec: activeTimeSec,
-        questionText: currentQ.question,
-        explanation: currentQ.explanation
+        questionText: activeQ.question,
+        explanation: activeQ.explanation
       };
     }
 
@@ -152,6 +186,9 @@ export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
       }
     });
 
+    // Clear active session from localStorage now that test is finished
+    clearActiveSession();
+
     // Fire celebration confetti if candidate attempted questions
     try {
       confetti({
@@ -170,13 +207,54 @@ export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
       timeLimitSec: timeLimit,
       totalSecondsUsed,
       timeRanOut,
-      endedEarly: endEarly || (!timeRanOut && currentIndex + 1 < questions.length),
+      endedEarly: endEarly || (!timeRanOut && activeIdx + 1 < questions.length),
       responses: completeResponses,
       questions: questions
     };
 
     onCompleteTest(attemptResult);
   };
+
+  // Always keep finishTestRef pointing to the latest finishTest function
+  finishTestRef.current = finishTest;
+
+  // Wall-Clock Accurate 15-Minute Countdown Timer
+  useEffect(() => {
+    isFinishingRef.current = false;
+
+    // Immediately save initial active session
+    saveActiveSession({
+      testId: testData.id,
+      testTitle: testData.title,
+      currentIndex: initialIndex,
+      responses: responsesRef.current,
+      startTime: testStartTimeRef.current,
+      timeLimitSec: timeLimit
+    });
+
+    timerIntervalRef.current = setInterval(() => {
+      const elapsed = Math.floor((Date.now() - testStartTimeRef.current) / 1000);
+      const remaining = Math.max(0, timeLimit - elapsed);
+      setTimeLeft(remaining);
+
+      if (remaining <= 0 && !isFinishingRef.current) {
+        clearInterval(timerIntervalRef.current);
+        if (finishTestRef.current) {
+          finishTestRef.current(true, false);
+        }
+      }
+    }, 500);
+
+    return () => {
+      if (timerIntervalRef.current) clearInterval(timerIntervalRef.current);
+    };
+  }, [testData.id, timeLimit]);
+
+  // Reset question timer on current index change
+  useEffect(() => {
+    questionStartTimeRef.current = performance.now();
+    setSelectedOption(null);
+  }, [currentIndex]);
 
   // Timer formatting
   const minutes = Math.floor(timeLeft / 60);

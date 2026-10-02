@@ -5,7 +5,7 @@ import TestRunner from './components/TestRunner.jsx';
 import ScoreReview from './components/ScoreReview.jsx';
 import AICoach from './components/AICoach.jsx';
 import { buildTest } from './data/testCatalog.js';
-import { getAttempts, saveAttempt, clearAllAttempts } from './utils/storage.js';
+import { getAttempts, saveAttempt, clearAllAttempts, getActiveSession, clearActiveSession } from './utils/storage.js';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard'); // 'dashboard', 'tests', 'coach', 'runner', 'review'
@@ -13,9 +13,63 @@ export default function App() {
   const [activeTest, setActiveTest] = useState(null);
   const [activeReviewAttempt, setActiveReviewAttempt] = useState(null);
 
-  // Load saved attempts on mount
+  // Load saved attempts and auto-recover or resume any in-progress session
   useEffect(() => {
-    const saved = getAttempts();
+    let saved = getAttempts();
+
+    const activeSession = getActiveSession();
+    if (activeSession && activeSession.testId) {
+      const elapsed = Math.floor((Date.now() - (activeSession.startTime || Date.now())) / 1000);
+      const timeLimit = activeSession.timeLimitSec || 900;
+      const match = activeSession.testId.match(/test-(\d+)/);
+      const testNum = match ? parseInt(match[1], 10) : 1;
+      const testData = buildTest(testNum);
+
+      if (elapsed < timeLimit) {
+        // Test still within 15 min window: restore session seamlessly!
+        setAttempts(saved);
+        setActiveTest(testData);
+        setActiveTab('runner');
+        return;
+      } else {
+        // Clock expired while away: save all answered questions into historical attempts
+        let completeResponses = { ...(activeSession.responses || {}) };
+        testData.questions.forEach(q => {
+          if (!completeResponses[q.id]) {
+            completeResponses[q.id] = {
+              questionId: q.id,
+              category: q.category,
+              subType: q.subType,
+              selectedOption: null,
+              correctOption: q.correctOption,
+              isCorrect: false,
+              isSkipped: true,
+              timeSpentSec: 0,
+              questionText: q.question,
+              explanation: q.explanation
+            };
+          }
+        });
+
+        const recoveredAttempt = {
+          id: `attempt_${activeSession.startTime || Date.now()}`,
+          testId: testData.id,
+          testTitle: testData.title,
+          timestamp: new Date(activeSession.startTime || Date.now()).toISOString(),
+          totalQuestions: testData.questions.length,
+          timeLimitSec: timeLimit,
+          totalSecondsUsed: timeLimit,
+          timeRanOut: true,
+          endedEarly: false,
+          responses: completeResponses,
+          questions: testData.questions
+        };
+
+        saved = saveAttempt(recoveredAttempt);
+        clearActiveSession();
+      }
+    }
+
     setAttempts(saved);
   }, []);
 

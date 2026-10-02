@@ -60,3 +60,33 @@ export function saveSettings(settings) {
     return false;
   }
 }
+
+const ACTIVE_SESSION_KEY = 'ccat_prep_active_session_v1';
+
+export function saveActiveSession(sessionData) {
+  try {
+    localStorage.setItem(ACTIVE_SESSION_KEY, JSON.stringify(sessionData));
+    return true;
+  } catch (err) {
+    console.error('Failed to auto-save active test session', err);
+    return false;
+  }
+}
+
+export function getActiveSession() {
+  try {
+    const raw = localStorage.getItem(ACTIVE_SESSION_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch (err) {
+    return null;
+  }
+}
+
+export function clearActiveSession() {
+  try {
+    localStorage.removeItem(ACTIVE_SESSION_KEY);
+    return true;
+  } catch (err) {
+    return false;
+  }
+}
