@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Sparkles, Send, Bot, User, AlertTriangle, Zap, Clock, Trophy, HelpCircle, Key, Check, Target } from 'lucide-react';
-import { generateCoachInsight, analyzeAttemptPatterns } from '../data/patternEngine.js';
+import { Sparkles, Send, Bot, User, AlertTriangle, Zap, Clock, Trophy, HelpCircle, Key, Check, Target, RefreshCw } from 'lucide-react';
+import { analyzeAttemptPatterns } from '../data/patternEngine.js';
 import { getSettings, saveSettings, DEFAULT_GEMINI_KEY } from '../utils/storage.js';
 
 export default function AICoach({ attempts = [], activeAttempt = null, onSelectAttempt }) {
@@ -11,28 +11,24 @@ export default function AICoach({ attempts = [], activeAttempt = null, onSelectA
   const [apiKey, setApiKey] = useState('');
   const [showKeyInput, setShowKeyInput] = useState(false);
   const [keySaved, setKeySaved] = useState(false);
-  const [apiModel, setApiModel] = useState('Gemini 2.5 Flash');
+  const [activeModelName, setActiveModelName] = useState('Gemini 2.5 / 3.8 Flash');
 
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
     const s = getSettings();
-    setApiKey(s.geminiApiKey || DEFAULT_GEMINI_KEY);
+    const effectiveKey = (s.geminiApiKey && s.geminiApiKey.trim().length > 10) ? s.geminiApiKey.trim() : DEFAULT_GEMINI_KEY;
+    setApiKey(effectiveKey);
 
-    // Initial greeting tailored for 45+ target
-    const initialTarget = attempts.find(a => a.id === selectedAttemptId) || attempts[0] || null;
-    const initialText = initialTarget 
-      ? generateCoachInsight('overview', attempts, initialTarget)
-      : `### Welcome to your CCAT Elite AI Coach! 🧠🎯
-**Target Goal: 45+ / 50 (Top 0.1% Score Bracket)**
+    const initialText = `### 🧠 Real Google Gemini CCAT Coach (Connected)
+**Target: 45+ / 50 (Top 0.1% Elite Bracket)**
 
-I have direct access to Google Gemini and your entire test telemetry. 
-To reach 45+, you need:
-1. **Speed Benchmark:** Answering 47+ questions in 15 minutes (~18.0s per question).
-2. **Velocity Allocation:** Verbal in $\\le$ 10s, Spatial in $\\le$ 12s, Math in $\\le$ 22s.
-3. **Zero Time Traps:** Never spending $>25$ seconds on any question you are unsure of.
+I am connected directly to **Google Gemini** with live access to your second-by-second question telemetry.
 
-Take a test from the **Test Suite** tab, and I will analyze your exact second-by-second question telemetry to show you where you lost points or time!`;
+Click any question below or type your own question to get real-time, personalized AI coaching:
+* *"Where are my exact time traps?"*
+* *"How do I increase my speed to reach 45+?"*
+* *"Analyze my latest test second-by-second."*`;
 
     setMessages([
       {
@@ -65,11 +61,11 @@ Take a test from the **Test Suite** tab, and I will analyze your exact second-by
     setInputQuery('');
     setIsTyping(true);
 
-    const activeKey = apiKey || DEFAULT_GEMINI_KEY;
+    const effectiveKey = (apiKey && apiKey.trim().length > 10) ? apiKey.trim() : DEFAULT_GEMINI_KEY;
 
-    // Call Real Google Gemini AI with full context
+    // Call Real Google Gemini AI with full context (NO hardcoded fallbacks!)
     try {
-      const response = await callGeminiWithTelemetry(query, targetAttempt, attempts, activeKey, messages);
+      const response = await callGeminiWithTelemetry(query, targetAttempt, attempts, effectiveKey, messages);
       setIsTyping(false);
       setMessages(prev => [
         ...prev,
@@ -81,15 +77,14 @@ Take a test from the **Test Suite** tab, and I will analyze your exact second-by
         }
       ]);
     } catch (err) {
-      console.warn('Gemini API call failed, falling back to local diagnostic engine', err);
-      const fallbackResponse = generateCoachInsight(query, attempts, targetAttempt);
+      console.error('Gemini API call failed:', err);
       setIsTyping(false);
       setMessages(prev => [
         ...prev,
         {
           id: `ai-${Date.now()}`,
           sender: 'ai',
-          text: fallbackResponse,
+          text: `⚠️ **Google Gemini Connection Error:**\n\n${err.message || 'Unable to connect to Google Gemini API.'}\n\nPlease check your internet connection or verify your API key in the top right.`,
           timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
         }
       ]);
@@ -128,12 +123,13 @@ Take a test from the **Test Suite** tab, and I will analyze your exact second-by
                 <Target className="w-3 h-3 text-emerald-400" />
                 Target: 45+ Elite
               </span>
-              <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">
-                {apiModel}
+              <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 flex items-center gap-1">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Real Gemini AI
               </span>
             </h2>
             <p className="text-xs text-slate-400">
-              Powered by real Google Gemini with full access to your test attempts and per-question timing telemetry.
+              Live Google Gemini LLM with full context of every question, second-by-second telemetry, and attempts.
             </p>
           </div>
         </div>
@@ -159,7 +155,7 @@ Take a test from the **Test Suite** tab, and I will analyze your exact second-by
 
           <button
             onClick={() => setShowKeyInput(!showKeyInput)}
-            className="p-2 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-700 transition-colors flex items-center gap-1.5 text-xs font-semibold"
+            className="p-2 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-700 transition-colors flex items-center gap-1.5 text-xs font-semibold cursor-pointer"
             title="Configure Gemini API Key"
           >
             <Key className="w-3.5 h-3.5 text-purple-400" />
@@ -177,7 +173,7 @@ Take a test from the **Test Suite** tab, and I will analyze your exact second-by
               <span>Google Gemini API Key Configured</span>
             </p>
             <p className="text-[11px] text-slate-400">
-              Your API key is securely stored in your browser's local storage and used directly for real-time cognitive coaching.
+              Your key is saved in localStorage and used directly for real Gemini model requests.
             </p>
           </div>
           <div className="flex items-center gap-2 w-full sm:w-auto">
@@ -190,7 +186,7 @@ Take a test from the **Test Suite** tab, and I will analyze your exact second-by
             />
             <button
               onClick={handleSaveKey}
-              className="px-3.5 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs flex items-center gap-1 transition-colors"
+              className="px-3.5 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs flex items-center gap-1 transition-colors cursor-pointer"
             >
               {keySaved ? <Check className="w-3.5 h-3.5" /> : 'Save Key'}
             </button>
@@ -242,7 +238,7 @@ Take a test from the **Test Suite** tab, and I will analyze your exact second-by
               <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-bounce" />
               <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-bounce [animation-delay:0.2s]" />
               <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-bounce [animation-delay:0.4s]" />
-              <span className="ml-2 font-medium text-slate-300">Google Gemini is analyzing your attempt telemetry...</span>
+              <span className="ml-2 font-medium text-slate-300">Google Gemini is thinking in real time...</span>
             </div>
           </div>
         )}
@@ -302,7 +298,7 @@ async function callGeminiWithTelemetry(query, attempt, allAttempts, apiKey, prev
   if (attempt && attempt.responses) {
     const list = Object.values(attempt.responses);
     detailedQuestionsSummary = list.map(r => {
-      const outcome = r.isCorrect ? 'CORRECT' : r.isSkipped ? 'SKIPPED' : `WRONG (Chosen: ${r.selectedOption}, Correct: ${r.correctOption})`;
+      const outcome = r.isCorrect ? 'CORRECT' : r.isSkipped ? 'SKIPPED' : `WRONG (User: ${r.selectedOption}, Correct: ${r.correctOption})`;
       return `Q#${r.questionId} [${r.category.toUpperCase()}] - Time: ${r.timeSpentSec}s - ${outcome}`;
     }).join('\n');
   }
@@ -348,8 +344,9 @@ INSTRUCTIONS FOR YOUR RESPONSE:
 4. Format using clean GitHub markdown with bold key points and bullet lists.
 `.trim();
 
-  // Try gemini-2.5-flash first, fallback to gemini-1.5-flash
-  const models = ['gemini-2.5-flash', 'gemini-1.5-flash'];
+  // Try gemini-2.5-flash and gemini-3.8-flash
+  const models = ['gemini-2.5-flash', 'gemini-3.8-flash'];
+  let lastErrorMessage = '';
   
   for (const model of models) {
     try {
@@ -370,10 +367,13 @@ INSTRUCTIONS FOR YOUR RESPONSE:
       if (data.candidates && data.candidates[0]?.content?.parts[0]?.text) {
         return data.candidates[0].content.parts[0].text;
       }
+      if (data.error) {
+        lastErrorMessage = `${model}: ${data.error.message || JSON.stringify(data.error)}`;
+      }
     } catch (e) {
-      console.warn(`Attempt with ${model} failed, trying next...`, e);
+      lastErrorMessage = `${model}: ${e.message}`;
     }
   }
 
-  throw new Error('Could not get response from Gemini models');
+  throw new Error(lastErrorMessage || 'Failed to receive candidate response from Gemini API.');
 }
