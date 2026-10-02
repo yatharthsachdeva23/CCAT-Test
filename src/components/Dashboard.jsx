@@ -1,7 +1,7 @@
 import React from 'react';
 import { 
   Trophy, Clock, Zap, ArrowRight, Play, CheckCircle2, 
-  AlertTriangle, Sparkles, BarChart3, ChevronRight, RotateCcw 
+  AlertTriangle, Sparkles, BarChart3, ChevronRight, RotateCcw, Target 
 } from 'lucide-react';
 import { TEST_CATALOG } from '../data/testCatalog.js';
 import { analyzeAttemptPatterns } from '../data/patternEngine.js';
@@ -41,9 +41,9 @@ export default function Dashboard({
 
         <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-8">
           <div className="max-w-2xl space-y-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/30 text-xs font-bold tracking-wide uppercase">
-              <Zap className="w-3.5 h-3.5" />
-              <span>Real CCAT Simulation Platform</span>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 text-xs font-extrabold tracking-wide uppercase">
+              <Target className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Target: 45+ Elite Protocol • 30 Full Tests</span>
             </div>
             
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
@@ -54,8 +54,8 @@ export default function Dashboard({
             </h1>
 
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-              Experience the actual CCAT testing conditions: strict forward-only navigation, 
-              high-speed 18-second pacing, authentic SVG spatial patterns, and deep AI-driven telemetry.
+              Official Criteria Cognitive Aptitude Test simulation: strict forward-only progression, 
+              high-speed 18-second pacing, crisp procedural vector SVGs, and real Google Gemini coaching.
             </p>
 
             <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -69,15 +69,15 @@ export default function Dashboard({
 
               <button
                 onClick={onOpenCoach}
-                className="px-5 py-3.5 rounded-2xl bg-slate-800/80 hover:bg-slate-800 text-purple-300 border border-purple-500/30 font-bold text-sm flex items-center gap-2 transition-all hover:border-purple-500/60 cursor-pointer"
+                className="px-5 py-3.5 rounded-2xl bg-slate-800/80 hover:bg-slate-800 text-purple-300 border border-purple-500/30 font-bold text-sm flex items-center gap-2 transition-all hover:border-purple-500/60 cursor-pointer shadow-lg"
               >
                 <Sparkles className="w-4 h-4 text-purple-400" />
-                <span>Chat with AI Coach</span>
+                <span>Chat with AI Coach (Gemini)</span>
               </button>
             </div>
           </div>
 
-          {/* Quick High-Level Stats Cards */}
+          {/* High-Level Metrics */}
           <div className="grid grid-cols-2 gap-3 sm:gap-4 shrink-0 sm:min-w-[320px]">
             <div className="bg-slate-950/70 border border-slate-800/90 rounded-2xl p-4 shadow-lg">
               <p className="text-xs text-slate-400 font-semibold mb-1 flex items-center gap-1.5">
@@ -88,8 +88,8 @@ export default function Dashboard({
                 <span className="text-2xl sm:text-3xl font-black text-white">{bestScore}</span>
                 <span className="text-xs text-slate-500 font-bold">/ 50</span>
               </div>
-              <p className="text-[11px] text-slate-400 mt-1">
-                {bestScore >= 35 ? '🏆 Top tier target' : 'Target: 35+ for elite tech'}
+              <p className="text-[11px] font-bold text-emerald-400 mt-1">
+                Goal: 45+ Top 0.1%
               </p>
             </div>
 
@@ -108,26 +108,26 @@ export default function Dashboard({
             <div className="bg-slate-950/70 border border-slate-800/90 rounded-2xl p-4 shadow-lg">
               <p className="text-xs text-slate-400 font-semibold mb-1 flex items-center gap-1.5">
                 <Clock className="w-3.5 h-3.5 text-emerald-400" />
-                <span>Target Pace</span>
+                <span>Target Velocity</span>
               </p>
               <p className="text-2xl sm:text-3xl font-black text-emerald-400">18.0s</p>
-              <p className="text-[11px] text-slate-400 mt-1">Average per question</p>
+              <p className="text-[11px] text-slate-400 mt-1">Avg per question</p>
             </div>
 
             <div className="bg-slate-950/70 border border-slate-800/90 rounded-2xl p-4 shadow-lg">
               <p className="text-xs text-slate-400 font-semibold mb-1 flex items-center gap-1.5">
                 <Zap className="w-3.5 h-3.5 text-indigo-400" />
-                <span>Test Banks</span>
+                <span>Test Suite</span>
               </p>
-              <p className="text-2xl sm:text-3xl font-black text-white">15 Full</p>
-              <p className="text-[11px] text-slate-400 mt-1">750 Questions total</p>
+              <p className="text-2xl sm:text-3xl font-black text-white">30 Full</p>
+              <p className="text-[11px] text-slate-400 mt-1">1,500 Questions total</p>
             </div>
           </div>
 
         </div>
       </div>
 
-      {/* --- RECENT TELEMETRY INSIGHT (If attempts exist) --- */}
+      {/* --- RECENT TELEMETRY INSIGHT --- */}
       {latestAnalysis && (
         <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div className="space-y-1">
@@ -161,18 +161,20 @@ export default function Dashboard({
               className="px-4 py-2.5 rounded-xl bg-purple-600/20 hover:bg-purple-600/30 text-purple-300 text-xs sm:text-sm font-bold border border-purple-500/40 transition-colors flex items-center gap-1.5"
             >
               <Sparkles className="w-4 h-4 text-purple-400" />
-              <span>Diagnose Traps</span>
+              <span>Ask Gemini</span>
             </button>
           </div>
         </div>
       )}
 
-      {/* --- 15 TEST SUITE SELECTOR --- */}
+      {/* --- 30 TEST SUITE SELECTOR (NO CATEGORIZATION) --- */}
       <div className="space-y-4">
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">Full CCAT Test Suite</h2>
-            <p className="text-xs sm:text-sm text-slate-400">15 complete, distinct 50-question simulation tests with authentic ratios</p>
+            <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">Full CCAT Test Suite (30 Full Tests)</h2>
+            <p className="text-xs sm:text-sm text-slate-400">
+              30 complete, distinct 50-question simulations. Calibrated with varying difficulties and randomized answer options.
+            </p>
           </div>
         </div>
 
@@ -192,10 +194,10 @@ export default function Dashboard({
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-3">
                     <span className="font-mono text-xs font-bold px-2.5 py-0.5 rounded-md bg-slate-800 text-sky-400 border border-slate-700">
-                      Test #{test.testNumber}
+                      Simulation #{test.testNumber}
                     </span>
                     <span className="text-[11px] font-semibold text-slate-400 bg-slate-950 px-2 py-0.5 rounded border border-slate-800">
-                      {test.difficulty}
+                      50 Qs • 15 Mins
                     </span>
                   </div>
 
@@ -204,22 +206,22 @@ export default function Dashboard({
                   </h3>
 
                   <div className="flex items-center gap-3 text-xs text-slate-400 mt-2 font-medium">
-                    <span>50 Questions</span>
+                    <span>22 Math</span>
                     <span>•</span>
-                    <span>15 Minutes</span>
+                    <span>17 Verbal</span>
                     <span>•</span>
-                    <span>Strict Forward</span>
+                    <span>11 Spatial</span>
                   </div>
                 </div>
 
                 <div className="pt-4 border-t border-slate-800/80 mt-4 flex items-center justify-between gap-3">
                   <div>
                     {testBestScore !== null ? (
-                      <span className="text-xs font-mono font-bold text-emerald-400 bg-emerald-950/40 px-2 py-1 rounded border border-emerald-800">
+                      <span className="text-xs font-mono font-bold text-emerald-400 bg-emerald-950/40 px-2.5 py-1 rounded-lg border border-emerald-800">
                         Best: {testBestScore}/50
                       </span>
                     ) : (
-                      <span className="text-xs text-slate-500 font-medium">Not attempted</span>
+                      <span className="text-xs text-slate-500 font-medium">Unattempted</span>
                     )}
                   </div>
 
@@ -237,11 +239,14 @@ export default function Dashboard({
         </div>
       </div>
 
-      {/* --- PAST ATTEMPTS HISTORY --- */}
+      {/* --- PAST ATTEMPTS HISTORY (SAVED PERSISTENTLY) --- */}
       {attempts.length > 0 && (
         <div className="space-y-4 pt-6">
           <div className="flex items-center justify-between">
-            <h2 className="text-xl font-bold text-white tracking-tight">Attempt History & Log</h2>
+            <div>
+              <h2 className="text-xl font-bold text-white tracking-tight">Attempt History & Log</h2>
+              <p className="text-xs text-slate-400">All historical tests and question timings are permanently preserved.</p>
+            </div>
             <button
               onClick={() => {
                 if (window.confirm('Clear all test attempt history? This cannot be undone.')) {
@@ -303,7 +308,7 @@ export default function Dashboard({
                         <td className="px-4 py-3 text-right">
                           <button
                             onClick={() => onReviewAttempt(att)}
-                            className="px-3 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-sky-400 font-bold text-xs border border-slate-700 transition-colors"
+                            className="px-3 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-sky-400 font-bold text-xs border border-slate-700 transition-colors cursor-pointer"
                           >
                             Review
                           </button>

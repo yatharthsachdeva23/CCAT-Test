@@ -1,15 +1,147 @@
 import { generateRotatingShape, generateMatrixGrid, generateBarChart } from './svgTemplates.js';
 
 /**
- * Question Bank Generator for CCAT Full Simulations
- * Produces 50-question tests with exact 22 Math, 17 Verbal, 11 Spatial distribution.
+ * Utility to shuffle options and reassign letters A, B, C, D, E
+ * Guarantees completely even ~20% distribution of correct answers across all 5 choices!
  */
+export function randomizeOptions(question, randFn = Math.random) {
+  const letters = ['A', 'B', 'C', 'D', 'E'];
+  const originalOptions = question.options;
+  const originalCorrectId = question.correctOption;
+  
+  // Find the content of the correct option
+  const correctObj = originalOptions.find(o => o.id === originalCorrectId) || originalOptions[0];
 
-// --- 1. SPATIAL REASONING QUESTION GENERATORS ---
+  // Clone options without ID
+  const rawItems = originalOptions.map(o => ({
+    text: o.text,
+    svg: o.svg,
+    isCorrect: o.id === originalCorrectId
+  }));
 
-export function generateSpatialQuestions(seedOffset = 0) {
-  const list = [
-    // Next in series 1: Rotating Square with Orbiting Dot
+  // Fisher-Yates shuffle
+  for (let i = rawItems.length - 1; i > 0; i--) {
+    const j = Math.floor(randFn() * (i + 1));
+    [rawItems[i], rawItems[j]] = [rawItems[j], rawItems[i]];
+  }
+
+  let newCorrectOption = 'A';
+  const newOptions = rawItems.map((item, idx) => {
+    const letter = letters[idx];
+    if (item.isCorrect) {
+      newCorrectOption = letter;
+    }
+    return {
+      id: letter,
+      text: item.text,
+      svg: item.svg
+    };
+  });
+
+  return {
+    ...question,
+    options: newOptions,
+    correctOption: newCorrectOption
+  };
+}
+
+// --- 1. EXPANSIVE PROCEDURAL SPATIAL QUESTION GENERATORS ---
+
+export function getSpatialBank(rand) {
+  const shapes = ['square', 'triangle', 'arrow', 'cross', 'diamond', 'pentagon', 'hexagon', 'circle-sector', 'star'];
+  
+  const bank = [
+    // Matrix 1: Latin Square of Shapes
+    {
+      subType: 'spatial_matrix',
+      category: 'spatial',
+      question: 'Which figure completes the 3×3 matrix according to the row and column logic?',
+      figureType: 'matrix',
+      matrixCells: [
+        generateRotatingShape({ shape: 'square', angle: 0, size: 70 }),
+        generateRotatingShape({ shape: 'triangle', angle: 0, size: 70 }),
+        generateRotatingShape({ shape: 'cross', angle: 0, size: 70 }),
+
+        generateRotatingShape({ shape: 'triangle', angle: 0, size: 70 }),
+        generateRotatingShape({ shape: 'cross', angle: 0, size: 70 }),
+        generateRotatingShape({ shape: 'square', angle: 0, size: 70 }),
+
+        generateRotatingShape({ shape: 'cross', angle: 0, size: 70 }),
+        generateRotatingShape({ shape: 'square', angle: 0, size: 70 }),
+        '?'
+      ],
+      options: [
+        { id: 'A', svg: generateRotatingShape({ shape: 'triangle', angle: 0, size: 70 }), text: 'Triangle' },
+        { id: 'B', svg: generateRotatingShape({ shape: 'square', angle: 0, size: 70 }), text: 'Square' },
+        { id: 'C', svg: generateRotatingShape({ shape: 'cross', angle: 0, size: 70 }), text: 'Cross' },
+        { id: 'D', svg: generateRotatingShape({ shape: 'diamond', angle: 0, size: 70 }), text: 'Diamond' },
+        { id: 'E', svg: generateRotatingShape({ shape: 'arrow', angle: 0, size: 70 }), text: 'Arrow' }
+      ],
+      correctOption: 'A',
+      explanation: 'Latin Square rule: Each row and each column must contain exactly one Square, one Triangle, and one Cross. The third row lacks a Triangle.'
+    },
+
+    // Matrix 2: Progressive Rotation Matrix
+    {
+      subType: 'spatial_matrix',
+      category: 'spatial',
+      question: 'Which figure correctly replaces the question mark in this matrix?',
+      figureType: 'matrix',
+      matrixCells: [
+        generateRotatingShape({ shape: 'arrow', angle: 0, size: 70 }),
+        generateRotatingShape({ shape: 'arrow', angle: 45, size: 70 }),
+        generateRotatingShape({ shape: 'arrow', angle: 90, size: 70 }),
+
+        generateRotatingShape({ shape: 'diamond', angle: 0, size: 70 }),
+        generateRotatingShape({ shape: 'diamond', angle: 45, size: 70 }),
+        generateRotatingShape({ shape: 'diamond', angle: 90, size: 70 }),
+
+        generateRotatingShape({ shape: 'cross', angle: 0, size: 70 }),
+        generateRotatingShape({ shape: 'cross', angle: 45, size: 70 }),
+        '?'
+      ],
+      options: [
+        { id: 'A', svg: generateRotatingShape({ shape: 'cross', angle: 90, size: 70 }), text: 'Cross (90°)' },
+        { id: 'B', svg: generateRotatingShape({ shape: 'cross', angle: 135, size: 70 }), text: 'Cross (135°)' },
+        { id: 'C', svg: generateRotatingShape({ shape: 'diamond', angle: 90, size: 70 }), text: 'Diamond (90°)' },
+        { id: 'D', svg: generateRotatingShape({ shape: 'arrow', angle: 90, size: 70 }), text: 'Arrow (90°)' },
+        { id: 'E', svg: generateRotatingShape({ shape: 'cross', angle: 0, size: 70 }), text: 'Cross (0°)' }
+      ],
+      correctOption: 'A',
+      explanation: 'Across rows: the shape family is preserved (Row 1: Arrow, Row 2: Diamond, Row 3: Cross). Across columns: each shape rotates +45° clockwise (0° -> 45° -> 90°). Cell 9 is a Cross at 90°.'
+    },
+
+    // Matrix 3: Shading & Dot Matrix
+    {
+      subType: 'spatial_matrix',
+      category: 'spatial',
+      question: 'Determine the missing element in the 3×3 matrix:',
+      figureType: 'matrix',
+      matrixCells: [
+        generateRotatingShape({ shape: 'square', angle: 0, dotPos: 0, shaded: false, size: 70 }),
+        generateRotatingShape({ shape: 'square', angle: 0, dotPos: 1, shaded: false, size: 70 }),
+        generateRotatingShape({ shape: 'square', angle: 0, dotPos: 2, shaded: true, size: 70 }),
+
+        generateRotatingShape({ shape: 'pentagon', angle: 0, dotPos: 0, shaded: false, size: 70 }),
+        generateRotatingShape({ shape: 'pentagon', angle: 0, dotPos: 1, shaded: false, size: 70 }),
+        generateRotatingShape({ shape: 'pentagon', angle: 0, dotPos: 2, shaded: true, size: 70 }),
+
+        generateRotatingShape({ shape: 'hexagon', angle: 0, dotPos: 0, shaded: false, size: 70 }),
+        generateRotatingShape({ shape: 'hexagon', angle: 0, dotPos: 1, shaded: false, size: 70 }),
+        '?'
+      ],
+      options: [
+        { id: 'A', svg: generateRotatingShape({ shape: 'hexagon', angle: 0, dotPos: 2, shaded: true, size: 70 }), text: 'Hexagon Shaded' },
+        { id: 'B', svg: generateRotatingShape({ shape: 'hexagon', angle: 0, dotPos: 2, shaded: false, size: 70 }), text: 'Hexagon Clear' },
+        { id: 'C', svg: generateRotatingShape({ shape: 'pentagon', angle: 0, dotPos: 2, shaded: true, size: 70 }), text: 'Pentagon Shaded' },
+        { id: 'D', svg: generateRotatingShape({ shape: 'hexagon', angle: 0, dotPos: 3, shaded: true, size: 70 }), text: 'Hexagon Dot 3' },
+        { id: 'E', svg: generateRotatingShape({ shape: 'diamond', angle: 0, dotPos: 2, shaded: true, size: 70 }), text: 'Diamond' }
+      ],
+      correctOption: 'A',
+      explanation: 'Row 3 contains hexagons. Across columns, the dot moves from pos 0 to 1 to 2, and the third column is shaded solid blue.'
+    },
+
+    // Series 1: Rotating Square with Orbiting Dot (45 deg)
     {
       subType: 'next_in_series',
       category: 'spatial',
@@ -29,14 +161,14 @@ export function generateSpatialQuestions(seedOffset = 0) {
         { id: 'E', svg: generateRotatingShape({ shape: 'square', angle: 180, dotPos: 2, size: 70 }), text: 'Option E' }
       ],
       correctOption: 'A',
-      explanation: 'Two simultaneous rules: 1) The square rotates 45° clockwise in each step (0° -> 45° -> 90° -> 135° -> 180°). 2) The orbiting dot moves 90° clockwise around the perimeter (positions 0 -> 1 -> 2 -> 3 -> 0). Only Option A satisfies both.'
+      explanation: 'Square rotates 45° clockwise each step (135° -> 180°). Orbiting dot steps clockwise through corners (0 -> 1 -> 2 -> 3 -> 0).'
     },
 
-    // Next in series 2: Rotating Arrow with Shading
+    // Series 2: Rotating Arrow (90 deg)
     {
       subType: 'next_in_series',
       category: 'spatial',
-      question: 'Which arrow comes next in the series?',
+      question: 'Which arrow continues the sequence?',
       figureType: 'sequence',
       sequenceFrames: [
         generateRotatingShape({ shape: 'arrow', angle: 0, size: 70 }),
@@ -45,87 +177,21 @@ export function generateSpatialQuestions(seedOffset = 0) {
         generateRotatingShape({ shape: 'arrow', angle: 270, size: 70 })
       ],
       options: [
-        { id: 'A', svg: generateRotatingShape({ shape: 'arrow', angle: 45, size: 70 }), text: 'Option A' },
-        { id: 'B', svg: generateRotatingShape({ shape: 'arrow', angle: 0, size: 70 }), text: 'Option B' },
-        { id: 'C', svg: generateRotatingShape({ shape: 'arrow', angle: 180, size: 70 }), text: 'Option C' },
-        { id: 'D', svg: generateRotatingShape({ shape: 'arrow', angle: 135, size: 70 }), text: 'Option D' },
-        { id: 'E', svg: generateRotatingShape({ shape: 'arrow', angle: 270, size: 70 }), text: 'Option E' }
-      ],
-      correctOption: 'B',
-      explanation: 'The arrow rotates 90° clockwise in every frame (0° -> 90° -> 180° -> 270° -> 360°/0°). After 270°, it points directly North (0°), matching Option B.'
-    },
-
-    // Odd one out 1: Polygons & internal elements
-    {
-      subType: 'odd_one_out',
-      category: 'spatial',
-      question: 'Which of the following figures does NOT belong with the others (Odd One Out)?',
-      figureType: 'options_only',
-      options: [
-        { id: 'A', svg: generateRotatingShape({ shape: 'triangle', angle: 0, dotPos: 1, size: 80 }), text: 'A: Triangle' },
-        { id: 'B', svg: generateRotatingShape({ shape: 'square', angle: 0, dotPos: 2, size: 80 }), text: 'B: Square' },
-        { id: 'C', svg: generateRotatingShape({ shape: 'cross', angle: 0, dotPos: null, size: 80 }), text: 'C: Cross' },
-        { id: 'D', svg: generateRotatingShape({ shape: 'circle-sector', angle: 90, dotPos: null, size: 80 }), text: 'D: Sector' },
-        { id: 'E', svg: generateRotatingShape({ shape: 'arrow', angle: 45, dotPos: null, size: 80 }), text: 'E: Arrow' }
-      ],
-      correctOption: 'D',
-      explanation: 'Figures A, B, C, and E are constructed strictly with straight line segments (polygons/linear vectors). Figure D includes a curved circular arc, making it the odd one out.'
-    },
-
-    // Odd one out 2: Orientation/Parity
-    {
-      subType: 'odd_one_out',
-      category: 'spatial',
-      question: 'Which figure is the odd one out?',
-      figureType: 'options_only',
-      options: [
-        { id: 'A', svg: generateRotatingShape({ shape: 'arrow', angle: 0, size: 75 }), text: 'A' },
-        { id: 'B', svg: generateRotatingShape({ shape: 'arrow', angle: 90, size: 75 }), text: 'B' },
-        { id: 'C', svg: generateRotatingShape({ shape: 'arrow', angle: 180, size: 75 }), text: 'C' },
-        { id: 'D', svg: generateRotatingShape({ shape: 'arrow', angle: 225, size: 75 }), text: 'D' },
-        { id: 'E', svg: generateRotatingShape({ shape: 'arrow', angle: 270, size: 75 }), text: 'E' }
-      ],
-      correctOption: 'D',
-      explanation: 'Options A, B, C, and E are aligned strictly with the orthogonal axes (0°, 90°, 180°, 270°). Option D is rotated to a diagonal angle (225°).'
-    },
-
-    // 3x3 Matrix Grid 1
-    {
-      subType: 'spatial_matrix',
-      category: 'spatial',
-      question: 'Which figure completes the 3x3 matrix?',
-      figureType: 'matrix',
-      matrixSvg: generateMatrixGrid({
-        cells: [
-          generateRotatingShape({ shape: 'square', angle: 0, dotPos: 0, size: 70 }),
-          generateRotatingShape({ shape: 'square', angle: 45, dotPos: 1, size: 70 }),
-          generateRotatingShape({ shape: 'square', angle: 90, dotPos: 2, size: 70 }),
-
-          generateRotatingShape({ shape: 'triangle', angle: 0, dotPos: 0, size: 70 }),
-          generateRotatingShape({ shape: 'triangle', angle: 45, dotPos: 1, size: 70 }),
-          generateRotatingShape({ shape: 'triangle', angle: 90, dotPos: 2, size: 70 }),
-
-          generateRotatingShape({ shape: 'cross', angle: 0, dotPos: 0, size: 70 }),
-          generateRotatingShape({ shape: 'cross', angle: 45, dotPos: 1, size: 70 }),
-          '?' // Cell 9
-        ]
-      }),
-      options: [
-        { id: 'A', svg: generateRotatingShape({ shape: 'cross', angle: 90, dotPos: 2, size: 70 }), text: 'Option A' },
-        { id: 'B', svg: generateRotatingShape({ shape: 'cross', angle: 45, dotPos: 3, size: 70 }), text: 'Option B' },
-        { id: 'C', svg: generateRotatingShape({ shape: 'square', angle: 90, dotPos: 2, size: 70 }), text: 'Option C' },
-        { id: 'D', svg: generateRotatingShape({ shape: 'cross', angle: 0, dotPos: 1, size: 70 }), text: 'Option D' },
-        { id: 'E', svg: generateRotatingShape({ shape: 'triangle', angle: 90, dotPos: 2, size: 70 }), text: 'Option E' }
+        { id: 'A', svg: generateRotatingShape({ shape: 'arrow', angle: 0, size: 70 }), text: 'North (0°)' },
+        { id: 'B', svg: generateRotatingShape({ shape: 'arrow', angle: 45, size: 70 }), text: 'North-East (45°)' },
+        { id: 'C', svg: generateRotatingShape({ shape: 'arrow', angle: 180, size: 70 }), text: 'South (180°)' },
+        { id: 'D', svg: generateRotatingShape({ shape: 'arrow', angle: 135, size: 70 }), text: 'South-East (135°)' },
+        { id: 'E', svg: generateRotatingShape({ shape: 'arrow', angle: 270, size: 70 }), text: 'West (270°)' }
       ],
       correctOption: 'A',
-      explanation: 'Across rows: the primary shape remains identical in that row (Row 1: squares, Row 2: triangles, Row 3: crosses). The rotation advances by +45° per column (0° -> 45° -> 90°), and the dot advances by +1 index. Cell 9 must be a cross at 90° with dot at index 2 (Option A).'
+      explanation: 'Arrow rotates 90° clockwise in each step. 270° + 90° = 360°/0° (pointing directly North).'
     },
 
-    // Next in series 3: Quadrant shading
+    // Series 3: Shaded Quadrant Sectors
     {
       subType: 'next_in_series',
       category: 'spatial',
-      question: 'Which quadrant figure comes next in the sequence?',
+      question: 'Which quadrant figure comes next in this rotation sequence?',
       figureType: 'sequence',
       sequenceFrames: [
         generateRotatingShape({ shape: 'circle-sector', angle: 0, size: 70 }),
@@ -134,732 +200,855 @@ export function generateSpatialQuestions(seedOffset = 0) {
         generateRotatingShape({ shape: 'circle-sector', angle: 270, size: 70 })
       ],
       options: [
-        { id: 'A', svg: generateRotatingShape({ shape: 'circle-sector', angle: 0, size: 70 }), text: 'Option A' },
-        { id: 'B', svg: generateRotatingShape({ shape: 'circle-sector', angle: 45, size: 70 }), text: 'Option B' },
-        { id: 'C', svg: generateRotatingShape({ shape: 'circle-sector', angle: 180, size: 70 }), text: 'Option C' },
-        { id: 'D', svg: generateRotatingShape({ shape: 'circle-sector', angle: 90, size: 70 }), text: 'Option D' },
-        { id: 'E', svg: generateRotatingShape({ shape: 'cross', angle: 0, size: 70 }), text: 'Option E' }
+        { id: 'A', svg: generateRotatingShape({ shape: 'circle-sector', angle: 0, size: 70 }), text: 'Quadrant 1 (0°)' },
+        { id: 'B', svg: generateRotatingShape({ shape: 'circle-sector', angle: 45, size: 70 }), text: 'Quadrant (45°)' },
+        { id: 'C', svg: generateRotatingShape({ shape: 'circle-sector', angle: 180, size: 70 }), text: 'Quadrant 3 (180°)' },
+        { id: 'D', svg: generateRotatingShape({ shape: 'circle-sector', angle: 90, size: 70 }), text: 'Quadrant 2 (90°)' },
+        { id: 'E', svg: generateRotatingShape({ shape: 'cross', angle: 0, size: 70 }), text: 'Cross' }
       ],
       correctOption: 'A',
-      explanation: 'The shaded sector rotates 90° clockwise in each consecutive frame. Following the 270° orientation in frame 4, it completes the full cycle back to 0° (Option A).'
+      explanation: 'The shaded sector advances 90° clockwise every step, cycling back to position 0°.'
     },
 
-    // Odd one out 3: Shaded vs Unshaded
-    {
-      subType: 'odd_one_out',
-      category: 'spatial',
-      question: 'Identify the odd one out among these 5 figures:',
-      figureType: 'options_only',
-      options: [
-        { id: 'A', svg: generateRotatingShape({ shape: 'triangle', angle: 0, shaded: true, size: 75 }), text: 'A' },
-        { id: 'B', svg: generateRotatingShape({ shape: 'triangle', angle: 90, shaded: true, size: 75 }), text: 'B' },
-        { id: 'C', svg: generateRotatingShape({ shape: 'triangle', angle: 180, shaded: false, size: 75 }), text: 'C' },
-        { id: 'D', svg: generateRotatingShape({ shape: 'triangle', angle: 270, shaded: true, size: 75 }), text: 'D' },
-        { id: 'E', svg: generateRotatingShape({ shape: 'triangle', angle: 45, shaded: true, size: 75 }), text: 'E' }
-      ],
-      correctOption: 'C',
-      explanation: 'All shapes A, B, D, and E are filled (shaded solid blue). Figure C is an unshaded outline.'
-    },
-
-    // Next in series 4: Triangle Alternations
+    // Series 4: Pentagons with Alternating Shading
     {
       subType: 'next_in_series',
       category: 'spatial',
-      question: 'Which triangle comes next in the sequence?',
+      question: 'Which pentagon is next in the alternating pattern?',
       figureType: 'sequence',
       sequenceFrames: [
-        generateRotatingShape({ shape: 'triangle', angle: 0, dotPos: 0, size: 70 }),
-        generateRotatingShape({ shape: 'triangle', angle: 180, dotPos: 1, size: 70 }),
-        generateRotatingShape({ shape: 'triangle', angle: 0, dotPos: 2, size: 70 }),
-        generateRotatingShape({ shape: 'triangle', angle: 180, dotPos: 3, size: 70 })
+        generateRotatingShape({ shape: 'pentagon', angle: 0, shaded: true, size: 70 }),
+        generateRotatingShape({ shape: 'pentagon', angle: 72, shaded: false, size: 70 }),
+        generateRotatingShape({ shape: 'pentagon', angle: 144, shaded: true, size: 70 }),
+        generateRotatingShape({ shape: 'pentagon', angle: 216, shaded: false, size: 70 })
       ],
       options: [
-        { id: 'A', svg: generateRotatingShape({ shape: 'triangle', angle: 0, dotPos: 0, size: 70 }), text: 'A' },
-        { id: 'B', svg: generateRotatingShape({ shape: 'triangle', angle: 180, dotPos: 0, size: 70 }), text: 'B' },
-        { id: 'C', svg: generateRotatingShape({ shape: 'triangle', angle: 90, dotPos: 1, size: 70 }), text: 'C' },
-        { id: 'D', svg: generateRotatingShape({ shape: 'square', angle: 0, dotPos: 0, size: 70 }), text: 'D' },
-        { id: 'E', svg: generateRotatingShape({ shape: 'triangle', angle: 0, dotPos: 2, size: 70 }), text: 'E' }
+        { id: 'A', svg: generateRotatingShape({ shape: 'pentagon', angle: 288, shaded: true, size: 70 }), text: 'Pentagon 288° (Shaded)' },
+        { id: 'B', svg: generateRotatingShape({ shape: 'pentagon', angle: 288, shaded: false, size: 70 }), text: 'Pentagon 288° (Clear)' },
+        { id: 'C', svg: generateRotatingShape({ shape: 'pentagon', angle: 180, shaded: true, size: 70 }), text: 'Pentagon 180°' },
+        { id: 'D', svg: generateRotatingShape({ shape: 'hexagon', angle: 288, shaded: true, size: 70 }), text: 'Hexagon' },
+        { id: 'E', svg: generateRotatingShape({ shape: 'pentagon', angle: 0, shaded: true, size: 70 }), text: 'Pentagon 0°' }
       ],
       correctOption: 'A',
-      explanation: 'The triangle flips 180° alternatingly (0° -> 180° -> 0° -> 180° -> 0°). The dot cycles 0 -> 1 -> 2 -> 3 -> 0. Therefore, the next shape has angle 0° and dot at position 0 (Option A).'
+      explanation: 'Two rules: 1) Rotation advances by +72° (one pentagon vertex) each step (216° + 72° = 288°). 2) Shading alternates: Shaded, Clear, Shaded, Clear -> Next must be Shaded.'
     },
 
-    // Matrix 2: Crosses and dots
+    // Series 5: Stars with Orbiting Dot
+    {
+      subType: 'next_in_series',
+      category: 'spatial',
+      question: 'Which star figure comes next in the sequence?',
+      figureType: 'sequence',
+      sequenceFrames: [
+        generateRotatingShape({ shape: 'star', angle: 0, dotPos: 0, size: 70 }),
+        generateRotatingShape({ shape: 'star', angle: 36, dotPos: 1, size: 70 }),
+        generateRotatingShape({ shape: 'star', angle: 72, dotPos: 2, size: 70 }),
+        generateRotatingShape({ shape: 'star', angle: 108, dotPos: 3, size: 70 })
+      ],
+      options: [
+        { id: 'A', svg: generateRotatingShape({ shape: 'star', angle: 144, dotPos: 0, size: 70 }), text: 'Star (144°, Dot 0)' },
+        { id: 'B', svg: generateRotatingShape({ shape: 'star', angle: 144, dotPos: 1, size: 70 }), text: 'Star (144°, Dot 1)' },
+        { id: 'C', svg: generateRotatingShape({ shape: 'star', angle: 180, dotPos: 0, size: 70 }), text: 'Star (180°, Dot 0)' },
+        { id: 'D', svg: generateRotatingShape({ shape: 'diamond', angle: 144, dotPos: 0, size: 70 }), text: 'Diamond' },
+        { id: 'E', svg: generateRotatingShape({ shape: 'star', angle: 108, dotPos: 2, size: 70 }), text: 'Star (108°)' }
+      ],
+      correctOption: 'A',
+      explanation: 'Star rotates by +36° per frame (108° + 36° = 144°). The dot cycles positions 0 -> 1 -> 2 -> 3 -> 0.'
+    },
+
+    // Odd one out 1: Vertex Count / Curvature
+    {
+      subType: 'odd_one_out',
+      category: 'spatial',
+      question: 'Which figure is the ODD ONE OUT?',
+      figureType: 'options_only',
+      options: [
+        { id: 'A', svg: generateRotatingShape({ shape: 'circle-sector', angle: 0, size: 75 }), text: 'A: Sector' },
+        { id: 'B', svg: generateRotatingShape({ shape: 'square', angle: 0, size: 75 }), text: 'B: Square' },
+        { id: 'C', svg: generateRotatingShape({ shape: 'triangle', angle: 0, size: 75 }), text: 'C: Triangle' },
+        { id: 'D', svg: generateRotatingShape({ shape: 'pentagon', angle: 0, size: 75 }), text: 'D: Pentagon' },
+        { id: 'E', svg: generateRotatingShape({ shape: 'hexagon', angle: 0, size: 75 }), text: 'E: Hexagon' }
+      ],
+      correctOption: 'A',
+      explanation: 'Shapes B, C, D, and E are strictly linear regular polygons composed exclusively of straight line segments. Shape A contains a circular curved arc.'
+    },
+
+    // Odd one out 2: Orientation Symmetry
+    {
+      subType: 'odd_one_out',
+      category: 'spatial',
+      question: 'Which figure does NOT follow the common orientation rule (Odd One Out)?',
+      figureType: 'options_only',
+      options: [
+        { id: 'A', svg: generateRotatingShape({ shape: 'arrow', angle: 45, size: 75 }), text: 'A: 45°' },
+        { id: 'B', svg: generateRotatingShape({ shape: 'arrow', angle: 0, size: 75 }), text: 'B: 0°' },
+        { id: 'C', svg: generateRotatingShape({ shape: 'arrow', angle: 90, size: 75 }), text: 'C: 90°' },
+        { id: 'D', svg: generateRotatingShape({ shape: 'arrow', angle: 180, size: 75 }), text: 'D: 180°' },
+        { id: 'E', svg: generateRotatingShape({ shape: 'arrow', angle: 270, size: 75 }), text: 'E: 270°' }
+      ],
+      correctOption: 'A',
+      explanation: 'Figures B, C, D, and E point directly along cardinal axes (North, East, South, West). Figure A points along an intercardinal diagonal (45°).'
+    },
+
+    // Odd one out 3: Shading Parity
+    {
+      subType: 'odd_one_out',
+      category: 'spatial',
+      question: 'Identify the odd one out among these 5 geometric figures:',
+      figureType: 'options_only',
+      options: [
+        { id: 'A', svg: generateRotatingShape({ shape: 'diamond', angle: 0, shaded: true, size: 75 }), text: 'A: Filled' },
+        { id: 'B', svg: generateRotatingShape({ shape: 'diamond', angle: 45, shaded: true, size: 75 }), text: 'B: Filled' },
+        { id: 'C', svg: generateRotatingShape({ shape: 'diamond', angle: 90, shaded: false, size: 75 }), text: 'C: Outline' },
+        { id: 'D', svg: generateRotatingShape({ shape: 'diamond', angle: 135, shaded: true, size: 75 }), text: 'D: Filled' },
+        { id: 'E', svg: generateRotatingShape({ shape: 'diamond', angle: 180, shaded: true, size: 75 }), text: 'E: Filled' }
+      ],
+      correctOption: 'C',
+      explanation: 'Figures A, B, D, and E are all solid filled polygons. Figure C is the only unfilled outline.'
+    },
+
+    // Odd one out 4: Dot Placement
+    {
+      subType: 'odd_one_out',
+      category: 'spatial',
+      question: 'Which of the following figures is the odd one out?',
+      figureType: 'options_only',
+      options: [
+        { id: 'A', svg: generateRotatingShape({ shape: 'square', angle: 0, dotPos: null, size: 75 }), text: 'A: No Dot' },
+        { id: 'B', svg: generateRotatingShape({ shape: 'square', angle: 0, dotPos: 0, size: 75 }), text: 'B: Dot 0' },
+        { id: 'C', svg: generateRotatingShape({ shape: 'square', angle: 0, dotPos: 1, size: 75 }), text: 'C: Dot 1' },
+        { id: 'D', svg: generateRotatingShape({ shape: 'square', angle: 0, dotPos: 2, size: 75 }), text: 'D: Dot 2' },
+        { id: 'E', svg: generateRotatingShape({ shape: 'square', angle: 0, dotPos: 3, size: 75 }), text: 'E: Dot 3' }
+      ],
+      correctOption: 'A',
+      explanation: 'Figures B, C, D, and E all have an external orbiting indicator dot. Figure A has no dot.'
+    },
+
+    // Matrix 4: Dual Shape Overlay Matrix
     {
       subType: 'spatial_matrix',
       category: 'spatial',
-      question: 'What completes the missing cell in this matrix?',
+      question: 'What completes this 3×3 matrix correctly?',
       figureType: 'matrix',
-      matrixSvg: generateMatrixGrid({
-        cells: [
-          generateRotatingShape({ shape: 'square', angle: 0, size: 70 }),
-          generateRotatingShape({ shape: 'triangle', angle: 0, size: 70 }),
-          generateRotatingShape({ shape: 'cross', angle: 0, size: 70 }),
+      matrixCells: [
+        generateRotatingShape({ shape: 'diamond', angle: 0, size: 70 }),
+        generateRotatingShape({ shape: 'square', angle: 0, size: 70 }),
+        generateRotatingShape({ shape: 'triangle', angle: 0, size: 70 }),
 
-          generateRotatingShape({ shape: 'triangle', angle: 0, size: 70 }),
-          generateRotatingShape({ shape: 'cross', angle: 0, size: 70 }),
-          generateRotatingShape({ shape: 'square', angle: 0, size: 70 }),
+        generateRotatingShape({ shape: 'square', angle: 0, size: 70 }),
+        generateRotatingShape({ shape: 'triangle', angle: 0, size: 70 }),
+        generateRotatingShape({ shape: 'diamond', angle: 0, size: 70 }),
 
-          generateRotatingShape({ shape: 'cross', angle: 0, size: 70 }),
-          generateRotatingShape({ shape: 'square', angle: 0, size: 70 }),
-          '?'
-        ]
-      }),
+        generateRotatingShape({ shape: 'triangle', angle: 0, size: 70 }),
+        generateRotatingShape({ shape: 'diamond', angle: 0, size: 70 }),
+        '?'
+      ],
       options: [
-        { id: 'A', svg: generateRotatingShape({ shape: 'triangle', angle: 0, size: 70 }), text: 'A: Triangle' },
-        { id: 'B', svg: generateRotatingShape({ shape: 'square', angle: 0, size: 70 }), text: 'B: Square' },
-        { id: 'C', svg: generateRotatingShape({ shape: 'cross', angle: 0, size: 70 }), text: 'C: Cross' },
-        { id: 'D', svg: generateRotatingShape({ shape: 'arrow', angle: 0, size: 70 }), text: 'D: Arrow' },
-        { id: 'E', svg: generateRotatingShape({ shape: 'circle-sector', angle: 0, size: 70 }), text: 'E: Sector' }
+        { id: 'A', svg: generateRotatingShape({ shape: 'square', angle: 0, size: 70 }), text: 'Square' },
+        { id: 'B', svg: generateRotatingShape({ shape: 'diamond', angle: 0, size: 70 }), text: 'Diamond' },
+        { id: 'C', svg: generateRotatingShape({ shape: 'triangle', angle: 0, size: 70 }), text: 'Triangle' },
+        { id: 'D', svg: generateRotatingShape({ shape: 'cross', angle: 0, size: 70 }), text: 'Cross' },
+        { id: 'E', svg: generateRotatingShape({ shape: 'star', angle: 0, size: 70 }), text: 'Star' }
       ],
       correctOption: 'A',
-      explanation: 'Latin Square rule: each row and each column must contain exactly one Square, one Triangle, and one Cross. The third row has a Cross and a Square, so the missing element is a Triangle (Option A).'
+      explanation: 'Latin square of Diamond, Square, and Triangle. Row 3 has Triangle and Diamond; the missing element is Square.'
     },
 
-    // Odd one out 4: Dot placement
-    {
-      subType: 'odd_one_out',
-      category: 'spatial',
-      question: 'Which figure is the odd one out?',
-      figureType: 'options_only',
-      options: [
-        { id: 'A', svg: generateRotatingShape({ shape: 'square', angle: 45, dotPos: 0, size: 75 }), text: 'A' },
-        { id: 'B', svg: generateRotatingShape({ shape: 'square', angle: 45, dotPos: 1, size: 75 }), text: 'B' },
-        { id: 'C', svg: generateRotatingShape({ shape: 'square', angle: 45, dotPos: 2, size: 75 }), text: 'C' },
-        { id: 'D', svg: generateRotatingShape({ shape: 'square', angle: 0, dotPos: 0, size: 75 }), text: 'D' },
-        { id: 'E', svg: generateRotatingShape({ shape: 'square', angle: 45, dotPos: 3, size: 75 }), text: 'E' }
-      ],
-      correctOption: 'D',
-      explanation: 'In A, B, C, and E, the square is rotated at 45° (diamond orientation). In D, the square is oriented at 0° (flat).'
-    },
-
-    // Next in series 5: Arrow clockwise by 45 deg
+    // Series 6: Diagonal Arrows
     {
       subType: 'next_in_series',
       category: 'spatial',
-      question: 'Which arrow comes next in the 45-degree sequence?',
+      question: 'Which arrow comes next in the 45-degree series?',
       figureType: 'sequence',
       sequenceFrames: [
-        generateRotatingShape({ shape: 'arrow', angle: 0, size: 70 }),
         generateRotatingShape({ shape: 'arrow', angle: 45, size: 70 }),
         generateRotatingShape({ shape: 'arrow', angle: 90, size: 70 }),
-        generateRotatingShape({ shape: 'arrow', angle: 135, size: 70 })
+        generateRotatingShape({ shape: 'arrow', angle: 135, size: 70 }),
+        generateRotatingShape({ shape: 'arrow', angle: 180, size: 70 })
       ],
       options: [
-        { id: 'A', svg: generateRotatingShape({ shape: 'arrow', angle: 180, size: 70 }), text: 'A' },
-        { id: 'B', svg: generateRotatingShape({ shape: 'arrow', angle: 225, size: 70 }), text: 'B' },
-        { id: 'C', svg: generateRotatingShape({ shape: 'arrow', angle: 270, size: 70 }), text: 'C' },
-        { id: 'D', svg: generateRotatingShape({ shape: 'arrow', angle: 0, size: 70 }), text: 'D' },
-        { id: 'E', svg: generateRotatingShape({ shape: 'cross', angle: 45, size: 70 }), text: 'E' }
+        { id: 'A', svg: generateRotatingShape({ shape: 'arrow', angle: 225, size: 70 }), text: '225° (South-West)' },
+        { id: 'B', svg: generateRotatingShape({ shape: 'arrow', angle: 270, size: 70 }), text: '270° (West)' },
+        { id: 'C', svg: generateRotatingShape({ shape: 'arrow', angle: 0, size: 70 }), text: '0° (North)' },
+        { id: 'D', svg: generateRotatingShape({ shape: 'arrow', angle: 45, size: 70 }), text: '45° (North-East)' },
+        { id: 'E', svg: generateRotatingShape({ shape: 'cross', angle: 225, size: 70 }), text: 'Cross' }
       ],
       correctOption: 'A',
-      explanation: 'The arrow turns clockwise by 45° in each step. 135° + 45° = 180° (pointing straight down, Option A).'
-    }
-  ];
-
-  return list;
-}
-
-// --- 2. VERBAL REASONING QUESTION GENERATOR ---
-
-export function generateVerbalQuestions(seedOffset = 0) {
-  const bank = [
-    {
-      subType: 'analogy',
-      question: 'ORCHESTRA is to CONDUCTOR as SHIP is to:',
-      options: [
-        { id: 'A', text: 'Sailor' },
-        { id: 'B', text: 'Captain' },
-        { id: 'C', text: 'Anchor' },
-        { id: 'D', text: 'Harbor' },
-        { id: 'E', text: 'Navigator' }
-      ],
-      correctOption: 'B',
-      explanation: 'Relationship: A conductor directs and leads an orchestra. Similarly, a captain commands and directs a ship.'
-    },
-    {
-      subType: 'antonym_synonym',
-      question: 'Which word is the closest ANTONYM for "EPHEMERAL"?',
-      options: [
-        { id: 'A', text: 'Fleeting' },
-        { id: 'B', text: 'Transient' },
-        { id: 'C', text: 'Enduring' },
-        { id: 'D', text: 'Celestial' },
-        { id: 'E', text: 'Fragile' }
-      ],
-      correctOption: 'C',
-      explanation: 'Ephemeral means lasting for a very short time. The opposite is "Enduring" (lasting indefinitely or for a long time).'
-    },
-    {
-      subType: 'sentence_completion',
-      question: 'Despite the engineer\'s _______ explanation, the mechanism was so intricate that the team found it _______ to comprehend.',
-      options: [
-        { id: 'A', text: 'lucid ... arduous' },
-        { id: 'B', text: 'convoluted ... effortless' },
-        { id: 'C', text: 'brief ... trivial' },
-        { id: 'D', text: 'cryptic ... facile' },
-        { id: 'E', text: 'pedantic ... superfluous' }
-      ],
-      correctOption: 'A',
-      explanation: '"Despite" sets up a contrast. Even though the explanation was "lucid" (clear and easy to understand), the team still found it "arduous" (difficult) to comprehend.'
-    },
-    {
-      subType: 'analogy',
-      question: 'SCALE is to FISH as FEATHER is to:',
-      options: [
-        { id: 'A', text: 'Flight' },
-        { id: 'B', text: 'Bird' },
-        { id: 'C', text: 'Nest' },
-        { id: 'D', text: 'Wing' },
-        { id: 'E', text: 'Beak' }
-      ],
-      correctOption: 'B',
-      explanation: 'Scales are the external protective covering of a fish; feathers are the external covering of a bird.'
-    },
-    {
-      subType: 'antonym_synonym',
-      question: 'Which word is most nearly OPPOSITE in meaning to "CANDID"?',
-      options: [
-        { id: 'A', text: 'Honest' },
-        { id: 'B', text: 'Deceitful' },
-        { id: 'C', text: 'Frank' },
-        { id: 'D', text: 'Blunt' },
-        { id: 'E', text: 'Spontaneous' }
-      ],
-      correctOption: 'B',
-      explanation: 'Candid means truthful and straightforward. Deceitful is the direct opposite.'
-    },
-    {
-      subType: 'syllogism',
-      question: 'All squares are rectangles. Some rectangles are blue. All blue shapes are circles.\nWhich conclusion is logically TRUE?',
-      options: [
-        { id: 'A', text: 'All squares are circles.' },
-        { id: 'B', text: 'Some rectangles are circles.' },
-        { id: 'C', text: 'All blue shapes are squares.' },
-        { id: 'D', text: 'No squares are blue.' },
-        { id: 'E', text: 'Some circles are triangles.' }
-      ],
-      correctOption: 'B',
-      explanation: 'Since "Some rectangles are blue" and "All blue shapes are circles", the blue rectangles must be circles. Therefore, "Some rectangles are circles" must be true.'
-    },
-    {
-      subType: 'antonym_synonym',
-      question: 'Choose the word that is most SIMILAR in meaning to "PRAGMATIC":',
-      options: [
-        { id: 'A', text: 'Idealistic' },
-        { id: 'B', text: 'Practical' },
-        { id: 'C', text: 'Dogmatic' },
-        { id: 'D', text: 'Careless' },
-        { id: 'E', text: 'Romantic' }
-      ],
-      correctOption: 'B',
-      explanation: 'Pragmatic means dealing with things sensibly and realistically in a way that is based on practical rather than theoretical considerations.'
-    },
-    {
-      subType: 'analogy',
-      question: 'LIBRARY is to BOOKS as REPERTORY is to:',
-      options: [
-        { id: 'A', text: 'Medicine' },
-        { id: 'B', text: 'Plays' },
-        { id: 'C', text: 'Paintings' },
-        { id: 'D', text: 'Artifacts' },
-        { id: 'E', text: 'Documents' }
-      ],
-      correctOption: 'B',
-      explanation: 'A library houses a collection of books; a repertory is a collection of plays or operas ready for performance.'
-    },
-    {
-      subType: 'sentence_completion',
-      question: 'The scientist was so _______ in her methodology that reviewers found not a single anomaly in her experimental data.',
-      options: [
-        { id: 'A', text: 'meticulous' },
-        { id: 'B', text: 'complacent' },
-        { id: 'C', text: 'hasty' },
-        { id: 'D', text: 'audacious' },
-        { id: 'E', text: 'ambivalent' }
-      ],
-      correctOption: 'A',
-      explanation: 'Meticulous means showing great attention to detail; very careful and precise.'
-    },
-    {
-      subType: 'antonym_synonym',
-      question: 'Which word is the best ANTONYM for "METICULOUS"?',
-      options: [
-        { id: 'A', text: 'Diligent' },
-        { id: 'B', text: 'Sloppy' },
-        { id: 'C', text: 'Cautious' },
-        { id: 'D', text: 'Fastidious' },
-        { id: 'E', text: 'Methodical' }
-      ],
-      correctOption: 'B',
-      explanation: 'Meticulous means extraordinarily careful and neat; "Sloppy" is the direct antonym.'
-    },
-    {
-      subType: 'analogy',
-      question: 'THERMOMETER is to TEMPERATURE as PEDOMETER is to:',
-      options: [
-        { id: 'A', text: 'Velocity' },
-        { id: 'B', text: 'Footsteps' },
-        { id: 'C', text: 'Elevation' },
-        { id: 'D', text: 'Weight' },
-        { id: 'E', text: 'Pressure' }
-      ],
-      correctOption: 'B',
-      explanation: 'A thermometer measures temperature; a pedometer measures footsteps taken.'
-    },
-    {
-      subType: 'antonym_synonym',
-      question: 'Which of the following is most OPPOSITE in meaning to "AFFLUENT"?',
-      options: [
-        { id: 'A', text: 'Prosperous' },
-        { id: 'B', text: 'Destitute' },
-        { id: 'C', text: 'Wealthy' },
-        { id: 'D', text: 'Lavish' },
-        { id: 'E', text: 'Abundant' }
-      ],
-      correctOption: 'B',
-      explanation: 'Affluent means wealthy or rich. Destitute means without the basic necessities of life, impoverished.'
-    },
-    {
-      subType: 'sentence_completion',
-      question: 'Although he initially appeared _______, his warm smile and generous hospitality quickly proved his friendliness.',
-      options: [
-        { id: 'A', text: 'aloof' },
-        { id: 'B', text: 'gregarious' },
-        { id: 'C', text: 'cordial' },
-        { id: 'D', text: 'jovial' },
-        { id: 'E', text: 'amiable' }
-      ],
-      correctOption: 'A',
-      explanation: 'The contrast word "Although" requires a word opposite to friendly/warm. "Aloof" means distant or standoffish.'
-    },
-    {
-      subType: 'syllogism',
-      question: 'No mammals are reptiles. All snakes are reptiles. Which statement is logically certain?',
-      options: [
-        { id: 'A', text: 'Some snakes are mammals.' },
-        { id: 'B', text: 'No snakes are mammals.' },
-        { id: 'C', text: 'All mammals are snakes.' },
-        { id: 'D', text: 'Some reptiles are mammals.' },
-        { id: 'E', text: 'No reptiles lay eggs.' }
-      ],
-      correctOption: 'B',
-      explanation: 'If mammals and reptiles have zero overlap, and all snakes are inside the reptile group, then no snake can be a mammal.'
-    },
-    {
-      subType: 'analogy',
-      question: 'TELESCOPE is to ASTRONOMER as STETHOSCOPE is to:',
-      options: [
-        { id: 'A', text: 'Chemist' },
-        { id: 'B', text: 'Physician' },
-        { id: 'C', text: 'Biologist' },
-        { id: 'D', text: 'Pharmacist' },
-        { id: 'E', text: 'Geologist' }
-      ],
-      correctOption: 'B',
-      explanation: 'A telescope is the quintessential instrument used by an astronomer; a stethoscope is used by a physician.'
-    },
-    {
-      subType: 'antonym_synonym',
-      question: 'Which word means the same as "MITIGATE"?',
-      options: [
-        { id: 'A', text: 'Aggravate' },
-        { id: 'B', text: 'Alleviate' },
-        { id: 'C', text: 'Intensify' },
-        { id: 'D', text: 'Prolong' },
-        { id: 'E', text: 'Enforce' }
-      ],
-      correctOption: 'B',
-      explanation: 'To mitigate means to make less severe, serious, or painful; "Alleviate" is a direct synonym.'
-    },
-    {
-      subType: 'analogy',
-      question: 'VACCINE is to PREVENT as REMEDY is to:',
-      options: [
-        { id: 'A', text: 'Diagnose' },
-        { id: 'B', text: 'Cure' },
-        { id: 'C', text: 'Infect' },
-        { id: 'D', text: 'Prescribe' },
-        { id: 'E', text: 'Evaluate' }
-      ],
-      correctOption: 'B',
-      explanation: 'A vaccine is designed to prevent disease; a remedy is designed to cure or treat an existing condition.'
+      explanation: 'Clockwise rotation by 45°: 180° + 45° = 225° (pointing South-West).'
     }
   ];
 
   return bank;
 }
 
-// --- 3. MATH & LOGIC QUESTION GENERATOR ---
+// --- 2. EXTENSIVE HIGH-DIFFICULTY VERBAL REASONING BANK ---
 
-export function generateMathQuestions(seedOffset = 0) {
-  const bank = [
-    // Number series 1
+export function getVerbalBank() {
+  return [
     {
-      subType: 'number_series',
-      category: 'math',
-      question: 'What is the next number in the series?\n3, 6, 12, 24, 48, ?',
+      subType: 'antonym_synonym',
+      question: 'Which word is the closest ANTONYM for "RECONDITE"?',
       options: [
-        { id: 'A', text: '72' },
-        { id: 'B', text: '84' },
-        { id: 'C', text: '96' },
-        { id: 'D', text: '108' },
-        { id: 'E', text: '120' }
-      ],
-      correctOption: 'C',
-      explanation: 'Each term doubles: 3 * 2 = 6, 6 * 2 = 12, 12 * 2 = 24, 24 * 2 = 48, 48 * 2 = 96.'
-    },
-
-    // Word problem: Percentage / Discount
-    {
-      subType: 'word_problem',
-      category: 'math',
-      question: 'A jacket originally priced at $120 is discounted by 25%. What is the final sale price?',
-      options: [
-        { id: 'A', text: '$80' },
-        { id: 'B', text: '$90' },
-        { id: 'C', text: '$95' },
-        { id: 'D', text: '$100' },
-        { id: 'E', text: '$105' }
-      ],
-      correctOption: 'B',
-      explanation: 'Shortcut: 25% of $120 is 120 / 4 = $30. Sale price = 120 - 30 = $90.'
-    },
-
-    // Number series 2: Alternating differences
-    {
-      subType: 'number_series',
-      category: 'math',
-      question: 'What number replaces the question mark?\n4, 7, 12, 19, 28, ?',
-      options: [
-        { id: 'A', text: '35' },
-        { id: 'B', text: '37' },
-        { id: 'C', text: '39' },
-        { id: 'D', text: '41' },
-        { id: 'E', text: '43' }
-      ],
-      correctOption: 'C',
-      explanation: 'Look at the differences: +3, +5, +7, +9. The next difference must be +11. 28 + 11 = 39.'
-    },
-
-    // Word problem: Speed / Distance
-    {
-      subType: 'word_problem',
-      category: 'math',
-      question: 'A train travels at 60 mph for 2 hours and then at 90 mph for 1 hour. What is the average speed for the entire 3-hour trip?',
-      options: [
-        { id: 'A', text: '70 mph' },
-        { id: 'B', text: '72 mph' },
-        { id: 'C', text: '75 mph' },
-        { id: 'D', text: '80 mph' },
-        { id: 'E', text: '85 mph' }
+        { id: 'A', text: 'Obvious' },
+        { id: 'B', text: 'Esoteric' },
+        { id: 'C', text: 'Arcane' },
+        { id: 'D', text: 'Abstruse' },
+        { id: 'E', text: 'Cryptic' }
       ],
       correctOption: 'A',
-      explanation: 'Total distance = (60 * 2) + (90 * 1) = 120 + 90 = 210 miles. Total time = 3 hours. Average speed = 210 / 3 = 70 mph.'
+      explanation: 'Recondite means little known, obscure, or abstruse. The direct opposite is "Obvious" (clear, easily perceived).'
+    },
+    {
+      subType: 'analogy',
+      question: 'DELETERIOUS is to BENEFICIAL as PERNICIOUS is to:',
+      options: [
+        { id: 'A', text: 'Salubrious' },
+        { id: 'B', text: 'Destructive' },
+        { id: 'C', text: 'Malevolent' },
+        { id: 'D', text: 'Noxious' },
+        { id: 'E', text: 'Fatal' }
+      ],
+      correctOption: 'A',
+      explanation: 'Relationship: Antonyms. Deleterious is the opposite of Beneficial. Pernicious (harmful, damaging) is the opposite of Salubrious (health-giving, favorable).'
+    },
+    {
+      subType: 'sentence_completion',
+      question: 'The executive was criticized for her _______ leadership style, which brooked no disagreement and alienated senior directors.',
+      options: [
+        { id: 'A', text: 'autocratic' },
+        { id: 'B', text: 'conciliatory' },
+        { id: 'C', text: 'egalitarian' },
+        { id: 'D', text: 'vacillating' },
+        { id: 'E', text: 'circumspect' }
+      ],
+      correctOption: 'A',
+      explanation: '"Brooking no disagreement" defines an autocratic or domineering ruler/leader.'
+    },
+    {
+      subType: 'antonym_synonym',
+      question: 'Which word is the closest SYNONYM for "OBSEQUIOUS"?',
+      options: [
+        { id: 'A', text: 'Servile' },
+        { id: 'B', text: 'Insolent' },
+        { id: 'C', text: 'Imperious' },
+        { id: 'D', text: 'Defiant' },
+        { id: 'E', text: 'Belligerent' }
+      ],
+      correctOption: 'A',
+      explanation: 'Obsequious means obedient or attentive to an excessive or fawning degree; "Servile" or sycophantic.'
+    },
+    {
+      subType: 'analogy',
+      question: 'TACITURN is to CONVERSATION as ASCETIC is to:',
+      options: [
+        { id: 'A', text: 'Luxury' },
+        { id: 'B', text: 'Solitude' },
+        { id: 'C', text: 'Religion' },
+        { id: 'D', text: 'Discipline' },
+        { id: 'E', text: 'Speech' }
+      ],
+      correctOption: 'A',
+      explanation: 'A taciturn person refrains from conversation; an ascetic person refrains from luxury or physical indulgence.'
+    },
+    {
+      subType: 'syllogism',
+      question: 'All quantum systems exhibit superposition. No macroscopic objects exhibit superposition. Some macroscopic objects are computers.\nWhich conclusion MUST be true?',
+      options: [
+        { id: 'A', text: 'No computers are quantum systems.' },
+        { id: 'B', text: 'Some computers are not quantum systems.' },
+        { id: 'C', text: 'All computers are macroscopic objects.' },
+        { id: 'D', text: 'Some quantum systems are computers.' },
+        { id: 'E', text: 'No macroscopic objects are computers.' }
+      ],
+      correctOption: 'B',
+      explanation: 'Since "Some macroscopic objects are computers", and "No macroscopic objects exhibit superposition" (while ALL quantum systems DO), those computer objects cannot be quantum systems. Hence, "Some computers are not quantum systems" must be true.'
+    },
+    {
+      subType: 'antonym_synonym',
+      question: 'Choose the word that is most nearly OPPOSITE in meaning to "EQUIVOCAL":',
+      options: [
+        { id: 'A', text: 'Unambiguous' },
+        { id: 'B', text: 'Ambivalent' },
+        { id: 'C', text: 'Nebulous' },
+        { id: 'D', text: 'Dubious' },
+        { id: 'E', text: 'Opaque' }
+      ],
+      correctOption: 'A',
+      explanation: 'Equivocal means open to more than one interpretation; ambiguous. The direct antonym is "Unambiguous".'
+    },
+    {
+      subType: 'analogy',
+      question: 'ARCHITECT is to BLUEPRINT as LEGISLATOR is to:',
+      options: [
+        { id: 'A', text: 'Statute' },
+        { id: 'B', text: 'Voter' },
+        { id: 'C', text: 'Court' },
+        { id: 'D', text: 'Cabinet' },
+        { id: 'E', text: 'Election' }
+      ],
+      correctOption: 'A',
+      explanation: 'An architect designs and produces a blueprint; a legislator drafts and enacts a statute (law).'
+    },
+    {
+      subType: 'sentence_completion',
+      question: 'Far from being _______, the economic forecast was quite _______, predicting robust multi-year capital expansion.',
+      options: [
+        { id: 'A', text: 'bleak ... auspicious' },
+        { id: 'B', text: 'promising ... dismal' },
+        { id: 'C', text: 'accurate ... dubious' },
+        { id: 'D', text: 'pessimistic ... catastrophic' },
+        { id: 'E', text: 'sanguine ... alarming' }
+      ],
+      correctOption: 'A',
+      explanation: '"Far from being bleak, it was auspicious (favorable), predicting robust expansion."'
+    },
+    {
+      subType: 'antonym_synonym',
+      question: 'Which word is the closest SYNONYM for "LACONIC"?',
+      options: [
+        { id: 'A', text: 'Terse' },
+        { id: 'B', text: 'Loquacious' },
+        { id: 'C', text: 'Verbose' },
+        { id: 'D', text: 'Garrulous' },
+        { id: 'E', text: 'Prolix' }
+      ],
+      correctOption: 'A',
+      explanation: 'Laconic means using very few words; "Terse" or concise.'
+    },
+    {
+      subType: 'analogy',
+      question: 'DISINTERESTED is to IMPARTIAL as MERCENARY is to:',
+      options: [
+        { id: 'A', text: 'Venal' },
+        { id: 'B', text: 'Generous' },
+        { id: 'C', text: 'Altruistic' },
+        { id: 'D', text: 'Scholarly' },
+        { id: 'E', text: 'Honorable' }
+      ],
+      correctOption: 'A',
+      explanation: 'Disinterested is synonymous with impartial. Mercenary (motivated solely by money) is synonymous with "Venal" (open to bribery, corrupt).'
+    },
+    {
+      subType: 'antonym_synonym',
+      question: 'Which word is most OPPOSITE to "EPHEMERAL"?',
+      options: [
+        { id: 'A', text: 'Permanent' },
+        { id: 'B', text: 'Transient' },
+        { id: 'C', text: 'Evanescent' },
+        { id: 'D', text: 'Fleeting' },
+        { id: 'E', text: 'Momentary' }
+      ],
+      correctOption: 'A',
+      explanation: 'Ephemeral means short-lived. Permanent is the opposite.'
+    },
+    {
+      subType: 'syllogism',
+      question: 'All prime numbers greater than 2 are odd. Number X is a prime number. Number X is not odd.\nWhat is Number X?',
+      options: [
+        { id: 'A', text: '2' },
+        { id: 'B', text: '1' },
+        { id: 'C', text: '0' },
+        { id: 'D', text: '3' },
+        { id: 'E', text: 'Cannot be determined' }
+      ],
+      correctOption: 'A',
+      explanation: 'The only prime number that is not odd is 2.'
+    },
+    {
+      subType: 'sentence_completion',
+      question: 'Although the startup founder was praised for his _______ vision, his inability to manage daily cash flow led to _______ operations.',
+      options: [
+        { id: 'A', text: 'visionary ... insolvent' },
+        { id: 'B', text: 'myopic ... flourishing' },
+        { id: 'C', text: 'mundane ... profitable' },
+        { id: 'D', text: 'reckless ... stable' },
+        { id: 'E', text: 'cautious ... expansive' }
+      ],
+      correctOption: 'A',
+      explanation: 'Visionary contrasts with inability to manage cash flow leading to insolvent (bankrupt) operations.'
+    },
+    {
+      subType: 'analogy',
+      question: 'QUERULOUS is to COMPLAIN as MELLIFLUOUS is to:',
+      options: [
+        { id: 'A', text: 'Soothe' },
+        { id: 'B', text: 'Deceive' },
+        { id: 'C', text: 'Harass' },
+        { id: 'D', text: 'Stammer' },
+        { id: 'E', text: 'Screech' }
+      ],
+      correctOption: 'A',
+      explanation: 'A querulous person tends to complain; a mellifluous sound or voice tends to soothe (sweet or musical).'
+    },
+    {
+      subType: 'antonym_synonym',
+      question: 'Which word is the closest ANTONYM for "SANCTIMONIOUS"?',
+      options: [
+        { id: 'A', text: 'Genuinely humble' },
+        { id: 'B', text: 'Hypocritical' },
+        { id: 'C', text: 'Pious' },
+        { id: 'D', text: 'Self-righteous' },
+        { id: 'E', text: 'Moralizing' }
+      ],
+      correctOption: 'A',
+      explanation: 'Sanctimonious means making a hypocritical show of moral superiority. The opposite is genuinely humble.'
+    },
+    {
+      subType: 'analogy',
+      question: 'METAPHOR is to FIGURATIVE as SYLLOGISM is to:',
+      options: [
+        { id: 'A', text: 'Deductive' },
+        { id: 'B', text: 'Metrical' },
+        { id: 'C', text: 'Satirical' },
+        { id: 'D', text: 'Allegorical' },
+        { id: 'E', text: 'Hyperbolic' }
+      ],
+      correctOption: 'A',
+      explanation: 'A metaphor is fundamentally figurative; a syllogism is fundamentally deductive.'
+    },
+    {
+      subType: 'antonym_synonym',
+      question: 'Which word is the best SYNONYM for "INDEFATIGABLE"?',
+      options: [
+        { id: 'A', text: 'Untiring' },
+        { id: 'B', text: 'Lethargic' },
+        { id: 'C', text: 'Sluggish' },
+        { id: 'D', text: 'Timid' },
+        { id: 'E', text: 'Weary' }
+      ],
+      correctOption: 'A',
+      explanation: 'Indefatigable means persisting tirelessly; incapable of being fatigued.'
+    },
+    {
+      subType: 'sentence_completion',
+      question: 'The diplomat’s statement was deliberately _______, permitting all negotiating parties to interpret it to their own advantage.',
+      options: [
+        { id: 'A', text: 'ambiguous' },
+        { id: 'B', text: 'unilateral' },
+        { id: 'C', text: 'strident' },
+        { id: 'D', text: 'trenchant' },
+        { id: 'E', text: 'dogmatic' }
+      ],
+      correctOption: 'A',
+      explanation: 'Allowing multiple interpretations means ambiguous or equivocal.'
+    },
+    {
+      subType: 'analogy',
+      question: 'HERMIT is to CLANDESTINE as PEDANT is to:',
+      options: [
+        { id: 'A', text: 'Dogmatic' },
+        { id: 'B', text: 'Ignorant' },
+        { id: 'C', text: 'Humble' },
+        { id: 'D', text: 'Careless' },
+        { id: 'E', text: 'Gregarious' }
+      ],
+      correctOption: 'A',
+      explanation: 'A hermit is characterized by seclusion; a pedant is characterized by dogmatic insistence on strict rules or minor details.'
+    }
+  ];
+  return bank.map(q => ({ ...q, category: 'verbal' }));
+}
+
+// --- 3. HIGH-DIFFICULTY & PARAMETERIZED MATH REASONING BANK ---
+
+export function getMathBank(rand) {
+  return [
+    // Problem 1: Combined Work Rate (Hard)
+    {
+      subType: 'word_problem',
+      category: 'math',
+      question: 'Pipes A and B can fill an industrial reservoir in 12 hours and 15 hours respectively, while drain Pipe C can empty it in 20 hours. If all three pipes operate concurrently, how many hours will it take to fill the reservoir?',
+      options: [
+        { id: 'A', text: '10 hours' },
+        { id: 'B', text: '8.5 hours' },
+        { id: 'C', text: '12 hours' },
+        { id: 'D', text: '7.5 hours' },
+        { id: 'E', text: '6 hours' }
+      ],
+      correctOption: 'A',
+      explanation: 'Rate equation: 1/12 + 1/15 - 1/20. Common denominator = 60. (5 + 4 - 3)/60 = 6/60 = 1/10. Time = 10 hours.'
     },
 
-    // SVG Bar Chart interpretation
+    // Problem 2: Relative Speed / Pursuit
+    {
+      subType: 'word_problem',
+      category: 'math',
+      question: 'A freight train departs a station traveling at 45 mph. Exactly two hours later, an express train leaves from the same depot traveling in the same direction at 75 mph. How many hours will it take the express train to overtake the freight train?',
+      options: [
+        { id: 'A', text: '3 hours' },
+        { id: 'B', text: '2.5 hours' },
+        { id: 'C', text: '4 hours' },
+        { id: 'D', text: '3.5 hours' },
+        { id: 'E', text: '5 hours' }
+      ],
+      correctOption: 'A',
+      explanation: 'Lead distance = 45 mph * 2 hours = 90 miles. Relative speed = 75 - 45 = 30 mph. Time to overtake = 90 / 30 = 3 hours.'
+    },
+
+    // Problem 3: Multi-step Percentage / Margin
+    {
+      subType: 'word_problem',
+      category: 'math',
+      question: 'A merchant marks up wholesale merchandise by 60% above cost, then offers a promotional storewide discount of 25%. What is the merchant\'s actual net percentage profit on cost?',
+      options: [
+        { id: 'A', text: '20%' },
+        { id: 'B', text: '35%' },
+        { id: 'C', text: '25%' },
+        { id: 'D', text: '15%' },
+        { id: 'E', text: '30%' }
+      ],
+      correctOption: 'A',
+      explanation: 'Let wholesale cost = $100. Marked up price = $160. 25% discount on $160 = $40. Sale price = 160 - 40 = $120. Net profit = $20 on $100 = 20%.'
+    },
+
+    // Problem 4: Challenging Cubic / Quadratic Series
+    {
+      subType: 'number_series',
+      category: 'math',
+      question: 'What is the missing number in the sequence?\n2, 9, 28, 65, 126, ?',
+      options: [
+        { id: 'A', text: '217' },
+        { id: 'B', text: '198' },
+        { id: 'C', text: '215' },
+        { id: 'D', text: '224' },
+        { id: 'E', text: '243' }
+      ],
+      correctOption: 'A',
+      explanation: 'Cubes plus 1 pattern: 1^3 + 1 = 2; 2^3 + 1 = 9; 3^3 + 1 = 28; 4^3 + 1 = 65; 5^3 + 1 = 126; 6^3 + 1 = 216 + 1 = 217.'
+    },
+
+    // Problem 5: SVG Data Chart with Weighted Average
     {
       subType: 'data_chart',
       category: 'math',
-      question: 'Based on the sales chart below, what was the percentage increase in sales from Q1 to Q3?',
+      question: 'Based on the divisional revenue chart below, what was the average revenue across all four quarters?',
       figureType: 'chart',
       chartSvg: generateBarChart({
-        title: 'Quarterly Widget Shipments (in Thousands)',
+        title: 'Quarterly Operating Revenue ($ in Millions)',
         labels: ['Q1', 'Q2', 'Q3', 'Q4'],
-        values: [40, 60, 80, 50],
-        unit: 'k'
+        values: [48, 72, 96, 64],
+        unit: 'M'
       }),
       options: [
-        { id: 'A', text: '50%' },
-        { id: 'B', text: '75%' },
-        { id: 'C', text: '100%' },
-        { id: 'D', text: '125%' },
-        { id: 'E', text: '200%' }
+        { id: 'A', text: '$70M' },
+        { id: 'B', text: '$68M' },
+        { id: 'C', text: '$72M' },
+        { id: 'D', text: '$75M' },
+        { id: 'E', text: '$65M' }
       ],
-      correctOption: 'C',
-      explanation: 'From the chart: Q1 = 40k, Q3 = 80k. Absolute increase = 80 - 40 = 40k. Percentage increase = (40 / 40) * 100% = 100%.'
+      correctOption: 'A',
+      explanation: 'Sum = 48 + 72 + 96 + 64 = 280. Average = 280 / 4 = $70M.'
     },
 
-    // Word problem: Work / Rate
+    // Problem 6: Weighted Mixture / Concentration
     {
       subType: 'word_problem',
       category: 'math',
-      question: 'Alice can finish a coding task in 6 hours, while Bob can finish the same task in 3 hours. Working together, how many hours will it take them to complete the task?',
+      question: 'How many liters of pure water must be added to 30 liters of a 40% acid solution to dilute it to a 25% acid concentration?',
       options: [
-        { id: 'A', text: '1.5 hours' },
-        { id: 'B', text: '2.0 hours' },
-        { id: 'C', text: '2.5 hours' },
-        { id: 'D', text: '4.0 hours' },
-        { id: 'E', text: '4.5 hours' }
+        { id: 'A', text: '18 liters' },
+        { id: 'B', text: '15 liters' },
+        { id: 'C', text: '20 liters' },
+        { id: 'D', text: '12 liters' },
+        { id: 'E', text: '24 liters' }
       ],
-      correctOption: 'B',
-      explanation: 'Formula: (A * B) / (A + B) = (6 * 3) / (6 + 3) = 18 / 9 = 2 hours.'
+      correctOption: 'A',
+      explanation: 'Pure acid present = 40% of 30L = 12L. For 12L to be 25% (1/4) of total volume, total volume must be 12 * 4 = 48L. Water added = 48 - 30 = 18 liters.'
     },
 
-    // Number series 3: Fibonacci-like
+    // Problem 7: Alternating Prime Differences
     {
       subType: 'number_series',
       category: 'math',
-      question: 'What is the next number in this sequence?\n2, 3, 5, 8, 13, 21, ?',
+      question: 'Identify the next number in this sequence:\n7, 9, 12, 17, 24, 35, ?',
       options: [
-        { id: 'A', text: '29' },
-        { id: 'B', text: '31' },
-        { id: 'C', text: '34' },
-        { id: 'D', text: '37' },
-        { id: 'E', text: '42' }
+        { id: 'A', text: '48' },
+        { id: 'B', text: '46' },
+        { id: 'C', text: '49' },
+        { id: 'D', text: '50' },
+        { id: 'E', text: '52' }
       ],
-      correctOption: 'C',
-      explanation: 'Fibonacci rule: each number is the sum of the preceding two numbers. 13 + 21 = 34.'
+      correctOption: 'A',
+      explanation: 'Differences between terms are consecutive prime numbers: +2, +3, +5, +7, +11. Next difference must be +13. 35 + 13 = 48.'
     },
 
-    // Arithmetic shortcut
+    // Problem 8: Probability without replacement
     {
       subType: 'word_problem',
       category: 'math',
-      question: 'If 8 workers build 8 desks in 8 days, how many days does it take 1 worker to build 1 desk?',
-      options: [
-        { id: 'A', text: '1 day' },
-        { id: 'B', text: '4 days' },
-        { id: 'C', text: '8 days' },
-        { id: 'D', text: '16 days' },
-        { id: 'E', text: '64 days' }
-      ],
-      correctOption: 'C',
-      explanation: 'Each worker works concurrently. 8 workers make 8 desks in 8 days -> 1 worker makes 1 desk in 8 days.'
-    },
-
-    // Ratio problem
-    {
-      subType: 'word_problem',
-      category: 'math',
-      question: 'The ratio of cats to dogs in an animal shelter is 3:5. If there are 40 animals in total, how many dogs are there?',
-      options: [
-        { id: 'A', text: '15' },
-        { id: 'B', text: '20' },
-        { id: 'C', text: '25' },
-        { id: 'D', text: '30' },
-        { id: 'E', text: '35' }
-      ],
-      correctOption: 'C',
-      explanation: 'Total ratio parts = 3 + 5 = 8 parts. Each part = 40 / 8 = 5 animals. Dogs = 5 parts * 5 = 25 dogs.'
-    },
-
-    // Number series 4: Alternating additions
-    {
-      subType: 'number_series',
-      category: 'math',
-      question: 'Complete the sequence:\n50, 45, 40, 35, ?',
-      options: [
-        { id: 'A', text: '20' },
-        { id: 'B', text: '25' },
-        { id: 'C', text: '30' },
-        { id: 'D', text: '32' },
-        { id: 'E', text: '34' }
-      ],
-      correctOption: 'C',
-      explanation: 'Term decreases by 5 each time: 35 - 5 = 30.'
-    },
-
-    // Percentage profit problem
-    {
-      subType: 'word_problem',
-      category: 'math',
-      question: 'A retailer buys an item for $50 and sells it for $75. What is the percentage profit on the cost price?',
-      options: [
-        { id: 'A', text: '25%' },
-        { id: 'B', text: '33.3%' },
-        { id: 'C', text: '50%' },
-        { id: 'D', text: '66.7%' },
-        { id: 'E', text: '75%' }
-      ],
-      correctOption: 'C',
-      explanation: 'Profit = $75 - $50 = $25. Profit % = ($25 / $50) * 100% = 50%.'
-    },
-
-    // Algebra / Age problem
-    {
-      subType: 'word_problem',
-      category: 'math',
-      question: 'A father is currently three times as old as his son. In 12 years, he will be twice as old as his son. How old is the son now?',
-      options: [
-        { id: 'A', text: '8' },
-        { id: 'B', text: '10' },
-        { id: 'C', text: '12' },
-        { id: 'D', text: '14' },
-        { id: 'E', text: '16' }
-      ],
-      correctOption: 'C',
-      explanation: 'Let S = son\'s current age. Father = 3S. In 12 years: 3S + 12 = 2(S + 12) => 3S + 12 = 2S + 24 => S = 12.'
-    },
-
-    // Number series 5: Alternating operation
-    {
-      subType: 'number_series',
-      category: 'math',
-      question: 'Find the next term:\n5, 10, 8, 16, 14, 28, ?',
-      options: [
-        { id: 'A', text: '24' },
-        { id: 'B', text: '26' },
-        { id: 'C', text: '30' },
-        { id: 'D', text: '32' },
-        { id: 'E', text: '56' }
-      ],
-      correctOption: 'B',
-      explanation: 'Pattern alternates between (* 2) and (- 2). 5 * 2 = 10; 10 - 2 = 8; 8 * 2 = 16; 16 - 2 = 14; 14 * 2 = 28; next is 28 - 2 = 26.'
-    },
-
-    // Simple mental arithmetic
-    {
-      subType: 'word_problem',
-      category: 'math',
-      question: 'What is 15% of 240?',
-      options: [
-        { id: 'A', text: '24' },
-        { id: 'B', text: '32' },
-        { id: 'C', text: '36' },
-        { id: 'D', text: '42' },
-        { id: 'E', text: '48' }
-      ],
-      correctOption: 'C',
-      explanation: 'Mental trick: 10% of 240 = 24. 5% = half of 24 = 12. 15% = 24 + 12 = 36.'
-    },
-
-    // Average problem
-    {
-      subType: 'word_problem',
-      category: 'math',
-      question: 'The average of 5 consecutive odd numbers is 27. What is the largest of these numbers?',
-      options: [
-        { id: 'A', text: '29' },
-        { id: 'B', text: '31' },
-        { id: 'C', text: '33' },
-        { id: 'D', text: '35' },
-        { id: 'E', text: '37' }
-      ],
-      correctOption: 'B',
-      explanation: 'The average of an odd count of consecutive terms is the middle number: 27. The numbers are 23, 25, 27, 29, 31. The largest is 31.'
-    },
-
-    // Fraction / Proportion
-    {
-      subType: 'word_problem',
-      category: 'math',
-      question: 'If a car consumes 4 gallons of gasoline to drive 128 miles, how many gallons are required to drive 224 miles at the same efficiency?',
-      options: [
-        { id: 'A', text: '6 gallons' },
-        { id: 'B', text: '7 gallons' },
-        { id: 'C', text: '8 gallons' },
-        { id: 'D', text: '9 gallons' },
-        { id: 'E', text: '10 gallons' }
-      ],
-      correctOption: 'B',
-      explanation: 'Miles per gallon = 128 / 4 = 32 mpg. For 224 miles: 224 / 32 = 7 gallons.'
-    },
-
-    // Number series 6
-    {
-      subType: 'number_series',
-      category: 'math',
-      question: 'What is the missing number?\n1, 4, 9, 16, 25, ?',
-      options: [
-        { id: 'A', text: '30' },
-        { id: 'B', text: '36' },
-        { id: 'C', text: '40' },
-        { id: 'D', text: '49' },
-        { id: 'E', text: '64' }
-      ],
-      correctOption: 'B',
-      explanation: 'Perfect squares: 1^2, 2^2, 3^2, 4^2, 5^2, 6^2 = 36.'
-    },
-
-    // Another chart question
-    {
-      subType: 'data_chart',
-      category: 'math',
-      question: 'According to the chart below, what was the difference in sales between Q2 and Q4?',
-      figureType: 'chart',
-      chartSvg: generateBarChart({
-        title: 'Quarterly Performance (Units)',
-        labels: ['Q1', 'Q2', 'Q3', 'Q4'],
-        values: [30, 70, 90, 45],
-        unit: 'k'
-      }),
-      options: [
-        { id: 'A', text: '15k' },
-        { id: 'B', text: '20k' },
-        { id: 'C', text: '25k' },
-        { id: 'D', text: '30k' },
-        { id: 'E', text: '35k' }
-      ],
-      correctOption: 'C',
-      explanation: 'Q2 = 70k, Q4 = 45k. Difference = 70k - 45k = 25k.'
-    },
-
-    // Logic puzzle
-    {
-      subType: 'word_problem',
-      category: 'math',
-      question: 'If a clock strikes 6 times in 5 seconds, how many seconds will it take to strike 12 times?',
-      options: [
-        { id: 'A', text: '10 seconds' },
-        { id: 'B', text: '11 seconds' },
-        { id: 'C', text: '12 seconds' },
-        { id: 'D', text: '13 seconds' },
-        { id: 'E', text: '14 seconds' }
-      ],
-      correctOption: 'B',
-      explanation: 'Classic CCAT trick: 6 strikes have 5 intervals between them taking 5 seconds (1 second per interval). 12 strikes have 11 intervals = 11 seconds.'
-    },
-
-    // Probability / Combinatorics
-    {
-      subType: 'word_problem',
-      category: 'math',
-      question: 'A bag contains 3 red marbles, 4 blue marbles, and 5 green marbles. If one marble is drawn at random, what is the probability it is NOT blue?',
+      question: 'A quality inspector tests a shipment containing 6 pristine components and 4 defective components. If 2 components are chosen at random without replacement, what is the probability that BOTH components are pristine?',
       options: [
         { id: 'A', text: '1/3' },
-        { id: 'B', text: '1/4' },
-        { id: 'C', text: '2/3' },
-        { id: 'D', text: '3/4' },
-        { id: 'E', text: '5/12' }
+        { id: 'B', text: '3/10' },
+        { id: 'C', text: '2/5' },
+        { id: 'D', text: '1/2' },
+        { id: 'E', text: '4/15' }
       ],
-      correctOption: 'C',
-      explanation: 'Total marbles = 3 + 4 + 5 = 12. Non-blue = 3 + 5 = 8. Probability = 8 / 12 = 2/3.'
+      correctOption: 'A',
+      explanation: 'P(First pristine) = 6/10. P(Second pristine) = 5/9. Joint probability = (6/10) * (5/9) = 30/90 = 1/3.'
     },
 
-    // Multiplication / Estimation
+    // Problem 9: Ratio Compound Algebra
     {
       subType: 'word_problem',
       category: 'math',
-      question: 'A machine seals 48 boxes per minute. Approximately how many boxes does it seal in 2.5 hours?',
+      question: 'In a hedge fund, the ratio of equities to bonds is 4:3, and the ratio of bonds to commodities is 5:2. If the total fund assets equal $820 million, what is the total allocation in equities?',
       options: [
-        { id: 'A', text: '4,800' },
-        { id: 'B', text: '6,200' },
-        { id: 'C', text: '7,200' },
-        { id: 'D', text: '8,400' },
-        { id: 'E', text: '9,600' }
+        { id: 'A', text: '$400 million' },
+        { id: 'B', text: '$350 million' },
+        { id: 'C', text: '$380 million' },
+        { id: 'D', text: '$420 million' },
+        { id: 'E', text: '$450 million' }
       ],
-      correctOption: 'C',
-      explanation: '2.5 hours = 150 minutes. 48 boxes/min * 150 min = 48 * 100 + 48 * 50 = 4,800 + 2,400 = 7,200 boxes.'
+      correctOption: 'A',
+      explanation: 'Combine ratios using common Bond term: Equities : Bonds = 20 : 15. Bonds : Commodities = 15 : 6. Compound ratio = 20 : 15 : 6. Total parts = 20 + 15 + 6 = 41 parts. Each part = $820M / 41 = $20M. Equities = 20 * $20M = $400 million.'
     },
 
-    // Final math question for 22 total
+    // Problem 10: Clock / Angle Calculation
+    {
+      subType: 'word_problem',
+      category: 'math',
+      question: 'At exactly 3:40, what is the measure of the smaller angle formed between the hour hand and minute hand of an analog clock?',
+      options: [
+        { id: 'A', text: '130°' },
+        { id: 'B', text: '120°' },
+        { id: 'C', text: '125°' },
+        { id: 'D', text: '135°' },
+        { id: 'E', text: '140°' }
+      ],
+      correctOption: 'A',
+      explanation: 'Formula: |30*H - 5.5*M| = |30(3) - 5.5(40)| = |90 - 220| = |-130| = 130°.'
+    },
+
+    // Problem 11: Two-tier Alternating Operation Series
     {
       subType: 'number_series',
       category: 'math',
-      question: 'Identify the next number in the pattern:\n100, 96, 88, 76, 60, ?',
+      question: 'Find the next term in the series:\n3, 6, 4, 8, 6, 12, 10, ?',
       options: [
-        { id: 'A', text: '40' },
-        { id: 'B', text: '42' },
-        { id: 'C', text: '44' },
-        { id: 'D', text: '48' },
-        { id: 'E', text: '50' }
+        { id: 'A', text: '20' },
+        { id: 'B', text: '18' },
+        { id: 'C', text: '16' },
+        { id: 'D', text: '22' },
+        { id: 'E', text: '24' }
       ],
       correctOption: 'A',
-      explanation: 'Decreasing differences: -4, -8, -12, -16. The next decrease is -20. 60 - 20 = 40.'
+      explanation: 'Pattern alternates (*2) then (-2): 3*2=6; 6-2=4; 4*2=8; 8-2=6; 6*2=12; 12-2=10; 10*2=20.'
+    },
+
+    // Problem 12: Work & Efficiency Ratio
+    {
+      subType: 'word_problem',
+      category: 'math',
+      question: 'Machine Alpha is twice as fast as Machine Beta. If Machine Beta takes 18 minutes to assemble a batch of circuits, how many minutes will it take both machines operating simultaneously to assemble the batch?',
+      options: [
+        { id: 'A', text: '6 minutes' },
+        { id: 'B', text: '8 minutes' },
+        { id: 'C', text: '9 minutes' },
+        { id: 'D', text: '4.5 minutes' },
+        { id: 'E', text: '5 minutes' }
+      ],
+      correctOption: 'A',
+      explanation: 'Machine Beta time = 18 min. Alpha is twice as fast -> Alpha time = 9 min. Together: (18 * 9) / (18 + 9) = 162 / 27 = 6 minutes.'
+    },
+
+    // Problem 13: Chart Growth Ratio
+    {
+      subType: 'data_chart',
+      category: 'math',
+      question: 'According to the production data chart below, what was the percentage increase in units between Q1 and Q3?',
+      figureType: 'chart',
+      chartSvg: generateBarChart({
+        title: 'Factory Output (Thousands of Units)',
+        labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+        values: [50, 75, 125, 90],
+        unit: 'k'
+      }),
+      options: [
+        { id: 'A', text: '150%' },
+        { id: 'B', text: '125%' },
+        { id: 'C', text: '100%' },
+        { id: 'D', text: '75%' },
+        { id: 'E', text: '250%' }
+      ],
+      correctOption: 'A',
+      explanation: 'Q1 = 50k, Q3 = 125k. Increase = 125 - 50 = 75k. Percentage increase = (75 / 50) * 100% = 150%.'
+    },
+
+    // Problem 14: Mental Arithmetic under time pressure
+    {
+      subType: 'word_problem',
+      category: 'math',
+      question: 'If a runner completes 3.6 kilometers in 12 minutes, what is the runner\'s average speed in kilometers per hour?',
+      options: [
+        { id: 'A', text: '18 km/h' },
+        { id: 'B', text: '15 km/h' },
+        { id: 'C', text: '21.6 km/h' },
+        { id: 'D', text: '16.5 km/h' },
+        { id: 'E', text: '19.2 km/h' }
+      ],
+      correctOption: 'A',
+      explanation: '12 minutes is exactly 1/5 of an hour. Speed = 3.6 km / (1/5 h) = 3.6 * 5 = 18 km/h.'
+    },
+
+    // Problem 15: Quadratic Difference Series
+    {
+      subType: 'number_series',
+      category: 'math',
+      question: 'What is the next number in this sequence?\n6, 11, 21, 36, 56, ?',
+      options: [
+        { id: 'A', text: '81' },
+        { id: 'B', text: '78' },
+        { id: 'C', text: '84' },
+        { id: 'D', text: '86' },
+        { id: 'E', text: '88' }
+      ],
+      correctOption: 'A',
+      explanation: 'Differences: +5, +10, +15, +20. Next difference is +25. 56 + 25 = 81.'
+    },
+
+    // Problem 16: Compound Interest / Growth Approximation
+    {
+      subType: 'word_problem',
+      category: 'math',
+      question: 'An initial investment of $8,000 earns 5% annual interest compounded annually. What is the total accumulated value after 2 years?',
+      options: [
+        { id: 'A', text: '$8,820' },
+        { id: 'B', text: '$8,800' },
+        { id: 'C', text: '$8,900' },
+        { id: 'D', text: '$8,750' },
+        { id: 'E', text: '$9,000' }
+      ],
+      correctOption: 'A',
+      explanation: 'Year 1: 8,000 + 400 = $8,400. Year 2: 5% of 8,400 is 420. Total = 8,400 + 420 = $8,820.'
+    },
+
+    // Problem 17: Geometry / Area Scaling
+    {
+      subType: 'word_problem',
+      category: 'math',
+      question: 'If the diameter of a circle is tripled, by what factor is its surface area multiplied?',
+      options: [
+        { id: 'A', text: '9 times' },
+        { id: 'B', text: '3 times' },
+        { id: 'C', text: '6 times' },
+        { id: 'D', text: '12 times' },
+        { id: 'E', text: '27 times' }
+      ],
+      correctOption: 'A',
+      explanation: 'Area is proportional to radius squared. (3r)^2 = 9r^2, so area is multiplied by 9.'
+    },
+
+    // Problem 18: Fractional Division
+    {
+      subType: 'word_problem',
+      category: 'math',
+      question: 'What is (3/4) divided by (5/8)?',
+      options: [
+        { id: 'A', text: '6/5 (or 1.2)' },
+        { id: 'B', text: '15/32' },
+        { id: 'C', text: '5/6' },
+        { id: 'D', text: '8/15' },
+        { id: 'E', text: '7/8' }
+      ],
+      correctOption: 'A',
+      explanation: '(3/4) * (8/5) = 24/20 = 6/5 = 1.2.'
+    },
+
+    // Problem 19: Fibonacci Prime Sum
+    {
+      subType: 'number_series',
+      category: 'math',
+      question: 'Identify the missing number in the progression:\n1, 3, 7, 15, 31, 63, ?',
+      options: [
+        { id: 'A', text: '127' },
+        { id: 'B', text: '125' },
+        { id: 'C', text: '128' },
+        { id: 'D', text: '131' },
+        { id: 'E', text: '142' }
+      ],
+      correctOption: 'A',
+      explanation: 'Formula 2^n - 1 or (Term * 2 + 1): 1*2+1=3; 3*2+1=7; 7*2+1=15; 15*2+1=31; 31*2+1=63; 63*2+1 = 127.'
+    },
+
+    // Problem 20: Cost Accounting / Break Even
+    {
+      subType: 'word_problem',
+      category: 'math',
+      question: 'A software company incurs $60,000 in monthly fixed operational overhead. Each software license generates $150 in revenue and costs $30 in server maintenance. How many licenses must be sold each month to break even?',
+      options: [
+        { id: 'A', text: '500 licenses' },
+        { id: 'B', text: '400 licenses' },
+        { id: 'C', text: '600 licenses' },
+        { id: 'D', text: '450 licenses' },
+        { id: 'E', text: '750 licenses' }
+      ],
+      correctOption: 'A',
+      explanation: 'Contribution margin per unit = $150 - $30 = $120. Break-even volume = $60,000 / $120 = 500 licenses.'
+    },
+
+    // Problem 21: Unit Conversion Rate
+    {
+      subType: 'word_problem',
+      category: 'math',
+      question: 'A water tank with capacity 2,400 gallons is leaking at a constant rate of 1.5 gallons every 45 seconds. How many hours will it take for the full tank to completely drain?',
+      options: [
+        { id: 'A', text: '20 hours' },
+        { id: 'B', text: '18 hours' },
+        { id: 'C', text: '24 hours' },
+        { id: 'D', text: '16 hours' },
+        { id: 'E', text: '30 hours' }
+      ],
+      correctOption: 'A',
+      explanation: 'Leak rate = 1.5 gal / 45 sec = 1 gal / 30 sec = 2 gal / minute = 120 gal / hour. Time = 2,400 / 120 = 20 hours.'
+    },
+
+    // Problem 22: Exponential differences
+    {
+      subType: 'number_series',
+      category: 'math',
+      question: 'What is the next number in this sequence?\n10, 12, 16, 24, 40, ?',
+      options: [
+        { id: 'A', text: '72' },
+        { id: 'B', text: '64' },
+        { id: 'C', text: '80' },
+        { id: 'D', text: '68' },
+        { id: 'E', text: '56' }
+      ],
+      correctOption: 'A',
+      explanation: 'Differences double: +2, +4, +8, +16. Next difference is +32. 40 + 32 = 72.'
+    },
+
+    // Problem 23: Average / Missing Score
+    {
+      subType: 'word_problem',
+      category: 'math',
+      question: 'To qualify for an executive fellowship, an applicant must maintain an average score of at least 88 across 5 aptitude evaluations. If her scores on the first 4 exams were 84, 91, 85, and 92, what minimum score does she need on the 5th exam?',
+      options: [
+        { id: 'A', text: '88' },
+        { id: 'B', text: '86' },
+        { id: 'C', text: '90' },
+        { id: 'D', text: '89' },
+        { id: 'E', text: '92' }
+      ],
+      correctOption: 'A',
+      explanation: 'Total required points = 88 * 5 = 440. Sum of first 4 scores = 84 + 91 + 85 + 92 = 352. Needed on 5th exam = 440 - 352 = 88.'
+    },
+
+    // Problem 24: Percentage Ratio
+    {
+      subType: 'word_problem',
+      category: 'math',
+      question: 'If 35% of a number is 140, what is 60% of that same number?',
+      options: [
+        { id: 'A', text: '240' },
+        { id: 'B', text: '210' },
+        { id: 'C', text: '280' },
+        { id: 'D', text: '300' },
+        { id: 'E', text: '200' }
+      ],
+      correctOption: 'A',
+      explanation: '35% is 140 -> 1% is 140/35 = 4. 60% is 60 * 4 = 240.'
     }
   ];
-
-  return bank;
 }

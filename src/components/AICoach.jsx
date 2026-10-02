@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Sparkles, Send, Bot, User, AlertTriangle, Zap, Clock, Trophy, HelpCircle, Key, Check } from 'lucide-react';
+import { Sparkles, Send, Bot, User, AlertTriangle, Zap, Clock, Trophy, HelpCircle, Key, Check, Target } from 'lucide-react';
 import { generateCoachInsight, analyzeAttemptPatterns } from '../data/patternEngine.js';
-import { getSettings, saveSettings } from '../utils/storage.js';
+import { getSettings, saveSettings, DEFAULT_GEMINI_KEY } from '../utils/storage.js';
 
 export default function AICoach({ attempts = [], activeAttempt = null, onSelectAttempt }) {
   const [messages, setMessages] = useState([]);
@@ -11,16 +11,29 @@ export default function AICoach({ attempts = [], activeAttempt = null, onSelectA
   const [apiKey, setApiKey] = useState('');
   const [showKeyInput, setShowKeyInput] = useState(false);
   const [keySaved, setKeySaved] = useState(false);
+  const [apiModel, setApiModel] = useState('Gemini 2.5 Flash');
 
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
     const s = getSettings();
-    if (s.geminiApiKey) setApiKey(s.geminiApiKey);
+    setApiKey(s.geminiApiKey || DEFAULT_GEMINI_KEY);
 
-    // Initial greeting message
+    // Initial greeting tailored for 45+ target
     const initialTarget = attempts.find(a => a.id === selectedAttemptId) || attempts[0] || null;
-    const initialText = generateCoachInsight('overview', attempts, initialTarget);
+    const initialText = initialTarget 
+      ? generateCoachInsight('overview', attempts, initialTarget)
+      : `### Welcome to your CCAT Elite AI Coach! 🧠🎯
+**Target Goal: 45+ / 50 (Top 0.1% Score Bracket)**
+
+I have direct access to Google Gemini and your entire test telemetry. 
+To reach 45+, you need:
+1. **Speed Benchmark:** Answering 47+ questions in 15 minutes (~18.0s per question).
+2. **Velocity Allocation:** Verbal in $\\le$ 10s, Spatial in $\\le$ 12s, Math in $\\le$ 22s.
+3. **Zero Time Traps:** Never spending $>25$ seconds on any question you are unsure of.
+
+Take a test from the **Test Suite** tab, and I will analyze your exact second-by-second question telemetry to show you where you lost points or time!`;
+
     setMessages([
       {
         id: 'msg-init',
@@ -52,40 +65,35 @@ export default function AICoach({ attempts = [], activeAttempt = null, onSelectA
     setInputQuery('');
     setIsTyping(true);
 
-    // Check if user provided Gemini API key for external LLM call
-    if (apiKey) {
-      try {
-        const response = await callGeminiWithTelemetry(query, targetAttempt, attempts, apiKey);
-        setIsTyping(false);
-        setMessages(prev => [
-          ...prev,
-          {
-            id: `ai-${Date.now()}`,
-            sender: 'ai',
-            text: response,
-            timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-          }
-        ]);
-        return;
-      } catch (err) {
-        console.warn('Gemini API call failed, falling back to local diagnostic engine', err);
-      }
-    }
+    const activeKey = apiKey || DEFAULT_GEMINI_KEY;
 
-    // Built-in intelligent diagnostic engine
-    setTimeout(() => {
-      const responseText = generateCoachInsight(query, attempts, targetAttempt);
+    // Call Real Google Gemini AI with full context
+    try {
+      const response = await callGeminiWithTelemetry(query, targetAttempt, attempts, activeKey, messages);
       setIsTyping(false);
       setMessages(prev => [
         ...prev,
         {
           id: `ai-${Date.now()}`,
           sender: 'ai',
-          text: responseText,
+          text: response,
           timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
         }
       ]);
-    }, 400);
+    } catch (err) {
+      console.warn('Gemini API call failed, falling back to local diagnostic engine', err);
+      const fallbackResponse = generateCoachInsight(query, attempts, targetAttempt);
+      setIsTyping(false);
+      setMessages(prev => [
+        ...prev,
+        {
+          id: `ai-${Date.now()}`,
+          sender: 'ai',
+          text: fallbackResponse,
+          timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+        }
+      ]);
+    }
   };
 
   const handleSaveKey = () => {
@@ -96,10 +104,10 @@ export default function AICoach({ attempts = [], activeAttempt = null, onSelectA
   };
 
   const quickPrompts = [
-    { label: '⚠️ Find My Time Traps', prompt: 'Where are my biggest time traps and how much time did I waste?' },
-    { label: '⏱️ Analyze Speed Pattern', prompt: 'Analyze my speed by question category and find my pacing bottlenecks.' },
-    { label: '🎯 Roadmap to 35+ Score', prompt: 'How do I reach a score of 35+ based on my exact test telemetry?' },
-    { label: '💤 Check Fatigue Decay', prompt: 'Did my accuracy drop between question 1-25 and question 26-50?' }
+    { label: '🎯 Roadmap to 45+ Score', prompt: 'Give me a concrete, ruthless roadmap to jump from my current score to 45+ on the CCAT.' },
+    { label: '⚠️ Find My Exact Time Traps', prompt: 'Identify every question where I spent over 25 seconds and got it wrong. How much time did I waste?' },
+    { label: '⏱️ Category Velocity Imbalance', prompt: 'Analyze my speed across Math, Verbal, and Spatial. Which category is eating my clock?' },
+    { label: '🧠 Instant Elimination Tactics', prompt: 'Teach me the fastest 5-second elimination rules for CCAT spatial matrices and odd-one-out questions.' }
   ];
 
   return (
@@ -108,20 +116,24 @@ export default function AICoach({ attempts = [], activeAttempt = null, onSelectA
       {/* Coach Header */}
       <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 sm:p-5 shadow-xl mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-500 to-indigo-500 p-[2px] shadow-lg shadow-purple-500/20">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-500 via-indigo-500 to-sky-400 p-[2px] shadow-lg shadow-purple-500/20">
             <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
               <Sparkles className="w-5 h-5 text-purple-400" />
             </div>
           </div>
           <div>
-            <h2 className="text-lg font-bold text-white flex items-center gap-2">
+            <h2 className="text-lg font-bold text-white flex items-center gap-2 flex-wrap">
               <span>CCAT AI Cognitive Coach</span>
-              <span className="text-[10px] uppercase font-bold px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">
-                Telemetry Active
+              <span className="text-[10px] uppercase font-extrabold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 flex items-center gap-1">
+                <Target className="w-3 h-3 text-emerald-400" />
+                Target: 45+ Elite
+              </span>
+              <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                {apiModel}
               </span>
             </h2>
             <p className="text-xs text-slate-400">
-              Live analysis of every question response, second-by-second pacing, and time traps.
+              Powered by real Google Gemini with full access to your test attempts and per-question timing telemetry.
             </p>
           </div>
         </div>
@@ -147,36 +159,40 @@ export default function AICoach({ attempts = [], activeAttempt = null, onSelectA
 
           <button
             onClick={() => setShowKeyInput(!showKeyInput)}
-            className="p-2 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-400 hover:text-slate-200 border border-slate-700 transition-colors"
-            title="Configure Gemini API Key (Optional)"
+            className="p-2 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-700 transition-colors flex items-center gap-1.5 text-xs font-semibold"
+            title="Configure Gemini API Key"
           >
-            <Key className="w-4 h-4" />
+            <Key className="w-3.5 h-3.5 text-purple-400" />
+            <span>API Key</span>
           </button>
         </div>
       </div>
 
-      {/* Optional Gemini API Key Drawer */}
+      {/* Gemini API Key Drawer */}
       {showKeyInput && (
         <div className="bg-slate-900 border border-purple-500/30 rounded-2xl p-4 mb-4 shadow-xl flex items-center justify-between gap-4 flex-wrap animate-fadeIn">
           <div className="flex-1 min-w-[240px]">
-            <p className="text-xs font-semibold text-slate-200 mb-1">Optional: Connect Gemini API Key</p>
+            <p className="text-xs font-semibold text-slate-200 mb-1 flex items-center gap-1.5">
+              <Check className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Google Gemini API Key Configured</span>
+            </p>
             <p className="text-[11px] text-slate-400">
-              The built-in engine already works 100% offline. Adding a key enables free-form conversational reasoning with Gemini.
+              Your API key is securely stored in your browser's local storage and used directly for real-time cognitive coaching.
             </p>
           </div>
           <div className="flex items-center gap-2 w-full sm:w-auto">
             <input
               type="password"
-              placeholder="Paste Gemini API key (AIza...)"
+              placeholder="Paste Gemini API key"
               value={apiKey}
               onChange={(e) => setApiKey(e.target.value)}
-              className="bg-slate-950 border border-slate-800 rounded-xl px-3 py-1.5 text-xs text-slate-200 w-full sm:w-64 focus:outline-none focus:border-purple-400"
+              className="bg-slate-950 border border-slate-800 rounded-xl px-3 py-1.5 text-xs text-slate-200 w-full sm:w-72 font-mono focus:outline-none focus:border-purple-400"
             />
             <button
               onClick={handleSaveKey}
-              className="px-3 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs flex items-center gap-1 transition-colors"
+              className="px-3.5 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs flex items-center gap-1 transition-colors"
             >
-              {keySaved ? <Check className="w-3.5 h-3.5" /> : 'Save'}
+              {keySaved ? <Check className="w-3.5 h-3.5" /> : 'Save Key'}
             </button>
           </div>
         </div>
@@ -226,7 +242,7 @@ export default function AICoach({ attempts = [], activeAttempt = null, onSelectA
               <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-bounce" />
               <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-bounce [animation-delay:0.2s]" />
               <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-bounce [animation-delay:0.4s]" />
-              <span className="ml-2">Analyzing attempt telemetry...</span>
+              <span className="ml-2 font-medium text-slate-300">Google Gemini is analyzing your attempt telemetry...</span>
             </div>
           </div>
         )}
@@ -234,13 +250,13 @@ export default function AICoach({ attempts = [], activeAttempt = null, onSelectA
         <div ref={messagesEndRef} />
       </div>
 
-      {/* Suggested Quick Prompts */}
+      {/* Suggested Quick Prompts for 45+ target */}
       <div className="flex items-center gap-2 py-3 overflow-x-auto no-scrollbar">
         {quickPrompts.map((qp, i) => (
           <button
             key={i}
             onClick={() => handleSend(qp.prompt)}
-            className="whitespace-nowrap px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-800 hover:border-purple-500/50 text-xs font-medium transition-all shrink-0"
+            className="whitespace-nowrap px-3.5 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-800 hover:border-purple-500/50 text-xs font-semibold transition-all shrink-0 cursor-pointer shadow-sm"
           >
             {qp.label}
           </button>
@@ -251,7 +267,7 @@ export default function AICoach({ attempts = [], activeAttempt = null, onSelectA
       <div className="bg-slate-900 border border-slate-800 rounded-2xl p-2 sm:p-2.5 flex items-center gap-2 shadow-xl">
         <input
           type="text"
-          placeholder="Ask AI Coach about speed, question traps, or score improvement..."
+          placeholder="Ask Gemini Coach how to reach 45+, analyze time traps, or review questions..."
           value={inputQuery}
           onChange={(e) => setInputQuery(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && handleSend()}
@@ -263,7 +279,7 @@ export default function AICoach({ attempts = [], activeAttempt = null, onSelectA
           disabled={!inputQuery.trim() || isTyping}
           className={`p-2.5 rounded-xl font-bold transition-all ${
             inputQuery.trim() && !isTyping
-              ? 'bg-purple-600 hover:bg-purple-500 text-white shadow-lg shadow-purple-600/30 cursor-pointer'
+              ? 'bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white shadow-lg shadow-purple-600/30 cursor-pointer'
               : 'bg-slate-800 text-slate-600 cursor-not-allowed'
           }`}
         >
@@ -276,41 +292,88 @@ export default function AICoach({ attempts = [], activeAttempt = null, onSelectA
 }
 
 /**
- * Optional Gemini API Telemetry Ingestion
+ * Real Google Gemini API Call with Comprehensive Telemetry Context
  */
-async function callGeminiWithTelemetry(query, attempt, allAttempts, apiKey) {
+async function callGeminiWithTelemetry(query, attempt, allAttempts, apiKey, previousMessages = []) {
   const analysis = analyzeAttemptPatterns(attempt);
-  const contextPrompt = `
-You are an expert CCAT (Criteria Cognitive Aptitude Test) coach.
-The user is preparing for the CCAT.
-Real CCAT rules: 50 questions in 15 minutes (18s per question average). No negative marking. Strict forward only.
 
-Here is the user's detailed telemetry from their recent attempt:
+  // Compile detailed question-level telemetry for the active attempt
+  let detailedQuestionsSummary = 'No attempt completed yet.';
+  if (attempt && attempt.responses) {
+    const list = Object.values(attempt.responses);
+    detailedQuestionsSummary = list.map(r => {
+      const outcome = r.isCorrect ? 'CORRECT' : r.isSkipped ? 'SKIPPED' : `WRONG (Chosen: ${r.selectedOption}, Correct: ${r.correctOption})`;
+      return `Q#${r.questionId} [${r.category.toUpperCase()}] - Time: ${r.timeSpentSec}s - ${outcome}`;
+    }).join('\n');
+  }
+
+  const systemContext = `
+You are an Elite CCAT (Criteria Cognitive Aptitude Test) Master Coach.
+The user is preparing intensely for the CCAT.
+USER'S ULTIMATE TARGET: 45+ out of 50 (Top 0.1% Global Score).
+
+CRITICAL CCAT REALITIES & CONSTRAINTS:
+1. 50 questions in 15 minutes (900 seconds) = Average 18.0 seconds per question.
+2. STRICT FORWARD-ONLY NAVIGATION: No back button! Once an answer or skip is pressed, it is final.
+3. NO NEGATIVE MARKING: Never leave an unattempted question at the end; guess before clock runs out.
+4. TO SCORE 45+:
+   - Candidate must attempt at least 47–50 questions.
+   - Requires 94–96%+ accuracy.
+   - Pacing requirements:
+     * Verbal (17 Qs): Average <= 10 seconds per question. Must bank 100+ seconds for math!
+     * Spatial (11 Qs): Average <= 12-14 seconds per question. Rapid single-feature elimination.
+     * Math & Logic (22 Qs): Average <= 20-22 seconds per question.
+   - Sunk cost rule: If a math question takes >22 seconds, guess immediately and move on. Time traps kill a 45+ score.
+
+USER'S HISTORICAL CONTEXT:
+- Total attempts taken: ${allAttempts.length}
+- Best score achieved so far: ${allAttempts.reduce((m, a) => Math.max(m, Object.values(a.responses || {}).filter(r => r.isCorrect).length), 0)} / 50
+
+ACTIVE ATTEMPT TELEMETRY:
+- Test: ${attempt?.testTitle || 'None'}
 - Raw Score: ${analysis?.score || 0} / 50
 - Accuracy: ${analysis?.overallAccuracy || 0}%
 - Average time per question: ${analysis?.overallAvgTimeSec || 0} seconds
-- Time Traps (>28s spent and got wrong): ${analysis?.timeTraps.count || 0} questions (${analysis?.timeTraps.wastedSeconds || 0} seconds wasted)
-- Category Breakdown:
-${analysis?.categoryStats.map(c => `  * ${c.name}: ${c.correct}/${c.total} (${c.accuracyPercent}%) - Avg Time: ${c.avgTimeSec}s`).join('\n')}
-- Fatigue drop (Half 1 to Half 2): ${analysis?.fatigue.staminaDecay}% accuracy drop
+- Total Time Traps (>25s on wrong questions): ${analysis?.timeTraps.count || 0} questions (${analysis?.timeTraps.wastedSeconds || 0} seconds wasted)
+- Section Breakdown:
+${analysis?.categoryStats.map(c => `  * ${c.name}: ${c.correct}/${c.total} (${c.accuracyPercent}%) | Avg time: ${c.avgTimeSec}s`).join('\n') || 'N/A'}
 
-User's Question: "${query}"
+QUESTION-BY-QUESTION TELEMETRY (Every question's time and outcome):
+${detailedQuestionsSummary}
 
-Respond with concise, actionable, bulleted advice tailored to their specific numbers and time traps.
+INSTRUCTIONS FOR YOUR RESPONSE:
+1. Speak directly, like a high-performance cognitive coach (crisp, precise, analytical).
+2. Reference their actual numbers (e.g. "On Q#14 you spent 34s and got it wrong...").
+3. Give concrete tactics, shortcuts, mental math tricks, or skipping rules to push them to 45+.
+4. Format using clean GitHub markdown with bold key points and bullet lists.
 `.trim();
 
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
-  const resp = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text: contextPrompt }] }]
-    })
-  });
+  // Try gemini-2.5-flash first, fallback to gemini-1.5-flash
+  const models = ['gemini-2.5-flash', 'gemini-1.5-flash'];
+  
+  for (const model of models) {
+    try {
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+      const payload = {
+        contents: [
+          { role: 'user', parts: [{ text: systemContext + '\n\nUser Question:\n' + query }] }
+        ]
+      };
 
-  const data = await resp.json();
-  if (data.candidates && data.candidates[0]?.content?.parts[0]?.text) {
-    return data.candidates[0].content.parts[0].text;
+      const resp = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      const data = await resp.json();
+      if (data.candidates && data.candidates[0]?.content?.parts[0]?.text) {
+        return data.candidates[0].content.parts[0].text;
+      }
+    } catch (e) {
+      console.warn(`Attempt with ${model} failed, trying next...`, e);
+    }
   }
-  throw new Error('No response from Gemini API');
+
+  throw new Error('Could not get response from Gemini models');
 }

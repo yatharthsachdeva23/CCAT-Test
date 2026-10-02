@@ -1,5 +1,6 @@
 const ATTEMPTS_KEY = 'ccat_prep_attempts_v1';
 const SETTINGS_KEY = 'ccat_prep_settings_v1';
+export const DEFAULT_GEMINI_KEY = 'AIzaSyBL7Iy02c9KIOVRLFUAlkgmr1T-6w62S70';
 
 export function getAttempts() {
   try {
@@ -40,9 +41,14 @@ export function clearAllAttempts() {
 export function getSettings() {
   try {
     const raw = localStorage.getItem(SETTINGS_KEY);
-    return raw ? JSON.parse(raw) : { geminiApiKey: '', soundEnabled: true, timerWarning: true };
+    const parsed = raw ? JSON.parse(raw) : {};
+    return {
+      geminiApiKey: parsed.geminiApiKey || DEFAULT_GEMINI_KEY,
+      soundEnabled: parsed.soundEnabled ?? true,
+      timerWarning: parsed.timerWarning ?? true
+    };
   } catch (err) {
-    return { geminiApiKey: '', soundEnabled: true, timerWarning: true };
+    return { geminiApiKey: DEFAULT_GEMINI_KEY, soundEnabled: true, timerWarning: true };
   }
 }
 

@@ -1,10 +1,6 @@
 /**
  * SVG Templates and Generator for CCAT Spatial & Chart Questions.
- * Generates mathematically crisp, scalable vector graphics for:
- * 1. Next in Series (Rotations, dot movements, shading cycles)
- * 2. Odd One Out (5 geometric frames with subtle rule differences)
- * 3. 3x3 Matrices (Pattern grid with ? in cell 9)
- * 4. Data Charts (Bar graphs, line trends)
+ * Generates mathematically crisp, scalable vector graphics.
  */
 
 export const SVG_STYLES = {
@@ -19,32 +15,28 @@ export const SVG_STYLES = {
 };
 
 /**
- * Generates an SVG string for a rotating geometric shape with an orbiting dot
+ * Generates an SVG string for a geometric shape with an optional orbiting/corner dot and rotation
  */
-export function generateRotatingShape({ shape = 'square', angle = 0, dotPos = 0, shaded = false, size = 100 }) {
+export function generateRotatingShape({ shape = 'square', angle = 0, dotPos = null, shaded = false, size = 100, customColor = null }) {
   const center = size / 2;
   const radius = size * 0.28;
   const dotOrbit = size * 0.38;
-  const dotAngleRad = (dotPos * 90 * Math.PI) / 180;
-  const dotX = center + dotOrbit * Math.cos(dotAngleRad);
-  const dotY = center + dotOrbit * Math.sin(dotAngleRad);
+  const stroke = customColor || '#38bdf8';
+  const fill = shaded ? stroke : 'none';
 
   let shapeElement = '';
-  const fill = shaded ? '#38bdf8' : 'none';
-  const stroke = '#38bdf8';
 
   if (shape === 'square') {
     const half = radius;
     shapeElement = `<rect x="${center - half}" y="${center - half}" width="${half * 2}" height="${half * 2}" fill="${fill}" stroke="${stroke}" stroke-width="3" transform="rotate(${angle} ${center} ${center})" rx="4" />`;
   } else if (shape === 'triangle') {
-    const h = radius * 1.8;
     const p1 = `${center},${center - radius}`;
     const p2 = `${center - radius * 0.866},${center + radius * 0.7}`;
     const p3 = `${center + radius * 0.866},${center + radius * 0.7}`;
     shapeElement = `<polygon points="${p1} ${p2} ${p3}" fill="${fill}" stroke="${stroke}" stroke-width="3" transform="rotate(${angle} ${center} ${center})" />`;
   } else if (shape === 'arrow') {
     const w = radius * 0.5;
-    const len = radius * 1.4;
+    const len = radius * 1.35;
     shapeElement = `
       <g transform="rotate(${angle} ${center} ${center})">
         <line x1="${center}" y1="${center + len}" x2="${center}" y2="${center - len}" stroke="${stroke}" stroke-width="4" stroke-linecap="round"/>
@@ -57,19 +49,50 @@ export function generateRotatingShape({ shape = 'square', angle = 0, dotPos = 0,
         <line x1="${center}" y1="${center - radius}" x2="${center}" y2="${center + radius}" stroke="${stroke}" stroke-width="4" stroke-linecap="round"/>
       </g>`;
   } else if (shape === 'circle-sector') {
-    // Shaded quadrant
     shapeElement = `
       <g transform="rotate(${angle} ${center} ${center})">
         <circle cx="${center}" cy="${center}" r="${radius}" fill="none" stroke="${stroke}" stroke-width="3"/>
-        <path d="M ${center} ${center} L ${center + radius} ${center} A ${radius} ${radius} 0 0 1 ${center} ${center + radius} Z" fill="#38bdf8"/>
+        <path d="M ${center} ${center} L ${center + radius} ${center} A ${radius} ${radius} 0 0 1 ${center} ${center + radius} Z" fill="${stroke}"/>
         <line x1="${center - radius}" y1="${center}" x2="${center + radius}" y2="${center}" stroke="${stroke}" stroke-width="2"/>
         <line x1="${center}" y1="${center - radius}" x2="${center}" y2="${center + radius}" stroke="${stroke}" stroke-width="2"/>
       </g>`;
+  } else if (shape === 'pentagon') {
+    const points = [];
+    for (let i = 0; i < 5; i++) {
+      const a = (i * 72 - 90) * Math.PI / 180;
+      points.push(`${center + radius * Math.cos(a)},${center + radius * Math.sin(a)}`);
+    }
+    shapeElement = `<polygon points="${points.join(' ')}" fill="${fill}" stroke="${stroke}" stroke-width="3" transform="rotate(${angle} ${center} ${center})" />`;
+  } else if (shape === 'hexagon') {
+    const points = [];
+    for (let i = 0; i < 6; i++) {
+      const a = (i * 60 - 90) * Math.PI / 180;
+      points.push(`${center + radius * Math.cos(a)},${center + radius * Math.sin(a)}`);
+    }
+    shapeElement = `<polygon points="${points.join(' ')}" fill="${fill}" stroke="${stroke}" stroke-width="3" transform="rotate(${angle} ${center} ${center})" />`;
+  } else if (shape === 'diamond') {
+    const points = `${center},${center - radius * 1.2} ${center + radius * 0.9},${center} ${center},${center + radius * 1.2} ${center - radius * 0.9},${center}`;
+    shapeElement = `<polygon points="${points}" fill="${fill}" stroke="${stroke}" stroke-width="3" transform="rotate(${angle} ${center} ${center})" />`;
+  } else if (shape === 'star') {
+    const points = [];
+    for (let i = 0; i < 10; i++) {
+      const r = i % 2 === 0 ? radius * 1.2 : radius * 0.55;
+      const a = (i * 36 - 90) * Math.PI / 180;
+      points.push(`${center + r * Math.cos(a)},${center + r * Math.sin(a)}`);
+    }
+    shapeElement = `<polygon points="${points.join(' ')}" fill="${fill}" stroke="${stroke}" stroke-width="2.5" transform="rotate(${angle} ${center} ${center})" />`;
+  } else {
+    // Default circle
+    shapeElement = `<circle cx="${center}" cy="${center}" r="${radius}" fill="${fill}" stroke="${stroke}" stroke-width="3" />`;
   }
 
-  const dotElement = dotPos !== null && dotPos !== undefined
-    ? `<circle cx="${dotX}" cy="${dotY}" r="5" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5" />`
-    : '';
+  let dotElement = '';
+  if (dotPos !== null && dotPos !== undefined) {
+    const dotAngleRad = (dotPos * 90 * Math.PI) / 180;
+    const dotX = center + dotOrbit * Math.cos(dotAngleRad);
+    const dotY = center + dotOrbit * Math.sin(dotAngleRad);
+    dotElement = `<circle cx="${dotX}" cy="${dotY}" r="5.5" fill="#f59e0b" stroke="#ffffff" stroke-width="2" />`;
+  }
 
   return `
     <svg viewBox="0 0 ${size} ${size}" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +104,7 @@ export function generateRotatingShape({ shape = 'square', angle = 0, dotPos = 0,
 }
 
 /**
- * Generates an SVG 3x3 Matrix Grid
+ * Generates an SVG 3x3 Matrix Grid with valid SVG coordinates so all 9 cells are crisp and visible
  */
 export function generateMatrixGrid({ cells = [], size = 260 }) {
   const cellSize = (size - 24) / 3;
@@ -92,26 +115,30 @@ export function generateMatrixGrid({ cells = [], size = 260 }) {
       const idx = row * 3 + col;
       const x = 6 + col * (cellSize + 6);
       const y = 6 + row * (cellSize + 6);
-      const cellContent = cells[idx] || (idx === 8 ? '?' : '');
+      const isMissing = idx === 8 || cells[idx] === '?';
 
-      cellsMarkup += `
-        <g transform="translate(${x}, ${y})">
-          <rect width="${cellSize}" height="${cellSize}" rx="6" fill="#0f172a" stroke="#334155" stroke-width="2"/>
-          ${idx === 8 ? `
-            <text x="${cellSize / 2}" y="${cellSize / 2 + 8}" text-anchor="middle" font-size="28" font-weight="bold" fill="#f59e0b">?</text>
-          ` : `
-            <g transform="scale(${cellSize / 100})">
-              ${cellContent}
-            </g>
-          `}
-        </g>
-      `;
+      if (isMissing) {
+        cellsMarkup += `
+          <g transform="translate(${x}, ${y})">
+            <rect width="${cellSize}" height="${cellSize}" rx="8" fill="#0c1322" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,4"/>
+            <text x="${cellSize / 2}" y="${cellSize / 2 + 8}" text-anchor="middle" font-size="28" font-family="sans-serif" font-weight="900" fill="#38bdf8">?</text>
+          </g>
+        `;
+      } else {
+        // Strip outer <svg> and insert raw shape with nested <svg> coordinate bounding
+        const rawSvg = cells[idx] || '';
+        cellsMarkup += `
+          <svg x="${x}" y="${y}" width="${cellSize}" height="${cellSize}" viewBox="0 0 100 100">
+            ${rawSvg.replace(/<svg[^>]*>/, '').replace(/<\/svg>/, '')}
+          </svg>
+        `;
+      }
     }
   }
 
   return `
-    <svg viewBox="0 0 ${size} ${size}" class="max-w-[280px] max-h-[280px] mx-auto" xmlns="http://www.w3.org/2000/svg">
-      <rect width="${size}" height="${size}" rx="12" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <svg viewBox="0 0 ${size} ${size}" class="w-full max-w-[280px] max-h-[280px] mx-auto block shadow-xl rounded-2xl" xmlns="http://www.w3.org/2000/svg">
+      <rect width="${size}" height="${size}" rx="14" fill="#0f172a" stroke="#334155" stroke-width="2"/>
       ${cellsMarkup}
     </svg>
   `.trim();
@@ -145,7 +172,7 @@ export function generateBarChart({ title = "Quarterly Sales (Units)", labels = [
   });
 
   return `
-    <svg viewBox="0 0 ${width} ${height}" class="w-full max-w-[420px] mx-auto rounded-xl bg-slate-900 border border-slate-700/60 p-2" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 ${width} ${height}" class="w-full max-w-[420px] mx-auto rounded-xl bg-slate-900 border border-slate-700/60 p-2 shadow-lg" xmlns="http://www.w3.org/2000/svg">
       <text x="${width / 2}" y="22" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="bold">${title}</text>
       <!-- Grid lines -->
       <line x1="${padding.left}" y1="${padding.top}" x2="${width - padding.right}" y2="${padding.top}" stroke="#334155" stroke-dasharray="3,3" stroke-width="1"/>
