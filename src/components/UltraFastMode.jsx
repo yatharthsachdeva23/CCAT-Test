@@ -29,10 +29,25 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
   const sprintDataRef = useRef(null);
   const sprintResponsesRef = useRef([]);
 
-  // Extract list of attempted test IDs so we only generate variations of practiced concepts
-  const attemptedTestIds = attempts.length > 0 
-    ? Array.from(new Set(attempts.map(a => a.testId)))
-    : ['test-1'];
+  // Extract list of attempted test IDs from user's actual attempts
+  // Exclude 0-question launch sessions (like test-29) so variations come from real completed questions
+  const validAttempts = attempts.filter(a => {
+    const resp = a.responses ? Object.values(a.responses) : [];
+    return resp.some(r => r.selectedOption !== null || r.isCorrect);
+  });
+
+  const attemptedTestIds = validAttempts.length > 0 
+    ? Array.from(new Set(validAttempts.map(a => a.testId)))
+    : ['test-3', 'test-4', 'test-5', 'test-9', 'test-13'];
+
+  // User-facing practiced tests label
+  const practicedTestsListStr = attemptedTestIds
+    .map(t => {
+      const m = t.match(/test-(\d+)/);
+      return m ? `Test ${m[1]}` : t;
+    })
+    .sort((a, b) => parseInt(a.replace('Test ', ''), 10) - parseInt(b.replace('Test ', ''), 10))
+    .join(', ');
 
   // Keep refs in sync
   useEffect(() => {
@@ -256,7 +271,7 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
                 <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
                 <div>
                   <strong className="text-white block font-bold">Concept Variations</strong>
-                  <span className="text-slate-400">Derived only from tests you practiced</span>
+                  <span className="text-slate-400">Strictly derived from your completed tests: <strong className="text-amber-300">{practicedTestsListStr}</strong> (0 unattempted tests spoiled)</span>
                 </div>
               </div>
             </div>
@@ -625,7 +640,7 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
                 Ultra Fast Sprint Completed
               </h1>
               <p className="text-sm text-slate-400">
-                Subject: <strong className="text-slate-200 capitalize">{sprintData?.subject} Reasoning</strong> • Concept Variations
+                Subject: <strong className="text-slate-200 capitalize">{sprintData?.subject} Reasoning</strong> • Concept variations from <strong className="text-amber-300">{practicedTestsListStr}</strong>
               </p>
             </div>
 

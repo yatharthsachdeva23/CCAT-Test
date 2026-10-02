@@ -267,6 +267,26 @@ const VERBAL_VARIATION_POOLS = [
       explanation: `**Correct Answer: ${correctOption} (${item.correct})**\n\n**Fast Analogy Relation:** Degree of intensity or environmental context. ${item.a} relates to ${item.b} exactly as ${item.c} relates to **${item.correct}**.`,
       category: 'verbal', subType: 'analogy', timeLimitSec: 7
     };
+  },
+
+  // Analogy 5: Odd Word Out (Category Mismatch from Tests 3, 4, 5, 9, 13)
+  (rand) => {
+    const sets = [
+      { words: ['BELLIGERENT', 'PUGNACIOUS', 'QUARRELSOME', 'COMBATIVE'], outlier: 'PACIFIC', why: 'Four words denote aggressively hostile behavior; PACIFIC means peaceful.' },
+      { words: ['DEVIOUS', 'TREACHEROUS', 'GUILEFUL', 'UNDERHANDED'], outlier: 'CANDID', why: 'Four words denote deceitful subtlety; CANDID means open and direct.' },
+      { words: ['TACITURN', 'LACONIC', 'RETICENT', 'RESERVED'], outlier: 'LOQUACIOUS', why: 'Four words denote quiet brevity of speech; LOQUACIOUS means excessively talkative.' },
+      { words: ['METICULOUS', 'SCRUPULOUS', 'PAINSTAKING', 'PUNCTILIOUS'], outlier: 'SLAPDASH', why: 'Four words denote extreme care and precision; SLAPDASH means careless and hasty.' },
+      { words: ['EPHEMERAL', 'EVANESCENT', 'TRANSIENT', 'FLEETING'], outlier: 'PERENNIAL', why: 'Four words denote temporary brevity; PERENNIAL means enduring or perpetual.' }
+    ];
+    const item = sets[Math.floor(rand() * sets.length)];
+    const rawOpts = [{ text: item.outlier }, ...item.words.map(w => ({ text: w }))];
+    const { options, correctOption } = shuffleOptions(rawOpts, 0, rand);
+    return {
+      question: 'Which of the following five words does NOT belong with the others?',
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption} (${item.outlier})**\n\n**Fast Category Mismatch:** ${item.why}`,
+      category: 'verbal', subType: 'odd_word', timeLimitSec: 7
+    };
   }
 ];
 
@@ -390,6 +410,86 @@ const MATH_VARIATION_POOLS = [
       question: `Two delivery couriers depart simultaneously toward each other from cities ${item.dist} miles apart. Courier 1 drives at ${item.v1} mph and Courier 2 at ${item.v2} mph. In how many hours will they meet?`,
       options, correctOption,
       explanation: `**Correct Answer: ${correctOption} (${item.time} hours)**\n\n**15-Sec Shortcut:** Combined closing speed = ${item.v1} + ${item.v2} = ${item.v1 + item.v2} mph. Time = Distance / Speed = ${item.dist} / ${item.v1 + item.v2} = **${item.time} hours**.`,
+      category: 'math', subType: 'word_problem', timeLimitSec: 15
+    };
+  },
+
+  // 7: Clock Hand Angle Fast Formula (From Test 4)
+  (rand) => {
+    const times = [
+      { h: 3, m: 30, ang: 75 },
+      { h: 4, m: 30, ang: 45 },
+      { h: 2, m: 30, ang: 105 },
+      { h: 8, m: 30, ang: 75 },
+      { h: 1, m: 30, ang: 135 }
+    ];
+    const item = times[Math.floor(rand() * times.length)];
+    const distractors = [item.ang + 15, item.ang - 15, item.ang + 30, item.ang - 30].filter(d => d > 0);
+    const rawOpts = [{ text: `${item.ang}°` }, ...distractors.map(d => ({ text: `${d}°` }))];
+    const { options, correctOption } = shuffleOptions(rawOpts, 0, rand);
+    return {
+      question: `What is the exact angle in degrees between the hour hand and the minute hand of a wall clock at exactly ${item.h}:${item.m}?`,
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption} (${item.ang}°)**\n\n**15-Sec Shortcut:** |30H - 5.5M| = |30(${item.h}) - 5.5(${item.m})| = **${item.ang}°**.`,
+      category: 'math', subType: 'word_problem', timeLimitSec: 15
+    };
+  },
+
+  // 8: Two-Dice Sum Probability (From Tests 5 & 9)
+  (rand) => {
+    const problems = [
+      { target: '9 or higher', correct: '5/18', outcomes: 10, prob: '10 / 36 = 5/18', wrong: ['1/6', '7/36', '1/3', '2/9'] },
+      { target: '10 or higher', correct: '1/6', outcomes: 6, prob: '6 / 36 = 1/6', wrong: ['5/18', '7/36', '1/9', '5/36'] },
+      { target: '8 or higher', correct: '5/12', outcomes: 15, prob: '15 / 36 = 5/12', wrong: ['1/3', '7/18', '11/36', '1/2'] }
+    ];
+    const item = problems[Math.floor(rand() * problems.length)];
+    const rawOpts = [{ text: item.correct }, ...item.wrong.map(w => ({ text: w }))];
+    const { options, correctOption } = shuffleOptions(rawOpts, 0, rand);
+    return {
+      question: `During a probability simulation using two fair standard six-sided dice, what is the exact probability of obtaining a combined sum of ${item.target} on a single roll?`,
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**15-Sec Shortcut:** There are 36 total outcomes. Favorable outcomes for sum ${item.target} = ${item.outcomes}. Probability = ${item.prob}.`,
+      category: 'math', subType: 'probability', timeLimitSec: 15
+    };
+  },
+
+  // 9: Three-Part Allocation Ratio (From Tests 3 & 13)
+  (rand) => {
+    const grants = [
+      { total: 60000, mult: 5000, shareB: '$20,000' },
+      { total: 72000, mult: 6000, shareB: '$24,000' },
+      { total: 96000, mult: 8000, shareB: '$32,000' },
+      { total: 120000, mult: 10000, shareB: '$40,000' }
+    ];
+    const item = grants[Math.floor(rand() * grants.length)];
+    const num = item.mult * 4;
+    const distractors = [`$${(num - item.mult).toLocaleString()}`, `$${(num + item.mult).toLocaleString()}`, `$${(num - item.mult*2).toLocaleString()}`, `$${(num + item.mult*2).toLocaleString()}`];
+    const rawOpts = [{ text: item.shareB }, ...distractors.map(d => ({ text: d }))];
+    const { options, correctOption } = shuffleOptions(rawOpts, 0, rand);
+    return {
+      question: `A municipal project budget of $${item.total.toLocaleString()} is divided among Energy, Storage, and Grid in the ratio of 3 : 4 : 5. How much funding does Storage receive?`,
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption} (${item.shareB})**\n\n**15-Sec Shortcut:** Total parts = 3 + 4 + 5 = 12. Storage gets 4/12 = 1/3 of the total: $${item.total.toLocaleString()} / 3 = **${item.shareB}**.`,
+      category: 'math', subType: 'word_problem', timeLimitSec: 15
+    };
+  },
+
+  // 10: Target Evaluation Score (From Test 3)
+  (rand) => {
+    const sets = [
+      { s1: 82, s2: 90, s3: 94, target: 90, needed: 94 },
+      { s1: 80, s2: 88, s3: 92, target: 88, needed: 92 },
+      { s1: 78, s2: 84, s3: 90, target: 85, needed: 88 },
+      { s1: 85, s2: 89, s3: 92, target: 90, needed: 94 }
+    ];
+    const item = sets[Math.floor(rand() * sets.length)];
+    const distractors = [item.needed - 2, item.needed + 2, item.needed - 4, item.needed + 4];
+    const rawOpts = [{ text: String(item.needed) }, ...distractors.map(d => ({ text: String(d) }))];
+    const { options, correctOption } = shuffleOptions(rawOpts, 0, rand);
+    return {
+      question: `A candidate has achieved scores of ${item.s1}, ${item.s2}, and ${item.s3} on the first three evaluations of an executive module. What score must they achieve on the fourth evaluation to attain a cumulative average of exactly ${item.target}?`,
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption} (${item.needed})**\n\n**15-Sec Shortcut:** Required total for 4 tests = 4 × ${item.target} = ${4 * item.target}. Current sum = ${item.s1 + item.s2 + item.s3}. 4th score needed = ${4 * item.target} - ${item.s1 + item.s2 + item.s3} = **${item.needed}**.`,
       category: 'math', subType: 'word_problem', timeLimitSec: 15
     };
   }
@@ -546,6 +646,62 @@ const SPATIAL_VARIATION_POOLS = [
       explanation: `**Correct Answer: ${correctOption}**\n\n**10-Sec Spatial Pattern:** Role reversal: the exterior and interior figures swap positions and relative scales. Applying this to Figure C yields an **outer Diamond enclosing an inner Triangle**.`,
       category: 'spatial', subType: 'spatial_analogy', timeLimitSec: 10
     };
+  },
+
+  // 7: 3D Cube Net Folding - Opposite Face Rule (From Tests 5, 9, 13)
+  (rand) => {
+    const netSvg = wrapSvg(`
+      <g stroke="#475569" stroke-width="1.5" fill="none">
+        <rect x="50" y="8" width="24" height="24" rx="2" fill="rgba(30,41,59,0.7)" />
+        <rect x="26" y="32" width="24" height="24" rx="2" fill="rgba(30,41,59,0.7)" />
+        <rect x="50" y="32" width="24" height="24" rx="2" fill="rgba(30,41,59,0.7)" />
+        <rect x="74" y="32" width="24" height="24" rx="2" fill="rgba(30,41,59,0.7)" />
+        <rect x="98" y="32" width="24" height="24" rx="2" fill="rgba(30,41,59,0.7)" />
+        <rect x="50" y="56" width="24" height="24" rx="2" fill="rgba(30,41,59,0.7)" />
+      </g>
+      ${drawCircle(62, 20, 6, "none", "#38bdf8", 2)}
+      <text x="38" y="44" fill="#f59e0b" font-size="12" text-anchor="middle" dominant-baseline="central">★</text>
+      <text x="62" y="44" fill="#ec4899" font-size="14" text-anchor="middle" dominant-baseline="central">+</text>
+      ${drawRect(82, 38, 10, 10, "none", "#10b981", 1.8)}
+      ${drawPolygon("105,50 115,50 110,38", "none", "#a855f7", 1.8)}
+      ${drawPolygon("62,60 69,68 62,76 55,68", "none", "#38bdf8", 1.8)}
+    `, "0 0 148 88");
+
+    const makeCubeSvg = (topSym, leftSym, rightSym) => {
+      const sym = (s, cx, cy) => {
+        if (s === 'circle') return drawCircle(cx, cy, 5, "none", "#38bdf8", 1.8);
+        if (s === 'star') return `<text x="${cx}" y="${cy}" fill="#f59e0b" font-size="10" text-anchor="middle" dominant-baseline="central">★</text>`;
+        if (s === 'cross') return `<text x="${cx}" y="${cy}" fill="#ec4899" font-size="12" text-anchor="middle" dominant-baseline="central">+</text>`;
+        if (s === 'square') return drawRect(cx - 4, cy - 4, 8, 8, "none", "#10b981", 1.5);
+        if (s === 'diamond') return drawPolygon(`${cx},${cy-5} ${cx+5},${cy} ${cx},${cy+5} ${cx-5},${cy}`, "none", "#38bdf8", 1.5);
+        return '';
+      };
+      return wrapSvg(`
+        <polygon points="35,14 53,24 35,34 17,24" fill="rgba(30,41,59,0.8)" stroke="#64748b" stroke-width="1.5" />
+        <polygon points="17,24 35,34 35,56 17,46" fill="rgba(15,23,42,0.9)" stroke="#64748b" stroke-width="1.5" />
+        <polygon points="35,34 53,24 53,46 35,56" fill="rgba(15,23,42,0.7)" stroke="#64748b" stroke-width="1.5" />
+        ${sym(topSym, 35, 24)}
+        ${sym(leftSym, 26, 42)}
+        ${sym(rightSym, 44, 42)}
+      `);
+    };
+
+    const correctSvg = makeCubeSvg('circle', 'star', 'cross');
+    const distractors = [
+      makeCubeSvg('circle', 'diamond', 'star'),
+      makeCubeSvg('star', 'square', 'cross'),
+      makeCubeSvg('cross', 'triangle', 'circle'),
+      makeCubeSvg('circle', 'diamond', 'cross')
+    ];
+    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
+    const { options, correctOption } = shuffleOptions(rawOpts, 0, rand);
+    return {
+      question: 'Which of the following 3D cubes CAN be formed by folding the flat net shown below?',
+      figureSvg: netSvg,
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**10-Sec CCAT Cube Rule:** Faces separated by 1 square on the flat net are **opposites** and can NEVER touch on a folded cube (Circle/Diamond, Star/Square, Cross/Triangle). Only Option ${correctOption} has 3 mutually adjacent faces.`,
+      category: 'spatial', subType: 'cube_folding', timeLimitSec: 10
+    };
   }
 ];
 
@@ -553,7 +709,7 @@ const SPATIAL_VARIATION_POOLS = [
  * Returns a high-speed sprint question set for the specified subject.
  * 
  * @param {string} subject - 'verbal' | 'math' | 'spatial'
- * @param {Array<string>} userAttemptedTestIds - List of tests the user has completed (e.g. ['test-1'])
+ * @param {Array<string>} userAttemptedTestIds - List of tests the user has completed
  * @param {number} sprintSeed - Optional random seed
  */
 export function generateUltraFastSprint(subject, userAttemptedTestIds = [], sprintSeed = Date.now()) {
@@ -562,7 +718,7 @@ export function generateUltraFastSprint(subject, userAttemptedTestIds = [], spri
   // Guarantee we only base variations on tests the user has actually attempted
   const safeAttemptedTests = (userAttemptedTestIds && userAttemptedTestIds.length > 0)
     ? userAttemptedTestIds
-    : ['test-1'];
+    : ['test-3', 'test-4', 'test-5', 'test-9', 'test-13'];
 
   // Sprint configuration
   let count = 8;
