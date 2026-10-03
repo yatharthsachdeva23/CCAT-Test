@@ -1,7 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Sparkles, Send, Bot, User, AlertTriangle, Zap, Clock, Trophy, HelpCircle, Key, Check, Target, RefreshCw, ShieldCheck, ChevronDown, Cpu, ArrowDownRight } from 'lucide-react';
-import { analyzeAttemptPatterns } from '../data/patternEngine.js';
-import { getSettings, saveSettings, DEFAULT_GEMINI_KEY } from '../utils/storage.js';
+import { 
+  Sparkles, Send, Bot, User, AlertTriangle, Zap, Clock, Trophy, 
+  HelpCircle, Key, Check, Target, RefreshCw, ShieldCheck, ChevronDown, 
+  Cpu, ArrowDownRight, TrendingUp, History 
+} from 'lucide-react';
+import { analyzeAttemptPatterns, analyzeFullHistory, generateCoachInsight } from '../data/patternEngine.js';
+import { getSettings, saveSettings, DEFAULT_GEMINI_KEY, getUltraFastAttempts } from '../utils/storage.js';
 import MarkdownView from './MarkdownView.jsx';
 
 export const GEMINI_MODELS = [
@@ -18,7 +22,8 @@ export const GEMINI_MODELS = [
 export default function AICoach({ attempts = [], activeAttempt = null, onSelectAttempt }) {
   const [messages, setMessages] = useState([]);
   const [inputQuery, setInputQuery] = useState('');
-  const [selectedAttemptId, setSelectedAttemptId] = useState(activeAttempt ? activeAttempt.id : (attempts[0]?.id || 'latest'));
+  const [ultraFastAttempts, setUltraFastAttempts] = useState(() => getUltraFastAttempts());
+  const [selectedAttemptId, setSelectedAttemptId] = useState(activeAttempt ? activeAttempt.id : 'all_progress');
   const [isTyping, setIsTyping] = useState(false);
   const [typingStatus, setTypingStatus] = useState('');
   const [apiKey, setApiKey] = useState('');
@@ -35,18 +40,26 @@ export default function AICoach({ attempts = [], activeAttempt = null, onSelectA
     setApiKey(effectiveKey);
     setPreferredModel(s.preferredModel || 'auto');
     setAutoDowngrade(s.autoDowngradeEnabled ?? true);
+    setUltraFastAttempts(getUltraFastAttempts());
 
+    if (activeAttempt) {
+      setSelectedAttemptId(activeAttempt.id);
+    }
+
+    const sprintsCount = getUltraFastAttempts().length;
     const initialText = `### 🧠 Real Google Gemini CCAT Coach (Connected)
 **Target: 45+ / 50 (Top 0.1% Elite Bracket)**
 
-I am connected directly to **Google Gemini** with live access to your second-by-second question telemetry.
+I have unified access to your **entire history** (${attempts.length} full tests${sprintsCount > 0 ? ` + ${sprintsCount} speed sprints` : ''}).
 
-⚡ **Auto-Downgrade Resiliency:** If upper models encounter rate limits or quota limits, the coach will automatically cascade down to resilient high-quota models without stopping.
+⚡ **Cross-Attempt Progress Intelligence:**
+I monitor your score trajectory, velocity shifts, and recurrent time traps across every test you have taken.
 
-Click any quick prompt below or type your own question to start:
-* *"Where are my exact time traps?"*
-* *"How do I increase my speed to reach 45+?"*
-* *"Analyze my latest test second-by-second."*`;
+Click any quick prompt below or ask your own question:
+* *"Summarize my overall progress across all tests and sprints."*
+* *"Where are my persistent time traps holding me back from 45+?"*
+* *"Analyze my latest test second-by-second."*
+* *"How do I increase my speed in Math and Spatial?"*`;
 
     setMessages([
       {
@@ -61,13 +74,13 @@ Click any quick prompt below or type your own question to start:
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       }
     ]);
-  }, [attempts]);
+  }, [attempts, activeAttempt]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, isTyping, typingStatus]);
 
-  const targetAttempt = attempts.find(a => a.id === selectedAttemptId) || attempts[0] || null;
+  const targetAttempt = attempts.find(a => a.id === selectedAttemptId) || (selectedAttemptId === 'all_progress' ? null : (attempts[0] || null));
 
   const handleSend = async (queryText = inputQuery) => {
     const query = queryText.trim();
@@ -83,23 +96,25 @@ Click any quick prompt below or type your own question to start:
     setMessages(prev => [...prev, userMsg]);
     setInputQuery('');
     setIsTyping(true);
-    setTypingStatus('Google Gemini is analyzing test telemetry...');
+    setTypingStatus('Google Gemini is analyzing test telemetry & trajectory...');
 
     const effectiveKey = (apiKey && apiKey.trim().length > 10) ? apiKey.trim() : DEFAULT_GEMINI_KEY;
 
     try {
-      const result = await callGeminiWithTelemetryCascade(
+      const result = await callGeminiWithTelemetryCascade({
         query,
-        targetAttempt,
-        attempts,
-        effectiveKey,
-        messages,
-        preferredModel,
-        autoDowngrade,
-        (statusMessage) => {
+        attempt: targetAttempt,
+        allAttempts: attempts,
+        ultraFastAttempts,
+        isAllProgressMode: selectedAttemptId === 'all_progress',
+        apiKey: effectiveKey,
+        previousMessages: messages,
+        preferredModelId: preferredModel,
+        autoDowngradeEnabled: autoDowngrade,
+        onStatusUpdate: (statusMessage) => {
           setTypingStatus(statusMessage);
         }
-      );
+      });
 
       setIsTyping(false);
       setTypingStatus('');
@@ -122,15 +137,25 @@ Click any quick prompt below or type your own question to start:
         }
       ]);
     } catch (err) {
-      console.error('All Gemini cascade models failed:', err);
+      console.error('All Gemini cascade models failed, using local diagnostics engine:', err);
       setIsTyping(false);
       setTypingStatus('');
+
+      // Fallback to local diagnostics engine
+      const localInsight = generateCoachInsight(query, attempts, targetAttempt);
+
       setMessages(prev => [
         ...prev,
         {
           id: `ai-${Date.now()}`,
           sender: 'ai',
-          text: `⚠️ **Google Gemini Connection Notice:**\n\n${err.message || 'Unable to receive response from Gemini models.'}\n\nPlease check your internet connection or verify your API key in settings.`,
+          text: `${localInsight}\n\n*(Note: Gemini cloud connection temporarily unavailable. Answer synthesized by local telemetry diagnostics engine).*`,
+          modelInfo: {
+            modelName: 'Local Diagnostic Engine (Offline Fallback)',
+            tier: 'Offline Fallback',
+            downgraded: true,
+            reason: err.message || 'API limits reached'
+          },
           timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
         }
       ]);
@@ -150,8 +175,9 @@ Click any quick prompt below or type your own question to start:
   };
 
   const quickPrompts = [
+    { label: '📈 Summarize Overall Progress', prompt: 'Summarize my overall progress across all my tests and speed sprints. How am I progressing toward the 45+ score bracket, and what are my key bottlenecks?' },
     { label: '🎯 Roadmap to 45+ Score', prompt: 'Give me a concrete, ruthless roadmap to jump from my current score to 45+ on the CCAT.' },
-    { label: '⚠️ Find My Exact Time Traps', prompt: 'Identify every question where I spent over 25 seconds and got it wrong. How much time did I waste?' },
+    { label: '⚠️ Recurring Time Traps', prompt: 'Across all my tests, where are my persistent time traps? Which types of questions are stealing my clock?' },
     { label: '⏱️ Category Velocity Imbalance', prompt: 'Analyze my speed across Math, Verbal, and Spatial. Which category is eating my clock?' },
     { label: '🧠 Instant Elimination Tactics', prompt: 'Teach me the fastest 5-second elimination rules for CCAT spatial matrices and odd-one-out questions.' }
   ];
@@ -188,29 +214,34 @@ Click any quick prompt below or type your own question to start:
               )}
             </h2>
             <p className="text-xs text-slate-400">
-              Live Google Gemini LLM with telemetry context, time-trap detection, and auto-downgrade fallback on rate limits.
+              {selectedAttemptId === 'all_progress'
+                ? `Scope: Full Progress & Trajectory across all ${attempts.length} tests and ${ultraFastAttempts.length} speed sprints.`
+                : `Scope: ${targetAttempt?.testTitle || 'Selected Test'} • Full multi-test progress ledger available on demand.`}
             </p>
           </div>
         </div>
 
-        {/* Attempt Selector & Model / API Key config */}
+        {/* Scope Selector (All Progress vs Individual Attempt) & Settings */}
         <div className="flex items-center gap-2 flex-wrap">
-          {attempts.length > 0 && (
-            <select
-              value={selectedAttemptId}
-              onChange={(e) => setSelectedAttemptId(e.target.value)}
-              className="bg-slate-950 border border-slate-800 text-xs text-slate-200 rounded-xl px-3 py-2 font-medium focus:outline-none focus:border-purple-500"
-            >
-              {attempts.map((att, i) => {
-                const corr = Object.values(att.responses || {}).filter(r => r.isCorrect).length;
-                return (
-                  <option key={att.id} value={att.id}>
-                    Attempt #{attempts.length - i}: {corr}/50 ({new Date(att.timestamp).toLocaleDateString()})
-                  </option>
-                );
-              })}
-            </select>
-          )}
+          <select
+            value={selectedAttemptId}
+            onChange={(e) => setSelectedAttemptId(e.target.value)}
+            className="bg-slate-950 border border-slate-800 text-xs text-slate-200 rounded-xl px-3 py-2 font-medium focus:outline-none focus:border-purple-500 cursor-pointer max-w-[260px] truncate"
+          >
+            <option value="all_progress">
+              📊 All Attempts & Progress ({attempts.length} Tests{ultraFastAttempts.length > 0 ? ` + ${ultraFastAttempts.length} Sprints` : ''})
+            </option>
+            {attempts.map((att, i) => {
+              const corr = Object.values(att.responses || {}).filter(r => r.isCorrect).length;
+              const testNum = att.testId ? att.testId.replace('test-', '') : '';
+              const label = att.testTitle || (testNum ? `Practice Test ${testNum}` : `Attempt #${attempts.length - i}`);
+              return (
+                <option key={att.id} value={att.id}>
+                  {label}: {corr}/50 ({new Date(att.timestamp).toLocaleDateString([], { month: 'short', day: 'numeric' })})
+                </option>
+              );
+            })}
+          </select>
 
           <button
             onClick={() => setShowSettingsDrawer(!showSettingsDrawer)}
@@ -379,7 +410,7 @@ Click any quick prompt below or type your own question to start:
               <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-bounce [animation-delay:0.2s]" />
               <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-bounce [animation-delay:0.4s]" />
               <span className="ml-1 font-medium text-slate-300">
-                {typingStatus || 'Google Gemini is analyzing test telemetry...'}
+                {typingStatus || 'Google Gemini is analyzing test telemetry & trajectory...'}
               </span>
             </div>
           </div>
@@ -388,7 +419,7 @@ Click any quick prompt below or type your own question to start:
         <div ref={messagesEndRef} />
       </div>
 
-      {/* Suggested Quick Prompts for 45+ target */}
+      {/* Suggested Quick Prompts */}
       <div className="flex items-center gap-2 py-3 overflow-x-auto no-scrollbar">
         {quickPrompts.map((qp, i) => (
           <button
@@ -405,7 +436,7 @@ Click any quick prompt below or type your own question to start:
       <div className="bg-slate-900 border border-slate-800 rounded-2xl p-2 sm:p-2.5 flex items-center gap-2 shadow-xl">
         <input
           type="text"
-          placeholder="Ask Gemini Coach how to reach 45+, analyze time traps, or review questions..."
+          placeholder="Ask Gemini Coach how your progress is going, analyze time traps, or review questions..."
           value={inputQuery}
           onChange={(e) => setInputQuery(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && handleSend()}
@@ -470,22 +501,25 @@ function classifyGeminiError(errData, httpStatus) {
 }
 
 /**
- * Real Google Gemini Multi-Tier Auto-Downgrade Cascade
+ * Real Google Gemini Multi-Tier Auto-Downgrade Cascade with Multi-Test Progress Synthesis
  */
-async function callGeminiWithTelemetryCascade(
+async function callGeminiWithTelemetryCascade({
   query,
   attempt,
-  allAttempts,
+  allAttempts = [],
+  ultraFastAttempts = [],
+  isAllProgressMode = false,
   apiKey,
   previousMessages = [],
   preferredModelId = 'auto',
   autoDowngradeEnabled = true,
   onStatusUpdate = null
-) {
-  const analysis = analyzeAttemptPatterns(attempt);
+}) {
+  const fullHistory = analyzeFullHistory(allAttempts, ultraFastAttempts);
+  const analysis = attempt ? analyzeAttemptPatterns(attempt) : null;
 
-  // Compile detailed question-level telemetry for the active attempt
-  let detailedQuestionsSummary = 'No attempt completed yet.';
+  // Compile detailed question-level telemetry for the active attempt (if selected)
+  let detailedQuestionsSummary = 'No individual test selected (Full Multi-Attempt Scope active).';
   if (attempt && attempt.responses) {
     const list = Object.values(attempt.responses);
     detailedQuestionsSummary = list.map(r => {
@@ -513,27 +547,43 @@ CRITICAL CCAT REALITIES & CONSTRAINTS:
      * Math & Logic (22 Qs): Average <= 20-22 seconds per question.
    - Sunk cost rule: If a math question takes >22 seconds, guess immediately and move on. Time traps kill a 45+ score.
 
-USER'S HISTORICAL CONTEXT:
-- Total attempts taken: ${allAttempts.length}
-- Best score achieved so far: ${allAttempts.reduce((m, a) => Math.max(m, Object.values(a.responses || {}).filter(r => r.isCorrect).length), 0)} / 50
+===================================================================
+COMPREHENSIVE MULTI-TEST PROGRESS & TELEMETRY LEDGER (ALL ATTEMPTS)
+===================================================================
+${fullHistory.summaryMarkdown}
+===================================================================
 
-ACTIVE ATTEMPT TELEMETRY:
-- Test: ${attempt?.testTitle || 'None'}
+${isAllProgressMode || !attempt ? `
+CURRENT FOCUS MODE:
+Global Cross-Test Trajectory & Progress Analysis across all ${allAttempts.length} tests and ${ultraFastAttempts.length} Ultra Fast speed sprints.
+` : `
+ACTIVE TEST TELEMETRY (For specific question-level review):
+- Test: ${attempt?.testTitle || 'Selected Test'}
 - Raw Score: ${analysis?.score || 0} / 50
 - Accuracy: ${analysis?.overallAccuracy || 0}%
 - Average time per question: ${analysis?.overallAvgTimeSec || 0} seconds
-- Total Time Traps (>25s on wrong questions): ${analysis?.timeTraps.count || 0} questions (${analysis?.timeTraps.wastedSeconds || 0} seconds wasted)
+- Total Time Traps (>25s on wrong questions): ${analysis?.timeTraps?.count || 0} questions (${analysis?.timeTraps?.wastedSeconds || 0}s wasted)
 - Section Breakdown:
-${analysis?.categoryStats.map(c => `  * ${c.name}: ${c.correct}/${c.total} (${c.accuracyPercent}%) | Avg time: ${c.avgTimeSec}s`).join('\n') || 'N/A'}
+${analysis?.categoryStats?.map(c => `  * ${c.name}: ${c.correct}/${c.total} (${c.accuracyPercent}%) | Avg time: ${c.avgTimeSec}s`).join('\n') || 'N/A'}
 
-QUESTION-BY-QUESTION TELEMETRY (Every question's time and outcome):
+QUESTION-BY-QUESTION TELEMETRY (For this specific test):
 ${detailedQuestionsSummary}
+`}
 
 INSTRUCTIONS FOR YOUR RESPONSE:
-1. Speak directly, like a high-performance cognitive coach (crisp, precise, analytical).
-2. Reference their actual numbers (e.g. "On Q#14 you spent 34s and got it wrong...").
-3. Give concrete tactics, shortcuts, mental math tricks, or skipping rules to push them to 45+.
-4. Format using clean GitHub markdown with bold key points and bullet lists.
+1. PROGRESS & TRAJECTORY INQUIRIES:
+   - When the user asks about overall progress, trajectory, improvement over time, trends, cross-test comparison, or history summary (e.g. "how is my progress?", "summarize my progress", "am I improving?", "how do my tests compare?"):
+     * Synthesize their entire multi-test journey using the Comprehensive Ledger above.
+     * Contrast where they started vs where they are now (scores, pacing, accuracy shifts).
+     * Analyze section trajectories: highlight which category improved most, and which category remains the critical bottleneck preventing 45+.
+     * Relate their Ultra Fast speed sprint reflexes (reaction times, 7s verbal, 15s math, 10s spatial) to their full-test pacing.
+     * Give specific, data-backed next steps to reach 45+.
+2. SPECIFIC OR TARGETED INQUIRIES:
+   - When the user does NOT ask about overall progress (e.g., they ask about a specific question, elimination trick, time trap, or section tactic):
+     * Answer their specific question directly, concisely, and crisply without forcing an unprompted multi-test historical report.
+3. TONE & STYLE:
+   - Speak directly like a world-class cognitive performance coach (sharp, precise, encouraging yet rigorously data-driven).
+   - Use bold numbers, clear bullets, and clean GitHub markdown.
 `.trim();
 
   // Assemble candidate models queue
@@ -542,7 +592,6 @@ INSTRUCTIONS FOR YOUR RESPONSE:
     const chosen = CASCADE_TIERS.find(m => m.id === preferredModelId) || { id: preferredModelId, name: preferredModelId, tier: 'Custom' };
     candidateQueue.push(chosen);
     if (autoDowngradeEnabled) {
-      // Append the rest of the cascade in order
       CASCADE_TIERS.forEach(m => {
         if (m.id !== chosen.id) candidateQueue.push(m);
       });
@@ -635,16 +684,18 @@ INSTRUCTIONS FOR YOUR RESPONSE:
       onStatusUpdate('Custom key quota exhausted — connecting via system safety net...');
     }
     try {
-      const emergencyRes = await callGeminiWithTelemetryCascade(
+      const emergencyRes = await callGeminiWithTelemetryCascade({
         query,
         attempt,
         allAttempts,
-        DEFAULT_GEMINI_KEY,
+        ultraFastAttempts,
+        isAllProgressMode,
+        apiKey: DEFAULT_GEMINI_KEY,
         previousMessages,
-        'gemini-3.5-flash-lite',
-        true,
+        preferredModelId: 'gemini-3.5-flash-lite',
+        autoDowngradeEnabled: true,
         onStatusUpdate
-      );
+      });
       return {
         ...emergencyRes,
         downgraded: true,

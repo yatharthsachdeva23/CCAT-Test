@@ -215,6 +215,33 @@ ${gap > 0 ? `You are **${gap} points away** from the competitive 35+ elite thres
 * You had **${analysis.rushErrors.count} questions** answered under 8 seconds that were wrong. Taking just 3 extra seconds to re-verify negatives (*"not"*, *"except"*) will save 2–3 easy points.`;
   }
 
+  // Pattern 4: Overall Progress & Cross-Attempt Trajectory query
+  if (qLower.includes('progress') || qLower.includes('overall') || qLower.includes('summary') || qLower.includes('trajectory') || qLower.includes('all test') || qLower.includes('how am i doing') || qLower.includes('trend')) {
+    const historyAnalysis = analyzeFullHistory(allAttempts, []);
+    if (!historyAnalysis.hasData) {
+      return `### 📊 Overall Progress Summary\nYou have completed **${allAttempts.length} tests** so far. Complete more tests to generate detailed trajectory and trend comparisons.`;
+    }
+
+    const { totalTests, initialScore, latestScore, scoreDelta, bestScore, averageScore, scoreTrajectory, cumulativeSections, primaryWeakness, primaryStrength, totalTimeTraps } = historyAnalysis;
+
+    return `### 📈 Overall Progress & Trajectory Summary (${totalTests} Tests Recorded)
+
+#### 🚀 Score Trajectory:
+* **Timeline:** ${scoreTrajectory.join(' ➔ ')}
+* **Start vs Current:** Started at **${initialScore}/50** ➔ Currently at **${latestScore}/50** (${scoreDelta >= 0 ? `+${scoreDelta}` : scoreDelta} points delta).
+* **Peak Score:** **${bestScore}/50** (Average: **${averageScore}/50**).
+
+#### 🧠 Cumulative Section Diagnostics:
+* **Verbal Reasoning:** **${cumulativeSections.verbal.accuracy}%** accuracy (${cumulativeSections.verbal.correct}/${cumulativeSections.verbal.attempted}) | Avg Pace: **${cumulativeSections.verbal.avgTime}s**
+* **Spatial Reasoning:** **${cumulativeSections.spatial.accuracy}%** accuracy (${cumulativeSections.spatial.correct}/${cumulativeSections.spatial.attempted}) | Avg Pace: **${cumulativeSections.spatial.avgTime}s**
+* **Math & Logic:** **${cumulativeSections.math.accuracy}%** accuracy (${cumulativeSections.math.correct}/${cumulativeSections.math.attempted}) | Avg Pace: **${cumulativeSections.math.avgTime}s**
+
+#### ⚡ Strategic Insights toward 45+:
+1. **Primary Strength:** **${primaryStrength.name}** (${primaryStrength.accuracy}% accuracy) is your highest reliability bank.
+2. **Current Bottleneck:** **${primaryWeakness.name}** (${primaryWeakness.accuracy}% accuracy) is currently where the most points are leaked.
+3. **Time Traps:** You have accumulated **${totalTimeTraps} time traps** (>28s on wrong questions) across all tests. Enforcing a strict 22s math kill-switch will free up the time needed to see all 50 questions!`;
+  }
+
   // Default comprehensive overview
   return `### 🧠 Diagnostic Summary (Attempt Score: ${analysis.score}/50)
 
@@ -226,7 +253,215 @@ Here is what your attempt telemetry revealed:
 * **Fatigue / Stamina Drop:** ${analysis.fatigue.staminaDecay > 10 ? `⚠️ Significant drop of **${analysis.fatigue.staminaDecay}% accuracy** between the first half and second half.` : `✅ Steady stamina throughout both halves.`}
 
 **What would you like to explore?**
+* Ask: *"Summarize my overall progress across all tests"*
 * Ask: *"Where are my time traps?"*
 * Ask: *"Analyze my speed by section"*
-* Ask: *"How do I reach a 35+ score?"*`;
+* Ask: *"How do I reach a 45+ score?"*`;
+}
+
+/**
+ * Multi-Attempt & Speed Sprints Historical Synthesis Engine
+ * Aggregates all test attempts and ultra-fast sprints into unified trajectory analytics.
+ */
+export function analyzeFullHistory(allAttempts = [], ultraFastAttempts = []) {
+  if (!allAttempts || allAttempts.length === 0) {
+    return {
+      hasData: false,
+      totalTests: 0,
+      summaryMarkdown: 'No completed tests recorded yet.'
+    };
+  }
+
+  // Filter valid attempts that have at least 1 attempted/answered response
+  const validAttempts = allAttempts.filter(a => {
+    const resp = a.responses ? Object.values(a.responses) : [];
+    return resp.some(r => r.selectedOption !== null || r.isCorrect);
+  });
+
+  if (validAttempts.length === 0) {
+    return {
+      hasData: false,
+      totalTests: 0,
+      summaryMarkdown: 'No completed tests with recorded answers.'
+    };
+  }
+
+  // Sort chronologically ascending (earliest to latest)
+  const chronological = [...validAttempts].sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+
+  // Process per-attempt patterns
+  const detailedAttempts = chronological.map((att, idx) => {
+    const analysis = analyzeAttemptPatterns(att);
+    const score = analysis?.score || 0;
+    const accuracy = analysis?.overallAccuracy || 0;
+    const avgTime = analysis?.overallAvgTimeSec || 0;
+    const timeTrapsCount = analysis?.timeTraps?.count || 0;
+    const wastedSeconds = analysis?.timeTraps?.wastedSeconds || 0;
+
+    const mathStats = analysis?.categoryStats.find(c => c.key === 'math') || { correct: 0, attempted: 0, accuracyPercent: 0, avgTimeSec: 0 };
+    const verbalStats = analysis?.categoryStats.find(c => c.key === 'verbal') || { correct: 0, attempted: 0, accuracyPercent: 0, avgTimeSec: 0 };
+    const spatialStats = analysis?.categoryStats.find(c => c.key === 'spatial') || { correct: 0, attempted: 0, accuracyPercent: 0, avgTimeSec: 0 };
+
+    const testLabel = att.testTitle || (att.testId ? `Test ${att.testId.replace('test-', '')}` : `Test #${idx + 1}`);
+
+    return {
+      attemptNumber: idx + 1,
+      id: att.id,
+      testTitle: testLabel,
+      testId: att.testId,
+      timestamp: att.timestamp,
+      dateStr: new Date(att.timestamp).toLocaleDateString([], { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }),
+      score,
+      totalQuestions: att.totalQuestions || 50,
+      attemptedCount: analysis?.attemptedCount || 0,
+      accuracy,
+      avgTime,
+      timeTrapsCount,
+      wastedSeconds,
+      categories: {
+        math: mathStats,
+        verbal: verbalStats,
+        spatial: spatialStats
+      }
+    };
+  });
+
+  const totalTests = detailedAttempts.length;
+  const initialAttempt = detailedAttempts[0];
+  const latestAttempt = detailedAttempts[totalTests - 1];
+  const bestScore = detailedAttempts.reduce((max, a) => Math.max(max, a.score), 0);
+  const lowestScore = detailedAttempts.reduce((min, a) => Math.min(min, a.score), 50);
+  const averageScore = Math.round((detailedAttempts.reduce((acc, a) => acc + a.score, 0) / totalTests) * 10) / 10;
+  const scoreDelta = latestAttempt.score - initialAttempt.score;
+
+  // Cumulative section metrics across all tests
+  let cumMath = { attempted: 0, correct: 0, totalTime: 0 };
+  let cumVerbal = { attempted: 0, correct: 0, totalTime: 0 };
+  let cumSpatial = { attempted: 0, correct: 0, totalTime: 0 };
+  let totalTimeTraps = 0;
+  let totalWastedSeconds = 0;
+
+  detailedAttempts.forEach(a => {
+    cumMath.attempted += a.categories.math.attempted;
+    cumMath.correct += a.categories.math.correct;
+    cumMath.totalTime += (a.categories.math.avgTimeSec * a.categories.math.attempted);
+
+    cumVerbal.attempted += a.categories.verbal.attempted;
+    cumVerbal.correct += a.categories.verbal.correct;
+    cumVerbal.totalTime += (a.categories.verbal.avgTimeSec * a.categories.verbal.attempted);
+
+    cumSpatial.attempted += a.categories.spatial.attempted;
+    cumSpatial.correct += a.categories.spatial.correct;
+    cumSpatial.totalTime += (a.categories.spatial.avgTimeSec * a.categories.spatial.attempted);
+
+    totalTimeTraps += a.timeTrapsCount;
+    totalWastedSeconds += a.wastedSeconds;
+  });
+
+  const calcSectionCum = (sec) => ({
+    attempted: sec.attempted,
+    correct: sec.correct,
+    accuracy: sec.attempted > 0 ? Math.round((sec.correct / sec.attempted) * 100) : 0,
+    avgTime: sec.attempted > 0 ? (sec.totalTime / sec.attempted).toFixed(1) : '0.0'
+  });
+
+  const aggregateMath = calcSectionCum(cumMath);
+  const aggregateVerbal = calcSectionCum(cumVerbal);
+  const aggregateSpatial = calcSectionCum(cumSpatial);
+
+  // Section comparison
+  const sections = [
+    { name: 'Math & Logic', ...aggregateMath },
+    { name: 'Verbal Reasoning', ...aggregateVerbal },
+    { name: 'Spatial Reasoning', ...aggregateSpatial }
+  ];
+  const sortedByAccuracy = [...sections].sort((a, b) => a.accuracy - b.accuracy);
+  const primaryWeakness = sortedByAccuracy[0];
+  const primaryStrength = sortedByAccuracy[sortedByAccuracy.length - 1];
+
+  // Ultra Fast Mode sprint metrics
+  let ultraFastSummary = 'No Ultra Fast speed sprints completed yet.';
+  if (ultraFastAttempts && ultraFastAttempts.length > 0) {
+    const totalSprints = ultraFastAttempts.length;
+    const avgSprintAcc = Math.round(ultraFastAttempts.reduce((acc, s) => acc + s.accuracy, 0) / totalSprints);
+    const avgSprintSpeed = (ultraFastAttempts.reduce((acc, s) => acc + s.avgTimeSpentSec, 0) / totalSprints).toFixed(1);
+    const totalTimedOut = ultraFastAttempts.reduce((acc, s) => acc + (s.timedOutCount || 0), 0);
+    const totalWrongChoices = ultraFastAttempts.reduce((acc, s) => acc + (s.wrongCount || 0), 0);
+
+    const sprintsBySub = { verbal: [], math: [], spatial: [] };
+    ultraFastAttempts.forEach(s => {
+      if (sprintsBySub[s.subject]) sprintsBySub[s.subject].push(s);
+    });
+
+    const formatSubDrill = (subName, arr) => {
+      if (!arr.length) return `  * ${subName}: 0 sprints`;
+      const avgAcc = Math.round(arr.reduce((acc, s) => acc + s.accuracy, 0) / arr.length);
+      const avgPace = (arr.reduce((acc, s) => acc + s.avgTimeSpentSec, 0) / arr.length).toFixed(1);
+      return `  * ${subName}: ${arr.length} sprints | Avg Accuracy: ${avgAcc}% | Avg Reaction: ${avgPace}s`;
+    };
+
+    ultraFastSummary = `
+- Total Speed Sprints Completed: ${totalSprints}
+- Overall Sprint Speed Accuracy: ${avgSprintAcc}%
+- Overall Average Reaction Time: ${avgSprintSpeed}s per question
+- Reflex Mistakes: ${totalWrongChoices} wrong choices, ${totalTimedOut} questions timed out before confirming "Done"
+- Drills by Subject:
+${formatSubDrill('English / Verbal (7s limit)', sprintsBySub.verbal)}
+${formatSubDrill('Math & Logic (15s limit)', sprintsBySub.math)}
+${formatSubDrill('Spatial Reasoning (10s limit)', sprintsBySub.spatial)}
+`.trim();
+  }
+
+  // Trajectory table format
+  const testTrajectoryTable = detailedAttempts.map(a => {
+    return `* Attempt #${a.attemptNumber} (${a.dateStr}) [${a.testTitle}]: Score **${a.score}/${a.totalQuestions}** (${a.accuracy}%) | Avg Pace: ${a.avgTime}s | Traps: ${a.timeTrapsCount} | Math: ${a.categories.math.correct}/${a.categories.math.attempted} (${a.categories.math.accuracyPercent}%, ${a.categories.math.avgTimeSec}s) | Verbal: ${a.categories.verbal.correct}/${a.categories.verbal.attempted} (${a.categories.verbal.accuracyPercent}%, ${a.categories.verbal.avgTimeSec}s) | Spatial: ${a.categories.spatial.correct}/${a.categories.spatial.attempted} (${a.categories.spatial.accuracyPercent}%, ${a.categories.spatial.avgTimeSec}s)`;
+  }).join('\n');
+
+  const scoreTrajectoryArray = detailedAttempts.map(a => `${a.testTitle}: ${a.score}/50`);
+
+  const summaryMarkdown = `
+### 📊 UNIFIED HISTORICAL PROGRESSION & TELEMETRY LEDGER
+- **Total Standard Tests Completed:** ${totalTests}
+- **Score Progression:** ${scoreTrajectoryArray.join(' ➔ ')}
+- **Score Delta:** Started at **${initialAttempt.score}/50** ➔ Latest at **${latestAttempt.score}/50** (${scoreDelta >= 0 ? `+${scoreDelta}` : scoreDelta} points change)
+- **Best Score:** **${bestScore}/50** | **Lowest Score:** **${lowestScore}/50** | **Average Score:** **${averageScore}/50**
+- **Cumulative Time Traps:** ${totalTimeTraps} time traps (>28s spent on wrong questions, ~${totalWastedSeconds}s wasted across all tests)
+
+#### Section Performance Across All Tests:
+* **Math & Logic:** ${aggregateMath.correct}/${aggregateMath.attempted} (${aggregateMath.accuracy}%) | Avg Pace: ${aggregateMath.avgTime}s
+* **Verbal Reasoning:** ${aggregateVerbal.correct}/${aggregateVerbal.attempted} (${aggregateVerbal.accuracy}%) | Avg Pace: ${aggregateVerbal.avgTime}s
+* **Spatial Reasoning:** ${aggregateSpatial.correct}/${aggregateSpatial.attempted} (${aggregateSpatial.accuracy}%) | Avg Pace: ${aggregateSpatial.avgTime}s
+* **Primary Bottleneck Holding Back 45+:** **${primaryWeakness.name}** (${primaryWeakness.accuracy}% cumulative accuracy)
+* **Primary Cognitive Strength:** **${primaryStrength.name}** (${primaryStrength.accuracy}% cumulative accuracy)
+
+#### Chronological Test-by-Test Log:
+${testTrajectoryTable}
+
+#### Ultra Fast Reflex Sprints (~1-Min Drills):
+${ultraFastSummary}
+`.trim();
+
+  return {
+    hasData: true,
+    totalTests,
+    initialScore: initialAttempt.score,
+    latestScore: latestAttempt.score,
+    scoreDelta,
+    bestScore,
+    lowestScore,
+    averageScore,
+    scoreTrajectory: scoreTrajectoryArray,
+    detailedAttempts,
+    cumulativeSections: {
+      math: aggregateMath,
+      verbal: aggregateVerbal,
+      spatial: aggregateSpatial
+    },
+    primaryWeakness,
+    primaryStrength,
+    totalTimeTraps,
+    totalWastedSeconds,
+    ultraFastSummary,
+    summaryMarkdown
+  };
 }
