@@ -580,7 +580,7 @@ const SPATIAL_VARIATION_POOLS = [
     const sym3 = wrapSvg(drawPolygon("35,14 56,35 35,56 14,35", "rgba(56,189,248,0.2)", "#38bdf8", 2));
     const sym4 = wrapSvg(`${drawLine(35, 15, 35, 55, "#38bdf8", 3)}${drawLine(15, 35, 55, 35, "#38bdf8", 3)}`);
     // 1 completely asymmetric scalene quadrilateral
-    const outlier = wrapSvg(drawPolygon("16,18 54,24 42,54 14,40", "rgba(244,63,94,0.25)", "#f43f5e", 2.5));
+    const outlier = wrapSvg(drawPolygon("16,18 54,24 42,54 14,40", "rgba(56,189,248,0.2)", "#38bdf8", 2));
 
     const rawOpts = [{ svg: outlier }, { svg: sym1 }, { svg: sym2 }, { svg: sym3 }, { svg: sym4 }];
     const { options, correctOption } = shuffleOptions(rawOpts, 0, rand);
@@ -611,7 +611,16 @@ const SPATIAL_VARIATION_POOLS = [
 
     const seqFrames = [makeDisk(0), makeDisk(1), makeDisk(2)];
     const correctSvg = makeDisk(3); // Top-Left
-    const distractors = [makeDisk(0), makeDisk(1), makeDisk(2), wrapSvg(drawCircle(35, 35, 20, "none", "#38bdf8", 2))];
+    const distractors = [
+      makeDisk(0),
+      makeDisk(1),
+      makeDisk(2),
+      wrapSvg(`
+        <circle cx="35" cy="35" r="20" fill="none" stroke="#475569" stroke-width="2" />
+        <line x1="35" y1="15" x2="35" y2="55" stroke="#334155" stroke-width="1.5" />
+        <line x1="15" y1="35" x2="55" y2="35" stroke="#334155" stroke-width="1.5" />
+      `)
+    ];
     const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
     const { options, correctOption } = shuffleOptions(rawOpts, 0, rand);
     return {
@@ -631,10 +640,10 @@ const SPATIAL_VARIATION_POOLS = [
 
     const correctSvg = wrapSvg(`${drawPolygon("35,14 55,35 35,56 15,35", "none", "#10b981", 2)}${drawPolygon("35,26 43,44 27,44", "rgba(236,72,153,0.3)", "#ec4899", 1.8)}`);
     const distractors = [
-      wrapSvg(`${drawPolygon("35,14 55,54 15,54", "none", "#ec4899", 2)}${drawCircle(35, 38, 7, "none", "#38bdf8", 1.8)}`),
+      wrapSvg(`${drawPolygon("35,14 55,35 35,56 15,35", "none", "#10b981", 2)}${drawPolygon("35,30 42,39 35,48 28,39", "rgba(16,185,129,0.3)", "#10b981", 1.8)}`),
       figC,
-      wrapSvg(`${drawCircle(35, 35, 20, "none", "#10b981", 2)}${drawPolygon("35,26 43,44 27,44", "none", "#ec4899", 1.8)}`),
-      wrapSvg(`${drawPolygon("35,14 55,35 35,56 15,35", "none", "#10b981", 2)}${drawCircle(35, 35, 8, "none", "#f59e0b", 1.8)}`)
+      wrapSvg(`${drawPolygon("35,14 55,35 35,56 15,35", "none", "#ec4899", 2)}${drawPolygon("35,26 43,44 27,44", "rgba(16,185,129,0.3)", "#10b981", 1.8)}`),
+      wrapSvg(`${drawPolygon("35,14 55,54 15,54", "none", "#ec4899", 2)}${drawPolygon("35,30 43,48 27,48", "rgba(236,72,153,0.3)", "#ec4899", 1.8)}`)
     ];
 
     const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];

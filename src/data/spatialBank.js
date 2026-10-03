@@ -179,10 +179,9 @@ const SERIES_ARCHETYPES = [
     const isAscending = (t % 2 === 0);
     const sideCounts = isAscending ? [3, 4, 5, 6] : [8, 7, 6, 5];
     const targetSides = isAscending ? 7 : 4;
-    const colors = ["#38bdf8", "#10b981", "#a855f7", "#f59e0b", "#f43f5e"];
+    const col = "#38bdf8";
 
     const makePolygonFigure = (n) => {
-      const col = colors[(n - 3) % colors.length] || "#38bdf8";
       const pts = makePolygonPts(n, 22);
       return wrapSvg(`
         ${drawPolygon(pts, "rgba(56, 189, 248, 0.15)", col, 2.5)}
@@ -468,14 +467,14 @@ const MATRIX_ARCHETYPES = [
     // Shapes: 0=Circle, 1=Square, 2=Triangle
     const shapeSet = (t % 2 === 0)
       ? [
-          (c) => drawCircle(35, 35, 18, "none", "#38bdf8", 2.5),
-          (c) => drawRect(18, 18, 34, 34, "none", "#10b981", 2.5),
-          (c) => drawPolygon("35,16 54,48 16,48", "none", "#f59e0b", 2.5)
+          () => drawCircle(35, 35, 18, "none", "#38bdf8", 2.5),
+          () => drawRect(18, 18, 34, 34, "none", "#38bdf8", 2.5),
+          () => drawPolygon("35,16 54,48 16,48", "none", "#38bdf8", 2.5)
         ]
       : [
-          (c) => drawPolygon("35,14 55,35 35,56 15,35", "none", "#ec4899", 2.5), // Diamond
-          (c) => drawPolygon(makePolygonPts(5, 20), "none", "#a855f7", 2.5), // Pentagon
-          (c) => drawPolygon(makePolygonPts(6, 20), "none", "#38bdf8", 2.5)  // Hexagon
+          () => drawPolygon("35,14 55,35 35,56 15,35", "none", "#38bdf8", 2.5), // Diamond
+          () => drawPolygon(makePolygonPts(5, 20), "none", "#38bdf8", 2.5), // Pentagon
+          () => drawPolygon(makePolygonPts(6, 20), "none", "#38bdf8", 2.5)  // Hexagon
         ];
 
     // Latin square grid matrix
@@ -492,8 +491,8 @@ const MATRIX_ARCHETYPES = [
     const distractors = [
       wrapSvg(shapeSet[0]()),
       wrapSvg(shapeSet[2]()),
-      wrapSvg(drawCircle(35, 35, 10, "#38bdf8", "#38bdf8", 1)),
-      wrapSvg(drawRect(22, 22, 26, 26, "#10b981", "#10b981", 1))
+      wrapSvg(drawCircle(35, 35, 10, "none", "#38bdf8", 2.5)),
+      wrapSvg(drawRect(22, 22, 26, 26, "none", "#38bdf8", 2.5))
     ];
 
     const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
@@ -947,7 +946,7 @@ const ODD_ARCHETYPES = [
     const sym2 = wrapSvg(drawPolygon("35,15 54,48 16,48", "rgba(56,189,248,0.2)", "#38bdf8", 2));
     const sym3 = wrapSvg(drawRect(18, 22, 34, 26, "rgba(56,189,248,0.2)", "#38bdf8", 2));
     const sym4 = wrapSvg(`${drawLine(35, 15, 35, 55, "#38bdf8", 3)}${drawLine(15, 35, 55, 35, "#38bdf8", 3)}`);
-    const asymmetric = wrapSvg(drawPolygon("18,18 52,24 44,52 14,42", "rgba(244,63,94,0.2)", "#f43f5e", 2));
+    const asymmetric = wrapSvg(drawPolygon("18,18 52,24 44,52 14,42", "rgba(56,189,248,0.2)", "#38bdf8", 2));
 
     const rawOpts = [{ svg: asymmetric }, { svg: sym1 }, { svg: sym2 }, { svg: sym3 }, { svg: sym4 }];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
@@ -967,7 +966,7 @@ const ODD_ARCHETYPES = [
     const pHexagon = wrapSvg(drawPolygon(makePolygonPts(6, 20), "rgba(16,185,129,0.2)", "#10b981", 2));
     const pOctagon = wrapSvg(drawPolygon(makePolygonPts(8, 20), "rgba(16,185,129,0.2)", "#10b981", 2));
     const pDecagon = wrapSvg(drawPolygon(makePolygonPts(10, 20), "rgba(16,185,129,0.2)", "#10b981", 2));
-    const pPentagon = wrapSvg(drawPolygon(makePolygonPts(5, 20), "rgba(244,63,94,0.2)", "#f43f5e", 2)); // Outlier (5 vertices)!
+    const pPentagon = wrapSvg(drawPolygon(makePolygonPts(5, 20), "rgba(16,185,129,0.2)", "#10b981", 2)); // Outlier (5 vertices)
 
     const rawOpts = [{ svg: pPentagon }, { svg: pSquare }, { svg: pHexagon }, { svg: pOctagon }, { svg: pDecagon }];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
@@ -987,7 +986,7 @@ const ODD_ARCHETYPES = [
     const loop2B = wrapSvg(`${drawRect(18, 18, 34, 16, "none", "#38bdf8", 2)}${drawRect(18, 36, 34, 16, "none", "#38bdf8", 2)}`); // 2 stacked boxes
     const loop2C = wrapSvg(`${drawCircle(35, 25, 10, "none", "#38bdf8", 2)}${drawCircle(35, 45, 10, "none", "#38bdf8", 2)}`); // figure-8
     const loop2D = wrapSvg(`${drawPolygon("35,16 52,34 18,34", "none", "#38bdf8", 2)}${drawPolygon("35,54 52,36 18,36", "none", "#38bdf8", 2)}`); // 2 triangles
-    const loop3Outlier = wrapSvg(`${drawCircle(25, 25, 9, "none", "#f43f5e", 2)}${drawCircle(45, 25, 9, "none", "#f43f5e", 2)}${drawCircle(35, 45, 9, "none", "#f43f5e", 2)}`); // 3 separate circles
+    const loop3Outlier = wrapSvg(`${drawCircle(25, 25, 9, "none", "#38bdf8", 2)}${drawCircle(45, 25, 9, "none", "#38bdf8", 2)}${drawCircle(35, 45, 9, "none", "#38bdf8", 2)}`); // 3 separate circles
 
     const rawOpts = [{ svg: loop3Outlier }, { svg: loop2A }, { svg: loop2B }, { svg: loop2C }, { svg: loop2D }];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
@@ -1039,7 +1038,7 @@ const ODD_ARCHETYPES = [
     const closed3 = wrapSvg(drawPolygon(makePolygonPts(3, 20), "none", "#10b981", 2.5));
     const closed4 = wrapSvg(drawPolygon(makePolygonPts(6, 20), "none", "#10b981", 2.5));
     // Open contour: rectangle missing one corner
-    const openContour = wrapSvg(`<path d="M 18 25 L 18 52 L 52 52 L 52 18 L 26 18" fill="none" stroke="#f43f5e" stroke-width="2.5" stroke-linecap="round" />`);
+    const openContour = wrapSvg(`<path d="M 18 25 L 18 52 L 52 52 L 52 18 L 26 18" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" />`);
 
     const rawOpts = [{ svg: openContour }, { svg: closed1 }, { svg: closed2 }, { svg: closed3 }, { svg: closed4 }];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
@@ -1070,7 +1069,7 @@ const ANALOGY_ARCHETYPES = [
       wrapSvg(`${drawRect(15, 15, 40, 40, "rgba(16,185,129,0.2)", "#10b981", 2.5)}${drawCircle(35, 35, 8, "#ec4899", "#ec4899", 1)}`),
       wrapSvg(`${drawPolygon("35,14 55,35 35,56 15,35", "rgba(236,72,153,0.2)", "#ec4899", 2.5)}${drawCircle(35, 35, 8, "#10b981", "#10b981", 1)}`),
       figC,
-      figB
+      wrapSvg(`${drawPolygon("35,14 55,35 35,56 15,35", "rgba(16,185,129,0.2)", "#10b981", 2.5)}${drawPolygon("35,26 43,35 35,44 27,35", "#ec4899", "#ec4899", 1)}`)
     ];
 
     const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
@@ -1096,8 +1095,8 @@ const ANALOGY_ARCHETYPES = [
     const distractors = [
       wrapSvg(`<path d="M 20 22 L 35 49 L 50 22 Z" fill="#f59e0b" stroke="#f59e0b" />`), // Inverted but solid
       wrapSvg(`<path d="M 20 45 L 35 18 L 50 45 Z" fill="none" stroke="#f59e0b" stroke-width="2.5" />`), // Not inverted
-      figA,
-      figB
+      figC,
+      wrapSvg(`<path d="M 20 45 L 35 18 L 50 45 Z" fill="#f59e0b" stroke="#f59e0b" />`)
     ];
 
     const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
@@ -1124,7 +1123,7 @@ const ANALOGY_ARCHETYPES = [
       wrapSvg(drawPolygon(makePolygonPts(5, 20), "none", "#f59e0b", 2.5)),
       wrapSvg(drawPolygon(makePolygonPts(6, 20), "none", "#f59e0b", 2.5)),
       wrapSvg(drawPolygon(makePolygonPts(10, 20), "none", "#f59e0b", 2.5)),
-      figB
+      wrapSvg(drawPolygon(makePolygonPts(7, 20), "none", "#f59e0b", 2.5))
     ];
 
     const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
@@ -1157,7 +1156,7 @@ const ANALOGY_ARCHETYPES = [
     const distractors = [
       wrapSvg(`<rect x="18" y="18" width="34" height="16" fill="rgba(245,158,11,0.3)" stroke="#f59e0b" stroke-width="2" />`),
       figC,
-      figB,
+      wrapSvg(`<rect x="18" y="18" width="34" height="34" fill="none" stroke="#f59e0b" stroke-width="2" />`),
       wrapSvg(drawCircle(35, 35, 12, "#f59e0b", "#f59e0b", 1))
     ];
 
@@ -1183,8 +1182,8 @@ const ANALOGY_ARCHETYPES = [
     const correctSvg = wrapSvg(drawText(35, 35, "★", "#f59e0b", 18));
     const distractors = [
       wrapSvg(drawRect(24, 24, 22, 22, "none", "#10b981", 2)),
-      figA,
       figC,
+      wrapSvg(drawText(35, 35, "▲", "#f59e0b", 18)),
       wrapSvg(drawText(35, 35, "●", "#f59e0b", 18))
     ];
 
