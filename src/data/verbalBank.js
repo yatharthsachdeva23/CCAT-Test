@@ -2072,10 +2072,10 @@ export const ANALOGY_BANK = [
     "rel": "tool to primary function",
     "correct": "STETHOSCOPE : AMPLIFY",
     "distractors": [
-      "MAGNIFY : MICROSCOPE",
-      "STETHOSCOPE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "TELESCOPE : SKY",
+      "SCALPEL : SURGERY",
+      "THERMOMETER : MERCURY",
+      "CAMERA : PHOTOGRAPHER"
     ],
     "expl": "Bridge relationship: tool to primary function. MICROSCOPE : MAGNIFY shares this exact relationship with STETHOSCOPE : AMPLIFY."
   },
@@ -2084,10 +2084,10 @@ export const ANALOGY_BANK = [
     "rel": "heating apparatus to material processed",
     "correct": "FURNACE : STEEL",
     "distractors": [
-      "CERAMICS : KILN",
-      "FURNACE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "OVEN : BAKER",
+      "ANVIL : BLACKSMITH",
+      "FOUNDRY : FACTORY",
+      "CHIMNEY : SMOKE"
     ],
     "expl": "Bridge relationship: heating apparatus to material processed. KILN : CERAMICS shares this exact relationship with FURNACE : STEEL."
   },
@@ -2096,10 +2096,10 @@ export const ANALOGY_BANK = [
     "rel": "leader to performing ensemble",
     "correct": "DIRECTOR : CAST",
     "distractors": [
-      "ORCHESTRA : CONDUCTOR",
-      "DIRECTOR : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "CAPTAIN : COMPASS",
+      "TEACHER : CLASSROOM",
+      "ACTOR : AUDIENCE",
+      "SOLDIER : BATTALION"
     ],
     "expl": "Bridge relationship: leader to performing ensemble. CONDUCTOR : ORCHESTRA shares this exact relationship with DIRECTOR : CAST."
   },
@@ -2108,10 +2108,10 @@ export const ANALOGY_BANK = [
     "rel": "creator to literary form produced",
     "correct": "POET : VERSE",
     "distractors": [
-      "PROSE : AUTHOR",
-      "POET : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SCULPTOR : CHISEL",
+      "PAINTER : GALLERY",
+      "SINGER : MICROPHONE",
+      "COMPOSER : PIANO"
     ],
     "expl": "Bridge relationship: creator to literary form produced. AUTHOR : PROSE shares this exact relationship with POET : VERSE."
   },
@@ -2120,10 +2120,10 @@ export const ANALOGY_BANK = [
     "rel": "craftsman to product fabricated",
     "correct": "TAILOR : GARMENT",
     "distractors": [
-      "SHOE : COBBLER",
-      "TAILOR : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "CARPENTER : HAMMER",
+      "MASON : BRICKLAYER",
+      "BAKER : KITCHEN",
+      "WEAVER : LOOM"
     ],
     "expl": "Bridge relationship: craftsman to product fabricated. COBBLER : SHOE shares this exact relationship with TAILOR : GARMENT."
   },
@@ -2132,10 +2132,10 @@ export const ANALOGY_BANK = [
     "rel": "creator to reference work compiled",
     "correct": "LEXICOGRAPHER : DICTIONARY",
     "distractors": [
-      "MAP : CARTOGRAPHER",
-      "LEXICOGRAPHER : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "GEOLOGIST : ROCK",
+      "ASTRONOMER : TELESCOPE",
+      "HISTORIAN : ARCHIVE",
+      "SURVEYOR : BOUNDARY"
     ],
     "expl": "Bridge relationship: creator to reference work compiled. CARTOGRAPHER : MAP shares this exact relationship with LEXICOGRAPHER : DICTIONARY."
   },
@@ -2144,10 +2144,10 @@ export const ANALOGY_BANK = [
     "rel": "specific subgenre to broader category",
     "correct": "SONNET : POEM",
     "distractors": [
-      "SONG : BALLAD",
-      "SONNET : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "NOVEL : BOOKSTORE",
+      "CHAPTER : SENTENCE",
+      "ACTOR : MONOLOGUE",
+      "CHORUS : SINGER"
     ],
     "expl": "Bridge relationship: specific subgenre to broader category. BALLAD : SONG shares this exact relationship with SONNET : POEM."
   },
@@ -2156,10 +2156,10 @@ export const ANALOGY_BANK = [
     "rel": "wound type to implement causing it",
     "correct": "PUNCTURE : NEEDLE",
     "distractors": [
-      "SCALPEL : INCISION",
-      "PUNCTURE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "LACERATION : BANDAGE",
+      "SURGEON : ANESTHESIA",
+      "BRUISE : COLLISION",
+      "HEALING : SUTURE"
     ],
     "expl": "Bridge relationship: wound type to implement causing it. INCISION : SCALPEL shares this exact relationship with PUNCTURE : NEEDLE."
   },
@@ -2168,10 +2168,10 @@ export const ANALOGY_BANK = [
     "rel": "physical process to kinematic outcome",
     "correct": "CONTRACTION : SHRINK",
     "distractors": [
-      "EXPAND : DILATION",
-      "CONTRACTION : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "ROTATION : CIRCLE",
+      "EVAPORATION : CONDENSE",
+      "VIBRATION : FREQUENCY",
+      "ACCELERATION : STOP"
     ],
     "expl": "Bridge relationship: physical process to kinematic outcome. DILATION : EXPAND shares this exact relationship with CONTRACTION : SHRINK."
   },
@@ -2180,10 +2180,10 @@ export const ANALOGY_BANK = [
     "rel": "origin vessel to biological germination",
     "correct": "EGG : HATCH",
     "distractors": [
-      "SPROUT : SEED",
-      "EGG : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "ROOT : SOIL",
+      "FLOWER : PETAL",
+      "POLLEN : INSECT",
+      "BRANCH : LEAF"
     ],
     "expl": "Bridge relationship: origin vessel to biological germination. SEED : SPROUT shares this exact relationship with EGG : HATCH."
   },
@@ -2192,10 +2192,10 @@ export const ANALOGY_BANK = [
     "rel": "apparatus to separation of components",
     "correct": "CENTRIFUGE : FLUID",
     "distractors": [
-      "LIGHT : PRISM",
-      "CENTRIFUGE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "LENS : EYEGLASS",
+      "MIRROR : SHADOW",
+      "FILTER : PURIFY",
+      "MAGNET : METAL"
     ],
     "expl": "Bridge relationship: apparatus to separation of components. PRISM : LIGHT shares this exact relationship with CENTRIFUGE : FLUID."
   },
@@ -2204,10 +2204,10 @@ export const ANALOGY_BANK = [
     "rel": "protective armor to body part shielded",
     "correct": "GAUNTLET : HAND",
     "distractors": [
-      "HEAD : HELMET",
-      "GAUNTLET : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "BOOT : SOLE",
+      "CLOAK : WEATHER",
+      "SHIELD : DEFENSE",
+      "BANDAGE : WOUND"
     ],
     "expl": "Bridge relationship: protective armor to body part shielded. HELMET : HEAD shares this exact relationship with GAUNTLET : HAND."
   },
@@ -2216,10 +2216,10 @@ export const ANALOGY_BANK = [
     "rel": "cognitive deficit to missing faculty",
     "correct": "MYOPIC : FORESIGHT",
     "distractors": [
-      "AWARENESS : OBLIVIOUS",
-      "MYOPIC : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "CALLOUS : SYMPATHY",
+      "IRRATIONAL : LOGIC",
+      "TIMID : CAUTION",
+      "HASTY : PATIENCE"
     ],
     "expl": "Bridge relationship: cognitive deficit to missing faculty. OBLIVIOUS : AWARENESS shares this exact relationship with MYOPIC : FORESIGHT."
   },
@@ -2228,10 +2228,10 @@ export const ANALOGY_BANK = [
     "rel": "geological speleothem to point of origin",
     "correct": "STALAGMITE : FLOOR",
     "distractors": [
-      "CEILING : STALACTITE",
-      "STALAGMITE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "PILLAR : ROOF",
+      "CAVE : MOUNTAIN",
+      "MINERAL : CRYSTAL",
+      "EROSION : STONE"
     ],
     "expl": "Bridge relationship: geological speleothem to point of origin. STALACTITE : CEILING shares this exact relationship with STALAGMITE : FLOOR."
   },
@@ -2240,10 +2240,10 @@ export const ANALOGY_BANK = [
     "rel": "uppermost covering to structural ecosystem",
     "correct": "ROOF : HOUSE",
     "distractors": [
-      "RAINFOREST : CANOPY",
-      "ROOF : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "MEADOW : GRASS",
+      "DESERT : DUNE",
+      "UNDERBRUSH : FOREST",
+      "OCEAN : CURRENT"
     ],
     "expl": "Bridge relationship: uppermost covering to structural ecosystem. CANOPY : RAINFOREST shares this exact relationship with ROOF : HOUSE."
   },
@@ -2252,10 +2252,10 @@ export const ANALOGY_BANK = [
     "rel": "geometric shape to fundamental property",
     "correct": "POLYGONAL : ANGULAR",
     "distractors": [
-      "CURVED : CONVEX",
-      "POLYGONAL : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "OBLONG : CIRCULAR",
+      "PARALLEL : INTERSECTING",
+      "ACUTE : REFLEX",
+      "DIAGONAL : STRAIGHT"
     ],
     "expl": "Bridge relationship: geometric shape to fundamental property. CONVEX : CURVED shares this exact relationship with POLYGONAL : ANGULAR."
   },
@@ -2264,10 +2264,10 @@ export const ANALOGY_BANK = [
     "rel": "chemical agent to functional role",
     "correct": "CATALYST : ACCELERATE",
     "distractors": [
-      "DISSOLVE : SOLVENT",
-      "CATALYST : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SOLUTION : LIQUID",
+      "PRECIPITATE : SUSPEND",
+      "ACID : CORROSION",
+      "COMBUSTION : SMOKE"
     ],
     "expl": "Bridge relationship: chemical agent to functional role. SOLVENT : DISSOLVE shares this exact relationship with CATALYST : ACCELERATE."
   },
@@ -2276,10 +2276,10 @@ export const ANALOGY_BANK = [
     "rel": "mechanical system to physical advantage",
     "correct": "RUDDER : DIRECTION",
     "distractors": [
-      "LEVERAGE : PULLEY",
-      "RUDDER : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "ENGINE : FUEL",
+      "WHEEL : FRICTION",
+      "FULCRUM : WEIGHT",
+      "CABLE : HOIST"
     ],
     "expl": "Bridge relationship: mechanical system to physical advantage. PULLEY : LEVERAGE shares this exact relationship with RUDDER : DIRECTION."
   },
@@ -2288,10 +2288,10 @@ export const ANALOGY_BANK = [
     "rel": "observational tool to specialized practitioner",
     "correct": "SEXTANT : NAVIGATOR",
     "distractors": [
-      "ASTRONOMER : TELESCOPE",
-      "SEXTANT : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "STETHOSCOPE : PHARMACY",
+      "MICROSCOPE : SPECIMEN",
+      "BINOCULARS : OBSERVER",
+      "COMPASS : SHIP"
     ],
     "expl": "Bridge relationship: observational tool to specialized practitioner. TELESCOPE : ASTRONOMER shares this exact relationship with SEXTANT : NAVIGATOR."
   },
@@ -2300,10 +2300,10 @@ export const ANALOGY_BANK = [
     "rel": "commemorative text to stone substrate",
     "correct": "INSCRIPTION : MONUMENT",
     "distractors": [
-      "TOMBSTONE : EPITAPH",
-      "INSCRIPTION : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "PLAQUE : RECOGNITION",
+      "OBITUARY : NEWSPAPER",
+      "SIGNATURE : CONTRACT",
+      "PEDESTAL : STATUE"
     ],
     "expl": "Bridge relationship: commemorative text to stone substrate. EPITAPH : TOMBSTONE shares this exact relationship with INSCRIPTION : MONUMENT."
   },
@@ -2312,10 +2312,10 @@ export const ANALOGY_BANK = [
     "rel": "luminous ring to celestial source",
     "correct": "HALO : MOON",
     "distractors": [
-      "SUN : CORONA",
-      "HALO : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "ATMOSPHERE : PLANET",
+      "COMET : ORBIT",
+      "METEOR : FLASH",
+      "CRATER : SURFACE"
     ],
     "expl": "Bridge relationship: luminous ring to celestial source. CORONA : SUN shares this exact relationship with HALO : MOON."
   },
@@ -2324,10 +2324,10 @@ export const ANALOGY_BANK = [
     "rel": "protective shelter to transportation craft",
     "correct": "HANGAR : AIRCRAFT",
     "distractors": [
-      "VESSEL : HARBOR",
-      "HANGAR : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "RUNWAY : TOWER",
+      "DEPOT : CARGO",
+      "TERMINAL : PASSENGER",
+      "STATION : PLATFORM"
     ],
     "expl": "Bridge relationship: protective shelter to transportation craft. HARBOR : VESSEL shares this exact relationship with HANGAR : AIRCRAFT."
   },
@@ -2336,10 +2336,10 @@ export const ANALOGY_BANK = [
     "rel": "introductory piece to extended performance",
     "correct": "OVERTURE : OPERA",
     "distractors": [
-      "SPEECH : PROLOGUE",
-      "OVERTURE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "PREFACE : AUTHOR",
+      "EPILOGUE : CONCLUSION",
+      "INTERLUDE : AUDIENCE",
+      "INDEX : CHAPTER"
     ],
     "expl": "Bridge relationship: introductory piece to extended performance. PROLOGUE : SPEECH shares this exact relationship with OVERTURE : OPERA."
   },
@@ -2348,10 +2348,10 @@ export const ANALOGY_BANK = [
     "rel": "agricultural implement to harvesting action",
     "correct": "AXE : FELL",
     "distractors": [
-      "REAP : SCYTHE",
-      "AXE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "HAMMER : CARPENTER",
+      "SICKLE : HARVESTER",
+      "PLOW : FURROW",
+      "TROWEL : GARDEN"
     ],
     "expl": "Bridge relationship: agricultural implement to harvesting action. SCYTHE : REAP shares this exact relationship with AXE : FELL."
   },
@@ -2360,10 +2360,10 @@ export const ANALOGY_BANK = [
     "rel": "portable sheath to ranged weapon",
     "correct": "HOLSTER : PISTOL",
     "distractors": [
-      "ARROW : QUIVER",
-      "HOLSTER : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "BOW : ARCHER",
+      "SHEATH : SWORD",
+      "TARGET : BULLSEYE",
+      "CARTRIDGE : BULLET"
     ],
     "expl": "Bridge relationship: portable sheath to ranged weapon. QUIVER : ARROW shares this exact relationship with HOLSTER : PISTOL."
   },
@@ -2372,10 +2372,10 @@ export const ANALOGY_BANK = [
     "rel": "dedicated follower to guiding ideology",
     "correct": "ADVOCATE : CAUSE",
     "distractors": [
-      "CREED : APOSTLE",
-      "ADVOCATE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "DISCIPLE : TEACHER",
+      "PATRIOT : NATION",
+      "CRITIC : REVIEW",
+      "SCHOLAR : ACADEMY"
     ],
     "expl": "Bridge relationship: dedicated follower to guiding ideology. APOSTLE : CREED shares this exact relationship with ADVOCATE : CAUSE."
   },
@@ -2384,10 +2384,10 @@ export const ANALOGY_BANK = [
     "rel": "organism to primary defense mechanism",
     "correct": "PORCUPINE : QUILLS",
     "distractors": [
-      "CAMOUFLAGE : CHAMELEON",
-      "PORCUPINE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "TORTOISE : SHELL",
+      "CHEETAH : SPEED",
+      "PEACOCK : FEATHERS",
+      "OCTOPUS : TENTACLES"
     ],
     "expl": "Bridge relationship: organism to primary defense mechanism. CHAMELEON : CAMOUFLAGE shares this exact relationship with PORCUPINE : QUILLS."
   },
@@ -2396,10 +2396,10 @@ export const ANALOGY_BANK = [
     "rel": "two-dimensional base to three-dimensional polyhedral form",
     "correct": "SQUARE : CUBE",
     "distractors": [
-      "PYRAMID : TRIANGLE",
-      "SQUARE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "CIRCLE : SPHERE",
+      "POLYGON : SHAPE",
+      "CYLINDER : CONE",
+      "PERIMETER : VOLUME"
     ],
     "expl": "Bridge relationship: two-dimensional base to three-dimensional polyhedral form. TRIANGLE : PYRAMID shares this exact relationship with SQUARE : CUBE."
   },
@@ -2408,10 +2408,10 @@ export const ANALOGY_BANK = [
     "rel": "state of disorder to principle that is absent",
     "correct": "CHAOS : ORDER",
     "distractors": [
-      "GOVERNMENT : ANARCHY",
-      "CHAOS : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "FAMINE : SURPLUS",
+      "DROUGHT : RAIN",
+      "MONARCHY : RULER",
+      "TYRANNY : FREEDOM"
     ],
     "expl": "Bridge relationship: state of disorder to principle that is absent. ANARCHY : GOVERNMENT shares this exact relationship with CHAOS : ORDER."
   },
@@ -2420,10 +2420,10 @@ export const ANALOGY_BANK = [
     "rel": "relic excavated to field of study",
     "correct": "ARTIFACT : ARCHAEOLOGY",
     "distractors": [
-      "PALEONTOLOGY : FOSSIL",
-      "ARTIFACT : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "RELIC : ANTIQUITY",
+      "SPECIMEN : BIOLOGY",
+      "DOCUMENT : ARCHIVIST",
+      "MINERAL : GEOLOGY"
     ],
     "expl": "Bridge relationship: relic excavated to field of study. FOSSIL : PALEONTOLOGY shares this exact relationship with ARTIFACT : ARCHAEOLOGY."
   },
@@ -2432,10 +2432,10 @@ export const ANALOGY_BANK = [
     "rel": "nutritional/energetic sustenance to consumer",
     "correct": "FUEL : ENGINE",
     "distractors": [
-      "LIVESTOCK : FODDER",
-      "FUEL : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "GRAIN : SILO",
+      "WATER : RESERVOIR",
+      "PASTURE : RANCHER",
+      "FERTILIZER : CROPS"
     ],
     "expl": "Bridge relationship: nutritional/energetic sustenance to consumer. FODDER : LIVESTOCK shares this exact relationship with FUEL : ENGINE."
   },
@@ -2444,10 +2444,10 @@ export const ANALOGY_BANK = [
     "rel": "physical restraint to prohibited motion",
     "correct": "HANDCUFFS : ESCAPE",
     "distractors": [
-      "ROAM : TETHER",
-      "HANDCUFFS : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "ANCHOR : DRIFT",
+      "MUZZLE : BITE",
+      "SHACKLE : PRISON",
+      "LEASH : WALK"
     ],
     "expl": "Bridge relationship: physical restraint to prohibited motion. TETHER : ROAM shares this exact relationship with HANDCUFFS : ESCAPE."
   },
@@ -2456,10 +2456,10 @@ export const ANALOGY_BANK = [
     "rel": "binding medium to building components",
     "correct": "SOLDER : WIRE",
     "distractors": [
-      "BRICK : MORTAR",
-      "SOLDER : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "NAIL : HAMMER",
+      "GLUE : ADHESIVE",
+      "CEMENT : PAVEMENT",
+      "RIVET : BEAM"
     ],
     "expl": "Bridge relationship: binding medium to building components. MORTAR : BRICK shares this exact relationship with SOLDER : WIRE."
   },
@@ -2468,10 +2468,10 @@ export const ANALOGY_BANK = [
     "rel": "portable object passed between participants",
     "correct": "TORCH : PROCESSION",
     "distractors": [
-      "RELAY : BATON",
-      "TORCH : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "TORCH : RUNNER",
+      "TROPHY : PODIUM",
+      "MEDAL : WINNER",
+      "FLAG : SIGNAL"
     ],
     "expl": "Bridge relationship: portable object passed between participants. BATON : RELAY shares this exact relationship with TORCH : PROCESSION."
   },
@@ -2480,10 +2480,10 @@ export const ANALOGY_BANK = [
     "rel": "geothermal vent to discharged material",
     "correct": "VOLCANO : LAVA",
     "distractors": [
-      "STEAM : GEYSER",
-      "VOLCANO : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SPRING : VALLEY",
+      "CRATER : MINERAL",
+      "GLACIER : AVALANCHE",
+      "VENT : SMOKE"
     ],
     "expl": "Bridge relationship: geothermal vent to discharged material. GEYSER : STEAM shares this exact relationship with VOLCANO : LAVA."
   },
@@ -2492,10 +2492,10 @@ export const ANALOGY_BANK = [
     "rel": "composite harmony to constituent frequency",
     "correct": "SPECTRUM : COLOR",
     "distractors": [
-      "NOTE : CHORD",
-      "SPECTRUM : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "OCTAVE : PITCH",
+      "MELODY : HARMONY",
+      "RHYTHM : TEMPO",
+      "PHRASE : CADENCE"
     ],
     "expl": "Bridge relationship: composite harmony to constituent frequency. CHORD : NOTE shares this exact relationship with SPECTRUM : COLOR."
   },
@@ -2504,10 +2504,10 @@ export const ANALOGY_BANK = [
     "rel": "optical medium to light transformation",
     "correct": "MIRROR : REFLECT",
     "distractors": [
-      "REFRACT : LENS",
-      "MIRROR : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "PRISM : COLOR",
+      "GLASS : TRANSPARENT",
+      "BEAM : FOCUS",
+      "SHADOW : OBSCURITY"
     ],
     "expl": "Bridge relationship: optical medium to light transformation. LENS : REFRACT shares this exact relationship with MIRROR : REFLECT."
   },
@@ -2516,10 +2516,10 @@ export const ANALOGY_BANK = [
     "rel": "designated parking infrastructure to vehicle",
     "correct": "BERTH : TRAIN",
     "distractors": [
-      "SHIP : DOCK",
-      "BERTH : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "GARAGE : AUTOMOBILE",
+      "RUNWAY : CARGO",
+      "TRACK : LOCOMOTIVE",
+      "ANCHORAGE : COAST"
     ],
     "expl": "Bridge relationship: designated parking infrastructure to vehicle. DOCK : SHIP shares this exact relationship with BERTH : TRAIN."
   },
@@ -2528,10 +2528,10 @@ export const ANALOGY_BANK = [
     "rel": "organism classification to mandatory dietary source",
     "correct": "CARNIVORE : MEAT",
     "distractors": [
-      "PLANTS : HERBIVORE",
-      "CARNIVORE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "PREDATOR : PREY",
+      "OMNIVORE : DIET",
+      "PARASITE : HOST",
+      "INSECTIVORE : INSECTS"
     ],
     "expl": "Bridge relationship: organism classification to mandatory dietary source. HERBIVORE : PLANTS shares this exact relationship with CARNIVORE : MEAT."
   },
@@ -2540,10 +2540,10 @@ export const ANALOGY_BANK = [
     "rel": "gradual increase to dynamic dimension",
     "correct": "ACCELERATION : SPEED",
     "distractors": [
-      "VOLUME : CRESCENDO",
-      "ACCELERATION : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "AMPLIFICATION : DECIBEL",
+      "DIMINUENDO : SILENCE",
+      "ELEVATION : ALTITUDE",
+      "MODULATION : KEY"
     ],
     "expl": "Bridge relationship: gradual increase to dynamic dimension. CRESCENDO : VOLUME shares this exact relationship with ACCELERATION : SPEED."
   },
@@ -2552,10 +2552,10 @@ export const ANALOGY_BANK = [
     "rel": "specific biochemical entity to macromolecular class",
     "correct": "GLUCOSE : SUGAR",
     "distractors": [
-      "PROTEIN : ENZYME",
-      "GLUCOSE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "HORMONE : GLAND",
+      "VITAMIN : NUTRIENT",
+      "CELL : ORGANISM",
+      "ANTIBODY : IMMUNITY"
     ],
     "expl": "Bridge relationship: specific biochemical entity to macromolecular class. ENZYME : PROTEIN shares this exact relationship with GLUCOSE : SUGAR."
   },
@@ -2564,10 +2564,10 @@ export const ANALOGY_BANK = [
     "rel": "restraining mechanism to dangerous outcome averted",
     "correct": "BRAKE : COLLIDE",
     "distractors": [
-      "DRIFT : ANCHOR",
-      "BRAKE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "RUDDER : STEER",
+      "SAIL : WIND",
+      "KEEL : BALANCE",
+      "MOORING : CABLE"
     ],
     "expl": "Bridge relationship: restraining mechanism to dangerous outcome averted. ANCHOR : DRIFT shares this exact relationship with BRAKE : COLLIDE."
   },
@@ -2576,10 +2576,10 @@ export const ANALOGY_BANK = [
     "rel": "respiratory organ to gaseous medium filtered",
     "correct": "LUNG : AIR",
     "distractors": [
-      "WATER : GILL",
-      "LUNG : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "FIN : SWIMMING",
+      "SCALE : PROTECTION",
+      "NOSTRIL : ODOR",
+      "TRACHEA : BREATH"
     ],
     "expl": "Bridge relationship: respiratory organ to gaseous medium filtered. GILL : WATER shares this exact relationship with LUNG : AIR."
   },
@@ -2588,10 +2588,10 @@ export const ANALOGY_BANK = [
     "rel": "scientific unit of measurement to physical stimulus",
     "correct": "LUMEN : BRIGHTNESS",
     "distractors": [
-      "SOUND : DECIBEL",
-      "LUMEN : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "AMPERE : ELECTRICITY",
+      "WATT : POWER",
+      "HERTZ : FREQUENCY",
+      "VOLT : BATTERY"
     ],
     "expl": "Bridge relationship: scientific unit of measurement to physical stimulus. DECIBEL : SOUND shares this exact relationship with LUMEN : BRIGHTNESS."
   },
@@ -2600,10 +2600,10 @@ export const ANALOGY_BANK = [
     "rel": "sensory signaling device to communicative intent",
     "correct": "SIREN : WARN",
     "distractors": [
-      "GUIDE : BEACON",
-      "SIREN : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "LIGHTHOUSE : HARBOR",
+      "SENTINEL : WATCH",
+      "RADAR : DETECT",
+      "FLARE : SIGNAL"
     ],
     "expl": "Bridge relationship: sensory signaling device to communicative intent. BEACON : GUIDE shares this exact relationship with SIREN : WARN."
   },
@@ -2612,10 +2612,10 @@ export const ANALOGY_BANK = [
     "rel": "fraudulent copy to authentic standard",
     "correct": "HOAX : TRUTH",
     "distractors": [
-      "GENUINE : FORGERY",
-      "HOAX : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "COUNTERFEIT : AUTHENTIC",
+      "PLAGIARISM : ORIGINAL",
+      "DECEPTION : SINCERE",
+      "PARODY : SERIOUS"
     ],
     "expl": "Bridge relationship: fraudulent copy to authentic standard. FORGERY : GENUINE shares this exact relationship with HOAX : TRUTH."
   },
@@ -2624,10 +2624,10 @@ export const ANALOGY_BANK = [
     "rel": "primary event to subsequent physical artifact",
     "correct": "LIGHTNING : THUNDER",
     "distractors": [
-      "CRATER : METEOR",
-      "LIGHTNING : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "EARTHQUAKE : FAULT",
+      "ERUPTION : CALDERA",
+      "FLOOD : SEDIMENT",
+      "TORNADO : DEBRIS"
     ],
     "expl": "Bridge relationship: primary event to subsequent physical artifact. METEOR : CRATER shares this exact relationship with LIGHTNING : THUNDER."
   },
@@ -2636,10 +2636,10 @@ export const ANALOGY_BANK = [
     "rel": "pathological deficiency state to vital element lacking",
     "correct": "DROUGHT : MOISTURE",
     "distractors": [
-      "VITAMIN : SCURVY",
-      "DROUGHT : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "ANEMIA : IRON",
+      "DEHYDRATION : WATER",
+      "FATIGUE : REST",
+      "MALNUTRITION : CALORIE"
     ],
     "expl": "Bridge relationship: pathological deficiency state to vital element lacking. SCURVY : VITAMIN shares this exact relationship with DROUGHT : MOISTURE."
   },
@@ -2648,10 +2648,10 @@ export const ANALOGY_BANK = [
     "rel": "junction method to flexible linear medium",
     "correct": "SPLICE : WIRE",
     "distractors": [
-      "ROPE : KNOT",
-      "SPLICE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "WEAVE : THREAD",
+      "SEAM : CLOTH",
+      "BINDING : VOLUME",
+      "BRAID : HAIR"
     ],
     "expl": "Bridge relationship: junction method to flexible linear medium. KNOT : ROPE shares this exact relationship with SPLICE : WIRE."
   },
@@ -2660,10 +2660,10 @@ export const ANALOGY_BANK = [
     "rel": "indirect vision apparatus to vehicle equipped",
     "correct": "MIRROR : CAR",
     "distractors": [
-      "SUBMARINE : PERISCOPE",
-      "MIRROR : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "BINOCULARS : SCOUT",
+      "RADAR : VESSEL",
+      "SONAR : DEPTH",
+      "WINDSHIELD : DRIVER"
     ],
     "expl": "Bridge relationship: indirect vision apparatus to vehicle equipped. PERISCOPE : SUBMARINE shares this exact relationship with MIRROR : CAR."
   },
@@ -2672,10 +2672,10 @@ export const ANALOGY_BANK = [
     "rel": "specialized conduit to delivery function",
     "correct": "PIPELINE : TRANSPORT",
     "distractors": [
-      "TRANSMIT : ANTENNA",
-      "PIPELINE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SATELLITE : ORBIT",
+      "RECEIVER : SIGNAL",
+      "CABLE : CONDUIT",
+      "TOWER : BROADCAST"
     ],
     "expl": "Bridge relationship: specialized conduit to delivery function. ANTENNA : TRANSMIT shares this exact relationship with PIPELINE : TRANSPORT."
   },
@@ -2684,10 +2684,10 @@ export const ANALOGY_BANK = [
     "rel": "discrete structural unit to overarching literary construct",
     "correct": "STANZA : POEM",
     "distractors": [
-      "WORD : SYLLABLE",
-      "STANZA : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "LETTER : ALPHABET",
+      "PHRASE : CLAUSE",
+      "PARAGRAPH : ESSAY",
+      "WORD : VOCABULARY"
     ],
     "expl": "Bridge relationship: discrete structural unit to overarching literary construct. SYLLABLE : WORD shares this exact relationship with STANZA : POEM."
   },
@@ -2696,10 +2696,10 @@ export const ANALOGY_BANK = [
     "rel": "navigational/geometric tool to measurement provided",
     "correct": "PROTRACTOR : ANGLE",
     "distractors": [
-      "BEARING : COMPASS",
-      "PROTRACTOR : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SEXTANT : LATITUDE",
+      "BAROMETER : ALTITUDE",
+      "CALIPER : DIAMETER",
+      "CLINOMETER : SLOPE"
     ],
     "expl": "Bridge relationship: navigational/geometric tool to measurement provided. COMPASS : BEARING shares this exact relationship with PROTRACTOR : ANGLE."
   },
@@ -2708,10 +2708,10 @@ export const ANALOGY_BANK = [
     "rel": "hand tool to mechanical operation executed",
     "correct": "SHEARS : CUT",
     "distractors": [
-      "GRIP : PLIERS",
-      "SHEARS : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "WRENCH : ROTATE",
+      "HAMMER : POUND",
+      "SAW : SEPARATE",
+      "CHISEL : CARVE"
     ],
     "expl": "Bridge relationship: hand tool to mechanical operation executed. PLIERS : GRIP shares this exact relationship with SHEARS : CUT."
   },
@@ -2720,10 +2720,10 @@ export const ANALOGY_BANK = [
     "rel": "reproductive dispersal agent to parent botanical organism",
     "correct": "ACORN : OAK",
     "distractors": [
-      "FUNGUS : SPORE",
-      "ACORN : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "POLLEN : BLOSSOM",
+      "ROOT : SHRUB",
+      "SAPLING : FOREST",
+      "BULB : TULIP"
     ],
     "expl": "Bridge relationship: reproductive dispersal agent to parent botanical organism. SPORE : FUNGUS shares this exact relationship with ACORN : OAK."
   },
@@ -2732,10 +2732,10 @@ export const ANALOGY_BANK = [
     "rel": "safety interrupt component to flow system",
     "correct": "VALVE : PIPE",
     "distractors": [
-      "CIRCUIT : FUSE",
-      "VALVE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SWITCH : CURRENT",
+      "BREAKER : SURGE",
+      "CAPACITOR : CHARGE",
+      "RESISTOR : HEAT"
     ],
     "expl": "Bridge relationship: safety interrupt component to flow system. FUSE : CIRCUIT shares this exact relationship with VALVE : PIPE."
   },
@@ -2744,10 +2744,10 @@ export const ANALOGY_BANK = [
     "rel": "converging flow to main systemic trunk",
     "correct": "OFFSHOOT : BRANCH",
     "distractors": [
-      "RIVER : TRIBUTARY",
-      "OFFSHOOT : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "CREEK : WATERSHED",
+      "ESTUARY : OCEAN",
+      "DELTA : SHORELINE",
+      "STREAM : BASIN"
     ],
     "expl": "Bridge relationship: converging flow to main systemic trunk. TRIBUTARY : RIVER shares this exact relationship with OFFSHOOT : BRANCH."
   },
@@ -2756,10 +2756,10 @@ export const ANALOGY_BANK = [
     "rel": "animal to active fluid/color secretion used in survival",
     "correct": "OCTOPUS : INK",
     "distractors": [
-      "PIGMENT : CHAMELEON",
-      "OCTOPUS : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SQUID : INK",
+      "SKUNK : SCENT",
+      "VIPER : VENOM",
+      "PORCUPINE : NEEDLES"
     ],
     "expl": "Bridge relationship: animal to active fluid/color secretion used in survival. CHAMELEON : PIGMENT shares this exact relationship with OCTOPUS : INK."
   },
@@ -2768,10 +2768,10 @@ export const ANALOGY_BANK = [
     "rel": "major anatomical/civil conduit to vital fluid channeled",
     "correct": "AQUEDUCT : WATER",
     "distractors": [
-      "BLOOD : AORTA",
-      "AQUEDUCT : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "ARTERY : PULSE",
+      "VEIN : CIRCULATION",
+      "CANAL : BARGE",
+      "VALVE : CHAMBER"
     ],
     "expl": "Bridge relationship: major anatomical/civil conduit to vital fluid channeled. AORTA : BLOOD shares this exact relationship with AQUEDUCT : WATER."
   },
@@ -2780,10 +2780,10 @@ export const ANALOGY_BANK = [
     "rel": "permanent mechanical fastener to material bound",
     "correct": "STITCH : FABRIC",
     "distractors": [
-      "METAL : RIVET",
-      "STITCH : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "WELD : STEEL",
+      "BOLT : FLANGE",
+      "MORTAR : STONE",
+      "GLUE : TIMBER"
     ],
     "expl": "Bridge relationship: permanent mechanical fastener to material bound. RIVET : METAL shares this exact relationship with STITCH : FABRIC."
   },
@@ -2792,10 +2792,10 @@ export const ANALOGY_BANK = [
     "rel": "specialized gauge to environmental parameter measured",
     "correct": "OHMMETER : RESISTANCE",
     "distractors": [
-      "HUMIDITY : HYGROMETER",
-      "OHMMETER : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "ANEMOMETER : WIND",
+      "BAROMETER : PRESSURE",
+      "THERMOMETER : HEAT",
+      "ALTIMETER : HEIGHT"
     ],
     "expl": "Bridge relationship: specialized gauge to environmental parameter measured. HYGROMETER : HUMIDITY shares this exact relationship with OHMMETER : RESISTANCE."
   },
@@ -2804,10 +2804,10 @@ export const ANALOGY_BANK = [
     "rel": "suspended physical body to characteristic kinematic motion",
     "correct": "PENDULUM : OSCILLATE",
     "distractors": [
-      "ORBIT : SATELLITE",
-      "PENDULUM : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "PLANET : REVOLVE",
+      "METEOR : TRAJECTORY",
+      "GYROSCOPE : PRECESS",
+      "COMET : ECLIPSE"
     ],
     "expl": "Bridge relationship: suspended physical body to characteristic kinematic motion. SATELLITE : ORBIT shares this exact relationship with PENDULUM : OSCILLATE."
   },
@@ -2816,10 +2816,10 @@ export const ANALOGY_BANK = [
     "rel": "developing individual leaving place of nurturance",
     "correct": "GRADUATE : UNIVERSITY",
     "distractors": [
-      "NEST : FLEDGLING",
-      "GRADUATE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "APPRENTICE : WORKSHOP",
+      "CADET : ACADEMY",
+      "NOVICE : MONASTERY",
+      "INTERN : CLINIC"
     ],
     "expl": "Bridge relationship: developing individual leaving place of nurturance. FLEDGLING : NEST shares this exact relationship with GRADUATE : UNIVERSITY."
   },
@@ -2828,10 +2828,10 @@ export const ANALOGY_BANK = [
     "rel": "protective defense against incoming threat",
     "correct": "SHIELD : BLOW",
     "distractors": [
-      "ACCUSATION : ALIBI",
-      "SHIELD : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "ARMOR : WEAPON",
+      "ANTIDOTE : POISON",
+      "PARAPET : ASSAULT",
+      "HELMET : IMPACT"
     ],
     "expl": "Bridge relationship: protective defense against incoming threat. ALIBI : ACCUSATION shares this exact relationship with SHIELD : BLOW."
   },
@@ -2840,10 +2840,10 @@ export const ANALOGY_BANK = [
     "rel": "uppermost linear edge to elevated topographical/fluid mass",
     "correct": "CREST : WAVE",
     "distractors": [
-      "MOUNTAIN : RIDGE",
-      "CREST : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SUMMIT : PEAK",
+      "VALLEY : CANYON",
+      "ESCARPMENT : PLATEAU",
+      "COAST : CLIFF"
     ],
     "expl": "Bridge relationship: uppermost linear edge to elevated topographical/fluid mass. RIDGE : MOUNTAIN shares this exact relationship with CREST : WAVE."
   },
@@ -2852,10 +2852,10 @@ export const ANALOGY_BANK = [
     "rel": "processing action to culinary product derived",
     "correct": "BREW : BEER",
     "distractors": [
-      "BUTTER : CHURN",
-      "BREW : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "MILL : FLOUR",
+      "PRESS : CIDER",
+      "DISTILL : SPIRITS",
+      "ROAST : COFFEE"
     ],
     "expl": "Bridge relationship: processing action to culinary product derived. CHURN : BUTTER shares this exact relationship with BREW : BEER."
   },
@@ -2864,10 +2864,10 @@ export const ANALOGY_BANK = [
     "rel": "protective enclosure during transformation phase",
     "correct": "INCUBATOR : DEVELOPMENT",
     "distractors": [
-      "METAMORPHOSIS : COCOON",
-      "INCUBATOR : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "CHRYSALIS : EMERGENCE",
+      "BURROW : HIBERNATION",
+      "SHELL : PROTECTION",
+      "HIVE : POLLINATION"
     ],
     "expl": "Bridge relationship: protective enclosure during transformation phase. COCOON : METAMORPHOSIS shares this exact relationship with INCUBATOR : DEVELOPMENT."
   },
@@ -2876,10 +2876,10 @@ export const ANALOGY_BANK = [
     "rel": "temporary supportive scaffolding during rebuilding",
     "correct": "CAST : BONE",
     "distractors": [
-      "CONSTRUCTION : SCAFFOLD",
-      "CAST : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "FRAMEWORK : BUILDING",
+      "CRUTCH : RECOVERY",
+      "BRACE : STABILITY",
+      "SPLINT : FRACTURE"
     ],
     "expl": "Bridge relationship: temporary supportive scaffolding during rebuilding. SCAFFOLD : CONSTRUCTION shares this exact relationship with CAST : BONE."
   },
@@ -2888,10 +2888,10 @@ export const ANALOGY_BANK = [
     "rel": "focal surface point directly above energy release",
     "correct": "GROUND ZERO : BLAST",
     "distractors": [
-      "QUAKE : EPICENTER",
-      "GROUND ZERO : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "EYE : HURRICANE",
+      "FOCUS : TREMOR",
+      "CRATER : ERUPTION",
+      "NUCLEUS : FISSION"
     ],
     "expl": "Bridge relationship: focal surface point directly above energy release. EPICENTER : QUAKE shares this exact relationship with GROUND ZERO : BLAST."
   },
@@ -2900,10 +2900,10 @@ export const ANALOGY_BANK = [
     "rel": "protective aesthetic outer coating to underlying craft",
     "correct": "GLAZE : POTTERY",
     "distractors": [
-      "FURNITURE : VENEER",
-      "GLAZE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "VARNISH : FLOORBOARDS",
+      "ENAMEL : APPLIANCE",
+      "LAMINATE : COUNTERTOP",
+      "PATINA : BRONZE"
     ],
     "expl": "Bridge relationship: protective aesthetic outer coating to underlying craft. VENEER : FURNITURE shares this exact relationship with GLAZE : POTTERY."
   },
@@ -2912,10 +2912,10 @@ export const ANALOGY_BANK = [
     "rel": "mechanical/electronic device multiplying physical magnitude",
     "correct": "LEVER : FORCE",
     "distractors": [
-      "SIGNAL : AMPLIFIER",
-      "LEVER : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "TRANSFORMER : VOLTAGE",
+      "TURBOCHARGER : PRESSURE",
+      "LOUDSPEAKER : DECIBEL",
+      "RECEIVER : FREQUENCY"
     ],
     "expl": "Bridge relationship: mechanical/electronic device multiplying physical magnitude. AMPLIFIER : SIGNAL shares this exact relationship with LEVER : FORCE."
   },
@@ -2924,10 +2924,10 @@ export const ANALOGY_BANK = [
     "rel": "collective zoological noun to biological grouping",
     "correct": "SCHOOL : FISH",
     "distractors": [
-      "BIRDS : FLOCK",
-      "SCHOOL : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "PACK : WOLVES",
+      "HERD : CATTLE",
+      "PRIDE : LIONS",
+      "SWARM : BEES"
     ],
     "expl": "Bridge relationship: collective zoological noun to biological grouping. FLOCK : BIRDS shares this exact relationship with SCHOOL : FISH."
   },
@@ -2936,10 +2936,10 @@ export const ANALOGY_BANK = [
     "rel": "mechanical prime mover to power converter driven",
     "correct": "PISTON : CRANKSHAFT",
     "distractors": [
-      "GENERATOR : TURBINE",
-      "PISTON : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "BOILER : STEAM",
+      "GEARBOX : DRIVESHAFT",
+      "ALTERNATOR : BATTERY",
+      "PROPELLER : MOTOR"
     ],
     "expl": "Bridge relationship: mechanical prime mover to power converter driven. TURBINE : GENERATOR shares this exact relationship with PISTON : CRANKSHAFT."
   },
@@ -2948,10 +2948,10 @@ export const ANALOGY_BANK = [
     "rel": "civil barrier infrastructure preventing inundation",
     "correct": "LEVEES : WATER",
     "distractors": [
-      "FLOOD : DAMS",
-      "LEVEES : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "BARRIERS : STORM",
+      "SEAWALLS : TSUNAMI",
+      "BREAKWATERS : SURF",
+      "DIKES : INUNDATION"
     ],
     "expl": "Bridge relationship: civil barrier infrastructure preventing inundation. DAMS : FLOOD shares this exact relationship with LEVEES : WATER."
   },
@@ -2960,10 +2960,10 @@ export const ANALOGY_BANK = [
     "rel": "microscopic pathogen to disease state provoked",
     "correct": "VIRUS : CONTAGION",
     "distractors": [
-      "INFECTION : BACTERIA",
-      "VIRUS : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "PATHOGEN : DISEASE",
+      "PARASITE : INFESTATION",
+      "TOXIN : POISONING",
+      "ALLERGEN : REACTION"
     ],
     "expl": "Bridge relationship: microscopic pathogen to disease state provoked. BACTERIA : INFECTION shares this exact relationship with VIRUS : CONTAGION."
   },
@@ -2972,10 +2972,10 @@ export const ANALOGY_BANK = [
     "rel": "isolation barrier mitigating propagation",
     "correct": "FIREWALL : INTRUSION",
     "distractors": [
-      "EPIDEMIC : QUARANTINE",
-      "FIREWALL : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "EMBARGO : COMMERCE",
+      "CURFEW : UNREST",
+      "INSULATION : COLD",
+      "SANCTION : CONFLICT"
     ],
     "expl": "Bridge relationship: isolation barrier mitigating propagation. QUARANTINE : EPIDEMIC shares this exact relationship with FIREWALL : INTRUSION."
   },
@@ -2984,10 +2984,10 @@ export const ANALOGY_BANK = [
     "rel": "minor initial stimulus to massive downstream effect",
     "correct": "RIPPLE : TIDAL WAVE",
     "distractors": [
-      "CONFLAGRATION : SPARK",
-      "RIPPLE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "DRIZZLE : DELUGE",
+      "BREEZE : GALE",
+      "TREMOR : EARTHQUAKE",
+      "WHISPER : CLAMOR"
     ],
     "expl": "Bridge relationship: minor initial stimulus to massive downstream effect. SPARK : CONFLAGRATION shares this exact relationship with RIPPLE : TIDAL WAVE."
   },
@@ -2996,10 +2996,10 @@ export const ANALOGY_BANK = [
     "rel": "moving geological fluid mass to sediment deposit formed",
     "correct": "RIVER : DELTA",
     "distractors": [
-      "MORAINE : GLACIER",
-      "RIVER : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "VOLCANO : BASALT",
+      "CANYON : STRATA",
+      "TORRENT : GULLY",
+      "WIND : SAND DUNE"
     ],
     "expl": "Bridge relationship: moving geological fluid mass to sediment deposit formed. GLACIER : MORAINE shares this exact relationship with RIVER : DELTA."
   },
@@ -3008,10 +3008,10 @@ export const ANALOGY_BANK = [
     "rel": "subordinate taxonomic category to overarching group",
     "correct": "SPECIES : GENUS",
     "distractors": [
-      "LANGUAGE : DIALECT",
-      "SPECIES : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "PATOIS : SPEECH",
+      "SUBGENRE : LITERATURE",
+      "VARIETY : CULTIVAR",
+      "CREOLE : IDIOM"
     ],
     "expl": "Bridge relationship: subordinate taxonomic category to overarching group. DIALECT : LANGUAGE shares this exact relationship with SPECIES : GENUS."
   },
@@ -3020,10 +3020,10 @@ export const ANALOGY_BANK = [
     "rel": "communal architectural residence to vocation",
     "correct": "BARRACKS : SOLDIER",
     "distractors": [
-      "MONK : CLOISTER",
-      "BARRACKS : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SANCTUARY : PRIEST",
+      "DORMITORY : SCHOLAR",
+      "CONVENT : NUN",
+      "ASHRAM : HERMIT"
     ],
     "expl": "Bridge relationship: communal architectural residence to vocation. CLOISTER : MONK shares this exact relationship with BARRACKS : SOLDIER."
   },
@@ -3032,10 +3032,10 @@ export const ANALOGY_BANK = [
     "rel": "consolidation process joining two autonomous entities",
     "correct": "MERGER : CORPORATION",
     "distractors": [
-      "ATOM : FUSION",
-      "MERGER : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SYNTHESIS : MOLECULE",
+      "ALLOY : ELEMENT",
+      "AMALGAM : COMPOUND",
+      "POLYMER : RESIN"
     ],
     "expl": "Bridge relationship: consolidation process joining two autonomous entities. FUSION : ATOM shares this exact relationship with MERGER : CORPORATION."
   },
@@ -3044,10 +3044,10 @@ export const ANALOGY_BANK = [
     "rel": "transverse structural foundation supporting transportation span",
     "correct": "PIER : BRIDGE",
     "distractors": [
-      "RAILROAD : TIE",
-      "PIER : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SLEEPER : TRACK",
+      "GIRDER : TRUSS",
+      "JOIST : FLOOR",
+      "STRINGER : STAIR"
     ],
     "expl": "Bridge relationship: transverse structural foundation supporting transportation span. TIE : RAILROAD shares this exact relationship with PIER : BRIDGE."
   },
@@ -3056,10 +3056,10 @@ export const ANALOGY_BANK = [
     "rel": "submerged counterweight ensuring equilibrium",
     "correct": "RUDDER : STEER",
     "distractors": [
-      "STABILITY : BALLAST",
-      "RUDDER : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "KEEL : EQUILIBRIUM",
+      "ANCHOR : SECURITY",
+      "SHOCK ABSORBER : DAMPING",
+      "COUNTERWEIGHT : BALANCE"
     ],
     "expl": "Bridge relationship: submerged counterweight ensuring equilibrium. BALLAST : STABILITY shares this exact relationship with RUDDER : STEER."
   },
@@ -3068,10 +3068,10 @@ export const ANALOGY_BANK = [
     "rel": "nautical unit of measure to physical dimension",
     "correct": "KNOT : SPEED",
     "distractors": [
-      "DEPTH : FATHOM",
-      "KNOT : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "LEAGUE : DISTANCE",
+      "ACRE : AREA",
+      "LITER : CAPACITY",
+      "GRAM : MASS"
     ],
     "expl": "Bridge relationship: nautical unit of measure to physical dimension. FATHOM : DEPTH shares this exact relationship with KNOT : SPEED."
   },
@@ -3080,10 +3080,10 @@ export const ANALOGY_BANK = [
     "rel": "astronomical/meteorological event to scientific classification",
     "correct": "DROUGHT : DESICCATION",
     "distractors": [
-      "OCCULTATION : ECLIPSE",
-      "DROUGHT : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "CONJUNCTION : ALIGNMENT",
+      "APOGEE : DISTANCE",
+      "SOLSTICE : TILT",
+      "ZENITH : ELEVATION"
     ],
     "expl": "Bridge relationship: astronomical/meteorological event to scientific classification. ECLIPSE : OCCULTATION shares this exact relationship with DROUGHT : DESICCATION."
   },
@@ -3092,10 +3092,10 @@ export const ANALOGY_BANK = [
     "rel": "curated collection to constituent assets",
     "correct": "PORTFOLIO : INVESTMENTS",
     "distractors": [
-      "PHOTOGRAPHS : ALBUM",
-      "PORTFOLIO : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SCRAPBOOK : CLIPPINGS",
+      "COMPENDIUM : ESSAYS",
+      "ANTHOLOGY : POEMS",
+      "GALLERY : PAINTINGS"
     ],
     "expl": "Bridge relationship: curated collection to constituent assets. ALBUM : PHOTOGRAPHS shares this exact relationship with PORTFOLIO : INVESTMENTS."
   },
@@ -3104,10 +3104,10 @@ export const ANALOGY_BANK = [
     "rel": "passive transport across selective barrier",
     "correct": "FILTRATION : SIEVE",
     "distractors": [
-      "MEMBRANE : OSMOSIS",
-      "FILTRATION : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "PERCOLATION : GRAVEL",
+      "DIFFUSION : GRADIENT",
+      "TRANSPIRATION : STOMA",
+      "CAPILLARY ACTION : PORE"
     ],
     "expl": "Bridge relationship: passive transport across selective barrier. OSMOSIS : MEMBRANE shares this exact relationship with FILTRATION : SIEVE."
   },
@@ -3116,10 +3116,10 @@ export const ANALOGY_BANK = [
     "rel": "stimulating agent accelerating throughput rate",
     "correct": "INCENTIVE : PRODUCTIVITY",
     "distractors": [
-      "REACTION : CATALYST",
-      "INCENTIVE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "STIMULUS : RESPONSE",
+      "SPARK : IGNITION",
+      "MOTIVATOR : PERFORMANCE",
+      "ACCELERATOR : VELOCITY"
     ],
     "expl": "Bridge relationship: stimulating agent accelerating throughput rate. CATALYST : REACTION shares this exact relationship with INCENTIVE : PRODUCTIVITY."
   },
@@ -3128,10 +3128,10 @@ export const ANALOGY_BANK = [
     "rel": "pharmacological agent eliminating subjective state",
     "correct": "SEDATIVE : ANXIETY",
     "distractors": [
-      "SENSATION : ANESTHETIC",
-      "SEDATIVE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "ANALGESIC : PAIN",
+      "ANTIPYRETIC : FEVER",
+      "ANTIDOTE : POISON",
+      "DECONGESTANT : PRESSURE"
     ],
     "expl": "Bridge relationship: pharmacological agent eliminating subjective state. ANESTHETIC : SENSATION shares this exact relationship with SEDATIVE : ANXIETY."
   },
@@ -3140,10 +3140,10 @@ export const ANALOGY_BANK = [
     "rel": "floating navigational hazard marker to maritime warning",
     "correct": "FLARE : DISTRESS",
     "distractors": [
-      "REEF : BUOY",
-      "FLARE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "LIGHTHOUSE : HEADLAND",
+      "BEACON : SHOAL",
+      "FOGHORN : ROCKS",
+      "MARKER : CHANNEL"
     ],
     "expl": "Bridge relationship: floating navigational hazard marker to maritime warning. BUOY : REEF shares this exact relationship with FLARE : DISTRESS."
   },
@@ -3152,10 +3152,10 @@ export const ANALOGY_BANK = [
     "rel": "barrier material retarding energetic transmission",
     "correct": "SOUNDPROOFING : NOISE",
     "distractors": [
-      "HEAT : INSULATION",
-      "SOUNDPROOFING : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SHIELDING : RADIATION",
+      "WATERPROOFING : MOISTURE",
+      "LUBRICANT : FRICTION",
+      "DAMPER : VIBRATION"
     ],
     "expl": "Bridge relationship: barrier material retarding energetic transmission. INSULATION : HEAT shares this exact relationship with SOUNDPROOFING : NOISE."
   },
@@ -3164,10 +3164,10 @@ export const ANALOGY_BANK = [
     "rel": "simple mechanical transmission element to force channeled",
     "correct": "PULLEY : TENSION",
     "distractors": [
-      "TORQUE : GEAR",
-      "PULLEY : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SPROCKET : ROTATION",
+      "LEVER : MECHANICAL ADVANTAGE",
+      "CAMSHAFT : TIMING",
+      "CRANK : DISPLACEMENT"
     ],
     "expl": "Bridge relationship: simple mechanical transmission element to force channeled. GEAR : TORQUE shares this exact relationship with PULLEY : TENSION."
   },
@@ -3176,10 +3176,10 @@ export const ANALOGY_BANK = [
     "rel": "botanical classification to structural support",
     "correct": "WOODY : TRUNK",
     "distractors": [
-      "STEM : HERBACEOUS",
-      "WOODY : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "DECIDUOUS : FOLIAGE",
+      "EVERGREEN : NEEDLE",
+      "CARNIVOROUS : FLOWER",
+      "VASCULAR : TISSUE"
     ],
     "expl": "Bridge relationship: botanical classification to structural support. HERBACEOUS : STEM shares this exact relationship with WOODY : TRUNK."
   },
@@ -3188,10 +3188,10 @@ export const ANALOGY_BANK = [
     "rel": "fluid power mechanical system to fluid medium employed",
     "correct": "PNEUMATIC : GAS",
     "distractors": [
-      "LIQUID : HYDRAULIC",
-      "PNEUMATIC : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "ELECTRIC : CURRENT",
+      "MAGNETIC : FLUX",
+      "THERMAL : HEAT",
+      "MECHANICAL : RIGIDITY"
     ],
     "expl": "Bridge relationship: fluid power mechanical system to fluid medium employed. HYDRAULIC : LIQUID shares this exact relationship with PNEUMATIC : GAS."
   },
@@ -3200,10 +3200,10 @@ export const ANALOGY_BANK = [
     "rel": "secure repository to valuable items preserved",
     "correct": "VAULT : TREASURE",
     "distractors": [
-      "DOCUMENTS : ARCHIVE",
-      "VAULT : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "REPOSITORY : ARTIFACTS",
+      "ARSENAL : WEAPONRY",
+      "MUSEUM : SPECIMENS",
+      "TREASURY : BULLION"
     ],
     "expl": "Bridge relationship: secure repository to valuable items preserved. ARCHIVE : DOCUMENTS shares this exact relationship with VAULT : TREASURE."
   },
@@ -3212,10 +3212,10 @@ export const ANALOGY_BANK = [
     "rel": "outermost protective layer to deeper foundational substratum",
     "correct": "CRUST : MANTLE",
     "distractors": [
-      "DERMIS : EPIDERMIS",
-      "CRUST : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "STRATUM : SUBSTRATE",
+      "BARK : CAMBIUM",
+      "FOLIAGE : UNDERSTORY",
+      "SHEATH : CORE"
     ],
     "expl": "Bridge relationship: outermost protective layer to deeper foundational substratum. EPIDERMIS : DERMIS shares this exact relationship with CRUST : MANTLE."
   },
@@ -3224,10 +3224,10 @@ export const ANALOGY_BANK = [
     "rel": "radial linear element extending outward from central axis",
     "correct": "RAY : CENTER",
     "distractors": [
-      "HUB : SPOKE",
-      "RAY : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "RADIUS : PERIMETER",
+      "RIB : UMBRELLA",
+      "STRUT : FUSELAGE",
+      "TIE ROD : STEERING"
     ],
     "expl": "Bridge relationship: radial linear element extending outward from central axis. SPOKE : HUB shares this exact relationship with RAY : CENTER."
   },
@@ -3236,10 +3236,10 @@ export const ANALOGY_BANK = [
     "rel": "autonomous feedback regulator maintaining setpoint",
     "correct": "GOVERNOR : ENGINE SPEED",
     "distractors": [
-      "TEMPERATURE : THERMOSTAT",
-      "GOVERNOR : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "HUMIDISTAT : MOISTURE",
+      "MANOMETER : PRESSURE",
+      "RHEOSTAT : RESISTANCE",
+      "BAROMETER : DENSITY"
     ],
     "expl": "Bridge relationship: autonomous feedback regulator maintaining setpoint. THERMOSTAT : TEMPERATURE shares this exact relationship with GOVERNOR : ENGINE SPEED."
   },
@@ -3248,10 +3248,10 @@ export const ANALOGY_BANK = [
     "rel": "precision manual measurement gauge to linear dimension",
     "correct": "MICROMETER : DIAMETER",
     "distractors": [
-      "THICKNESS : CALIPER",
-      "MICROMETER : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "PROTRACTOR : ANGLE",
+      "ALTIMETER : HEIGHT",
+      "HYGROMETER : VAPOR",
+      "SPEEDOMETER : VELOCITY"
     ],
     "expl": "Bridge relationship: precision manual measurement gauge to linear dimension. CALIPER : THICKNESS shares this exact relationship with MICROMETER : DIAMETER."
   },
@@ -3260,10 +3260,10 @@ export const ANALOGY_BANK = [
     "rel": "coloring/chemical particulate suspended in liquid vehicle",
     "correct": "SOLUTE : SOLUTION",
     "distractors": [
-      "PAINT : PIGMENT",
-      "SOLUTE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "DYE : TEXTILE",
+      "BINDER : ADHESIVE",
+      "SOLVENT : EMULSION",
+      "MINERAL : ORE"
     ],
     "expl": "Bridge relationship: coloring/chemical particulate suspended in liquid vehicle. PIGMENT : PAINT shares this exact relationship with SOLUTE : SOLUTION."
   },
@@ -3272,10 +3272,10 @@ export const ANALOGY_BANK = [
     "rel": "specialized industrial staging environment to manufactured good",
     "correct": "CLEANROOM : MICROCHIPS",
     "distractors": [
-      "SHIPBUILDING : DRY DOCK",
-      "CLEANROOM : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "FOUNDRY : METALLURGY",
+      "HANGAR : AVIATION",
+      "LABORATORY : BIOCHEMISTRY",
+      "ASSEMBLY LINE : AUTOMATION"
     ],
     "expl": "Bridge relationship: specialized industrial staging environment to manufactured good. DRY DOCK : SHIPBUILDING shares this exact relationship with CLEANROOM : MICROCHIPS."
   },
@@ -3284,10 +3284,10 @@ export const ANALOGY_BANK = [
     "rel": "single continuous solid block to raw material",
     "correct": "INGOT : METAL",
     "distractors": [
-      "STONE : MONOLITH",
-      "INGOT : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SLAB : CONCRETE",
+      "TIMBER : WOOD",
+      "SHEET : GLASS",
+      "PANEL : COMPOSITE"
     ],
     "expl": "Bridge relationship: single continuous solid block to raw material. MONOLITH : STONE shares this exact relationship with INGOT : METAL."
   },
@@ -3296,10 +3296,10 @@ export const ANALOGY_BANK = [
     "rel": "inverse physical relationship governed by fundamental law",
     "correct": "RESISTANCE : CURRENT",
     "distractors": [
-      "FREQUENCY : WAVELENGTH",
-      "RESISTANCE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "AMPLITUDE : INTENSITY",
+      "PERIOD : CYCLES",
+      "IMPEDANCE : VOLTAGE",
+      "VELOCITY : MOMENTUM"
     ],
     "expl": "Bridge relationship: inverse physical relationship governed by fundamental law. WAVELENGTH : FREQUENCY shares this exact relationship with RESISTANCE : CURRENT."
   },
@@ -3308,10 +3308,10 @@ export const ANALOGY_BANK = [
     "rel": "rotating mechanical contact component delivering kinetic drive",
     "correct": "WHEEL : TRACTION",
     "distractors": [
-      "THRUST : PROPELLER",
-      "WHEEL : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "RUDDER : YAW",
+      "WING : LIFT",
+      "PISTON : COMPRESSION",
+      "BALLAST : BUOYANCY"
     ],
     "expl": "Bridge relationship: rotating mechanical contact component delivering kinetic drive. PROPELLER : THRUST shares this exact relationship with WHEEL : TRACTION."
   },
@@ -3320,10 +3320,10 @@ export const ANALOGY_BANK = [
     "rel": "formal judicial writ commanding participation",
     "correct": "WARRANT : SEARCH",
     "distractors": [
-      "WITNESS : SUBPOENA",
-      "WARRANT : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SUMMONS : DEFENDANT",
+      "CITATION : MOTORIST",
+      "INDICTMENT : ACCUSED",
+      "INJUNCTION : VIOLATOR"
     ],
     "expl": "Bridge relationship: formal judicial writ commanding participation. SUBPOENA : WITNESS shares this exact relationship with WARRANT : SEARCH."
   },
@@ -3332,10 +3332,10 @@ export const ANALOGY_BANK = [
     "rel": "cessation of forward progress due to opposing forces",
     "correct": "GRIDLOCK : TRAFFIC",
     "distractors": [
-      "CHESS : STALEMATE",
-      "GRIDLOCK : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "DEADLOCK : NEGOTIATION",
+      "DRAW : CONTEST",
+      "STANDOFF : DISPUTE",
+      "PARALYSIS : CRISIS"
     ],
     "expl": "Bridge relationship: cessation of forward progress due to opposing forces. STALEMATE : CHESS shares this exact relationship with GRIDLOCK : TRAFFIC."
   },
@@ -3344,10 +3344,10 @@ export const ANALOGY_BANK = [
     "rel": "distressed individual seeking legal sanctuary",
     "correct": "DEBTOR : BANKRUPTCY",
     "distractors": [
-      "ASYLUM : REFUGEE",
-      "DEBTOR : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "PILGRIM : SANCTUARY",
+      "EXILE : HAVEN",
+      "DEFECTOR : CITIZENSHIP",
+      "FUGITIVE : SAFEGUARD"
     ],
     "expl": "Bridge relationship: distressed individual seeking legal sanctuary. REFUGEE : ASYLUM shares this exact relationship with DEBTOR : BANKRUPTCY."
   },
@@ -3356,10 +3356,10 @@ export const ANALOGY_BANK = [
     "rel": "deceleration apparatus slowing downward/forward motion",
     "correct": "BRAKE : VELOCITY",
     "distractors": [
-      "DESCENT : PARACHUTE",
-      "BRAKE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SEATBELT : RESTRAINT",
+      "AIRBAG : COLLISION",
+      "ANCHOR : MOORING",
+      "RUDDER : NAVIGATION"
     ],
     "expl": "Bridge relationship: deceleration apparatus slowing downward/forward motion. PARACHUTE : DESCENT shares this exact relationship with BRAKE : VELOCITY."
   },
@@ -3368,10 +3368,10 @@ export const ANALOGY_BANK = [
     "rel": "highest spatial point relative to reference baseline",
     "correct": "PEAK : VALLEY",
     "distractors": [
-      "HORIZON : ZENITH",
-      "PEAK : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "APOGEE : PERIGEE",
+      "PINNACLE : BASE",
+      "CREST : TROUGH",
+      "CULMINATION : THRESHOLD"
     ],
     "expl": "Bridge relationship: highest spatial point relative to reference baseline. ZENITH : HORIZON shares this exact relationship with PEAK : VALLEY."
   },
@@ -3380,10 +3380,10 @@ export const ANALOGY_BANK = [
     "rel": "adjustable mechanical/biological opening regulating light admission",
     "correct": "PUPIL : EYE",
     "distractors": [
-      "CAMERA : APERTURE",
-      "PUPIL : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SHUTTER : EXPOSURE",
+      "VALVE : CYLINDER",
+      "NOZZLE : HOSE",
+      "IRIS : OCULAR"
     ],
     "expl": "Bridge relationship: adjustable mechanical/biological opening regulating light admission. APERTURE : CAMERA shares this exact relationship with PUPIL : EYE."
   },
@@ -3392,10 +3392,10 @@ export const ANALOGY_BANK = [
     "rel": "spinning rotational funnel structure to ambient medium",
     "correct": "CYCLONE : ATMOSPHERE",
     "distractors": [
-      "FLUID : VORTEX",
-      "CYCLONE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "WHIRLPOOL : EDDY",
+      "GALE : AIRMASS",
+      "CURRENT : TIDE",
+      "TURBULENCE : SHEAR"
     ],
     "expl": "Bridge relationship: spinning rotational funnel structure to ambient medium. VORTEX : FLUID shares this exact relationship with CYCLONE : ATMOSPHERE."
   },
@@ -3404,10 +3404,10 @@ export const ANALOGY_BANK = [
     "rel": "ancient mechanical tension siege weapon to munition launched",
     "correct": "SLING : STONE",
     "distractors": [
-      "PROJECTILE : CATAPULT",
-      "SLING : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "BALLISTA : BOLT",
+      "CANNON : ARTILLERY",
+      "TREBUCHET : COUNTERWEIGHT",
+      "BOW : SHAFT"
     ],
     "expl": "Bridge relationship: ancient mechanical tension siege weapon to munition launched. CATAPULT : PROJECTILE shares this exact relationship with SLING : STONE."
   },
@@ -3416,10 +3416,10 @@ export const ANALOGY_BANK = [
     "rel": "composite synthesized material to basic chemical ingredients",
     "correct": "POLYMER : MONOMERS",
     "distractors": [
-      "METALS : ALLOY",
-      "POLYMER : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "AMALGAM : ELEMENTS",
+      "SOLUTION : LIQUIDS",
+      "COMPOSITE : FIBERS",
+      "EMULSION : DROPLETS"
     ],
     "expl": "Bridge relationship: composite synthesized material to basic chemical ingredients. ALLOY : METALS shares this exact relationship with POLYMER : MONOMERS."
   },
@@ -3428,10 +3428,10 @@ export const ANALOGY_BANK = [
     "rel": "receptive focusing device to observation portal",
     "correct": "TELESCOPE : EYEPIECE",
     "distractors": [
-      "ANTENNA : SATELLITE",
-      "TELESCOPE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "RADAR : REFLECTOR",
+      "TELESCOPE : MIRROR",
+      "SONAR : TRANSDUCER",
+      "MICROSCOPE : OBJECTIVE"
     ],
     "expl": "Bridge relationship: receptive focusing device to observation portal. SATELLITE : ANTENNA shares this exact relationship with TELESCOPE : EYEPIECE."
   },
@@ -3440,10 +3440,10 @@ export const ANALOGY_BANK = [
     "rel": "directional check mechanism preventing hazardous reversal",
     "correct": "DAM : FLOODING",
     "distractors": [
-      "BACKFLOW : VALVE",
-      "DAM : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "FUSE : OVERLOAD",
+      "GASKET : LEAKAGE",
+      "SEAL : CONTAMINATION",
+      "REGULATOR : FLUCTUATION"
     ],
     "expl": "Bridge relationship: directional check mechanism preventing hazardous reversal. VALVE : BACKFLOW shares this exact relationship with DAM : FLOODING."
   },
@@ -3452,10 +3452,10 @@ export const ANALOGY_BANK = [
     "rel": "physical adjective to intrinsic material state",
     "correct": "PERMEABLE : POROUS",
     "distractors": [
-      "INSEPARABLE : FUSED",
-      "PERMEABLE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "RIGID : INFLEXIBLE",
+      "VOLATILE : UNSTABLE",
+      "OPAQUE : IMPERVIOUS",
+      "MALLEABLE : DUCTILE"
     ],
     "expl": "Bridge relationship: physical adjective to intrinsic material state. FUSED : INSEPARABLE shares this exact relationship with PERMEABLE : POROUS."
   },
@@ -3464,10 +3464,10 @@ export const ANALOGY_BANK = [
     "rel": "submersion control mechanism adjusting buoyancy",
     "correct": "WEIGHTS : DIVER",
     "distractors": [
-      "SUBMARINE : BALLAST",
-      "WEIGHTS : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "AIRPLANE : FLAP",
+      "GLIDER : THERMAL",
+      "HOVERCRAFT : SKIRT",
+      "BALLOON : HELIUM"
     ],
     "expl": "Bridge relationship: submersion control mechanism adjusting buoyancy. BALLAST : SUBMARINE shares this exact relationship with WEIGHTS : DIVER."
   },
@@ -3476,10 +3476,10 @@ export const ANALOGY_BANK = [
     "rel": "containment chamber maintaining extreme thermodynamic state",
     "correct": "INCUBATOR : WARM",
     "distractors": [
-      "MOLTEN : CRUCIBLE",
-      "INCUBATOR : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "FURNACE : SCORCHING",
+      "AUTOCLAVE : STERILE",
+      "FREEZER : SOLID",
+      "CONDENSER : LIQUID"
     ],
     "expl": "Bridge relationship: containment chamber maintaining extreme thermodynamic state. CRUCIBLE : MOLTEN shares this exact relationship with INCUBATOR : WARM."
   },
@@ -3488,10 +3488,10 @@ export const ANALOGY_BANK = [
     "rel": "coordinate measurement relative to fundamental baseline datum",
     "correct": "ALTITUDE : SEA LEVEL",
     "distractors": [
-      "EQUATOR : LATITUDE",
-      "ALTITUDE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "MERIDIAN : GREENWICH",
+      "DEPTH : TRENCH",
+      "ELEVATION : CONTOUR",
+      "AZIMUTH : HORIZON"
     ],
     "expl": "Bridge relationship: coordinate measurement relative to fundamental baseline datum. LATITUDE : EQUATOR shares this exact relationship with ALTITUDE : SEA LEVEL."
   },
@@ -3500,10 +3500,10 @@ export const ANALOGY_BANK = [
     "rel": "diagnostic medical scope to clinical exam procedure",
     "correct": "OPHTHALMOSCOPE : FUNDOSCOPY",
     "distractors": [
-      "AUSCULTATION : STETHOSCOPE",
-      "OPHTHALMOSCOPE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "MICROSCOPE : MAGNIFICATION",
+      "REFRACTOMETER : OPTICS",
+      "THERMOMETER : CALORIMETRY",
+      "SPHYGMOMANOMETER : OCCLUSION"
     ],
     "expl": "Bridge relationship: diagnostic medical scope to clinical exam procedure. STETHOSCOPE : AUSCULTATION shares this exact relationship with OPHTHALMOSCOPE : FUNDOSCOPY."
   },
@@ -3512,10 +3512,10 @@ export const ANALOGY_BANK = [
     "rel": "hand shaving/cutting tool to material worked",
     "correct": "PLANE : WOOD",
     "distractors": [
-      "STONE : CHISEL",
-      "PLANE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SAW : TIMBER",
+      "FILE : STEEL",
+      "DRILL : MASONRY",
+      "GOUGE : LINSEED"
     ],
     "expl": "Bridge relationship: hand shaving/cutting tool to material worked. CHISEL : STONE shares this exact relationship with PLANE : WOOD."
   },
@@ -3524,10 +3524,10 @@ export const ANALOGY_BANK = [
     "rel": "chemical transformation process to resulting byproduct",
     "correct": "FERMENTATION : ALCOHOL",
     "distractors": [
-      "RUST : CORROSION",
-      "FERMENTATION : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "COMBUSTION : ASH",
+      "DECAY : HUMUS",
+      "CONDENSATION : DEW",
+      "OXIDATION : TARNISH"
     ],
     "expl": "Bridge relationship: chemical transformation process to resulting byproduct. CORROSION : RUST shares this exact relationship with FERMENTATION : ALCOHOL."
   },
@@ -3536,10 +3536,10 @@ export const ANALOGY_BANK = [
     "rel": "aerodynamic/hydrodynamic control surface to rotational axis",
     "correct": "ELEVATOR : PITCH",
     "distractors": [
-      "YAW : RUDDER",
-      "ELEVATOR : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "AILERON : ROLL",
+      "THROTTLE : ACCELERATION",
+      "SPOILER : DRAG",
+      "ELEVATOR : ALTITUDE"
     ],
     "expl": "Bridge relationship: aerodynamic/hydrodynamic control surface to rotational axis. RUDDER : YAW shares this exact relationship with ELEVATOR : PITCH."
   },
@@ -3548,10 +3548,10 @@ export const ANALOGY_BANK = [
     "rel": "unique distinguishing physical pattern to entity signified",
     "correct": "BARCODE : PRODUCT",
     "distractors": [
-      "IDENTITY : FINGERPRINT",
-      "BARCODE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "SIGNATURE : AUTHORIZATION",
+      "WATERMARK : AUTHENTICITY",
+      "RETINA : VERIFICATION",
+      "SEAL : VALIDITY"
     ],
     "expl": "Bridge relationship: unique distinguishing physical pattern to entity signified. FINGERPRINT : IDENTITY shares this exact relationship with BARCODE : PRODUCT."
   },
@@ -3560,10 +3560,10 @@ export const ANALOGY_BANK = [
     "rel": "professional partisan advocate to legal proceeding",
     "correct": "ATTORNEY : LITIGATION",
     "distractors": [
-      "LEGISLATION : LOBBYIST",
-      "ATTORNEY : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "PROSECUTOR : INDICTMENT",
+      "ARBITRATOR : SETTLEMENT",
+      "ADVOCATE : POLICY",
+      "MEDIATOR : AGREEMENT"
     ],
     "expl": "Bridge relationship: professional partisan advocate to legal proceeding. LOBBYIST : LEGISLATION shares this exact relationship with ATTORNEY : LITIGATION."
   },
@@ -3572,10 +3572,10 @@ export const ANALOGY_BANK = [
     "rel": "biome landscape to defining hydrological ground condition",
     "correct": "MARSH : BOG",
     "distractors": [
-      "PERMAFROST : TUNDRA",
-      "MARSH : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "DESERT : ARIDITY",
+      "STEPPE : GRASSLAND",
+      "SAVANNA : DROUGHT",
+      "JUNGLE : HUMIDITY"
     ],
     "expl": "Bridge relationship: biome landscape to defining hydrological ground condition. TUNDRA : PERMAFROST shares this exact relationship with MARSH : BOG."
   },
@@ -3584,10 +3584,10 @@ export const ANALOGY_BANK = [
     "rel": "astronomical alignment governing cyclical earthly phenomena",
     "correct": "TIDE : MOON",
     "distractors": [
-      "SEASONS : SOLSTICE",
-      "TIDE : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "EQUINOX : HEMISPHERES",
+      "PERIHELION : ORBIT",
+      "PHASE : LUNATION",
+      "APHELION : DISTANCE"
     ],
     "expl": "Bridge relationship: astronomical alignment governing cyclical earthly phenomena. SOLSTICE : SEASONS shares this exact relationship with TIDE : MOON."
   },
@@ -3596,10 +3596,10 @@ export const ANALOGY_BANK = [
     "rel": "analytical laboratory equipment to physical principle utilized",
     "correct": "SEPARATORY FUNNEL : DENSITY",
     "distractors": [
-      "PRISM : SPECTROGRAPH",
-      "SEPARATORY FUNNEL : SINK",
-      "TOOL : WORKER",
-      "FAST : MOTION"
+      "CENTRIFUGE : ROTOR",
+      "MICROSCOPE : STAGE",
+      "BAROMETER : COLUMN",
+      "HYDROMETER : BULB"
     ],
     "expl": "Bridge relationship: analytical laboratory equipment to physical principle utilized. SPECTROGRAPH : PRISM shares this exact relationship with SEPARATORY FUNNEL : DENSITY."
   }
