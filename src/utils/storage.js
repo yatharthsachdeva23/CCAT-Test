@@ -38,6 +38,51 @@ export function clearAllAttempts() {
   }
 }
 
+const ULTRAFAST_ATTEMPTS_KEY = 'ccat_prep_ultrafast_attempts_v1';
+
+export function getUltraFastAttempts() {
+  try {
+    const raw = localStorage.getItem(ULTRAFAST_ATTEMPTS_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (err) {
+    console.error('Failed to load ultra fast attempts from storage', err);
+    return [];
+  }
+}
+
+export function saveUltraFastAttempt(sprintAttempt) {
+  try {
+    const existing = getUltraFastAttempts();
+    const updated = [sprintAttempt, ...existing];
+    localStorage.setItem(ULTRAFAST_ATTEMPTS_KEY, JSON.stringify(updated));
+    return updated;
+  } catch (err) {
+    console.error('Failed to save ultra fast attempt', err);
+    return [];
+  }
+}
+
+export function deleteUltraFastAttempt(sprintId) {
+  try {
+    const existing = getUltraFastAttempts();
+    const updated = existing.filter(a => a.id !== sprintId);
+    localStorage.setItem(ULTRAFAST_ATTEMPTS_KEY, JSON.stringify(updated));
+    return updated;
+  } catch (err) {
+    console.error('Failed to delete ultra fast attempt', err);
+    return [];
+  }
+}
+
+export function clearUltraFastAttempts() {
+  try {
+    localStorage.removeItem(ULTRAFAST_ATTEMPTS_KEY);
+    return true;
+  } catch (err) {
+    return false;
+  }
+}
+
 export function getSettings() {
   try {
     const raw = localStorage.getItem(SETTINGS_KEY);
