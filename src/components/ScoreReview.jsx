@@ -6,7 +6,7 @@ import {
 import SVGQuestionRenderer from './SVGQuestionRenderer.jsx';
 import { analyzeAttemptPatterns } from '../data/patternEngine.js';
 import MarkdownView from './MarkdownView.jsx';
-import { getAllSpeedTricksForTest, startPreloadingSpeedTricks, fetchSingleSpeedTrick } from '../services/aiSpeedTricks.js';
+import { getAllSpeedTricksForTest, startPreloadingSpeedTricks, fetchSingleSpeedTrick, getSubjectTargetTime } from '../services/aiSpeedTricks.js';
 
 export default function ScoreReview({ attempt, onBackToDashboard, onRetakeTest, onAskCoach }) {
   const [filter, setFilter] = useState('all'); // 'all', 'incorrect', 'skipped', 'timetraps', 'math', 'verbal', 'spatial'
@@ -38,19 +38,30 @@ export default function ScoreReview({ attempt, onBackToDashboard, onRetakeTest, 
   }, [attempt?.testId, questions]);
 
   const handleFetchTrick = async (q) => {
-    setLoadingTricks(prev => ({ ...prev, [q.id]: true }));
+    const qId = q.id ?? q.questionId;
+    if (!qId) return;
+    setLoadingTricks(prev => ({ ...prev, [qId]: true }));
     const trick = await fetchSingleSpeedTrick(attempt?.testId, q);
     if (trick) {
-      setSpeedTricks(prev => ({ ...prev, [q.id]: trick }));
+      setSpeedTricks(prev => ({ ...prev, [qId]: trick }));
     }
-    setLoadingTricks(prev => ({ ...prev, [q.id]: false }));
+    setLoadingTricks(prev => ({ ...prev, [qId]: false }));
   };
 
   const toggleExplanation = (qId) => {
-    setExpandedExplanations(prev => ({
-      ...prev,
-      [qId]: !prev[qId]
-    }));
+    setExpandedExplanations(prev => {
+      const willBeExpanded = !prev[qId];
+      if (willBeExpanded) {
+        const qObj = questions.find(q => (q.id === qId || q.questionId === qId));
+        if (qObj && !speedTricks[qId]) {
+          handleFetchTrick(qObj);
+        }
+      }
+      return {
+        ...prev,
+        [qId]: willBeExpanded
+      };
+    });
   };
 
   // Filter questions list
@@ -464,48 +475,48 @@ export default function ScoreReview({ attempt, onBackToDashboard, onRetakeTest, 
 
                   {isExpanded && (
                     <div className="mt-3 space-y-3">
-                      {/* ⚡ Gemini 15-Sec Speed Shortcut */}
-                      <div className="p-3.5 sm:p-4 rounded-2xl bg-gradient-to-br from-amber-500/10 via-slate-900 to-indigo-950/40 border border-amber-500/40 shadow-xl space-y-2">
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-2">
-                            <div className="w-6 h-6 rounded-lg bg-amber-500/20 border border-amber-500/40 flex items-center justify-center">
-                              <Zap className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                            </div>
-                            <span className="text-xs sm:text-sm font-black text-amber-300 tracking-wide uppercase">
-                              ⚡ Gemini 15-Second Mental Shortcut
-                            </span>
-                          </div>
-                          {speedTricks[q.id] && (
-                            <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
-                              AI Accelerated
-                            </span>
-                          )}
-                        </div>
+                      {/* ⚡ Gemini Speed Shortcut tailored to subject dedicated time */}
+                      {(() => {
+                        const targetSec = getSubjectTargetTime(q.category, q.timeLimitSec);
+                        const qId = q.id ?? q.questionId;
+                        const trickText = speedTricks[qId];
+                        
+                        // Auto-trigger fetch if missing and not currently loading
+                        if (!trickText && !loadingTricks[qId]) {
+                          handleFetchTrick(q);
+                        }
 
-                        {speedTricks[q.id] ? (
-                          <div className="text-slate-200 leading-relaxed pt-1">
-                            <MarkdownView content={speedTricks[q.id]} />
+                        return (
+                          <div className="p-3.5 sm:p-4 rounded-2xl bg-gradient-to-br from-amber-500/10 via-slate-900 to-indigo-950/40 border border-amber-500/40 shadow-xl space-y-2">
+                            <div className="flex items-center justify-between">
+                              <div className="flex items-center gap-2">
+                                <div className="w-6 h-6 rounded-lg bg-amber-500/20 border border-amber-500/40 flex items-center justify-center">
+                                  <Zap className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                                </div>
+                                <span className="text-xs sm:text-sm font-black text-amber-300 tracking-wide uppercase">
+                                  ⚡ Gemini {targetSec}-Second Mental Shortcut
+                                </span>
+                              </div>
+                              {trickText && (
+                                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                                  AI Accelerated
+                                </span>
+                              )}
+                            </div>
+
+                            {trickText ? (
+                              <div className="text-slate-200 leading-relaxed pt-1">
+                                <MarkdownView content={trickText} />
+                              </div>
+                            ) : (
+                              <div className="flex items-center gap-2.5 text-xs text-amber-300/90 py-2">
+                                <Sparkles className="w-4 h-4 animate-spin text-amber-400" />
+                                <span>Consulting Gemini for instant {targetSec}-second shortcut...</span>
+                              </div>
+                            )}
                           </div>
-                        ) : loadingTricks[q.id] ? (
-                          <div className="flex items-center gap-2.5 text-xs text-amber-300/90 py-2">
-                            <Sparkles className="w-4 h-4 animate-spin text-amber-400" />
-                            <span>Consulting Gemini for instant 15-second shortcut...</span>
-                          </div>
-                        ) : (
-                          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pt-1">
-                            <span className="text-xs text-slate-400">
-                              Want the lightning 15-second mental shortcut & elimination trick?
-                            </span>
-                            <button
-                              onClick={() => handleFetchTrick(q)}
-                              className="px-3 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 font-bold text-xs flex items-center gap-1.5 cursor-pointer transition-all shadow-sm shrink-0"
-                            >
-                              <Zap className="w-3.5 h-3.5 fill-amber-400" />
-                              <span>Generate 15-Sec Shortcut</span>
-                            </button>
-                          </div>
-                        )}
-                      </div>
+                        );
+                      })()}
 
                       {/* Standard Step-by-Step Solution */}
                       <div className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">

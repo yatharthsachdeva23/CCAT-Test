@@ -17,7 +17,8 @@ import {
 import { 
   startPreloadingSpeedTricks, 
   getAllSpeedTricksForTest, 
-  fetchSingleSpeedTrick 
+  fetchSingleSpeedTrick,
+  getSubjectTargetTime
 } from '../services/aiSpeedTricks.js';
 
 export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
@@ -42,26 +43,63 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
   const [loadingTricks, setLoadingTricks] = useState({});
 
   useEffect(() => {
-    const activeTestId = activeSprintReview ? (activeSprintReview.subject ? `sprint_${activeSprintReview.subject}` : 'sprint') : (sprintData ? `sprint_${sprintData.subject}` : 'sprint');
-    const questions = activeSprintReview?.questions || sprintData?.questions || [];
-    setSprintSpeedTricks(getAllSpeedTricksForTest(activeTestId, questions));
+    if (stage !== 'review' || !activeSprintReview) return;
+    const sprintObj = activeSprintReview;
+    const testId = sprintObj.id || (sprintObj.subject ? `sprint_${sprintObj.subject}` : 'sprint');
+    const questions = (sprintObj.questions && sprintObj.questions.length > 0)
+      ? sprintObj.questions
+      : (sprintObj.responses || []).map((r, i) => ({
+          ...r,
+          id: r.id ?? r.questionId ?? (i + 1),
+          questionId: r.questionId ?? r.id ?? (i + 1),
+          sprintQuestionIndex: r.sprintQuestionIndex ?? (i + 1),
+          category: r.category || sprintObj.subject,
+          timeLimitSec: r.timeLimitSec || sprintObj.timePerQuestionSec
+        }));
+
+    setSprintSpeedTricks(getAllSpeedTricksForTest(testId, questions));
+    startPreloadingSpeedTricks(testId, questions);
+
+    // Auto-fetch missing speed tricks by default for every question in the sprint
+    questions.forEach((q, i) => {
+      const qId = q.id ?? q.questionId ?? (i + 1);
+      fetchSingleSpeedTrick(testId, q).then(trick => {
+        if (trick) {
+          setSprintSpeedTricks(prev => ({ ...prev, [qId]: trick }));
+        }
+      });
+    });
 
     const handleUpdate = () => {
-      setSprintSpeedTricks(getAllSpeedTricksForTest(activeTestId, questions));
+      setSprintSpeedTricks(getAllSpeedTricksForTest(testId, questions));
     };
 
     window.addEventListener('ccat-speed-tricks-updated', handleUpdate);
     return () => window.removeEventListener('ccat-speed-tricks-updated', handleUpdate);
-  }, [activeSprintReview, sprintData]);
+  }, [stage, activeSprintReview]);
 
-  const handleFetchSprintTrick = async (item) => {
-    const testId = activeSprintReview ? `sprint_${activeSprintReview.subject}` : `sprint_${sprintData?.subject || 'verbal'}`;
-    setLoadingTricks(prev => ({ ...prev, [item.id]: true }));
-    const trick = await fetchSingleSpeedTrick(testId, item);
+  const handleFetchSprintTrick = async (item, fallbackIdx = 1) => {
+    const qId = item.id ?? item.questionId ?? item.sprintQuestionIndex ?? fallbackIdx;
+    const testId = activeSprintReview?.id 
+      || (activeSprintReview?.subject ? `sprint_${activeSprintReview.subject}` : (sprintData?.id || 'sprint'));
+
+    if (sprintSpeedTricks[qId] || loadingTricks[qId]) return;
+    setLoadingTricks(prev => ({ ...prev, [qId]: true }));
+    
+    const normalizedQ = {
+      ...item,
+      id: qId,
+      questionId: qId,
+      sprintQuestionIndex: item.sprintQuestionIndex || qId,
+      category: item.category || activeSprintReview?.subject || sprintData?.subject || 'math',
+      timeLimitSec: item.timeLimitSec || activeSprintReview?.timePerQuestionSec || sprintData?.timePerQuestionSec || 15
+    };
+
+    const trick = await fetchSingleSpeedTrick(testId, normalizedQ);
     if (trick) {
-      setSprintSpeedTricks(prev => ({ ...prev, [item.id]: trick }));
+      setSprintSpeedTricks(prev => ({ ...prev, [qId]: trick }));
     }
-    setLoadingTricks(prev => ({ ...prev, [item.id]: false }));
+    setLoadingTricks(prev => ({ ...prev, [qId]: false }));
   };
   
   // Refs for timer and state synchronization
@@ -113,9 +151,11 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
   // Start a new 1-minute sprint for the chosen subject
   const startSprint = (subject = selectedSubject) => {
     const data = generateUltraFastSprint(subject, attemptedTestIds, Date.now());
+    const sprintTestId = `sprint_${subject}_${Date.now()}`;
+    data.id = sprintTestId;
     setSprintData(data);
     sprintDataRef.current = data;
-    startPreloadingSpeedTricks(`sprint_${subject}`, data.questions);
+    startPreloadingSpeedTricks(sprintTestId, data.questions);
     setCurrentIndex(0);
     currentIndexRef.current = 0;
     setSelectedOption(null);
@@ -175,7 +215,11 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
     // RULE: "only if i click option and click done then only it considers that otherwise not"
     // Unconfirmed choices on timeout are NOT considered.
     const record = {
+      id: currentQ.id,
       questionId: currentQ.id,
+      sprintQuestionIndex: currentQ.sprintQuestionIndex || (activeIdx + 1),
+      category: currentQ.category || data.subject,
+      timeLimitSec: currentQ.timeLimitSec || data.timePerQuestionSec,
       question: currentQ.question,
       options: currentQ.options,
       selectedOption: null, // NOT considered
@@ -183,7 +227,6 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
       isCorrect: false,
       timedOut: true,
       timeSpentSec: timeLimit,
-      timeLimitSec: timeLimit,
       explanation: currentQ.explanation,
       subType: currentQ.subType,
       figureSvg: currentQ.figureSvg,
@@ -225,7 +268,11 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
     const isCorrect = chosen === currentQ.correctOption;
 
     const record = {
+      id: currentQ.id,
       questionId: currentQ.id,
+      sprintQuestionIndex: currentQ.sprintQuestionIndex || (activeIdx + 1),
+      category: currentQ.category || data.subject,
+      timeLimitSec: currentQ.timeLimitSec || data.timePerQuestionSec,
       question: currentQ.question,
       options: currentQ.options,
       selectedOption: chosen,
@@ -233,7 +280,6 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
       isCorrect,
       timedOut: false,
       timeSpentSec: Math.round(elapsedSec * 10) / 10,
-      timeLimitSec: currentQ.timeLimitSec,
       explanation: currentQ.explanation,
       subType: currentQ.subType,
       figureSvg: currentQ.figureSvg,
@@ -273,7 +319,7 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
     };
 
     const sprintAttempt = {
-      id: `sprint_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
+      id: currentSprint?.id || `sprint_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
       timestamp: new Date().toISOString(),
       subject: currentSprint?.subject || selectedSubject,
       subjectTitle: subjectTitles[currentSprint?.subject || selectedSubject] || 'Speed Sprint',
@@ -284,7 +330,8 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
       avgTimeSpentSec: avgTime,
       timedOutCount,
       wrongCount,
-      responses
+      responses,
+      questions: currentSprint?.questions || []
     };
 
     // Save to persistent localStorage
@@ -1353,42 +1400,47 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
 
                   {/* Step-by-step Fast Solution & Gemini Speed Shortcut */}
                   <div className="mt-3.5 space-y-2.5">
-                    {/* ⚡ Gemini 15-Sec Speed Shortcut */}
-                    <div className="p-3.5 rounded-2xl bg-gradient-to-br from-amber-500/10 via-slate-900 to-indigo-950/40 border border-amber-500/40 shadow-lg space-y-2">
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-1.5 font-bold text-amber-300 text-xs">
-                          <Zap className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                          <span>⚡ Gemini 15-Sec Mental Shortcut & Elimination Trick</span>
-                        </div>
-                        {sprintSpeedTricks[item.id] && (
-                          <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
-                            AI Accelerated
-                          </span>
-                        )}
-                      </div>
+                    {/* ⚡ Gemini Dedicated-Time Speed Shortcut */}
+                    {(() => {
+                      const qId = item.id ?? item.questionId ?? qNumber;
+                      const targetSec = getSubjectTargetTime(
+                        item.category || currentSprint.subject, 
+                        item.timeLimitSec || currentSprint.timePerQuestionSec
+                      );
+                      const trickContent = sprintSpeedTricks[qId];
 
-                      {sprintSpeedTricks[item.id] ? (
-                        <div className="text-slate-200 leading-relaxed text-xs">
-                          <MarkdownView content={sprintSpeedTricks[item.id]} />
+                      // Auto-fetch if not cached and not loading
+                      if (!trickContent && !loadingTricks[qId]) {
+                        handleFetchSprintTrick(item, qNumber);
+                      }
+
+                      return (
+                        <div className="p-3.5 rounded-2xl bg-gradient-to-br from-amber-500/10 via-slate-900 to-indigo-950/40 border border-amber-500/40 shadow-lg space-y-2">
+                          <div className="flex items-center justify-between">
+                            <div className="flex items-center gap-1.5 font-bold text-amber-300 text-xs">
+                              <Zap className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                              <span>⚡ Gemini {targetSec}-Sec Mental Shortcut & Elimination Trick</span>
+                            </div>
+                            {trickContent && (
+                              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                                AI Accelerated
+                              </span>
+                            )}
+                          </div>
+
+                          {trickContent ? (
+                            <div className="text-slate-200 leading-relaxed text-xs">
+                              <MarkdownView content={trickContent} />
+                            </div>
+                          ) : (
+                            <div className="flex items-center gap-2 text-xs text-amber-300/90 py-1">
+                              <Sparkles className="w-3.5 h-3.5 animate-spin text-amber-400" />
+                              <span>Generating {targetSec}-second shortcut via Gemini...</span>
+                            </div>
+                          )}
                         </div>
-                      ) : loadingTricks[item.id] ? (
-                        <div className="flex items-center gap-2 text-xs text-amber-300/90 py-1">
-                          <Sparkles className="w-3.5 h-3.5 animate-spin text-amber-400" />
-                          <span>Generating 15-second shortcut via Gemini...</span>
-                        </div>
-                      ) : (
-                        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1.5 pt-0.5">
-                          <span className="text-[11px] text-slate-400">Want the elite rapid-fire shortcut for this question?</span>
-                          <button
-                            onClick={() => handleFetchSprintTrick(item)}
-                            className="px-2.5 py-1 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 font-bold text-[11px] flex items-center gap-1 cursor-pointer transition-all shadow-sm shrink-0"
-                          >
-                            <Zap className="w-3 h-3 fill-amber-400" />
-                            <span>Generate Trick</span>
-                          </button>
-                        </div>
-                      )}
-                    </div>
+                      );
+                    })()}
 
                     {/* Standard Solution */}
                     <div className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-xs text-slate-300 leading-relaxed">
