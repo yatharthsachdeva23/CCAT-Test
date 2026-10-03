@@ -8,7 +8,7 @@ import { analyzeAttemptPatterns, analyzeFullHistory, generateCoachInsight } from
 import { getSettings, saveSettings, DEFAULT_GEMINI_KEY, getUltraFastAttempts } from '../utils/storage.js';
 import MarkdownView from './MarkdownView.jsx';
 
-export const GEMINI_MODELS = [
+const GEMINI_MODELS = [
   { id: 'auto', name: 'Smart Auto-Cascade', tier: 'Auto', badge: 'Recommended', desc: 'Starts at Upper Flash, auto-downgrades to Flash-Lite if rate-limited or quota exceeded' },
   { id: 'gemini-2.5-flash', name: 'Gemini 2.5 Flash', tier: 'Upper Tier', badge: 'High Precision', desc: 'Premier balanced model for rapid, high-accuracy telemetry analysis' },
   { id: 'gemini-3.5-flash', name: 'Gemini 3.5 Flash', tier: 'Upper Tier', badge: 'Next-Gen Flash', desc: 'High-speed reasoning model' },
