@@ -584,6 +584,16 @@ INSTRUCTIONS FOR YOUR RESPONSE:
 3. TONE & STYLE:
    - Speak directly like a world-class cognitive performance coach (sharp, precise, encouraging yet rigorously data-driven).
    - Use bold numbers, clear bullets, and clean GitHub markdown.
+4. MATHEMATICAL NOTATION & FORMULA FORMATTING:
+   - Always lead with the fastest 15-SECOND CCAT MENTAL SHORTCUT before showing longer manual steps.
+   - For mathematical equations, use clean, robust LaTeX that renders beautifully in KaTeX:
+     * Put standalone equations on their own dedicated lines with $$ ... $$ so they render as clean, centered display equations.
+     * Use $ ... $ for inline variables (e.g. $v_1$, $v_2$, $t$).
+     * Use standard notation: \\frac{a}{b}, \\times, \\approx.
+     * DO NOT use fragile, unparseable macros like \\cancel{...}, \\mathbf{...}, or nested multi-line matrices that break formatting.
+     * When explaining cancellation or reduction, explain it clearly in plain text rather than obscure TeX symbols:
+       e.g., "Recognize that 168 = 3 × 56. Canceling 56 yields (2 × 112) / 3 = 224 / 3 = 74.67."
+     * Always highlight the final numerical answer in bold (e.g. **74.67 knots**).
 `.trim();
 
   // Assemble candidate models queue

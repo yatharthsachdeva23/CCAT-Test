@@ -25,3 +25,25 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #475569;
 }
+
+/* KaTeX formula typography & dark UI card enhancements */
+.katex {
+  font-size: 1.05em;
+  color: #38bdf8;
+}
+
+.katex-display {
+  margin: 0.75rem 0 !important;
+  padding: 0.75rem 1.25rem !important;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(51, 65, 85, 0.6);
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.katex-display > .katex {
+  color: #f1f5f9;
+}

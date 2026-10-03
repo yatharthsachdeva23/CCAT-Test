@@ -1,14 +1,25 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 
 export default function MarkdownView({ content }) {
   if (!content) return null;
 
+  // Pre-process LaTeX delimiters: convert \[ ... \] to $$ ... $$ and \( ... \) to $ ... $
+  const processedContent = typeof content === 'string'
+    ? content
+        .replace(/\\\[([\s\S]*?)\\\]/g, (_, eq) => `\n\n$$\n${eq.trim()}\n$$\n\n`)
+        .replace(/\\\(([\s\S]*?)\\\)/g, (_, eq) => `$${eq.trim()}$`)
+    : content;
+
   return (
     <div className="markdown-content text-slate-200 text-xs sm:text-sm leading-relaxed space-y-2.5">
       <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
+        remarkPlugins={[remarkGfm, remarkMath]}
+        rehypePlugins={[[rehypeKatex, { throwOnError: false }]]}
         components={{
           h1: ({ children }) => (
             <h1 className="text-base sm:text-lg font-bold text-white mt-3 mb-1.5 pb-1 border-b border-slate-800 flex items-center gap-1.5">
@@ -78,7 +89,7 @@ export default function MarkdownView({ content }) {
           }
         }}
       >
-        {content}
+        {processedContent}
       </ReactMarkdown>
     </div>
   );
