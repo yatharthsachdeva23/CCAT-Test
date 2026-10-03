@@ -7,6 +7,7 @@ import AICoach from './components/AICoach.jsx';
 import UltraFastMode from './components/UltraFastMode.jsx';
 import { buildTest } from './data/testCatalog.js';
 import { getAttempts, saveAttempt, clearAllAttempts, getActiveSession, clearActiveSession } from './utils/storage.js';
+import { startPreloadingSpeedTricks } from './services/aiSpeedTricks.js';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -115,6 +116,7 @@ export default function App() {
     const testData = buildTest(testNumber);
     setActiveTest(testData);
     setActiveTab('runner');
+    startPreloadingSpeedTricks(testData.id, testData.questions);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

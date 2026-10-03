@@ -3,6 +3,7 @@ import { Clock, AlertTriangle, ArrowRight, SkipForward, CheckCircle2 } from 'luc
 import confetti from 'canvas-confetti';
 import SVGQuestionRenderer from './SVGQuestionRenderer.jsx';
 import { saveActiveSession, getActiveSession, clearActiveSession } from '../utils/storage.js';
+import { startPreloadingSpeedTricks } from '../services/aiSpeedTricks.js';
 
 export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
   const questions = testData.questions;
@@ -47,6 +48,13 @@ export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
   useEffect(() => {
     responsesRef.current = responses;
   }, [responses]);
+
+  // Pre-load 15-second speed shortcuts in background as soon as test begins
+  useEffect(() => {
+    if (testData?.id && testData?.questions?.length > 0) {
+      startPreloadingSpeedTricks(testData.id, testData.questions);
+    }
+  }, [testData?.id]);
 
   const currentQ = questions[currentIndex];
 
