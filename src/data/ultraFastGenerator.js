@@ -718,50 +718,113 @@ export function generateUltraFastSprint(subject, userAttemptedTestIds = [], spri
   // Guarantee we only base variations on tests the user has actually attempted
   const safeAttemptedTests = (userAttemptedTestIds && userAttemptedTestIds.length > 0)
     ? userAttemptedTestIds
-    : ['test-3', 'test-4', 'test-5', 'test-9', 'test-13'];
+    : ['test-1'];
 
   // Sprint configuration
-  let count = 8;
-  let pool = VERBAL_VARIATION_POOLS;
+  const count = subject === 'verbal' ? 8 : subject === 'math' ? 4 : 6;
+  const timePerQuestionSec = subject === 'verbal' ? 7 : subject === 'math' ? 15 : 10;
+  const pool = subject === 'verbal' 
+    ? VERBAL_VARIATION_POOLS 
+    : subject === 'math' 
+      ? MATH_VARIATION_POOLS 
+      : SPATIAL_VARIATION_POOLS;
 
-  if (subject === 'math') {
-    count = 4; // 4 questions * 15s = 60s
-    pool = MATH_VARIATION_POOLS;
-  } else if (subject === 'spatial') {
-    count = 6; // 6 questions * 10s = 60s
-    pool = SPATIAL_VARIATION_POOLS;
-  } else {
-    count = 8; // 8 questions * 7s = 56s
-    pool = VERBAL_VARIATION_POOLS;
+  // 1. Ingest questions directly from the user's completed simulation tests
+  const candidatesFromCompletedTests = [];
+  safeAttemptedTests.forEach(tId => {
+    const match = tId.match(/test-(\d+)/);
+    if (!match) return;
+    const testNum = parseInt(match[1], 10);
+    try {
+      const testData = buildTest(testNum);
+      testData.questions.forEach(q => {
+        if (q.category === subject) {
+          // For math 15s speed, filter out questions with lengthy prompts (>240 chars)
+          if (subject === 'math' && q.question && q.question.length > 240) return;
+          candidatesFromCompletedTests.push({ ...q, sourceTestId: tId, sourceTestNum: testNum });
+        }
+      });
+    } catch {
+      // safe fallback
+    }
+  });
+
+  // Shuffle completed test candidates
+  for (let i = candidatesFromCompletedTests.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    [candidatesFromCompletedTests[i], candidatesFromCompletedTests[j]] = [candidatesFromCompletedTests[j], candidatesFromCompletedTests[i]];
   }
 
-  // Shuffle pool generators
-  const indices = [];
-  for (let i = 0; i < pool.length; i++) indices.push(i);
-  for (let i = indices.length - 1; i > 0; i--) {
+  // Shuffle variation pool indices
+  const poolIndices = [];
+  for (let i = 0; i < pool.length; i++) poolIndices.push(i);
+  for (let i = poolIndices.length - 1; i > 0; i--) {
     const j = Math.floor(rand() * (i + 1));
-    [indices[i], indices[j]] = [indices[j], indices[i]];
+    [poolIndices[i], poolIndices[j]] = [poolIndices[j], poolIndices[i]];
   }
 
   const questions = [];
-  for (let i = 0; i < count; i++) {
-    const poolIdx = indices[i % indices.length];
-    const qData = pool[poolIdx](rand);
+
+  // Determine split: half from completed test bank (with freshly shuffled options), half from procedural speed variations
+  const testQuestionCount = Math.min(Math.floor(count / 2), candidatesFromCompletedTests.length);
+  const variationCount = count - testQuestionCount;
+
+  // Add questions from completed tests with randomized option positions
+  for (let i = 0; i < testQuestionCount; i++) {
+    const baseQ = candidatesFromCompletedTests[i];
+    const origIdx = baseQ.options.findIndex(o => o.id === baseQ.correctOption);
+    const { options, correctOption } = shuffleOptions(baseQ.options, origIdx >= 0 ? origIdx : 0, rand);
+
+    let cleanExplanation = baseQ.explanation || '';
+    if (/Correct Answer:\s*[A-E]/i.test(cleanExplanation)) {
+      cleanExplanation = cleanExplanation.replace(/Correct Answer:\s*[A-E]/i, `Correct Answer: ${correctOption}`);
+    } else {
+      cleanExplanation = `**Correct Answer: ${correctOption}**\n\n${cleanExplanation}`;
+    }
+
     questions.push({
-      ...qData,
-      id: i + 1,
-      sprintQuestionIndex: i + 1,
-      sprintSubject: subject,
-      basedOnAttemptedTests: safeAttemptedTests
+      ...baseQ,
+      timeLimitSec: timePerQuestionSec,
+      options,
+      correctOption,
+      explanation: cleanExplanation,
+      isDirectTestQuestion: true,
+      sourceTestId: baseQ.sourceTestId
     });
   }
 
+  // Add procedural speed variations
+  for (let i = 0; i < variationCount; i++) {
+    const poolIdx = poolIndices[i % poolIndices.length];
+    const qData = pool[poolIdx](rand);
+    questions.push({
+      ...qData,
+      isDirectTestQuestion: false
+    });
+  }
+
+  // Shuffle sprint question sequence
+  for (let i = questions.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    [questions[i], questions[j]] = [questions[j], questions[i]];
+  }
+
+  // Finalize IDs and metadata
+  const finalQuestions = questions.map((q, idx) => ({
+    ...q,
+    id: idx + 1,
+    sprintQuestionIndex: idx + 1,
+    sprintSubject: subject,
+    timeLimitSec: timePerQuestionSec,
+    basedOnAttemptedTests: safeAttemptedTests
+  }));
+
   return {
     subject,
-    questions,
-    totalQuestions: questions.length,
-    timePerQuestionSec: subject === 'verbal' ? 7 : subject === 'math' ? 15 : 10,
-    estimatedTotalSec: subject === 'verbal' ? 56 : 60,
+    questions: finalQuestions,
+    totalQuestions: finalQuestions.length,
+    timePerQuestionSec,
+    estimatedTotalSec: timePerQuestionSec * finalQuestions.length,
     basedOnAttemptedTests: safeAttemptedTests
   };
 }

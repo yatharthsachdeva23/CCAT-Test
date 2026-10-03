@@ -51,7 +51,7 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
 
   const attemptedTestIds = validAttempts.length > 0 
     ? Array.from(new Set(validAttempts.map(a => a.testId)))
-    : ['test-3', 'test-4', 'test-5', 'test-9', 'test-13'];
+    : ['test-1'];
 
   // User-facing practiced tests label
   const practicedTestsListStr = attemptedTestIds
