@@ -117,7 +117,7 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
   }, [stage, currentIndex, sprintData]);
 
   // When timer hits 0 before clicking Done
-  const handleTimeout = () => {
+  function handleTimeout() {
     if (isTransitioningRef.current) return;
     isTransitioningRef.current = true;
     if (timerRafRef.current) cancelAnimationFrame(timerRafRef.current);
@@ -159,10 +159,10 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
     } else {
       finishSprint(nextResponses);
     }
-  };
+  }
 
   // When user clicks the "Done" button before timer expires
-  const handleDone = () => {
+  function handleDone() {
     if (isTransitioningRef.current) return;
     if (!selectedOption) return; // Must have selected an option
 
@@ -209,9 +209,9 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
     } else {
       finishSprint(nextResponses);
     }
-  };
+  }
 
-  const finishSprint = (responses) => {
+  function finishSprint(responses) {
     const correctCount = responses.filter(r => r.isCorrect).length;
     const accuracy = Math.round((correctCount / responses.length) * 100);
     if (accuracy >= 75) {
@@ -221,10 +221,10 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
           spread: 70,
           origin: { y: 0.6 }
         });
-      } catch (e) {}
+      } catch (_err) {}
     }
     setStage('result');
-  };
+  }
 
   // -------------------------------------------------------------
   // RENDER: STAGE SELECT (Subject-wise Choice)

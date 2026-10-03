@@ -8,6 +8,43 @@ import UltraFastMode from './components/UltraFastMode.jsx';
 import { buildTest } from './data/testCatalog.js';
 import { getAttempts, saveAttempt, clearAllAttempts, getActiveSession, clearActiveSession } from './utils/storage.js';
 
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+  static getDerivedStateFromError(error) {
+    return { hasError: true, error };
+  }
+  componentDidCatch(error, errorInfo) {
+    console.error('ErrorBoundary caught:', error, errorInfo);
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="min-h-screen bg-slate-950 text-white flex flex-col items-center justify-center p-6 text-center font-sans">
+          <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 max-w-lg space-y-4 shadow-2xl">
+            <h2 className="text-2xl font-black text-amber-400">Application Notice</h2>
+            <p className="text-sm text-slate-300">
+              {this.state.error?.message || 'An unexpected rendering error occurred.'}
+            </p>
+            <button
+              onClick={() => {
+                this.setState({ hasError: false });
+                window.location.reload();
+              }}
+              className="px-6 py-3 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 text-white font-bold text-sm cursor-pointer shadow-lg"
+            >
+              Reload Application
+            </button>
+          </div>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard'); // 'dashboard', 'tests', 'coach', 'runner', 'review'
   const [attempts, setAttempts] = useState([]);
@@ -121,7 +158,8 @@ export default function App() {
   }, 0);
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
+    <ErrorBoundary>
+      <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans">
       
       {/* Top Navigation Bar (Hidden during active test for full focus) */}
       {activeTab !== 'runner' && (
@@ -197,6 +235,7 @@ export default function App() {
         </footer>
       )}
 
-    </div>
+      </div>
+    </ErrorBoundary>
   );
 }

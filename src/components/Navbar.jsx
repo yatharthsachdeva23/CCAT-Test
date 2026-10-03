@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, Clock, ShieldCheck, Sparkles, Trophy, BarChart3 } from 'lucide-react';
+import { Brain, Clock, ShieldCheck, Sparkles, Trophy, BarChart3, Zap } from 'lucide-react';
 
 export default function Navbar({ activeTab, setActiveTab, attemptsCount = 0, bestScore = 0 }) {
   return (
