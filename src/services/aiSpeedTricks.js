@@ -232,6 +232,22 @@ export async function startPreloadingSpeedTricks(testId, questions = []) {
       return; // 100% of questions already cached!
     }
 
+    if (!apiKey || apiKey.length < 10) {
+      const newTricksToSave = {};
+      pendingQuestions.forEach(q => {
+        const targetSec = getSubjectTargetTime(q.category, q.timeLimitSec);
+        const key = getQuestionTrickKey(testId, q);
+        newTricksToSave[key] = {
+          text: generateLocalSpeedShortcut(q, targetSec),
+          model: 'local-ccat-engine',
+          timestamp: Date.now()
+        };
+      });
+      saveTricksCache(newTricksToSave);
+      activePreloadJobs.delete(testId);
+      return;
+    }
+
     console.log(`[SpeedTricks Preloader] Starting background generation for ${pendingQuestions.length} questions in ${testId}...`);
 
     // Process in batches of 5 questions

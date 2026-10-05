@@ -1,4 +1,9 @@
-const key = 'AIzaSyBL7Iy02c9KIOVRLFUAlkgmr1T-6w62S70';
+import fs from 'fs';
+let key = process.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY || '';
+if (!key && fs.existsSync('.env')) {
+  const match = fs.readFileSync('.env', 'utf8').match(/VITE_GEMINI_API_KEY=(.*)/);
+  if (match) key = match[1].trim();
+}
 
 const CASCADE = [
   { id: 'simulated-upper-rate-limited', name: 'Simulated 429 Upper Model' },

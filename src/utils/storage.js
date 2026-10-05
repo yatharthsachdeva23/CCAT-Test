@@ -1,6 +1,8 @@
 const ATTEMPTS_KEY = 'ccat_prep_attempts_v1';
 const SETTINGS_KEY = 'ccat_prep_settings_v1';
-export const DEFAULT_GEMINI_KEY = 'AIzaSyBL7Iy02c9KIOVRLFUAlkgmr1T-6w62S70';
+export const DEFAULT_GEMINI_KEY = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_GEMINI_API_KEY)
+  ? import.meta.env.VITE_GEMINI_API_KEY.trim()
+  : '';
 
 export function getAttempts() {
   try {
@@ -89,7 +91,7 @@ export function getSettings() {
     const raw = localStorage.getItem(SETTINGS_KEY);
     const parsed = raw ? JSON.parse(raw) : {};
     return {
-      geminiApiKey: parsed.geminiApiKey || DEFAULT_GEMINI_KEY,
+      geminiApiKey: (parsed.geminiApiKey && parsed.geminiApiKey.trim().length > 0) ? parsed.geminiApiKey.trim() : DEFAULT_GEMINI_KEY,
       soundEnabled: parsed.soundEnabled ?? true,
       timerWarning: parsed.timerWarning ?? true,
       preferredModel: parsed.preferredModel || 'auto',

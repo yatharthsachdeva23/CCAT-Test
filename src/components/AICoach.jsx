@@ -100,6 +100,26 @@ Click any quick prompt below or ask your own question:
 
     const effectiveKey = (apiKey && apiKey.trim().length > 10) ? apiKey.trim() : DEFAULT_GEMINI_KEY;
 
+    if (!effectiveKey || effectiveKey.length <= 10) {
+      setIsTyping(false);
+      setTypingStatus('');
+      setMessages(prev => [
+        ...prev,
+        {
+          id: `ai-${Date.now()}`,
+          sender: 'ai',
+          text: `⚠️ **Gemini API Key Required**\n\nTo enable live AI Coaching, please configure your Google Gemini API key:\n\n1. Add it to your \`.env\` file: \`VITE_GEMINI_API_KEY=your_key\`\n2. Or click the **Settings (⚙️)** button in the top right of this chat and paste your key.\n\nGet a free key in seconds at [aistudio.google.com](https://aistudio.google.com/).`,
+          modelInfo: {
+            modelName: 'Setup Required',
+            tier: 'Configuration',
+            downgraded: false
+          },
+          timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+        }
+      ]);
+      return;
+    }
+
     try {
       const result = await callGeminiWithTelemetryCascade({
         query,
@@ -689,7 +709,7 @@ INSTRUCTIONS FOR YOUR RESPONSE:
   }
 
   // If custom API key was used and all models failed, try DEFAULT_GEMINI_KEY as emergency backup
-  if (apiKey !== DEFAULT_GEMINI_KEY) {
+  if (apiKey !== DEFAULT_GEMINI_KEY && DEFAULT_GEMINI_KEY && DEFAULT_GEMINI_KEY.length > 10) {
     if (onStatusUpdate) {
       onStatusUpdate('Custom key quota exhausted — connecting via system safety net...');
     }
