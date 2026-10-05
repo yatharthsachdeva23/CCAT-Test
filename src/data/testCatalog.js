@@ -2,13 +2,14 @@ import { getSpatialBank, getVerbalBank, getMathBank, randomizeOptions } from './
 import { getVerbalQuestionsForTest } from './verbalBank.js';
 import { getMathQuestionsForTest } from './mathBank.js';
 import { getSpatialQuestionsForTest } from './spatialBank.js';
+import { getAttempts } from '../utils/storage.js';
 
 /**
  * Procedural Test Synthesizer for Tests 1 through 30.
  * Guarantees:
  * 1. Exactly 50 unique questions per test (22 Math, 17 Verbal, 11 Spatial).
  * 2. ZERO repeating questions between different tests (Tests 2-30 each receive brand new questions).
- * 3. Test 1 remains exactly as originally completed by the user.
+ * 3. All completed tests remain 100% preserved and untouched.
  * 4. Options and correct answers are uniformly distributed across A, B, C, D, and E.
  * 5. No visible difficulty categorization on the test cards.
  */
@@ -93,7 +94,29 @@ export function buildTest(testNumber = 1) {
     };
   }
 
-  // Tests 2 through 30: 100% Brand New, Dedicated Unique Questions
+  // Completed Test Protection Guard: If the user has already completed this simulation,
+  // load the questions directly from their saved attempt so completed tests are never altered!
+  try {
+    const attempts = getAttempts();
+    const existing = attempts.find(a => a.testId === `test-${testNumber}`);
+    if (existing && existing.questions && existing.questions.length === 50) {
+      return {
+        id: `test-${testNumber}`,
+        testNumber,
+        title: existing.testTitle || `CCAT Full Simulation #${testNumber}`,
+        totalQuestions: 50,
+        timeLimitSec: 900,
+        mathCount: 22,
+        verbalCount: 17,
+        spatialCount: 11,
+        questions: existing.questions
+      };
+    }
+  } catch (e) {
+    // fallback to procedural synthesis
+  }
+
+  // Unattempted Tests 2 through 30: 100% Brand New, Dedicated Unique Questions
   const mathQuestions = getMathQuestionsForTest(testNumber);
   const verbalQuestions = getVerbalQuestionsForTest(testNumber);
   const spatialQuestions = getSpatialQuestionsForTest(testNumber);

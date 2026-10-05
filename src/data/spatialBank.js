@@ -387,13 +387,13 @@ const SERIES_ARCHETYPES = [
       return wrapSvg(grid);
     };
 
-    const path = [
-      { r: 0, c: 0 },
-      { r: 0, c: 1 },
-      { r: 0, c: 2 },
-      { r: 1, c: 2 },
-      { r: 2, c: 2 }
+    const paths = [
+      [ { r: 0, c: 0 }, { r: 0, c: 1 }, { r: 0, c: 2 }, { r: 1, c: 2 }, { r: 2, c: 2 } ],
+      [ { r: 0, c: 0 }, { r: 1, c: 0 }, { r: 2, c: 0 }, { r: 2, c: 1 }, { r: 2, c: 2 } ],
+      [ { r: 0, c: 2 }, { r: 1, c: 2 }, { r: 2, c: 2 }, { r: 2, c: 1 }, { r: 2, c: 0 } ],
+      [ { r: 2, c: 0 }, { r: 1, c: 0 }, { r: 0, c: 0 }, { r: 0, c: 1 }, { r: 0, c: 2 } ]
     ];
+    const path = paths[(t + k) % paths.length];
 
     const frames = path.slice(0, 4).map(p => makeGridWalk(p.r, p.c));
     const correctSvg = makeGridWalk(path[4].r, path[4].c);
@@ -465,17 +465,29 @@ const MATRIX_ARCHETYPES = [
   // 0: 3x3 Latin Square - Shapes (Circle, Square, Triangle)
   (t, k, rand) => {
     // Shapes: 0=Circle, 1=Square, 2=Triangle
-    const shapeSet = (t % 2 === 0)
-      ? [
-          () => drawCircle(35, 35, 18, "none", "#38bdf8", 2.5),
-          () => drawRect(18, 18, 34, 34, "none", "#38bdf8", 2.5),
-          () => drawPolygon("35,16 54,48 16,48", "none", "#38bdf8", 2.5)
-        ]
-      : [
-          () => drawPolygon("35,14 55,35 35,56 15,35", "none", "#38bdf8", 2.5), // Diamond
-          () => drawPolygon(makePolygonPts(5, 20), "none", "#38bdf8", 2.5), // Pentagon
-          () => drawPolygon(makePolygonPts(6, 20), "none", "#38bdf8", 2.5)  // Hexagon
-        ];
+    const pools = [
+      [
+        () => drawCircle(35, 35, 18, "none", "#38bdf8", 2.5),
+        () => drawRect(18, 18, 34, 34, "none", "#38bdf8", 2.5),
+        () => drawPolygon("35,16 54,48 16,48", "none", "#38bdf8", 2.5)
+      ],
+      [
+        () => drawPolygon("35,14 55,35 35,56 15,35", "none", "#38bdf8", 2.5),
+        () => drawPolygon(makePolygonPts(5, 20), "none", "#38bdf8", 2.5),
+        () => drawPolygon(makePolygonPts(6, 20), "none", "#38bdf8", 2.5)
+      ],
+      [
+        () => drawText(35, 35, "+", "#38bdf8", 26),
+        () => drawText(35, 35, "★", "#f59e0b", 22),
+        () => drawCircle(35, 35, 14, "#10b981", "#10b981", 1)
+      ],
+      [
+        () => drawRect(20, 26, 30, 18, "none", "#ec4899", 2.5),
+        () => drawCircle(35, 35, 18, "none", "#ec4899", 2.5),
+        () => drawPolygon("25,18 45,18 55,52 15,52", "none", "#ec4899", 2.5)
+      ]
+    ];
+    const shapeSet = pools[(t + k) % pools.length];
 
     // Latin square grid matrix
     // Row 0: 0, 1, 2
@@ -1488,34 +1500,38 @@ export function getSpatialQuestionsForTest(testNumber) {
   const rand = pseudoRandom(testNumber * 9411 + 5081);
   const k = testNumber - 2;
 
-  // 1. Select 3 distinct Series questions (8 archetypes available)
+  // 1. Select 3 distinct Series questions with coprime stride 3 & 5 (gcd(3, 8) = gcd(5, 8) = 1)
+  const sStart = (k * 3) % 8;
   const seriesIdxs = [
-    (k * 3) % SERIES_ARCHETYPES.length,
-    (k * 3 + 1) % SERIES_ARCHETYPES.length,
-    (k * 3 + 2) % SERIES_ARCHETYPES.length
+    sStart,
+    (sStart + 3) % 8,
+    (sStart + 5) % 8
   ];
 
-  // 2. Select 2 distinct Matrix questions (8 archetypes available)
+  // 2. Select 2 distinct Matrix questions with coprime stride 3
+  const mStart = (k * 5 + 1) % 8;
   const matrixIdxs = [
-    (k * 2) % MATRIX_ARCHETYPES.length,
-    (k * 2 + 1) % MATRIX_ARCHETYPES.length
+    mStart,
+    (mStart + 3) % 8
   ];
 
-  // 3. Select 3 distinct Odd-One-Out questions (8 archetypes available)
+  // 3. Select 3 distinct Odd-One-Out questions with coprime stride 3 & 6
+  const oStart = (k * 3 + 2) % 8;
   const oddIdxs = [
-    (k * 3) % ODD_ARCHETYPES.length,
-    (k * 3 + 1) % ODD_ARCHETYPES.length,
-    (k * 3 + 2) % ODD_ARCHETYPES.length
+    oStart,
+    (oStart + 3) % 8,
+    (oStart + 6) % 8
   ];
 
-  // 4. Select 2 distinct Spatial Analogy questions (5 archetypes available)
+  // 4. Select 2 distinct Spatial Analogy questions with coprime stride 2 (gcd(2, 5) = 1)
+  const aStart = (k * 2) % 5;
   const analogyIdxs = [
-    (k * 2) % ANALOGY_ARCHETYPES.length,
-    (k * 2 + 1) % ANALOGY_ARCHETYPES.length
+    aStart,
+    (aStart + 2) % 5
   ];
 
-  // 5. Select 1 3D Cube / Paper Folding question (5 archetypes available)
-  const foldIdx = k % FOLDING_ARCHETYPES.length;
+  // 5. Select 1 3D Cube / Paper Folding question with coprime stride 3 (gcd(3, 5) = 1)
+  const foldIdx = (k * 3 + 1) % 5;
 
   const questions = [
     SERIES_ARCHETYPES[seriesIdxs[0]](testNumber, k, rand),

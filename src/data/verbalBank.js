@@ -6407,15 +6407,681 @@ export const ODD_WORD_BANK = [
   }
 ];
 
+
+export const SENTENCE_COMPLETION_BANK = [
+  {
+    "sentence": "The CEO’s explanation of the quarterly downturn was remarkably _______, concealing the severe operational bottlenecks that had plagued the manufacturing division.",
+    "correct": "equivocal",
+    "distractors": [
+      "candid",
+      "lucid",
+      "transparent",
+      "forthright"
+    ],
+    "expl": "'Equivocal' means ambiguous or deliberately misleading, which matches 'concealing the severe operational bottlenecks'."
+  },
+  {
+    "sentence": "Despite initial skepticism from the committee, the architect’s _______ design was ultimately praised for its visionary elegance and efficient use of space.",
+    "correct": "audacious",
+    "distractors": [
+      "pedestrian",
+      "mundane",
+      "derivative",
+      "trite"
+    ],
+    "expl": "'Audacious' means bold, daring, or visionary, contrasting with the committee's initial skepticism."
+  },
+  {
+    "sentence": "The archival documents revealed that the historical treaty was not unanimously accepted, but rather was the result of _______ negotiations among rival factions.",
+    "correct": "contentious",
+    "distractors": [
+      "harmonious",
+      "placid",
+      "unanimous",
+      "concordant"
+    ],
+    "expl": "'Contentious' means causing or involving heated argument and dispute, fitting rival factions."
+  },
+  {
+    "sentence": "The engineer proposed a _______ solution that addressed both immediate safety compliance and long-term mechanical efficiency.",
+    "correct": "comprehensive",
+    "distractors": [
+      "cursory",
+      "superficial",
+      "piecemeal",
+      "transient"
+    ],
+    "expl": "'Comprehensive' means complete and thorough, addressing both short-term and long-term requirements."
+  },
+  {
+    "sentence": "Because the data in the audit was completely _______, the investigative board had to dismiss the initial charges of corporate misconduct.",
+    "correct": "inconclusive",
+    "distractors": [
+      "damning",
+      "definitive",
+      "indisputable",
+      "conclusive"
+    ],
+    "expl": "If charges had to be dismissed, the evidence was 'inconclusive' (not leading to a definite result)."
+  },
+  {
+    "sentence": "Her presentation was praised for being _______, conveying complex econometric theory in less than fifteen concise minutes.",
+    "correct": "succinct",
+    "distractors": [
+      "verbose",
+      "diffuse",
+      "rambling",
+      "circuitous"
+    ],
+    "expl": "'Succinct' means briefly and clearly expressed."
+  },
+  {
+    "sentence": "The new regional manager implemented an _______ policy that prohibited any unauthorized overtime or unaccounted inventory transfers.",
+    "correct": "stringent",
+    "distractors": [
+      "lax",
+      "lenient",
+      "permissive",
+      "tolerant"
+    ],
+    "expl": "'Stringent' means strict, precise, and rigorously binding."
+  },
+  {
+    "sentence": "In contrast to his usually _______ demeanor, the director became animated and passionate when discussing renewable energy innovations.",
+    "correct": "phlegmatic",
+    "distractors": [
+      "effervescent",
+      "vivacious",
+      "ebullient",
+      "volatile"
+    ],
+    "expl": "'Phlegmatic' means calm, stoic, and unemotional, contrasting with becoming animated."
+  },
+  {
+    "sentence": "The scientist’s hypothesis was proven _______ when subsequent clinical trials repeatedly failed to replicate the original experimental outcomes.",
+    "correct": "fallacious",
+    "distractors": [
+      "irrefutable",
+      "valid",
+      "unassailable",
+      "verifiable"
+    ],
+    "expl": "'Fallacious' means based on a mistaken belief or unsound reasoning."
+  },
+  {
+    "sentence": "The organization demonstrated remarkable _______ by pivoting its entire supply chain logistics within forty-eight hours of the port closure.",
+    "correct": "agility",
+    "distractors": [
+      "lethargy",
+      "inertia",
+      "rigidity",
+      "torpor"
+    ],
+    "expl": "'Agility' means the ability to move or adapt quickly and easily."
+  },
+  {
+    "sentence": "The legal team argued that the contract clause was fatally _______, since two contradictory interpretations were equally plausible.",
+    "correct": "ambiguous",
+    "distractors": [
+      "unequivocal",
+      "explicit",
+      "distinct",
+      "precise"
+    ],
+    "expl": "'Ambiguous' means open to more than one interpretation."
+  },
+  {
+    "sentence": "Rather than taking a partisan stance, the ombudsman remained strictly _______ throughout the high-stakes arbitration hearings.",
+    "correct": "impartial",
+    "distractors": [
+      "biased",
+      "prejudiced",
+      "sectarian",
+      "dogmatic"
+    ],
+    "expl": "'Impartial' means treating all rivals or disputants equally; fair and just."
+  },
+  {
+    "sentence": "The unexpected rise in raw material prices threatened to _______ the profitability gains achieved through factory automation.",
+    "correct": "undermine",
+    "distractors": [
+      "bolster",
+      "reinforce",
+      "enhance",
+      "propel"
+    ],
+    "expl": "'Undermine' means to erode the base or foundation of, reducing profitability."
+  },
+  {
+    "sentence": "The wildlife biologist documented the _______ behavior of the nocturnal predator, which hunted exclusively during twilight hours.",
+    "correct": "crepuscular",
+    "distractors": [
+      "diurnal",
+      "erratic",
+      "migratory",
+      "sedentary"
+    ],
+    "expl": "'Crepuscular' specifically means active primarily during twilight (dawn and dusk)."
+  },
+  {
+    "sentence": "Far from being a permanent arrangement, the temporary executive committee served merely as an _______ measure during the corporate restructuring.",
+    "correct": "interim",
+    "distractors": [
+      "immutable",
+      "perpetual",
+      "enduring",
+      "indelible"
+    ],
+    "expl": "'Interim' means provisional or intervening, serving as a temporary measure."
+  },
+  {
+    "sentence": "The historian cautioned that applying modern ethical norms to medieval judicial practices was anachronistic and _______.",
+    "correct": "misleading",
+    "distractors": [
+      "accurate",
+      "judicious",
+      "rigorous",
+      "perspicacious"
+    ],
+    "expl": "Anachronism distorts understanding, making conclusions 'misleading'."
+  },
+  {
+    "sentence": "The young apprentice displayed an _______ curiosity, asking incisive questions about every pneumatic valve and pressure gauge in the plant.",
+    "correct": "insatiable",
+    "distractors": [
+      "indifferent",
+      "apathetic",
+      "sluggish",
+      "blasé"
+    ],
+    "expl": "'Insatiable' means impossible to satisfy; constantly hungry for knowledge."
+  },
+  {
+    "sentence": "The software patch successfully resolved the memory leak, thereby rendering the erratic server crashes _______.",
+    "correct": "obsolete",
+    "distractors": [
+      "chronic",
+      "pervasive",
+      "recurrent",
+      "endemic"
+    ],
+    "expl": "The crashes no longer occur, rendered 'obsolete' or eliminated."
+  },
+  {
+    "sentence": "The mediator’s _______ remarks helped de-escalate tension between the union representatives and management delegates.",
+    "correct": "conciliatory",
+    "distractors": [
+      "provocative",
+      "inflammatory",
+      "antagonistic",
+      "divisive"
+    ],
+    "expl": "'Conciliatory' means intended or likely to placate or pacify."
+  },
+  {
+    "sentence": "The investor warned that the startup’s rapid customer acquisition was _______, driven almost entirely by unsustainable promotional discounts.",
+    "correct": "ephemeral",
+    "distractors": [
+      "perennial",
+      "sustainable",
+      "permanent",
+      "enduring"
+    ],
+    "expl": "'Ephemeral' means lasting for a very short time; fleeting."
+  },
+  {
+    "sentence": "The lead investigator noted a critical _______ between the security guard’s official statement and the timestamped surveillance footage.",
+    "correct": "discrepancy",
+    "distractors": [
+      "harmony",
+      "correlation",
+      "congruence",
+      "accord"
+    ],
+    "expl": "'Discrepancy' means a lack of compatibility or similarity between two facts."
+  },
+  {
+    "sentence": "To prevent structural fatigue, the aeronautical engineer specified an alloy renowned for its extraordinary _______ under thermal stress.",
+    "correct": "durability",
+    "distractors": [
+      "fragility",
+      "brittleness",
+      "malleability",
+      "porosity"
+    ],
+    "expl": "'Durability' is the ability to withstand wear, pressure, or damage over time."
+  },
+  {
+    "sentence": "The candidate’s speech was criticized for consisting largely of empty _______ rather than substantive economic proposals.",
+    "correct": "platitudes",
+    "distractors": [
+      "insights",
+      "dogmas",
+      "revelations",
+      "truisms"
+    ],
+    "expl": "A 'platitude' is a remark or statement, especially one with a moral content, that has been used too often to be interesting or thoughtful."
+  },
+  {
+    "sentence": "Environmental regulations require chemical manufacturers to eliminate toxic runoff so as to _______ fragile aquatic ecosystems.",
+    "correct": "preserve",
+    "distractors": [
+      "disrupt",
+      "degrade",
+      "compromise",
+      "vitiate"
+    ],
+    "expl": "'Preserve' means to maintain something in its original or existing state."
+  },
+  {
+    "sentence": "The professor’s lecture was so _______ that even advanced graduate students struggled to follow the dense mathematical derivation.",
+    "correct": "abstruse",
+    "distractors": [
+      "lucid",
+      "elementary",
+      "pedestrian",
+      "transparent"
+    ],
+    "expl": "'Abstruse' means difficult to understand; obscure."
+  },
+  {
+    "sentence": "The board was unwilling to endorse such a reckless expansion, considering the company’s cash reserves were already severely _______.",
+    "correct": "depleted",
+    "distractors": [
+      "augmented",
+      "amplified",
+      "burgeoning",
+      "surplus"
+    ],
+    "expl": "'Depleted' means diminished in number or quantity; exhausted."
+  },
+  {
+    "sentence": "Her reputation for unwavering _______ made her the natural choice to chair the ethics oversight committee.",
+    "correct": "integrity",
+    "distractors": [
+      "duplicity",
+      "perfidy",
+      "venality",
+      "treachery"
+    ],
+    "expl": "'Integrity' means the quality of being honest and having strong moral principles."
+  },
+  {
+    "sentence": "The clinical trial results were deemed _______ because the test cohort was too small and lacked adequate demographic diversity.",
+    "correct": "unreliable",
+    "distractors": [
+      "conclusive",
+      "robust",
+      "irrefutable",
+      "authoritative"
+    ],
+    "expl": "A sample that is too small produces 'unreliable' results."
+  },
+  {
+    "sentence": "The diplomat was celebrated for her _______ touch, which allowed her to broach sensitive geopolitical disputes without offending either party.",
+    "correct": "tactful",
+    "distractors": [
+      "clumsy",
+      "abrasive",
+      "tactless",
+      "crass"
+    ],
+    "expl": "'Tactful' means showing sensitivity and skill in dealing with others or with difficult issues."
+  },
+  {
+    "sentence": "The sudden influx of venture capital provided the fledgling biotech lab with the _______ needed to complete its clinical trials.",
+    "correct": "impetus",
+    "distractors": [
+      "hindrance",
+      "deterrent",
+      "impediment",
+      "stumbling block"
+    ],
+    "expl": "'Impetus' means the force or energy with which a body moves; a driving stimulus."
+  }
+];
+
+export const DEDUCTIVE_LOGIC_BANK = [
+  {
+    "premise": "Statement 1: The silver car is faster than the red car.\nStatement 2: The red car is faster than the green car.\nStatement 3: The green car is faster than the silver car.\nIf the first two statements are true, the third statement is:",
+    "correct": "False",
+    "distractors": [
+      "True",
+      "Uncertain",
+      "Cannot be determined",
+      "Partially True"
+    ],
+    "expl": "By transitivity, Silver > Red and Red > Green means Silver > Green. Therefore, Green > Silver is definitively False."
+  },
+  {
+    "premise": "During a sales quarter, Analyst A generated more revenue than Analyst B, and Analyst C generated more revenue than Analyst A. Analyst D generated less revenue than Analyst B. Which analyst generated the least revenue?",
+    "correct": "Analyst D",
+    "distractors": [
+      "Analyst A",
+      "Analyst B",
+      "Analyst C",
+      "Cannot be determined"
+    ],
+    "expl": "Revenue order from highest to lowest: C > A > B > D. Analyst D generated the least revenue."
+  },
+  {
+    "premise": "Premise 1: If an autonomous drone detects severe wind shear, it engages backup stabilization thrusters.\nPremise 2: Drone X-1 did NOT engage backup stabilization thrusters.\nWhich of the following conclusions logically follows?",
+    "correct": "Drone X-1 did not detect severe wind shear.",
+    "distractors": [
+      "Drone X-1 detected severe wind shear but experienced a system malfunction.",
+      "All drones engage backup thrusters in normal flight.",
+      "Severe wind shear was detected by other nearby drones.",
+      "No valid conclusion can be drawn from the premises."
+    ],
+    "expl": "By Modus Tollens: If P implies Q, then Not Q implies Not P. Drone X-1 did not detect severe wind shear."
+  },
+  {
+    "premise": "Premise 1: All high-frequency trading algorithms rely on low-latency fiber networks.\nPremise 2: Trading Engine 'Apex' does not rely on low-latency fiber networks.\nWhich of the following conclusions logically follows?",
+    "correct": "Trading Engine 'Apex' is not a high-frequency trading algorithm.",
+    "distractors": [
+      "Trading Engine 'Apex' is an experimental high-frequency algorithm.",
+      "All trading systems that use low-latency fiber networks are high-frequency algorithms.",
+      "Some high-frequency algorithms do not need fiber networks.",
+      "There is insufficient evidence to classify Trading Engine 'Apex'."
+    ],
+    "expl": "By Modus Tollens: Since Apex lacks a necessary attribute of high-frequency algorithms, it cannot be one."
+  },
+  {
+    "premise": "Statement 1: All members of the executive board own company shares.\nStatement 2: Julian owns company shares.\nStatement 3: Julian is a member of the executive board.\nIf the first two statements are true, the third statement is:",
+    "correct": "Uncertain",
+    "distractors": [
+      "True",
+      "False",
+      "Invalid",
+      "None of the above"
+    ],
+    "expl": "Owning company shares is a necessary condition for board members, but non-board members may also own shares. Julian's board membership is Uncertain (Affirming the Consequent trap)."
+  },
+  {
+    "premise": "Marcus is taller than Olivia. Olivia is taller than Ethan. Sophia is shorter than Marcus but taller than Olivia. Who is the shortest among the four individuals?",
+    "correct": "Ethan",
+    "distractors": [
+      "Marcus",
+      "Olivia",
+      "Sophia",
+      "Cannot be determined"
+    ],
+    "expl": "Height ranking: Marcus > Sophia > Olivia > Ethan. Ethan is definitively the shortest."
+  },
+  {
+    "premise": "Premise 1: The communications satellite anomaly was caused either by a sensor calibration fault or by a power bus surge.\nPremise 2: Engineering telemetry confirms there was no power bus surge.\nWhich of the following conclusions logically follows?",
+    "correct": "The anomaly was caused by a sensor calibration fault.",
+    "distractors": [
+      "The anomaly was caused by external cosmic radiation.",
+      "Both a calibration fault and a power surge occurred simultaneously.",
+      "The communications satellite has suffered permanent hardware loss.",
+      "No conclusion can be deduced from the telemetry."
+    ],
+    "expl": "By Disjunctive Syllogism (P or Q; Not Q; therefore P): The anomaly was caused by a sensor calibration fault."
+  },
+  {
+    "premise": "Premise 1: All research scientists in the materials laboratory publish in peer-reviewed journals.\nPremise 2: Some research scientists in the materials laboratory are university graduate interns.\nWhich of the following conclusions logically follows?",
+    "correct": "Some university graduate interns publish in peer-reviewed journals.",
+    "distractors": [
+      "All university graduate interns publish in peer-reviewed journals.",
+      "No university graduate interns publish in peer-reviewed journals.",
+      "All individuals who publish in peer-reviewed journals are materials research scientists.",
+      "None of the graduate interns belong to the materials laboratory."
+    ],
+    "expl": "By Darii: If All A are B, and Some A are C, then Some C are B. Some university graduate interns publish in peer-reviewed journals."
+  },
+  {
+    "premise": "Statement 1: Town Alpha is north of Town Beta.\nStatement 2: Town Beta is north of Town Gamma.\nStatement 3: Town Alpha is north of Town Gamma.\nIf the first two statements are true, the third statement is:",
+    "correct": "True",
+    "distractors": [
+      "False",
+      "Uncertain",
+      "Indeterminate",
+      "Contradictory"
+    ],
+    "expl": "Directional transitivity: If Alpha is north of Beta, and Beta is north of Gamma, Alpha must be north of Gamma. True."
+  },
+  {
+    "premise": "In a four-stage manufacturing pipeline: Stage A must complete before Stage B begins. Stage C must complete before Stage A begins. Stage D can only start after Stage B completes. Which stage must be executed first?",
+    "correct": "Stage C",
+    "distractors": [
+      "Stage A",
+      "Stage B",
+      "Stage D",
+      "Stage A and C concurrently"
+    ],
+    "expl": "Strict sequence order: C ➔ A ➔ B ➔ D. Stage C must be executed first."
+  },
+  {
+    "premise": "Premise 1: If an industrial boiler's internal pressure exceeds 300 PSI, the safety release valve automatically trips open.\nPremise 2: The safety release valve did NOT trip open.\nWhich conclusion is logically guaranteed?",
+    "correct": "The internal boiler pressure did not exceed 300 PSI.",
+    "distractors": [
+      "The internal boiler pressure was exactly 300 PSI.",
+      "The safety release valve is broken.",
+      "The boiler pressure exceeded 400 PSI.",
+      "The temperature inside the boiler is dropping."
+    ],
+    "expl": "By Modus Tollens (If P then Q; Not Q; therefore Not P): The pressure did not exceed 300 PSI."
+  },
+  {
+    "premise": "Premise 1: No cold-blooded reptiles possess mammalian fur.\nPremise 2: All chameleons are cold-blooded reptiles.\nWhich of the following conclusions logically follows?",
+    "correct": "No chameleons possess mammalian fur.",
+    "distractors": [
+      "Some chameleons possess mammalian fur.",
+      "All creatures possessing mammalian fur are chameleons.",
+      "Some cold-blooded reptiles possess mammalian fur.",
+      "No definitive conclusion can be derived."
+    ],
+    "expl": "By Celarent (No A are B; All C are A; therefore No C are B): No chameleons possess mammalian fur."
+  },
+  {
+    "premise": "Statement 1: Company A generated more gross profit than Company B.\nStatement 2: Company C generated less gross profit than Company B.\nStatement 3: Company A generated less gross profit than Company C.\nIf the first two statements are true, the third statement is:",
+    "correct": "False",
+    "distractors": [
+      "True",
+      "Uncertain",
+      "Partially True",
+      "Cannot be determined"
+    ],
+    "expl": "Statement 1 & 2 establish: A > B > C. Therefore, A < C is definitively False."
+  },
+  {
+    "premise": "In a competitive sprint, Runner P finished ahead of Runner Q. Runner R finished behind Runner S. Runner Q finished ahead of Runner S. Who finished in second place?",
+    "correct": "Runner Q",
+    "distractors": [
+      "Runner P",
+      "Runner R",
+      "Runner S",
+      "Cannot be determined"
+    ],
+    "expl": "Finishing order: P > Q > S > R. Runner P is 1st, Runner Q is 2nd, Runner S is 3rd, Runner R is 4th."
+  },
+  {
+    "premise": "Premise: To qualify for the corporate senior architect title, an engineer must hold at least two cloud certifications. Engineer David holds three cloud certifications.\nWhich of the following is logically guaranteed?",
+    "correct": "David satisfies the cloud certification requirement for the title.",
+    "distractors": [
+      "David has been promoted to corporate senior architect.",
+      "David is the most qualified engineer in the department.",
+      "All engineers who hold three cloud certifications are senior architects.",
+      "David cannot earn any further certifications."
+    ],
+    "expl": "Holding 3 certifications satisfies the necessary minimum requirement of 2, but does not guarantee the promotion itself."
+  },
+  {
+    "premise": "Premise 1: All high-efficiency turbine blades are forged from single-crystal superalloys.\nPremise 2: Some aerospace components are high-efficiency turbine blades.\nWhich conclusion logically follows?",
+    "correct": "Some aerospace components are forged from single-crystal superalloys.",
+    "distractors": [
+      "All aerospace components are forged from single-crystal superalloys.",
+      "No aerospace components are forged from single-crystal superalloys.",
+      "All single-crystal superalloys are used exclusively in aerospace components.",
+      "No logical conclusion can be drawn."
+    ],
+    "expl": "By Darii: Those aerospace components that are turbine blades are forged from single-crystal superalloys."
+  },
+  {
+    "premise": "Statement 1: All electric buses in the metropolitan transit fleet are equipped with GPS tracking.\nStatement 2: Vehicle 501 is equipped with GPS tracking.\nStatement 3: Vehicle 501 is an electric bus in the metropolitan transit fleet.\nIf the first two statements are true, the third statement is:",
+    "correct": "Uncertain",
+    "distractors": [
+      "True",
+      "False",
+      "Invalid",
+      "Contradictory"
+    ],
+    "expl": "Equipped with GPS is a property of electric buses, but other transit vehicles (taxis, service vans) may also have GPS. Vehicle 501's fleet membership is Uncertain."
+  },
+  {
+    "premise": "Train Alpha travels faster than Train Beta. Train Gamma travels faster than Train Delta. Train Beta travels faster than Train Gamma. Which train is the slowest?",
+    "correct": "Train Delta",
+    "distractors": [
+      "Train Alpha",
+      "Train Beta",
+      "Train Gamma",
+      "Cannot be determined"
+    ],
+    "expl": "Speed ranking: Alpha > Beta > Gamma > Delta. Train Delta is the slowest."
+  },
+  {
+    "premise": "Premise 1: If a microchip batch contains silicon wafer contamination, it fails the cleanroom spectroscopic scan.\nPremise 2: Microchip Batch 12 passed the cleanroom spectroscopic scan.\nWhich conclusion must be true?",
+    "correct": "Microchip Batch 12 does not contain silicon wafer contamination.",
+    "distractors": [
+      "Microchip Batch 12 contains minor silicon wafer contamination.",
+      "All microchips pass the cleanroom spectroscopic scan.",
+      "The cleanroom spectroscopic scanner is malfunctioning.",
+      "No valid conclusion can be drawn."
+    ],
+    "expl": "By Modus Tollens (If P then Q; Not Q; therefore Not P): Batch 12 does not contain silicon wafer contamination."
+  },
+  {
+    "premise": "Premise 1: All cryptographic hashing algorithms produce fixed-length digest outputs.\nPremise 2: SHA-256 is classified as a cryptographic hashing algorithm.\nWhich of the following conclusions logically follows?",
+    "correct": "SHA-256 produces a fixed-length digest output.",
+    "distractors": [
+      "All algorithms that produce fixed-length digest outputs are cryptographic hashing algorithms.",
+      "SHA-256 produces variable-length digest outputs under specific conditions.",
+      "Only some cryptographic hashing algorithms produce fixed-length outputs.",
+      "There is insufficient information to evaluate SHA-256."
+    ],
+    "expl": "By Modus Ponens: Since SHA-256 belongs to the class of cryptographic hashing algorithms, it produces a fixed-length digest output."
+  },
+  {
+    "premise": "Statement 1: Package X weighs more than Package Y.\nStatement 2: Package Y weighs exactly the same as Package Z.\nStatement 3: Package X weighs less than Package Z.\nIf the first two statements are true, the third statement is:",
+    "correct": "False",
+    "distractors": [
+      "True",
+      "Uncertain",
+      "Indeterminate",
+      "Partially True"
+    ],
+    "expl": "Since X > Y and Y = Z, X must be greater than Z. Therefore, X < Z is definitively False."
+  },
+  {
+    "premise": "Five guest lecturers (V, W, X, Y, Z) present consecutively. V presents immediately before W. X presents after Y but before V. Who presents first?",
+    "correct": "Y",
+    "distractors": [
+      "V",
+      "W",
+      "X",
+      "Z"
+    ],
+    "expl": "Relative order: Y presents before X, X presents before V, V presents before W. Thus Y ➔ X ➔ V ➔ W. Y presents first."
+  },
+  {
+    "premise": "Premise 1: An unexpected server outage was triggered either by a DNS configuration error or by a fiber cut.\nPremise 2: Network engineers have verified that no fiber cut occurred.\nWhich conclusion logically follows?",
+    "correct": "The server outage was triggered by a DNS configuration error.",
+    "distractors": [
+      "The server outage was caused by a cyber security intrusion.",
+      "Both a DNS error and a fiber cut occurred concurrently.",
+      "The network outage resolved spontaneously.",
+      "No definitive conclusion can be reached."
+    ],
+    "expl": "By Disjunctive Syllogism: With the fiber cut ruled out, the DNS configuration error must be the cause."
+  },
+  {
+    "premise": "Premise 1: All deciduous hardwood trees shed their leaves annually.\nPremise 2: Birch trees are classified as deciduous hardwood trees.\nWhich of the following conclusions logically follows?",
+    "correct": "Birch trees shed their leaves annually.",
+    "distractors": [
+      "All trees that shed their leaves annually are birch trees.",
+      "Birch trees do not shed their leaves annually.",
+      "Only some deciduous hardwood trees shed their leaves annually.",
+      "There is insufficient evidence regarding birch trees."
+    ],
+    "expl": "By Barbara (Universal Affirmative): Birch trees must shed their leaves annually."
+  },
+  {
+    "premise": "Statement 1: All luxury sedans at the dealership feature genuine leather upholstery.\nStatement 2: Vehicle 18 features genuine leather upholstery.\nStatement 3: Vehicle 18 is a luxury sedan at the dealership.\nIf the first two statements are true, the third statement is:",
+    "correct": "Uncertain",
+    "distractors": [
+      "True",
+      "False",
+      "Invalid",
+      "Contradictory"
+    ],
+    "expl": "Leather upholstery is a feature of luxury sedans, but non-luxury cars or trucks may also feature leather upholstery. Thus Vehicle 18's classification is Uncertain."
+  },
+  {
+    "premise": "Model A is more expensive than Model B. Model C is less expensive than Model B. Model D is more expensive than Model A. Which model is the second most expensive?",
+    "correct": "Model A",
+    "distractors": [
+      "Model B",
+      "Model C",
+      "Model D",
+      "Cannot be determined"
+    ],
+    "expl": "Price ranking: D > A > B > C. Model D is 1st, Model A is 2nd."
+  },
+  {
+    "premise": "Premise 1: If a compound is classified as organic, it must contain carbon atoms.\nPremise 2: Chemical Specimen K contains no carbon atoms.\nWhich conclusion must be true?",
+    "correct": "Chemical Specimen K is not classified as organic.",
+    "distractors": [
+      "Chemical Specimen K is an organic compound with zero carbon.",
+      "All compounds containing carbon atoms are organic.",
+      "Chemical Specimen K is an inorganic gas.",
+      "No valid conclusion can be deduced."
+    ],
+    "expl": "By Modus Tollens (If P then Q; Not Q; therefore Not P): Specimen K is not organic."
+  },
+  {
+    "premise": "Premise 1: No primates are capable of physiological underwater respiration without equipment.\nPremise 2: Lemurs are primates.\nWhich conclusion logically follows?",
+    "correct": "No lemurs are capable of physiological underwater respiration without equipment.",
+    "distractors": [
+      "Some lemurs are capable of physiological underwater respiration without equipment.",
+      "All creatures incapable of underwater respiration are lemurs.",
+      "Lemurs possess partial adaptations for underwater respiration.",
+      "No conclusion can be deduced."
+    ],
+    "expl": "By Celarent: Since no primates can respire underwater, and lemurs are primates, no lemurs can respire underwater."
+  },
+  {
+    "premise": "Statement 1: City X has a larger population than City Y.\nStatement 2: City Y has a larger population than City Z.\nStatement 3: City Z has a larger population than City X.\nIf the first two statements are true, the third statement is:",
+    "correct": "False",
+    "distractors": [
+      "True",
+      "Uncertain",
+      "Contradictory",
+      "Indeterminate"
+    ],
+    "expl": "X > Y and Y > Z means X > Z. Therefore, Z > X is definitively False."
+  },
+  {
+    "premise": "In a five-person marathon, Eric finished ahead of Frank but behind Grace. Henry finished ahead of Grace, and Ian finished behind Frank. Who won the marathon?",
+    "correct": "Henry",
+    "distractors": [
+      "Eric",
+      "Frank",
+      "Grace",
+      "Ian"
+    ],
+    "expl": "Finishing order: Henry > Grace > Eric > Frank > Ian. Henry won the marathon."
+  }
+];
+
 export function getVerbalQuestionsForTest(testNumber) {
   const rand = pseudoRandom(testNumber * 8819 + 421);
   const questions = [];
   const tIdx = testNumber - 2; // For tests 2 to 30: 0 to 28
 
-  // 1. Five Vocabulary questions (Disjoint slice of 5)
-  const vocabSlice = VOCAB_BANK.slice(tIdx * 5, (tIdx + 1) * 5);
-  for (let i = 0; i < 5; i++) {
-    const item = vocabSlice[i];
+  // 1. Six Vocabulary questions (Distinct slice from VOCAB_BANK of 150 items)
+  for (let i = 0; i < 6; i++) {
+    const item = VOCAB_BANK[(tIdx * 6 + i) % VOCAB_BANK.length];
     const isAntonym = item.type === 'antonym';
     const qText = isAntonym 
       ? `Which of the following words is most OPPOSITE in meaning to "${item.word}"?`
@@ -6426,16 +7092,15 @@ export function getVerbalQuestionsForTest(testNumber) {
       question: qText,
       options,
       correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n${item.expl}\n\n💡 **Speed Tip:** Rapidly eliminate choices that belong to the wrong category. Target <8 seconds.`,
+      explanation: `**Correct Answer: ${correctOption}** (${item.correct})\n\n${item.expl}\n\n💡 **Speed Tip:** Rapidly eliminate choices that belong to the wrong category. Target <8 seconds.`,
       category: 'verbal',
       subType: isAntonym ? 'antonym' : 'synonym'
     });
   }
 
-  // 2. Five Analogy questions (Disjoint slice of 5)
-  const analogySlice = ANALOGY_BANK.slice(tIdx * 5, (tIdx + 1) * 5);
-  for (let i = 0; i < 5; i++) {
-    const item = analogySlice[i];
+  // 2. Six Analogy questions (Distinct slice from ANALOGY_BANK of 148 items)
+  for (let i = 0; i < 6; i++) {
+    const item = ANALOGY_BANK[(tIdx * 6 + i) % ANALOGY_BANK.length];
     const qText = `${item.pair} is analogous to:`;
     const rawOpts = [item.correct, ...item.distractors.slice(0, 4)];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
@@ -6443,29 +7108,13 @@ export function getVerbalQuestionsForTest(testNumber) {
       question: qText,
       options,
       correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n${item.expl}\n\n💡 **Speed Tip:** Build a precise bridge sentence: "X is used to / is composed of Y". Apply to find the exact match.`,
+      explanation: `**Correct Answer: ${correctOption}** (${item.correct})\n\n${item.expl}\n\n💡 **Speed Tip:** Build a precise bridge sentence: "X is used to / is composed of Y". Apply to find the exact match.`,
       category: 'verbal',
       subType: 'analogy'
     });
   }
 
-  // 3. Four Syllogisms (Disjoint slice of 4)
-  const syllogismSlice = SYLLOGISM_BANK.slice(tIdx * 4, (tIdx + 1) * 4);
-  for (let i = 0; i < 4; i++) {
-    const item = syllogismSlice[i];
-    const rawOpts = [item.correct, ...item.distractors.slice(0, 4)];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-    questions.push({
-      question: item.premise,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n${item.expl}\n\n💡 **Speed Tip:** Do not extrapolate beyond stated premises. Apply strict Modus Ponens.`,
-      category: 'verbal',
-      subType: 'syllogism'
-    });
-  }
-
-  // 4. Three Odd-Word-Out questions (Disjoint slice of 3)
+  // 3. Three Odd-Word-Out questions (Strictly disjoint slice of 3 from ODD_WORD_BANK of 90 items)
   const oddSlice = ODD_WORD_BANK.slice(tIdx * 3, (tIdx + 1) * 3);
   for (let i = 0; i < 3; i++) {
     const item = oddSlice[i];
@@ -6480,6 +7129,36 @@ export function getVerbalQuestionsForTest(testNumber) {
       explanation: `**Correct Answer: ${correctOption}** (${item.correct})\n\n${item.expl}\n\n💡 **Speed Tip:** Identify the unifying trait uniting 4 options, isolate the outlier.`,
       category: 'verbal',
       subType: 'odd_word'
+    });
+  }
+
+  // 4. Exactly ONE Contextual Sentence Completion question (Unique to this test)
+  const sentItem = SENTENCE_COMPLETION_BANK[tIdx % SENTENCE_COMPLETION_BANK.length];
+  {
+    const rawOpts = [sentItem.correct, ...sentItem.distractors.slice(0, 4)];
+    const { options, correctOption } = randomize(rawOpts, 0, rand);
+    questions.push({
+      question: `Complete the sentence with the word that best fits the context:\n\n"${sentItem.sentence}"`,
+      options,
+      correctOption,
+      explanation: `**Correct Answer: ${correctOption}** (${sentItem.correct})\n\n${sentItem.expl}\n\n💡 **Speed Tip:** Predict the missing word's connotation (positive/negative) before reading the options.`,
+      category: 'verbal',
+      subType: 'sentence_completion'
+    });
+  }
+
+  // 5. Exactly ONE Deductive Logic / Syllogism question (Unique to this test, varied formats)
+  const logicItem = DEDUCTIVE_LOGIC_BANK[tIdx % DEDUCTIVE_LOGIC_BANK.length];
+  {
+    const rawOpts = [logicItem.correct, ...logicItem.distractors.slice(0, 4)];
+    const { options, correctOption } = randomize(rawOpts, 0, rand);
+    questions.push({
+      question: logicItem.premise,
+      options,
+      correctOption,
+      explanation: `**Correct Answer: ${correctOption}** (${logicItem.correct})\n\n${logicItem.expl}\n\n💡 **Speed Tip:** Stick strictly to stated facts. Watch out for the 'Affirming the Consequent' trap!`,
+      category: 'verbal',
+      subType: 'syllogism'
     });
   }
 

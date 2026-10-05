@@ -24,11 +24,39 @@ export default function Dashboard({
     return Math.max(max, score);
   }, 0);
 
-  const avgScore = totalAttempts > 0 
-    ? Math.round(attempts.reduce((sum, a) => {
-        return sum + Object.values(a.responses || {}).filter(r => r.isCorrect).length;
-      }, 0) / totalAttempts)
-    : 0;
+  const scores = attempts.map(a => {
+    return Object.values(a.responses || {}).filter(r => r.isCorrect).length;
+  }).sort((a, b) => a - b);
+
+  let medianScore = 0;
+  if (scores.length > 0) {
+    const mid = Math.floor(scores.length / 2);
+    if (scores.length % 2 === 0) {
+      medianScore = Math.round(((scores[mid - 1] + scores[mid]) / 2) * 10) / 10;
+    } else {
+      medianScore = scores[mid];
+    }
+  }
+
+  // Find unattempted tests to launch a random unattempted simulation
+  const attemptedTestNumbers = new Set(
+    attempts.map(a => {
+      const m = a.testId?.match(/test-(\d+)/);
+      return m ? parseInt(m[1], 10) : null;
+    }).filter(Boolean)
+  );
+
+  const unattemptedTests = TEST_CATALOG.filter(t => !attemptedTestNumbers.has(t.testNumber));
+
+  const handleStartRandomSimulation = () => {
+    if (unattemptedTests.length > 0) {
+      const randIdx = Math.floor(Math.random() * unattemptedTests.length);
+      onStartTest(unattemptedTests[randIdx].testNumber);
+    } else {
+      const randNum = Math.floor(Math.random() * 30) + 1;
+      onStartTest(randNum);
+    }
+  };
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
@@ -61,11 +89,17 @@ export default function Dashboard({
 
             <div className="pt-2 flex flex-wrap items-center gap-4">
               <button
-                onClick={() => onStartTest(1)}
+                onClick={handleStartRandomSimulation}
                 className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white font-extrabold text-sm shadow-xl shadow-sky-500/25 flex items-center gap-2 transition-all hover:scale-105 cursor-pointer"
+                title={unattemptedTests.length > 0 ? `Launch random unattempted simulation (${unattemptedTests.length} remaining)` : 'Launch random simulation'}
               >
                 <Play className="w-4 h-4 fill-white" />
-                <span>Start Simulation #1</span>
+                <span>Start Simulation</span>
+                {unattemptedTests.length > 0 && (
+                  <span className="text-[10px] bg-white/20 px-2 py-0.5 rounded-full font-mono font-bold">
+                    Random Unattempted
+                  </span>
+                )}
               </button>
 
               <button
@@ -105,10 +139,10 @@ export default function Dashboard({
             <div className="bg-slate-950/70 border border-slate-800/90 rounded-2xl p-4 shadow-lg">
               <p className="text-xs text-slate-400 font-semibold mb-1 flex items-center gap-1.5">
                 <BarChart3 className="w-3.5 h-3.5 text-sky-400" />
-                <span>Average Score</span>
+                <span>Median Score</span>
               </p>
               <div className="flex items-baseline gap-1">
-                <span className="text-2xl sm:text-3xl font-black text-white">{avgScore}</span>
+                <span className="text-2xl sm:text-3xl font-black text-white">{medianScore}</span>
                 <span className="text-xs text-slate-500 font-bold">/ 50</span>
               </div>
               <p className="text-[11px] text-slate-400 mt-1">{totalAttempts} tests completed</p>

@@ -4,6 +4,7 @@ export const DEFAULT_GEMINI_KEY = 'AIzaSyBL7Iy02c9KIOVRLFUAlkgmr1T-6w62S70';
 
 export function getAttempts() {
   try {
+    if (typeof window === 'undefined' || typeof localStorage === 'undefined') return [];
     const raw = localStorage.getItem(ATTEMPTS_KEY);
     return raw ? JSON.parse(raw) : [];
   } catch (err) {
