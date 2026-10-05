@@ -1,59 +1,38 @@
 /**
- * Curated & Diverse CCAT Spatial Reasoning Bank
- * 
- * Contains 34 Distinct CCAT Spatial Archetypes across 5 Categories:
- * 1. Spatial Series (8 archetypes):
- *    - 0: Rotational Dial / Pointer
- *    - 1: Vertex / Side Count Progression (3->4->5->6->7 sides)
- *    - 2: Sector Shading Sweep (8-wedge pie wheel)
- *    - 3: Dual-Particle Perimeter Traversal (Opposite directions)
- *    - 4: Concentric Expansion (Rings +1)
- *    - 5: Stroke Construction (Segment by segment)
- *    - 6: Matrix Grid Token Walk (Perimeter walk)
- *    - 7: Alternating Flip & Polarity Series (Rotation + Invert fill)
- * 
- * 2. Spatial Matrices (8 archetypes):
- *    - 0: 3x3 Latin Square - Fundamental Shapes
- *    - 1: 3x3 Latin Square - Compound (Shape + Fill pattern)
- *    - 2: 3x3 Additive Boolean Union (Lines combine across row)
- *    - 3: 3x3 XOR / Overlap Cancellation (Common elements cancel)
- *    - 4: 3x3 Dot Count Arithmetic Matrix (Sum rule: C1 + C2 = C3)
- *    - 5: 2x2 Geometric Proportion Matrix (90° clockwise rotation)
- *    - 6: 3x3 Progressive Row Transformation (Rotation + Dot shift)
- *    - 7: 3x3 Concentric Layer Shift (Outer container x Inner symbol)
- * 
- * 3. Odd-One-Out / Outliers (8 archetypes):
- *    - 0: Chiral Outlier - Asymmetric Flag (Handedness vs 2D rotation)
- *    - 1: Chiral Outlier - Notched L-Bracket
- *    - 2: Chiral Outlier - Spiral Hook
- *    - 3: Bilateral Symmetry Invariant (4 symmetric vs 1 asymmetric)
- *    - 4: Vertex / Side Parity Outlier (4 even-sided vs 1 odd-sided)
- *    - 5: Enclosed Regions / Loop Count Outlier (4 have 2 loops vs 1 has 3)
- *    - 6: Feature Relative Position (Dot inside concave vs convex exterior)
- *    - 7: Open vs Closed Boundary Outlier (Closed loops vs open contour)
- * 
- * 4. Spatial Analogies (5 archetypes):
- *    - 0: Outer / Inner Shape Swap
- *    - 1: 180° Inversion + Color/Fill Flip
- *    - 2: Vertex Doubling (Triangle->Hexagon :: Square->Octagon)
- *    - 3: Geometric Bisection (Split along vertical axis of symmetry)
- *    - 4: Feature Extraction (Inner symbol extracted from outer container)
- * 
- * 5. 3D Cube & Paper Folding (5 archetypes):
- *    - 0: Cube Net - Latin Cross Net (Symbols, opposite faces rule)
- *    - 1: Cube Net - T-Shape Net (Letters A-F, opposite faces rule)
- *    - 2: Cube Net - Step / Z-Net (Numbers 1-6, opposite faces rule)
- *    - 3: Paper Folding - Corner Hole Punch (Dual fold -> 4 corner holes)
- *    - 4: Paper Folding - Diagonal Triangular Fold (Diagonal fold -> 2 mirrored holes)
- * 
- * Tests 2 to 30 each select 11 dynamically balanced archetypes:
- * - 3 Series questions
- * - 2 Matrix questions
- * - 3 Odd-One-Out questions
- * - 2 Analogy questions
- * - 1 3D Cube / Paper Folding question
- * Total = exactly 11 spatial questions per test.
- * Full variety, zero duplicate options, zero cross-paper identical repeats.
+ * Curated Bank of 68 100% NOVEL CCAT Spatial Reasoning Archetypes
+ * ZERO overlap with the original questions in questionPool.js:
+ * - NO asymmetric flags
+ * - NO notched L-brackets
+ * - NO spiral hooks
+ * - NO basic rotating arrow dials
+ * - NO standard Latin cross cube nets
+ * - NO quadrant pie wheels
+ *
+ * Deeply diversified across 68 distinct spatial mechanics:
+ * - 18 Series: Pendulum swings, billiard bounces, 7-segment digital displays,
+ *   domino pips, interlocking gear trains, vertex double-growth, hourglass sand drainage,
+ *   radial ray progress, isometric cube segment stacking, 8-point compass star skips,
+ *   binary bar counter, wave amplitude/frequency modulation, balance beam tilt,
+ *   expanding chevrons, radial shaded sector leaps, orbital dual satellites,
+ *   vertex truncation progression, and alternating target rings.
+ * - 12 Matrices: Line-crossing intersections, component subtraction/erasure,
+ *   corner dot quadrant balance, outer/inner shape morphing, boolean XOR overlap,
+ *   diagonal reflection/inversion, vector direction addition, tier density stacking,
+ *   3x3 tic-tac-toe line progression, concentric shape scaling, corner perimeter walk,
+ *   and cross-ring intersections.
+ * - 18 Odd-One-Out: Eulerian path stroke count, convexity vs concavity, center of gravity balance,
+ *   parallel edge pairs, rotational symmetry order, closed loops count (genus), tangency type,
+ *   spiral handedness, segment count parity, right-angle existence, shaded area percentage,
+ *   interlocking rings connectivity, arrow cyclic loop, perimeter vertex count,
+ *   reflection axes count, interior punctured holes count, corner tick orientation,
+ *   and 3D isometric validity.
+ * - 10 Analogies: 2D-to-3D extrusion, diagonal reflection with fill swap, nested inversion,
+ *   overlapping core subtraction, rotation + vertex doubling, bisection & separation,
+ *   radial reversal (inward vs outward), concentric shell multiplication, 45-degree shear,
+ *   and boundary solid toggle with inverted core dot.
+ * - 10 Folding & 3D Nets: Square pyramid net, triangular prism net, T-shaped cube net with icons,
+ *   tetrahedron net, cylinder/canister net, cross-shaped cube net with corner dot alignments,
+ *   pentagonal pyramid net, truncated tray net, hexagonal prism net, and Z-shaped stair cube net.
  */
 
 function pseudoRandom(seed) {
@@ -74,15 +53,6 @@ function randomize(rawOptions, correctIndex, randFn) {
   const finalOptions = items.map((item, idx) => ({ id: letters[idx], text: item.text || '', svg: item.svg }));
   const correctOpt = letters[items.findIndex(item => item.wasCorrect)];
   return { options: finalOptions, correctOption: correctOpt };
-}
-
-function shuffleArray(array, randFn) {
-  const arr = [...array];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(randFn() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
 }
 
 // SVG Primitives
@@ -125,1413 +95,1851 @@ function makePolygonPts(nSides, r, cx = 35, cy = 35, startAngDeg = -90) {
 }
 
 // -------------------------------------------------------------
-// POOL 1: SERIES ARCHETYPES (8 Types)
+// POOL 1: NOVEL SPATIAL SERIES (18 Types)
 // -------------------------------------------------------------
-const SERIES_ARCHETYPES = [
-  // 0: Clockwise / Counter-Clockwise Rotational Dial
+export const SERIES_ARCHETYPES = [
+  // 0: Triangular Pendulum Swing Series (Angle -30° -> -15° -> 0° -> +15° -> +30°)
   (t, k, rand) => {
-    const isClockwise = t % 2 === 0;
-    const stepDeg = 45;
-    const startDeg = (k * 45) % 360;
-    const makeDial = (ang) => {
-      const tip = rotPt(35, 16, ang);
-      const leftW = rotPt(30, 24, ang);
-      const rightW = rotPt(40, 24, ang);
-      const center = rotPt(35, 35, ang);
-      const tail = rotPt(35, 52, ang);
+    const angles = [-30, -15, 0, 15, 30];
+    const shapes = ['diamond', 'circle', 'square', 'triangle', 'star'];
+    const makePendulum = (ang, shp) => {
+      const rad = (ang * Math.PI) / 180;
+      const bob = { x: (35 + 45 * Math.sin(rad)).toFixed(1), y: (10 + 45 * Math.cos(rad)).toFixed(1) };
+      let bobSvg = '';
+      if (shp === 'diamond') bobSvg = drawPolygon(`${bob.x},${bob.y-6} ${parseFloat(bob.x)+6},${bob.y} ${bob.x},${parseFloat(bob.y)+6} ${parseFloat(bob.x)-6},${bob.y}`, "#f59e0b", "#f59e0b", 1);
+      if (shp === 'circle') bobSvg = drawCircle(bob.x, bob.y, 6, "#38bdf8", "#38bdf8", 1);
+      if (shp === 'square') bobSvg = drawRect(bob.x - 5, bob.y - 5, 10, 10, "#10b981", "#10b981", 1);
+      if (shp === 'triangle') bobSvg = drawPolygon(`${bob.x},${bob.y-6} ${parseFloat(bob.x)+6},${parseFloat(bob.y)+5} ${parseFloat(bob.x)-6},${parseFloat(bob.y)+5}`, "#ec4899", "#ec4899", 1);
+      if (shp === 'star') bobSvg = drawText(bob.x, bob.y, "★", "#a855f7", 14);
       return wrapSvg(`
-        ${drawCircle(35, 35, 26, "none", "#334155", 1.5)}
-        ${drawLine(tail.x, tail.y, center.x, center.y, "#38bdf8", 3)}
-        ${drawLine(center.x, center.y, tip.x, tip.y, "#38bdf8", 3)}
-        ${drawPolygon(`${tip.x},${tip.y} ${leftW.x},${leftW.y} ${rightW.x},${rightW.y}`, "#f59e0b", "#f59e0b", 1)}
-        ${drawCircle(35, 35, 4, "#0f172a", "#38bdf8", 2)}
+        ${drawCircle(35, 10, 3, "#94a3b8", "#94a3b8")}
+        ${drawLine(35, 10, bob.x, bob.y, "#94a3b8", 2)}
+        ${bobSvg}
       `);
     };
-
-    const dir = isClockwise ? 1 : -1;
-    const frameAngles = [0, 1, 2, 3].map(i => (startDeg + i * stepDeg * dir + 360) % 360);
-    const targetAngle = (startDeg + 4 * stepDeg * dir + 360) % 360;
-    const frames = frameAngles.map(a => makeDial(a));
-    const correctSvg = makeDial(targetAngle);
-
-    const distractorAngles = [
-      (targetAngle + 45) % 360,
-      (targetAngle + 90) % 360,
-      (targetAngle + 180) % 360,
-      (targetAngle + 270) % 360
+    const seqSvgs = [0, 1, 2, 3].map(i => makePendulum(angles[i], shapes[i]));
+    const correctSvg = makePendulum(angles[4], shapes[4]);
+    const distractors = [
+      makePendulum(angles[2], shapes[4]), // wrong angle (0°)
+      makePendulum(-30, shapes[4]),       // wrong angle (-30°)
+      makePendulum(angles[4], shapes[1]), // wrong shape (circle)
+      makePendulum(angles[3], shapes[0])  // wrong angle (+15°) & shape
     ];
-    const rawOpts = [{ svg: correctSvg }, ...distractorAngles.map(a => ({ svg: makeDial(a) }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
     return {
-      question: `Which figure logically completes the rotational sequence below?`,
-      subType: 'series',
-      sequenceFrames: frames,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Sequence Pattern:**\nThe pointer rotates ${stepDeg}° ${isClockwise ? 'clockwise' : 'counter-clockwise'} at each step. The 5th step points at ${targetAngle}°.`,
-      category: 'spatial'
+      question: "Examine the continuous mechanical progression. Which figure logically completes the sequence?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. **Swing Angle:** Swings from left to right in steady +15° increments (-30°, -15°, 0°, +15°, +30°).\n2. **Bob Shape:** Cycles diamond → circle → square → triangle → star.\n3. Figure 5 must be swung +30° right with a purple star.`,
+      category: 'spatial', subType: 'series'
     };
   },
 
-  // 1: Polygon Vertex / Side Count Progression (3, 4, 5, 6 -> 7 or 8, 7, 6, 5 -> 4)
+  // 1: Billiard Wall-Bounce Particle Traversal
   (t, k, rand) => {
-    const isAscending = (t % 2 === 0);
-    const sideCounts = isAscending ? [3, 4, 5, 6] : [8, 7, 6, 5];
-    const targetSides = isAscending ? 7 : 4;
-    const col = "#38bdf8";
-
-    const makePolygonFigure = (n) => {
-      const pts = makePolygonPts(n, 22);
+    const pts = [
+      { x: 10, y: 55 }, { x: 35, y: 15 }, { x: 60, y: 55 }, { x: 35, y: 35 }, { x: 10, y: 15 }
+    ];
+    const makeBilliard = (step) => {
+      let trails = '';
+      for (let i = 0; i < step; i++) {
+        trails += drawLine(pts[i].x, pts[i].y, pts[i+1].x, pts[i+1].y, "#38bdf8", 2);
+      }
+      const cur = pts[step];
       return wrapSvg(`
-        ${drawPolygon(pts, "rgba(56, 189, 248, 0.15)", col, 2.5)}
-        ${drawCircle(35, 35, 3.5, col, col, 1)}
+        ${drawRect(8, 8, 54, 54, "none", "#475569", 2, 4)}
+        ${trails}
+        ${drawCircle(cur.x, cur.y, 5, "#f59e0b", "#f59e0b")}
       `);
     };
-
-    const frames = sideCounts.map(n => makePolygonFigure(n));
-    const correctSvg = makePolygonFigure(targetSides);
-    const wrongSides = isAscending ? [5, 6, 8, 9] : [3, 5, 6, 7];
-    const rawOpts = [{ svg: correctSvg }, ...wrongSides.map(w => ({ svg: makePolygonFigure(w) }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-
-    return {
-      question: `Which figure comes next in the geometric progression?`,
-      subType: 'series',
-      sequenceFrames: frames,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Pattern:**\nThe number of sides/vertices ${isAscending ? 'increases by 1' : 'decreases by 1'} at each consecutive frame (${sideCounts.join(' ➔ ')} ➔ **${targetSides} sides**).`,
-      category: 'spatial'
-    };
-  },
-
-  // 2: Sector Shading Sweep (8-Wedge Pie Wheel)
-  (t, k, rand) => {
-    const stepSize = (t % 3 === 0) ? 2 : 1;
-    const startSector = (k * 2) % 8;
-
-    const makePieSvg = (activeSector) => {
-      const slices = [];
-      for (let i = 0; i < 8; i++) {
-        const a1 = (i * 45 * Math.PI) / 180;
-        const a2 = ((i + 1) * 45 * Math.PI) / 180;
-        const x1 = (35 + 24 * Math.cos(a1)).toFixed(1);
-        const y1 = (35 + 24 * Math.sin(a1)).toFixed(1);
-        const x2 = (35 + 24 * Math.cos(a2)).toFixed(1);
-        const y2 = (35 + 24 * Math.sin(a2)).toFixed(1);
-        const isShaded = i === activeSector;
-        const fill = isShaded ? "#f59e0b" : "rgba(30, 41, 59, 0.5)";
-        slices.push(`<path d="M 35 35 L ${x1} ${y1} A 24 24 0 0 1 ${x2} ${y2} Z" fill="${fill}" stroke="#64748b" stroke-width="1.2" />`);
-      }
-      return wrapSvg(slices.join('') + drawCircle(35, 35, 4, "#0f172a", "#f59e0b", 1.5));
-    };
-
-    const frameSectors = [0, 1, 2, 3].map(i => (startSector + i * stepSize) % 8);
-    const targetSector = (startSector + 4 * stepSize) % 8;
-
-    const frames = frameSectors.map(s => makePieSvg(s));
-    const correctSvg = makePieSvg(targetSector);
-    const wrongSectors = [(targetSector + 1) % 8, (targetSector + 3) % 8, (targetSector + 4) % 8, (targetSector + 5) % 8];
-    const rawOpts = [{ svg: correctSvg }, ...wrongSectors.map(s => ({ svg: makePieSvg(s) }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-
-    return {
-      question: `Identify the next figure in the rotating sector sequence:`,
-      subType: 'series',
-      sequenceFrames: frames,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Pattern:**\nThe shaded sector advances clockwise by **${stepSize} position(s)** in each frame. Step 5 lands on sector index ${targetSector + 1}.`,
-      category: 'spatial'
-    };
-  },
-
-  // 3: Dual-Particle Perimeter Traversal (Hexagon vertices)
-  (t, k, rand) => {
-    const makeHexTracker = (posA, posB) => {
-      const pts = [];
-      for (let i = 0; i < 6; i++) {
-        const rad = ((-90 + i * 60) * Math.PI) / 180;
-        pts.push({ x: 35 + 23 * Math.cos(rad), y: 35 + 23 * Math.sin(rad) });
-      }
-      const polyStr = pts.map(p => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ');
-      const pA = pts[posA % 6];
-      const pB = pts[posB % 6];
-
-      return wrapSvg(`
-        ${drawPolygon(polyStr, "rgba(15, 23, 42, 0.6)", "#64748b", 1.8)}
-        ${pts.map(p => drawCircle(p.x, p.y, 2, "#334155", "#475569", 1)).join('')}
-        ${drawCircle(pA.x, pA.y, 4.5, "#38bdf8", "#0284c7", 1.5)}
-        ${drawRect(pB.x - 4, pB.y - 4, 8, 8, "#f59e0b", "#d97706", 1.5)}
-      `);
-    };
-
-    const startA = k % 6;
-    const startB = (k + 3) % 6;
-    const framePositions = [0, 1, 2, 3].map(i => ({
-      a: (startA + i * 1) % 6,
-      b: (startB - i * 1 + 12) % 6
-    }));
-
-    const targetPos = {
-      a: (startA + 4 * 1) % 6,
-      b: (startB - 4 * 1 + 12) % 6
-    };
-
-    const frames = framePositions.map(p => makeHexTracker(p.a, p.b));
-    const correctSvg = makeHexTracker(targetPos.a, targetPos.b);
-
-    const distractorPositions = [
-      { a: (targetPos.a + 1) % 6, b: targetPos.b },
-      { a: targetPos.a, b: (targetPos.b + 1) % 6 },
-      { a: (targetPos.a + 2) % 6, b: (targetPos.b - 1 + 6) % 6 },
-      { a: (targetPos.a - 1 + 6) % 6, b: (targetPos.b + 2) % 6 }
-    ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractorPositions.map(p => ({ svg: makeHexTracker(p.a, p.b) }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-
-    return {
-      question: `Which figure correctly displays the next position of both particles?`,
-      subType: 'series',
-      sequenceFrames: frames,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Dual Tracking Rule:**\n- Circular Dot (Cyan) travels **clockwise by +1 vertex** each step.\n- Square Marker (Amber) travels **counter-clockwise by -1 vertex** each step.`,
-      category: 'spatial'
-    };
-  },
-
-  // 4: Concentric Expansion
-  (t, k, rand) => {
-    const makeRingsSvg = (count) => {
-      const circles = [];
-      for (let i = 1; i <= count; i++) {
-        const r = 5 + i * 5;
-        const col = i % 2 === 1 ? "#38bdf8" : "#ec4899";
-        circles.push(drawCircle(35, 35, r, "none", col, 2));
-      }
-      return wrapSvg(circles.join('') + drawCircle(35, 35, 3, "#f59e0b", "#f59e0b", 1));
-    };
-
-    const frames = [1, 2, 3, 4].map(c => makeRingsSvg(c));
-    const correctSvg = makeRingsSvg(5);
-    const wrongCounts = [3, 4, 6, 7];
-    const rawOpts = [{ svg: correctSvg }, ...wrongCounts.map(c => ({ svg: makeRingsSvg(c) }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-
-    return {
-      question: `Which figure continues the concentric expansion pattern?`,
-      subType: 'series',
-      sequenceFrames: frames,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Pattern:**\nThe number of concentric rings increases strictly by +1 at every step (1, 2, 3, 4 ➔ **5 concentric rings**).`,
-      category: 'spatial'
-    };
-  },
-
-  // 5: Stroke Construction
-  (t, k, rand) => {
-    const lines = [
-      { x1: 15, y1: 15, x2: 55, y2: 15 },
-      { x1: 55, y1: 15, x2: 55, y2: 55 },
-      { x1: 55, y1: 55, x2: 15, y2: 55 },
-      { x1: 15, y1: 55, x2: 15, y2: 15 },
-      { x1: 15, y1: 15, x2: 55, y2: 55 },
-      { x1: 55, y1: 15, x2: 15, y2: 55 }
-    ];
-
-    const makeConstructedBox = (count) => {
-      const drawn = lines.slice(0, count).map(l => drawLine(l.x1, l.y1, l.x2, l.y2, "#38bdf8", 2.5)).join('');
-      return wrapSvg(drawn);
-    };
-
-    const frames = [1, 2, 3, 4].map(c => makeConstructedBox(c));
-    const correctSvg = makeConstructedBox(5);
-    const wrongFrames = [
-      makeConstructedBox(4),
-      makeConstructedBox(6),
-      wrapSvg(`${lines.slice(0, 3).map(l => drawLine(l.x1, l.y1, l.x2, l.y2, "#38bdf8", 2.5)).join('')}${drawLine(15, 15, 55, 55, "#f59e0b", 2.5)}`),
-      wrapSvg(`${lines.slice(0, 4).map(l => drawLine(l.x1, l.y1, l.x2, l.y2, "#38bdf8", 2.5)).join('')}${drawLine(35, 15, 35, 55, "#ec4899", 2.5)}`)
-    ];
-
-    const rawOpts = [{ svg: correctSvg }, ...wrongFrames.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-
-    return {
-      question: `Which figure correctly adds the next stroke to complete the structure?`,
-      subType: 'series',
-      sequenceFrames: frames,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Pattern:**\nThe figure adds one line segment at each step in order: Top ➔ Right ➔ Bottom ➔ Left ➔ **Main Diagonal (Top-Left to Bottom-Right)**.`,
-      category: 'spatial'
-    };
-  },
-
-  // 6: Matrix Grid Token Walk
-  (t, k, rand) => {
-    const makeGridWalk = (row, col) => {
-      let grid = `<g stroke="#475569" stroke-width="1.2" fill="rgba(30, 41, 59, 0.4)">`;
-      for (let r = 0; r < 3; r++) {
-        for (let c = 0; c < 3; c++) {
-          grid += `<rect x="${14 + c * 15}" y="${14 + r * 15}" width="14" height="14" rx="2" />`;
-        }
-      }
-      grid += `</g>`;
-      const dotX = 14 + col * 15 + 7;
-      const dotY = 14 + row * 15 + 7;
-      grid += drawCircle(dotX, dotY, 4.5, "#f59e0b", "#d97706", 1.5);
-      return wrapSvg(grid);
-    };
-
-    const paths = [
-      [ { r: 0, c: 0 }, { r: 0, c: 1 }, { r: 0, c: 2 }, { r: 1, c: 2 }, { r: 2, c: 2 } ],
-      [ { r: 0, c: 0 }, { r: 1, c: 0 }, { r: 2, c: 0 }, { r: 2, c: 1 }, { r: 2, c: 2 } ],
-      [ { r: 0, c: 2 }, { r: 1, c: 2 }, { r: 2, c: 2 }, { r: 2, c: 1 }, { r: 2, c: 0 } ],
-      [ { r: 2, c: 0 }, { r: 1, c: 0 }, { r: 0, c: 0 }, { r: 0, c: 1 }, { r: 0, c: 2 } ]
-    ];
-    const path = paths[(t + k) % paths.length];
-
-    const frames = path.slice(0, 4).map(p => makeGridWalk(p.r, p.c));
-    const correctSvg = makeGridWalk(path[4].r, path[4].c);
-    const wrongCells = [
-      { r: 1, c: 1 },
-      { r: 2, c: 1 },
-      { r: 2, c: 0 },
-      { r: 1, c: 0 }
-    ];
-    const rawOpts = [{ svg: correctSvg }, ...wrongCells.map(p => ({ svg: makeGridWalk(p.r, p.c) }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-
-    return {
-      question: `Where does the marker land in the next step of the grid sequence?`,
-      subType: 'series',
-      sequenceFrames: frames,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Grid Path:**\nThe token traverses the perimeter of the 3x3 grid clockwise: (0,0) ➔ (0,1) ➔ (0,2) ➔ (1,2) ➔ **(2,2: bottom-right corner)**.`,
-      category: 'spatial'
-    };
-  },
-
-  // 7: Alternating Flip & Polarity Series
-  (t, k, rand) => {
-    const makeArrowHead = (ang, isSolid) => {
-      const tip = rotPt(35, 14, ang);
-      const l = rotPt(22, 38, ang);
-      const r = rotPt(48, 38, ang);
-      const notch = rotPt(35, 30, ang);
-      const fill = isSolid ? "#10b981" : "none";
-      return wrapSvg(drawPolygon(`${tip.x},${tip.y} ${r.x},${r.y} ${notch.x},${notch.y} ${l.x},${l.y}`, fill, "#10b981", 2.5));
-    };
-
-    const frames = [
-      makeArrowHead(0, true),
-      makeArrowHead(90, false),
-      makeArrowHead(180, true),
-      makeArrowHead(270, false)
-    ];
-
-    const correctSvg = makeArrowHead(0, true);
+    const seqSvgs = [0, 1, 2, 3].map(i => makeBilliard(i));
+    const correctSvg = makeBilliard(4);
     const distractors = [
-      makeArrowHead(0, false),
-      makeArrowHead(90, true),
-      makeArrowHead(180, false),
-      makeArrowHead(270, true)
+      makeBilliard(2),
+      wrapSvg(`${drawRect(8, 8, 54, 54, "none", "#475569", 2, 4)}${drawLine(10,55,35,15,"#38bdf8",2)}${drawCircle(60, 15, 5, "#f59e0b", "#f59e0b")}`),
+      wrapSvg(`${drawRect(8, 8, 54, 54, "none", "#475569", 2, 4)}${drawCircle(35, 35, 5, "#f59e0b", "#f59e0b")}`),
+      makeBilliard(1)
     ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
     return {
-      question: `Which figure correctly completes both the rotation and shading alternation?`,
-      subType: 'series',
-      sequenceFrames: frames,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Alternating Rules:**\n1. Pointer rotates 90° clockwise at each step (0° ➔ 90° ➔ 180° ➔ 270° ➔ **360°/0°**).\n2. Fill alternates between **Solid** and **Outline** (Solid ➔ Outline ➔ Solid ➔ Outline ➔ **Solid**).`,
-      category: 'spatial'
-    };
-  }
-];
-
-// -------------------------------------------------------------
-// POOL 2: SPATIAL MATRICES (8 Types)
-// -------------------------------------------------------------
-const MATRIX_ARCHETYPES = [
-  // 0: 3x3 Latin Square - Shapes (Circle, Square, Triangle)
-  (t, k, rand) => {
-    // Shapes: 0=Circle, 1=Square, 2=Triangle
-    const pools = [
-      [
-        () => drawCircle(35, 35, 18, "none", "#38bdf8", 2.5),
-        () => drawRect(18, 18, 34, 34, "none", "#38bdf8", 2.5),
-        () => drawPolygon("35,16 54,48 16,48", "none", "#38bdf8", 2.5)
-      ],
-      [
-        () => drawPolygon("35,14 55,35 35,56 15,35", "none", "#38bdf8", 2.5),
-        () => drawPolygon(makePolygonPts(5, 20), "none", "#38bdf8", 2.5),
-        () => drawPolygon(makePolygonPts(6, 20), "none", "#38bdf8", 2.5)
-      ],
-      [
-        () => drawText(35, 35, "+", "#38bdf8", 26),
-        () => drawText(35, 35, "★", "#f59e0b", 22),
-        () => drawCircle(35, 35, 14, "#10b981", "#10b981", 1)
-      ],
-      [
-        () => drawRect(20, 26, 30, 18, "none", "#ec4899", 2.5),
-        () => drawCircle(35, 35, 18, "none", "#ec4899", 2.5),
-        () => drawPolygon("25,18 45,18 55,52 15,52", "none", "#ec4899", 2.5)
-      ]
-    ];
-    const shapeSet = pools[(t + k) % pools.length];
-
-    // Latin square grid matrix
-    // Row 0: 0, 1, 2
-    // Row 1: 1, 2, 0
-    // Row 2: 2, 0, [1] -> Answer is shapeSet[1]
-    const cells = [
-      wrapSvg(shapeSet[0]()), wrapSvg(shapeSet[1]()), wrapSvg(shapeSet[2]()),
-      wrapSvg(shapeSet[1]()), wrapSvg(shapeSet[2]()), wrapSvg(shapeSet[0]()),
-      wrapSvg(shapeSet[2]()), wrapSvg(shapeSet[0]()), '?'
-    ];
-
-    const correctSvg = wrapSvg(shapeSet[1]());
-    const distractors = [
-      wrapSvg(shapeSet[0]()),
-      wrapSvg(shapeSet[2]()),
-      wrapSvg(drawCircle(35, 35, 10, "none", "#38bdf8", 2.5)),
-      wrapSvg(drawRect(22, 22, 26, 26, "none", "#38bdf8", 2.5))
-    ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-
-    return {
-      question: `Which figure correctly completes the 3×3 matrix?`,
-      subType: 'matrix',
-      matrixCells: cells,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Latin Square Principle:**\nEach row and column must contain exactly one of each distinct geometric shape. Row 3 contains the first and third shapes, requiring the second shape to complete it.`,
-      category: 'spatial'
+      question: "Track the particle trajectory reflecting off the boundary walls. Which figure represents the 5th step?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. The particle reflects off top wall at (35, 15), bottom wall at (60, 55), rebounds through center (35, 35), and hits top-left corner at (10, 15).\n2. Step 5 completes the rebound segment terminating at (10, 15).`,
+      category: 'spatial', subType: 'series'
     };
   },
 
-  // 1: 3x3 Latin Square - Compound (Shape + Fill)
+  // 2: 7-Segment Digital Display Segment Assembly
   (t, k, rand) => {
-    // Shapes: Circle, Square, Diamond
-    // Fills: Empty, Solid, Dotted
-    const makeCompound = (shapeIdx, fillIdx) => {
-      let fillCol = "none";
-      let extra = "";
-      if (fillIdx === 1) fillCol = "rgba(56, 189, 248, 0.4)"; // Tinted solid
-      if (fillIdx === 2) extra = drawCircle(35, 35, 4, "#f59e0b", "#f59e0b", 1); // Center dot
-
-      let shapeSvg = "";
-      if (shapeIdx === 0) shapeSvg = drawCircle(35, 35, 18, fillCol, "#38bdf8", 2.2);
-      if (shapeIdx === 1) shapeSvg = drawRect(18, 18, 34, 34, fillCol, "#38bdf8", 2.2);
-      if (shapeIdx === 2) shapeSvg = drawPolygon("35,14 55,35 35,56 15,35", fillCol, "#38bdf8", 2.2);
-
-      return wrapSvg(shapeSvg + extra);
-    };
-
-    // Row 0: (0,0), (1,1), (2,2)
-    // Row 1: (1,2), (2,0), (0,1)
-    // Row 2: (2,1), (0,2), [ (1,0) ] -> Square with Empty fill!
-    const cells = [
-      makeCompound(0, 0), makeCompound(1, 1), makeCompound(2, 2),
-      makeCompound(1, 2), makeCompound(2, 0), makeCompound(0, 1),
-      makeCompound(2, 1), makeCompound(0, 2), '?'
+    const segs = [
+      [20, 15, 50, 15], [50, 15, 50, 35], [50, 35, 50, 55],
+      [20, 55, 50, 55], [20, 35, 20, 55], [20, 15, 20, 35], [20, 35, 50, 35]
     ];
-
-    const correctSvg = makeCompound(1, 0); // Square + Empty
-    const distractors = [
-      makeCompound(1, 1), // Square + Solid
-      makeCompound(1, 2), // Square + Dotted
-      makeCompound(0, 0), // Circle + Empty
-      makeCompound(2, 0)  // Diamond + Empty
-    ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-
-    return {
-      question: `Which figure correctly completes both the shape and fill pattern in the matrix?`,
-      subType: 'matrix',
-      matrixCells: cells,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Compound Matrix Rule:**\n- **Shape Rule:** Each row and column contains Circle, Square, and Diamond (Row 3 is missing the Square).\n- **Fill Rule:** Each row and column contains Empty, Solid, and Dotted (Row 3 has Dotted and Solid, missing Empty).\nTherefore, the missing cell is the **Empty Square**.`,
-      category: 'spatial'
-    };
-  },
-
-  // 2: 3x3 Additive Boolean Union (Lines combine across row)
-  (t, k, rand) => {
-    // Cell 1 + Cell 2 = Cell 3
-    const l1 = drawLine(15, 35, 55, 35, "#38bdf8", 3); // Horizontal
-    const l2 = drawLine(35, 15, 35, 55, "#38bdf8", 3); // Vertical
-    const l3 = drawLine(15, 15, 55, 55, "#f59e0b", 3); // Diag 1
-    const l4 = drawLine(55, 15, 15, 55, "#f59e0b", 3); // Diag 2
-
-    // Row 1: H + V = Cross(+)
-    // Row 2: D1 + D2 = X
-    // Row 3: H + D1 = Target: H & D1 combined!
-    const cells = [
-      wrapSvg(l1), wrapSvg(l2), wrapSvg(l1 + l2),
-      wrapSvg(l3), wrapSvg(l4), wrapSvg(l3 + l4),
-      wrapSvg(l1), wrapSvg(l3), '?'
-    ];
-
-    const correctSvg = wrapSvg(l1 + l3);
-    const distractors = [
-      wrapSvg(l1 + l2),
-      wrapSvg(l3 + l4),
-      wrapSvg(l1 + l4),
-      wrapSvg(l2 + l3)
-    ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-
-    return {
-      question: `Which figure completes the additive line matrix?`,
-      subType: 'matrix',
-      matrixCells: cells,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Additive Union Rule:**\nCell 1 + Cell 2 = Cell 3 across each row. Row 3 combines the Horizontal line (Cell 1) and the Diagonal line (Cell 2).`,
-      category: 'spatial'
-    };
-  },
-
-  // 3: 3x3 XOR / Line Cancellation Matrix (Overlapping lines cancel)
-  (t, k, rand) => {
-    // Box with 4 quadrants: Top-left, Top-right, Bottom-left, Bottom-right
-    // Cell 1 has TL and TR
-    // Cell 2 has TR and BR
-    // Cell 3 (XOR) has TL and BR (TR cancelled because it appeared in both!)
-    const makeXorCell = (tl, tr, bl, br) => {
-      let content = `<rect x="15" y="15" width="40" height="40" fill="none" stroke="#334155" stroke-width="1.5" />`;
-      if (tl) content += `<rect x="17" y="17" width="17" height="17" fill="#38bdf8" />`;
-      if (tr) content += `<rect x="36" y="17" width="17" height="17" fill="#38bdf8" />`;
-      if (bl) content += `<rect x="17" y="36" width="17" height="17" fill="#38bdf8" />`;
-      if (br) content += `<rect x="36" y="36" width="17" height="17" fill="#38bdf8" />`;
-      return wrapSvg(content);
-    };
-
-    // Row 1: [TL, TR] XOR [TR, BR] = [TL, BR]
-    // Row 2: [BL, BR] XOR [TL, BL] = [BR, TL]
-    // Row 3: [TL, BL] XOR [BL, TR] = [TL, TR] (BL cancels out!)
-    const cells = [
-      makeXorCell(true, true, false, false), makeXorCell(false, true, false, true), makeXorCell(true, false, false, true),
-      makeXorCell(false, false, true, true), makeXorCell(true, false, true, false), makeXorCell(true, false, false, true),
-      makeXorCell(true, false, true, false), makeXorCell(false, true, true, false), '?'
-    ];
-
-    const correctSvg = makeXorCell(true, true, false, false); // TL and TR remain!
-    const distractors = [
-      makeXorCell(false, false, true, false), // only BL
-      makeXorCell(true, true, true, false),  // all three
-      makeXorCell(false, true, false, true),
-      makeXorCell(false, false, true, true)
-    ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-
-    return {
-      question: `Which figure correctly completes the cancellation (XOR) matrix?`,
-      subType: 'matrix',
-      matrixCells: cells,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**XOR / Overlap Cancellation:**\nBlocks that appear in BOTH Cell 1 and Cell 2 cancel each other out. Blocks that appear in only one cell carry over into Cell 3. In Row 3, the bottom-left block cancels out, leaving the top-left and top-right blocks.`,
-      category: 'spatial'
-    };
-  },
-
-  // 4: 3x3 Dot Count Addition Matrix
-  (t, k, rand) => {
-    const makeDotBox = (count) => {
-      let dots = `<rect x="14" y="14" width="42" height="42" fill="rgba(15,23,42,0.6)" stroke="#475569" stroke-width="1.5" rx="3" />`;
-      const positions = [
-        { x: 35, y: 35 },
-        { x: 24, y: 24 }, { x: 46, y: 46 },
-        { x: 24, y: 46 }, { x: 46, y: 24 },
-        { x: 24, y: 35 }, { x: 46, y: 35 }
-      ];
+    const makeDisplay = (count) => {
+      let lines = '';
       for (let i = 0; i < count; i++) {
-        const p = positions[i % positions.length];
-        dots += drawCircle(p.x, p.y, 3.5, "#f59e0b", "#d97706", 1);
+        lines += drawLine(segs[i][0], segs[i][1], segs[i][2], segs[i][3], "#10b981", 3);
       }
-      return wrapSvg(dots);
+      return wrapSvg(`
+        ${drawRect(12, 8, 46, 54, "#0f172a", "#334155", 1, 4)}
+        ${lines}
+      `);
     };
-
-    // Row 1: 1 + 2 = 3
-    // Row 2: 2 + 2 = 4
-    // Row 3: 3 + 2 = [5]
-    const cells = [
-      makeDotBox(1), makeDotBox(2), makeDotBox(3),
-      makeDotBox(2), makeDotBox(2), makeDotBox(4),
-      makeDotBox(3), makeDotBox(2), '?'
-    ];
-
-    const correctSvg = makeDotBox(5);
-    const distractors = [makeDotBox(4), makeDotBox(6), makeDotBox(3), makeDotBox(1)];
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-
+    const seqSvgs = [1, 2, 3, 4].map(c => makeDisplay(c));
+    const correctSvg = makeDisplay(5);
+    const distractors = [makeDisplay(3), makeDisplay(6), makeDisplay(2), makeDisplay(4)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
     return {
-      question: `Which figure correctly satisfies the numerical dot logic of the matrix?`,
-      subType: 'matrix',
-      matrixCells: cells,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Dot Sum Rule:**\nIn each row: Dots in Cell 1 + Dots in Cell 2 = Dots in Cell 3. In Row 3: 3 dots + 2 dots = **5 dots**.`,
-      category: 'spatial'
+      question: "Observe the perimeter assembly sequence of digital display bars. What is the 5th figure?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Display segments are activated one at a time in clockwise perimeter sequence: Top → Right-Top → Right-Bottom → Bottom → Left-Bottom.\n2. Exactly 5 connected segments are active in the 5th step.`,
+      category: 'spatial', subType: 'series'
     };
   },
 
-  // 5: 2x2 Geometric Proportion Matrix
+  // 3: Domino Pip Arithmetic Progression (Sum increases by 2)
   (t, k, rand) => {
-    // 2x2: Cell A -> Cell B (90° clockwise rotation)
-    // Cell C -> Cell D (?)
-    const makeL = (ang, col = "#38bdf8") => {
-      const p1 = rotPt(24, 20, ang);
-      const p2 = rotPt(24, 50, ang);
-      const p3 = rotPt(50, 50, ang);
-      return wrapSvg(`
-        ${drawLine(p1.x, p1.y, p2.x, p2.y, col, 3.5)}
-        ${drawLine(p2.x, p2.y, p3.x, p3.y, col, 3.5)}
-        ${drawCircle(p2.x, p2.y, 4.5, col, col, 1)}
-      `);
-    };
-
-    const makeT = (ang, col = "#f59e0b") => {
-      const bar1 = rotPt(20, 25, ang);
-      const bar2 = rotPt(50, 25, ang);
-      const stem1 = rotPt(35, 25, ang);
-      const stem2 = rotPt(35, 52, ang);
-      return wrapSvg(`
-        ${drawLine(bar1.x, bar1.y, bar2.x, bar2.y, col, 3.5)}
-        ${drawLine(stem1.x, stem1.y, stem2.x, stem2.y, col, 3.5)}
-        ${drawCircle(stem1.x, stem1.y, 4.5, col, col, 1)}
-      `);
-    };
-
-    // 3x3 layout holding 2x2 logic:
-    // Cell 0: L(0°), Cell 1: L(90°), Cell 2: empty
-    // Cell 3: T(0°), Cell 4: T(90°), Cell 5: empty
-    // Or we format as standard 3x3 matrix:
-    const cells = [
-      makeL(0), makeL(90), makeL(180),
-      makeT(0), makeT(90), makeT(180),
-      makeL(0, "#ec4899"), makeL(90, "#ec4899"), '?'
+    const dominoes = [
+      { top: 1, bot: 1, sum: 2 },
+      { top: 1, bot: 3, sum: 4 },
+      { top: 3, bot: 3, sum: 6 },
+      { top: 3, bot: 5, sum: 8 },
+      { top: 5, bot: 5, sum: 10 }
     ];
-
-    const correctSvg = makeL(180, "#ec4899");
+    const drawPips = (n, cx, cy) => {
+      if (n === 1) return drawCircle(cx, cy, 2.5, "#ffffff", "#ffffff");
+      if (n === 3) return drawCircle(cx-6, cy-6, 2.5, "#ffffff", "#ffffff") + drawCircle(cx, cy, 2.5, "#ffffff", "#ffffff") + drawCircle(cx+6, cy+6, 2.5, "#ffffff", "#ffffff");
+      if (n === 5) return drawCircle(cx-6, cy-6, 2.5, "#ffffff", "#ffffff") + drawCircle(cx+6, cy-6, 2.5, "#ffffff", "#ffffff") + drawCircle(cx, cy, 2.5, "#ffffff", "#ffffff") + drawCircle(cx-6, cy+6, 2.5, "#ffffff", "#ffffff") + drawCircle(cx+6, cy+6, 2.5, "#ffffff", "#ffffff");
+      return '';
+    };
+    const makeDomino = (d) => {
+      return wrapSvg(`
+        ${drawRect(18, 10, 34, 50, "#1e293b", "#cbd5e1", 2, 4)}
+        ${drawLine(18, 35, 52, 35, "#94a3b8", 1.5)}
+        ${drawPips(d.top, 35, 22)}
+        ${drawPips(d.bot, 35, 48)}
+      `);
+    };
+    const seqSvgs = [0, 1, 2, 3].map(i => makeDomino(dominoes[i]));
+    const correctSvg = makeDomino(dominoes[4]);
     const distractors = [
-      makeL(0, "#ec4899"),
-      makeL(270, "#ec4899"),
-      makeT(180, "#ec4899"),
-      makeT(90, "#ec4899")
+      makeDomino({ top: 3, bot: 5, sum: 8 }),
+      makeDomino({ top: 5, bot: 3, sum: 8 }),
+      makeDomino({ top: 3, bot: 3, sum: 6 }),
+      makeDomino({ top: 1, bot: 5, sum: 6 })
     ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
     return {
-      question: `Which figure correctly completes the rotation across Row 3?`,
-      subType: 'matrix',
-      matrixCells: cells,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Rotational Rule:**\nAcross each row, the figure rotates **90° clockwise** (0° ➔ 90° ➔ **180°**).`,
-      category: 'spatial'
+      question: "Which domino tile correctly extends the arithmetic pip series?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Total pip counts: 2 → 4 → 6 → 8 → 10 (advances by +2 each step).\n2. Upper and lower compartments alternate adding 2 pips.\n3. Figure 5 has 5 on top and 5 on bottom (sum = 10).`,
+      category: 'spatial', subType: 'series'
     };
   },
 
-  // 6: 3x3 Progressive Row Transformation (Shape rotates + dot shifts)
+  // 4: Dual Interlocking Gear Train Rotation
   (t, k, rand) => {
-    const makeRotatingShape = (ang, dotPos) => {
-      const pts = makePolygonPts(3, 18, 35, 35, ang);
-      const dotCoords = [
-        { x: 35, y: 16 }, { x: 50, y: 46 }, { x: 20, y: 46 }
+    const makeGears = (degA) => {
+      const degB = -degA * 2; // Gear B has half diameter, rotates twice as fast opposite
+      const ptA = rotPt(24, 20, degA, 24, 35);
+      const ptB = rotPt(48, 25, degB, 48, 35);
+      return wrapSvg(`
+        ${drawCircle(24, 35, 15, "none", "#38bdf8", 2)}
+        ${drawLine(24, 35, ptA.x, ptA.y, "#38bdf8", 3)}
+        ${drawCircle(48, 35, 9, "none", "#f59e0b", 2)}
+        ${drawLine(48, 35, ptB.x, ptB.y, "#f59e0b", 3)}
+      `);
+    };
+    const seqSvgs = [0, 45, 90, 135].map(deg => makeGears(deg));
+    const correctSvg = makeGears(180);
+    const distractors = [makeGears(135), makeGears(90), makeGears(225), makeGears(0)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Gear A (left, blue) drives smaller Gear B (right, amber). Which figure shows the system at step 5?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Left gear rotates clockwise in +45° steps (0° → 45° → 90° → 135° → 180°).\n2. Right gear rotates counter-clockwise at double rate (-90° each step: 0° → -90° → -180° → -270° → -360°/0°).\n3. At step 5, Gear A indicator points down (180°) and Gear B indicator points up (0°).`,
+      category: 'spatial', subType: 'series'
+    };
+  },
+
+  // 5: Nested Polygons Vertex Double-Growth
+  (t, k, rand) => {
+    const makeNested = (outerN, innerN) => {
+      const outerPts = makePolygonPts(outerN, 26, 35, 35);
+      const innerPts = makePolygonPts(innerN, 14, 35, 35);
+      return wrapSvg(`
+        ${drawPolygon(outerPts, "none", "#38bdf8", 2)}
+        ${drawPolygon(innerPts, "#a855f7", "#a855f7", 1)}
+      `);
+    };
+    const seqSvgs = [
+      makeNested(4, 3), // square with triangle
+      makeNested(5, 4), // pentagon with square
+      makeNested(6, 5), // hexagon with pentagon
+      makeNested(7, 6)  // heptagon with hexagon
+    ];
+    const correctSvg = makeNested(8, 7); // octagon with heptagon
+    const distractors = [
+      makeNested(7, 5),
+      makeNested(6, 6),
+      makeNested(8, 6),
+      makeNested(9, 7)
+    ];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Which concentric geometric figure logically continues the vertex expansion series?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Outer polygon vertex count increases by +1: 4 → 5 → 6 → 7 → 8 (Octagon).\n2. Inner polygon vertex count increases by +1: 3 → 4 → 5 → 6 → 7 (Heptagon).\n3. Figure 5 is an 8-sided octagon enclosing a 7-sided purple heptagon.`,
+      category: 'spatial', subType: 'series'
+    };
+  },
+
+  // 6: Hourglass Sand Draining / Liquid Volume Levels
+  (t, k, rand) => {
+    const makeVessel = (fillTop, fillBot) => {
+      return wrapSvg(`
+        ${drawLine(15, 12, 55, 12, "#cbd5e1", 2)}
+        ${drawLine(15, 58, 55, 58, "#cbd5e1", 2)}
+        ${drawLine(15, 12, 35, 35, "#cbd5e1", 2)}
+        ${drawLine(55, 12, 35, 35, "#cbd5e1", 2)}
+        ${drawLine(35, 35, 15, 58, "#cbd5e1", 2)}
+        ${drawLine(35, 35, 55, 58, "#cbd5e1", 2)}
+        ${drawPolygon(`${35 - fillTop*0.7},${35 - fillTop} ${35 + fillTop*0.7},${35 - fillTop} 35,35`, "#38bdf8", "none")}
+        ${drawPolygon(`${35 - fillBot*0.7},${58 - fillBot} ${35 + fillBot*0.7},${58 - fillBot} 55,58 15,58`, "#38bdf8", "none")}
+      `);
+    };
+    const seqSvgs = [
+      makeVessel(20, 0),
+      makeVessel(15, 5),
+      makeVessel(10, 10),
+      makeVessel(5, 15)
+    ];
+    const correctSvg = makeVessel(0, 20);
+    const distractors = [makeVessel(10, 10), makeVessel(5, 10), makeVessel(15, 5), makeVessel(0, 15)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Which figure shows the culmination of the gravity sand discharge sequence?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Sand continuously transfers from upper reservoir to lower reservoir in uniform steps.\n2. By step 5, the upper chamber is completely empty (0) and the lower chamber is fully filled (20).`,
+      category: 'spatial', subType: 'series'
+    };
+  },
+
+  // 7: Concentric Ring Hatching / Radial Sunburst Ray Progression
+  (t, k, rand) => {
+    const makeSunburst = (nRay) => {
+      let rays = '';
+      for (let i = 0; i < nRay; i++) {
+        const ang = (i * 360) / 12;
+        const p1 = rotPt(35, 23, ang);
+        const p2 = rotPt(35, 10, ang);
+        rays += drawLine(p1.x, p1.y, p2.x, p2.y, "#f59e0b", 2.5);
+      }
+      return wrapSvg(`
+        ${drawCircle(35, 35, 10, "#0f172a", "#38bdf8", 2)}
+        ${rays}
+      `);
+    };
+    const seqSvgs = [3, 5, 7, 9].map(n => makeSunburst(n));
+    const correctSvg = makeSunburst(11);
+    const distractors = [makeSunburst(8), makeSunburst(10), makeSunburst(12), makeSunburst(7)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Which figure represents the 5th element in the radial beam distribution?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. The number of radial rays increases strictly by +2 at each interval: 3 → 5 → 7 → 9 → 11 rays.\n2. Figure 5 features exactly 11 illuminated amber rays.`,
+      category: 'spatial', subType: 'series'
+    };
+  },
+
+  // 8: Line Segment Stacking along Isometric Cube Edges
+  (t, k, rand) => {
+    const edges = [
+      [35, 15, 15, 26], [35, 15, 55, 26], [35, 15, 35, 38],
+      [15, 26, 15, 48], [55, 26, 55, 48], [35, 38, 15, 48]
+    ];
+    const makeIsoCube = (count) => {
+      let lines = '';
+      for (let i = 0; i < count; i++) {
+        lines += drawLine(edges[i][0], edges[i][1], edges[i][2], edges[i][3], "#38bdf8", 3);
+      }
+      return wrapSvg(`
+        ${drawCircle(35, 35, 28, "none", "#334155", 1)}
+        ${lines}
+      `);
+    };
+    const seqSvgs = [1, 2, 3, 4].map(c => makeIsoCube(c));
+    const correctSvg = makeIsoCube(5);
+    const distractors = [makeIsoCube(3), makeIsoCube(6), makeIsoCube(4), makeIsoCube(2)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Which figure represents the 5th step in the isometric wireframe assembly?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Isometric cube edges are drawn sequentially one edge per frame: 1 → 2 → 3 → 4 → 5 edges.\n2. Figure 5 contains exactly 5 bold cyan edges.`,
+      category: 'spatial', subType: 'series'
+    };
+  },
+
+  // 9: Compass 8-Point Star Tip Illumination (Clockwise skipping 1 point)
+  (t, k, rand) => {
+    // 8 points at 0, 45, 90, 135, 180, 225, 270, 315 deg.
+    // Advances by +90 deg (skipping 1 point) each step: 0 -> 90 -> 180 -> 270 -> 360 (0).
+    const makeCompass = (activeAng) => {
+      let pts = '';
+      for (let i = 0; i < 8; i++) {
+        const ang = i * 45;
+        const pt = rotPt(35, 12, ang);
+        const isActive = ang === activeAng;
+        pts += drawCircle(pt.x, pt.y, isActive ? 5 : 2.5, isActive ? "#ec4899" : "#475569", isActive ? "#ec4899" : "#475569");
+      }
+      return wrapSvg(`
+        ${drawCircle(35, 35, 23, "none", "#334155", 1.5)}
+        ${pts}
+      `);
+    };
+    const seqSvgs = [0, 90, 180, 270].map(ang => makeCompass(ang));
+    const correctSvg = makeCompass(0);
+    const distractors = [makeCompass(45), makeCompass(135), makeCompass(225), makeCompass(315)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Track the active pink marker on the 8-point compass. Which figure comes next?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. The illuminated pink node jumps 90° clockwise in each step: North (0°) → East (90°) → South (180°) → West (270°).\n2. The 5th step completes the full cycle and returns to North (0°).`,
+      category: 'spatial', subType: 'series'
+    };
+  },
+
+  // 10: Binary Counter Matrix (3 Vertical Bars: 1 to 5)
+  (t, k, rand) => {
+    // Binary: 1 (001), 2 (010), 3 (011), 4 (100), 5 (101)
+    const makeBinary = (val) => {
+      const b4 = (val & 4) ? "#10b981" : "#1e293b";
+      const b2 = (val & 2) ? "#10b981" : "#1e293b";
+      const b1 = (val & 1) ? "#10b981" : "#1e293b";
+      return wrapSvg(`
+        ${drawRect(16, 15, 10, 40, b4, "#475569", 1.5, 2)}
+        ${drawRect(30, 15, 10, 40, b2, "#475569", 1.5, 2)}
+        ${drawRect(44, 15, 10, 40, b1, "#475569", 1.5, 2)}
+      `);
+    };
+    const seqSvgs = [1, 2, 3, 4].map(v => makeBinary(v));
+    const correctSvg = makeBinary(5); // 101: left and right illuminated, middle dark
+    const distractors = [makeBinary(6), makeBinary(7), makeBinary(3), makeBinary(2)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Determine the state transition logic of the 3 status indicators. Which is the 5th figure?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. The bars represent a 3-bit binary counter (4-2-1): 001 (1) → 010 (2) → 011 (3) → 100 (4).\n2. Step 5 is binary 5 (101), where the first and third bars are active green.`,
+      category: 'spatial', subType: 'series'
+    };
+  },
+
+  // 11: Wave Amplitude & Frequency Modulation (Crest count 1 to 5)
+  (t, k, rand) => {
+    const makeWave = (nCrests) => {
+      let path = 'M 10 35 ';
+      const stepW = 50 / (nCrests * 2);
+      for (let i = 0; i < nCrests; i++) {
+        const x1 = 10 + (2 * i + 0.5) * stepW;
+        const x2 = 10 + (2 * i + 1) * stepW;
+        const x3 = 10 + (2 * i + 1.5) * stepW;
+        const x4 = 10 + (2 * i + 2) * stepW;
+        path += `Q ${x1} 15, ${x2} 35 Q ${x3} 55, ${x4} 35 `;
+      }
+      return wrapSvg(`
+        ${drawLine(10, 35, 60, 35, "#334155", 1)}
+        <path d="${path}" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
+      `);
+    };
+    const seqSvgs = [1, 2, 3, 4].map(n => makeWave(n));
+    const correctSvg = makeWave(5);
+    const distractors = [makeWave(3), makeWave(4), makeWave(6), makeWave(2)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Which waveform represents the 5th progression in frequency harmonics?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. The frequency increases by exactly +1 full wave cycle (crest & trough) per step: 1 → 2 → 3 → 4 → 5 cycles.\n2. Figure 5 features exactly 5 wave crests.`,
+      category: 'spatial', subType: 'series'
+    };
+  },
+
+  // 12: Mechanical Balance Beam Tilt (-20° to +20°)
+  (t, k, rand) => {
+    const angles = [-20, -10, 0, 10, 20];
+    const makeBeam = (ang) => {
+      const p1 = rotPt(15, 30, ang, 35, 30);
+      const p2 = rotPt(55, 30, ang, 35, 30);
+      return wrapSvg(`
+        ${drawPolygon("35,30 27,55 43,55", "#475569", "#64748b", 1.5)}
+        ${drawLine(p1.x, p1.y, p2.x, p2.y, "#f59e0b", 3)}
+        ${drawCircle(p1.x, p1.y - 5, 4, "#38bdf8", "#38bdf8")}
+        ${drawCircle(p2.x, p2.y - 5, 4, "#ec4899", "#ec4899")}
+      `);
+    };
+    const seqSvgs = [0, 1, 2, 3].map(i => makeBeam(angles[i]));
+    const correctSvg = makeBeam(angles[4]);
+    const distractors = [makeBeam(angles[2]), makeBeam(angles[1]), makeBeam(angles[0]), makeBeam(angles[3])];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Track the angular rotation of the balance beam. Which figure displays the 5th position?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. The beam rotates steadily clockwise in +10° increments: -20° (left down) → -10° → 0° (level) → +10° → +20° (right down).\n2. Figure 5 shows the beam tilted +20°.`,
+      category: 'spatial', subType: 'series'
+    };
+  },
+
+  // 13: Expanding Chevron Arrows (1 to 5 chevrons)
+  (t, k, rand) => {
+    const makeChevrons = (count) => {
+      let ch = '';
+      for (let i = 0; i < count; i++) {
+        const x = 15 + i * 9;
+        ch += drawPolygon(`${x},20 ${x+7},35 ${x},50 ${x+4},50 ${x+11},35 ${x+4},20`, "#a855f7", "#a855f7", 1);
+      }
+      return wrapSvg(ch);
+    };
+    const seqSvgs = [1, 2, 3, 4].map(c => makeChevrons(c));
+    const correctSvg = makeChevrons(5);
+    const distractors = [makeChevrons(3), makeChevrons(4), makeChevrons(6), makeChevrons(2)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Which figure logically completes the advancing chevron sequence?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Exactly one new rightward chevron arrow is appended in each step: 1 → 2 → 3 → 4 → 5 chevrons.\n2. Figure 5 features exactly 5 nested purple chevrons.`,
+      category: 'spatial', subType: 'series'
+    };
+  },
+
+  // 14: Radial Shaded Sectors (12-segment wheel, step +3)
+  (t, k, rand) => {
+    const makeWheel = (secIdx) => {
+      const ang = secIdx * 30;
+      const rad1 = (ang * Math.PI) / 180;
+      const rad2 = ((ang + 30) * Math.PI) / 180;
+      const x1 = (35 + 25 * Math.sin(rad1)).toFixed(1);
+      const y1 = (35 - 25 * Math.cos(rad1)).toFixed(1);
+      const x2 = (35 + 25 * Math.sin(rad2)).toFixed(1);
+      const y2 = (35 - 25 * Math.cos(rad2)).toFixed(1);
+      return wrapSvg(`
+        ${drawCircle(35, 35, 25, "none", "#475569", 2)}
+        <path d="M 35 35 L ${x1} ${y1} A 25 25 0 0 1 ${x2} ${y2} Z" fill="#38bdf8" stroke="#38bdf8" />
+      `);
+    };
+    const seqSvgs = [0, 3, 6, 9].map(s => makeWheel(s));
+    const correctSvg = makeWheel(0); // 12 % 12 = 0
+    const distractors = [makeWheel(2), makeWheel(5), makeWheel(7), makeWheel(10)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Track the movement of the shaded 30° radial sector. Which figure comes next?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. The shaded sector advances clockwise by 90° (+3 sector units) per step: 12:00 → 3:00 → 6:00 → 9:00.\n2. The 5th step advances another 90° and returns to the top 12:00 position.`,
+      category: 'spatial', subType: 'series'
+    };
+  },
+
+  // 15: Orbiting Dual Satellites on Circular Track
+  (t, k, rand) => {
+    const makeOrbit = (step) => {
+      const angA = step * 45;      // Speed 1x
+      const angB = step * 90;      // Speed 2x
+      const pA = rotPt(35, 12, angA);
+      const pB = rotPt(35, 20, angB);
+      return wrapSvg(`
+        ${drawCircle(35, 35, 23, "none", "#334155", 1.5)}
+        ${drawCircle(35, 35, 15, "none", "#334155", 1)}
+        ${drawCircle(pA.x, pA.y, 4, "#38bdf8", "#38bdf8")}
+        ${drawCircle(pB.x, pB.y, 3, "#f59e0b", "#f59e0b")}
+      `);
+    };
+    const seqSvgs = [0, 1, 2, 3].map(s => makeOrbit(s));
+    const correctSvg = makeOrbit(4);
+    const distractors = [makeOrbit(2), makeOrbit(3), makeOrbit(1), makeOrbit(0)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Satellite A (outer, cyan) orbits at 45°/step; Satellite B (inner, amber) orbits at 90°/step. Which is step 5?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Outer cyan satellite advances +45° each step: 0° → 45° → 90° → 135° → 180° (South).\n2. Inner amber satellite advances +90° each step: 0° → 90° → 180° → 270° → 360° (North).\n3. Figure 5 features cyan at bottom and amber at top.`,
+      category: 'spatial', subType: 'series'
+    };
+  },
+
+  // 16: Vertex Truncation Sequence (Triangle -> Square -> Pentagon -> Hexagon -> Heptagon)
+  (t, k, rand) => {
+    const makePoly = (sides) => {
+      const pts = makePolygonPts(sides, 22, 35, 35);
+      return wrapSvg(drawPolygon(pts, "none", "#10b981", 2.5));
+    };
+    const seqSvgs = [3, 4, 5, 6].map(s => makePoly(s));
+    const correctSvg = makePoly(7);
+    const distractors = [makePoly(5), makePoly(6), makePoly(8), makePoly(4)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Which geometric polygon is the 5th term in this vertex progression?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. The number of sides increases strictly by +1: 3 (Triangle) → 4 (Square) → 5 (Pentagon) → 6 (Hexagon) → 7 (Heptagon).\n2. Figure 5 is a 7-sided green regular heptagon.`,
+      category: 'spatial', subType: 'series'
+    };
+  },
+
+  // 17: Alternating Target Rings (Concentric circles fill toggle)
+  (t, k, rand) => {
+    const makeRings = (step) => {
+      let r = '';
+      for (let i = 1; i <= step; i++) {
+        const radius = i * 6;
+        const fill = (i % 2 === 1) ? "#38bdf8" : "#0f172a";
+        r = drawCircle(35, 35, radius, fill, "#cbd5e1", 1) + r;
+      }
+      return wrapSvg(r);
+    };
+    const seqSvgs = [1, 2, 3, 4].map(s => makeRings(s));
+    const correctSvg = makeRings(5);
+    const distractors = [makeRings(3), makeRings(4), makeRings(6), makeRings(2)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Which concentric ring pattern logically completes the ripple expansion sequence?",
+      figureSvg: seqSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. A new concentric boundary ring is added outward each step: 1 → 2 → 3 → 4 → 5 rings.\n2. Alternating layers toggle between cyan fill and slate base.\n3. Figure 5 features exactly 5 concentric boundary rings.`,
+      category: 'spatial', subType: 'series'
+    };
+  }
+];
+
+// -------------------------------------------------------------
+// POOL 2: NOVEL SPATIAL MATRICES (12 Types)
+// -------------------------------------------------------------
+export const MATRIX_ARCHETYPES = [
+  // 0: Line-Crossing Intersection Arithmetic (Row 1: 1 horiz x 1 vert, etc.)
+  (t, k, rand) => {
+    const makeGrid = (h, v) => {
+      let lines = '';
+      const hStep = 40 / (h + 1);
+      for (let i = 1; i <= h; i++) lines += drawLine(15, 15 + i * hStep, 55, 15 + i * hStep, "#38bdf8", 2);
+      const vStep = 40 / (v + 1);
+      for (let j = 1; j <= v; j++) lines += drawLine(15 + j * vStep, 15, 15 + j * vStep, 55, "#f59e0b", 2);
+      return wrapSvg(`${drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1.5, 4)}${lines}`);
+    };
+    const matrixSvgs = [
+      makeGrid(1, 1), makeGrid(1, 2), makeGrid(1, 3),
+      makeGrid(2, 1), makeGrid(2, 2), makeGrid(2, 3),
+      makeGrid(3, 1), makeGrid(3, 2), null
+    ];
+    const correctSvg = makeGrid(3, 3);
+    const distractors = [makeGrid(2, 2), makeGrid(3, 2), makeGrid(2, 3), makeGrid(4, 2)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Identify the pattern governing the 3×3 matrix and determine the missing cell:",
+      matrixSvg: matrixSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Rows govern horizontal blue bars: Row 1 has 1, Row 2 has 2, Row 3 has 3.\n2. Columns govern vertical amber bars: Col 1 has 1, Col 2 has 2, Col 3 has 3.\n3. Missing cell (Row 3, Col 3) must contain exactly 3 horizontal and 3 vertical bars.`,
+      category: 'spatial', subType: 'matrix'
+    };
+  },
+
+  // 1: Component Subtraction / Erasure Matrix (Col 1 minus Col 2 = Col 3)
+  (t, k, rand) => {
+    const makeCell = (hasSquare, hasCircle, hasDiag) => {
+      let inner = '';
+      if (hasSquare) inner += drawRect(20, 20, 30, 30, "none", "#38bdf8", 2);
+      if (hasCircle) inner += drawCircle(35, 35, 12, "none", "#ec4899", 2);
+      if (hasDiag) inner += drawLine(15, 15, 55, 55, "#10b981", 2);
+      return wrapSvg(`${drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1, 4)}${inner}`);
+    };
+    const matrixSvgs = [
+      makeCell(true, true, true),   makeCell(false, true, false),  makeCell(true, false, true),
+      makeCell(true, true, false),  makeCell(true, false, false),  makeCell(false, true, false),
+      makeCell(false, true, true),  makeCell(false, false, true),  null
+    ];
+    const correctSvg = makeCell(false, true, false); // Circle only
+    const distractors = [makeCell(true, false, false), makeCell(false, false, true), makeCell(true, true, false), makeCell(true, false, true)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Determine the row-wise component transformation and complete the 3×3 matrix:",
+      matrixSvg: matrixSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Operation across rows: Cell 3 = Cell 1 minus Cell 2 (elements in Cell 2 are erased from Cell 1).\n2. Row 3: (Circle + Diagonal) minus (Diagonal) = Circle alone.`,
+      category: 'spatial', subType: 'matrix'
+    };
+  },
+
+  // 2: Corner Dot Quadrant Balance (Row sum of dots is constant = 6)
+  (t, k, rand) => {
+    const makeDots = (count) => {
+      const pts = [
+        { x: 22, y: 22 }, { x: 48, y: 22 }, { x: 35, y: 35 },
+        { x: 22, y: 48 }, { x: 48, y: 48 }, { x: 35, y: 22 }
       ];
-      const dp = dotCoords[dotPos % 3];
-      return wrapSvg(`
-        ${drawPolygon(pts, "rgba(56, 189, 248, 0.2)", "#38bdf8", 2)}
-        ${drawCircle(dp.x, dp.y, 3.5, "#f59e0b", "#f59e0b", 1)}
-      `);
+      let d = '';
+      for (let i = 0; i < count; i++) {
+        d += drawCircle(pts[i].x, pts[i].y, 3.5, "#38bdf8", "#38bdf8");
+      }
+      return wrapSvg(`${drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1.5, 4)}${d}`);
     };
-
-    const cells = [
-      makeRotatingShape(0, 0), makeRotatingShape(45, 0), makeRotatingShape(90, 0),
-      makeRotatingShape(0, 1), makeRotatingShape(45, 1), makeRotatingShape(90, 1),
-      makeRotatingShape(0, 2), makeRotatingShape(45, 2), '?'
+    const matrixSvgs = [
+      makeDots(1), makeDots(2), makeDots(3), // Sum = 6
+      makeDots(2), makeDots(3), makeDots(1), // Sum = 6
+      makeDots(3), makeDots(1), null          // Sum = 6 -> Missing = 2
     ];
-
-    const correctSvg = makeRotatingShape(90, 2);
-    const distractors = [
-      makeRotatingShape(90, 0),
-      makeRotatingShape(45, 2),
-      makeRotatingShape(0, 2),
-      makeRotatingShape(135, 2)
-    ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-
+    const correctSvg = makeDots(2);
+    const distractors = [makeDots(1), makeDots(3), makeDots(4), makeDots(5)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
     return {
-      question: `Which figure satisfies both the rotation and position rules in the matrix?`,
-      subType: 'matrix',
-      matrixCells: cells,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Dual Matrix Rule:**\n- **Row Rule:** Shape rotates 45° clockwise across columns (0° ➔ 45° ➔ **90°**).\n- **Column Rule:** Marker dot index is constant across each row (Row 3 uses dot index 2).`,
-      category: 'spatial'
+      question: "Which figure restores quantitative balance to the 3×3 dot matrix?",
+      matrixSvg: matrixSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Each row contains a permutation of 1, 2, and 3 dots (constant sum of 6).\n2. Row 3 contains 3 and 1 dots. The missing cell must contain exactly 2 dots.`,
+      category: 'spatial', subType: 'matrix'
     };
   },
 
-  // 7: 3x3 Concentric Layer Shift Matrix (Outer container by row, inner symbol by col)
+  // 3: Outer Shape / Inner Shape Latin Morphing
   (t, k, rand) => {
-    // Outer: 0=Circle, 1=Square, 2=Triangle
-    // Inner: 0=Cross(+), 1=Dot(●), 2=Diamond(◆)
+    const shapes = ['circle', 'square', 'triangle'];
+    const drawShp = (shp, r, fill, stroke) => {
+      if (shp === 'circle') return drawCircle(35, 35, r, fill, stroke, 2);
+      if (shp === 'square') return drawRect(35 - r, 35 - r, r * 2, r * 2, fill, stroke, 2);
+      if (shp === 'triangle') return drawPolygon(makePolygonPts(3, r * 1.15, 35, 35), fill, stroke, 2);
+    };
+    const makeCompound = (outer, inner) => {
+      return wrapSvg(`
+        ${drawRect(10, 10, 50, 50, "#0f172a", "#334155", 1, 4)}
+        ${drawShp(outer, 18, "none", "#38bdf8")}
+        ${drawShp(inner, 8, "#f59e0b", "#f59e0b")}
+      `);
+    };
+    const matrixSvgs = [
+      makeCompound('circle', 'circle'),   makeCompound('circle', 'square'),   makeCompound('circle', 'triangle'),
+      makeCompound('square', 'circle'),   makeCompound('square', 'square'),   makeCompound('square', 'triangle'),
+      makeCompound('triangle', 'circle'), makeCompound('triangle', 'square'), null
+    ];
+    const correctSvg = makeCompound('triangle', 'triangle');
+    const distractors = [
+      makeCompound('triangle', 'circle'),
+      makeCompound('square', 'triangle'),
+      makeCompound('circle', 'triangle'),
+      makeCompound('triangle', 'square')
+    ];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Which compound figure logically completes the 3×3 matrix?",
+      matrixSvg: matrixSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Outer frame is constant across each row: Row 1 = Circle, Row 2 = Square, Row 3 = Triangle.\n2. Inner core cycles across each column: Col 1 = Circle, Col 2 = Square, Col 3 = Triangle.\n3. Cell (3,3) must have a Triangle exterior with a Triangle interior.`,
+      category: 'spatial', subType: 'matrix'
+    };
+  },
+
+  // 4: Shape Overlap Boolean XOR
+  (t, k, rand) => {
+    // Cell 1 has left bar, Cell 2 has right bar -> Cell 3 has both.
+    // If both have center bar, it disappears in Cell 3 (XOR logic).
+    const makeXor = (l, m, r) => {
+      let lines = '';
+      if (l) lines += drawLine(22, 18, 22, 52, "#38bdf8", 3);
+      if (m) lines += drawLine(35, 18, 35, 52, "#10b981", 3);
+      if (r) lines += drawLine(48, 18, 48, 52, "#ec4899", 3);
+      return wrapSvg(`${drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1, 4)}${lines}`);
+    };
+    const matrixSvgs = [
+      makeXor(true, true, false),  makeXor(false, true, true),  makeXor(true, false, true), // center disappears!
+      makeXor(false, true, false), makeXor(true, false, false), makeXor(true, true, false),
+      makeXor(true, false, true),  makeXor(false, false, true), null
+    ];
+    const correctSvg = makeXor(true, false, false); // right cancels out!
+    const distractors = [makeXor(false, false, true), makeXor(true, false, true), makeXor(true, true, false), makeXor(false, true, false)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Apply the row-wise combination logic (Boolean XOR). Which figure completes the 3×3 matrix?",
+      matrixSvg: matrixSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Across each row, segments that appear in exactly ONE of the first two cells are kept in the third cell; segments appearing in BOTH are canceled out (XOR).\n2. Row 3: (Left + Right) XOR (Right) = Left alone.`,
+      category: 'spatial', subType: 'matrix'
+    };
+  },
+
+  // 5: Diagonal Reflection & Fill Inversion Matrix
+  (t, k, rand) => {
+    const makeQuarter = (rotDeg, fill) => {
+      const p = rotPt(35, 18, rotDeg);
+      return wrapSvg(`
+        ${drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1, 4)}
+        ${drawCircle(p.x, p.y, 10, fill ? "#38bdf8" : "none", "#38bdf8", 2)}
+      `);
+    };
+    const matrixSvgs = [
+      makeQuarter(0, true),   makeQuarter(90, false), makeQuarter(180, true),
+      makeQuarter(90, false), makeQuarter(180, true), makeQuarter(270, false),
+      makeQuarter(180, true), makeQuarter(270, false), null
+    ];
+    const correctSvg = makeQuarter(0, true);
+    const distractors = [makeQuarter(90, true), makeQuarter(0, false), makeQuarter(270, true), makeQuarter(180, false)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Identify the rotation and fill alternation pattern in the matrix. Which figure fills the empty cell?",
+      matrixSvg: matrixSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. The circle rotates +90° clockwise in each step along rows and columns.\n2. The fill strictly alternates: Solid Cyan → Hollow → Solid Cyan.\n3. Following (270°, Hollow), the next cell must be (0° / Top, Solid Cyan).`,
+      category: 'spatial', subType: 'matrix'
+    };
+  },
+
+  // 6: Arrow Vector Directional Addition Matrix
+  (t, k, rand) => {
+    // Arrow directions: North, East, South, West
+    const makeArrow = (dir) => {
+      let x1 = 35, y1 = 35, x2 = 35, y2 = 35;
+      if (dir === 'N') { y1 = 45; y2 = 20; }
+      if (dir === 'S') { y1 = 25; y2 = 50; }
+      if (dir === 'E') { x1 = 20; x2 = 50; }
+      if (dir === 'W') { x1 = 50; x2 = 20; }
+      if (dir === 'NE') { x1 = 25; y1 = 45; x2 = 45; y2 = 25; }
+      return wrapSvg(`
+        ${drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1, 4)}
+        ${drawLine(x1, y1, x2, y2, "#f59e0b", 3)}
+        ${drawCircle(x2, y2, 4, "#f59e0b", "#f59e0b")}
+      `);
+    };
+    const matrixSvgs = [
+      makeArrow('N'), makeArrow('E'), makeArrow('NE'),
+      makeArrow('E'), makeArrow('S'), makeArrow('NE'), // cyclic vectors
+      makeArrow('S'), makeArrow('W'), null
+    ];
+    const correctSvg = makeArrow('NE');
+    const distractors = [makeArrow('N'), makeArrow('S'), makeArrow('E'), makeArrow('W')];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Which directional vector logically completes the 3×3 vector synthesis matrix?",
+      matrixSvg: matrixSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Each row combines two orthogonal arrows into a resultant diagonal vector.\n2. Across all rows, the 3rd column consistently resolves into a diagonal northeast vector.`,
+      category: 'spatial', subType: 'matrix'
+    };
+  },
+
+  // 7: Three-Tier Segment Density Stacking
+  (t, k, rand) => {
+    const makeBars = (count) => {
+      let b = '';
+      for (let i = 0; i < count; i++) {
+        b += drawRect(18, 20 + i * 12, 34, 6, "#38bdf8", "#38bdf8", 1, 2);
+      }
+      return wrapSvg(`${drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1, 4)}${b}`);
+    };
+    const matrixSvgs = [
+      makeBars(1), makeBars(2), makeBars(3),
+      makeBars(2), makeBars(3), makeBars(1),
+      makeBars(3), makeBars(1), null
+    ];
+    const correctSvg = makeBars(2);
+    const distractors = [makeBars(1), makeBars(3), makeBars(4), makeBars(0)];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Which bar stack completes the Latin square density distribution?",
+      matrixSvg: matrixSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Every row and column must contain exactly one cell of 1 bar, 2 bars, and 3 bars.\n2. Row 3 has 3 bars and 1 bar; Column 3 has 3 bars and 1 bar. The missing cell must have 2 bars.`,
+      category: 'spatial', subType: 'matrix'
+    };
+  },
+
+  // 8: 3x3 Dot Grid Tic-Tac-Toe Line Progression Matrix
+  (t, k, rand) => {
+    const makeGridLine = (type) => {
+      let l = '';
+      if (type === 'row1') l = drawLine(18, 22, 52, 22, "#10b981", 3);
+      if (type === 'row2') l = drawLine(18, 35, 52, 35, "#10b981", 3);
+      if (type === 'row3') l = drawLine(18, 48, 52, 48, "#10b981", 3);
+      return wrapSvg(`
+        ${drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1, 4)}
+        ${drawCircle(22, 22, 2, "#475569", "#475569")} ${drawCircle(35, 22, 2, "#475569", "#475569")} ${drawCircle(48, 22, 2, "#475569", "#475569")}
+        ${drawCircle(22, 35, 2, "#475569", "#475569")} ${drawCircle(35, 35, 2, "#475569", "#475569")} ${drawCircle(48, 35, 2, "#475569", "#475569")}
+        ${drawCircle(22, 48, 2, "#475569", "#475569")} ${drawCircle(35, 48, 2, "#475569", "#475569")} ${drawCircle(48, 48, 2, "#475569", "#475569")}
+        ${l}
+      `);
+    };
+    const matrixSvgs = [
+      makeGridLine('row1'), makeGridLine('row2'), makeGridLine('row3'),
+      makeGridLine('row2'), makeGridLine('row3'), makeGridLine('row1'),
+      makeGridLine('row3'), makeGridLine('row1'), null
+    ];
+    const correctSvg = makeGridLine('row2');
+    const distractors = [makeGridLine('row1'), makeGridLine('row3'), wrapSvg(drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1, 4)), makeGridLine('row1')];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Which linear alignment correctly satisfies the 3×3 grid matrix constraints?",
+      matrixSvg: matrixSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Each row and column features top horizontal line, middle horizontal line, and bottom horizontal line.\n2. Row 3 has bottom and top; missing element is the middle horizontal line.`,
+      category: 'spatial', subType: 'matrix'
+    };
+  },
+
+  // 9: Concentric Shape Scaling Matrix (Square, Diamond, Circle)
+  (t, k, rand) => {
     const makeConcentric = (outer, inner) => {
-      let outerSvg = "";
-      if (outer === 0) outerSvg = drawCircle(35, 35, 20, "rgba(30,41,59,0.5)", "#38bdf8", 2);
-      if (outer === 1) outerSvg = drawRect(16, 16, 38, 38, "rgba(30,41,59,0.5)", "#38bdf8", 2);
-      if (outer === 2) outerSvg = drawPolygon("35,14 55,48 15,48", "rgba(30,41,59,0.5)", "#38bdf8", 2);
-
-      let innerSvg = "";
-      if (inner === 0) innerSvg = drawText(35, 35, "+", "#ec4899", 14);
-      if (inner === 1) innerSvg = drawCircle(35, 35, 4.5, "#f59e0b", "#f59e0b", 1);
-      if (inner === 2) innerSvg = drawPolygon("35,28 42,35 35,42 28,35", "#10b981", "#10b981", 1);
-
-      return wrapSvg(outerSvg + innerSvg);
+      let o = '', i = '';
+      if (outer === 'sq') o = drawRect(18, 18, 34, 34, "none", "#38bdf8", 2);
+      if (outer === 'ci') o = drawCircle(35, 35, 17, "none", "#38bdf8", 2);
+      if (inner === 'sq') i = drawRect(28, 28, 14, 14, "#f59e0b", "#f59e0b", 1);
+      if (inner === 'ci') i = drawCircle(35, 35, 7, "#f59e0b", "#f59e0b", 1);
+      return wrapSvg(`${drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1, 4)}${o}${i}`);
     };
-
-    // Row 0: Outer 0 (Circle) with Inner 0, 1, 2
-    // Row 1: Outer 1 (Square) with Inner 0, 1, 2
-    // Row 2: Outer 2 (Triangle) with Inner 0, 1, [Inner 2 (Diamond)]
-    const cells = [
-      makeConcentric(0, 0), makeConcentric(0, 1), makeConcentric(0, 2),
-      makeConcentric(1, 0), makeConcentric(1, 1), makeConcentric(1, 2),
-      makeConcentric(2, 0), makeConcentric(2, 1), '?'
+    const matrixSvgs = [
+      makeConcentric('sq', 'ci'), makeConcentric('ci', 'sq'), makeConcentric('sq', 'sq'),
+      makeConcentric('ci', 'sq'), makeConcentric('sq', 'sq'), makeConcentric('sq', 'ci'),
+      makeConcentric('sq', 'sq'), makeConcentric('sq', 'ci'), null
     ];
+    const correctSvg = makeConcentric('ci', 'sq');
+    const distractors = [makeConcentric('sq', 'sq'), makeConcentric('sq', 'ci'), makeConcentric('ci', 'ci'), wrapSvg(drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1, 4))];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Which concentric figure resolves the pattern in the 3×3 matrix?",
+      matrixSvg: matrixSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Each row and column contains a permutation of: (Square/Circle), (Circle/Square), and (Square/Square).\n2. Row 3 contains (Square/Square) and (Square/Circle); the missing cell must be (Circle/Square).`,
+      category: 'spatial', subType: 'matrix'
+    };
+  },
 
-    const correctSvg = makeConcentric(2, 2); // Triangle with Diamond
-    const distractors = [
-      makeConcentric(2, 0), // Triangle with Cross
-      makeConcentric(2, 1), // Triangle with Dot
-      makeConcentric(0, 2), // Circle with Diamond
-      makeConcentric(1, 2)  // Square with Diamond
+  // 10: Corner Segment Perimeter Walk Matrix (TL -> TR -> BR -> BL)
+  (t, k, rand) => {
+    const makeCornerWalk = (pos) => {
+      let x = 16, y = 16;
+      if (pos === 'TR') { x = 44; y = 16; }
+      if (pos === 'BR') { x = 44; y = 44; }
+      if (pos === 'BL') { x = 16; y = 44; }
+      return wrapSvg(`
+        ${drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1.5, 4)}
+        ${drawRect(x, y, 10, 10, "#a855f7", "#a855f7", 1, 2)}
+      `);
+    };
+    const matrixSvgs = [
+      makeCornerWalk('TL'), makeCornerWalk('TR'), makeCornerWalk('BR'),
+      makeCornerWalk('TR'), makeCornerWalk('BR'), makeCornerWalk('BL'),
+      makeCornerWalk('BR'), makeCornerWalk('BL'), null
     ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-
+    const correctSvg = makeCornerWalk('TL');
+    const distractors = [makeCornerWalk('TR'), makeCornerWalk('BR'), makeCornerWalk('BL'), wrapSvg(drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1, 4))];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
     return {
-      question: `Which figure correctly completes the nested matrix?`,
-      subType: 'matrix',
-      matrixCells: cells,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Grid Synthesis:**\n- **Row Rule:** Outer container is determined by row (Row 3 requires a **Triangle**).\n- **Column Rule:** Inner symbol is determined by column (Column 3 requires a **Diamond**).`,
-      category: 'spatial'
+      question: "Follow the rotational perimeter orbit across the 3×3 matrix. Which figure fills the final position?",
+      matrixSvg: matrixSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. The purple block orbits clockwise around the four corners: TL → TR → BR → BL → TL.\n2. Following BL in Row 3, the block advances back to the Top-Left (TL) corner.`,
+      category: 'spatial', subType: 'matrix'
     };
-  }
-];
+  },
 
-
-
-// -------------------------------------------------------------
-// POOL 3: ODD-ONE-OUT ARCHETYPES (8 Types)
-// -------------------------------------------------------------
-const ODD_ARCHETYPES = [
-  // 0: Chiral Outlier - Asymmetric Flag
+  // 11: Cross and Ring Intersection Matrix
   (t, k, rand) => {
-    const basePts = [
-      { x: 25, y: 15 }, { x: 25, y: 55 },
-      { x: 25, y: 18 }, { x: 48, y: 28 }, { x: 25, y: 38 },
-      { x: 25, y: 55 }, { x: 38, y: 55 }
+    const makeCrossRing = (nBars, ringPos) => {
+      let b = '';
+      if (nBars === 1) b = drawLine(15, 35, 55, 35, "#38bdf8", 2);
+      if (nBars === 2) b = drawLine(15, 35, 55, 35, "#38bdf8", 2) + drawLine(35, 15, 35, 55, "#38bdf8", 2);
+      if (nBars === 3) b = drawLine(15, 35, 55, 35, "#38bdf8", 2) + drawLine(35, 15, 35, 55, "#38bdf8", 2) + drawLine(18, 18, 52, 52, "#38bdf8", 2);
+      const ring = drawCircle(ringPos.x, ringPos.y, 6, "none", "#ec4899", 2);
+      return wrapSvg(`${drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1, 4)}${b}${ring}`);
+    };
+    const matrixSvgs = [
+      makeCrossRing(1, { x: 35, y: 35 }), makeCrossRing(2, { x: 35, y: 35 }), makeCrossRing(3, { x: 35, y: 35 }),
+      makeCrossRing(2, { x: 35, y: 35 }), makeCrossRing(3, { x: 35, y: 35 }), makeCrossRing(1, { x: 35, y: 35 }),
+      makeCrossRing(3, { x: 35, y: 35 }), makeCrossRing(1, { x: 35, y: 35 }), null
     ];
-    const makeFlagSvg = (ang, mirrored = false) => {
-      const pts = basePts.map(p => {
-        const mx = mirrored ? (70 - p.x) : p.x;
-        return rotPt(mx, p.y, ang);
-      });
-      return wrapSvg(`
-        ${drawLine(pts[0].x, pts[0].y, pts[1].x, pts[1].y, "#38bdf8", 3)}
-        ${drawPolygon(`${pts[2].x},${pts[2].y} ${pts[3].x},${pts[3].y} ${pts[4].x},${pts[4].y}`, "rgba(56, 189, 248, 0.25)", "#38bdf8", 2)}
-        ${drawLine(pts[5].x, pts[5].y, pts[6].x, pts[6].y, "#f59e0b", 3)}
-        ${drawCircle(pts[3].x, pts[3].y, 3.5, "#f59e0b", "#f59e0b", 1)}
-      `);
-    };
-
-    const angles = [(k * 35) % 360, (k * 35 + 80) % 360, (k * 35 + 160) % 360, (k * 35 + 245) % 360];
-    const normalSvgs = angles.map(a => makeFlagSvg(a, false));
-    const outlierSvg = makeFlagSvg((k * 35 + 120) % 360, true);
-
-    const rawOpts = [{ svg: outlierSvg }, ...normalSvgs.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
+    const correctSvg = makeCrossRing(2, { x: 35, y: 35 });
+    const distractors = [makeCrossRing(1, { x: 35, y: 35 }), makeCrossRing(3, { x: 35, y: 35 }), makeCrossRing(2, { x: 20, y: 20 }), makeCrossRing(1, { x: 50, y: 50 })];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
     return {
-      question: `Which of the five figures below does NOT belong with the others?`,
-      subType: 'odd_one_out',
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Pattern:**\nFour figures are 2D planar rotations of the same asymmetric flag. Figure ${correctOption} is a **mirror reflection (inverted chirality)** and cannot be rotated into alignment.`,
-      category: 'spatial'
-    };
-  },
-
-  // 1: Chiral Outlier - Notched L-Bracket
-  (t, k, rand) => {
-    const makeLSvg = (ang, mirrored = false) => {
-      const p1 = rotPt(mirrored ? 45 : 25, 20, ang);
-      const p2 = rotPt(mirrored ? 45 : 25, 50, ang);
-      const p3 = rotPt(mirrored ? 15 : 55, 50, ang);
-      const notch = rotPt(mirrored ? 38 : 32, 30, ang);
-      return wrapSvg(`
-        ${drawLine(p1.x, p1.y, p2.x, p2.y, "#10b981", 3.5)}
-        ${drawLine(p2.x, p2.y, p3.x, p3.y, "#10b981", 3.5)}
-        ${drawCircle(p2.x, p2.y, 5, "#f59e0b", "#d97706", 2)}
-        ${drawCircle(p1.x, p1.y, 3, "#10b981", "#10b981", 1)}
-        ${drawCircle(notch.x, notch.y, 3.5, "#ec4899", "#db2777", 1.5)}
-      `);
-    };
-
-    const angles = [(k * 40) % 360, (k * 40 + 75) % 360, (k * 40 + 155) % 360, (k * 40 + 235) % 360];
-    const normalSvgs = angles.map(a => makeLSvg(a, false));
-    const outlierSvg = makeLSvg((k * 40 + 110) % 360, true);
-
-    const rawOpts = [{ svg: outlierSvg }, ...normalSvgs.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-    return {
-      question: `Which figure is the odd one out?`,
-      subType: 'odd_one_out',
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Pattern:**\nFour figures are 2D rotated versions of the same asymmetric bracket. Figure ${correctOption} is a mirror reflection (inverted handedness).`,
-      category: 'spatial'
-    };
-  },
-
-  // 2: Chiral Outlier - Spiral Hook
-  (t, k, rand) => {
-    const makeHook = (ang, mirrored = false) => {
-      const p0 = rotPt(35, 35, ang);
-      const p1 = rotPt(mirrored ? 20 : 50, 35, ang);
-      const p2 = rotPt(mirrored ? 20 : 50, 15, ang);
-      const p3 = rotPt(35, 15, ang);
-      const dot = rotPt(mirrored ? 45 : 25, 25, ang);
-      return wrapSvg(`
-        <path d="M ${p0.x} ${p0.y} L ${p1.x} ${p1.y} L ${p2.x} ${p2.y} L ${p3.x} ${p3.y}" fill="none" stroke="#a855f7" stroke-width="3" stroke-linecap="round" />
-        ${drawCircle(dot.x, dot.y, 4, "#f59e0b", "#f59e0b", 1)}
-      `);
-    };
-
-    const angles = [(k * 45) % 360, (k * 45 + 90) % 360, (k * 45 + 180) % 360, (k * 45 + 270) % 360];
-    const normalSvgs = angles.map(a => makeHook(a, false));
-    const outlierSvg = makeHook((k * 45 + 135) % 360, true);
-
-    const rawOpts = [{ svg: outlierSvg }, ...normalSvgs.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-    return {
-      question: `Which figure cannot be formed by rotating the others in 2D space?`,
-      subType: 'odd_one_out',
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Pattern:**\nFour figures can be superimposed onto one another via 2D rotation. Figure ${correctOption} is a chiral reflection.`,
-      category: 'spatial'
-    };
-  },
-
-  // 3: Bilateral Symmetry Invariant (4 Symmetric vs 1 Asymmetric)
-  (t, k, rand) => {
-    const sym1 = wrapSvg(drawCircle(35, 35, 20, "rgba(56,189,248,0.2)", "#38bdf8", 2));
-    const sym2 = wrapSvg(drawPolygon("35,15 54,48 16,48", "rgba(56,189,248,0.2)", "#38bdf8", 2));
-    const sym3 = wrapSvg(drawRect(18, 22, 34, 26, "rgba(56,189,248,0.2)", "#38bdf8", 2));
-    const sym4 = wrapSvg(`${drawLine(35, 15, 35, 55, "#38bdf8", 3)}${drawLine(15, 35, 55, 35, "#38bdf8", 3)}`);
-    const asymmetric = wrapSvg(drawPolygon("18,18 52,24 44,52 14,42", "rgba(56,189,248,0.2)", "#38bdf8", 2));
-
-    const rawOpts = [{ svg: asymmetric }, { svg: sym1 }, { svg: sym2 }, { svg: sym3 }, { svg: sym4 }];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-    return {
-      question: `Which figure does NOT share the same geometric symmetry property as the others?`,
-      subType: 'odd_one_out',
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Pattern:**\nFigures in the other options all possess at least one axis of **bilateral reflectional symmetry**. Option ${correctOption} is completely asymmetric.`,
-      category: 'spatial'
-    };
-  },
-
-  // 4: Vertex / Side Parity Outlier (4 Even-sided vs 1 Odd-sided)
-  (t, k, rand) => {
-    const pSquare = wrapSvg(drawPolygon(makePolygonPts(4, 20), "rgba(16,185,129,0.2)", "#10b981", 2));
-    const pHexagon = wrapSvg(drawPolygon(makePolygonPts(6, 20), "rgba(16,185,129,0.2)", "#10b981", 2));
-    const pOctagon = wrapSvg(drawPolygon(makePolygonPts(8, 20), "rgba(16,185,129,0.2)", "#10b981", 2));
-    const pDecagon = wrapSvg(drawPolygon(makePolygonPts(10, 20), "rgba(16,185,129,0.2)", "#10b981", 2));
-    const pPentagon = wrapSvg(drawPolygon(makePolygonPts(5, 20), "rgba(16,185,129,0.2)", "#10b981", 2)); // Outlier (5 vertices)
-
-    const rawOpts = [{ svg: pPentagon }, { svg: pSquare }, { svg: pHexagon }, { svg: pOctagon }, { svg: pDecagon }];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-    return {
-      question: `Which polygon is the odd one out based on geometric properties?`,
-      subType: 'odd_one_out',
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Vertex Parity:**\nFour of the polygons have an **even number of vertices/sides** (Square=4, Hexagon=6, Octagon=8, Decagon=10). Figure ${correctOption} is a Pentagon with an **odd number of sides (5)**.`,
-      category: 'spatial'
-    };
-  },
-
-  // 5: Enclosed Regions / Loop Count Outlier (4 have 2 loops, 1 has 3)
-  (t, k, rand) => {
-    const loop2A = wrapSvg(`${drawCircle(28, 35, 12, "none", "#38bdf8", 2)}${drawCircle(42, 35, 12, "none", "#38bdf8", 2)}`); // Intersecting (2 distinct visible lobes + overlap)
-    const loop2B = wrapSvg(`${drawRect(18, 18, 34, 16, "none", "#38bdf8", 2)}${drawRect(18, 36, 34, 16, "none", "#38bdf8", 2)}`); // 2 stacked boxes
-    const loop2C = wrapSvg(`${drawCircle(35, 25, 10, "none", "#38bdf8", 2)}${drawCircle(35, 45, 10, "none", "#38bdf8", 2)}`); // figure-8
-    const loop2D = wrapSvg(`${drawPolygon("35,16 52,34 18,34", "none", "#38bdf8", 2)}${drawPolygon("35,54 52,36 18,36", "none", "#38bdf8", 2)}`); // 2 triangles
-    const loop3Outlier = wrapSvg(`${drawCircle(25, 25, 9, "none", "#38bdf8", 2)}${drawCircle(45, 25, 9, "none", "#38bdf8", 2)}${drawCircle(35, 45, 9, "none", "#38bdf8", 2)}`); // 3 separate circles
-
-    const rawOpts = [{ svg: loop3Outlier }, { svg: loop2A }, { svg: loop2B }, { svg: loop2C }, { svg: loop2D }];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-    return {
-      question: `Which figure does NOT belong with the other four?`,
-      subType: 'odd_one_out',
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Topological Enclosure Rule:**\nFour of the figures consist of exactly **2 enclosed interior regions**. Figure ${correctOption} contains **3 enclosed regions**.`,
-      category: 'spatial'
-    };
-  },
-
-  // 6: Feature Position Relative to Geometry (Dot inside concave vs convex)
-  (t, k, rand) => {
-    const makeArcDot = (ang, isConvex = false) => {
-      const arc = `<path d="M 20 50 A 20 20 0 0 1 50 20" fill="none" stroke="#38bdf8" stroke-width="3" />`;
-      const dotX = isConvex ? 48 : 26;
-      const dotY = isConvex ? 48 : 26;
-      const dp = rotPt(dotX, dotY, ang);
-      return wrapSvg(`
-        <g transform="rotate(${ang} 35 35)">
-          ${arc}
-        </g>
-        ${drawCircle(dp.x, dp.y, 4, "#f59e0b", "#f59e0b", 1)}
-      `);
-    };
-
-    const angles = [(k * 45) % 360, (k * 45 + 90) % 360, (k * 45 + 180) % 360, (k * 45 + 270) % 360];
-    const normalSvgs = angles.map(a => makeArcDot(a, false)); // dot in concave interior
-    const outlierSvg = makeArcDot((k * 45 + 120) % 360, true); // dot on convex exterior
-
-    const rawOpts = [{ svg: outlierSvg }, ...normalSvgs.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-    return {
-      question: `Which figure has a different relative geometric placement of the dot?`,
-      subType: 'odd_one_out',
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Relative Position:**\nIn four figures, the dot is placed **inside the concave interior** of the curved arc. In Figure ${correctOption}, the dot is placed on the **convex outer side**.`,
-      category: 'spatial'
-    };
-  },
-
-  // 7: Open vs Closed Boundary Outlier
-  (t, k, rand) => {
-    const closed1 = wrapSvg(drawRect(18, 18, 34, 34, "none", "#10b981", 2.5));
-    const closed2 = wrapSvg(drawCircle(35, 35, 18, "none", "#10b981", 2.5));
-    const closed3 = wrapSvg(drawPolygon(makePolygonPts(3, 20), "none", "#10b981", 2.5));
-    const closed4 = wrapSvg(drawPolygon(makePolygonPts(6, 20), "none", "#10b981", 2.5));
-    // Open contour: rectangle missing one corner
-    const openContour = wrapSvg(`<path d="M 18 25 L 18 52 L 52 52 L 52 18 L 26 18" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" />`);
-
-    const rawOpts = [{ svg: openContour }, { svg: closed1 }, { svg: closed2 }, { svg: closed3 }, { svg: closed4 }];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
-    return {
-      question: `Which figure is topologically different from the other four?`,
-      subType: 'odd_one_out',
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Continuity Rule:**\nFour of the figures are **complete, closed geometric loops**. Figure ${correctOption} is an **open contour** with a gap.`,
-      category: 'spatial'
+      question: "Which intersected cross configuration completes the 3×3 matrix?",
+      matrixSvg: matrixSvgs, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. Rows and columns cycle through 1 bar, 2 bars (cross), and 3 bars (cross + diagonal).\n2. Missing cell in Row 3 requires 2 intersecting bars with the central pink ring.`,
+      category: 'spatial', subType: 'matrix'
     };
   }
 ];
 
 // -------------------------------------------------------------
-// POOL 4: SPATIAL ANALOGIES (5 Types)
+// POOL 3: NOVEL ODD-ONE-OUT (18 Types)
 // -------------------------------------------------------------
-const ANALOGY_ARCHETYPES = [
-  // 0: Outer / Inner Shape Swap
+export const ODD_ARCHETYPES = [
+  // 0: Eulerian Path Stroke Outlier (4 single-stroke drawable, 1 has 4 odd vertices)
   (t, k, rand) => {
-    const figA = wrapSvg(`${drawCircle(35, 35, 22, "rgba(56,189,248,0.2)", "#38bdf8", 2.5)}${drawPolygon("35,24 44,42 26,42", "#f59e0b", "#f59e0b", 1)}`);
-    const figB = wrapSvg(`${drawPolygon("35,15 54,48 16,48", "rgba(245,158,11,0.2)", "#f59e0b", 2.5)}${drawCircle(35, 35, 8, "#38bdf8", "#38bdf8", 1)}`);
-    const figC = wrapSvg(`${drawRect(15, 15, 40, 40, "rgba(16,185,129,0.2)", "#10b981", 2.5)}${drawPolygon("35,26 43,35 35,44 27,35", "#ec4899", "#ec4899", 1)}`);
-
-    const correctSvg = wrapSvg(`${drawPolygon("35,14 55,35 35,56 15,35", "rgba(236,72,153,0.2)", "#ec4899", 2.5)}${drawRect(27, 27, 16, 16, "#10b981", "#10b981", 1)}`);
-
-    const distractors = [
-      wrapSvg(`${drawRect(15, 15, 40, 40, "rgba(16,185,129,0.2)", "#10b981", 2.5)}${drawCircle(35, 35, 8, "#ec4899", "#ec4899", 1)}`),
-      wrapSvg(`${drawPolygon("35,14 55,35 35,56 15,35", "rgba(236,72,153,0.2)", "#ec4899", 2.5)}${drawCircle(35, 35, 8, "#10b981", "#10b981", 1)}`),
-      figC,
-      wrapSvg(`${drawPolygon("35,14 55,35 35,56 15,35", "rgba(16,185,129,0.2)", "#10b981", 2.5)}${drawPolygon("35,26 43,35 35,44 27,35", "#ec4899", "#ec4899", 1)}`)
+    const makeStar = () => wrapSvg(drawPolygon("35,12 42,27 58,27 45,37 50,53 35,43 20,53 25,37 12,27 28,27", "none", "#38bdf8", 2));
+    const makeHouse = () => wrapSvg(`${drawRect(20, 30, 30, 25, "none", "#38bdf8", 2)}${drawPolygon("20,30 35,15 50,30", "none", "#38bdf8", 2)}`);
+    const makeBowtie = () => wrapSvg(drawPolygon("15,18 55,18 15,52 55,52", "none", "#38bdf8", 2));
+    const makeEnvelope = () => wrapSvg(`${drawRect(15, 25, 40, 28, "none", "#38bdf8", 2)}${drawLine(15, 25, 35, 42, "#38bdf8", 2)}${drawLine(55, 25, 35, 42, "#38bdf8", 2)}`);
+    const makeDoubleKiteNonEuler = () => wrapSvg(`
+      ${drawRect(18, 18, 34, 34, "none", "#38bdf8", 2)}
+      ${drawLine(18, 18, 52, 52, "#38bdf8", 2)}
+      ${drawLine(18, 52, 52, 18, "#38bdf8", 2)}
+    `); // 4 vertices with degree 3 -> Cannot be drawn in a single continuous stroke!
+    const items = [
+      { svg: makeStar() }, { svg: makeHouse() }, { svg: makeBowtie() }, { svg: makeEnvelope() },
+      { svg: makeDoubleKiteNonEuler() }
     ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
+    const { options, correctOption } = randomize(items, 4, rand);
     return {
-      question: `Figure A is to Figure B as Figure C is to which choice?`,
-      subType: 'analogy',
-      contextSvg: { figA, figB, figC },
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Analogy Transformation:**\nThe outer and inner shapes **swap roles**: the outer container becomes the small nested shape inside, and the small inner shape expands to become the outer container.`,
-      category: 'spatial'
+      question: "Four of the five figures can be traced in a single continuous stroke without lifting the pen or retracing any edge (Eulerian path). Which figure is the odd one out?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Topological Rule:**\n1. By Euler's Theorem, a graph has a continuous path if and only if it has 0 or 2 vertices of odd degree.\n2. The outlier figure (square with complete diagonals) has 4 vertices of degree 3, making it topologically impossible to trace in one continuous stroke.`,
+      category: 'spatial', subType: 'odd_one_out'
     };
   },
 
-  // 1: 180° Inversion + Color Flip
+  // 1: Convexity vs Concavity Outlier
   (t, k, rand) => {
-    const figA = wrapSvg(drawPolygon("35,15 54,48 16,48", "#38bdf8", "#38bdf8", 2));
-    const figB = wrapSvg(drawPolygon("35,48 54,15 16,15", "none", "#38bdf8", 2.5));
-    const figC = wrapSvg(`<path d="M 20 45 L 35 18 L 50 45 Z" fill="#f59e0b" stroke="#f59e0b" />`);
-
-    const correctSvg = wrapSvg(`<path d="M 20 22 L 35 49 L 50 22 Z" fill="none" stroke="#f59e0b" stroke-width="2.5" />`);
-    const distractors = [
-      wrapSvg(`<path d="M 20 22 L 35 49 L 50 22 Z" fill="#f59e0b" stroke="#f59e0b" />`), // Inverted but solid
-      wrapSvg(`<path d="M 20 45 L 35 18 L 50 45 Z" fill="none" stroke="#f59e0b" stroke-width="2.5" />`), // Not inverted
-      figC,
-      wrapSvg(`<path d="M 20 45 L 35 18 L 50 45 Z" fill="#f59e0b" stroke="#f59e0b" />`)
+    const makeConvexHex = () => wrapSvg(drawPolygon(makePolygonPts(6, 22, 35, 35), "none", "#38bdf8", 2));
+    const makeConvexOct = () => wrapSvg(drawPolygon(makePolygonPts(8, 22, 35, 35), "none", "#38bdf8", 2));
+    const makeConvexPen = () => wrapSvg(drawPolygon(makePolygonPts(5, 22, 35, 35), "none", "#38bdf8", 2));
+    const makeConvexTrap = () => wrapSvg(drawPolygon("20,20 50,20 58,50 12,50", "none", "#38bdf8", 2));
+    const makeConcaveArrow = () => wrapSvg(drawPolygon("20,20 50,35 20,50 30,35", "none", "#ec4899", 2)); // Concave reflex interior angle > 180°
+    const items = [
+      { svg: makeConvexHex() }, { svg: makeConvexOct() }, { svg: makeConvexPen() }, { svg: makeConvexTrap() },
+      { svg: makeConcaveArrow() }
     ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
+    const { options, correctOption } = randomize(items, 4, rand);
     return {
-      question: `Figure A relates to Figure B as Figure C relates to which choice?`,
-      subType: 'analogy',
-      contextSvg: { figA, figB, figC },
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Rule:**\n1. Invert 180° vertically.\n2. Flip fill from **Solid** to **Outline**.`,
-      category: 'spatial'
+      question: "Which figure does NOT belong with the other four based on geometric convexity?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Geometric Rule:**\n1. Four of the figures are strictly convex polygons (all interior angles are strictly less than 180°).\n2. The outlier chevron arrow is a concave polygon possessing an interior angle greater than 180°.`,
+      category: 'spatial', subType: 'odd_one_out'
     };
   },
 
-  // 2: Vertex Doubling (Triangle -> Hexagon :: Square -> Octagon)
+  // 2: Center of Gravity Mechanical Balance Outlier
   (t, k, rand) => {
-    const figA = wrapSvg(drawPolygon(makePolygonPts(3, 20), "none", "#38bdf8", 2.5));
-    const figB = wrapSvg(drawPolygon(makePolygonPts(6, 20), "none", "#38bdf8", 2.5));
-    const figC = wrapSvg(drawPolygon(makePolygonPts(4, 20), "none", "#f59e0b", 2.5));
-
-    const correctSvg = wrapSvg(drawPolygon(makePolygonPts(8, 20), "none", "#f59e0b", 2.5));
-    const distractors = [
-      wrapSvg(drawPolygon(makePolygonPts(5, 20), "none", "#f59e0b", 2.5)),
-      wrapSvg(drawPolygon(makePolygonPts(6, 20), "none", "#f59e0b", 2.5)),
-      wrapSvg(drawPolygon(makePolygonPts(10, 20), "none", "#f59e0b", 2.5)),
-      wrapSvg(drawPolygon(makePolygonPts(7, 20), "none", "#f59e0b", 2.5))
+    const makeBal = (dx) => wrapSvg(`
+      ${drawPolygon("35,40 27,60 43,60", "#475569", "#64748b", 1.5)}
+      ${drawLine(15, 40, 55, 40, "#38bdf8", 3)}
+      ${drawCircle(35 + dx, 32, 6, "#f59e0b", "#f59e0b")}
+    `);
+    const items = [
+      { svg: makeBal(0) }, { svg: makeBal(0) }, { svg: makeBal(0) }, { svg: makeBal(0) },
+      { svg: makeBal(14) } // heavily displaced off center
     ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
+    const { options, correctOption } = randomize(items, 4, rand);
     return {
-      question: `Figure A relates to Figure B as Figure C relates to:`,
-      subType: 'analogy',
-      contextSvg: { figA, figB, figC },
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Vertex Doubling:**\nTriangle (3 sides) ➔ Hexagon (6 sides, $3 \times 2$). Square (4 sides) ➔ **Octagon (8 sides, $4 \times 2$)**.`,
-      category: 'spatial'
+      question: "Which balanced mechanical scale figure is the outlier?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Physics Rule:**\n1. Four of the scales have their mass centered directly over the fulcrum pivot, maintaining horizontal equilibrium.\n2. The outlier has its load shifted 14 units to the right, which would tip the beam.`,
+      category: 'spatial', subType: 'odd_one_out'
     };
   },
 
-  // 3: Geometric Bisection
+  // 3: Parallel Edge Pairs Outlier (4 have parallel edges, 1 has none)
   (t, k, rand) => {
-    const figA = wrapSvg(drawCircle(35, 35, 22, "rgba(56,189,248,0.3)", "#38bdf8", 2));
+    const makeParallelogram = () => wrapSvg(drawPolygon("18,22 45,22 52,48 25,48", "none", "#38bdf8", 2));
+    const makeHexagon = () => wrapSvg(drawPolygon(makePolygonPts(6, 22, 35, 35), "none", "#38bdf8", 2));
+    const makeRectangle = () => wrapSvg(drawRect(18, 22, 34, 26, "none", "#38bdf8", 2));
+    const makeOctagon = () => wrapSvg(drawPolygon(makePolygonPts(8, 22, 35, 35), "none", "#38bdf8", 2));
+    const makeScaleneTrap = () => wrapSvg(drawPolygon("15,22 48,16 56,52 20,44", "none", "#ec4899", 2)); // 0 pairs of parallel sides!
+    const items = [
+      { svg: makeParallelogram() }, { svg: makeHexagon() }, { svg: makeRectangle() }, { svg: makeOctagon() },
+      { svg: makeScaleneTrap() }
+    ];
+    const { options, correctOption } = randomize(items, 4, rand);
+    return {
+      question: "Four figures possess at least one pair of parallel opposite edges. Which figure is the odd one out?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Geometric Rule:**\n1. Parallelograms, regular hexagons, rectangles, and regular octagons all possess pairs of parallel opposite sides.\n2. The outlier scalene quadrilateral has completely non-parallel sides on all four edges.`,
+      category: 'spatial', subType: 'odd_one_out'
+    };
+  },
+
+  // 4: Rotational Symmetry Order Outlier (4 have 4-fold symmetry, 1 has only 2-fold)
+  (t, k, rand) => {
+    const makeCross4 = () => wrapSvg(`${drawLine(15, 35, 55, 35, "#38bdf8", 3)}${drawLine(35, 15, 35, 55, "#38bdf8", 3)}`);
+    const makeSquare4 = () => wrapSvg(drawRect(20, 20, 30, 30, "none", "#38bdf8", 2));
+    const makeCircle4Dots = () => wrapSvg(`${drawCircle(35, 35, 20, "none", "#38bdf8", 2)}${drawCircle(35, 15, 3, "#38bdf8", "#38bdf8")}${drawCircle(55, 35, 3, "#38bdf8", "#38bdf8")}${drawCircle(35, 55, 3, "#38bdf8", "#38bdf8")}${drawCircle(15, 35, 3, "#38bdf8", "#38bdf8")}`);
+    const makeSwastika4 = () => wrapSvg(`${drawLine(35, 15, 35, 55, "#38bdf8", 2)}${drawLine(15, 35, 55, 35, "#38bdf8", 2)}${drawLine(35, 15, 45, 15, "#38bdf8", 2)}${drawLine(55, 35, 55, 45, "#38bdf8", 2)}${drawLine(35, 55, 25, 55, "#38bdf8", 2)}${drawLine(15, 35, 15, 25, "#38bdf8", 2)}`);
+    const makeRect2 = () => wrapSvg(drawRect(15, 25, 40, 20, "none", "#ec4899", 2)); // Only 2-fold symmetry (180°), NOT 4-fold (90°)!
+    const items = [
+      { svg: makeCross4() }, { svg: makeSquare4() }, { svg: makeCircle4Dots() }, { svg: makeSwastika4() },
+      { svg: makeRect2() }
+    ];
+    const { options, correctOption } = randomize(items, 4, rand);
+    return {
+      question: "Which figure does NOT possess 4-fold (90°) rotational symmetry?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Symmetry Rule:**\n1. Four of the figures map onto themselves under 90° rotations (Order 4 rotational symmetry).\n2. The non-square rectangle only maps onto itself after a 180° rotation (Order 2 symmetry).`,
+      category: 'spatial', subType: 'odd_one_out'
+    };
+  },
+
+  // 5: Closed Loops Count (Genus) Outlier (4 have 2 enclosed loops, 1 has 1)
+  (t, k, rand) => {
+    const makeEight = () => wrapSvg(`${drawCircle(35, 24, 10, "none", "#38bdf8", 2)}${drawCircle(35, 46, 10, "none", "#38bdf8", 2)}`);
+    const makeDoubleSquare = () => wrapSvg(`${drawRect(16, 24, 18, 22, "none", "#38bdf8", 2)}${drawRect(36, 24, 18, 22, "none", "#38bdf8", 2)}`);
+    const makeBullsEye2 = () => wrapSvg(`${drawCircle(35, 35, 22, "none", "#38bdf8", 2)}${drawCircle(35, 35, 12, "none", "#38bdf8", 2)}`);
+    const makeGlasses = () => wrapSvg(`${drawCircle(25, 35, 10, "none", "#38bdf8", 2)}${drawCircle(45, 35, 10, "none", "#38bdf8", 2)}${drawLine(35, 35, 35, 35, "#38bdf8", 2)}`);
+    const makeSingleLoopTriangle = () => wrapSvg(drawPolygon("35,16 55,54 15,54", "none", "#ec4899", 2)); // Only 1 enclosed loop!
+    const items = [
+      { svg: makeEight() }, { svg: makeDoubleSquare() }, { svg: makeBullsEye2() }, { svg: makeGlasses() },
+      { svg: makeSingleLoopTriangle() }
+    ];
+    const { options, correctOption } = randomize(items, 4, rand);
+    return {
+      question: "Topologically, which figure possesses a different number of enclosed regional loops?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Topological Rule:**\n1. Four of the figures partition the plane into exactly 2 closed interior regions (genus 2).\n2. The triangle encloses only a single interior region (genus 1).`,
+      category: 'spatial', subType: 'odd_one_out'
+    };
+  },
+
+  // 6: Tangency Outlier (4 internally tangent, 1 intersecting)
+  (t, k, rand) => {
+    const makeInternalTang = (ang) => {
+      const p = rotPt(35, 23, ang);
+      return wrapSvg(`
+        ${drawCircle(35, 35, 22, "none", "#38bdf8", 2)}
+        ${drawCircle(p.x, p.y, 10, "none", "#38bdf8", 2)}
+      `);
+    };
+    const makeIntersecting = () => wrapSvg(`
+      ${drawCircle(35, 35, 22, "none", "#38bdf8", 2)}
+      ${drawCircle(35, 20, 15, "none", "#ec4899", 2)}
+    `); // Cuts through outer boundary at two points!
+    const items = [
+      { svg: makeInternalTang(0) }, { svg: makeInternalTang(90) }, { svg: makeInternalTang(180) }, { svg: makeInternalTang(270) },
+      { svg: makeIntersecting() }
+    ];
+    const { options, correctOption } = randomize(items, 4, rand);
+    return {
+      question: "Which circular arrangement violates the internal tangency rule?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Geometric Rule:**\n1. Four figures feature an inner circle touching the outer circle at exactly one tangent point.\n2. The outlier inner circle intersects the perimeter at two distinct points.`,
+      category: 'spatial', subType: 'odd_one_out'
+    };
+  },
+
+  // 7: Spiral Chirality / Handedness Outlier (4 clockwise, 1 counter-clockwise)
+  (t, k, rand) => {
+    const makeRightHandCurve = (rotDeg) => {
+      // Clockwise curl: starts center, curves up and right
+      const p = rotPt(35, 15, rotDeg);
+      return wrapSvg(`
+        ${drawCircle(35, 35, 2, "#38bdf8", "#38bdf8")}
+        <path d="M 35 35 A 10 10 0 0 1 45 45 A 20 20 0 0 1 20 30" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" transform="rotate(${rotDeg} 35 35)" />
+      `);
+    };
+    const makeLeftHandCurve = () => {
+      // Counter-clockwise reflection
+      return wrapSvg(`
+        ${drawCircle(35, 35, 2, "#ec4899", "#ec4899")}
+        <path d="M 35 35 A 10 10 0 0 0 25 45 A 20 20 0 0 0 50 30" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round" />
+      `);
+    };
+    const items = [
+      { svg: makeRightHandCurve(0) }, { svg: makeRightHandCurve(90) }, { svg: makeRightHandCurve(180) }, { svg: makeRightHandCurve(270) },
+      { svg: makeLeftHandCurve() }
+    ];
+    const { options, correctOption } = randomize(items, 4, rand);
+    return {
+      question: "Four figures are rigid 2D planar rotations of one chiral motif. Which figure is its mirror reflection?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Chirality Rule:**\n1. Four figures are rotational orientations of a right-handed clockwise curve.\n2. The outlier is a non-superimposable mirror image (chiral enantiomer).`,
+      category: 'spatial', subType: 'odd_one_out'
+    };
+  },
+
+  // 8: Line Segment Count Parity (4 have 6 segments, 1 has 5)
+  (t, k, rand) => {
+    const makeHexagon = () => wrapSvg(drawPolygon(makePolygonPts(6, 22, 35, 35), "none", "#38bdf8", 2));
+    const makeSixSpoke = () => {
+      let l = '';
+      for (let i = 0; i < 6; i++) {
+        const p = rotPt(35, 14, i * 60);
+        l += drawLine(35, 35, p.x, p.y, "#38bdf8", 2);
+      }
+      return wrapSvg(l);
+    };
+    const makeDoubleTriangle = () => wrapSvg(`${drawPolygon(makePolygonPts(3, 18, 35, 26), "none", "#38bdf8", 2)}${drawPolygon(makePolygonPts(3, 18, 35, 44), "none", "#38bdf8", 2)}`);
+    const makeSixStepStairs = () => wrapSvg(`${drawLine(15, 50, 15, 40, "#38bdf8", 2)}${drawLine(15, 40, 30, 40, "#38bdf8", 2)}${drawLine(30, 40, 30, 30, "#38bdf8", 2)}${drawLine(30, 30, 45, 30, "#38bdf8", 2)}${drawLine(45, 30, 45, 20, "#38bdf8", 2)}${drawLine(45, 20, 55, 20, "#38bdf8", 2)}`);
+    const makeFiveSidePentagon = () => wrapSvg(drawPolygon(makePolygonPts(5, 22, 35, 35), "none", "#ec4899", 2)); // 5 sides!
+    const items = [
+      { svg: makeHexagon() }, { svg: makeSixSpoke() }, { svg: makeDoubleTriangle() }, { svg: makeSixStepStairs() },
+      { svg: makeFiveSidePentagon() }
+    ];
+    const { options, correctOption } = randomize(items, 4, rand);
+    return {
+      question: "Four figures consist of exactly 6 line segments. Which figure is the odd one out?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Segment Count Rule:**\n1. Four of the figures are constructed from exactly 6 line segments.\n2. The regular pentagon consists of only 5 line segments.`,
+      category: 'spatial', subType: 'odd_one_out'
+    };
+  },
+
+  // 9: Right Angle Count Outlier (4 have right angles, 1 has none)
+  (t, k, rand) => {
+    const makeSquare = () => wrapSvg(drawRect(20, 20, 30, 30, "none", "#38bdf8", 2));
+    const makeRightTri = () => wrapSvg(drawPolygon("20,20 20,50 50,50", "none", "#38bdf8", 2));
+    const makeL = () => wrapSvg(`${drawLine(20, 15, 20, 50, "#38bdf8", 2.5)}${drawLine(20, 50, 50, 50, "#38bdf8", 2.5)}`);
+    const makeT = () => wrapSvg(`${drawLine(15, 25, 55, 25, "#38bdf8", 2.5)}${drawLine(35, 25, 35, 55, "#38bdf8", 2.5)}`);
+    const makeEquilateral = () => wrapSvg(drawPolygon(makePolygonPts(3, 22, 35, 35), "none", "#ec4899", 2)); // All angles 60°
+    const items = [
+      { svg: makeSquare() }, { svg: makeRightTri() }, { svg: makeL() }, { svg: makeT() },
+      { svg: makeEquilateral() }
+    ];
+    const { options, correctOption } = randomize(items, 4, rand);
+    return {
+      question: "Which figure does NOT contain any 90° right angles?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Angle Rule:**\n1. Four figures contain one or more perpendicular 90° right angles.\n2. The equilateral triangle has all three interior angles measuring exactly 60°.`,
+      category: 'spatial', subType: 'odd_one_out'
+    };
+  },
+
+  // 10: Shaded Area Ratio Outlier (4 are 50% shaded, 1 is 25%)
+  (t, k, rand) => {
+    const makeHalfCircle = () => wrapSvg(`${drawCircle(35, 35, 22, "none", "#38bdf8", 2)}<path d="M 35 13 A 22 22 0 0 1 35 57 Z" fill="#38bdf8" />`);
+    const makeHalfSquare = () => wrapSvg(`${drawRect(18, 18, 34, 34, "none", "#38bdf8", 2)}${drawRect(18, 18, 17, 34, "#38bdf8", "none")}`);
+    const makeDiagHalf = () => wrapSvg(`${drawRect(18, 18, 34, 34, "none", "#38bdf8", 2)}${drawPolygon("18,18 52,18 52,52", "#38bdf8", "none")}`);
+    const makeRingHalf = () => wrapSvg(`${drawCircle(35, 35, 22, "none", "#38bdf8", 2)}<path d="M 35 13 A 22 22 0 0 1 35 57 L 35 45 A 10 10 0 0 0 35 25 Z" fill="#38bdf8" />`);
+    const makeQuarterSquare = () => wrapSvg(`${drawRect(18, 18, 34, 34, "none", "#38bdf8", 2)}${drawRect(18, 18, 17, 17, "#ec4899", "none")}`); // 25% shaded!
+    const items = [
+      { svg: makeHalfCircle() }, { svg: makeHalfSquare() }, { svg: makeDiagHalf() }, { svg: makeRingHalf() },
+      { svg: makeQuarterSquare() }
+    ];
+    const { options, correctOption } = randomize(items, 4, rand);
+    return {
+      question: "Four figures are exactly 50% shaded. Which figure has a different shaded area proportion?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Area Proportion Rule:**\n1. Four of the figures have exactly half (50%) of their total interior area shaded.\n2. The outlier square has only one quadrant (25%) shaded.`,
+      category: 'spatial', subType: 'odd_one_out'
+    };
+  },
+
+  // 11: Interlocking vs Disjoint Rings Outlier
+  (t, k, rand) => {
+    const makeInterlocked = (dx) => wrapSvg(`
+      ${drawCircle(28 + dx, 35, 14, "none", "#38bdf8", 2.5)}
+      ${drawCircle(42 + dx, 35, 14, "none", "#f59e0b", 2.5)}
+    `);
+    const makeDisjoint = () => wrapSvg(`
+      ${drawCircle(22, 35, 10, "none", "#ec4899", 2.5)}
+      ${drawCircle(48, 35, 10, "none", "#ec4899", 2.5)}
+    `); // Distance between centers > sum of radii -> completely separate!
+    const items = [
+      { svg: makeInterlocked(0) }, { svg: makeInterlocked(2) }, { svg: makeInterlocked(-2) }, { makeSvg: makeInterlocked(1), svg: makeInterlocked(1) },
+      { svg: makeDisjoint() }
+    ];
+    const { options, correctOption } = randomize(items, 4, rand);
+    return {
+      question: "Which dual-ring configuration is topologically distinct from the others?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Topological Rule:**\n1. Four of the figures consist of interlocking overlapping rings with a non-empty intersection.\n2. The outlier consists of completely disjoint, disconnected rings with zero overlap.`,
+      category: 'spatial', subType: 'odd_one_out'
+    };
+  },
+
+  // 12: Arrow Cycle Direction (4 clockwise loop, 1 outward radiating)
+  (t, k, rand) => {
+    const makeClockwiseLoop = () => wrapSvg(`
+      ${drawLine(20, 20, 50, 20, "#38bdf8", 2.5)}${drawCircle(50, 20, 3, "#38bdf8", "#38bdf8")}
+      ${drawLine(50, 20, 50, 50, "#38bdf8", 2.5)}${drawCircle(50, 50, 3, "#38bdf8", "#38bdf8")}
+      ${drawLine(50, 50, 20, 50, "#38bdf8", 2.5)}${drawCircle(20, 50, 3, "#38bdf8", "#38bdf8")}
+      ${drawLine(20, 50, 20, 20, "#38bdf8", 2.5)}${drawCircle(20, 20, 3, "#38bdf8", "#38bdf8")}
+    `);
+    const makeClockwiseTri = () => wrapSvg(`
+      ${drawLine(20, 50, 35, 20, "#38bdf8", 2.5)}${drawCircle(35, 20, 3, "#38bdf8", "#38bdf8")}
+      ${drawLine(35, 20, 50, 50, "#38bdf8", 2.5)}${drawCircle(50, 50, 3, "#38bdf8", "#38bdf8")}
+      ${drawLine(50, 50, 20, 50, "#38bdf8", 2.5)}${drawCircle(20, 50, 3, "#38bdf8", "#38bdf8")}
+    `);
+    const makeClockwiseCircle = () => wrapSvg(`
+      <path d="M 35 15 A 20 20 0 1 1 15 35" fill="none" stroke="#38bdf8" stroke-width="2.5" />
+      ${drawCircle(15, 35, 4, "#38bdf8", "#38bdf8")}
+    `);
+    const makeClockwiseHex = () => wrapSvg(`
+      ${drawLine(20, 25, 35, 15, "#38bdf8", 2.5)}${drawCircle(35, 15, 3, "#38bdf8", "#38bdf8")}
+      ${drawLine(35, 15, 50, 25, "#38bdf8", 2.5)}${drawCircle(50, 25, 3, "#38bdf8", "#38bdf8")}
+      ${drawLine(50, 25, 50, 45, "#38bdf8", 2.5)}${drawCircle(50, 45, 3, "#38bdf8", "#38bdf8")}
+    `);
+    const makeOutwardArrows = () => wrapSvg(`
+      ${drawLine(35, 35, 35, 15, "#ec4899", 2.5)}${drawCircle(35, 15, 3, "#ec4899", "#ec4899")}
+      ${drawLine(35, 35, 55, 35, "#ec4899", 2.5)}${drawCircle(55, 35, 3, "#ec4899", "#ec4899")}
+      ${drawLine(35, 35, 35, 55, "#ec4899", 2.5)}${drawCircle(35, 55, 3, "#ec4899", "#ec4899")}
+      ${drawLine(35, 35, 15, 35, "#ec4899", 2.5)}${drawCircle(15, 35, 3, "#ec4899", "#ec4899")}
+    `); // Divergent outward radial vectors, not a circulating loop!
+    const items = [
+      { svg: makeClockwiseLoop() }, { svg: makeClockwiseTri() }, { svg: makeClockwiseCircle() }, { svg: makeClockwiseHex() },
+      { svg: makeOutwardArrows() }
+    ];
+    const { options, correctOption } = randomize(items, 4, rand);
+    return {
+      question: "Which vector configuration is the odd one out based on cyclic flow?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Vector Flow Rule:**\n1. Four of the figures form directed cyclic loops flowing in a closed circuit.\n2. The outlier features four vectors diverging outward away from a central source.`,
+      category: 'spatial', subType: 'odd_one_out'
+    };
+  },
+
+  // 13: Perimeter Vertex Count (4 have 6 vertices, 1 has 5)
+  (t, k, rand) => {
+    const makeHex = () => wrapSvg(drawPolygon(makePolygonPts(6, 22, 35, 35), "none", "#38bdf8", 2));
+    const makeCrossStar = () => wrapSvg(drawPolygon("35,14 42,28 56,35 42,42 35,56 28,42 14,35 28,28", "none", "#38bdf8", 2)); // 8 vertices wait
+    const makeHourglass = () => wrapSvg(drawPolygon("20,18 50,18 35,35 50,52 20,52 35,35", "none", "#38bdf8", 2));
+    const makeChevron = () => wrapSvg(drawPolygon("15,18 35,32 55,18 55,30 35,44 15,30", "none", "#38bdf8", 2)); // 6 vertices
+    const makeLShaped = () => wrapSvg(drawPolygon("20,18 36,18 36,36 52,36 52,52 20,52", "none", "#38bdf8", 2)); // 6 vertices
+    const makePent = () => wrapSvg(drawPolygon(makePolygonPts(5, 22, 35, 35), "none", "#ec4899", 2)); // 5 vertices!
+    const items = [
+      { svg: makeHex() }, { svg: makeHourglass() }, { svg: makeChevron() }, { svg: makeLShaped() },
+      { svg: makePent() }
+    ];
+    const { options, correctOption } = randomize(items, 4, rand);
+    return {
+      question: "Four figures each have exactly 6 perimeter vertices. Which figure is the odd one out?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Vertex Rule:**\n1. Four of the polygons possess exactly 6 vertices on their boundary.\n2. The regular pentagon possesses only 5 vertices.`,
+      category: 'spatial', subType: 'odd_one_out'
+    };
+  },
+
+  // 14: Bilateral Reflection Symmetry Axes (4 have 2 axes, 1 has only 1)
+  (t, k, rand) => {
+    const makeRectangle = () => wrapSvg(drawRect(18, 25, 34, 20, "none", "#38bdf8", 2)); // 2 axes
+    const makeRhombus = () => wrapSvg(drawPolygon("35,16 52,35 35,54 18,35", "none", "#38bdf8", 2)); // 2 axes
+    const makeEllipse = () => wrapSvg(`<ellipse cx="35" cy="35" rx="20" ry="12" fill="none" stroke="#38bdf8" stroke-width="2" />`); // 2 axes
+    const makeHLetter = () => wrapSvg(`${drawLine(22, 18, 22, 52, "#38bdf8", 3)}${drawLine(48, 18, 48, 52, "#38bdf8", 3)}${drawLine(22, 35, 48, 35, "#38bdf8", 3)}`); // 2 axes
+    const makeIsoscelesTri = () => wrapSvg(drawPolygon("35,16 52,52 18,52", "none", "#ec4899", 2)); // Only 1 vertical axis!
+    const items = [
+      { svg: makeRectangle() }, { svg: makeRhombus() }, { svg: makeEllipse() }, { svg: makeHLetter() },
+      { svg: makeIsoscelesTri() }
+    ];
+    const { options, correctOption } = randomize(items, 4, rand);
+    return {
+      question: "Four figures possess exactly two orthogonal axes of bilateral reflection symmetry. Which figure is the odd one out?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Symmetry Rule:**\n1. The rectangle, rhombus, ellipse, and 'H' shape each have 2 axes of mirror symmetry (horizontal and vertical).\n2. The isosceles triangle possesses only 1 vertical axis of symmetry.`,
+      category: 'spatial', subType: 'odd_one_out'
+    };
+  },
+
+  // 15: Punctured Holes Count Outlier (4 have 3 holes, 1 has 2)
+  (t, k, rand) => {
+    const makeHoles = (count) => {
+      const pts = [{ x: 25, y: 28 }, { x: 45, y: 28 }, { x: 35, y: 46 }];
+      let h = '';
+      for (let i = 0; i < count; i++) {
+        h += drawCircle(pts[i].x, pts[i].y, 4, "#0f172a", "#0f172a");
+      }
+      return wrapSvg(`
+        ${drawRect(15, 15, 40, 40, "#38bdf8", "#38bdf8", 1, 4)}
+        ${h}
+      `);
+    };
+    const items = [
+      { svg: makeHoles(3) }, { svg: makeHoles(3) }, { svg: makeHoles(3) }, { svg: makeHoles(3) },
+      { svg: makeHoles(2) } // Only 2 holes!
+    ];
+    const { options, correctOption } = randomize(items, 4, rand);
+    return {
+      question: "Which punched tile has a different quantity of interior cutouts?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Puncture Rule:**\n1. Four tiles have exactly 3 circular cutouts drilled through their faces.\n2. The outlier tile has only 2 cutouts.`,
+      category: 'spatial', subType: 'odd_one_out'
+    };
+  },
+
+  // 16: Corner Tick Marks Orientation (4 inward, 1 outward)
+  (t, k, rand) => {
+    const makeTicks = (outward) => {
+      const d = outward ? 6 : -6;
+      return wrapSvg(`
+        ${drawRect(22, 22, 26, 26, "none", "#38bdf8", 2)}
+        ${drawLine(22, 22, 22 + d, 22 + d, "#38bdf8", 2)}
+        ${drawLine(48, 22, 48 - d, 22 + d, "#38bdf8", 2)}
+        ${drawLine(48, 48, 48 - d, 48 - d, "#38bdf8", 2)}
+        ${drawLine(22, 48, 22 + d, 48 - d, "#38bdf8", 2)}
+      `);
+    };
+    const items = [
+      { svg: makeTicks(false) }, { svg: makeTicks(false) }, { svg: makeTicks(false) }, { svg: makeTicks(false) },
+      { svg: makeTicks(true) } // Ticks point outwards!
+    ];
+    const { options, correctOption } = randomize(items, 4, rand);
+    return {
+      question: "Which figure displays corner spurs pointing in an opposite direction relative to its interior?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Orientation Rule:**\n1. Four figures have corner tick marks directed diagonally inward towards the center.\n2. The outlier has corner spurs extending diagonally outward away from the perimeter.`,
+      category: 'spatial', subType: 'odd_one_out'
+    };
+  },
+
+  // 17: Isometric 3D Cube Perspective (4 valid cubes, 1 impossible Escher inversion)
+  (t, k, rand) => {
+    const makeValidCube = (rot) => {
+      return wrapSvg(`
+        ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#38bdf8", 2)}
+        ${drawPolygon("18,26 35,36 35,54 18,44", "none", "#38bdf8", 2)}
+        ${drawPolygon("52,26 35,36 35,54 52,44", "none", "#38bdf8", 2)}
+      `);
+    };
+    const makeImpossibleCube = () => {
+      return wrapSvg(`
+        ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#ec4899", 2)}
+        ${drawLine(18, 26, 52, 44, "#ec4899", 2)} <!-- paradoxical crossing line -->
+        ${drawLine(52, 26, 18, 44, "#ec4899", 2)}
+      `);
+    };
+    const items = [
+      { svg: makeValidCube(0) }, { svg: makeValidCube(0) }, { svg: makeValidCube(0) }, { svg: makeValidCube(0) },
+      { svg: makeImpossibleCube() }
+    ];
+    const { options, correctOption } = randomize(items, 4, rand);
+    return {
+      question: "Which isometric representation is a paradoxical impossible object?",
+      options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Geometric Rule:**\n1. Four figures depict geometrically valid 3D isometric cubes.\n2. The outlier contains contradictory overlapping interior edges that create a geometrically impossible figure.`,
+      category: 'spatial', subType: 'odd_one_out'
+    };
+  }
+];
+
+// -------------------------------------------------------------
+// POOL 4: NOVEL SPATIAL ANALOGIES (10 Types)
+// -------------------------------------------------------------
+export const ANALOGY_ARCHETYPES = [
+  // 0: 2D-to-3D Extrusion (Circle : Cylinder :: Triangle : Prism)
+  (t, k, rand) => {
+    const figA = wrapSvg(drawCircle(35, 35, 18, "none", "#38bdf8", 2));
     const figB = wrapSvg(`
-      <path d="M 32 13 A 22 22 0 0 0 32 57 Z" fill="rgba(56,189,248,0.3)" stroke="#38bdf8" stroke-width="2" />
-      <path d="M 38 13 A 22 22 0 0 1 38 57 Z" fill="rgba(56,189,248,0.3)" stroke="#38bdf8" stroke-width="2" />
+      <ellipse cx="35" cy="22" rx="18" ry="7" fill="none" stroke="#38bdf8" stroke-width="2" />
+      <ellipse cx="35" cy="48" rx="18" ry="7" fill="none" stroke="#38bdf8" stroke-width="2" />
+      ${drawLine(17, 22, 17, 48, "#38bdf8", 2)}${drawLine(53, 22, 53, 48, "#38bdf8", 2)}
     `);
-    const figC = wrapSvg(drawRect(18, 18, 34, 34, "rgba(245,158,11,0.3)", "#f59e0b", 2));
-
+    const figC = wrapSvg(drawPolygon(makePolygonPts(3, 20, 35, 38), "none", "#f59e0b", 2));
     const correctSvg = wrapSvg(`
-      <rect x="15" y="18" width="16" height="34" fill="rgba(245,158,11,0.3)" stroke="#f59e0b" stroke-width="2" />
-      <rect x="39" y="18" width="16" height="34" fill="rgba(245,158,11,0.3)" stroke="#f59e0b" stroke-width="2" />
+      ${drawPolygon("35,16 18,30 52,30", "none", "#f59e0b", 2)}
+      ${drawPolygon("35,40 18,54 52,54", "none", "#f59e0b", 2)}
+      ${drawLine(35, 16, 35, 40, "#f59e0b", 2)}${drawLine(18, 30, 18, 54, "#f59e0b", 2)}${drawLine(52, 30, 52, 54, "#f59e0b", 2)}
     `);
-
     const distractors = [
-      wrapSvg(`<rect x="18" y="18" width="34" height="16" fill="rgba(245,158,11,0.3)" stroke="#f59e0b" stroke-width="2" />`),
-      figC,
-      wrapSvg(`<rect x="18" y="18" width="34" height="34" fill="none" stroke="#f59e0b" stroke-width="2" />`),
-      wrapSvg(drawCircle(35, 35, 12, "#f59e0b", "#f59e0b", 1))
+      wrapSvg(drawPolygon(makePolygonPts(3, 20, 35, 38), "#f59e0b", "#f59e0b", 1)),
+      wrapSvg(drawRect(20, 20, 30, 30, "none", "#f59e0b", 2)),
+      figB,
+      wrapSvg(drawPolygon("35,16 18,30 52,30", "none", "#38bdf8", 2))
     ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
     return {
-      question: `Figure A relates to Figure B as Figure C relates to:`,
-      subType: 'analogy',
-      contextSvg: { figA, figB, figC },
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Bisection:**\nThe figure is cleanly bisected along its vertical axis of symmetry and split into two separated halves.`,
-      category: 'spatial'
+      question: "Figure A is to Figure B as Figure C is to which option?",
+      analogySvg: { a: figA, b: figB, c: figC }, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Analogy Rule:**\n1. Figure A (2D Circle) is extruded vertically into Figure B (3D Cylinder).\n2. Applying this extrusion to Figure C (2D Triangle) yields a 3D Triangular Prism.`,
+      category: 'spatial', subType: 'analogy'
     };
   },
 
-  // 4: Feature Extraction (Inner symbol extracted)
+  // 1: Diagonal Reflection with Fill Swap
   (t, k, rand) => {
-    const figA = wrapSvg(`${drawPolygon(makePolygonPts(6, 22), "none", "#38bdf8", 2)}${drawText(35, 35, "+", "#ec4899", 16)}`);
-    const figB = wrapSvg(drawText(35, 35, "+", "#ec4899", 18));
-    const figC = wrapSvg(`${drawRect(16, 16, 38, 38, "none", "#10b981", 2)}${drawText(35, 35, "★", "#f59e0b", 16)}`);
-
-    const correctSvg = wrapSvg(drawText(35, 35, "★", "#f59e0b", 18));
+    const figA = wrapSvg(`${drawRect(18, 18, 34, 34, "none", "#38bdf8", 2)}${drawCircle(26, 26, 5, "#38bdf8", "#38bdf8")}`);
+    const figB = wrapSvg(`${drawRect(18, 18, 34, 34, "none", "#38bdf8", 2)}${drawCircle(44, 44, 5, "none", "#38bdf8", 2)}`);
+    const figC = wrapSvg(`${drawPolygon(makePolygonPts(3, 22, 35, 38), "none", "#f59e0b", 2)}${drawRect(31, 23, 8, 8, "#f59e0b", "#f59e0b")}`);
+    const correctSvg = wrapSvg(`${drawPolygon(makePolygonPts(3, 22, 35, 38, 90), "none", "#f59e0b", 2)}${drawRect(31, 41, 8, 8, "none", "#f59e0b", 2)}`);
     const distractors = [
-      wrapSvg(drawRect(24, 24, 22, 22, "none", "#10b981", 2)),
-      figC,
-      wrapSvg(drawText(35, 35, "▲", "#f59e0b", 18)),
-      wrapSvg(drawText(35, 35, "●", "#f59e0b", 18))
+      wrapSvg(`${drawPolygon(makePolygonPts(3, 22, 35, 38), "none", "#f59e0b", 2)}${drawRect(31, 41, 8, 8, "#f59e0b", "#f59e0b")}`),
+      figA, figB, figC
     ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
     return {
-      question: `Figure A is to Figure B as Figure C is to:`,
-      subType: 'analogy',
-      contextSvg: { figA, figB, figC },
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Feature Extraction:**\nThe outer container disappears, leaving only the **internal symbol**.`,
-      category: 'spatial'
+      question: "Complete the geometric analogy:",
+      analogySvg: { a: figA, b: figB, c: figC }, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Analogy Rule:**\n1. The inner marker reflects to the opposing opposite vertex and inverts its fill from solid to hollow.\n2. Applying this to C reflects the inner square and converts it from solid to outline.`,
+      category: 'spatial', subType: 'analogy'
+    };
+  },
+
+  // 2: Nested Inversion (Inner becomes Outer)
+  (t, k, rand) => {
+    const figA = wrapSvg(`${drawCircle(35, 35, 20, "none", "#38bdf8", 2)}${drawRect(27, 27, 16, 16, "#f59e0b", "#f59e0b")}`);
+    const figB = wrapSvg(`${drawRect(20, 20, 30, 30, "none", "#f59e0b", 2)}${drawCircle(35, 35, 8, "#38bdf8", "#38bdf8")}`);
+    const figC = wrapSvg(`${drawPolygon(makePolygonPts(3, 22, 35, 38), "none", "#10b981", 2)}${drawCircle(35, 36, 6, "#ec4899", "#ec4899")}`);
+    const correctSvg = wrapSvg(`${drawCircle(35, 35, 20, "none", "#ec4899", 2)}${drawPolygon(makePolygonPts(3, 10, 35, 36), "#10b981", "#10b981")}`);
+    const distractors = [
+      wrapSvg(`${drawPolygon(makePolygonPts(3, 22, 35, 38), "none", "#ec4899", 2)}${drawCircle(35, 36, 6, "#10b981", "#10b981")}`),
+      figA, figB, figC
+    ];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Figure A is to Figure B as Figure C is to which option?",
+      analogySvg: { a: figA, b: figB, c: figC }, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Analogy Rule:**\n1. The inner shape becomes the new outer shape, while the outer shape shrinks to become the new inner core.\n2. Colors and fills exchange roles accordingly.`,
+      category: 'spatial', subType: 'analogy'
+    };
+  },
+
+  // 3: Overlapping Core Subtraction
+  (t, k, rand) => {
+    const figA = wrapSvg(`${drawCircle(30, 35, 14, "#38bdf8", "none")}${drawCircle(40, 35, 14, "#38bdf8", "none")}`);
+    const figB = wrapSvg(`<path d="M 35 25 A 14 14 0 0 1 35 45 A 14 14 0 0 1 35 25 Z" fill="#38bdf8" />`); // Intersection only!
+    const figC = wrapSvg(`${drawRect(20, 25, 20, 20, "#f59e0b", "none")}${drawRect(30, 25, 20, 20, "#f59e0b", "none")}`);
+    const correctSvg = wrapSvg(drawRect(30, 25, 10, 20, "#f59e0b", "none")); // Overlap rectangle!
+    const distractors = [wrapSvg(drawRect(20, 25, 30, 20, "#f59e0b", "none")), figA, figB, figC];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Which figure completes the intersection analogy?",
+      analogySvg: { a: figA, b: figB, c: figC }, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Analogy Rule:**\n1. The transformation extracts ONLY the shared geometric intersection region.\n2. For two overlapping squares, the intersection is a rectangle of width 10.`,
+      category: 'spatial', subType: 'analogy'
+    };
+  },
+
+  // 4: Rotation +90° and Vertex Doubling
+  (t, k, rand) => {
+    const figA = wrapSvg(drawPolygon(makePolygonPts(3, 20, 35, 35), "none", "#38bdf8", 2));
+    const figB = wrapSvg(drawPolygon(makePolygonPts(6, 20, 35, 35), "none", "#38bdf8", 2)); // 3 -> 6
+    const figC = wrapSvg(drawRect(20, 20, 30, 30, "none", "#a855f7", 2)); // 4 sides
+    const correctSvg = wrapSvg(drawPolygon(makePolygonPts(8, 20, 35, 35), "none", "#a855f7", 2)); // 4 -> 8 (Octagon)
+    const distractors = [wrapSvg(drawPolygon(makePolygonPts(6, 20, 35, 35), "none", "#a855f7", 2)), figA, figB, figC];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Determine the geometric transformation rule and complete the analogy:",
+      analogySvg: { a: figA, b: figB, c: figC }, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Analogy Rule:**\n1. The vertex count doubles: Triangle (3 vertices) doubles to Hexagon (6 vertices).\n2. Square (4 vertices) doubles to Octagon (8 vertices).`,
+      category: 'spatial', subType: 'analogy'
+    };
+  },
+
+  // 5: Bisection and Displacement
+  (t, k, rand) => {
+    const figA = wrapSvg(drawCircle(35, 35, 18, "none", "#38bdf8", 2));
+    const figB = wrapSvg(`
+      <path d="M 28 17 A 18 18 0 0 0 28 53 Z" fill="none" stroke="#38bdf8" stroke-width="2" />
+      <path d="M 42 17 A 18 18 0 0 1 42 53 Z" fill="none" stroke="#38bdf8" stroke-width="2" />
+    `);
+    const figC = wrapSvg(drawRect(20, 20, 30, 30, "none", "#f59e0b", 2));
+    const correctSvg = wrapSvg(`
+      ${drawRect(15, 20, 15, 30, "none", "#f59e0b", 2)}
+      ${drawRect(40, 20, 15, 30, "none", "#f59e0b", 2)}
+    `);
+    const distractors = [wrapSvg(drawRect(20, 20, 30, 30, "none", "#f59e0b", 2)), figB, figC, figA];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Figure A is to Figure B as Figure C is to which option?",
+      analogySvg: { a: figA, b: figB, c: figC }, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Analogy Rule:**\n1. The figure is bisected vertically down the center line and pulled apart horizontally.\n2. Bisecting the square yields two separated vertical rectangles.`,
+      category: 'spatial', subType: 'analogy'
+    };
+  },
+
+  // 6: Radial Reversal (Outward vs Inward)
+  (t, k, rand) => {
+    const figA = wrapSvg(`${drawCircle(35, 35, 8, "none", "#38bdf8", 2)}${drawLine(35, 27, 35, 15, "#38bdf8", 2)}${drawLine(43, 35, 55, 35, "#38bdf8", 2)}${drawLine(35, 43, 35, 55, "#38bdf8", 2)}${drawLine(27, 35, 15, 35, "#38bdf8", 2)}`);
+    const figB = wrapSvg(`${drawCircle(35, 35, 22, "none", "#38bdf8", 2)}${drawLine(35, 13, 35, 25, "#38bdf8", 2)}${drawLine(57, 35, 45, 35, "#38bdf8", 2)}${drawLine(35, 57, 35, 45, "#38bdf8", 2)}${drawLine(13, 35, 25, 35, "#38bdf8", 2)}`);
+    const figC = wrapSvg(`${drawRect(28, 28, 14, 14, "none", "#10b981", 2)}${drawLine(35, 28, 35, 15, "#10b981", 2)}${drawLine(42, 35, 55, 35, "#10b981", 2)}${drawLine(35, 42, 35, 55, "#10b981", 2)}${drawLine(28, 35, 15, 35, "#10b981", 2)}`);
+    const correctSvg = wrapSvg(`${drawRect(18, 18, 34, 34, "none", "#10b981", 2)}${drawLine(35, 18, 35, 28, "#10b981", 2)}${drawLine(52, 35, 42, 35, "#10b981", 2)}${drawLine(35, 52, 35, 42, "#10b981", 2)}${drawLine(18, 35, 28, 35, "#10b981", 2)}`);
+    const distractors = [figA, figB, figC, wrapSvg(drawRect(18, 18, 34, 34, "none", "#10b981", 2))];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Which figure satisfies the radial reversal analogy?",
+      analogySvg: { a: figA, b: figB, c: figC }, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Analogy Rule:**\n1. The central shape expands to an outer boundary, and radiating spurs invert to point inwards towards the center.\n2. Applying this to C produces an outer square with spurs pointing inwards.`,
+      category: 'spatial', subType: 'analogy'
+    };
+  },
+
+  // 7: Concentric Shell Multiplication (1 to 3 concentric rings)
+  (t, k, rand) => {
+    const figA = wrapSvg(drawCircle(35, 35, 20, "none", "#38bdf8", 2));
+    const figB = wrapSvg(`${drawCircle(35, 35, 20, "none", "#38bdf8", 2)}${drawCircle(35, 35, 14, "none", "#38bdf8", 2)}${drawCircle(35, 35, 8, "none", "#38bdf8", 2)}`);
+    const figC = wrapSvg(drawPolygon(makePolygonPts(3, 22, 35, 38), "none", "#a855f7", 2));
+    const correctSvg = wrapSvg(`
+      ${drawPolygon(makePolygonPts(3, 22, 35, 38), "none", "#a855f7", 2)}
+      ${drawPolygon(makePolygonPts(3, 15, 35, 38), "none", "#a855f7", 2)}
+      ${drawPolygon(makePolygonPts(3, 8, 35, 38), "none", "#a855f7", 2)}
+    `);
+    const distractors = [figB, figC, figA, wrapSvg(drawPolygon(makePolygonPts(3, 15, 35, 38), "#a855f7", "#a855f7", 1))];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Figure A is to Figure B as Figure C is to which option?",
+      analogySvg: { a: figA, b: figB, c: figC }, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Analogy Rule:**\n1. The single geometric shape is duplicated into 3 nested concentric shells.\n2. A single triangle becomes 3 nested concentric triangles.`,
+      category: 'spatial', subType: 'analogy'
+    };
+  },
+
+  // 8: 45° Shear Transformation (Square -> Parallelogram :: Circle -> Ellipse)
+  (t, k, rand) => {
+    const figA = wrapSvg(drawRect(20, 20, 30, 30, "none", "#38bdf8", 2));
+    const figB = wrapSvg(drawPolygon("28,20 58,20 42,50 12,50", "none", "#38bdf8", 2)); // 45° sheared parallelogram
+    const figC = wrapSvg(drawCircle(35, 35, 18, "none", "#f59e0b", 2));
+    const correctSvg = wrapSvg(`<ellipse cx="35" cy="35" rx="20" ry="11" fill="none" stroke="#f59e0b" stroke-width="2" transform="rotate(-30 35 35)" />`);
+    const distractors = [figC, figB, figA, wrapSvg(drawCircle(35, 35, 12, "none", "#f59e0b", 2))];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Complete the affine shear analogy:",
+      analogySvg: { a: figA, b: figB, c: figC }, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Analogy Rule:**\n1. The square undergoes a planar diagonal shear into a tilted parallelogram.\n2. Under the identical affine shear, a circle deforms into a tilted ellipse.`,
+      category: 'spatial', subType: 'analogy'
+    };
+  },
+
+  // 9: Boundary Solid Toggle with Inverted Core Dot
+  (t, k, rand) => {
+    const figA = wrapSvg(`${drawPolygon(makePolygonPts(6, 20, 35, 35), "none", "#38bdf8", 2)}${drawCircle(35, 35, 5, "#38bdf8", "#38bdf8")}`);
+    const figB = wrapSvg(`${drawPolygon(makePolygonPts(6, 20, 35, 35), "#38bdf8", "#38bdf8", 1)}${drawCircle(35, 35, 5, "#0f172a", "#0f172a")}`);
+    const figC = wrapSvg(`${drawRect(20, 20, 30, 30, "none", "#ec4899", 2)}${drawCircle(35, 35, 5, "#ec4899", "#ec4899")}`);
+    const correctSvg = wrapSvg(`${drawRect(20, 20, 30, 30, "#ec4899", "#ec4899", 1)}${drawCircle(35, 35, 5, "#0f172a", "#0f172a")}`);
+    const distractors = [figA, figB, figC, wrapSvg(drawRect(20, 20, 30, 30, "#ec4899", "#ec4899", 1))];
+    const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
+    return {
+      question: "Which figure correctly completes the fill inversion analogy?",
+      analogySvg: { a: figA, b: figB, c: figC }, options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Analogy Rule:**\n1. The outline body becomes completely filled with solid color, while the interior core dot inverts to hollow background color.\n2. Applying this to C produces a solid pink square containing a dark cutout center dot.`,
+      category: 'spatial', subType: 'analogy'
     };
   }
 ];
 
 // -------------------------------------------------------------
-// POOL 5: 3D CUBE & PAPER FOLDING (5 Types)
+// POOL 5: NOVEL 3D FOLDING & NET ARCHETYPES (10 Types)
 // -------------------------------------------------------------
-const FOLDING_ARCHETYPES = [
-  // 0: Cube Net - Latin Cross Net (Symbols)
+export const FOLDING_ARCHETYPES = [
+  // 0: Square Pyramid Net (Square base with 4 triangular flaps)
   (t, k, rand) => {
     const netSvg = wrapSvg(`
-      <g stroke="#475569" stroke-width="1.5" fill="none">
-        <rect x="50" y="8" width="24" height="24" rx="2" fill="rgba(30,41,59,0.7)" />
-        <rect x="26" y="32" width="24" height="24" rx="2" fill="rgba(30,41,59,0.7)" />
-        <rect x="50" y="32" width="24" height="24" rx="2" fill="rgba(30,41,59,0.7)" />
-        <rect x="74" y="32" width="24" height="24" rx="2" fill="rgba(30,41,59,0.7)" />
-        <rect x="98" y="32" width="24" height="24" rx="2" fill="rgba(30,41,59,0.7)" />
-        <rect x="50" y="56" width="24" height="24" rx="2" fill="rgba(30,41,59,0.7)" />
-      </g>
-      ${drawCircle(62, 20, 6, "none", "#38bdf8", 2)}
-      ${drawText(38, 44, "★", "#f59e0b", 12)}
-      ${drawText(62, 44, "+", "#ec4899", 14)}
-      ${drawRect(82, 38, 10, 10, "none", "#10b981", 1.8)}
-      ${drawPolygon("105,50 115,50 110,38", "none", "#a855f7", 1.8)}
-      ${drawPolygon("62,60 69,68 62,76 55,68", "none", "#38bdf8", 1.8)}
-    `, "0 0 148 88");
-
-    const makeCubeSvg = (topSym, leftSym, rightSym) => {
-      const symSvg = (sym, cx, cy) => {
-        if (sym === 'circle') return drawCircle(cx, cy, 5, "none", "#38bdf8", 1.8);
-        if (sym === 'star') return drawText(cx, cy, "★", "#f59e0b", 10);
-        if (sym === 'cross') return drawText(cx, cy, "+", "#ec4899", 12);
-        if (sym === 'square') return drawRect(cx - 4, cy - 4, 8, 8, "none", "#10b981", 1.5);
-        if (sym === 'triangle') return drawPolygon(`${cx-4},${cy+4} ${cx+4},${cy+4} ${cx},${cy-4}`, "none", "#a855f7", 1.5);
-        if (sym === 'diamond') return drawPolygon(`${cx},${cy-5} ${cx+5},${cy} ${cx},${cy+5} ${cx-5},${cy}`, "none", "#38bdf8", 1.5);
-        return '';
-      };
-      return wrapSvg(`
-        <polygon points="35,14 53,24 35,34 17,24" fill="rgba(30,41,59,0.8)" stroke="#64748b" stroke-width="1.5" />
-        <polygon points="17,24 35,34 35,56 17,46" fill="rgba(15,23,42,0.9)" stroke="#64748b" stroke-width="1.5" />
-        <polygon points="35,34 53,24 53,46 35,56" fill="rgba(15,23,42,0.7)" stroke="#64748b" stroke-width="1.5" />
-        ${symSvg(topSym, 35, 24)}
-        ${symSvg(leftSym, 26, 42)}
-        ${symSvg(rightSym, 44, 42)}
-      `);
-    };
-
-    const correctSvg = makeCubeSvg('circle', 'star', 'cross');
-    const distractors = [
-      makeCubeSvg('circle', 'diamond', 'star'),
-      makeCubeSvg('star', 'square', 'cross'),
-      makeCubeSvg('cross', 'triangle', 'circle'),
-      makeCubeSvg('circle', 'diamond', 'cross')
-    ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
+      ${drawRect(25, 25, 20, 20, "none", "#38bdf8", 2)}
+      ${drawPolygon("25,25 45,25 35,10", "none", "#38bdf8", 1.5)} <!-- Top flap -->
+      ${drawPolygon("45,25 45,45 60,35", "none", "#38bdf8", 1.5)} <!-- Right flap -->
+      ${drawPolygon("25,45 45,45 35,60", "none", "#38bdf8", 1.5)} <!-- Bottom flap -->
+      ${drawPolygon("25,25 25,45 10,35", "none", "#38bdf8", 1.5)} <!-- Left flap -->
+    `);
+    const correctFolded = wrapSvg(`
+      ${drawPolygon("35,15 15,45 40,55 55,38", "none", "#38bdf8", 2)}
+      ${drawLine(35, 15, 40, 55, "#38bdf8", 2)}
+      ${drawLine(35, 15, 55, 38, "#38bdf8", 2)}
+    `);
+    const wrongFolded1 = wrapSvg(`${drawRect(20, 20, 30, 30, "none", "#38bdf8", 2)}`); // Cube
+    const wrongFolded2 = wrapSvg(`<ellipse cx="35" cy="35" rx="15" ry="25" fill="none" stroke="#38bdf8" stroke-width="2" />`);
+    const wrongFolded3 = wrapSvg(`${drawPolygon(makePolygonPts(3, 20, 35, 35), "none", "#38bdf8", 2)}`);
+    const wrongFolded4 = wrapSvg(`${drawPolygon(makePolygonPts(6, 20, 35, 35), "none", "#38bdf8", 2)}`);
+    const { options, correctOption } = randomize([
+      { svg: correctFolded }, { svg: wrongFolded1 }, { svg: wrongFolded2 }, { svg: wrongFolded3 }, { svg: wrongFolded4 }
+    ], 0, rand);
     return {
-      question: `Which of the following 3D cubes CAN be formed by folding the flat net shown below?`,
-      figureSvg: netSvg,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Opposite Faces Rule:**\nIn the flat net, faces separated by one square are **opposite faces** and can NEVER be adjacent on a folded 3D cube (Circle/Diamond, Star/Square, Cross/Triangle are opposite). Option ${correctOption} correctly shows three mutually adjacent faces.`,
-      category: 'spatial'
+      question: "When the unfolded flat 2D pattern is folded along the scored edges, which 3D solid figure is formed?",
+      figureSvg: [netSvg], options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**3D Folding Rule:**\n1. The net consists of 1 central square base and 4 adjoining triangular lateral faces.\n2. Folding the 4 triangular flaps upward brings their apexes together to form a **Square Pyramid**.`,
+      category: 'spatial', subType: 'folding'
     };
   },
 
-  // 1: Cube Net - T-Shape Net (Letters A-F)
+  // 1: Triangular Prism Net (3 rectangles in a row + 2 triangular end caps)
   (t, k, rand) => {
-    // T-Shape Net:
-    // Top Row: A, B, C
-    // Vertical Stem: D, E, F
-    // Opposites: A & C, B & E, D & F
     const netSvg = wrapSvg(`
-      <g stroke="#475569" stroke-width="1.5" fill="rgba(30,41,59,0.7)">
-        <rect x="26" y="8" width="24" height="24" rx="2" />
-        <rect x="50" y="8" width="24" height="24" rx="2" />
-        <rect x="74" y="8" width="24" height="24" rx="2" />
-        <rect x="50" y="32" width="24" height="24" rx="2" />
-        <rect x="50" y="56" width="24" height="24" rx="2" />
-        <rect x="50" y="80" width="24" height="24" rx="2" />
-      </g>
-      ${drawText(38, 20, "A", "#38bdf8", 14)}
-      ${drawText(62, 20, "B", "#10b981", 14)}
-      ${drawText(86, 20, "C", "#ec4899", 14)}
-      ${drawText(62, 44, "D", "#f59e0b", 14)}
-      ${drawText(62, 68, "E", "#a855f7", 14)}
-      ${drawText(62, 92, "F", "#38bdf8", 14)}
-    `, "0 0 120 110");
-
-    const makeLetterCube = (topL, leftL, rightL) => {
-      return wrapSvg(`
-        <polygon points="35,14 53,24 35,34 17,24" fill="rgba(30,41,59,0.8)" stroke="#64748b" stroke-width="1.5" />
-        <polygon points="17,24 35,34 35,56 17,46" fill="rgba(15,23,42,0.9)" stroke="#64748b" stroke-width="1.5" />
-        <polygon points="35,34 53,24 53,46 35,56" fill="rgba(15,23,42,0.7)" stroke="#64748b" stroke-width="1.5" />
-        ${drawText(35, 24, topL, "#ffffff", 11)}
-        ${drawText(26, 42, leftL, "#ffffff", 11)}
-        ${drawText(44, 42, rightL, "#ffffff", 11)}
-      `);
-    };
-
-    // Valid cube: A, B, D (all adjacent)
-    const correctSvg = makeLetterCube('B', 'A', 'D');
-    // Distractors: A & C together, B & E together, D & F together
-    const distractors = [
-      makeLetterCube('B', 'A', 'C'), // A & C are opposite!
-      makeLetterCube('B', 'E', 'D'), // B & E are opposite!
-      makeLetterCube('D', 'F', 'A'), // D & F are opposite!
-      makeLetterCube('E', 'B', 'C')  // E & B are opposite!
-    ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
+      ${drawRect(12, 25, 15, 20, "none", "#10b981", 1.5)}
+      ${drawRect(27, 25, 15, 20, "none", "#10b981", 1.5)}
+      ${drawRect(42, 25, 15, 20, "none", "#10b981", 1.5)}
+      ${drawPolygon("27,25 42,25 34.5,12", "none", "#10b981", 1.5)} <!-- Top triangle -->
+      ${drawPolygon("27,45 42,45 34.5,58", "none", "#10b981", 1.5)} <!-- Bottom triangle -->
+    `);
+    const correctFolded = wrapSvg(`
+      ${drawPolygon("20,20 35,12 48,24", "none", "#10b981", 2)}
+      ${drawPolygon("20,44 35,36 48,48", "none", "#10b981", 2)}
+      ${drawLine(20, 20, 20, 44, "#10b981", 2)}${drawLine(35, 12, 35, 36, "#10b981", 2)}${drawLine(48, 24, 48, 48, "#10b981", 2)}
+    `);
+    const wrongFolded1 = wrapSvg(`${drawPolygon("35,15 15,45 40,55 55,38", "none", "#10b981", 2)}`);
+    const wrongFolded2 = wrapSvg(`${drawRect(20, 20, 30, 30, "none", "#10b981", 2)}`);
+    const wrongFolded3 = wrapSvg(`<ellipse cx="35" cy="35" rx="15" ry="25" fill="none" stroke="#10b981" stroke-width="2" />`);
+    const wrongFolded4 = wrapSvg(`${drawPolygon(makePolygonPts(6, 20, 35, 35), "none", "#10b981", 2)}`);
+    const { options, correctOption } = randomize([
+      { svg: correctFolded }, { svg: wrongFolded1 }, { wrongFolded2, svg: wrongFolded2 }, { svg: wrongFolded3 }, { svg: wrongFolded4 }
+    ], 0, rand);
     return {
-      question: `Which 3D cube CAN be created by folding this lettered net?`,
-      figureSvg: netSvg,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Opposite Face Analysis:**\n- A and C are opposite.\n- B and E are opposite.\n- D and F are opposite.\nOption ${correctOption} is the only cube that does not place opposite faces adjacent to each other.`,
-      category: 'spatial'
+      question: "Which 3D solid is produced by folding this unfolded pattern?",
+      figureSvg: [netSvg], options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**3D Folding Rule:**\n1. The net consists of 3 rectangular lateral faces connected in series, capped by 2 triangular bases on opposite sides.\n2. Folding yields a **Triangular Prism**.`,
+      category: 'spatial', subType: 'folding'
     };
   },
 
-  // 2: Cube Net - Step / Z-Net (Numbered 1-6)
+  // 2: T-Shaped Cube Net with Face Icons
   (t, k, rand) => {
-    // Step net:
-    // Row 1: [1, 2]
-    // Row 2:    [3, 4]
-    // Row 3:       [5, 6]
-    // Opposites: 1 & 4, 3 & 6, 2 & 5
     const netSvg = wrapSvg(`
-      <g stroke="#475569" stroke-width="1.5" fill="rgba(30,41,59,0.7)">
-        <rect x="20" y="10" width="24" height="24" rx="2" />
-        <rect x="44" y="10" width="24" height="24" rx="2" />
-        <rect x="44" y="34" width="24" height="24" rx="2" />
-        <rect x="68" y="34" width="24" height="24" rx="2" />
-        <rect x="68" y="58" width="24" height="24" rx="2" />
-        <rect x="92" y="58" width="24" height="24" rx="2" />
-      </g>
-      ${drawText(32, 22, "1", "#38bdf8", 14)}
-      ${drawText(56, 22, "2", "#10b981", 14)}
-      ${drawText(56, 46, "3", "#ec4899", 14)}
-      ${drawText(80, 46, "4", "#f59e0b", 14)}
-      ${drawText(80, 70, "5", "#a855f7", 14)}
-      ${drawText(104, 70, "6", "#38bdf8", 14)}
-    `, "0 0 130 90");
-
-    const makeNumCube = (topN, leftN, rightN) => {
-      return wrapSvg(`
-        <polygon points="35,14 53,24 35,34 17,24" fill="rgba(30,41,59,0.8)" stroke="#64748b" stroke-width="1.5" />
-        <polygon points="17,24 35,34 35,56 17,46" fill="rgba(15,23,42,0.9)" stroke="#64748b" stroke-width="1.5" />
-        <polygon points="35,34 53,24 53,46 35,56" fill="rgba(15,23,42,0.7)" stroke="#64748b" stroke-width="1.5" />
-        ${drawText(35, 24, topN, "#ffffff", 11)}
-        ${drawText(26, 42, leftN, "#ffffff", 11)}
-        ${drawText(44, 42, rightN, "#ffffff", 11)}
-      `);
-    };
-
-    // Valid: 1, 2, 3
-    const correctSvg = makeNumCube("2", "1", "3");
-    // Distractors: 1&4 opposite, 2&5 opposite, 3&6 opposite
-    const distractors = [
-      makeNumCube("1", "4", "2"),
-      makeNumCube("2", "5", "3"),
-      makeNumCube("3", "6", "1"),
-      makeNumCube("2", "5", "4")
-    ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
+      ${drawRect(25, 10, 15, 15, "none", "#cbd5e1", 1.5)}${drawText(32.5, 17.5, "●", "#38bdf8", 12)}
+      ${drawRect(10, 25, 15, 15, "none", "#cbd5e1", 1.5)}${drawText(17.5, 32.5, "▲", "#f59e0b", 12)}
+      ${drawRect(25, 25, 15, 15, "none", "#cbd5e1", 1.5)}${drawText(32.5, 32.5, "■", "#10b981", 12)}
+      ${drawRect(40, 25, 15, 15, "none", "#cbd5e1", 1.5)}${drawText(47.5, 32.5, "★", "#a855f7", 12)}
+      ${drawRect(25, 40, 15, 15, "none", "#cbd5e1", 1.5)}${drawText(32.5, 47.5, "✦", "#ec4899", 12)}
+      ${drawRect(25, 55, 15, 15, "none", "#cbd5e1", 1.5)}${drawText(32.5, 62.5, "◆", "#e2e8f0", 12)}
+    `);
+    // Cube perspective showing Top (●), Front (■), Right (★):
+    // In net: ● is top, ■ is center front, ★ is right. These 3 faces meet at a single vertex!
+    const correctCube = wrapSvg(`
+      ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#cbd5e1", 1.5)}${drawText(35, 26, "●", "#38bdf8", 12)}
+      ${drawPolygon("18,26 35,36 35,54 18,44", "none", "#cbd5e1", 1.5)}${drawText(26.5, 45, "■", "#10b981", 12)}
+      ${drawPolygon("52,26 35,36 35,54 52,44", "none", "#cbd5e1", 1.5)}${drawText(43.5, 45, "★", "#a855f7", 12)}
+    `);
+    // Impossible cube: ● and ✦ are opposite faces in net, so they can NEVER appear adjacent!
+    const wrongCube1 = wrapSvg(`
+      ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#cbd5e1", 1.5)}${drawText(35, 26, "●", "#38bdf8", 12)}
+      ${drawPolygon("18,26 35,36 35,54 18,44", "none", "#cbd5e1", 1.5)}${drawText(26.5, 45, "✦", "#ec4899", 12)}
+      ${drawPolygon("52,26 35,36 35,54 52,44", "none", "#cbd5e1", 1.5)}${drawText(43.5, 45, "★", "#a855f7", 12)}
+    `);
+    // Impossible cube: ▲ and ★ are opposite faces in net!
+    const wrongCube2 = wrapSvg(`
+      ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#cbd5e1", 1.5)}${drawText(35, 26, "▲", "#f59e0b", 12)}
+      ${drawPolygon("18,26 35,36 35,54 18,44", "none", "#cbd5e1", 1.5)}${drawText(26.5, 45, "★", "#a855f7", 12)}
+      ${drawPolygon("52,26 35,36 35,54 52,44", "none", "#cbd5e1", 1.5)}${drawText(43.5, 45, "■", "#10b981", 12)}
+    `);
+    // Impossible cube: ■ and ◆ are opposite faces in net!
+    const wrongCube3 = wrapSvg(`
+      ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#cbd5e1", 1.5)}${drawText(35, 26, "■", "#10b981", 12)}
+      ${drawPolygon("18,26 35,36 35,54 18,44", "none", "#cbd5e1", 1.5)}${drawText(26.5, 45, "◆", "#e2e8f0", 12)}
+      ${drawPolygon("52,26 35,36 35,54 52,44", "none", "#cbd5e1", 1.5)}${drawText(43.5, 45, "●", "#38bdf8", 12)}
+    `);
+    const wrongCube4 = wrapSvg(`${drawPolygon(makePolygonPts(6, 20, 35, 35), "none", "#cbd5e1", 1.5)}`);
+    const { options, correctOption } = randomize([
+      { svg: correctCube }, { svg: wrongCube1 }, { svg: wrongCube2 }, { svg: wrongCube3 }, { svg: wrongCube4 }
+    ], 0, rand);
     return {
-      question: `Which 3D cube CAN be folded from the stepped net?`,
-      figureSvg: netSvg,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Opposite Rule:**\nIn this stepped net: 1 & 4 are opposite, 2 & 5 are opposite, and 3 & 6 are opposite. Only Option ${correctOption} contains mutually adjacent faces.`,
-      category: 'spatial'
+      question: "Which 3D isometric cube can be correctly folded from the labeled pattern?",
+      figureSvg: [netSvg], options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Spatial Folding Rule:**\n1. Identify opposite pairs in the net: (● and ✦), (▲ and ★), (■ and ◆). Opposite faces can never be visible simultaneously.\n2. The correct cube displays mutually adjacent faces: Top (●), Front (■), and Right (★).`,
+      category: 'spatial', subType: 'folding'
     };
   },
 
-  // 3: Paper Folding - Corner Hole Punch (Dual Fold)
+  // 3: Tetrahedron Net (4 equilateral triangles)
   (t, k, rand) => {
-    const foldDiagram = wrapSvg(`
-      <g stroke="#64748b" stroke-width="1.5" fill="none">
-        <rect x="10" y="10" width="36" height="36" fill="rgba(30,41,59,0.6)" />
-        <line x1="28" y1="10" x2="28" y2="46" stroke="#f59e0b" stroke-dasharray="3,2" />
-        ${drawText(28, 54, "Fold ➔", "#94a3b8", 8)}
-
-        <rect x="65" y="10" width="18" height="36" fill="rgba(30,41,59,0.7)" />
-        <line x1="65" y1="28" x2="83" y2="28" stroke="#f59e0b" stroke-dasharray="3,2" />
-        ${drawText(74, 54, "Fold ⬆", "#94a3b8", 8)}
-
-        <rect x="110" y="10" width="18" height="18" fill="rgba(14,165,233,0.2)" stroke="#38bdf8" />
-        <circle cx="124" cy="14" r="3" fill="#f43f5e" stroke="#f43f5e" />
-        ${drawText(119, 54, "Punch ●", "#f43f5e", 8)}
-      </g>
-    `, "0 0 148 64");
-
-    const makeUnfoldedSvg = (holes) => {
-      return wrapSvg(`
-        <rect x="12" y="12" width="46" height="46" fill="rgba(30,41,59,0.6)" stroke="#475569" stroke-width="1.5" />
-        <line x1="35" y1="12" x2="35" y2="58" stroke="#334155" stroke-dasharray="2,2" />
-        <line x1="12" y1="35" x2="58" y2="35" stroke="#334155" stroke-dasharray="2,2" />
-        ${holes.map(h => drawCircle(h.x, h.y, 3, "#f43f5e", "#f43f5e", 1)).join('')}
-      `);
-    };
-
-    const correctSvg = makeUnfoldedSvg([{x: 52, y: 18}, {x: 18, y: 18}, {x: 52, y: 52}, {x: 18, y: 52}]);
-    const distractors = [
-      makeUnfoldedSvg([{x: 35, y: 18}, {x: 35, y: 52}]),
-      makeUnfoldedSvg([{x: 52, y: 18}, {x: 52, y: 52}]),
-      makeUnfoldedSvg([{x: 35, y: 35}]),
-      makeUnfoldedSvg([{x: 18, y: 18}, {x: 52, y: 52}])
-    ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
+    const netSvg = wrapSvg(`
+      ${drawPolygon("35,20 20,46 50,46", "none", "#ec4899", 2)}
+      ${drawPolygon("35,20 20,46 10,24", "none", "#ec4899", 1.5)}
+      ${drawPolygon("35,20 50,46 60,24", "none", "#ec4899", 1.5)}
+      ${drawPolygon("20,46 50,46 35,62", "none", "#ec4899", 1.5)}
+    `);
+    const correctFolded = wrapSvg(`
+      ${drawPolygon("35,15 15,50 55,50", "none", "#ec4899", 2)}
+      ${drawLine(35, 15, 35, 50, "#ec4899", 2)}
+    `);
+    const wrongFolded1 = wrapSvg(drawRect(20, 20, 30, 30, "none", "#ec4899", 2));
+    const wrongFolded2 = wrapSvg(`<ellipse cx="35" cy="35" rx="15" ry="25" fill="none" stroke="#ec4899" stroke-width="2" />`);
+    const wrongFolded3 = wrapSvg(drawPolygon(makePolygonPts(6, 20, 35, 35), "none", "#ec4899", 2));
+    const wrongFolded4 = wrapSvg(drawPolygon(makePolygonPts(8, 20, 35, 35), "none", "#ec4899", 2));
+    const { options, correctOption } = randomize([
+      { svg: correctFolded }, { svg: wrongFolded1 }, { svg: wrongFolded2 }, { svg: wrongFolded3 }, { svg: wrongFolded4 }
+    ], 0, rand);
     return {
-      question: `A square sheet of paper is folded twice and punched as shown. What does the sheet look like when completely unfolded?`,
-      figureSvg: foldDiagram,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Unfolding Symmetry Rule:**\n1. Unfolding downward reflects the punched hole across the horizontal fold into the bottom-right corner.\n2. Unfolding leftward reflects both right-hand holes across the vertical centerline into both left-hand corners.\nThis creates **4 symmetrical corner holes**.`,
-      category: 'spatial'
+      question: "Which regular 3D polyhedron is constructed by folding this triangular net?",
+      figureSvg: [netSvg], options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**3D Folding Rule:**\n1. The net consists of 4 equilateral triangles.\n2. Folding the 3 outer triangles upward along the edges of the central base yields a **Regular Tetrahedron** (triangular pyramid with 4 faces).`,
+      category: 'spatial', subType: 'folding'
     };
   },
 
-  // 4: Paper Folding - Diagonal Triangular Fold
+  // 4: Cylinder / Canister Net (Rectangle + 2 circular lids)
   (t, k, rand) => {
-    const foldDiagram = wrapSvg(`
-      <g stroke="#64748b" stroke-width="1.5" fill="none">
-        <rect x="10" y="10" width="36" height="36" fill="rgba(30,41,59,0.6)" />
-        <line x1="10" y1="10" x2="46" y2="46" stroke="#f59e0b" stroke-dasharray="3,2" />
-        ${drawText(28, 54, "Fold ⬊", "#94a3b8", 8)}
-
-        <polygon points="65,10 101,10 101,46" fill="rgba(14,165,233,0.2)" stroke="#38bdf8" />
-        <circle cx="83" cy="28" r="3" fill="#f43f5e" stroke="#f43f5e" />
-        ${drawText(83, 54, "Punch ●", "#f43f5e", 8)}
-      </g>
-    `, "0 0 120 64");
-
-    const makeDiagUnfolded = (holes) => {
-      return wrapSvg(`
-        <rect x="12" y="12" width="46" height="46" fill="rgba(30,41,59,0.6)" stroke="#475569" stroke-width="1.5" />
-        <line x1="12" y1="12" x2="58" y2="58" stroke="#334155" stroke-dasharray="2,2" />
-        ${holes.map(h => drawCircle(h.x, h.y, 3.5, "#f43f5e", "#f43f5e", 1)).join('')}
-      `);
-    };
-
-    // Correct: 2 holes reflected symmetrically across main diagonal
-    const correctSvg = makeDiagUnfolded([{x: 28, y: 42}, {x: 42, y: 28}]);
-    const distractors = [
-      makeDiagUnfolded([{x: 28, y: 42}]), // only 1 hole
-      makeDiagUnfolded([{x: 20, y: 20}, {x: 50, y: 50}]), // on the fold line
-      makeDiagUnfolded([{x: 18, y: 18}, {x: 52, y: 18}, {x: 18, y: 52}, {x: 52, y: 52}]), // 4 corners
-      makeDiagUnfolded([{x: 35, y: 20}, {x: 35, y: 50}])
-    ];
-
-    const rawOpts = [{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))];
-    const { options, correctOption } = randomize(rawOpts, 0, rand);
+    const netSvg = wrapSvg(`
+      ${drawRect(15, 22, 40, 26, "none", "#38bdf8", 2)}
+      ${drawCircle(35, 13, 9, "none", "#38bdf8", 1.5)}
+      ${drawCircle(35, 57, 9, "none", "#38bdf8", 1.5)}
+    `);
+    const correctFolded = wrapSvg(`
+      <ellipse cx="35" cy="20" rx="16" ry="6" fill="none" stroke="#38bdf8" stroke-width="2" />
+      <ellipse cx="35" cy="50" rx="16" ry="6" fill="none" stroke="#38bdf8" stroke-width="2" />
+      ${drawLine(19, 20, 19, 50, "#38bdf8", 2)}${drawLine(51, 20, 51, 50, "#38bdf8", 2)}
+    `);
+    const wrongFolded1 = wrapSvg(`${drawPolygon("35,15 15,45 40,55 55,38", "none", "#38bdf8", 2)}`);
+    const wrongFolded2 = wrapSvg(`${drawRect(20, 20, 30, 30, "none", "#38bdf8", 2)}`);
+    const wrongFolded3 = wrapSvg(`${drawPolygon(makePolygonPts(3, 20, 35, 35), "none", "#38bdf8", 2)}`);
+    const wrongFolded4 = wrapSvg(`${drawPolygon(makePolygonPts(6, 20, 35, 35), "none", "#38bdf8", 2)}`);
+    const { options, correctOption } = randomize([
+      { svg: correctFolded }, { svg: wrongFolded1 }, { svg: wrongFolded2 }, { svg: wrongFolded3 }, { svg: wrongFolded4 }
+    ], 0, rand);
     return {
-      question: `The paper is folded diagonally and punched. What does it look like unfolded?`,
-      figureSvg: foldDiagram,
-      options,
-      correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Diagonal Reflection:**\nUnfolding across the diagonal reflects the hole to the opposite side of the diagonal axis, producing **2 symmetrically mirrored holes**.`,
-      category: 'spatial'
+      question: "Which 3D curved solid is formed by rolling and assembling this unfolded sheet?",
+      figureSvg: [netSvg], options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**3D Folding Rule:**\n1. Rolling the rectangular body forms the lateral tube, and attaching the circular discs seals both ends.\n2. This forms a right circular **Cylinder**.`,
+      category: 'spatial', subType: 'folding'
+    };
+  },
+
+  // 5: Cross-Shaped Cube Net with Corner Dots
+  (t, k, rand) => {
+    const netSvg = wrapSvg(`
+      ${drawRect(25, 10, 15, 15, "none", "#cbd5e1", 1.5)}
+      ${drawRect(10, 25, 15, 15, "none", "#cbd5e1", 1.5)}
+      ${drawRect(25, 25, 15, 15, "none", "#cbd5e1", 1.5)}${drawCircle(28, 28, 2.5, "#38bdf8", "#38bdf8")}
+      ${drawRect(40, 25, 15, 15, "none", "#cbd5e1", 1.5)}
+      ${drawRect(25, 40, 15, 15, "none", "#cbd5e1", 1.5)}
+      ${drawRect(25, 55, 15, 15, "none", "#cbd5e1", 1.5)}
+    `);
+    const correctCube = wrapSvg(`
+      ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#cbd5e1", 1.5)}
+      ${drawPolygon("18,26 35,36 35,54 18,44", "none", "#cbd5e1", 1.5)}${drawCircle(22, 33, 2.5, "#38bdf8", "#38bdf8")}
+      ${drawPolygon("52,26 35,36 35,54 52,44", "none", "#cbd5e1", 1.5)}
+    `);
+    const wrongCube1 = wrapSvg(`
+      ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#cbd5e1", 1.5)}${drawCircle(35, 26, 2.5, "#38bdf8", "#38bdf8")}
+      ${drawPolygon("18,26 35,36 35,54 18,44", "none", "#cbd5e1", 1.5)}${drawCircle(22, 33, 2.5, "#38bdf8", "#38bdf8")}
+      ${drawPolygon("52,26 35,36 35,54 52,44", "none", "#cbd5e1", 1.5)}
+    `); // 2 dots, net only has 1!
+    const wrongCube2 = wrapSvg(`${drawPolygon(makePolygonPts(6, 20, 35, 35), "none", "#cbd5e1", 1.5)}`);
+    const wrongCube3 = wrapSvg(`${drawPolygon(makePolygonPts(8, 20, 35, 35), "none", "#cbd5e1", 1.5)}`);
+    const wrongCube4 = wrapSvg(drawRect(20, 20, 30, 30, "none", "#cbd5e1", 2));
+    const { options, correctOption } = randomize([
+      { svg: correctCube }, { svg: wrongCube1 }, { svg: wrongCube2 }, { svg: wrongCube3 }, { svg: wrongCube4 }
+    ], 0, rand);
+    return {
+      question: "Which 3D cube accurately displays the single indicator dot from the unfolded net?",
+      figureSvg: [netSvg], options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Spatial Rule:**\n1. The indicator dot is placed in the top-left corner of the central face.\n2. When folded into 3D, the dot remains positioned on the upper-left boundary of that front face.`,
+      category: 'spatial', subType: 'folding'
+    };
+  },
+
+  // 6: Pentagonal Pyramid Net (1 pentagon + 5 triangular flaps)
+  (t, k, rand) => {
+    const netSvg = wrapSvg(`
+      ${drawPolygon(makePolygonPts(5, 14, 35, 35), "none", "#10b981", 2)}
+      ${drawPolygon("35,21 44,27 48,12", "none", "#10b981", 1.5)}
+      ${drawPolygon("44,27 41,41 58,38", "none", "#10b981", 1.5)}
+      ${drawPolygon("41,41 29,41 35,58", "none", "#10b981", 1.5)}
+      ${drawPolygon("29,41 26,27 12,38", "none", "#10b981", 1.5)}
+      ${drawPolygon("26,27 35,21 22,12", "none", "#10b981", 1.5)}
+    `);
+    const correctFolded = wrapSvg(`
+      ${drawPolygon("35,14 18,38 30,52 48,46 54,32", "none", "#10b981", 2)}
+      ${drawLine(35, 14, 30, 52, "#10b981", 2)}${drawLine(35, 14, 48, 46, "#10b981", 2)}
+    `);
+    const wrongFolded1 = wrapSvg(drawRect(20, 20, 30, 30, "none", "#10b981", 2));
+    const wrongFolded2 = wrapSvg(`<ellipse cx="35" cy="35" rx="15" ry="25" fill="none" stroke="#10b981" stroke-width="2" />`);
+    const wrongFolded3 = wrapSvg(drawPolygon(makePolygonPts(3, 20, 35, 35), "none", "#10b981", 2));
+    const wrongFolded4 = wrapSvg(drawPolygon(makePolygonPts(6, 20, 35, 35), "none", "#10b981", 2));
+    const { options, correctOption } = randomize([
+      { svg: correctFolded }, { svg: wrongFolded1 }, { svg: wrongFolded2 }, { svg: wrongFolded3 }, { svg: wrongFolded4 }
+    ], 0, rand);
+    return {
+      question: "Which 3D solid is formed by folding this 5-flap pattern?",
+      figureSvg: [netSvg], options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**3D Folding Rule:**\n1. The net consists of 1 central 5-sided pentagon base with 5 adjoining triangular flaps.\n2. Folding the flaps upward brings them together to form a **Pentagonal Pyramid**.`,
+      category: 'spatial', subType: 'folding'
+    };
+  },
+
+  // 7: Truncated Box / Open Tray Net (Rectangle with 4 corner cutouts)
+  (t, k, rand) => {
+    const netSvg = wrapSvg(`
+      ${drawRect(18, 18, 34, 34, "none", "#a855f7", 2)}
+      ${drawRect(18, 18, 8, 8, "#0f172a", "#334155", 1)} <!-- Corner cutouts -->
+      ${drawRect(44, 18, 8, 8, "#0f172a", "#334155", 1)}
+      ${drawRect(44, 44, 8, 8, "#0f172a", "#334155", 1)}
+      ${drawRect(18, 44, 8, 8, "#0f172a", "#334155", 1)}
+    `);
+    const correctFolded = wrapSvg(`
+      ${drawPolygon("20,26 44,26 52,38 28,38", "none", "#a855f7", 2)}
+      ${drawLine(20, 26, 20, 42, "#a855f7", 2)}${drawLine(28, 38, 28, 54, "#a855f7", 2)}
+      ${drawLine(52, 38, 52, 54, "#a855f7", 2)}${drawLine(20, 42, 28, 54, "#a855f7", 2)}
+      ${drawLine(28, 54, 52, 54, "#a855f7", 2)}
+    `); // Open top isometric tray
+    const wrongFolded1 = wrapSvg(drawRect(20, 20, 30, 30, "none", "#a855f7", 2));
+    const wrongFolded2 = wrapSvg(`<ellipse cx="35" cy="35" rx="15" ry="25" fill="none" stroke="#a855f7" stroke-width="2" />`);
+    const wrongFolded3 = wrapSvg(drawPolygon(makePolygonPts(3, 20, 35, 35), "none", "#a855f7", 2));
+    const wrongFolded4 = wrapSvg(drawPolygon(makePolygonPts(6, 20, 35, 35), "none", "#a855f7", 2));
+    const { options, correctOption } = randomize([
+      { svg: correctFolded }, { svg: wrongFolded1 }, { svg: wrongFolded2 }, { svg: wrongFolded3 }, { svg: wrongFolded4 }
+    ], 0, rand);
+    return {
+      question: "When the 4 outer flaps are folded upward at 90°, which 3D object is created?",
+      figureSvg: [netSvg], options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**3D Folding Rule:**\n1. Removing the 4 square corners allows the remaining 4 side tabs to fold vertically upward.\n2. This constructs an **Open Rectangular Tray / Shallow Box**.`,
+      category: 'spatial', subType: 'folding'
+    };
+  },
+
+  // 8: Hexagonal Prism Net (6 panels in a strip + 2 hexagonal end caps)
+  (t, k, rand) => {
+    const netSvg = wrapSvg(`
+      ${drawRect(10, 28, 50, 14, "none", "#38bdf8", 1.5)}
+      ${drawLine(18.3, 28, 18.3, 42, "#38bdf8", 1)}${drawLine(26.6, 28, 26.6, 42, "#38bdf8", 1)}
+      ${drawLine(35, 28, 35, 42, "#38bdf8", 1)}${drawLine(43.3, 28, 43.3, 42, "#38bdf8", 1)}
+      ${drawLine(51.6, 28, 51.6, 42, "#38bdf8", 1)}
+      ${drawPolygon(makePolygonPts(6, 7, 30.8, 21), "none", "#38bdf8", 1.5)}
+      ${drawPolygon(makePolygonPts(6, 7, 30.8, 49), "none", "#38bdf8", 1.5)}
+    `);
+    const correctFolded = wrapSvg(`
+      ${drawPolygon(makePolygonPts(6, 15, 35, 24), "none", "#38bdf8", 2)}
+      ${drawPolygon(makePolygonPts(6, 15, 35, 46), "none", "#38bdf8", 2)}
+      ${drawLine(20, 24, 20, 46, "#38bdf8", 2)}${drawLine(50, 24, 50, 46, "#38bdf8", 2)}
+    `);
+    const wrongFolded1 = wrapSvg(drawRect(20, 20, 30, 30, "none", "#38bdf8", 2));
+    const wrongFolded2 = wrapSvg(`<ellipse cx="35" cy="35" rx="15" ry="25" fill="none" stroke="#38bdf8" stroke-width="2" />`);
+    const wrongFolded3 = wrapSvg(drawPolygon(makePolygonPts(3, 20, 35, 35), "none", "#38bdf8", 2));
+    const wrongFolded4 = wrapSvg(drawPolygon("35,15 15,45 40,55 55,38", "none", "#38bdf8", 2));
+    const { options, correctOption } = randomize([
+      { svg: correctFolded }, { svg: wrongFolded1 }, { svg: wrongFolded2 }, { svg: wrongFolded3 }, { svg: wrongFolded4 }
+    ], 0, rand);
+    return {
+      question: "Which 3D prismatic solid is formed by assembling this pattern?",
+      figureSvg: [netSvg], options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**3D Folding Rule:**\n1. 6 rectangular panels wrap into a hexagonal perimeter sleeve.\n2. The two hexagonal caps close the top and bottom to form a **Hexagonal Prism**.`,
+      category: 'spatial', subType: 'folding'
+    };
+  },
+
+  // 9: Z-Shaped Stair Cube Net
+  (t, k, rand) => {
+    const netSvg = wrapSvg(`
+      ${drawRect(12, 16, 14, 14, "none", "#f59e0b", 1.5)}${drawText(19, 23, "1", "#f59e0b", 10)}
+      ${drawRect(26, 16, 14, 14, "none", "#f59e0b", 1.5)}${drawText(33, 23, "2", "#f59e0b", 10)}
+      ${drawRect(26, 30, 14, 14, "none", "#f59e0b", 1.5)}${drawText(33, 37, "3", "#f59e0b", 10)}
+      ${drawRect(26, 44, 14, 14, "none", "#f59e0b", 1.5)}${drawText(33, 51, "4", "#f59e0b", 10)}
+      ${drawRect(40, 44, 14, 14, "none", "#f59e0b", 1.5)}${drawText(47, 51, "5", "#f59e0b", 10)}
+      ${drawRect(40, 58, 14, 14, "none", "#f59e0b", 1.5)}${drawText(47, 65, "6", "#f59e0b", 10)}
+    `);
+    // Opposite pairs: (1, 5), (2, 4), (3, 6)
+    const correctCube = wrapSvg(`
+      ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#f59e0b", 1.5)}${drawText(35, 26, "2", "#f59e0b", 10)}
+      ${drawPolygon("18,26 35,36 35,54 18,44", "none", "#f59e0b", 1.5)}${drawText(26.5, 45, "3", "#f59e0b", 10)}
+      ${drawPolygon("52,26 35,36 35,54 52,44", "none", "#f59e0b", 1.5)}${drawText(43.5, 45, "5", "#f59e0b", 10)}
+    `);
+    // Impossible: 2 and 4 are opposite, cannot be adjacent
+    const wrongCube1 = wrapSvg(`
+      ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#f59e0b", 1.5)}${drawText(35, 26, "2", "#f59e0b", 10)}
+      ${drawPolygon("18,26 35,36 35,54 18,44", "none", "#f59e0b", 1.5)}${drawText(26.5, 45, "4", "#f59e0b", 10)}
+      ${drawPolygon("52,26 35,36 35,54 52,44", "none", "#f59e0b", 1.5)}${drawText(43.5, 45, "3", "#f59e0b", 10)}
+    `);
+    // Impossible: 3 and 6 are opposite, cannot be adjacent
+    const wrongCube2 = wrapSvg(`
+      ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#f59e0b", 1.5)}${drawText(35, 26, "3", "#f59e0b", 10)}
+      ${drawPolygon("18,26 35,36 35,54 18,44", "none", "#f59e0b", 1.5)}${drawText(26.5, 45, "6", "#f59e0b", 10)}
+      ${drawPolygon("52,26 35,36 35,54 52,44", "none", "#f59e0b", 1.5)}${drawText(43.5, 45, "1", "#f59e0b", 10)}
+    `);
+    const wrongCube3 = wrapSvg(drawRect(20, 20, 30, 30, "none", "#f59e0b", 2));
+    const wrongCube4 = wrapSvg(drawPolygon(makePolygonPts(6, 20, 35, 35), "none", "#f59e0b", 2));
+    const { options, correctOption } = randomize([
+      { svg: correctCube }, { svg: wrongCube1 }, { svg: wrongCube2 }, { svg: wrongCube3 }, { svg: wrongCube4 }
+    ], 0, rand);
+    return {
+      question: "Which numbered cube can be folded from this step-stair net?",
+      figureSvg: [netSvg], options, correctOption,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Spatial Rule:**\n1. Opposite pairs in this step-stair net are: (1, 5), (2, 4), and (3, 6).\n2. Faces 2, 3, and 5 meet at a common vertex and are all mutually adjacent, making their simultaneous appearance valid.`,
+      category: 'spatial', subType: 'folding'
     };
   }
 ];
 
-// Export sub-pools
-export { SERIES_ARCHETYPES, MATRIX_ARCHETYPES, ODD_ARCHETYPES, ANALOGY_ARCHETYPES, FOLDING_ARCHETYPES };
-
-// Combined archetypes list for backwards compatibility
-export const SPATIAL_ARCHETYPES = [
-  ...SERIES_ARCHETYPES,
-  ...MATRIX_ARCHETYPES,
-  ...ODD_ARCHETYPES,
-  ...ANALOGY_ARCHETYPES,
-  ...FOLDING_ARCHETYPES
-];
-
-/**
- * Returns 11 completely unique, authentically balanced spatial questions for a given test (2 to 30).
- * Draws systematically across all 5 CCAT spatial categories.
- */
+// -------------------------------------------------------------
+// UNIFIED TEST EXTRACTOR FOR TESTS 2 THROUGH 30
+// -------------------------------------------------------------
 export function getSpatialQuestionsForTest(testNumber) {
-  const rand = pseudoRandom(testNumber * 9411 + 5081);
+  const rand = pseudoRandom(testNumber * 9973 + 7717);
   const k = testNumber - 2;
 
-  // 1. Select 3 distinct Series questions with coprime stride 3 & 5 (gcd(3, 8) = gcd(5, 8) = 1)
-  const sStart = (k * 3) % 8;
+  // Stride-based selection from the enlarged pools ensures that
+  // consecutive tests have ZERO identical spatial questions!
+  const sStart = (k * 3) % SERIES_ARCHETYPES.length;
   const seriesIdxs = [
     sStart,
-    (sStart + 3) % 8,
-    (sStart + 5) % 8
+    (sStart + 1) % SERIES_ARCHETYPES.length,
+    (sStart + 2) % SERIES_ARCHETYPES.length
   ];
 
-  // 2. Select 2 distinct Matrix questions with coprime stride 3
-  const mStart = (k * 5 + 1) % 8;
+  const mStart = (k * 2) % MATRIX_ARCHETYPES.length;
   const matrixIdxs = [
     mStart,
-    (mStart + 3) % 8
+    (mStart + 1) % MATRIX_ARCHETYPES.length
   ];
 
-  // 3. Select 3 distinct Odd-One-Out questions with coprime stride 3 & 6
-  const oStart = (k * 3 + 2) % 8;
+  const oStart = (k * 3) % ODD_ARCHETYPES.length;
   const oddIdxs = [
     oStart,
-    (oStart + 3) % 8,
-    (oStart + 6) % 8
+    (oStart + 1) % ODD_ARCHETYPES.length,
+    (oStart + 2) % ODD_ARCHETYPES.length
   ];
 
-  // 4. Select 2 distinct Spatial Analogy questions with coprime stride 2 (gcd(2, 5) = 1)
-  const aStart = (k * 2) % 5;
+  const aStart = (k * 2) % ANALOGY_ARCHETYPES.length;
   const analogyIdxs = [
     aStart,
-    (aStart + 2) % 5
+    (aStart + 1) % ANALOGY_ARCHETYPES.length
   ];
 
-  // 5. Select 1 3D Cube / Paper Folding question with coprime stride 3 (gcd(3, 5) = 1)
-  const foldIdx = (k * 3 + 1) % 5;
+  const foldIdx = k % FOLDING_ARCHETYPES.length;
 
   const questions = [
     SERIES_ARCHETYPES[seriesIdxs[0]](testNumber, k, rand),
@@ -1551,7 +1959,7 @@ export function getSpatialQuestionsForTest(testNumber) {
     FOLDING_ARCHETYPES[foldIdx](testNumber, k, rand)
   ];
 
-  // Deterministically shuffle question order within the test
+  // Deterministically shuffle within the test
   for (let i = questions.length - 1; i > 0; i--) {
     const j = Math.floor(rand() * (i + 1));
     [questions[i], questions[j]] = [questions[j], questions[i]];
