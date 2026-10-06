@@ -12,8 +12,11 @@ import React from 'react';
 export default function SVGQuestionRenderer({ question }) {
   if (!question) return null;
 
-  // Case 1: Next-in-series sequence (sequenceFrames or svgSeries)
-  const sequenceFrames = question.sequenceFrames || question.svgSeries;
+  // Case 1: Next-in-series sequence (sequenceFrames, svgSeries, or figureSvg as array of multiple frames)
+  const sequenceFrames = question.sequenceFrames 
+    || question.svgSeries 
+    || (Array.isArray(question.figureSvg) && question.figureSvg.length > 1 ? question.figureSvg : null);
+
   if (sequenceFrames && Array.isArray(sequenceFrames) && sequenceFrames.length > 0) {
     return (
       <div className="my-6 p-4 sm:p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl flex flex-col items-center">
@@ -52,7 +55,12 @@ export default function SVGQuestionRenderer({ question }) {
   }
 
   // Case 2: Shape Analogy (Figure A -> Figure B :: Figure C -> ?)
-  const contextSvg = question.contextSvg;
+  const contextSvg = question.contextSvg || (question.analogySvg ? {
+    figA: question.analogySvg.figA || question.analogySvg.a,
+    figB: question.analogySvg.figB || question.analogySvg.b,
+    figC: question.analogySvg.figC || question.analogySvg.c
+  } : null);
+
   if (contextSvg && (contextSvg.figA || contextSvg.figB || contextSvg.figC)) {
     return (
       <div className="my-6 p-4 sm:p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl flex flex-col items-center">
@@ -103,7 +111,7 @@ export default function SVGQuestionRenderer({ question }) {
     );
   }
 
-  // Case 3: 3x3 Matrix Grid (Supported via matrixData, matrixCells, or matrixSvg)
+  // Case 3: 3x3 Matrix Grid (Supported via matrixData, matrixCells, or matrixSvg array)
   if (question.matrixData && Array.isArray(question.matrixData)) {
     return (
       <div className="my-6 p-4 sm:p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl flex flex-col items-center">
@@ -133,13 +141,16 @@ export default function SVGQuestionRenderer({ question }) {
     );
   }
 
-  if (question.matrixCells && Array.isArray(question.matrixCells)) {
+  const matrixCellsArray = (Array.isArray(question.matrixCells) ? question.matrixCells : null) 
+    || (Array.isArray(question.matrixSvg) ? question.matrixSvg : null);
+
+  if (matrixCellsArray && Array.isArray(matrixCellsArray)) {
     return (
       <div className="my-6 p-4 sm:p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl flex flex-col items-center">
         <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 text-center">3×3 Spatial Matrix:</p>
         <div className="grid grid-cols-3 gap-2.5 sm:gap-3 p-3.5 sm:p-4 bg-slate-950 border border-slate-700/90 rounded-2xl shadow-2xl">
-          {question.matrixCells.map((cellSvg, idx) => {
-            const isMissing = idx === 8 || cellSvg === '?';
+          {matrixCellsArray.map((cellSvg, idx) => {
+            const isMissing = !cellSvg || idx === 8 || cellSvg === '?';
             return (
               <div 
                 key={idx} 
@@ -162,7 +173,7 @@ export default function SVGQuestionRenderer({ question }) {
     );
   }
 
-  if (question.matrixSvg) {
+  if (question.matrixSvg && typeof question.matrixSvg === 'string') {
     const correctedSvg = question.matrixSvg.replace(/viewBox="0 0 100 100"/g, 'viewBox="0 0 70 70"');
     return (
       <div className="my-6 p-4 sm:p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl flex flex-col items-center">
@@ -193,26 +204,29 @@ export default function SVGQuestionRenderer({ question }) {
     return (
       <div className="my-4 p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-center justify-center gap-2 text-slate-400 text-xs font-medium">
         <span className="text-sky-400 font-bold">ℹ️ Tip:</span>
-        <span>Carefully inspect each of the five figures below (A through E) to find the figure that violates the geometric rule.</span>
+        <span>Carefully inspect each of the five options below (A through E) to find the figure that violates the geometric rule.</span>
       </div>
     );
   }
 
   // Case 6: 3D Cube Nets, Paper Folding, or Reference Diagrams
   if (question.figureSvg) {
-    return (
-      <div className="my-6 p-4 sm:p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl flex flex-col items-center">
-        {question.figureLabel && (
-          <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 text-center">
-            {question.figureLabel}
-          </p>
-        )}
-        <div 
-          className="w-full flex items-center justify-center max-w-sm"
-          dangerouslySetInnerHTML={{ __html: question.figureSvg }}
-        />
-      </div>
-    );
+    const rawSvg = Array.isArray(question.figureSvg) ? question.figureSvg[0] : question.figureSvg;
+    if (rawSvg && typeof rawSvg === 'string') {
+      return (
+        <div className="my-6 p-4 sm:p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl flex flex-col items-center">
+          {question.figureLabel && (
+            <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 text-center">
+              {question.figureLabel}
+            </p>
+          )}
+          <div 
+            className="w-full flex items-center justify-center max-w-sm"
+            dangerouslySetInnerHTML={{ __html: rawSvg }}
+          />
+        </div>
+      );
+    }
   }
 
   return null;
