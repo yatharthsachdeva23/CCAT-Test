@@ -8,6 +8,7 @@ import confetti from 'canvas-confetti';
 import SVGQuestionRenderer from './SVGQuestionRenderer.jsx';
 import { generateUltraFastSprint } from '../data/ultraFastGenerator.js';
 import MarkdownView from './MarkdownView.jsx';
+import { cleanText } from '../utils/formatText.js';
 import { 
   getUltraFastAttempts, 
   saveUltraFastAttempt, 
@@ -985,7 +986,7 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
             <div className="space-y-3 mb-6">
               <div className="flex items-start justify-between gap-4">
                 <h2 className="text-lg sm:text-xl font-bold text-slate-100 leading-snug whitespace-pre-line">
-                  {currentQ.question}
+                  {cleanText(currentQ.question)}
                 </h2>
               </div>
             </div>
@@ -1023,10 +1024,10 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
                             className="w-16 h-16 p-1 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center shadow"
                             dangerouslySetInnerHTML={{ __html: opt.svg }}
                           />
-                          {opt.text && <span className="text-sm font-medium text-slate-400">{opt.text}</span>}
+                          {opt.text && <span className="text-sm font-medium text-slate-400">{cleanText(opt.text)}</span>}
                         </div>
                       ) : (
-                        <span className="text-sm sm:text-base font-medium">{opt.text}</span>
+                        <span className="text-sm sm:text-base font-medium">{cleanText(opt.text)}</span>
                       )}
                     </div>
 
@@ -1350,7 +1351,7 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
 
                   {/* Question Prompt */}
                   <p className="text-sm font-semibold text-slate-200 mb-3 whitespace-pre-line">
-                    {item.question}
+                    {cleanText(item.question)}
                   </p>
 
                   {/* SVG Visual (if any) */}
@@ -1379,7 +1380,7 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
                               dangerouslySetInnerHTML={{ __html: opt.svg }}
                             />
                           ) : (
-                            <span>{opt.text}</span>
+                            <span>{cleanText(opt.text)}</span>
                           )}
                           {isCorrectOpt && <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 ml-auto shrink-0" />}
                           {isChosen && !isCorrectOpt && <XCircle className="w-3.5 h-3.5 text-rose-400 ml-auto shrink-0" />}

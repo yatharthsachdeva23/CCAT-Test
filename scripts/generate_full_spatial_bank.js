@@ -979,7 +979,7 @@ export const ODD_ARCHETYPES = [
     const makeConvexOct = () => wrapSvg(drawPolygon(makePolygonPts(8, 22, 35, 35), "none", "#38bdf8", 2));
     const makeConvexPen = () => wrapSvg(drawPolygon(makePolygonPts(5, 22, 35, 35), "none", "#38bdf8", 2));
     const makeConvexTrap = () => wrapSvg(drawPolygon("20,20 50,20 58,50 12,50", "none", "#38bdf8", 2));
-    const makeConcaveArrow = () => wrapSvg(drawPolygon("20,20 50,35 20,50 30,35", "none", "#ec4899", 2)); // Concave reflex interior angle > 180°
+    const makeConcaveArrow = () => wrapSvg(drawPolygon("20,20 50,35 20,50 30,35", "none", "#38bdf8", 2)); // Concave reflex interior angle > 180°
     const items = [
       { svg: makeConvexHex() }, { svg: makeConvexOct() }, { svg: makeConvexPen() }, { svg: makeConvexTrap() },
       { svg: makeConcaveArrow() }
@@ -1019,7 +1019,7 @@ export const ODD_ARCHETYPES = [
     const makeHexagon = () => wrapSvg(drawPolygon(makePolygonPts(6, 22, 35, 35), "none", "#38bdf8", 2));
     const makeRectangle = () => wrapSvg(drawRect(18, 22, 34, 26, "none", "#38bdf8", 2));
     const makeOctagon = () => wrapSvg(drawPolygon(makePolygonPts(8, 22, 35, 35), "none", "#38bdf8", 2));
-    const makeScaleneTrap = () => wrapSvg(drawPolygon("15,22 48,16 56,52 20,44", "none", "#ec4899", 2)); // 0 pairs of parallel sides!
+    const makeScaleneTrap = () => wrapSvg(drawPolygon("15,22 48,16 56,52 20,44", "none", "#38bdf8", 2)); // 0 pairs of parallel sides!
     const items = [
       { svg: makeParallelogram() }, { svg: makeHexagon() }, { svg: makeRectangle() }, { svg: makeOctagon() },
       { svg: makeScaleneTrap() }
@@ -1039,7 +1039,7 @@ export const ODD_ARCHETYPES = [
     const makeSquare4 = () => wrapSvg(drawRect(20, 20, 30, 30, "none", "#38bdf8", 2));
     const makeCircle4Dots = () => wrapSvg(`${drawCircle(35, 35, 20, "none", "#38bdf8", 2)}${drawCircle(35, 15, 3, "#38bdf8", "#38bdf8")}${drawCircle(55, 35, 3, "#38bdf8", "#38bdf8")}${drawCircle(35, 55, 3, "#38bdf8", "#38bdf8")}${drawCircle(15, 35, 3, "#38bdf8", "#38bdf8")}`);
     const makeSwastika4 = () => wrapSvg(`${drawLine(35, 15, 35, 55, "#38bdf8", 2)}${drawLine(15, 35, 55, 35, "#38bdf8", 2)}${drawLine(35, 15, 45, 15, "#38bdf8", 2)}${drawLine(55, 35, 55, 45, "#38bdf8", 2)}${drawLine(35, 55, 25, 55, "#38bdf8", 2)}${drawLine(15, 35, 15, 25, "#38bdf8", 2)}`);
-    const makeRect2 = () => wrapSvg(drawRect(15, 25, 40, 20, "none", "#ec4899", 2)); // Only 2-fold symmetry (180°), NOT 4-fold (90°)!
+    const makeRect2 = () => wrapSvg(drawRect(15, 25, 40, 20, "none", "#38bdf8", 2)); // Only 2-fold symmetry (180°), NOT 4-fold (90°)!
     const items = [
       { svg: makeCross4() }, { svg: makeSquare4() }, { svg: makeCircle4Dots() }, { svg: makeSwastika4() },
       { svg: makeRect2() }
@@ -1059,7 +1059,7 @@ export const ODD_ARCHETYPES = [
     const makeDoubleSquare = () => wrapSvg(`${drawRect(16, 24, 18, 22, "none", "#38bdf8", 2)}${drawRect(36, 24, 18, 22, "none", "#38bdf8", 2)}`);
     const makeBullsEye2 = () => wrapSvg(`${drawCircle(35, 35, 22, "none", "#38bdf8", 2)}${drawCircle(35, 35, 12, "none", "#38bdf8", 2)}`);
     const makeGlasses = () => wrapSvg(`${drawCircle(25, 35, 10, "none", "#38bdf8", 2)}${drawCircle(45, 35, 10, "none", "#38bdf8", 2)}${drawLine(35, 35, 35, 35, "#38bdf8", 2)}`);
-    const makeSingleLoopTriangle = () => wrapSvg(drawPolygon("35,16 55,54 15,54", "none", "#ec4899", 2)); // Only 1 enclosed loop!
+    const makeSingleLoopTriangle = () => wrapSvg(drawPolygon("35,16 55,54 15,54", "none", "#38bdf8", 2)); // Only 1 enclosed loop!
     const items = [
       { svg: makeEight() }, { svg: makeDoubleSquare() }, { svg: makeBullsEye2() }, { svg: makeGlasses() },
       { svg: makeSingleLoopTriangle() }
@@ -1084,7 +1084,7 @@ export const ODD_ARCHETYPES = [
     };
     const makeIntersecting = () => wrapSvg(`
       ${drawCircle(35, 35, 22, "none", "#38bdf8", 2)}
-      ${drawCircle(35, 20, 15, "none", "#ec4899", 2)}
+      ${drawCircle(35, 20, 15, "none", "#38bdf8", 2)}
     `); // Cuts through outer boundary at two points!
     const items = [
       { svg: makeInternalTang(0) }, { svg: makeInternalTang(90) }, { svg: makeInternalTang(180) }, { svg: makeInternalTang(270) },
@@ -1112,8 +1112,8 @@ export const ODD_ARCHETYPES = [
     const makeLeftHandCurve = () => {
       // Counter-clockwise reflection
       return wrapSvg(`
-        ${drawCircle(35, 35, 2, "#ec4899", "#ec4899")}
-        <path d="M 35 35 A 10 10 0 0 0 25 45 A 20 20 0 0 0 50 30" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round" />
+        ${drawCircle(35, 35, 2, "#38bdf8", "#38bdf8")}
+        <path d="M 35 35 A 10 10 0 0 0 25 45 A 20 20 0 0 0 50 30" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
       `);
     };
     const items = [
@@ -1142,7 +1142,7 @@ export const ODD_ARCHETYPES = [
     };
     const makeDoubleTriangle = () => wrapSvg(`${drawPolygon(makePolygonPts(3, 18, 35, 26), "none", "#38bdf8", 2)}${drawPolygon(makePolygonPts(3, 18, 35, 44), "none", "#38bdf8", 2)}`);
     const makeSixStepStairs = () => wrapSvg(`${drawLine(15, 50, 15, 40, "#38bdf8", 2)}${drawLine(15, 40, 30, 40, "#38bdf8", 2)}${drawLine(30, 40, 30, 30, "#38bdf8", 2)}${drawLine(30, 30, 45, 30, "#38bdf8", 2)}${drawLine(45, 30, 45, 20, "#38bdf8", 2)}${drawLine(45, 20, 55, 20, "#38bdf8", 2)}`);
-    const makeFiveSidePentagon = () => wrapSvg(drawPolygon(makePolygonPts(5, 22, 35, 35), "none", "#ec4899", 2)); // 5 sides!
+    const makeFiveSidePentagon = () => wrapSvg(drawPolygon(makePolygonPts(5, 22, 35, 35), "none", "#38bdf8", 2)); // 5 sides!
     const items = [
       { svg: makeHexagon() }, { svg: makeSixSpoke() }, { svg: makeDoubleTriangle() }, { svg: makeSixStepStairs() },
       { svg: makeFiveSidePentagon() }
@@ -1162,7 +1162,7 @@ export const ODD_ARCHETYPES = [
     const makeRightTri = () => wrapSvg(drawPolygon("20,20 20,50 50,50", "none", "#38bdf8", 2));
     const makeL = () => wrapSvg(`${drawLine(20, 15, 20, 50, "#38bdf8", 2.5)}${drawLine(20, 50, 50, 50, "#38bdf8", 2.5)}`);
     const makeT = () => wrapSvg(`${drawLine(15, 25, 55, 25, "#38bdf8", 2.5)}${drawLine(35, 25, 35, 55, "#38bdf8", 2.5)}`);
-    const makeEquilateral = () => wrapSvg(drawPolygon(makePolygonPts(3, 22, 35, 35), "none", "#ec4899", 2)); // All angles 60°
+    const makeEquilateral = () => wrapSvg(drawPolygon(makePolygonPts(3, 22, 35, 35), "none", "#38bdf8", 2)); // All angles 60°
     const items = [
       { svg: makeSquare() }, { svg: makeRightTri() }, { svg: makeL() }, { svg: makeT() },
       { svg: makeEquilateral() }
@@ -1182,7 +1182,7 @@ export const ODD_ARCHETYPES = [
     const makeHalfSquare = () => wrapSvg(`${drawRect(18, 18, 34, 34, "none", "#38bdf8", 2)}${drawRect(18, 18, 17, 34, "#38bdf8", "none")}`);
     const makeDiagHalf = () => wrapSvg(`${drawRect(18, 18, 34, 34, "none", "#38bdf8", 2)}${drawPolygon("18,18 52,18 52,52", "#38bdf8", "none")}`);
     const makeRingHalf = () => wrapSvg(`${drawCircle(35, 35, 22, "none", "#38bdf8", 2)}<path d="M 35 13 A 22 22 0 0 1 35 57 L 35 45 A 10 10 0 0 0 35 25 Z" fill="#38bdf8" />`);
-    const makeQuarterSquare = () => wrapSvg(`${drawRect(18, 18, 34, 34, "none", "#38bdf8", 2)}${drawRect(18, 18, 17, 17, "#ec4899", "none")}`); // 25% shaded!
+    const makeQuarterSquare = () => wrapSvg(`${drawRect(18, 18, 34, 34, "none", "#38bdf8", 2)}${drawRect(18, 18, 17, 17, "#38bdf8", "none")}`); // 25% shaded!
     const items = [
       { svg: makeHalfCircle() }, { svg: makeHalfSquare() }, { svg: makeDiagHalf() }, { svg: makeRingHalf() },
       { svg: makeQuarterSquare() }
@@ -1203,11 +1203,11 @@ export const ODD_ARCHETYPES = [
       ${drawCircle(42 + dx, 35, 14, "none", "#f59e0b", 2.5)}
     `);
     const makeDisjoint = () => wrapSvg(`
-      ${drawCircle(22, 35, 10, "none", "#ec4899", 2.5)}
-      ${drawCircle(48, 35, 10, "none", "#ec4899", 2.5)}
+      ${drawCircle(22, 35, 10, "none", "#38bdf8", 2.5)}
+      ${drawCircle(48, 35, 10, "none", "#f59e0b", 2.5)}
     `); // Distance between centers > sum of radii -> completely separate!
     const items = [
-      { svg: makeInterlocked(0) }, { svg: makeInterlocked(2) }, { svg: makeInterlocked(-2) }, { makeSvg: makeInterlocked(1), svg: makeInterlocked(1) },
+      { svg: makeInterlocked(0) }, { svg: makeInterlocked(2) }, { svg: makeInterlocked(-2) }, { svg: makeInterlocked(1) },
       { svg: makeDisjoint() }
     ];
     const { options, correctOption } = randomize(items, 4, rand);
@@ -1242,10 +1242,10 @@ export const ODD_ARCHETYPES = [
       ${drawLine(50, 25, 50, 45, "#38bdf8", 2.5)}${drawCircle(50, 45, 3, "#38bdf8", "#38bdf8")}
     `);
     const makeOutwardArrows = () => wrapSvg(`
-      ${drawLine(35, 35, 35, 15, "#ec4899", 2.5)}${drawCircle(35, 15, 3, "#ec4899", "#ec4899")}
-      ${drawLine(35, 35, 55, 35, "#ec4899", 2.5)}${drawCircle(55, 35, 3, "#ec4899", "#ec4899")}
-      ${drawLine(35, 35, 35, 55, "#ec4899", 2.5)}${drawCircle(35, 55, 3, "#ec4899", "#ec4899")}
-      ${drawLine(35, 35, 15, 35, "#ec4899", 2.5)}${drawCircle(15, 35, 3, "#ec4899", "#ec4899")}
+      ${drawLine(35, 35, 35, 15, "#38bdf8", 2.5)}${drawCircle(35, 15, 3, "#38bdf8", "#38bdf8")}
+      ${drawLine(35, 35, 55, 35, "#38bdf8", 2.5)}${drawCircle(55, 35, 3, "#38bdf8", "#38bdf8")}
+      ${drawLine(35, 35, 35, 55, "#38bdf8", 2.5)}${drawCircle(35, 55, 3, "#38bdf8", "#38bdf8")}
+      ${drawLine(35, 35, 15, 35, "#38bdf8", 2.5)}${drawCircle(15, 35, 3, "#38bdf8", "#38bdf8")}
     `); // Divergent outward radial vectors, not a circulating loop!
     const items = [
       { svg: makeClockwiseLoop() }, { svg: makeClockwiseTri() }, { svg: makeClockwiseCircle() }, { svg: makeClockwiseHex() },
@@ -1267,7 +1267,7 @@ export const ODD_ARCHETYPES = [
     const makeHourglass = () => wrapSvg(drawPolygon("20,18 50,18 35,35 50,52 20,52 35,35", "none", "#38bdf8", 2));
     const makeChevron = () => wrapSvg(drawPolygon("15,18 35,32 55,18 55,30 35,44 15,30", "none", "#38bdf8", 2)); // 6 vertices
     const makeLShaped = () => wrapSvg(drawPolygon("20,18 36,18 36,36 52,36 52,52 20,52", "none", "#38bdf8", 2)); // 6 vertices
-    const makePent = () => wrapSvg(drawPolygon(makePolygonPts(5, 22, 35, 35), "none", "#ec4899", 2)); // 5 vertices!
+    const makePent = () => wrapSvg(drawPolygon(makePolygonPts(5, 22, 35, 35), "none", "#38bdf8", 2)); // 5 vertices!
     const items = [
       { svg: makeHex() }, { svg: makeHourglass() }, { svg: makeChevron() }, { svg: makeLShaped() },
       { svg: makePent() }
@@ -1287,7 +1287,7 @@ export const ODD_ARCHETYPES = [
     const makeRhombus = () => wrapSvg(drawPolygon("35,16 52,35 35,54 18,35", "none", "#38bdf8", 2)); // 2 axes
     const makeEllipse = () => wrapSvg(`<ellipse cx="35" cy="35" rx="20" ry="12" fill="none" stroke="#38bdf8" stroke-width="2" />`); // 2 axes
     const makeHLetter = () => wrapSvg(`${drawLine(22, 18, 22, 52, "#38bdf8", 3)}${drawLine(48, 18, 48, 52, "#38bdf8", 3)}${drawLine(22, 35, 48, 35, "#38bdf8", 3)}`); // 2 axes
-    const makeIsoscelesTri = () => wrapSvg(drawPolygon("35,16 52,52 18,52", "none", "#ec4899", 2)); // Only 1 vertical axis!
+    const makeIsoscelesTri = () => wrapSvg(drawPolygon("35,16 52,52 18,52", "none", "#38bdf8", 2)); // Only 1 vertical axis!
     const items = [
       { svg: makeRectangle() }, { svg: makeRhombus() }, { svg: makeEllipse() }, { svg: makeHLetter() },
       { svg: makeIsoscelesTri() }
@@ -1363,9 +1363,9 @@ export const ODD_ARCHETYPES = [
     };
     const makeImpossibleCube = () => {
       return wrapSvg(`
-        ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#ec4899", 2)}
-        ${drawLine(18, 26, 52, 44, "#ec4899", 2)} <!-- paradoxical crossing line -->
-        ${drawLine(52, 26, 18, 44, "#ec4899", 2)}
+        ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#38bdf8", 2)}
+        ${drawLine(18, 26, 52, 44, "#38bdf8", 2)} <!-- paradoxical crossing line -->
+        ${drawLine(52, 26, 18, 44, "#38bdf8", 2)}
       `);
     };
     const items = [
@@ -1967,7 +1967,3 @@ export function getSpatialQuestionsForTest(testNumber) {
 
   return questions;
 }
-`;
-
-fs.writeFileSync('c:/Desktop/Antigravity Projects/CCAT Prep/src/data/spatialBank.js', spatialBankContent, 'utf8');
-console.log('Successfully written 68-archetype spatialBank.js!');

@@ -276,7 +276,7 @@ export const MATH_ARCHETYPES = [
 
   // 10: GEOMETRIC PROBABILITY - Inscribed Target Circle in Square
   (t, k, rand) => {
-    const q = `A dart is randomly thrown and guaranteed to land inside a square target board of side length 20 cm. If a circular bullseye of diameter 20 cm is inscribed perfectly inside the square, what is the probability that the dart lands inside the circular bullseye? (Use \\(\\pi \\approx 3.1416\\))`;
+    const q = `A dart is randomly thrown and guaranteed to land inside a square target board of side length 20 cm. If a circular bullseye of diameter 20 cm is inscribed perfectly inside the square, what is the probability that the dart lands inside the circular bullseye? (Use π ≈ 3.1416)`;
     const correct = `78.5%`;
     const distractors = [`63.7%`, `50.0%`, `82.4%`, `71.2%`];
     const { options, correctOption } = randomize([correct, ...distractors], 0, rand);
@@ -727,7 +727,7 @@ export const MATH_ARCHETYPES = [
     const exp = 85 + (k % 4); // 85 -> 7, 86 -> 9, 87 -> 3, 88 -> 1
     const cycle = [1, 7, 9, 3];
     const unitDigit = cycle[exp % 4];
-    const q = `What is the units digit (last digit) of the integer value \\(7^{${exp}}\\)?`;
+    const q = `What is the units digit (last digit) of the integer value 7^${exp}?`;
     const correct = `${unitDigit}`;
     const distractors = [1, 3, 5, 7, 9].filter(d => d !== unitDigit).slice(0, 4).map(String);
     const { options, correctOption } = randomize([correct, ...distractors], 0, rand);
@@ -743,7 +743,7 @@ export const MATH_ARCHETYPES = [
     // A number N divided by 48 leaves remainder 35. What is remainder when N is divided by 12?
     // N = 48k + 35 = 12(4k + 2) + 11. Remainder is 35 % 12 = 11.
     const rem = 35 % 12; // 11
-    const q = `When a positive integer \\(N\\) is divided by 48, the remainder is 35. What is the remainder when the exact same integer \\(N\\) is divided by 12?`;
+    const q = `When a positive integer N is divided by 48, the remainder is 35. What is the remainder when the exact same integer N is divided by 12?`;
     const correct = `${rem}`;
     const distractors = [`5`, `7`, `3`, `1`];
     const { options, correctOption } = randomize([correct, ...distractors], 0, rand);
@@ -757,7 +757,7 @@ export const MATH_ARCHETYPES = [
   // 38: NUMBER THEORY - Trailing Zeros in Factorial
   (t, k, rand) => {
     // 30! -> floor(30/5) + floor(30/25) = 6 + 1 = 7 zeros.
-    const q = `How many trailing zeros are there at the end of the calculated value of \\(30!\\) (30 factorial)?`;
+    const q = `How many trailing zeros are there at the end of the calculated value of 30! (30 factorial)?`;
     const correct = `7`;
     const distractors = [`6`, `5`, `8`, `10`];
     const { options, correctOption } = randomize([correct, ...distractors], 0, rand);
@@ -928,7 +928,7 @@ export const MATH_ARCHETYPES = [
     // y is inversely proportional to x^2. When x = 2, y = 18.
     // k = y * x^2 = 18 * 4 = 72.
     // When x = 6, y = 72 / 36 = 2.
-    const q = `The physical intensity \\(I\\) of a signal varies inversely with the square of the distance \\(d\\) from the transmitter. When the distance is 2 km, the signal intensity is 18 milliwatts. What is the signal intensity when the distance increases to 6 km?`;
+    const q = `The physical intensity I of a signal varies inversely with the square of the distance d from the transmitter. When the distance is 2 km, the signal intensity is 18 milliwatts. What is the signal intensity when the distance increases to 6 km?`;
     const correct = `2 milliwatts`;
     const distractors = [`6 milliwatts`, `3 milliwatts`, `1 milliwatt`, `4.5 milliwatts`];
     const { options, correctOption } = randomize([correct, ...distractors], 0, rand);

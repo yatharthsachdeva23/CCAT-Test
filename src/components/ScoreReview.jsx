@@ -7,6 +7,7 @@ import SVGQuestionRenderer from './SVGQuestionRenderer.jsx';
 import { analyzeAttemptPatterns } from '../data/patternEngine.js';
 import MarkdownView from './MarkdownView.jsx';
 import { getAllSpeedTricksForTest, startPreloadingSpeedTricks, fetchSingleSpeedTrick, getSubjectTargetTime } from '../services/aiSpeedTricks.js';
+import { cleanText } from '../utils/formatText.js';
 
 export default function ScoreReview({ attempt, onBackToDashboard, onRetakeTest, onAskCoach }) {
   const [filter, setFilter] = useState('all'); // 'all', 'incorrect', 'skipped', 'timetraps', 'math', 'verbal', 'spatial'
@@ -381,7 +382,7 @@ export default function ScoreReview({ attempt, onBackToDashboard, onRetakeTest, 
 
                 {/* Question Prompt */}
                 <h3 className="text-base sm:text-lg font-semibold text-slate-100 whitespace-pre-line mb-3">
-                  {q.question}
+                  {cleanText(q.question)}
                 </h3>
 
                 {/* SVG Visual (If Sequence, Matrix, or Chart) */}
@@ -449,10 +450,10 @@ export default function ScoreReview({ attempt, onBackToDashboard, onRetakeTest, 
                                 className="w-14 h-14 p-1 rounded-lg bg-slate-900 border border-slate-700 flex items-center justify-center"
                                 dangerouslySetInnerHTML={{ __html: opt.svg }}
                               />
-                              {opt.text && <span className="text-xs sm:text-sm font-medium">{opt.text}</span>}
+                              {opt.text && <span className="text-xs sm:text-sm font-medium">{cleanText(opt.text)}</span>}
                             </div>
                           ) : (
-                            <span className="text-xs sm:text-sm font-medium">{opt.text}</span>
+                            <span className="text-xs sm:text-sm font-medium">{cleanText(opt.text)}</span>
                           )}
                         </div>
 

@@ -4,6 +4,7 @@ import confetti from 'canvas-confetti';
 import SVGQuestionRenderer from './SVGQuestionRenderer.jsx';
 import { saveActiveSession, getActiveSession, clearActiveSession } from '../utils/storage.js';
 import { startPreloadingSpeedTricks } from '../services/aiSpeedTricks.js';
+import { cleanText } from '../utils/formatText.js';
 
 export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
   const questions = testData.questions;
@@ -343,12 +344,12 @@ export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
           <div className="space-y-3 mb-6">
             <div className="flex items-start justify-between gap-4">
               <h2 className="text-lg sm:text-xl font-bold text-slate-100 leading-snug whitespace-pre-line">
-                {currentQ.question}
+                {cleanText(currentQ.question)}
               </h2>
             </div>
             {currentQ.context && (
               <p className="text-sm text-slate-300 bg-slate-950/60 p-3 rounded-xl border border-slate-800">
-                {currentQ.context}
+                {cleanText(currentQ.context)}
               </p>
             )}
           </div>
@@ -386,10 +387,10 @@ export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
                           className="w-16 h-16 p-1 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center shadow"
                           dangerouslySetInnerHTML={{ __html: opt.svg }}
                         />
-                        {opt.text && <span className="text-sm font-medium text-slate-400">{opt.text}</span>}
+                        {opt.text && <span className="text-sm font-medium text-slate-400">{cleanText(opt.text)}</span>}
                       </div>
                     ) : (
-                      <span className="text-sm sm:text-base font-medium">{opt.text}</span>
+                      <span className="text-sm sm:text-base font-medium">{cleanText(opt.text)}</span>
                     )}
                   </div>
 
