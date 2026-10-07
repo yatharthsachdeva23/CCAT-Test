@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   Trophy, Clock, Zap, ArrowRight, Play, CheckCircle2, 
   AlertTriangle, Sparkles, BarChart3, ChevronRight, RotateCcw, Target 
@@ -46,6 +46,8 @@ export default function Dashboard({
     }).filter(Boolean)
   );
 
+  const [suiteFilter, setSuiteFilter] = useState('all'); // 'all', 'original', 'new', 'attempted', 'unattempted'
+
   const unattemptedTests = TEST_CATALOG.filter(t => !attemptedTestNumbers.has(t.testNumber));
 
   const handleStartRandomSimulation = () => {
@@ -53,7 +55,7 @@ export default function Dashboard({
       const randIdx = Math.floor(Math.random() * unattemptedTests.length);
       onStartTest(unattemptedTests[randIdx].testNumber);
     } else {
-      const randNum = Math.floor(Math.random() * 30) + 1;
+      const randNum = Math.floor(Math.random() * TEST_CATALOG.length) + 1;
       onStartTest(randNum);
     }
   };
@@ -72,7 +74,7 @@ export default function Dashboard({
           <div className="max-w-2xl space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 text-xs font-extrabold tracking-wide uppercase">
               <Target className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Target: 45+ Elite Protocol • 30 Full Tests</span>
+              <span>Target: 45+ Elite Protocol • 57 Full Tests</span>
             </div>
             
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
@@ -238,35 +240,109 @@ export default function Dashboard({
         </button>
       </div>
 
-      {/* --- 30 TEST SUITE SELECTOR (NO CATEGORIZATION) --- */}
+      {/* --- 57 TEST SUITE SELECTOR --- */}
       <div className="space-y-4">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
-            <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">Full CCAT Test Suite (30 Full Tests)</h2>
+            <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">Full CCAT Test Suite (57 Full Tests)</h2>
             <p className="text-xs sm:text-sm text-slate-400">
-              30 complete, distinct 50-question simulations. Calibrated with varying difficulties and randomized answer options.
+              57 complete simulations: Tests 1–30 (Original Suite) and Tests 31–57 (New Advanced Suite with zero duplicate questions).
             </p>
+          </div>
+
+          {/* Filter Pills */}
+          <div className="flex flex-wrap items-center gap-1.5 bg-slate-950/80 p-1.5 rounded-2xl border border-slate-800 text-xs font-semibold">
+            <button
+              onClick={() => setSuiteFilter('all')}
+              className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer ${
+                suiteFilter === 'all'
+                  ? 'bg-sky-500 text-white shadow font-bold'
+                  : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              All (57)
+            </button>
+            <button
+              onClick={() => setSuiteFilter('original')}
+              className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer ${
+                suiteFilter === 'original'
+                  ? 'bg-sky-500 text-white shadow font-bold'
+                  : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              Original (#1–#30)
+            </button>
+            <button
+              onClick={() => setSuiteFilter('new')}
+              className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer ${
+                suiteFilter === 'new'
+                  ? 'bg-purple-600 text-white shadow font-bold'
+                  : 'text-purple-300/80 hover:text-white'
+              }`}
+            >
+              New Suite (#31–#57)
+            </button>
+            <button
+              onClick={() => setSuiteFilter('attempted')}
+              className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer ${
+                suiteFilter === 'attempted'
+                  ? 'bg-emerald-600 text-white shadow font-bold'
+                  : 'text-emerald-400/80 hover:text-white'
+              }`}
+            >
+              Attempted ({attemptedTestNumbers.size})
+            </button>
+            <button
+              onClick={() => setSuiteFilter('unattempted')}
+              className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer ${
+                suiteFilter === 'unattempted'
+                  ? 'bg-amber-600 text-white shadow font-bold'
+                  : 'text-amber-400/80 hover:text-white'
+              }`}
+            >
+              Unattempted ({unattemptedTests.length})
+            </button>
           </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {TEST_CATALOG.map((test) => {
+          {TEST_CATALOG.filter((test) => {
+            const isOriginal = test.testNumber <= 30;
+            const isAttempted = attemptedTestNumbers.has(test.testNumber);
+            if (suiteFilter === 'original') return isOriginal;
+            if (suiteFilter === 'new') return !isOriginal;
+            if (suiteFilter === 'attempted') return isAttempted;
+            if (suiteFilter === 'unattempted') return !isAttempted;
+            return true;
+          }).map((test) => {
             const pastTestAttempts = attempts.filter(a => a.testId === test.id);
             const testBestScore = pastTestAttempts.reduce((max, a) => {
               const score = Object.values(a.responses || {}).filter(r => r.isCorrect).length;
               return Math.max(max, score);
             }, null);
+            const isNew = test.testNumber > 30;
 
             return (
               <div 
                 key={test.id}
-                className="bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-2xl p-5 shadow-lg flex flex-col justify-between group transition-all"
+                className={`bg-slate-900 border ${isNew ? 'border-purple-900/40 hover:border-purple-600/60' : 'border-slate-800 hover:border-slate-700'} rounded-2xl p-5 shadow-lg flex flex-col justify-between group transition-all`}
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-3">
-                    <span className="font-mono text-xs font-bold px-2.5 py-0.5 rounded-md bg-slate-800 text-sky-400 border border-slate-700">
-                      Simulation #{test.testNumber}
-                    </span>
+                    <div className="flex items-center gap-1.5">
+                      <span className="font-mono text-xs font-bold px-2.5 py-0.5 rounded-md bg-slate-800 text-sky-400 border border-slate-700">
+                        Simulation #{test.testNumber}
+                      </span>
+                      {isNew ? (
+                        <span className="font-mono text-[10px] font-extrabold px-2 py-0.5 rounded-md bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                          NEW
+                        </span>
+                      ) : (
+                        <span className="font-mono text-[10px] font-semibold px-2 py-0.5 rounded-md bg-slate-800/80 text-slate-400 border border-slate-700">
+                          ORIGINAL
+                        </span>
+                      )}
+                    </div>
                     <span className="text-[11px] font-semibold text-slate-400 bg-slate-950 px-2 py-0.5 rounded border border-slate-800">
                       50 Qs • 15 Mins
                     </span>
@@ -298,7 +374,11 @@ export default function Dashboard({
 
                   <button
                     onClick={() => onStartTest(test.testNumber)}
-                    className="px-4 py-2 rounded-xl bg-sky-500/10 hover:bg-sky-500 text-sky-300 hover:text-slate-950 font-bold text-xs border border-sky-500/30 hover:border-sky-500 transition-all flex items-center gap-1.5 cursor-pointer shadow"
+                    className={`px-4 py-2 rounded-xl font-bold text-xs border transition-all flex items-center gap-1.5 cursor-pointer shadow ${
+                      isNew 
+                        ? 'bg-purple-500/15 hover:bg-purple-500 text-purple-300 hover:text-white border-purple-500/30 hover:border-purple-500' 
+                        : 'bg-sky-500/10 hover:bg-sky-500 text-sky-300 hover:text-slate-950 border-sky-500/30 hover:border-sky-500'
+                    }`}
                   >
                     <span>{testBestScore !== null ? 'Retake' : 'Launch'}</span>
                     <ArrowRight className="w-3.5 h-3.5" />

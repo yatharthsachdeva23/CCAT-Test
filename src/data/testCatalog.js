@@ -97,13 +97,17 @@ export function buildTest(testNumber = 1) {
   // Completed Test & Active Session Protection Guard:
   // If the user has already completed this simulation or has it in-flight,
   // load the questions directly from storage so tests are never altered!
+  const defaultTitle = testNumber <= 30 
+    ? `CCAT Full Simulation #${testNumber}` 
+    : `CCAT Full Simulation #${testNumber} (New)`;
+
   try {
     const active = getActiveSession();
     if (active && active.testId === `test-${testNumber}` && active.questions && active.questions.length === 50) {
       return {
         id: `test-${testNumber}`,
         testNumber,
-        title: active.testTitle || `CCAT Full Simulation #${testNumber}`,
+        title: active.testTitle || defaultTitle,
         totalQuestions: 50,
         timeLimitSec: active.timeLimitSec || 900,
         mathCount: 22,
@@ -118,7 +122,7 @@ export function buildTest(testNumber = 1) {
       return {
         id: `test-${testNumber}`,
         testNumber,
-        title: existing.testTitle || `CCAT Full Simulation #${testNumber}`,
+        title: existing.testTitle || defaultTitle,
         totalQuestions: 50,
         timeLimitSec: 900,
         mathCount: 22,
@@ -131,10 +135,11 @@ export function buildTest(testNumber = 1) {
     // fallback to procedural synthesis
   }
 
-  // Unattempted Tests 2 through 30: 100% Brand New, Dedicated Unique Questions
-  const mathQuestions = getMathQuestionsForTest(testNumber);
-  const verbalQuestions = getVerbalQuestionsForTest(testNumber);
-  const spatialQuestions = getSpatialQuestionsForTest(testNumber);
+  // Synthesis: Tests 1-30 use Original baseline; Tests 31-57 use New Suite with 0 duplicates
+  const isNewSuite = testNumber > 30;
+  const mathQuestions = getMathQuestionsForTest(testNumber, isNewSuite);
+  const verbalQuestions = getVerbalQuestionsForTest(testNumber, isNewSuite);
+  const spatialQuestions = getSpatialQuestionsForTest(testNumber, isNewSuite);
 
   let mIdx = 0, vIdx = 0, sIdx = 0;
   const testQuestions = [];
@@ -160,7 +165,7 @@ export function buildTest(testNumber = 1) {
   return {
     id: `test-${testNumber}`,
     testNumber,
-    title: `CCAT Full Simulation #${testNumber}`,
+    title: defaultTitle,
     totalQuestions: 50,
     timeLimitSec: 900, // 15 minutes
     mathCount: 22,
@@ -170,12 +175,12 @@ export function buildTest(testNumber = 1) {
   };
 }
 
-export const TEST_CATALOG = Array.from({ length: 30 }, (_, i) => {
+export const TEST_CATALOG = Array.from({ length: 57 }, (_, i) => {
   const num = i + 1;
   return {
     id: `test-${num}`,
     testNumber: num,
-    title: `CCAT Full Simulation #${num}`,
+    title: num <= 30 ? `CCAT Full Simulation #${num}` : `CCAT Full Simulation #${num} (New)`,
     totalQuestions: 50,
     timeLimitSec: 900
   };

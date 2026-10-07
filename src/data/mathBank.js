@@ -1224,10 +1224,11 @@ export const MATH_ARCHETYPES = [
   }
 ];
 
-export function getMathQuestionsForTest(testNumber) {
+export function getMathQuestionsForTest(testNumber, isNewSuite = false) {
   const rand = pseudoRandom(testNumber * 8191 + 1337);
   const total = MATH_ARCHETYPES.length; // 66 novel archetypes
-  const k = testNumber - 2;
+  const isNew = isNewSuite || testNumber > 30;
+  const k = isNew ? (testNumber > 30 ? testNumber - 31 : testNumber - 2) : (testNumber - 2);
 
   // Stride-based selection ensures every test gets an authentic, varied mix
   // With 66 archetypes and 22 questions per test, each test gets a distinct third of the bank!
@@ -1247,7 +1248,9 @@ export function getMathQuestionsForTest(testNumber) {
     if (!chosenIndices.includes(idx)) chosenIndices.push(idx);
   }
 
-  const cycle = Math.floor(k / 3);
+  // Original suite (Tests 2-30) uses baseline (cycle === 0).
+  // New suite (Tests 31-57) uses modulated variants (cycle 1-9).
+  const cycle = isNew ? (Math.floor(k / 3) + 1) : 0;
   const questions = chosenIndices.map((idx) => {
     if (cycle > 0) {
       const variant = getMathVariant(idx, cycle, rand);

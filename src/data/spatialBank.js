@@ -1907,9 +1907,10 @@ export const FOLDING_ARCHETYPES = [
 // -------------------------------------------------------------
 // UNIFIED TEST EXTRACTOR FOR TESTS 2 THROUGH 30
 // -------------------------------------------------------------
-export function getSpatialQuestionsForTest(testNumber) {
+export function getSpatialQuestionsForTest(testNumber, isNewSuite = false) {
   const rand = pseudoRandom(testNumber * 9973 + 7717);
-  const k = testNumber - 2;
+  const isNew = isNewSuite || testNumber > 30;
+  const k = isNew ? (testNumber > 30 ? testNumber - 31 : testNumber - 2) : (testNumber - 2);
 
   // Stride-based selection from the enlarged pools ensures that
   // consecutive tests have ZERO identical spatial questions!
@@ -1941,11 +1942,11 @@ export function getSpatialQuestionsForTest(testNumber) {
 
   const foldIdx = k % FOLDING_ARCHETYPES.length;
 
-  const seriesCycle = Math.floor(k / 6);
-  const matrixCycle = Math.floor(k / 6);
-  const oddCycle = Math.floor(k / 6);
-  const analogyCycle = Math.floor(k / 5);
-  const foldingCycle = Math.floor(k / 10);
+  const seriesCycle = isNew ? (Math.floor(k / 6) + 1) : 0;
+  const matrixCycle = isNew ? (Math.floor(k / 6) + 1) : 0;
+  const oddCycle = isNew ? (Math.floor(k / 6) + 1) : 0;
+  const analogyCycle = isNew ? (Math.floor(k / 5) + 1) : 0;
+  const foldingCycle = isNew ? (Math.floor(k / 10) + 1) : 0;
 
   const modulateSvg = (svgStr, cycle) => {
     if (!svgStr || cycle === 0) return svgStr;

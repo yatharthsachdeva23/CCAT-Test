@@ -7818,14 +7818,21 @@ export const DEDUCTIVE_LOGIC_BANK = [
   }
 ];
 
-export function getVerbalQuestionsForTest(testNumber) {
+export function getVerbalQuestionsForTest(testNumber, isNewSuite = false) {
   const rand = pseudoRandom(testNumber * 8819 + 421);
   const questions = [];
-  const tIdx = testNumber - 2; // For tests 2 to 30: 0 to 28
+  const isNew = isNewSuite || testNumber > 30;
+  const tIdx = isNew ? (testNumber > 30 ? testNumber - 31 : testNumber - 2) : (testNumber - 2);
 
-  // 1. Six Vocabulary questions (Distinct slice from VOCAB_BANK of 150 items)
+  const vocabMod = (!isNew && testNumber <= 30) ? 60 : VOCAB_BANK.length;
+  const analogyMod = (!isNew && testNumber <= 30) ? 40 : ANALOGY_BANK.length;
+  const oddBase = (!isNew && testNumber <= 30) ? ((tIdx * 3) % 30) : (tIdx * 3);
+  const sentenceMod = (!isNew && testNumber <= 30) ? 10 : SENTENCE_COMPLETION_BANK.length;
+  const logicMod = (!isNew && testNumber <= 30) ? 10 : DEDUCTIVE_LOGIC_BANK.length;
+
+  // 1. Six Vocabulary questions
   for (let i = 0; i < 6; i++) {
-    const item = VOCAB_BANK[(tIdx * 6 + i) % VOCAB_BANK.length];
+    const item = VOCAB_BANK[(tIdx * 6 + i) % vocabMod];
     const isAntonym = item.type === 'antonym';
     const qText = isAntonym 
       ? `Which of the following words is most OPPOSITE in meaning to "${item.word}"?`
@@ -7842,9 +7849,9 @@ export function getVerbalQuestionsForTest(testNumber) {
     });
   }
 
-  // 2. Six Analogy questions (Distinct slice from ANALOGY_BANK of 148 items)
+  // 2. Six Analogy questions
   for (let i = 0; i < 6; i++) {
-    const item = ANALOGY_BANK[(tIdx * 6 + i) % ANALOGY_BANK.length];
+    const item = ANALOGY_BANK[(tIdx * 6 + i) % analogyMod];
     const qText = `${item.pair} is analogous to:`;
     const rawOpts = [item.correct, ...item.distractors.slice(0, 4)];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
@@ -7858,8 +7865,8 @@ export function getVerbalQuestionsForTest(testNumber) {
     });
   }
 
-  // 3. Three Odd-Word-Out questions (Strictly disjoint slice of 3 from ODD_WORD_BANK of 90 items)
-  const oddSlice = ODD_WORD_BANK.slice(tIdx * 3, (tIdx + 1) * 3);
+  // 3. Three Odd-Word-Out questions
+  const oddSlice = ODD_WORD_BANK.slice(oddBase, oddBase + 3);
   for (let i = 0; i < 3; i++) {
     const item = oddSlice[i];
     const qText = `In the domain of ${item.categoryContext}, which word does NOT belong with the others?`;
@@ -7876,8 +7883,8 @@ export function getVerbalQuestionsForTest(testNumber) {
     });
   }
 
-  // 4. Exactly ONE Contextual Sentence Completion question (Unique to this test)
-  const sentItem = SENTENCE_COMPLETION_BANK[tIdx % SENTENCE_COMPLETION_BANK.length];
+  // 4. Exactly ONE Contextual Sentence Completion question
+  const sentItem = SENTENCE_COMPLETION_BANK[tIdx % sentenceMod];
   {
     const rawOpts = [sentItem.correct, ...sentItem.distractors.slice(0, 4)];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
@@ -7891,8 +7898,8 @@ export function getVerbalQuestionsForTest(testNumber) {
     });
   }
 
-  // 5. Exactly ONE Deductive Logic / Syllogism question (Unique to this test, varied formats)
-  const logicItem = DEDUCTIVE_LOGIC_BANK[tIdx % DEDUCTIVE_LOGIC_BANK.length];
+  // 5. Exactly ONE Deductive Logic / Syllogism question
+  const logicItem = DEDUCTIVE_LOGIC_BANK[tIdx % logicMod];
   {
     const rawOpts = [logicItem.correct, ...logicItem.distractors.slice(0, 4)];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
