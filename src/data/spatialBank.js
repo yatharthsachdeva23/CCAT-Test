@@ -108,7 +108,7 @@ export const SERIES_ARCHETYPES = [
       let bobSvg = '';
       if (shp === 'diamond') bobSvg = drawPolygon(`${bob.x},${bob.y-6} ${parseFloat(bob.x)+6},${bob.y} ${bob.x},${parseFloat(bob.y)+6} ${parseFloat(bob.x)-6},${bob.y}`, "#f59e0b", "#f59e0b", 1);
       if (shp === 'circle') bobSvg = drawCircle(bob.x, bob.y, 6, "#38bdf8", "#38bdf8", 1);
-      if (shp === 'square') bobSvg = drawRect(bob.x - 5, bob.y - 5, 10, 10, "#10b981", "#10b981", 1);
+      if (shp === 'square') bobSvg = drawRect(bob.x - 5, bob.y - 5, 10, 10, "#38bdf8", "#38bdf8", 1);
       if (shp === 'triangle') bobSvg = drawPolygon(`${bob.x},${bob.y-6} ${parseFloat(bob.x)+6},${parseFloat(bob.y)+5} ${parseFloat(bob.x)-6},${parseFloat(bob.y)+5}`, "#ec4899", "#ec4899", 1);
       if (shp === 'star') bobSvg = drawText(bob.x, bob.y, "★", "#a855f7", 14);
       return wrapSvg(`
@@ -177,7 +177,7 @@ export const SERIES_ARCHETYPES = [
     const makeDisplay = (count) => {
       let lines = '';
       for (let i = 0; i < count; i++) {
-        lines += drawLine(segs[i][0], segs[i][1], segs[i][2], segs[i][3], "#10b981", 3);
+        lines += drawLine(segs[i][0], segs[i][1], segs[i][2], segs[i][3], "#38bdf8", 3);
       }
       return wrapSvg(`
         ${drawRect(12, 8, 46, 54, "#0f172a", "#334155", 1, 4)}
@@ -412,9 +412,9 @@ export const SERIES_ARCHETYPES = [
   (t, k, rand) => {
     // Binary: 1 (001), 2 (010), 3 (011), 4 (100), 5 (101)
     const makeBinary = (val) => {
-      const b4 = (val & 4) ? "#10b981" : "#1e293b";
-      const b2 = (val & 2) ? "#10b981" : "#1e293b";
-      const b1 = (val & 1) ? "#10b981" : "#1e293b";
+      const b4 = (val & 4) ? "#38bdf8" : "#1e293b";
+      const b2 = (val & 2) ? "#38bdf8" : "#1e293b";
+      const b1 = (val & 1) ? "#38bdf8" : "#1e293b";
       return wrapSvg(`
         ${drawRect(16, 15, 10, 40, b4, "#475569", 1.5, 2)}
         ${drawRect(30, 15, 10, 40, b2, "#475569", 1.5, 2)}
@@ -428,7 +428,7 @@ export const SERIES_ARCHETYPES = [
     return {
       question: "Determine the state transition logic of the 3 status indicators. Which is the 5th figure?",
       figureSvg: seqSvgs, options, correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. The bars represent a 3-bit binary counter (4-2-1): 001 (1) → 010 (2) → 011 (3) → 100 (4).\n2. Step 5 is binary 5 (101), where the first and third bars are active green.`,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. The bars represent a 3-bit binary counter (4-2-1): 001 (1) → 010 (2) → 011 (3) → 100 (4).\n2. Step 5 is binary 5 (101), where the first and third bars are active cyan.`,
       category: 'spatial', subType: 'series'
     };
   },
@@ -566,7 +566,7 @@ export const SERIES_ARCHETYPES = [
   (t, k, rand) => {
     const makePoly = (sides) => {
       const pts = makePolygonPts(sides, 22, 35, 35);
-      return wrapSvg(drawPolygon(pts, "none", "#10b981", 2.5));
+      return wrapSvg(drawPolygon(pts, "none", "#38bdf8", 2.5));
     };
     const seqSvgs = [3, 4, 5, 6].map(s => makePoly(s));
     const correctSvg = makePoly(7);
@@ -575,7 +575,7 @@ export const SERIES_ARCHETYPES = [
     return {
       question: "Which geometric polygon is the 5th term in this vertex progression?",
       figureSvg: seqSvgs, options, correctOption,
-      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. The number of sides increases strictly by +1: 3 (Triangle) → 4 (Square) → 5 (Pentagon) → 6 (Hexagon) → 7 (Heptagon).\n2. Figure 5 is a 7-sided green regular heptagon.`,
+      explanation: `**Correct Answer: ${correctOption}**\n\n**Step-by-step Rule:**\n1. The number of sides increases strictly by +1: 3 (Triangle) → 4 (Square) → 5 (Pentagon) → 6 (Hexagon) → 7 (Heptagon).\n2. Figure 5 is a 7-sided regular heptagon.`,
       category: 'spatial', subType: 'series'
     };
   },
@@ -640,7 +640,7 @@ export const MATRIX_ARCHETYPES = [
       let inner = '';
       if (hasSquare) inner += drawRect(20, 20, 30, 30, "none", "#38bdf8", 2);
       if (hasCircle) inner += drawCircle(35, 35, 12, "none", "#ec4899", 2);
-      if (hasDiag) inner += drawLine(15, 15, 55, 55, "#10b981", 2);
+      if (hasDiag) inner += drawLine(15, 15, 55, 55, "#38bdf8", 2);
       return wrapSvg(`${drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1, 4)}${inner}`);
     };
     const matrixSvgs = [
@@ -731,7 +731,7 @@ export const MATRIX_ARCHETYPES = [
     const makeXor = (l, m, r) => {
       let lines = '';
       if (l) lines += drawLine(22, 18, 22, 52, "#38bdf8", 3);
-      if (m) lines += drawLine(35, 18, 35, 52, "#10b981", 3);
+      if (m) lines += drawLine(35, 18, 35, 52, "#38bdf8", 3);
       if (r) lines += drawLine(48, 18, 48, 52, "#ec4899", 3);
       return wrapSvg(`${drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1, 4)}${lines}`);
     };
@@ -837,9 +837,9 @@ export const MATRIX_ARCHETYPES = [
   (t, k, rand) => {
     const makeGridLine = (type) => {
       let l = '';
-      if (type === 'row1') l = drawLine(18, 22, 52, 22, "#10b981", 3);
-      if (type === 'row2') l = drawLine(18, 35, 52, 35, "#10b981", 3);
-      if (type === 'row3') l = drawLine(18, 48, 52, 48, "#10b981", 3);
+      if (type === 'row1') l = drawLine(18, 22, 52, 22, "#38bdf8", 3);
+      if (type === 'row2') l = drawLine(18, 35, 52, 35, "#38bdf8", 3);
+      if (type === 'row3') l = drawLine(18, 48, 52, 48, "#38bdf8", 3);
       return wrapSvg(`
         ${drawRect(12, 12, 46, 46, "#0f172a", "#334155", 1, 4)}
         ${drawCircle(22, 22, 2, "#475569", "#475569")} ${drawCircle(35, 22, 2, "#475569", "#475569")} ${drawCircle(48, 22, 2, "#475569", "#475569")}
@@ -1438,10 +1438,10 @@ export const ANALOGY_ARCHETYPES = [
   (t, k, rand) => {
     const figA = wrapSvg(`${drawCircle(35, 35, 20, "none", "#38bdf8", 2)}${drawRect(27, 27, 16, 16, "#f59e0b", "#f59e0b")}`);
     const figB = wrapSvg(`${drawRect(20, 20, 30, 30, "none", "#f59e0b", 2)}${drawCircle(35, 35, 8, "#38bdf8", "#38bdf8")}`);
-    const figC = wrapSvg(`${drawPolygon(makePolygonPts(3, 22, 35, 38), "none", "#10b981", 2)}${drawCircle(35, 36, 6, "#ec4899", "#ec4899")}`);
-    const correctSvg = wrapSvg(`${drawCircle(35, 35, 20, "none", "#ec4899", 2)}${drawPolygon(makePolygonPts(3, 10, 35, 36), "#10b981", "#10b981")}`);
+    const figC = wrapSvg(`${drawPolygon(makePolygonPts(3, 22, 35, 38), "none", "#38bdf8", 2)}${drawCircle(35, 36, 6, "#ec4899", "#ec4899")}`);
+    const correctSvg = wrapSvg(`${drawCircle(35, 35, 20, "none", "#ec4899", 2)}${drawPolygon(makePolygonPts(3, 10, 35, 36), "#38bdf8", "#38bdf8")}`);
     const distractors = [
-      wrapSvg(`${drawPolygon(makePolygonPts(3, 22, 35, 38), "none", "#ec4899", 2)}${drawCircle(35, 36, 6, "#10b981", "#10b981")}`),
+      wrapSvg(`${drawPolygon(makePolygonPts(3, 22, 35, 38), "none", "#ec4899", 2)}${drawCircle(35, 36, 6, "#38bdf8", "#38bdf8")}`),
       figA, figB, figC
     ];
     const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
@@ -1511,9 +1511,9 @@ export const ANALOGY_ARCHETYPES = [
   (t, k, rand) => {
     const figA = wrapSvg(`${drawCircle(35, 35, 8, "none", "#38bdf8", 2)}${drawLine(35, 27, 35, 15, "#38bdf8", 2)}${drawLine(43, 35, 55, 35, "#38bdf8", 2)}${drawLine(35, 43, 35, 55, "#38bdf8", 2)}${drawLine(27, 35, 15, 35, "#38bdf8", 2)}`);
     const figB = wrapSvg(`${drawCircle(35, 35, 22, "none", "#38bdf8", 2)}${drawLine(35, 13, 35, 25, "#38bdf8", 2)}${drawLine(57, 35, 45, 35, "#38bdf8", 2)}${drawLine(35, 57, 35, 45, "#38bdf8", 2)}${drawLine(13, 35, 25, 35, "#38bdf8", 2)}`);
-    const figC = wrapSvg(`${drawRect(28, 28, 14, 14, "none", "#10b981", 2)}${drawLine(35, 28, 35, 15, "#10b981", 2)}${drawLine(42, 35, 55, 35, "#10b981", 2)}${drawLine(35, 42, 35, 55, "#10b981", 2)}${drawLine(28, 35, 15, 35, "#10b981", 2)}`);
-    const correctSvg = wrapSvg(`${drawRect(18, 18, 34, 34, "none", "#10b981", 2)}${drawLine(35, 18, 35, 28, "#10b981", 2)}${drawLine(52, 35, 42, 35, "#10b981", 2)}${drawLine(35, 52, 35, 42, "#10b981", 2)}${drawLine(18, 35, 28, 35, "#10b981", 2)}`);
-    const distractors = [figA, figB, figC, wrapSvg(drawRect(18, 18, 34, 34, "none", "#10b981", 2))];
+    const figC = wrapSvg(`${drawRect(28, 28, 14, 14, "none", "#38bdf8", 2)}${drawLine(35, 28, 35, 15, "#38bdf8", 2)}${drawLine(42, 35, 55, 35, "#38bdf8", 2)}${drawLine(35, 42, 35, 55, "#38bdf8", 2)}${drawLine(28, 35, 15, 35, "#38bdf8", 2)}`);
+    const correctSvg = wrapSvg(`${drawRect(18, 18, 34, 34, "none", "#38bdf8", 2)}${drawLine(35, 18, 35, 28, "#38bdf8", 2)}${drawLine(52, 35, 42, 35, "#38bdf8", 2)}${drawLine(35, 52, 35, 42, "#38bdf8", 2)}${drawLine(18, 35, 28, 35, "#38bdf8", 2)}`);
+    const distractors = [figA, figB, figC, wrapSvg(drawRect(18, 18, 34, 34, "none", "#38bdf8", 2))];
     const { options, correctOption } = randomize([{ svg: correctSvg }, ...distractors.map(s => ({ svg: s }))], 0, rand);
     return {
       question: "Which figure satisfies the radial reversal analogy?",
@@ -1612,21 +1612,21 @@ export const FOLDING_ARCHETYPES = [
   // 1: Triangular Prism Net (3 rectangles in a row + 2 triangular end caps)
   (t, k, rand) => {
     const netSvg = wrapSvg(`
-      ${drawRect(12, 25, 15, 20, "none", "#10b981", 1.5)}
-      ${drawRect(27, 25, 15, 20, "none", "#10b981", 1.5)}
-      ${drawRect(42, 25, 15, 20, "none", "#10b981", 1.5)}
-      ${drawPolygon("27,25 42,25 34.5,12", "none", "#10b981", 1.5)} <!-- Top triangle -->
-      ${drawPolygon("27,45 42,45 34.5,58", "none", "#10b981", 1.5)} <!-- Bottom triangle -->
+      ${drawRect(12, 25, 15, 20, "none", "#38bdf8", 1.5)}
+      ${drawRect(27, 25, 15, 20, "none", "#38bdf8", 1.5)}
+      ${drawRect(42, 25, 15, 20, "none", "#38bdf8", 1.5)}
+      ${drawPolygon("27,25 42,25 34.5,12", "none", "#38bdf8", 1.5)} <!-- Top triangle -->
+      ${drawPolygon("27,45 42,45 34.5,58", "none", "#38bdf8", 1.5)} <!-- Bottom triangle -->
     `);
     const correctFolded = wrapSvg(`
-      ${drawPolygon("20,20 35,12 48,24", "none", "#10b981", 2)}
-      ${drawPolygon("20,44 35,36 48,48", "none", "#10b981", 2)}
-      ${drawLine(20, 20, 20, 44, "#10b981", 2)}${drawLine(35, 12, 35, 36, "#10b981", 2)}${drawLine(48, 24, 48, 48, "#10b981", 2)}
+      ${drawPolygon("20,20 35,12 48,24", "none", "#38bdf8", 2)}
+      ${drawPolygon("20,44 35,36 48,48", "none", "#38bdf8", 2)}
+      ${drawLine(20, 20, 20, 44, "#38bdf8", 2)}${drawLine(35, 12, 35, 36, "#38bdf8", 2)}${drawLine(48, 24, 48, 48, "#38bdf8", 2)}
     `);
-    const wrongFolded1 = wrapSvg(`${drawPolygon("35,15 15,45 40,55 55,38", "none", "#10b981", 2)}`);
-    const wrongFolded2 = wrapSvg(`${drawRect(20, 20, 30, 30, "none", "#10b981", 2)}`);
-    const wrongFolded3 = wrapSvg(`<ellipse cx="35" cy="35" rx="15" ry="25" fill="none" stroke="#10b981" stroke-width="2" />`);
-    const wrongFolded4 = wrapSvg(`${drawPolygon(makePolygonPts(6, 20, 35, 35), "none", "#10b981", 2)}`);
+    const wrongFolded1 = wrapSvg(`${drawPolygon("35,15 15,45 40,55 55,38", "none", "#38bdf8", 2)}`);
+    const wrongFolded2 = wrapSvg(`${drawRect(20, 20, 30, 30, "none", "#38bdf8", 2)}`);
+    const wrongFolded3 = wrapSvg(`<ellipse cx="35" cy="35" rx="15" ry="25" fill="none" stroke="#38bdf8" stroke-width="2" />`);
+    const wrongFolded4 = wrapSvg(`${drawPolygon(makePolygonPts(6, 20, 35, 35), "none", "#38bdf8", 2)}`);
     const { options, correctOption } = randomize([
       { svg: correctFolded }, { svg: wrongFolded1 }, { wrongFolded2, svg: wrongFolded2 }, { svg: wrongFolded3 }, { svg: wrongFolded4 }
     ], 0, rand);
@@ -1643,7 +1643,7 @@ export const FOLDING_ARCHETYPES = [
     const netSvg = wrapSvg(`
       ${drawRect(25, 10, 15, 15, "none", "#cbd5e1", 1.5)}${drawText(32.5, 17.5, "●", "#38bdf8", 12)}
       ${drawRect(10, 25, 15, 15, "none", "#cbd5e1", 1.5)}${drawText(17.5, 32.5, "▲", "#f59e0b", 12)}
-      ${drawRect(25, 25, 15, 15, "none", "#cbd5e1", 1.5)}${drawText(32.5, 32.5, "■", "#10b981", 12)}
+      ${drawRect(25, 25, 15, 15, "none", "#cbd5e1", 1.5)}${drawText(32.5, 32.5, "■", "#38bdf8", 12)}
       ${drawRect(40, 25, 15, 15, "none", "#cbd5e1", 1.5)}${drawText(47.5, 32.5, "★", "#a855f7", 12)}
       ${drawRect(25, 40, 15, 15, "none", "#cbd5e1", 1.5)}${drawText(32.5, 47.5, "✦", "#ec4899", 12)}
       ${drawRect(25, 55, 15, 15, "none", "#cbd5e1", 1.5)}${drawText(32.5, 62.5, "◆", "#e2e8f0", 12)}
@@ -1652,7 +1652,7 @@ export const FOLDING_ARCHETYPES = [
     // In net: ● is top, ■ is center front, ★ is right. These 3 faces meet at a single vertex!
     const correctCube = wrapSvg(`
       ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#cbd5e1", 1.5)}${drawText(35, 26, "●", "#38bdf8", 12)}
-      ${drawPolygon("18,26 35,36 35,54 18,44", "none", "#cbd5e1", 1.5)}${drawText(26.5, 45, "■", "#10b981", 12)}
+      ${drawPolygon("18,26 35,36 35,54 18,44", "none", "#cbd5e1", 1.5)}${drawText(26.5, 45, "■", "#38bdf8", 12)}
       ${drawPolygon("52,26 35,36 35,54 52,44", "none", "#cbd5e1", 1.5)}${drawText(43.5, 45, "★", "#a855f7", 12)}
     `);
     // Impossible cube: ● and ✦ are opposite faces in net, so they can NEVER appear adjacent!
@@ -1665,11 +1665,11 @@ export const FOLDING_ARCHETYPES = [
     const wrongCube2 = wrapSvg(`
       ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#cbd5e1", 1.5)}${drawText(35, 26, "▲", "#f59e0b", 12)}
       ${drawPolygon("18,26 35,36 35,54 18,44", "none", "#cbd5e1", 1.5)}${drawText(26.5, 45, "★", "#a855f7", 12)}
-      ${drawPolygon("52,26 35,36 35,54 52,44", "none", "#cbd5e1", 1.5)}${drawText(43.5, 45, "■", "#10b981", 12)}
+      ${drawPolygon("52,26 35,36 35,54 52,44", "none", "#cbd5e1", 1.5)}${drawText(43.5, 45, "■", "#38bdf8", 12)}
     `);
     // Impossible cube: ■ and ◆ are opposite faces in net!
     const wrongCube3 = wrapSvg(`
-      ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#cbd5e1", 1.5)}${drawText(35, 26, "■", "#10b981", 12)}
+      ${drawPolygon("35,16 52,26 35,36 18,26", "none", "#cbd5e1", 1.5)}${drawText(35, 26, "■", "#38bdf8", 12)}
       ${drawPolygon("18,26 35,36 35,54 18,44", "none", "#cbd5e1", 1.5)}${drawText(26.5, 45, "◆", "#e2e8f0", 12)}
       ${drawPolygon("52,26 35,36 35,54 52,44", "none", "#cbd5e1", 1.5)}${drawText(43.5, 45, "●", "#38bdf8", 12)}
     `);
@@ -1776,21 +1776,21 @@ export const FOLDING_ARCHETYPES = [
   // 6: Pentagonal Pyramid Net (1 pentagon + 5 triangular flaps)
   (t, k, rand) => {
     const netSvg = wrapSvg(`
-      ${drawPolygon(makePolygonPts(5, 14, 35, 35), "none", "#10b981", 2)}
-      ${drawPolygon("35,21 44,27 48,12", "none", "#10b981", 1.5)}
-      ${drawPolygon("44,27 41,41 58,38", "none", "#10b981", 1.5)}
-      ${drawPolygon("41,41 29,41 35,58", "none", "#10b981", 1.5)}
-      ${drawPolygon("29,41 26,27 12,38", "none", "#10b981", 1.5)}
-      ${drawPolygon("26,27 35,21 22,12", "none", "#10b981", 1.5)}
+      ${drawPolygon(makePolygonPts(5, 14, 35, 35), "none", "#38bdf8", 2)}
+      ${drawPolygon("35,21 44,27 48,12", "none", "#38bdf8", 1.5)}
+      ${drawPolygon("44,27 41,41 58,38", "none", "#38bdf8", 1.5)}
+      ${drawPolygon("41,41 29,41 35,58", "none", "#38bdf8", 1.5)}
+      ${drawPolygon("29,41 26,27 12,38", "none", "#38bdf8", 1.5)}
+      ${drawPolygon("26,27 35,21 22,12", "none", "#38bdf8", 1.5)}
     `);
     const correctFolded = wrapSvg(`
-      ${drawPolygon("35,14 18,38 30,52 48,46 54,32", "none", "#10b981", 2)}
-      ${drawLine(35, 14, 30, 52, "#10b981", 2)}${drawLine(35, 14, 48, 46, "#10b981", 2)}
+      ${drawPolygon("35,14 18,38 30,52 48,46 54,32", "none", "#38bdf8", 2)}
+      ${drawLine(35, 14, 30, 52, "#38bdf8", 2)}${drawLine(35, 14, 48, 46, "#38bdf8", 2)}
     `);
-    const wrongFolded1 = wrapSvg(drawRect(20, 20, 30, 30, "none", "#10b981", 2));
-    const wrongFolded2 = wrapSvg(`<ellipse cx="35" cy="35" rx="15" ry="25" fill="none" stroke="#10b981" stroke-width="2" />`);
-    const wrongFolded3 = wrapSvg(drawPolygon(makePolygonPts(3, 20, 35, 35), "none", "#10b981", 2));
-    const wrongFolded4 = wrapSvg(drawPolygon(makePolygonPts(6, 20, 35, 35), "none", "#10b981", 2));
+    const wrongFolded1 = wrapSvg(drawRect(20, 20, 30, 30, "none", "#38bdf8", 2));
+    const wrongFolded2 = wrapSvg(`<ellipse cx="35" cy="35" rx="15" ry="25" fill="none" stroke="#38bdf8" stroke-width="2" />`);
+    const wrongFolded3 = wrapSvg(drawPolygon(makePolygonPts(3, 20, 35, 35), "none", "#38bdf8", 2));
+    const wrongFolded4 = wrapSvg(drawPolygon(makePolygonPts(6, 20, 35, 35), "none", "#38bdf8", 2));
     const { options, correctOption } = randomize([
       { svg: correctFolded }, { svg: wrongFolded1 }, { svg: wrongFolded2 }, { svg: wrongFolded3 }, { svg: wrongFolded4 }
     ], 0, rand);
@@ -2002,6 +2002,41 @@ export function getSpatialQuestionsForTest(testNumber, isNewSuite = false) {
   for (let i = questions.length - 1; i > 0; i--) {
     const j = Math.floor(rand() * (i + 1));
     [questions[i], questions[j]] = [questions[j], questions[i]];
+  }
+
+  // Color Giveaway Prevention Guard for New / Unattempted Suite:
+  // Normalize all SVG colors across figures and options so choices are never given away by color.
+  if (isNew) {
+    return questions.map(q => {
+      let figureSvg = q.figureSvg;
+      if (typeof figureSvg === 'string') {
+        figureSvg = figureSvg.replace(/#10b981/gi, '#38bdf8').replace(/#22c55e/gi, '#38bdf8').replace(/#16a34a/gi, '#38bdf8');
+      } else if (Array.isArray(figureSvg)) {
+        figureSvg = figureSvg.map(s => s.replace(/#10b981/gi, '#38bdf8').replace(/#22c55e/gi, '#38bdf8').replace(/#16a34a/gi, '#38bdf8'));
+      }
+
+      let analogySvg = q.analogySvg;
+      if (analogySvg) {
+        analogySvg = {
+          a: analogySvg.a ? analogySvg.a.replace(/#10b981/gi, '#38bdf8').replace(/#22c55e/gi, '#38bdf8') : undefined,
+          b: analogySvg.b ? analogySvg.b.replace(/#10b981/gi, '#38bdf8').replace(/#22c55e/gi, '#38bdf8') : undefined,
+          c: analogySvg.c ? analogySvg.c.replace(/#10b981/gi, '#38bdf8').replace(/#22c55e/gi, '#38bdf8') : undefined,
+        };
+      }
+
+      const sanitizedOptions = (q.options || []).map(opt => {
+        if (!opt.svg) return opt;
+        let s = opt.svg;
+        s = s.replace(/#10b981/gi, '#38bdf8')
+             .replace(/#22c55e/gi, '#38bdf8')
+             .replace(/#16a34a/gi, '#38bdf8')
+             .replace(/#ec4899/gi, '#38bdf8')
+             .replace(/#a855f7/gi, '#38bdf8');
+        return { ...opt, svg: s };
+      });
+
+      return { ...q, figureSvg, analogySvg, options: sanitizedOptions };
+    });
   }
 
   return questions;
