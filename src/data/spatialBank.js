@@ -1941,22 +1941,60 @@ export function getSpatialQuestionsForTest(testNumber) {
 
   const foldIdx = k % FOLDING_ARCHETYPES.length;
 
+  const seriesCycle = Math.floor(k / 6);
+  const matrixCycle = Math.floor(k / 6);
+  const oddCycle = Math.floor(k / 6);
+  const analogyCycle = Math.floor(k / 5);
+  const foldingCycle = Math.floor(k / 10);
+
+  const modulateSvg = (svgStr, cycle) => {
+    if (!svgStr || cycle === 0) return svgStr;
+    const transforms = [
+      '',
+      'transform="rotate(90 35 35)"',
+      'transform="rotate(180 35 35)"',
+      'transform="rotate(270 35 35)"',
+      'transform="translate(70, 0) scale(-1, 1)"',
+      'transform="translate(0, 70) scale(1, -1)"'
+    ];
+    const t = transforms[cycle % transforms.length];
+    if (!t) return svgStr;
+    return svgStr.replace(/<svg\s+([^>]+)>/i, `<svg $1><g ${t}>`).replace(/<\/svg>/i, '</g></svg>');
+  };
+
+  const modQ = (q, cycle) => {
+    if (cycle === 0) return q;
+    let figureSvg = q.figureSvg;
+    if (Array.isArray(figureSvg)) {
+      figureSvg = figureSvg.map(s => modulateSvg(s, cycle));
+    } else if (typeof figureSvg === 'string') {
+      figureSvg = modulateSvg(figureSvg, cycle);
+    }
+    const options = q.options.map(opt => {
+      if (opt.svg) {
+        return { ...opt, svg: modulateSvg(opt.svg, cycle) };
+      }
+      return opt;
+    });
+    return { ...q, figureSvg, options };
+  };
+
   const questions = [
-    SERIES_ARCHETYPES[seriesIdxs[0]](testNumber, k, rand),
-    SERIES_ARCHETYPES[seriesIdxs[1]](testNumber, k + 1, rand),
-    SERIES_ARCHETYPES[seriesIdxs[2]](testNumber, k + 2, rand),
+    modQ(SERIES_ARCHETYPES[seriesIdxs[0]](testNumber, k, rand), seriesCycle),
+    modQ(SERIES_ARCHETYPES[seriesIdxs[1]](testNumber, k + 1, rand), seriesCycle),
+    modQ(SERIES_ARCHETYPES[seriesIdxs[2]](testNumber, k + 2, rand), seriesCycle),
 
-    MATRIX_ARCHETYPES[matrixIdxs[0]](testNumber, k, rand),
-    MATRIX_ARCHETYPES[matrixIdxs[1]](testNumber, k + 1, rand),
+    modQ(MATRIX_ARCHETYPES[matrixIdxs[0]](testNumber, k, rand), matrixCycle),
+    modQ(MATRIX_ARCHETYPES[matrixIdxs[1]](testNumber, k + 1, rand), matrixCycle),
 
-    ODD_ARCHETYPES[oddIdxs[0]](testNumber, k, rand),
-    ODD_ARCHETYPES[oddIdxs[1]](testNumber, k + 1, rand),
-    ODD_ARCHETYPES[oddIdxs[2]](testNumber, k + 2, rand),
+    modQ(ODD_ARCHETYPES[oddIdxs[0]](testNumber, k, rand), oddCycle),
+    modQ(ODD_ARCHETYPES[oddIdxs[1]](testNumber, k + 1, rand), oddCycle),
+    modQ(ODD_ARCHETYPES[oddIdxs[2]](testNumber, k + 2, rand), oddCycle),
 
-    ANALOGY_ARCHETYPES[analogyIdxs[0]](testNumber, k, rand),
-    ANALOGY_ARCHETYPES[analogyIdxs[1]](testNumber, k + 1, rand),
+    modQ(ANALOGY_ARCHETYPES[analogyIdxs[0]](testNumber, k, rand), analogyCycle),
+    modQ(ANALOGY_ARCHETYPES[analogyIdxs[1]](testNumber, k + 1, rand), analogyCycle),
 
-    FOLDING_ARCHETYPES[foldIdx](testNumber, k, rand)
+    modQ(FOLDING_ARCHETYPES[foldIdx](testNumber, k, rand), foldingCycle)
   ];
 
   // Deterministically shuffle within the test

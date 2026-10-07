@@ -1824,6 +1824,366 @@ export const VOCAB_BANK = [
       "Level"
     ],
     "expl": "Incline means to have a disposition or tendency toward something."
+  },
+  {
+    "word": "EPHEMERAL",
+    "type": "antonym",
+    "correct": "Permanent",
+    "distractors": [
+      "Transient",
+      "Fleeting",
+      "Momentary",
+      "Brief"
+    ],
+    "expl": "Ephemeral means lasting for a very short time. Permanent is the opposite."
+  },
+  {
+    "word": "GARRULOUS",
+    "type": "antonym",
+    "correct": "Taciturn",
+    "distractors": [
+      "Loquacious",
+      "Talkative",
+      "Voluble",
+      "Chatty"
+    ],
+    "expl": "Garrulous means excessively talkative. Taciturn means reserved or uncommunicative in speech."
+  },
+  {
+    "word": "MUNIFICENT",
+    "type": "synonym",
+    "correct": "Generous",
+    "distractors": [
+      "Miserly",
+      "Stingy",
+      "Parsimonious",
+      "Greedy"
+    ],
+    "expl": "Munificent means characterized by great generosity."
+  },
+  {
+    "word": "OSTENTATIOUS",
+    "type": "antonym",
+    "correct": "Modest",
+    "distractors": [
+      "Showy",
+      "Flamboyant",
+      "Pretentious",
+      "Gaudy"
+    ],
+    "expl": "Ostentatious means vulgar or pretentious display designed to impress. Modest is the opposite."
+  },
+  {
+    "word": "VORACIOUS",
+    "type": "synonym",
+    "correct": "Ravenous",
+    "distractors": [
+      "Satiated",
+      "Full",
+      "Indifferent",
+      "Abstemious"
+    ],
+    "expl": "Voracious means having a very eager approach to an activity, or wanting huge quantities of food."
+  },
+  {
+    "word": "TRUCULENT",
+    "type": "antonym",
+    "correct": "Peaceful",
+    "distractors": [
+      "Defiant",
+      "Aggressive",
+      "Hostile",
+      "Combative"
+    ],
+    "expl": "Truculent means eager or quick to argue or fight. Peaceful is the opposite."
+  },
+  {
+    "word": "PUERILE",
+    "type": "antonym",
+    "correct": "Mature",
+    "distractors": [
+      "Childish",
+      "Infantile",
+      "Immature",
+      "Juvenile"
+    ],
+    "expl": "Puerile means childishly silly and trivial. Mature is the opposite."
+  },
+  {
+    "word": "ALTRUISTIC",
+    "type": "antonym",
+    "correct": "Selfish",
+    "distractors": [
+      "Benevolent",
+      "Charitable",
+      "Magnanimous",
+      "Generous"
+    ],
+    "expl": "Altruistic means showing selfless concern for the well-being of others. Selfish is the opposite."
+  },
+  {
+    "word": "SOPORIFIC",
+    "type": "synonym",
+    "correct": "Sleep-inducing",
+    "distractors": [
+      "Stimulating",
+      "Invigorating",
+      "Energizing",
+      "Exciting"
+    ],
+    "expl": "Soporific means tending to induce drowsiness or sleep."
+  },
+  {
+    "word": "INCHOATE",
+    "type": "antonym",
+    "correct": "Fully-formed",
+    "distractors": [
+      "Rudimentary",
+      "Nascent",
+      "Formless",
+      "Unfinished"
+    ],
+    "expl": "Inchoate means just begun and so not fully formed or developed."
+  },
+  {
+    "word": "OBSEQUIOUS",
+    "type": "synonym",
+    "correct": "Servile",
+    "distractors": [
+      "Assertive",
+      "Defiant",
+      "Domineering",
+      "Independent"
+    ],
+    "expl": "Obsequious means obedient or attentive to an excessive or servile degree."
+  },
+  {
+    "word": "OBDURATE",
+    "type": "synonym",
+    "correct": "Stubborn",
+    "distractors": [
+      "Compliant",
+      "Malleable",
+      "Submissive",
+      "Pliable"
+    ],
+    "expl": "Obdurate means stubbornly refusing to change one's opinion or course of action."
+  },
+  {
+    "word": "PERFUNCTORY",
+    "type": "antonym",
+    "correct": "Thorough",
+    "distractors": [
+      "Cursory",
+      "Superficial",
+      "Desultory",
+      "Casual"
+    ],
+    "expl": "Perfunctory means carried out with a minimum of effort or reflection. Thorough is opposite."
+  },
+  {
+    "word": "ACERBIC",
+    "type": "antonym",
+    "correct": "Gentle",
+    "distractors": [
+      "Caustic",
+      "Sharp",
+      "Biting",
+      "Sarcastic"
+    ],
+    "expl": "Acerbic means sharp and forthright in taste or speaking. Gentle is the opposite."
+  },
+  {
+    "word": "SANCTIMONIOUS",
+    "type": "synonym",
+    "correct": "Self-righteous",
+    "distractors": [
+      "Humble",
+      "Modest",
+      "Sincere",
+      "Genuine"
+    ],
+    "expl": "Sanctimonious means making a hypocritical show of moral superiority."
+  },
+  {
+    "word": "CAJOLE",
+    "type": "synonym",
+    "correct": "Coax",
+    "distractors": [
+      "Dissuade",
+      "Force",
+      "Bully",
+      "Demand"
+    ],
+    "expl": "Cajole means to persuade someone to do something by sustained coaxing or flattery."
+  },
+  {
+    "word": "INEFFABLE",
+    "type": "synonym",
+    "correct": "Indescribable",
+    "distractors": [
+      "Utterable",
+      "Commonplace",
+      "Definable",
+      "Ordinary"
+    ],
+    "expl": "Ineffable means too great or extreme to be expressed or described in words."
+  },
+  {
+    "word": "MELLIFLUOUS",
+    "type": "antonym",
+    "correct": "Harsh",
+    "distractors": [
+      "Sweet-sounding",
+      "Dulcet",
+      "Harmonious",
+      "Euphonious"
+    ],
+    "expl": "Mellifluous means sweet or musical; pleasant to hear. Harsh is the opposite."
+  },
+  {
+    "word": "NEFARIOUS",
+    "type": "synonym",
+    "correct": "Wicked",
+    "distractors": [
+      "Virtuous",
+      "Admirable",
+      "Honorable",
+      "Noble"
+    ],
+    "expl": "Nefarious means wicked or criminal."
+  },
+  {
+    "word": "PERNICIOUS",
+    "type": "antonym",
+    "correct": "Beneficial",
+    "distractors": [
+      "Harmful",
+      "Destructive",
+      "Deadly",
+      "Ruinous"
+    ],
+    "expl": "Pernicious means having a harmful effect, especially in a gradual or subtle way. Beneficial is opposite."
+  },
+  {
+    "word": "QUIXOTIC",
+    "type": "antonym",
+    "correct": "Pragmatic",
+    "distractors": [
+      "Idealistic",
+      "Unrealistic",
+      "Impractical",
+      "Utopian"
+    ],
+    "expl": "Quixotic means exceedingly idealistic; unrealistic and impractical. Pragmatic is the opposite."
+  },
+  {
+    "word": "RETICENT",
+    "type": "synonym",
+    "correct": "Reserved",
+    "distractors": [
+      "Loquacious",
+      "Frank",
+      "Demonstrative",
+      "Unrestrained"
+    ],
+    "expl": "Reticent means not revealing one's thoughts or feelings readily; reserved."
+  },
+  {
+    "word": "TURPITUDE",
+    "type": "synonym",
+    "correct": "Depravity",
+    "distractors": [
+      "Virtue",
+      "Integrity",
+      "Honor",
+      "Purity"
+    ],
+    "expl": "Turpitude means depraved or wicked behavior or character."
+  },
+  {
+    "word": "VITRIOLIC",
+    "type": "antonym",
+    "correct": "Complimentary",
+    "distractors": [
+      "Caustic",
+      "Acerbic",
+      "Corrosive",
+      "Biting"
+    ],
+    "expl": "Vitriolic means filled with bitter criticism or malice. Complimentary is opposite."
+  },
+  {
+    "word": "VENERATE",
+    "type": "synonym",
+    "correct": "Revere",
+    "distractors": [
+      "Despise",
+      "Disdain",
+      "Scorn",
+      "Belittle"
+    ],
+    "expl": "Venerate means to regard with great respect or reverence."
+  },
+  {
+    "word": "DISPARATE",
+    "type": "antonym",
+    "correct": "Homogeneous",
+    "distractors": [
+      "Divergent",
+      "Dissimilar",
+      "Contrasting",
+      "Different"
+    ],
+    "expl": "Disparate means essentially different in kind; not able to be compared. Homogeneous is opposite."
+  },
+  {
+    "word": "ANOMALY",
+    "type": "synonym",
+    "correct": "Aberration",
+    "distractors": [
+      "Norm",
+      "Standard",
+      "Routine",
+      "Regularity"
+    ],
+    "expl": "Anomaly means something that deviates from what is standard, normal, or expected."
+  },
+  {
+    "word": "INVIDIOUS",
+    "type": "synonym",
+    "correct": "Resentful",
+    "distractors": [
+      "Pleasant",
+      "Delightful",
+      "Fair",
+      "Impartial"
+    ],
+    "expl": "Invidious means likely to arouse or incur resentment or anger in others."
+  },
+  {
+    "word": "DEBACLE",
+    "type": "synonym",
+    "correct": "Fiasco",
+    "distractors": [
+      "Triumph",
+      "Victory",
+      "Success",
+      "Achievement"
+    ],
+    "expl": "Debacle means a sudden and ignominious failure; a fiasco."
+  },
+  {
+    "word": "EQUANIMITY",
+    "type": "antonym",
+    "correct": "Agitation",
+    "distractors": [
+      "Composure",
+      "Calmness",
+      "Serenity",
+      "Poise"
+    ],
+    "expl": "Equanimity means mental calmness and composure, especially in a difficult situation. Agitation is opposite."
   }
 ];
 export const ANALOGY_BANK = [
@@ -3602,6 +3962,390 @@ export const ANALOGY_BANK = [
       "HYDROMETER : BULB"
     ],
     "expl": "Bridge relationship: analytical laboratory equipment to physical principle utilized. SPECTROGRAPH : PRISM shares this exact relationship with SEPARATORY FUNNEL : DENSITY."
+  },
+  {
+    "pair": "CHISEL : SCULPTOR",
+    "rel": "tool to practitioner",
+    "correct": "SCALPEL : SURGEON",
+    "distractors": [
+      "CANVAS : PAINTER",
+      "BOOK : READER",
+      "HAMMER : NAIL",
+      "BRICK : ARCHITECT"
+    ],
+    "expl": "A chisel is a primary specialized tool used by a sculptor; a scalpel is used by a surgeon."
+  },
+  {
+    "pair": "LUMBERJACK : AXE",
+    "rel": "worker to primary tool",
+    "correct": "BARBER : SCISSORS",
+    "distractors": [
+      "CARPENTER : WOOD",
+      "FARMER : BARN",
+      "MASON : BRICK",
+      "DRIVER : ROAD"
+    ],
+    "expl": "A lumberjack primarily wields an axe; a barber primarily wields scissors."
+  },
+  {
+    "pair": "MALLEABLE : METAL",
+    "rel": "property to substance",
+    "correct": "PLIABLE : CLAY",
+    "distractors": [
+      "BRITTLE : RUBBER",
+      "RIGID : LIQUID",
+      "TRANSPARENT : WOOD",
+      "HEAVY : FEATHER"
+    ],
+    "expl": "Metal is characteristically malleable (easily shaped); clay is characteristically pliable."
+  },
+  {
+    "pair": "CHRONOMETER : TIME",
+    "rel": "measuring instrument to dimension",
+    "correct": "ODOMETER : DISTANCE",
+    "distractors": [
+      "SCALE : POUND",
+      "THERMOMETER : WEATHER",
+      "BAROMETER : ALTITUDE",
+      "COMPASS : MAP"
+    ],
+    "expl": "A chronometer measures time; an odometer measures distance traveled."
+  },
+  {
+    "pair": "ANCHOR : SHIP",
+    "rel": "stabilizer to vehicle",
+    "correct": "BRAKE : CAR",
+    "distractors": [
+      "ENGINE : PLANE",
+      "RUDDER : TRAIN",
+      "SAIL : BOAT",
+      "WHEEL : BICYCLE"
+    ],
+    "expl": "An anchor holds a ship stationary; a brake stops and holds a car stationary."
+  },
+  {
+    "pair": "RUDDER : BOAT",
+    "rel": "steering mechanism to vehicle",
+    "correct": "HANDLEBARS : BICYCLE",
+    "distractors": [
+      "TIRE : CAR",
+      "WING : AIRPLANE",
+      "CABIN : TRUCK",
+      "TRACK : TRAIN"
+    ],
+    "expl": "A rudder is used to steer a boat; handlebars are used to steer a bicycle."
+  },
+  {
+    "pair": "QUARRY : MARBLE",
+    "rel": "source to extracted material",
+    "correct": "MINE : COAL",
+    "distractors": [
+      "FOREST : WOODPECKER",
+      "RIVER : FISH",
+      "FACTORY : STEEL",
+      "STORE : MERCHANDISE"
+    ],
+    "expl": "Marble is excavated from a quarry; coal is excavated from a mine."
+  },
+  {
+    "pair": "ARBORETUM : TREES",
+    "rel": "specialized sanctuary to preserved subject",
+    "correct": "APIARY : BEES",
+    "distractors": [
+      "AQUARIUM : WATER",
+      "GARDEN : FENCE",
+      "ORCHARD : FRUIT",
+      "FOREST : PATH"
+    ],
+    "expl": "An arboretum is a dedicated sanctuary for trees; an apiary is a dedicated collection of beehives for bees."
+  },
+  {
+    "pair": "STANZA : POEM",
+    "rel": "structural unit to whole",
+    "correct": "CHAPTER : NOVEL",
+    "distractors": [
+      "ACTOR : PLAY",
+      "RHYME : PROSE",
+      "WORD : LETTER",
+      "PAGE : BOOKMARK"
+    ],
+    "expl": "A stanza is a major divisional unit of a poem; a chapter is a divisional unit of a novel."
+  },
+  {
+    "pair": "SPONGE : ABSORBENT",
+    "rel": "object to intrinsic property",
+    "correct": "GLUE : ADHESIVE",
+    "distractors": [
+      "WATER : DRY",
+      "GLASS : MALLEABLE",
+      "ROCK : LIGHTWEIGHT",
+      "ICE : BOILING"
+    ],
+    "expl": "A sponge is inherently absorbent; glue is inherently adhesive."
+  },
+  {
+    "pair": "LUBRICANT : FRICTION",
+    "rel": "agent to thing reduced",
+    "correct": "ANESTHETIC : PAIN",
+    "distractors": [
+      "FUEL : COMBUSTION",
+      "CATALYST : ENERGY",
+      "HEAT : TEMPERATURE",
+      "EXERCISE : STRENGTH"
+    ],
+    "expl": "A lubricant serves to diminish friction; an anesthetic serves to diminish pain."
+  },
+  {
+    "pair": "INSULATOR : HEAT",
+    "rel": "barrier to transferred entity",
+    "correct": "DAM : WATER",
+    "distractors": [
+      "CONDUCTOR : ELECTRICITY",
+      "FILTER : AIR",
+      "WINDOW : SUNLIGHT",
+      "PIPE : STEAM"
+    ],
+    "expl": "An insulator blocks or impedes the flow of heat; a dam blocks the flow of water."
+  },
+  {
+    "pair": "ALCHEMIST : GOLD",
+    "rel": "seeker to pursued object",
+    "correct": "PROSPECTOR : MINERALS",
+    "distractors": [
+      "BLACKSMITH : IRON",
+      "TAILOR : CLOTH",
+      "HUNTER : TRAP",
+      "SAILOR : OCEAN"
+    ],
+    "expl": "An alchemist seeks to produce gold; a prospector searches for valuable minerals."
+  },
+  {
+    "pair": "GAVEL : JUDGE",
+    "rel": "emblematic tool to authority",
+    "correct": "BATON : CONDUCTOR",
+    "distractors": [
+      "WHISTLE : TRAIN",
+      "ROBE : LAWYER",
+      "BADGE : CITIZEN",
+      "HAMMER : CARPENTER"
+    ],
+    "expl": "A gavel is used by a judge to maintain order; a baton is used by a conductor to direct an orchestra."
+  },
+  {
+    "pair": "METRONOME : TEMPO",
+    "rel": "regulator to musical property",
+    "correct": "GOVERNOR : SPEED",
+    "distractors": [
+      "THERMOMETER : WEATHER",
+      "CHRONOMETER : DISTANCE",
+      "COMPASS : ALTITUDE",
+      "TUNER : VOLUME"
+    ],
+    "expl": "A metronome regulates musical tempo; a governor regulates mechanical speed."
+  },
+  {
+    "pair": "ARCHIPELAGO : ISLAND",
+    "rel": "collection to constituent unit",
+    "correct": "CONSTELLATION : STAR",
+    "distractors": [
+      "FOREST : LEAF",
+      "MOUNTAIN : PEAK",
+      "OCEAN : WAVE",
+      "DESERT : CACTUS"
+    ],
+    "expl": "An archipelago is a group or chain of islands; a constellation is a recognizable group of stars."
+  },
+  {
+    "pair": "CANVAS : PAINTER",
+    "rel": "medium surface to artist",
+    "correct": "MARBLE : SCULPTOR",
+    "distractors": [
+      "PALETTE : BRUSH",
+      "MUSEUM : CURATOR",
+      "GALLERY : ARTWORK",
+      "STAGE : ACTOR"
+    ],
+    "expl": "A canvas is the medium upon which a painter works; marble is the medium upon which a sculptor works."
+  },
+  {
+    "pair": "TAXONOMIST : SPECIES",
+    "rel": "expert classifier to categorized entity",
+    "correct": "GENEALOGIST : ANCESTORS",
+    "distractors": [
+      "ASTRONOMER : SKY",
+      "GEOLOGIST : FOSSIL",
+      "HISTORIAN : BOOK",
+      "CHEMIST : LAB"
+    ],
+    "expl": "A taxonomist systematically classifies biological species; a genealogist traces ancestral lineages."
+  },
+  {
+    "pair": "SUTURE : WOUND",
+    "rel": "repair action to damage",
+    "correct": "DARN : TEAR",
+    "distractors": [
+      "BANDAGE : BONE",
+      "CLEANSE : INFECTION",
+      "CAST : SWELLING",
+      "SLING : MUSCLE"
+    ],
+    "expl": "To suture is to stitch together a wound; to darn is to stitch together a tear in fabric."
+  },
+  {
+    "pair": "CULL : HERD",
+    "rel": "selective reduction to collection",
+    "correct": "WEED : GARDEN",
+    "distractors": [
+      "HARVEST : CROP",
+      "FEED : FLOCK",
+      "WATER : LAWN",
+      "FENCE : PASTURE"
+    ],
+    "expl": "To cull is to selectively remove individuals from a herd; to weed is to selectively remove unwanted plants from a garden."
+  },
+  {
+    "pair": "INDIGENT : WEALTH",
+    "rel": "state of lacking a quality",
+    "correct": "EMACIATED : NOURISHMENT",
+    "distractors": [
+      "AFFLUENT : MONEY",
+      "OBESE : WEIGHT",
+      "HEALTHY : VITALITY",
+      "TIRED : SLEEP"
+    ],
+    "expl": "Indigent means completely lacking in wealth; emaciated means severely lacking in nourishment."
+  },
+  {
+    "pair": "INCUBATOR : INFANT",
+    "rel": "protective enclosure to subject",
+    "correct": "GREENHOUSE : PLANT",
+    "distractors": [
+      "HOSPITAL : DOCTOR",
+      "CRIB : TOY",
+      "NURSERY : ADULT",
+      "GARDEN : SOIL"
+    ],
+    "expl": "An incubator provides a controlled protective environment for an infant; a greenhouse does so for plants."
+  },
+  {
+    "pair": "CALLIGRAPHY : PEN",
+    "rel": "art form to instrument",
+    "correct": "ETCHING : BURIN",
+    "distractors": [
+      "PAINTING : FRAME",
+      "SCULPTURE : CLAY",
+      "DRAWING : PAPER",
+      "PRINTING : INK"
+    ],
+    "expl": "Calligraphy is executed with a pen; etching is executed with a burin."
+  },
+  {
+    "pair": "PERJURY : OATH",
+    "rel": "violation of formal commitment",
+    "correct": "TREASON : ALLEGIANCE",
+    "distractors": [
+      "THEFT : PROPERTY",
+      "FRAUD : CONTRACT",
+      "LIBEL : REPUTATION",
+      "ASSAULT : LAW"
+    ],
+    "expl": "Perjury is the violation of a sworn legal oath; treason is the violation of sworn national allegiance."
+  },
+  {
+    "pair": "PLUMMET : ALTITUDE",
+    "rel": "rapid sharp decline to property",
+    "correct": "COLLAPSE : VALUE",
+    "distractors": [
+      "ASCEND : HEIGHT",
+      "DRIFT : CURRENT",
+      "SOAR : SKY",
+      "HOVER : LEVEL"
+    ],
+    "expl": "To plummet is to experience a steep plunge in altitude; to collapse is to experience a steep plunge in economic value."
+  },
+  {
+    "pair": "REFRACTORY : CONTROL",
+    "rel": "resistant to influence",
+    "correct": "IMPERVIOUS : PENETRATION",
+    "distractors": [
+      "COMPLIANT : RULES",
+      "FRAGILE : FORCE",
+      "ELASTIC : STRETCH",
+      "PERMEABLE : FLUID"
+    ],
+    "expl": "Refractory means stubbornly resistant to control; impervious means completely resistant to penetration."
+  },
+  {
+    "pair": "TRIATHLETE : ENDURANCE",
+    "rel": "specialist to requisite physical attribute",
+    "correct": "ACROBAT : FLEXIBILITY",
+    "distractors": [
+      "BOXER : GLOVES",
+      "RUNNER : TRACK",
+      "SWIMMER : WATER",
+      "COACH : WHISTLE"
+    ],
+    "expl": "A triathlete critically relies on endurance; an acrobat critically relies on flexibility."
+  },
+  {
+    "pair": "CENSUS : POPULATION",
+    "rel": "official survey to subject",
+    "correct": "INVENTORY : MERCHANDISE",
+    "distractors": [
+      "ELECTION : BALLOT",
+      "TAX : INCOME",
+      "AUDIT : TREASURY",
+      "SURVEY : LAND"
+    ],
+    "expl": "A census is a comprehensive count of a population; an inventory is a comprehensive count of merchandise."
+  },
+  {
+    "pair": "NOCTURNAL : NIGHT",
+    "rel": "active period to time",
+    "correct": "DIURNAL : DAY",
+    "distractors": [
+      "CREPUSCULAR : DAWN",
+      "HIBERNAL : SUMMER",
+      "ESTIVAL : WINTER",
+      "VERNAL : AUTUMN"
+    ],
+    "expl": "Nocturnal describes active behavior during the night; diurnal describes active behavior during the day."
+  },
+  {
+    "pair": "DISPATCH : MESSAGE",
+    "rel": "sending action to object",
+    "correct": "TRANSMIT : SIGNAL",
+    "distractors": [
+      "RECEIVE : LETTER",
+      "ENCODE : CIPHER",
+      "DELETE : RECORD",
+      "BROADCAST : LISTENER"
+    ],
+    "expl": "To dispatch is to send off a message; to transmit is to send out a signal."
+  },
+  {
+    "pair": "CONFECTIONER : SWEETS",
+    "rel": "specialist creator to product",
+    "correct": "CARTOGRAPHER : MAPS",
+    "distractors": [
+      "AUTHOR : INK",
+      "COBBLER : FEET",
+      "BAKER : FLOUR",
+      "TAILOR : NEEDLE"
+    ],
+    "expl": "A confectioner specializes in creating sweets; a cartographer specializes in creating maps."
+  },
+  {
+    "pair": "DISINFECTANT : MICROBE",
+    "rel": "neutralizing agent to target",
+    "correct": "HERBICIDE : WEED",
+    "distractors": [
+      "FERTILIZER : SOIL",
+      "ANTIBIOTIC : VIRUS",
+      "INSECTICIDE : FLOWER",
+      "WATER : FIRE"
+    ],
+    "expl": "A disinfectant is formulated to destroy microbes; an herbicide is formulated to destroy unwanted weeds."
   }
 ];
 export const SYLLOGISM_BANK = [

@@ -15,6 +15,8 @@
  * tests 2 through 30 never repeat the same questions with slight variations.
  */
 
+import { getMathVariant } from './mathVariants.js';
+
 function pseudoRandom(seed) {
   let s = seed % 2147483647;
   if (s <= 0) s += 2147483646;
@@ -1245,7 +1247,14 @@ export function getMathQuestionsForTest(testNumber) {
     if (!chosenIndices.includes(idx)) chosenIndices.push(idx);
   }
 
-  const questions = chosenIndices.map((idx) => MATH_ARCHETYPES[idx](testNumber, k, rand));
+  const cycle = Math.floor(k / 3);
+  const questions = chosenIndices.map((idx) => {
+    if (cycle > 0) {
+      const variant = getMathVariant(idx, cycle, rand);
+      if (variant) return variant;
+    }
+    return MATH_ARCHETYPES[idx](testNumber, k, rand);
+  });
 
   // Deterministically shuffle within the test
   for (let i = questions.length - 1; i > 0; i--) {

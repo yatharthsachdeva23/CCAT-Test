@@ -2,7 +2,7 @@ import { getSpatialBank, getVerbalBank, getMathBank, randomizeOptions } from './
 import { getVerbalQuestionsForTest } from './verbalBank.js';
 import { getMathQuestionsForTest } from './mathBank.js';
 import { getSpatialQuestionsForTest } from './spatialBank.js';
-import { getAttempts } from '../utils/storage.js';
+import { getAttempts, getActiveSession } from '../utils/storage.js';
 
 /**
  * Procedural Test Synthesizer for Tests 1 through 30.
@@ -94,9 +94,24 @@ export function buildTest(testNumber = 1) {
     };
   }
 
-  // Completed Test Protection Guard: If the user has already completed this simulation,
-  // load the questions directly from their saved attempt so completed tests are never altered!
+  // Completed Test & Active Session Protection Guard:
+  // If the user has already completed this simulation or has it in-flight,
+  // load the questions directly from storage so tests are never altered!
   try {
+    const active = getActiveSession();
+    if (active && active.testId === `test-${testNumber}` && active.questions && active.questions.length === 50) {
+      return {
+        id: `test-${testNumber}`,
+        testNumber,
+        title: active.testTitle || `CCAT Full Simulation #${testNumber}`,
+        totalQuestions: 50,
+        timeLimitSec: active.timeLimitSec || 900,
+        mathCount: 22,
+        verbalCount: 17,
+        spatialCount: 11,
+        questions: active.questions
+      };
+    }
     const attempts = getAttempts();
     const existing = attempts.find(a => a.testId === `test-${testNumber}`);
     if (existing && existing.questions && existing.questions.length === 50) {
