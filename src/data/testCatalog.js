@@ -97,9 +97,7 @@ export function buildTest(testNumber = 1) {
   // Completed Test & Active Session Protection Guard:
   // If the user has already completed this simulation or has it in-flight,
   // load the questions directly from storage so tests are never altered!
-  const defaultTitle = testNumber <= 30 
-    ? `CCAT Full Simulation #${testNumber}` 
-    : `CCAT Full Simulation #${testNumber} (New)`;
+  const defaultTitle = `CCAT Full Simulation #${testNumber}`;
 
   try {
     const active = getActiveSession();
@@ -180,7 +178,7 @@ export const TEST_CATALOG = Array.from({ length: 57 }, (_, i) => {
   return {
     id: `test-${num}`,
     testNumber: num,
-    title: num <= 30 ? `CCAT Full Simulation #${num}` : `CCAT Full Simulation #${num} (New)`,
+    title: `CCAT Full Simulation #${num}`,
     totalQuestions: 50,
     timeLimitSec: 900
   };

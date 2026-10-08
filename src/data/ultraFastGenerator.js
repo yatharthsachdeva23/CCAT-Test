@@ -9,8 +9,9 @@
  * 
  * STRICT CONSTRAINT:
  * - Only generates variations of concepts/questions the user has already encountered
- *   in their ATTEMPTED tests (defaulting to Test 1 if no tests completed yet).
- * - NEVER takes direct questions from unattempted tests (keeps tests 2–30 pristine).
+ *   in their ATTEMPTED tests (across Tests 1 through 57; defaulting to Test 1 if no tests completed yet).
+ * - NEVER takes direct questions from unattempted tests (keeps all unattempted tests pristine).
+ * - Dynamically includes ALL attempted tests (#1 through #57) to synthesize concept variations.
  */
 
 import { buildTest } from './testCatalog.js';
@@ -718,16 +719,29 @@ const SPATIAL_VARIATION_POOLS = [
  * Returns a high-speed sprint question set for the specified subject.
  * 
  * @param {string} subject - 'verbal' | 'math' | 'spatial'
- * @param {Array<string>} userAttemptedTestIds - List of tests the user has completed
+ * @param {Array<string>} userAttemptedTestIds - List of tests the user has completed (#1 through #57)
  * @param {number} sprintSeed - Optional random seed
+ * @param {Array<object>} userAttempts - Optional raw attempt objects for snapshot question retrieval
  */
-export function generateUltraFastSprint(subject, userAttemptedTestIds = [], sprintSeed = Date.now()) {
+export function generateUltraFastSprint(subject, userAttemptedTestIds = [], sprintSeed = Date.now(), userAttempts = []) {
   const rand = pseudoRand(sprintSeed);
 
-  // Guarantee we only base variations on tests the user has actually attempted
-  const safeAttemptedTests = (userAttemptedTestIds && userAttemptedTestIds.length > 0)
-    ? userAttemptedTestIds
-    : ['test-1'];
+  // Guarantee we include questions from ALL tests the user has actually attempted (Tests 1 through 57)
+  let safeAttemptedTests = (userAttemptedTestIds && userAttemptedTestIds.length > 0)
+    ? [...userAttemptedTestIds]
+    : [];
+
+  if (userAttempts && userAttempts.length > 0) {
+    userAttempts.forEach(a => {
+      if (a.testId && !safeAttemptedTests.includes(a.testId)) {
+        safeAttemptedTests.push(a.testId);
+      }
+    });
+  }
+
+  if (safeAttemptedTests.length === 0) {
+    safeAttemptedTests = ['test-1'];
+  }
 
   // Sprint configuration
   const count = subject === 'verbal' ? 8 : subject === 'math' ? 4 : 6;
@@ -738,15 +752,29 @@ export function generateUltraFastSprint(subject, userAttemptedTestIds = [], spri
       ? MATH_VARIATION_POOLS 
       : SPATIAL_VARIATION_POOLS;
 
-  // 1. Ingest questions directly from the user's completed simulation tests
+  // 1. Ingest questions directly from ALL completed simulation tests (#1 to #57)
   const candidatesFromCompletedTests = [];
+  const attemptMap = new Map();
+  if (userAttempts && userAttempts.length > 0) {
+    userAttempts.forEach(a => {
+      if (a.testId && a.questions && a.questions.length > 0) {
+        attemptMap.set(a.testId, a.questions);
+      }
+    });
+  }
+
   safeAttemptedTests.forEach(tId => {
     const match = tId.match(/test-(\d+)/);
     if (!match) return;
     const testNum = parseInt(match[1], 10);
     try {
-      const testData = buildTest(testNum);
-      testData.questions.forEach(q => {
+      let questions = attemptMap.get(tId);
+      if (!questions || questions.length === 0) {
+        const testData = buildTest(testNum);
+        questions = testData?.questions || [];
+      }
+
+      questions.forEach(q => {
         if (q.category === subject) {
           // For math 15s speed, filter out questions with lengthy prompts (>240 chars)
           if (subject === 'math' && q.question && q.question.length > 240) return;

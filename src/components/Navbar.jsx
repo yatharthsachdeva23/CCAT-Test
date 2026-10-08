@@ -52,7 +52,7 @@ export default function Navbar({ activeTab, setActiveTab, attemptsCount = 0, bes
             }`}
           >
             <Trophy className="w-4 h-4" />
-            <span>Test Suite (1–30)</span>
+            <span>Test Suite (1–57)</span>
           </button>
 
           <button

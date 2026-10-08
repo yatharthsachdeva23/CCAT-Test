@@ -164,8 +164,8 @@ export default function Dashboard({
                 <Zap className="w-3.5 h-3.5 text-indigo-400" />
                 <span>Test Suite</span>
               </p>
-              <p className="text-2xl sm:text-3xl font-black text-white">30 Full</p>
-              <p className="text-[11px] text-slate-400 mt-1">1,500 Questions total</p>
+              <p className="text-2xl sm:text-3xl font-black text-white">57 Full</p>
+              <p className="text-[11px] text-slate-400 mt-1">2,850 Questions total</p>
             </div>
           </div>
 
