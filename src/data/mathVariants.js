@@ -241,7 +241,7 @@ VARIANT_GENERATORS[6] = (cycle, rand) => {
     { sp: 35, cp: '53.8%' },
     { sp: 12.5, cp: '14.3%' },
     { sp: 33.3, cp: '50.0%' },
-    { sp: 20, cp: '25.0%' }
+    { sp: 15, cp: '17.6%' }
   ];
   const item = table[(cycle - 1) % table.length];
   const q = `A wholesale merchant prices inventory such that their net profit equals exactly ${item.sp}% of the final SELLING price. What is the merchant's net profit percentage based on the wholesale COST price?`;
@@ -284,7 +284,7 @@ VARIANT_GENERATORS[7] = (cycle, rand) => {
 // 8: LCM OF THREE TIMERS
 VARIANT_GENERATORS[8] = (cycle, rand) => {
   const table = [
-    { a: 12, b: 15, c: 20, lcm: 60 },
+    { a: 15, b: 18, c: 30, lcm: 90 },
     { a: 15, b: 20, c: 30, lcm: 60 },
     { a: 12, b: 18, c: 24, lcm: 72 },
     { a: 8, b: 12, c: 16, lcm: 48 },
@@ -317,7 +317,7 @@ VARIANT_GENERATORS[9] = (cycle, rand) => {
     { pH: 6, pS: 8, tS: 40, tH: 30 },
     { pH: 5, pS: 2, tS: 18, tH: 45 },
     { pH: 9, pS: 6, tS: 30, tH: 45 },
-    { pH: 6, pS: 4, tS: 32, tH: 48 }
+    { pH: 7, pS: 4, tS: 36, tH: 63 }
   ];
   const item = table[(cycle - 1) % table.length];
   const q = `At 3:00 PM on a clear afternoon, a vertical ${item.pH}-foot signpost casts a shadow of ${item.pS} feet on level ground. At the same instant, a nearby pine tree casts a shadow of ${item.tS} feet. What is the height of the tree?`;

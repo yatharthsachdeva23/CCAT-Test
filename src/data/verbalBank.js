@@ -2185,6 +2185,511 @@ export const VOCAB_BANK = [
     ],
     "expl": "Equanimity means mental calmness and composure, especially in a difficult situation. Agitation is opposite."
   }
+,
+  {
+    "word": "ABSTRUSE",
+    "type": "antonym",
+    "correct": "Clear",
+    "distractors": [
+      "Obscure",
+      "Arcane",
+      "Esoteric",
+      "Recondite"
+    ],
+    "expl": "Abstruse means difficult to understand; obscure. Clear is its direct antonym."
+  },
+  {
+    "word": "ANACHRONISTIC",
+    "type": "antonym",
+    "correct": "Timely",
+    "distractors": [
+      "Outdated",
+      "Archaic",
+      "Antiquated",
+      "Obsolete"
+    ],
+    "expl": "Anachronistic means belonging or appropriate to an earlier period; chronologically misplaced."
+  },
+  {
+    "word": "AVER",
+    "type": "antonym",
+    "correct": "Deny",
+    "distractors": [
+      "Assert",
+      "Declare",
+      "Maintain",
+      "Affirm"
+    ],
+    "expl": "Aver means to state or assert to be the case. Deny is the opposite."
+  },
+  {
+    "word": "BLANDISHMENT",
+    "type": "antonym",
+    "correct": "Criticism",
+    "distractors": [
+      "Flattery",
+      "Coaxing",
+      "Cajolery",
+      "Enticement"
+    ],
+    "expl": "Blandishment means flattering or pleasing statements or actions used to persuade. Criticism is opposite."
+  },
+  {
+    "word": "BOMBASTIC",
+    "type": "antonym",
+    "correct": "Understated",
+    "distractors": [
+      "Pompous",
+      "Grandiose",
+      "Pretentious",
+      "Ostentatious"
+    ],
+    "expl": "Bombastic means high-sounding but with little meaning; inflated. Understated is opposite."
+  },
+  {
+    "word": "CALUMNY",
+    "type": "antonym",
+    "correct": "Praise",
+    "distractors": [
+      "Slander",
+      "Defamation",
+      "Libel",
+      "Aspersion"
+    ],
+    "expl": "Calumny is the making of false and defamatory statements in order to damage someone's reputation."
+  },
+  {
+    "word": "CASTIGATE",
+    "type": "antonym",
+    "correct": "Commend",
+    "distractors": [
+      "Reprimand",
+      "Chastise",
+      "Rebuke",
+      "Admonish"
+    ],
+    "expl": "Castigate means reprimand severely. Commend means praise formally or officially."
+  },
+  {
+    "word": "CHICANERY",
+    "type": "antonym",
+    "correct": "Honesty",
+    "distractors": [
+      "Deception",
+      "Trickery",
+      "Subterfuge",
+      "Duplicity"
+    ],
+    "expl": "Chicanery means the use of trickery to achieve a political, financial, or legal purpose."
+  },
+  {
+    "word": "CIRCUMSLOCUTION",
+    "type": "antonym",
+    "correct": "Directness",
+    "distractors": [
+      "Verbosity",
+      "Prolixity",
+      "Periphrasis",
+      "Evasion"
+    ],
+    "expl": "Circumlocution is the use of many words where fewer would do. Directness is opposite."
+  },
+  {
+    "word": "CURSORY",
+    "type": "antonym",
+    "correct": "Thorough",
+    "distractors": [
+      "Perfunctory",
+      "Hasty",
+      "Superficial",
+      "Brief"
+    ],
+    "expl": "Cursory means hasty and therefore not thorough or detailed."
+  },
+  {
+    "word": "DESULTORY",
+    "type": "antonym",
+    "correct": "Methodical",
+    "distractors": [
+      "Aimless",
+      "Unsystematic",
+      "Haphazard",
+      "Discursive"
+    ],
+    "expl": "Desultory means lacking a plan, purpose, or enthusiasm. Methodical is systematic."
+  },
+  {
+    "word": "DIATRIBE",
+    "type": "antonym",
+    "correct": "Panegyric",
+    "distractors": [
+      "Tirade",
+      "Harangue",
+      "Invective",
+      "Denunciation"
+    ],
+    "expl": "Diatribe is a forceful and bitter verbal attack. Panegyric is a speech or text in praise of someone."
+  },
+  {
+    "word": "DOGMATIC",
+    "type": "antonym",
+    "correct": "Flexible",
+    "distractors": [
+      "Opinionated",
+      "Doctrinaire",
+      "Assertive",
+      "Inflexible"
+    ],
+    "expl": "Dogmatic means inclined to lay down principles as incontrovertibly true without evidence."
+  },
+  {
+    "word": "EBULLIENT",
+    "type": "antonym",
+    "correct": "Depressed",
+    "distractors": [
+      "Exuberant",
+      "Buoyant",
+      "Cheerful",
+      "Joyful"
+    ],
+    "expl": "Ebullient means cheerful and full of energy. Depressed is opposite."
+  },
+  {
+    "word": "ENERVATE",
+    "type": "antonym",
+    "correct": "Invigorate",
+    "distractors": [
+      "Weaken",
+      "Debilitate",
+      "Exhaust",
+      "Fatigue"
+    ],
+    "expl": "Enervate means to cause someone to feel drained of energy or vitality; weaken."
+  },
+  {
+    "word": "EQUITABLE",
+    "type": "antonym",
+    "correct": "Biased",
+    "distractors": [
+      "Fair",
+      "Just",
+      "Impartial",
+      "Evenhanded"
+    ],
+    "expl": "Equitable means fair and impartial. Biased is unfair."
+  },
+  {
+    "word": "ESOTERIC",
+    "type": "antonym",
+    "correct": "Commonplace",
+    "distractors": [
+      "Arcane",
+      "Obscure",
+      "Recondite",
+      "Cryptic"
+    ],
+    "expl": "Esoteric means intended for or likely to be understood by only a small number of people."
+  },
+  {
+    "word": "EXIGENT",
+    "type": "antonym",
+    "correct": "Trifling",
+    "distractors": [
+      "Pressing",
+      "Urgent",
+      "Demanding",
+      "Crucial"
+    ],
+    "expl": "Exigent means pressing; demanding. Trifling means unimportant or trivial."
+  },
+  {
+    "word": "EXTRANEOUS",
+    "type": "antonym",
+    "correct": "Intrinsic",
+    "distractors": [
+      "Irrelevant",
+      "Immaterial",
+      "External",
+      "Extrinsic"
+    ],
+    "expl": "Extraneous means irrelevant or unrelated to the subject being dealt with; external."
+  },
+  {
+    "word": "FATUOUS",
+    "type": "antonym",
+    "correct": "Sensible",
+    "distractors": [
+      "Silly",
+      "Foolish",
+      "Inane",
+      "Vacuous"
+    ],
+    "expl": "Fatuous means silly and pointless. Sensible means having or showing good sense or judgment."
+  },
+  {
+    "word": "FECUND",
+    "type": "antonym",
+    "correct": "Barren",
+    "distractors": [
+      "Fertile",
+      "Fruitful",
+      "Prolific",
+      "Productive"
+    ],
+    "expl": "Fecund means producing or capable of producing an abundance of offspring or new growth; fertile."
+  },
+  {
+    "word": "FRACTIOUS",
+    "type": "antonym",
+    "correct": "Docile",
+    "distractors": [
+      "Irritable",
+      "Quarrelsome",
+      "Peevish",
+      "Rowdy"
+    ],
+    "expl": "Fractious means irritable and quarrelsome; difficult to control. Docile means ready to accept control."
+  },
+  {
+    "word": "GRANDILOQUENT",
+    "type": "antonym",
+    "correct": "Modest",
+    "distractors": [
+      "Pompous",
+      "Bombastic",
+      "Pretentious",
+      "Flamboyant"
+    ],
+    "expl": "Grandiloquent means pompous or extravagant in language, style, or manner."
+  },
+  {
+    "word": "HEGEMONY",
+    "type": "synonym",
+    "correct": "Dominance",
+    "distractors": [
+      "Subordination",
+      "Servitude",
+      "Weakness",
+      "Inferiority"
+    ],
+    "expl": "Hegemony is leadership or dominance, especially by one country or social group over others."
+  },
+  {
+    "word": "ICONOCLAST",
+    "type": "antonym",
+    "correct": "Conformist",
+    "distractors": [
+      "Rebel",
+      "Dissenter",
+      "Heretic",
+      "Nonconformist"
+    ],
+    "expl": "An iconoclast is a person who attacks cherished beliefs or institutions. Conformist is opposite."
+  },
+  {
+    "word": "IMPECUNIOUS",
+    "type": "antonym",
+    "correct": "Affluent",
+    "distractors": [
+      "Penniless",
+      "Impoverished",
+      "Destitute",
+      "Needy"
+    ],
+    "expl": "Impecunious means having little or no money. Affluent means wealthy."
+  },
+  {
+    "word": "INDOLENT",
+    "type": "antonym",
+    "correct": "Diligent",
+    "distractors": [
+      "Lazy",
+      "Slothful",
+      "Idle",
+      "Inactive"
+    ],
+    "expl": "Indolent means wanting to avoid activity or exertion; lazy. Diligent is hard-working."
+  },
+  {
+    "word": "INTRANSIGENT",
+    "type": "antonym",
+    "correct": "Yielding",
+    "distractors": [
+      "Uncompromising",
+      "Inflexible",
+      "Obstinate",
+      "Unyielding"
+    ],
+    "expl": "Intransigent means unwilling or refusing to change one's views or agree about something."
+  },
+  {
+    "word": "LACONIC",
+    "type": "antonym",
+    "correct": "Loquacious",
+    "distractors": [
+      "Brief",
+      "Terse",
+      "Succinct",
+      "Concise"
+    ],
+    "expl": "Laconic means using very few words. Loquacious means talkative."
+  },
+  {
+    "word": "LOQUACIOUS",
+    "type": "antonym",
+    "correct": "Taciturn",
+    "distractors": [
+      "Talkative",
+      "Voluble",
+      "Garrulous",
+      "Chatty"
+    ],
+    "expl": "Loquacious means tending to talk a great deal; talkative. Taciturn means quiet and reserved."
+  },
+  {
+    "word": "LUGUBRIOUS",
+    "type": "antonym",
+    "correct": "Cheerful",
+    "distractors": [
+      "Mournful",
+      "Gloomy",
+      "Dismal",
+      "Melancholy"
+    ],
+    "expl": "Lugubrious means looking or sounding sad and dismal. Cheerful is happy."
+  },
+  {
+    "word": "MALADROIT",
+    "type": "antonym",
+    "correct": "Adroit",
+    "distractors": [
+      "Clumsy",
+      "Bungling",
+      "Awkward",
+      "Inept"
+    ],
+    "expl": "Maladroit means inefficient or clumsy. Adroit means clever or skillful in using the hands or mind."
+  },
+  {
+    "word": "MAUDLIN",
+    "type": "antonym",
+    "correct": "Stoic",
+    "distractors": [
+      "Sentimental",
+      "Weepy",
+      "Emotional",
+      "Overemotional"
+    ],
+    "expl": "Maudlin means self-pityingly or tearfully sentimental. Stoic is unaffected by emotional excess."
+  },
+  {
+    "word": "MENDACIOUS",
+    "type": "antonym",
+    "correct": "Veracious",
+    "distractors": [
+      "Untruthful",
+      "Dishonest",
+      "Deceitful",
+      "False"
+    ],
+    "expl": "Mendacious means not telling the truth; lying. Veracious means speaking or representing the truth."
+  },
+  {
+    "word": "MERCURIAL",
+    "type": "antonym",
+    "correct": "Constant",
+    "distractors": [
+      "Volatile",
+      "Capricious",
+      "Fickle",
+      "Temperamental"
+    ],
+    "expl": "Mercurial means subject to sudden or unpredictable changes of mood or mind."
+  },
+  {
+    "word": "NADIR",
+    "type": "antonym",
+    "correct": "Zenith",
+    "distractors": [
+      "Bottom",
+      "Depth",
+      "Base",
+      "Foot"
+    ],
+    "expl": "Nadir is the lowest point in the fortunes of a person or organization. Zenith is the highest peak."
+  },
+  {
+    "word": "PANACEA",
+    "type": "synonym",
+    "correct": "Cure-all",
+    "distractors": [
+      "Poison",
+      "Bane",
+      "Disease",
+      "Contagion"
+    ],
+    "expl": "Panacea is a solution or remedy for all difficulties or diseases; a cure-all."
+  },
+  {
+    "word": "PELLUCID",
+    "type": "antonym",
+    "correct": "Opaque",
+    "distractors": [
+      "Translucent",
+      "Clear",
+      "Limpid",
+      "Transparent"
+    ],
+    "expl": "Pellucid means translucently clear or easily understood. Opaque means not transparent or hard to understand."
+  },
+  {
+    "word": "PENURIOUS",
+    "type": "antonym",
+    "correct": "Opulent",
+    "distractors": [
+      "Destitute",
+      "Penniless",
+      "Miserly",
+      "Indigent"
+    ],
+    "expl": "Penurious means extremely poor or poverty-stricken. Opulent means wealthy and luxurious."
+  },
+  {
+    "word": "PERFIDIOUS",
+    "type": "antonym",
+    "correct": "Loyal",
+    "distractors": [
+      "Treacherous",
+      "Deceitful",
+      "Disloyal",
+      "Faithless"
+    ],
+    "expl": "Perfidious means deceitful and untrustworthy. Loyal means giving or showing firm and constant support."
+  },
+  {
+    "word": "SEDULOUS",
+    "type": "antonym",
+    "correct": "Indolent",
+    "distractors": [
+      "Diligent",
+      "Careful",
+      "Attentive",
+      "Assiduous"
+    ],
+    "expl": "Sedulous means showing dedication and diligence. Indolent means lazy."
+  },
+  {
+    "word": "SANGUINE",
+    "type": "antonym",
+    "correct": "Pessimistic",
+    "distractors": [
+      "Optimistic",
+      "Hopeful",
+      "Buoyant",
+      "Confident"
+    ],
+    "expl": "Sanguine means optimistic or positive, especially in an apparently bad or difficult situation."
+  },
 ];
 export const ANALOGY_BANK = [
   {
@@ -4347,6 +4852,249 @@ export const ANALOGY_BANK = [
     ],
     "expl": "A disinfectant is formulated to destroy microbes; an herbicide is formulated to destroy unwanted weeds."
   }
+,
+  {
+    "pair": "ABACUS : CALCULATOR",
+    "correct": "PAPYRUS : TABLET",
+    "distractors": [
+      "COMPASS : DIRECTION",
+      "SCYTHE : TRACTOR",
+      "INK : PEN",
+      "CHALK : BLACKBOARD"
+    ],
+    "expl": "An abacus is the ancient precursor to a digital calculator, just as papyrus is the precursor to an electronic tablet."
+  },
+  {
+    "pair": "ORCHESTRA : SYMPHONY",
+    "correct": "TROUPE : PLAY",
+    "distractors": [
+      "CANVAS : PAINTING",
+      "SCULPTOR : MARBLE",
+      "LIBRARY : NOVEL",
+      "STAGE : CURTAIN"
+    ],
+    "expl": "An orchestra performs a symphony, just as an acting troupe performs a play."
+  },
+  {
+    "pair": "SEDATIVE : DROWSINESS",
+    "correct": "ANESTHETIC : NUMBNESS",
+    "distractors": [
+      "VACCINE : VIRUS",
+      "POISON : REMEDY",
+      "ASPIRIN : HEADACHE",
+      "STIMULANT : FATIGUE"
+    ],
+    "expl": "A sedative induces drowsiness, just as an anesthetic induces numbness."
+  },
+  {
+    "pair": "INSULATOR : CURRENT",
+    "correct": "DAM : FLOOD",
+    "distractors": [
+      "CONDUCTOR : COPPER",
+      "CIRCUIT : VOLTAGE",
+      "RESISTOR : HEAT",
+      "BATTERY : CHARGE"
+    ],
+    "expl": "An insulator prevents the flow of electrical current, just as a dam blocks water flow."
+  },
+  {
+    "pair": "ARCHIVE : DOCUMENT",
+    "correct": "VAULT : TREASURE",
+    "distractors": [
+      "CATALOG : STORE",
+      "MUSEUM : TOURIST",
+      "LEDGER : DEBT",
+      "EASEL : CANVAS"
+    ],
+    "expl": "An archive is a repository for documents, just as a vault stores treasures."
+  },
+  {
+    "pair": "PROTRACTOR : ANGLE",
+    "correct": "BAROMETER : PRESSURE",
+    "distractors": [
+      "RULER : CIRCLE",
+      "CALIPER : WEIGHT",
+      "PENDULUM : SPEED",
+      "SCALE : DISTANCE"
+    ],
+    "expl": "A protractor measures angles, just as a barometer measures atmospheric pressure."
+  },
+  {
+    "pair": "FORGE : SMITH",
+    "correct": "KILN : POTTER",
+    "distractors": [
+      "ANVIL : HAMMER",
+      "EASEL : CANVAS",
+      "FURNACE : COAL",
+      "STUDIO : ACTOR"
+    ],
+    "expl": "A forge is the thermal workplace of a blacksmith, just as a kiln is for a potter."
+  },
+  {
+    "pair": "TENON : MORTISE",
+    "correct": "KEY : LOCK",
+    "distractors": [
+      "NAIL : HAMMER",
+      "BOLT : WASHER",
+      "DOWEL : DRILL",
+      "JOINT : WOOD"
+    ],
+    "expl": "A tenon fits precisely into a mortise, just as a key fits into a lock."
+  },
+  {
+    "pair": "RETINA : EYE",
+    "correct": "COCHLEA : EAR",
+    "distractors": [
+      "PUPIL : CORNEA",
+      "EARDRUM : AUDIOLOGY",
+      "LENS : FOCUS",
+      "NEURON : BRAIN"
+    ],
+    "expl": "The retina is the sensory transducer of the eye, just as the cochlea is of the ear."
+  },
+  {
+    "pair": "INDURATE : HARDEN",
+    "correct": "OSSIFY : CALCIFY",
+    "distractors": [
+      "SOFTEN : MELT",
+      "FLEX : BEND",
+      "EVAPORATE : CONDENSE",
+      "FREEZE : THAW"
+    ],
+    "expl": "Indurate means harden; ossify means calcify into bone."
+  },
+  {
+    "pair": "FRESCO : PLASTER",
+    "correct": "MOSAIC : TILE",
+    "distractors": [
+      "STATUE : MARBLE",
+      "OIL : CANVAS",
+      "ETCHING : ACID",
+      "CARVING : CHISEL"
+    ],
+    "expl": "A fresco is executed upon plaster, just as a mosaic is made from tiles."
+  },
+  {
+    "pair": "FUSELAGE : AIRPLANE",
+    "correct": "HULL : VESSEL",
+    "distractors": [
+      "PROPELLER : ENGINE",
+      "RUDDER : NAVIGATION",
+      "COCKPIT : FLIGHT",
+      "WING : AILERON"
+    ],
+    "expl": "The fuselage is the central body of an aircraft, just as the hull is of a vessel."
+  },
+  {
+    "pair": "STETHOSCOPE : PHYSICIAN",
+    "correct": "THEODOLITE : SURVEYOR",
+    "distractors": [
+      "MICROSCOPE : PATIENT",
+      "SCALPEL : NURSE",
+      "THERMOMETER : CLINIC",
+      "CHART : RECORD"
+    ],
+    "expl": "A stethoscope is used by a physician, just as a theodolite is used by a surveyor."
+  },
+  {
+    "pair": "HARBOR : FLEET",
+    "correct": "HANGAR : SQUADRON",
+    "distractors": [
+      "DOCK : CRUISE",
+      "ANCHOR : SHIP",
+      "RUNWAY : TAKEOFF",
+      "PORT : CARGO"
+    ],
+    "expl": "A harbor shelters a naval fleet, just as a hangar shelters an aircraft squadron."
+  },
+  {
+    "pair": "PHILATELIST : STAMPS",
+    "correct": "NUMISMATIST : COINS",
+    "distractors": [
+      "CURATOR : ART",
+      "BIBLIOPHILE : LIBRARIES",
+      "ANTHOLOGIST : POEMS",
+      "BOTANIST : GARDENS"
+    ],
+    "expl": "A philatelist collects stamps, just as a numismatist collects coins."
+  },
+  {
+    "pair": "SEMAPHORE : SIGNAL",
+    "correct": "PAPYRUS : SCRIPT",
+    "distractors": [
+      "BEACON : SHIP",
+      "TELEGRAPH : CODE",
+      "LIGHTHOUSE : ROCK",
+      "ANTENNA : RADIO"
+    ],
+    "expl": "A semaphore is a visual system for conveying signals, just as papyrus is a physical medium for recording script."
+  },
+  {
+    "pair": "ASTRONOMY : STARS",
+    "correct": "ORNITHOLOGY : BIRDS",
+    "distractors": [
+      "ASTROLOGY : PLANETS",
+      "BOTANY : ANIMALS",
+      "GEOLOGY : MAPS",
+      "ENTOMOLOGY : FISH"
+    ],
+    "expl": "Astronomy is the scientific study of stars, just as ornithology is the scientific study of birds."
+  },
+  {
+    "pair": "REFRACTORY : HEAT",
+    "correct": "IMPERVIOUS : WATER",
+    "distractors": [
+      "CONDUCTIVE : ELECTRICITY",
+      "MALLEABLE : METAL",
+      "BRITTLE : GLASS",
+      "FLAMMABLE : FIRE"
+    ],
+    "expl": "Refractory materials resist heat, just as impervious materials resist water/penetration."
+  },
+  {
+    "pair": "PEDOMETER : STEPS",
+    "correct": "ODOMETER : DISTANCE",
+    "distractors": [
+      "SPEEDOMETER : ACCELERATION",
+      "THERMOMETER : WEATHER",
+      "BAROMETER : ALTITUDE",
+      "CHRONOMETER : DATE"
+    ],
+    "expl": "A pedometer measures footsteps taken, just as an odometer measures distance traveled."
+  },
+  {
+    "pair": "INCISION : SURGEON",
+    "correct": "FURROW : FARMER",
+    "distractors": [
+      "BANDAGE : PATIENT",
+      "SCALPEL : HOSPITAL",
+      "PLOW : TRACTOR",
+      "HARVEST : CROP"
+    ],
+    "expl": "An incision is a precise cut made by a surgeon, just as a furrow is a precise trench made in the soil by a farmer."
+  },
+  {
+    "pair": "SPATULA : CHEF",
+    "correct": "TROWEL : BRICKLAYER",
+    "distractors": [
+      "FORK : DINER",
+      "PAN : STOVE",
+      "KNIFE : KITCHEN",
+      "OVEN : BAKER"
+    ],
+    "expl": "A spatula is a handheld tool used by a chef to spread or lift, just as a trowel is used by a bricklayer to spread mortar."
+  },
+  {
+    "pair": "MICROSCOPE : MICROBE",
+    "correct": "TELESCOPE : NEBULA",
+    "distractors": [
+      "CAMERA : PICTURE",
+      "LENS : LIGHT",
+      "MIRROR : REFLECTION",
+      "PERISCOPE : SUBMARINE"
+    ],
+    "expl": "A microscope is an optical instrument used to observe microbes, just as a telescope is used to observe distant nebulae."
+  },
 ];
 export const SYLLOGISM_BANK = [
   {
@@ -7149,9 +7897,260 @@ export const ODD_WORD_BANK = [
     "expl": "A submarine is a submersible naval vessel; all others are civil engineering bridge architectures.",
     "idTag": "Odd-Out #90"
   }
+,
+  {
+    "words": [
+      "Hexagon",
+      "Octagon",
+      "Dodecahedron",
+      "Decagon",
+      "Heptagon"
+    ],
+    "correct": "Dodecahedron",
+    "categoryContext": "geometric shapes",
+    "expl": "Hexagon, Octagon, Decagon, and Heptagon are all 2D planar polygons, whereas a Dodecahedron is a 3D polyhedron (solid figure)."
+  },
+  {
+    "words": [
+      "Copper",
+      "Silver",
+      "Gold",
+      "Argon",
+      "Platinum"
+    ],
+    "correct": "Argon",
+    "categoryContext": "elemental conductivity",
+    "expl": "Copper, Silver, Gold, and Platinum are transition metals and electrical conductors, while Argon is an inert noble gas."
+  },
+  {
+    "words": [
+      "Violin",
+      "Cello",
+      "Viola",
+      "Oboe",
+      "Double Bass"
+    ],
+    "correct": "Oboe",
+    "categoryContext": "orchestral instruments",
+    "expl": "Violin, Cello, Viola, and Double Bass are all string instruments played with a bow, whereas the Oboe is a double-reed woodwind instrument."
+  },
+  {
+    "words": [
+      "Eagle",
+      "Falcon",
+      "Hawk",
+      "Pelican",
+      "Osprey"
+    ],
+    "correct": "Pelican",
+    "categoryContext": "avian species",
+    "expl": "Eagle, Falcon, Hawk, and Osprey are all raptors / birds of prey with sharp talons, while the Pelican is a waterbird with a throat pouch."
+  },
+  {
+    "words": [
+      "Aorta",
+      "Ventricle",
+      "Atrium",
+      "Cornea",
+      "Myocardium"
+    ],
+    "correct": "Cornea",
+    "categoryContext": "human anatomy",
+    "expl": "Aorta, Ventricle, Atrium, and Myocardium are all components of the cardiovascular heart system, while the Cornea is part of the eye."
+  },
+  {
+    "words": [
+      "Tornado",
+      "Hurricane",
+      "Typhoon",
+      "Cyclone",
+      "Avalanche"
+    ],
+    "correct": "Avalanche",
+    "categoryContext": "meteorological phenomena",
+    "expl": "Tornado, Hurricane, Typhoon, and Cyclone are all atmospheric rotational vortex wind storms, while an Avalanche is a downhill snow slide."
+  },
+  {
+    "words": [
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Sirius"
+    ],
+    "correct": "Sirius",
+    "categoryContext": "astronomical bodies",
+    "expl": "Mercury, Venus, Mars, and Jupiter are planets in our Solar System, whereas Sirius is a distant star (the Dog Star)."
+  },
+  {
+    "words": [
+      "Python",
+      "Java",
+      "C++",
+      "Ruby",
+      "Linux"
+    ],
+    "correct": "Linux",
+    "categoryContext": "computer technology",
+    "expl": "Python, Java, C++, and Ruby are software programming languages, while Linux is an operating system kernel."
+  },
+  {
+    "words": [
+      "Stethoscope",
+      "Otoscope",
+      "Ophthalmoscope",
+      "Sphygmomanometer",
+      "Telescope"
+    ],
+    "correct": "Telescope",
+    "categoryContext": "scientific instrumentation",
+    "expl": "Stethoscope, Otoscope, Ophthalmoscope, and Sphygmomanometer are clinical medical diagnostic tools, while a Telescope is an astronomical optic instrument."
+  },
+  {
+    "words": [
+      "Granite",
+      "Basalt",
+      "Obsidian",
+      "Pumice",
+      "Limestone"
+    ],
+    "correct": "Limestone",
+    "categoryContext": "geological rock classifications",
+    "expl": "Granite, Basalt, Obsidian, and Pumice are igneous rocks formed from cooled magma/lava, whereas Limestone is a sedimentary rock."
+  },
+  {
+    "words": [
+      "Dollar",
+      "Euro",
+      "Yen",
+      "Pound",
+      "Ounce"
+    ],
+    "correct": "Ounce",
+    "categoryContext": "economic units",
+    "expl": "Dollar, Euro, Yen, and Pound Sterling are units of financial currency, whereas an Ounce is a unit of weight/mass."
+  },
+  {
+    "words": [
+      "Baritone",
+      "Tenor",
+      "Bass",
+      "Soprano",
+      "Sonata"
+    ],
+    "correct": "Sonata",
+    "categoryContext": "vocal and musical terms",
+    "expl": "Baritone, Tenor, Bass, and Soprano are vocal voice classifications/ranges, whereas a Sonata is a multi-movement instrumental musical composition."
+  },
+  {
+    "words": [
+      "Diamond",
+      "Ruby",
+      "Sapphire",
+      "Emerald",
+      "Granite"
+    ],
+    "correct": "Granite",
+    "categoryContext": "mineralogy and gemology",
+    "expl": "Diamond, Ruby, Sapphire, and Emerald are precious gemstones/minerals, while Granite is a composite rock."
+  },
+  {
+    "words": [
+      "Kilogram",
+      "Gram",
+      "Metric Ton",
+      "Pound",
+      "Liter"
+    ],
+    "correct": "Liter",
+    "categoryContext": "measurement units",
+    "expl": "Kilogram, Gram, Metric Ton, and Pound are units of mass/weight, while a Liter is a unit of fluid volume."
+  },
+  {
+    "words": [
+      "Haiku",
+      "Sonnet",
+      "Limerick",
+      "Ballad",
+      "Biography"
+    ],
+    "correct": "Biography",
+    "categoryContext": "literary forms",
+    "expl": "Haiku, Sonnet, Limerick, and Ballad are poetic verse structures, while a Biography is non-fiction prose narrative."
+  },
+  {
+    "words": [
+      "Insulin",
+      "Adrenaline",
+      "Thyroxine",
+      "Estrogen",
+      "Hemoglobin"
+    ],
+    "correct": "Hemoglobin",
+    "categoryContext": "biochemical compounds",
+    "expl": "Insulin, Adrenaline, Thyroxine, and Estrogen are endocrine signaling hormones, while Hemoglobin is an oxygen-transport protein in blood."
+  },
+  {
+    "words": [
+      "Deciduous",
+      "Coniferous",
+      "Evergreen",
+      "Herbaceous",
+      "Metamorphic"
+    ],
+    "correct": "Metamorphic",
+    "categoryContext": "botany and plant biology",
+    "expl": "Deciduous, Coniferous, Evergreen, and Herbaceous describe plant and foliage types, whereas Metamorphic describes rock altered by heat/pressure."
+  },
+  {
+    "words": [
+      "Proton",
+      "Neutron",
+      "Electron",
+      "Positron",
+      "Photon"
+    ],
+    "correct": "Photon",
+    "categoryContext": "particle physics",
+    "expl": "Protons, Neutrons, Electrons, and Positrons possess non-zero invariant rest mass and electric charge/matter properties, while a Photon is a massless quantum of electromagnetic radiation."
+  },
+  {
+    "words": [
+      "Latitude",
+      "Longitude",
+      "Equator",
+      "Prime Meridian",
+      "Altitude"
+    ],
+    "correct": "Altitude",
+    "categoryContext": "geographic coordinate systems",
+    "expl": "Latitude, Longitude, Equator, and Prime Meridian define 2D surface position on the globe, whereas Altitude measures vertical elevation above sea level."
+  },
+  {
+    "words": [
+      "Sonnet",
+      "Ode",
+      "Elegy",
+      "Epic",
+      "Monologue"
+    ],
+    "correct": "Monologue",
+    "categoryContext": "poetic vs theatrical forms",
+    "expl": "Sonnet, Ode, Elegy, and Epic are lyric or narrative poetry genres, while a Monologue is a dramatic speech delivered by a character in theater."
+  },
+  {
+    "words": [
+      "Chlorophyll",
+      "Chloroplast",
+      "Stoma",
+      "Xylem",
+      "Synapse"
+    ],
+    "correct": "Synapse",
+    "categoryContext": "cellular and biological structures",
+    "expl": "Chlorophyll, Chloroplast, Stoma, and Xylem are structures in plant botany, while a Synapse is a neurological junction in nervous systems."
+  },
 ];
-
-
 export const SENTENCE_COMPLETION_BANK = [
   {
     "sentence": "The CEO’s explanation of the quarterly downturn was remarkably _______, concealing the severe operational bottlenecks that had plagued the manufacturing division.",
@@ -7483,8 +8482,85 @@ export const SENTENCE_COMPLETION_BANK = [
     ],
     "expl": "'Impetus' means the force or energy with which a body moves; a driving stimulus."
   }
+,
+  {
+    "sentence": "Despite the vehement protests of several senior executives, the board remained _____ in their decision to proceed with the international merger.",
+    "correct": "adamant",
+    "distractors": [
+      "hesitant",
+      "fickle",
+      "ambivalent",
+      "vacillating"
+    ],
+    "expl": "Adamant means refusing to be persuaded or to change one's mind, matching 'despite the vehement protests.'"
+  },
+  {
+    "sentence": "The candidate's argument was remarkably _____, leaving no logical loopholes for the opposing debate team to exploit.",
+    "correct": "cogent",
+    "distractors": [
+      "spurious",
+      "fallacious",
+      "convoluted",
+      "tenuous"
+    ],
+    "expl": "Cogent means clear, logical, and convincing, which explains why no logical loopholes could be exploited."
+  },
+  {
+    "sentence": "Because the archeological artifacts were extremely fragile, the team handled them with the utmost _____ during excavation.",
+    "correct": "circumspection",
+    "distractors": [
+      "rashness",
+      "audacity",
+      "temerity",
+      "impetuosity"
+    ],
+    "expl": "Circumspection means caution and prudence, necessary for handling extremely fragile artifacts."
+  },
+  {
+    "sentence": "The newly installed solar turbine operates so _____ that technicians standing right beside it barely hear a hum.",
+    "correct": "inaudibly",
+    "distractors": [
+      "stridently",
+      "clamorously",
+      "discordantly",
+      "vociferously"
+    ],
+    "expl": "Inaudibly means in a way that is unable to be heard, fitting 'barely hear a hum.'"
+  },
+  {
+    "sentence": "Rather than presenting a balanced economic analysis, the columnist published a _____ critique filled with partisan invective.",
+    "correct": "polemical",
+    "distractors": [
+      "dispassionate",
+      "judicious",
+      "neutral",
+      "equitable"
+    ],
+    "expl": "Polemical means relating to or involving strongly critical, controversial, or disputatious writing."
+  },
+  {
+    "sentence": "After weeks of diplomatic stalemate, the peace envoy sought to _____ the tensions by proposing a demilitarized buffer zone.",
+    "correct": "mitigate",
+    "distractors": [
+      "exacerbate",
+      "inflame",
+      "escalate",
+      "aggravate"
+    ],
+    "expl": "Mitigate means make less severe, serious, or painful; suitable for reducing diplomatic tensions."
+  },
+  {
+    "sentence": "Far from being a transient phenomenon, the remote work transition proved to be a _____ transformation across global commerce.",
+    "correct": "permanent",
+    "distractors": [
+      "fleeting",
+      "ephemeral",
+      "momentary",
+      "evanescent"
+    ],
+    "expl": "Permanent directly contrasts with 'transient phenomenon.'"
+  },
 ];
-
 export const DEDUCTIVE_LOGIC_BANK = [
   {
     "premise": "Statement 1: The silver car is faster than the red car.\nStatement 2: The red car is faster than the green car.\nStatement 3: The green car is faster than the silver car.\nIf the first two statements are true, the third statement is:",
@@ -7816,6 +8892,84 @@ export const DEDUCTIVE_LOGIC_BANK = [
     ],
     "expl": "Finishing order: Henry > Grace > Eric > Frank > Ian. Henry won the marathon."
   }
+,
+  {
+    "premise": "All cyber-security analysts are familiar with cryptography protocols.\nNo person who lacks a background in computer science is familiar with cryptography protocols.\nDr. Zhao is a cyber-security analyst.\n\nWhich of the following must logically be true?",
+    "correct": "Dr. Zhao has a background in computer science.",
+    "distractors": [
+      "All persons with computer science backgrounds are analysts.",
+      "Dr. Zhao does not understand cryptography.",
+      "No computer science graduates work in security.",
+      "Dr. Zhao is the head of the security division."
+    ],
+    "expl": "If Dr. Zhao is a cyber-security analyst, she knows cryptography. Since no one without a CS background knows cryptography, she must have a CS background."
+  },
+  {
+    "premise": "All high-speed maglev trains run exclusively on dedicated superconducting tracks.\nAll transit routes operating on superconducting tracks require cryogenic cooling systems.\nThe Sakura Express is a high-speed maglev train.\n\nWhich of the following must logically be true?",
+    "correct": "The Sakura Express operates on a route requiring cryogenic cooling.",
+    "distractors": [
+      "All routes requiring cryogenic cooling are maglev tracks.",
+      "The Sakura Express runs on standard steel railway lines.",
+      "Cryogenic systems eliminate all mechanical resistance.",
+      "Maglev trains are slower than conventional locomotives."
+    ],
+    "expl": "Sakura Express is maglev -> runs on superconducting track -> requires cryogenic cooling systems."
+  },
+  {
+    "premise": "Every registered corporate accountant must hold a CPA license.\nNone of the junior billing clerks hold a CPA license.\nMarcus is a junior billing clerk.\n\nWhich of the following must logically be true?",
+    "correct": "Marcus is not a registered corporate accountant.",
+    "distractors": [
+      "Marcus will obtain his CPA license next year.",
+      "All CPA license holders are junior billing clerks.",
+      "Marcus is currently studying corporate accounting.",
+      "All corporate accountants work in billing."
+    ],
+    "expl": "Marcus is a junior clerk -> does not hold a CPA -> cannot be a registered corporate accountant."
+  },
+  {
+    "premise": "All commercial aircraft certified for transoceanic flights must carry twin emergency life rafts.\nFlight 404 does not carry twin emergency life rafts.\n\nWhich of the following must logically be true?",
+    "correct": "Flight 404 is not certified for transoceanic flights.",
+    "distractors": [
+      "Flight 404 is scheduled to fly across the Atlantic.",
+      "All aircraft without life rafts have mechanical defects.",
+      "Flight 404 carries single life rafts instead.",
+      "Transoceanic flights never experience emergencies."
+    ],
+    "expl": "Modus tollens: If transoceanic -> carries life rafts. Flight 404 has no life rafts -> cannot be certified for transoceanic flights."
+  },
+  {
+    "premise": "All organic compounds containing nitrogen are classified as amines or amides.\nCompound X is an organic compound that does not contain nitrogen.\n\nWhich of the following must logically be true?",
+    "correct": "Compound X is neither an amine nor an amide with nitrogen.",
+    "distractors": [
+      "Compound X is definitely an amine.",
+      "Compound X must contain phosphorus.",
+      "All organic compounds are amines.",
+      "Compound X cannot dissolve in water."
+    ],
+    "expl": "Since all amines and amides here are nitrogen-containing, a non-nitrogen organic compound cannot be a nitrogen-bearing amine or amide."
+  },
+  {
+    "premise": "Every athlete qualified for the National Championship has achieved a regional gold medal.\nNo athlete who achieved a regional gold medal skipped the qualifiers.\nSonia qualified for the National Championship.\n\nWhich of the following must logically be true?",
+    "correct": "Sonia did not skip the qualifiers.",
+    "distractors": [
+      "Sonia skipped the regional qualifiers.",
+      "All athletes who achieved gold medals are at Nationals.",
+      "Sonia did not win a regional medal.",
+      "Sonia will win the National Championship."
+    ],
+    "expl": "Sonia qualified -> won regional gold -> did not skip qualifiers."
+  },
+  {
+    "premise": "All audited financial balance sheets are reviewed by independent ombudsmen.\nDocument Omega was never reviewed by an independent ombudsman.\n\nWhich of the following must logically be true?",
+    "correct": "Document Omega is not an audited financial balance sheet.",
+    "distractors": [
+      "Document Omega contains severe accounting discrepancies.",
+      "All documents reviewed by ombudsmen are financial statements.",
+      "Document Omega was audited internally last month.",
+      "Independent ombudsmen do not review financial reports."
+    ],
+    "expl": "If audited balance sheet -> reviewed by ombudsman. Document Omega was not reviewed -> not an audited balance sheet."
+  },
 ];
 
 export function getVerbalQuestionsForTest(testNumber, isNewSuite = false) {
@@ -7824,15 +8978,23 @@ export function getVerbalQuestionsForTest(testNumber, isNewSuite = false) {
   const isNew = isNewSuite || testNumber > 30;
   const tIdx = isNew ? (testNumber > 30 ? testNumber - 31 : testNumber - 2) : (testNumber - 2);
 
-  const vocabMod = (!isNew && testNumber <= 30) ? 60 : VOCAB_BANK.length;
-  const analogyMod = (!isNew && testNumber <= 30) ? 40 : ANALOGY_BANK.length;
-  const oddBase = (!isNew && testNumber <= 30) ? ((tIdx * 3) % 30) : (tIdx * 3);
-  const sentenceMod = (!isNew && testNumber <= 30) ? 10 : SENTENCE_COMPLETION_BANK.length;
-  const logicMod = (!isNew && testNumber <= 30) ? 10 : DEDUCTIVE_LOGIC_BANK.length;
+  // Slicing policy:
+  // Tests 1-30 (Original baseline): use initial banks with modulo wrap
+  // Tests 31-57 (New suite): use dedicated non-overlapping slices with ZERO repeat of Tests 1-30!
+  const vocabOffset = isNew ? 60 : 0;
+  const vocabMod = isNew ? VOCAB_BANK.length : 60;
+
+  const analogyOffset = isNew ? 40 : 0;
+  const analogyMod = isNew ? ANALOGY_BANK.length : 40;
+
+  const oddBase = isNew ? (30 + tIdx * 3) : ((tIdx * 3) % 30);
+  const sentenceOffset = isNew ? 10 : 0;
+  const logicOffset = isNew ? 10 : 0;
 
   // 1. Six Vocabulary questions
   for (let i = 0; i < 6; i++) {
-    const item = VOCAB_BANK[(tIdx * 6 + i) % vocabMod];
+    const idx = isNew ? (vocabOffset + tIdx * 6 + i) : ((tIdx * 6 + i) % vocabMod);
+    const item = VOCAB_BANK[idx];
     const isAntonym = item.type === 'antonym';
     const qText = isAntonym 
       ? `Which of the following words is most OPPOSITE in meaning to "${item.word}"?`
@@ -7843,7 +9005,11 @@ export function getVerbalQuestionsForTest(testNumber, isNewSuite = false) {
       question: qText,
       options,
       correctOption,
-      explanation: `**Correct Answer: ${correctOption}** (${item.correct})\n\n${item.expl}\n\n💡 **Speed Tip:** Rapidly eliminate choices that belong to the wrong category. Target <8 seconds.`,
+      explanation: `**Correct Answer: ${correctOption}** (${item.correct})
+
+${item.expl}
+
+💡 **Speed Tip:** Rapidly eliminate choices that belong to the wrong category. Target <8 seconds.`,
       category: 'verbal',
       subType: isAntonym ? 'antonym' : 'synonym'
     });
@@ -7851,7 +9017,8 @@ export function getVerbalQuestionsForTest(testNumber, isNewSuite = false) {
 
   // 2. Six Analogy questions
   for (let i = 0; i < 6; i++) {
-    const item = ANALOGY_BANK[(tIdx * 6 + i) % analogyMod];
+    const idx = isNew ? (analogyOffset + tIdx * 6 + i) : ((tIdx * 6 + i) % analogyMod);
+    const item = ANALOGY_BANK[idx];
     const qText = `${item.pair} is analogous to:`;
     const rawOpts = [item.correct, ...item.distractors.slice(0, 4)];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
@@ -7859,7 +9026,11 @@ export function getVerbalQuestionsForTest(testNumber, isNewSuite = false) {
       question: qText,
       options,
       correctOption,
-      explanation: `**Correct Answer: ${correctOption}** (${item.correct})\n\n${item.expl}\n\n💡 **Speed Tip:** Build a precise bridge sentence: "X is used to / is composed of Y". Apply to find the exact match.`,
+      explanation: `**Correct Answer: ${correctOption}** (${item.correct})
+
+${item.expl}
+
+💡 **Speed Tip:** Build a precise bridge sentence: "X is used to / is composed of Y". Apply to find the exact match.`,
       category: 'verbal',
       subType: 'analogy'
     });
@@ -7877,29 +9048,39 @@ export function getVerbalQuestionsForTest(testNumber, isNewSuite = false) {
       question: qText,
       options,
       correctOption,
-      explanation: `**Correct Answer: ${correctOption}** (${item.correct})\n\n${item.expl}\n\n💡 **Speed Tip:** Identify the unifying trait uniting 4 options, isolate the outlier.`,
+      explanation: `**Correct Answer: ${correctOption}** (${item.correct})
+
+${item.expl}
+
+💡 **Speed Tip:** Identify the unifying trait uniting 4 options, isolate the outlier.`,
       category: 'verbal',
       subType: 'odd_word'
     });
   }
 
   // 4. Exactly ONE Contextual Sentence Completion question
-  const sentItem = SENTENCE_COMPLETION_BANK[tIdx % sentenceMod];
+  const sentItem = isNew ? SENTENCE_COMPLETION_BANK[sentenceOffset + tIdx] : SENTENCE_COMPLETION_BANK[tIdx % 10];
   {
     const rawOpts = [sentItem.correct, ...sentItem.distractors.slice(0, 4)];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
     questions.push({
-      question: `Complete the sentence with the word that best fits the context:\n\n"${sentItem.sentence}"`,
+      question: `Complete the sentence with the word that best fits the context:
+
+"${sentItem.sentence}"`,
       options,
       correctOption,
-      explanation: `**Correct Answer: ${correctOption}** (${sentItem.correct})\n\n${sentItem.expl}\n\n💡 **Speed Tip:** Predict the missing word's connotation (positive/negative) before reading the options.`,
+      explanation: `**Correct Answer: ${correctOption}** (${sentItem.correct})
+
+${sentItem.expl}
+
+💡 **Speed Tip:** Predict the missing word's connotation (positive/negative) before reading the options.`,
       category: 'verbal',
       subType: 'sentence_completion'
     });
   }
 
   // 5. Exactly ONE Deductive Logic / Syllogism question
-  const logicItem = DEDUCTIVE_LOGIC_BANK[tIdx % logicMod];
+  const logicItem = isNew ? DEDUCTIVE_LOGIC_BANK[logicOffset + tIdx] : DEDUCTIVE_LOGIC_BANK[tIdx % 10];
   {
     const rawOpts = [logicItem.correct, ...logicItem.distractors.slice(0, 4)];
     const { options, correctOption } = randomize(rawOpts, 0, rand);
@@ -7907,7 +9088,11 @@ export function getVerbalQuestionsForTest(testNumber, isNewSuite = false) {
       question: logicItem.premise,
       options,
       correctOption,
-      explanation: `**Correct Answer: ${correctOption}** (${logicItem.correct})\n\n${logicItem.expl}\n\n💡 **Speed Tip:** Stick strictly to stated facts. Watch out for the 'Affirming the Consequent' trap!`,
+      explanation: `**Correct Answer: ${correctOption}** (${logicItem.correct})
+
+${logicItem.expl}
+
+💡 **Speed Tip:** Stick strictly to stated facts. Watch out for the 'Affirming the Consequent' trap!`,
       category: 'verbal',
       subType: 'syllogism'
     });
