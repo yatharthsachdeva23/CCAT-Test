@@ -8,8 +8,9 @@ Designed to train test-takers to reach the **45+ Elite Protocol** score under of
 
 ## 🔗 Repository & Live Deployment
 
+- **Live Application (Vercel):** [https://ccat-test.vercel.app](https://ccat-test.vercel.app) *(also accessible directly via the **"Production"** link under Deployments in the GitHub sidebar)*
 - **GitHub Repository:** [https://github.com/yatharthsachdeva23/CCAT-Test](https://github.com/yatharthsachdeva23/CCAT-Test)
-- **Deployment Platform:** Deployed on **[Vercel](https://vercel.com/)** with automated CI/CD builds on every push to `master`.
+- **Deployment Platform:** Deployed on **[Vercel](https://vercel.com/)** with automated CI/CD builds on every git push.
 
 ---
 
@@ -112,12 +113,7 @@ This project is pre-configured for **Vercel** with custom single-page app rewrit
 3. **Environment Variables (Optional):**
    - If you want the live AI Coach enabled on your public deployment, add `VITE_GEMINI_API_KEY` under Vercel's **Environment Variables** settings.
 4. **Instant CI/CD:**
-   - Click **Deploy**. Every push to the `master` branch on GitHub automatically triggers a zero-downtime production deployment on Vercel!
-
-### Alternative: GitHub Pages
-An automated GitHub Actions workflow (`.github/workflows/deploy.yml`) is also included if you wish to use GitHub Pages:
-1. In your GitHub repository, go to **Settings** > **Pages**.
-2. Under **Build and deployment** > **Source**, select **GitHub Actions**.
+   - Click **Deploy**. Every push to the repository automatically triggers an instant, zero-downtime production deployment on Vercel!
 
 ---
 
@@ -142,9 +138,7 @@ An automated GitHub Actions workflow (`.github/workflows/deploy.yml`) is also in
 │   └── main.jsx            # Application entrypoint
 ├── scripts/                # Suite generation, validation & audit scripts
 ├── public/                 # Static assets & icons
-├── .github/
-│   └── workflows/
-│       └── deploy.yml      # Automated GitHub Pages CI/CD workflow
+├── vercel.json             # Vercel SPA routing rewrite configuration
 ├── .env.example            # Environment variable template
 ├── .gitignore              # Git ignore rules (protects API keys, user backups & node_modules)
 └── vite.config.js          # Vite configuration with Tailwind CSS & relative base path
