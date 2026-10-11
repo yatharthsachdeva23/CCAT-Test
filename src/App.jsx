@@ -153,6 +153,10 @@ export default function App() {
     setActiveReviewAttempt(null);
   };
 
+  const handleRestoreProgress = (restoredAttempts) => {
+    setAttempts(restoredAttempts);
+  };
+
   // Calculate best overall score for Navbar
   const bestScore = attempts.reduce((max, a) => {
     const score = Object.values(a.responses || {}).filter(r => r.isCorrect).length;
@@ -182,6 +186,7 @@ export default function App() {
             onReviewAttempt={handleReviewAttempt}
             onOpenCoach={() => setActiveTab('coach')}
             onClearHistory={handleClearHistory}
+            onRestoreProgress={handleRestoreProgress}
             onOpenUltraFast={() => setActiveTab('ultrafast')}
           />
         )}
@@ -193,6 +198,7 @@ export default function App() {
             onReviewAttempt={handleReviewAttempt}
             onOpenCoach={() => setActiveTab('coach')}
             onClearHistory={handleClearHistory}
+            onRestoreProgress={handleRestoreProgress}
             onOpenUltraFast={() => setActiveTab('ultrafast')}
           />
         )}

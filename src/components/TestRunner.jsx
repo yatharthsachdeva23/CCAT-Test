@@ -98,8 +98,7 @@ export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
       currentIndex: nextIndex,
       responses: updatedResponses,
       startTime: testStartTimeRef.current,
-      timeLimitSec: timeLimit,
-      questions: testData.questions
+      timeLimitSec: timeLimit
     });
 
     if (nextIndex < questions.length) {
@@ -124,8 +123,7 @@ export default function TestRunner({ testData, onCompleteTest, onExitTest }) {
       currentIndex: nextIndex,
       responses: updatedResponses,
       startTime: testStartTimeRef.current,
-      timeLimitSec: timeLimit,
-      questions: testData.questions
+      timeLimitSec: timeLimit
     });
 
     if (nextIndex < questions.length) {

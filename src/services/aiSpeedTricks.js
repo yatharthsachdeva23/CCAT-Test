@@ -62,13 +62,22 @@ function saveTricksToCache(newTricks) {
   try {
     const current = getTricksCache();
     const updated = { ...current, ...newTricks };
-    localStorage.setItem(SPEED_TRICKS_CACHE_KEY, JSON.stringify(updated));
+    const entries = Object.entries(updated);
+    // Keep max 200 items in localStorage to avoid unbounded growth
+    const payload = entries.length > 200
+      ? Object.fromEntries(entries.slice(-200))
+      : updated;
+    localStorage.setItem(SPEED_TRICKS_CACHE_KEY, JSON.stringify(payload));
     // Notify all listening components
     if (typeof window !== 'undefined') {
       window.dispatchEvent(new CustomEvent('ccat-speed-tricks-updated', { detail: { count: Object.keys(newTricks).length } }));
     }
   } catch (e) {
-    console.error('Failed to save speed tricks cache', e);
+    console.warn('Failed to save speed tricks cache (non-critical, continuing)', e);
+    try {
+      localStorage.removeItem('ccat_prep_speed_tricks_cache_v1');
+      localStorage.removeItem('ccat_ai_speed_tricks_cache_v2');
+    } catch (_) {}
   }
 }
 

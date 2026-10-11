@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { 
   Trophy, Clock, Zap, ArrowRight, Play, CheckCircle2, 
-  AlertTriangle, Sparkles, BarChart3, ChevronRight, RotateCcw, Target 
+  AlertTriangle, Sparkles, BarChart3, ChevronRight, RotateCcw, Target,
+  Download, Upload, HardDrive, ShieldCheck
 } from 'lucide-react';
 import { TEST_CATALOG } from '../data/testCatalog.js';
 import { analyzeAttemptPatterns } from '../data/patternEngine.js';
+import { downloadUserDataBackup, importUserDataJSON, getAttempts } from '../utils/storage.js';
 
 export default function Dashboard({ 
   attempts = [], 
@@ -12,6 +14,7 @@ export default function Dashboard({
   onReviewAttempt, 
   onOpenCoach,
   onClearHistory,
+  onRestoreProgress,
   onOpenUltraFast
 }) {
   const latestAttempt = attempts[0] || null;
@@ -57,6 +60,46 @@ export default function Dashboard({
     } else {
       const randNum = Math.floor(Math.random() * TEST_CATALOG.length) + 1;
       onStartTest(randNum);
+    }
+  };
+
+  const [backupNotice, setBackupNotice] = useState(null);
+
+  const handleDownloadBackup = () => {
+    downloadUserDataBackup();
+    setBackupNotice('Backup downloaded to your computer! Your progress is safe.');
+    setTimeout(() => setBackupNotice(null), 5000);
+  };
+
+  const handleRestoreBackup = (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      const content = event.target?.result;
+      if (typeof content === 'string') {
+        const result = importUserDataJSON(content);
+        if (result.success) {
+          const freshAttempts = getAttempts();
+          if (onRestoreProgress) {
+            onRestoreProgress(freshAttempts);
+          }
+          setBackupNotice(`Successfully restored ${result.count} test attempts!`);
+          setTimeout(() => setBackupNotice(null), 5000);
+        } else {
+          alert('Failed to restore backup: ' + (result.error || 'Invalid file format'));
+        }
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = '';
+  };
+
+  const handleResetToFresh = () => {
+    if (window.confirm('Reset all test attempts on this browser?\n\nNote: Anyone who runs this from your GitHub repo already starts with this 100% fresh view! To keep a copy of your scores, click "Backup Progress (JSON)" first.\n\nProceed to reset?')) {
+      onClearHistory();
+      setBackupNotice('Profile reset to fresh state.');
+      setTimeout(() => setBackupNotice(null), 4000);
     }
   };
 
@@ -387,6 +430,67 @@ export default function Dashboard({
               </div>
             );
           })}
+        </div>
+      </div>
+
+      {/* --- LOCAL PROGRESS & PRIVACY CONTROLS --- */}
+      <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 sm:p-6 shadow-xl relative overflow-hidden">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-5">
+          <div className="space-y-1.5 max-w-xl">
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              <h3 className="text-sm font-bold text-white tracking-tight flex items-center gap-1.5">
+                <HardDrive className="w-4 h-4 text-sky-400" />
+                <span>Local Storage & Zero-Leakage Privacy</span>
+              </h3>
+            </div>
+            <p className="text-xs text-slate-400 leading-relaxed">
+              Your test attempts, scores, and analytics are saved <strong className="text-slate-200">strictly in your browser’s local storage</strong>.
+              When pushed to GitHub, anyone who clones or visits the project automatically starts with a <strong className="text-emerald-300">100% clean, fresh profile</strong> without ever seeing your scores.
+            </p>
+            {backupNotice && (
+              <div className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 rounded-lg">
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                <span>{backupNotice}</span>
+              </div>
+            )}
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2.5">
+            <button
+              onClick={handleDownloadBackup}
+              className="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-sky-300 hover:text-white font-bold text-xs border border-slate-700 flex items-center gap-1.5 transition-all cursor-pointer shadow-sm"
+              title="Download a JSON backup of all your attempts to your computer"
+            >
+              <Download className="w-3.5 h-3.5 text-sky-400" />
+              <span>Backup Progress (JSON)</span>
+            </button>
+
+            <label
+              className="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white font-bold text-xs border border-slate-700 flex items-center gap-1.5 transition-all cursor-pointer shadow-sm"
+              title="Restore previous attempts from a JSON backup file"
+            >
+              <Upload className="w-3.5 h-3.5 text-purple-400" />
+              <span>Restore Progress</span>
+              <input
+                type="file"
+                accept=".json"
+                className="hidden"
+                onChange={handleRestoreBackup}
+              />
+            </label>
+
+            {attempts.length > 0 && (
+              <button
+                onClick={handleResetToFresh}
+                className="px-3 py-2 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 hover:text-rose-200 font-bold text-xs border border-rose-500/20 flex items-center gap-1.5 transition-all cursor-pointer"
+                title="Reset progress to test fresh state (be sure to backup first)"
+              >
+                <RotateCcw className="w-3.5 h-3.5 text-rose-400" />
+                <span>Reset to Fresh</span>
+              </button>
+            )}
+          </div>
         </div>
       </div>
 
