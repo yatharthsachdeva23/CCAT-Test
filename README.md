@@ -6,10 +6,17 @@ Designed to train test-takers to reach the **45+ Elite Protocol** score under of
 
 ---
 
+## 🔗 Repository & Live Deployment
+
+- **GitHub Repository:** [https://github.com/yatharthsachdeva23/CCAT-Test](https://github.com/yatharthsachdeva23/CCAT-Test)
+- **Live Simulator (GitHub Pages):** [https://yatharthsachdeva23.github.io/CCAT-Test/](https://yatharthsachdeva23.github.io/CCAT-Test/)
+
+---
+
 ## 🌟 Key Features
 
 - **57 Unique Full Simulations (2,850 Questions):**
-  - **Tests 1–30:** Original baseline practice suite.
+  - **Tests 1–30:** Original baseline practice suite with authentic CCAT question archetypes.
   - **Tests 31–57:** Brand new pristine suite with 100% non-repeating questions, unique mathematical scenarios, advanced verbal analogies, and randomized vector spatial transformations.
 - **Authentic CCAT Distribution per Test:**
   - **22 Math & Logic Questions:** Word problems, work rates, velocity, probability, number series, modular arithmetic.
@@ -45,14 +52,14 @@ Designed to train test-takers to reach the **45+ Elite Protocol** score under of
 - [Node.js](https://nodejs.org/) (version 18.0 or higher recommended)
 - `npm` or `pnpm`
 
-### Installation
+### Installation & Local Run
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/<repo-name>.git
+git clone https://github.com/yatharthsachdeva23/CCAT-Test.git
 
-# 2. Navigate into the directory
-cd <repo-name>
+# 2. Navigate into the project directory
+cd CCAT-Test
 
 # 3. Install dependencies
 npm install
@@ -61,7 +68,7 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:5173/` in your web browser.
+Open your browser to [http://localhost:5173/](http://localhost:5173/) to start practicing.
 
 ---
 
@@ -79,6 +86,7 @@ The AI Coach and real-time speed shortcuts use Google's free Gemini API.
    VITE_GEMINI_API_KEY=your_actual_gemini_api_key_here
    ```
 4. Restart your Vite development server (`npm run dev`).
+
 *(Note: `.env` is already configured in `.gitignore` so your personal API key will never be pushed to GitHub.)*
 
 ---
@@ -91,11 +99,15 @@ npm run build
 ```
 This bundles the optimized production app into the `dist/` directory.
 
-### Deploying to GitHub Pages
-The project is configured with `base: './'` in `vite.config.js`, allowing it to run from any GitHub Pages subfolder:
-1. In your GitHub repository, go to **Settings** > **Pages**.
-2. Select **GitHub Actions** as the build source, or deploy the `dist/` folder to the `gh-pages` branch.
-3. Every visitor who opens your GitHub Pages link will see a fresh, zero-attempt test suite ready to practice.
+### Automated GitHub Pages Deployment
+An automated GitHub Actions workflow (`.github/workflows/deploy.yml`) is included in this repository:
+
+1. Open your repository on GitHub: [https://github.com/yatharthsachdeva23/CCAT-Test](https://github.com/yatharthsachdeva23/CCAT-Test)
+2. Go to **Settings** > **Pages** (in the left sidebar).
+3. Under **Build and deployment** > **Source**, select **GitHub Actions**.
+4. GitHub will automatically run the deployment workflow on every push to `master`.
+5. Your live simulator will be available at:
+   **`https://yatharthsachdeva23.github.io/CCAT-Test/`**
 
 ---
 
@@ -120,6 +132,9 @@ The project is configured with `base: './'` in `vite.config.js`, allowing it to 
 │   └── main.jsx            # Application entrypoint
 ├── scripts/                # Suite generation, validation & audit scripts
 ├── public/                 # Static assets & icons
+├── .github/
+│   └── workflows/
+│       └── deploy.yml      # Automated GitHub Pages CI/CD workflow
 ├── .env.example            # Environment variable template
 ├── .gitignore              # Git ignore rules (protects API keys, user backups & node_modules)
 └── vite.config.js          # Vite configuration with Tailwind CSS & relative base path
