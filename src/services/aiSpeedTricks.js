@@ -17,11 +17,13 @@ import { getSettings, DEFAULT_GEMINI_KEY } from '../utils/storage.js';
 const SPEED_TRICKS_CACHE_KEY = 'ccat_ai_speed_tricks_cache_v4';
 
 const CASCADE_MODELS = [
-  'gemini-2.0-flash',
-  'gemini-1.5-flash',
-  'gemini-2.0-flash-lite',
-  'gemini-1.5-flash-8b',
-  'gemini-1.5-pro'
+  'gemini-2.5-flash',
+  'gemini-3.8-flash',
+  'gemini-3.5-flash',
+  'gemini-flash-latest',
+  'gemini-3.5-flash-lite',
+  'gemini-flash-lite-latest',
+  'gemini-3.1-pro-preview'
 ];
 
 // In-memory tracker of tests currently preloading to avoid duplicate parallel loops

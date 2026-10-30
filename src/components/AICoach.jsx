@@ -9,12 +9,14 @@ import { getSettings, saveSettings, DEFAULT_GEMINI_KEY, getUltraFastAttempts } f
 import MarkdownView from './MarkdownView.jsx';
 
 const GEMINI_MODELS = [
-  { id: 'auto', name: 'Smart Auto-Cascade', tier: 'Auto', badge: 'Recommended', desc: 'Starts at Gemini 2.0 Flash, auto-downgrades to Flash-Lite if rate-limited or quota exceeded' },
-  { id: 'gemini-2.0-flash', name: 'Gemini 2.0 Flash', tier: 'Upper Tier', badge: 'Next-Gen Flash', desc: 'Fastest next-generation multimodal model with ultra-low latency' },
-  { id: 'gemini-1.5-flash', name: 'Gemini 1.5 Flash', tier: 'Upper Tier', badge: 'High Speed', desc: 'Google standard high-speed production model' },
-  { id: 'gemini-2.0-flash-lite', name: 'Gemini 2.0 Flash-Lite', tier: 'Lower Tier', badge: 'High Quota', desc: 'Ultra-resilient model with high quota allowance and fast latency' },
-  { id: 'gemini-1.5-flash-8b', name: 'Gemini 1.5 Flash-8B', tier: 'Lower Tier', badge: 'Max Throughput', desc: 'High-throughput lightweight model for high-frequency queries' },
-  { id: 'gemini-1.5-pro', name: 'Gemini 1.5 Pro', tier: 'Pro Tier', badge: 'Heavy Reasoning', desc: 'Deep multi-step cognitive reasoning (strict RPM limits)' }
+  { id: 'auto', name: 'Smart Auto-Cascade', tier: 'Auto', badge: 'Recommended', desc: 'Starts at Gemini 2.5/3.8 Flash, auto-downgrades to Flash-Lite if rate-limited or quota exceeded' },
+  { id: 'gemini-3.8-flash', name: 'Gemini 3.8 Flash', tier: 'Upper Tier', badge: 'Latest Flash', desc: 'Next-generation high-speed reasoning model' },
+  { id: 'gemini-2.5-flash', name: 'Gemini 2.5 Flash', tier: 'Upper Tier', badge: 'High Speed', desc: 'Premier balanced model with ultra-low latency' },
+  { id: 'gemini-3.5-flash', name: 'Gemini 3.5 Flash', tier: 'Upper Tier', badge: 'Fast Reasoning', desc: 'Balanced high-accuracy cognitive model' },
+  { id: 'gemini-flash-latest', name: 'Gemini Flash Latest', tier: 'Upper Tier', badge: 'Latest Alias', desc: 'Google standard latest flash alias' },
+  { id: 'gemini-3.5-flash-lite', name: 'Gemini 3.5 Flash-Lite', tier: 'Lower Tier', badge: 'High Quota', desc: 'Ultra-resilient model with high quota allowance and fast latency' },
+  { id: 'gemini-flash-lite-latest', name: 'Gemini Flash-Lite Latest', tier: 'Lower Tier', badge: 'Max Resiliency', desc: 'Maximum resilience high-quota fallback' },
+  { id: 'gemini-3.1-pro-preview', name: 'Gemini 3.1 Pro', tier: 'Pro Tier', badge: 'Heavy Reasoning', desc: 'Deep multi-step cognitive reasoning (strict RPM limits)' }
 ];
 
 export default function AICoach({ attempts = [], activeAttempt = null, onSelectAttempt }) {
@@ -482,11 +484,13 @@ Click any quick prompt below or ask your own question:
  * Ordered Fallback Priority Tiers (Upper Models -> Lower Resilient Models)
  */
 const CASCADE_TIERS = [
-  { id: 'gemini-2.0-flash', name: 'Gemini 2.0 Flash', tier: 'Upper Tier' },
-  { id: 'gemini-1.5-flash', name: 'Gemini 1.5 Flash', tier: 'Upper Tier' },
-  { id: 'gemini-2.0-flash-lite', name: 'Gemini 2.0 Flash-Lite', tier: 'Lower Tier' },
-  { id: 'gemini-1.5-flash-8b', name: 'Gemini 1.5 Flash-8B', tier: 'Lower Tier' },
-  { id: 'gemini-1.5-pro', name: 'Gemini 1.5 Pro', tier: 'Pro Tier' }
+  { id: 'gemini-3.8-flash', name: 'Gemini 3.8 Flash', tier: 'Upper Tier' },
+  { id: 'gemini-2.5-flash', name: 'Gemini 2.5 Flash', tier: 'Upper Tier' },
+  { id: 'gemini-3.5-flash', name: 'Gemini 3.5 Flash', tier: 'Upper Tier' },
+  { id: 'gemini-flash-latest', name: 'Gemini Flash Latest', tier: 'Upper Tier' },
+  { id: 'gemini-3.5-flash-lite', name: 'Gemini 3.5 Flash-Lite', tier: 'Lower Tier' },
+  { id: 'gemini-flash-lite-latest', name: 'Gemini Flash-Lite Latest', tier: 'Lower Tier' },
+  { id: 'gemini-3.1-pro-preview', name: 'Gemini 3.1 Pro', tier: 'Pro Tier' }
 ];
 
 /**
@@ -719,7 +723,7 @@ INSTRUCTIONS FOR YOUR RESPONSE:
         isAllProgressMode,
         apiKey: DEFAULT_GEMINI_KEY,
         previousMessages,
-        preferredModelId: 'gemini-2.0-flash-lite',
+        preferredModelId: 'gemini-3.5-flash-lite',
         autoDowngradeEnabled: true,
         onStatusUpdate
       });
