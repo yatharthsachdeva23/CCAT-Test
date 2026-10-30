@@ -9,14 +9,12 @@ import { getSettings, saveSettings, DEFAULT_GEMINI_KEY, getUltraFastAttempts } f
 import MarkdownView from './MarkdownView.jsx';
 
 const GEMINI_MODELS = [
-  { id: 'auto', name: 'Smart Auto-Cascade', tier: 'Auto', badge: 'Recommended', desc: 'Starts at Upper Flash, auto-downgrades to Flash-Lite if rate-limited or quota exceeded' },
-  { id: 'gemini-2.5-flash', name: 'Gemini 2.5 Flash', tier: 'Upper Tier', badge: 'High Precision', desc: 'Premier balanced model for rapid, high-accuracy telemetry analysis' },
-  { id: 'gemini-3.5-flash', name: 'Gemini 3.5 Flash', tier: 'Upper Tier', badge: 'Next-Gen Flash', desc: 'High-speed reasoning model' },
-  { id: 'gemini-3.8-flash', name: 'Gemini 3.8 Flash', tier: 'Upper Tier', badge: 'Reasoning Flash', desc: 'Deep cognitive analysis' },
-  { id: 'gemini-flash-latest', name: 'Gemini Flash Latest', tier: 'Upper Tier', badge: 'Latest Flash', desc: 'Google standard latest flash alias' },
-  { id: 'gemini-3.5-flash-lite', name: 'Gemini 3.5 Flash-Lite', tier: 'Lower Tier', badge: 'High Quota', desc: 'Ultra-resilient model with high quota allowance and fast latency' },
-  { id: 'gemini-flash-lite-latest', name: 'Gemini Flash-Lite Latest', tier: 'Lower Tier', badge: 'Max Resiliency', desc: 'Maximum resilience high-quota fallback' },
-  { id: 'gemini-3.1-pro-preview', name: 'Gemini 3.1 Pro', tier: 'Pro Tier', badge: 'Heavy Reasoning', desc: 'Deep multi-step reasoning (strict RPM limits)' }
+  { id: 'auto', name: 'Smart Auto-Cascade', tier: 'Auto', badge: 'Recommended', desc: 'Starts at Gemini 2.0 Flash, auto-downgrades to Flash-Lite if rate-limited or quota exceeded' },
+  { id: 'gemini-2.0-flash', name: 'Gemini 2.0 Flash', tier: 'Upper Tier', badge: 'Next-Gen Flash', desc: 'Fastest next-generation multimodal model with ultra-low latency' },
+  { id: 'gemini-1.5-flash', name: 'Gemini 1.5 Flash', tier: 'Upper Tier', badge: 'High Speed', desc: 'Google standard high-speed production model' },
+  { id: 'gemini-2.0-flash-lite', name: 'Gemini 2.0 Flash-Lite', tier: 'Lower Tier', badge: 'High Quota', desc: 'Ultra-resilient model with high quota allowance and fast latency' },
+  { id: 'gemini-1.5-flash-8b', name: 'Gemini 1.5 Flash-8B', tier: 'Lower Tier', badge: 'Max Throughput', desc: 'High-throughput lightweight model for high-frequency queries' },
+  { id: 'gemini-1.5-pro', name: 'Gemini 1.5 Pro', tier: 'Pro Tier', badge: 'Heavy Reasoning', desc: 'Deep multi-step cognitive reasoning (strict RPM limits)' }
 ];
 
 export default function AICoach({ attempts = [], activeAttempt = null, onSelectAttempt }) {
@@ -484,18 +482,11 @@ Click any quick prompt below or ask your own question:
  * Ordered Fallback Priority Tiers (Upper Models -> Lower Resilient Models)
  */
 const CASCADE_TIERS = [
-  // Upper Premier Tier
-  { id: 'gemini-2.5-flash', name: 'Gemini 2.5 Flash', tier: 'Upper Tier' },
-  { id: 'gemini-3.5-flash', name: 'Gemini 3.5 Flash', tier: 'Upper Tier' },
-  { id: 'gemini-3.8-flash', name: 'Gemini 3.8 Flash', tier: 'Upper Tier' },
-  { id: 'gemini-flash-latest', name: 'Gemini Flash Latest', tier: 'Upper Tier' },
-
-  // Lower Resilient / High-Quota Fallback Tier
-  { id: 'gemini-3.5-flash-lite', name: 'Gemini 3.5 Flash-Lite', tier: 'Lower Tier' },
-  { id: 'gemini-flash-lite-latest', name: 'Gemini Flash-Lite Latest', tier: 'Lower Tier' },
-
-  // Pro Tier
-  { id: 'gemini-3.1-pro-preview', name: 'Gemini 3.1 Pro', tier: 'Pro Tier' }
+  { id: 'gemini-2.0-flash', name: 'Gemini 2.0 Flash', tier: 'Upper Tier' },
+  { id: 'gemini-1.5-flash', name: 'Gemini 1.5 Flash', tier: 'Upper Tier' },
+  { id: 'gemini-2.0-flash-lite', name: 'Gemini 2.0 Flash-Lite', tier: 'Lower Tier' },
+  { id: 'gemini-1.5-flash-8b', name: 'Gemini 1.5 Flash-8B', tier: 'Lower Tier' },
+  { id: 'gemini-1.5-pro', name: 'Gemini 1.5 Pro', tier: 'Pro Tier' }
 ];
 
 /**
@@ -505,6 +496,12 @@ function classifyGeminiError(errData, httpStatus) {
   const msg = (errData?.message || errData || '').toString().toLowerCase();
   const statusStr = (errData?.status || '').toString().toLowerCase();
 
+  if (httpStatus === 403 || statusStr.includes('permission_denied') || msg.includes('leaked') || msg.includes('reported as leaked')) {
+    return { isDowngradable: false, label: 'API Key Revoked (Reported as Leaked by Google)' };
+  }
+  if (httpStatus === 401 || msg.includes('api_key_invalid') || msg.includes('api key not valid')) {
+    return { isDowngradable: false, label: 'API Key Invalid' };
+  }
   if (httpStatus === 429 || statusStr.includes('resource_exhausted') || msg.includes('quota') || msg.includes('rate limit') || msg.includes('too many requests')) {
     return { isDowngradable: true, label: 'Rate limit / Quota exceeded' };
   }
@@ -692,7 +689,7 @@ INSTRUCTIONS FOR YOUR RESPONSE:
 
       console.warn(`[Gemini Auto-Downgrade] ${model.id} failed (${errInfo.label}). Cascading to next model...`);
 
-      if (!autoDowngradeEnabled) {
+      if (!errInfo.isDowngradable || !autoDowngradeEnabled) {
         throw new Error(`${model.name} error: ${data.error?.message || errInfo.label}`);
       }
     } catch (e) {
@@ -702,7 +699,7 @@ INSTRUCTIONS FOR YOUR RESPONSE:
 
       console.warn(`[Gemini Auto-Downgrade] ${model.id} error: ${e.message}. Cascading to next model...`);
 
-      if (!autoDowngradeEnabled) {
+      if (!errInfo.isDowngradable || !autoDowngradeEnabled) {
         throw new Error(`${model.name} error: ${e.message}`);
       }
     }
@@ -722,7 +719,7 @@ INSTRUCTIONS FOR YOUR RESPONSE:
         isAllProgressMode,
         apiKey: DEFAULT_GEMINI_KEY,
         previousMessages,
-        preferredModelId: 'gemini-3.5-flash-lite',
+        preferredModelId: 'gemini-2.0-flash-lite',
         autoDowngradeEnabled: true,
         onStatusUpdate
       });

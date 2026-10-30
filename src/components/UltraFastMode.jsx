@@ -1413,7 +1413,10 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
                         item.category || currentSprint.subject, 
                         item.timeLimitSec || currentSprint.timePerQuestionSec
                       );
-                      const trickContent = sprintSpeedTricks[qId];
+                      const trickRaw = sprintSpeedTricks[qId];
+                      const trickContent = typeof trickRaw === 'string' ? trickRaw : trickRaw?.text;
+                      const trickModel = typeof trickRaw === 'object' ? trickRaw?.model : 'local-ccat-engine';
+                      const isGemini = trickModel && trickModel.startsWith('gemini');
 
                       // Auto-fetch if not cached and not loading
                       if (!trickContent && !loadingTricks[qId]) {
@@ -1425,11 +1428,15 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
                           <div className="flex items-center justify-between">
                             <div className="flex items-center gap-1.5 font-bold text-amber-300 text-xs">
                               <Zap className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                              <span>⚡ Gemini {targetSec}-Sec Mental Shortcut & Elimination Trick</span>
+                              <span>{isGemini ? `⚡ Gemini ${targetSec}-Sec AI Mental Shortcut` : `⚡ ${targetSec}-Sec Mental Shortcut & Elimination Trick`}</span>
                             </div>
                             {trickContent && (
-                              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
-                                AI Accelerated
+                              <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${
+                                isGemini
+                                  ? 'bg-purple-500/20 text-purple-300 border-purple-500/30'
+                                  : 'bg-amber-500/20 text-amber-300 border-amber-500/30'
+                              }`}>
+                                {isGemini ? 'Gemini AI 🟢' : 'Tactical Engine ⚡'}
                               </span>
                             )}
                           </div>
@@ -1437,11 +1444,17 @@ export default function UltraFastMode({ attempts = [], onBackToDashboard }) {
                           {trickContent ? (
                             <div className="text-slate-200 leading-relaxed text-xs">
                               <MarkdownView content={trickContent} />
+                              {!isGemini && (
+                                <div className="mt-2 pt-2 border-t border-slate-800/60 flex items-center justify-between text-[10px] text-slate-400">
+                                  <span className="italic">Question-Specific CCAT Speed Strategy</span>
+                                  <span className="text-slate-500">Settings ➔ Add Gemini API Key for live AI</span>
+                                </div>
+                              )}
                             </div>
                           ) : (
                             <div className="flex items-center gap-2 text-xs text-amber-300/90 py-1">
                               <Sparkles className="w-3.5 h-3.5 animate-spin text-amber-400" />
-                              <span>Generating {targetSec}-second shortcut via Gemini...</span>
+                              <span>Synthesizing {targetSec}-second shortcut...</span>
                             </div>
                           )}
                         </div>

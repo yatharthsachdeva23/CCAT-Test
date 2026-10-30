@@ -27,7 +27,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Normality)\n\nAberration means a departure from what is normal, usual, or expected. Normality is its opposite.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Normality)\n\nAberration means a departure from what is normal, usual, or expected. Normality is its opposite.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"ABERRATION\" (a departure from what is normal, usual, or expected); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Normality) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -56,7 +56,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Ignorance)\n\nAcumen means the ability to make good judgments and take quick decisions. Ignorance is lack of knowledge or acuity.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Ignorance)\n\nAcumen means the ability to make good judgments and take quick decisions. Ignorance is lack of knowledge or acuity.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"ACUMEN\" (the ability to make good judgments and take quick decisions); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Ignorance) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -85,7 +85,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Stingy)\n\nMunificent means larger or more generous than usual; lavish. Stingy is miserly.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Stingy)\n\nMunificent means larger or more generous than usual; lavish. Stingy is miserly.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"MUNIFICENT\" (larger or more generous than usual; lavish); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Stingy) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -114,7 +114,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Intractable)\n\nAmenable means open and responsive to suggestion; easily persuaded. Intractable means hard to control or stubborn.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Intractable)\n\nAmenable means open and responsive to suggestion; easily persuaded. Intractable means hard to control or stubborn.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"AMENABLE\" (open and responsive to suggestion; easily persuaded); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Intractable) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -143,7 +143,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Authentic)\n\nApocryphal means of doubtful authenticity, although widely circulated as being true. Authentic is genuine.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Authentic)\n\nApocryphal means of doubtful authenticity, although widely circulated as being true. Authentic is genuine.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"APOCRYPHAL\" (of doubtful authenticity, although widely circulated as being true); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Authentic) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -172,7 +172,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Negligent)\n\nAssiduous means showing great care and perseverance. Negligent means failing to take proper care.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Negligent)\n\nAssiduous means showing great care and perseverance. Negligent means failing to take proper care.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"ASSIDUOUS\" (showing great care and perseverance); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Negligent) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -201,7 +201,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (NUMISMATIST : MEDALLIONS)\n\nA vexillologist studies flags and banners, just as a numismatist studies coins and medallions.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (NUMISMATIST : MEDALLIONS)\n\nA vexillologist studies flags and banners, just as a numismatist studies coins and medallions.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"VEXILLOLOGIST relates to FLAGS\"; match the exact functional category and direction to lock Option A (NUMISMATIST : MEDALLIONS) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -230,7 +230,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (RIDGEPOLE : ROOF)\n\nA keystone is the central structural locking piece of an arch, just as a ridgepole is the central structural beam of a pitched roof.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (RIDGEPOLE : ROOF)\n\nA keystone is the central structural locking piece of an arch, just as a ridgepole is the central structural beam of a pitched roof.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"KEYSTONE relates to ARCH\"; match the exact functional category and direction to lock Option B (RIDGEPOLE : ROOF) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -259,7 +259,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (WHISPER : SHOUT)\n\nA trickle is a low-intensity manifestation of water compared to a deluge, just as a whisper is to a shout.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (WHISPER : SHOUT)\n\nA trickle is a low-intensity manifestation of water compared to a deluge, just as a whisper is to a shout.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"TRICKLE relates to DELUGE\"; match the exact functional category and direction to lock Option C (WHISPER : SHOUT) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -288,7 +288,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (CARTOGRAPHER : PROJECTION)\n\nA choreographer devises choreography, just as a cartographer constructs a map projection.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (CARTOGRAPHER : PROJECTION)\n\nA choreographer devises choreography, just as a cartographer constructs a map projection.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"CHOREOGRAPHER relates to LIBRETTO\"; match the exact functional category and direction to lock Option D (CARTOGRAPHER : PROJECTION) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -317,7 +317,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (GENEALOGIST : LINEAGES)\n\nAn etiologist determines the causes of conditions, just as a genealogist traces family lineages.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (GENEALOGIST : LINEAGES)\n\nAn etiologist determines the causes of conditions, just as a genealogist traces family lineages.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"ETIOLOGIST relates to CAUSES\"; match the exact functional category and direction to lock Option E (GENEALOGIST : LINEAGES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -346,7 +346,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (STANCHION : BANISTER)\n\nA mullion is a vertical dividing member supporting adjacent windowpanes, just as a stanchion supports a banister.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (STANCHION : BANISTER)\n\nA mullion is a vertical dividing member supporting adjacent windowpanes, just as a stanchion supports a banister.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"MULLION relates to WINDOWPANE\"; match the exact functional category and direction to lock Option A (STANCHION : BANISTER) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -375,7 +375,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Basalt)\n\nSapphire, Emerald, Ruby, and Diamond are precious gemstones/minerals, while Basalt is an igneous rock.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Basalt)\n\nSapphire, Emerald, Ruby, and Diamond are precious gemstones/minerals, while Basalt is an igneous rock.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option B (Basalt) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -404,7 +404,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Gold)\n\nNitrogen, Oxygen, Fluorine, and Chlorine are gaseous elements at standard temperature and pressure, whereas Gold is a solid transition metal.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Gold)\n\nNitrogen, Oxygen, Fluorine, and Chlorine are gaseous elements at standard temperature and pressure, whereas Gold is a solid transition metal.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Gold) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -433,7 +433,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Trombone)\n\nClarinet, Flute, Oboe, and Bassoon are woodwind instruments, while the Trombone is a brass instrument.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Trombone)\n\nClarinet, Flute, Oboe, and Bassoon are woodwind instruments, while the Trombone is a brass instrument.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Trombone) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -462,7 +462,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (neutral)\n\nNeutral describes an impartial stance that refuses to favor polarized factions.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (neutral)\n\nNeutral describes an impartial stance that refuses to favor polarized factions.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option A (neutral) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -491,7 +491,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Elena holds computer science credentials.)\n\nIf Elena is a data engineer, she knows query optimization. Since no one without CS credentials knows query optimization, Elena must hold CS credentials.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Elena holds computer science credentials.)\n\nIf Elena is a data engineer, she knows query optimization. Since no one without CS credentials knows query optimization, Elena must hold CS credentials.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option E in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -522,7 +522,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Loquacious)\n\nTaciturn means habitually silent or quiet. Loquacious means talkative.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Loquacious)\n\nTaciturn means habitually silent or quiet. Loquacious means talkative.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"TACITURN\" (habitually silent or quiet); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Loquacious) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -551,7 +551,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Generosity)\n\nAvarice means extreme greed for wealth or material gain. Generosity is readiness to give.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Generosity)\n\nAvarice means extreme greed for wealth or material gain. Generosity is readiness to give.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"AVARICE\" (extreme greed for wealth or material gain); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Generosity) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -580,7 +580,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Original)\n\nBanal means so lacking in originality as to be obvious and boring. Original is fresh and inventive.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Original)\n\nBanal means so lacking in originality as to be obvious and boring. Original is fresh and inventive.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"BANAL\" (so lacking in originality as to be obvious and boring); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Original) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -609,7 +609,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Wither)\n\nBurgeon means begin to grow or increase rapidly; flourish. Wither means decline or decay.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Wither)\n\nBurgeon means begin to grow or increase rapidly; flourish. Wither means decline or decay.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"BURGEON\" (begin to grow or increase rapidly; flourish); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Wither) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -638,7 +638,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Courageous)\n\nPusillanimous means lacking courage or resolution; cowardly. Courageous is its direct antonym.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Courageous)\n\nPusillanimous means lacking courage or resolution; cowardly. Courageous is its direct antonym.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PUSILLANIMOUS\" (lacking courage or resolution; cowardly); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Courageous) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -667,7 +667,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Deceit)\n\nCandor means the quality of being open and honest in expression. Deceit is concealment of the truth.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Deceit)\n\nCandor means the quality of being open and honest in expression. Deceit is concealment of the truth.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"CANDOR\" (the quality of being open and honest in expression); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Deceit) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -696,7 +696,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (MORTISE : TENON)\n\nA rivet permanently fastens a structural girder, just as a mortise secures a tenon.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (MORTISE : TENON)\n\nA rivet permanently fastens a structural girder, just as a mortise secures a tenon.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"RIVET relates to GIRDER\"; match the exact functional category and direction to lock Option B (MORTISE : TENON) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -725,7 +725,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (CLEAT : WHARF)\n\nA purlin provides horizontal structural support across rafters, just as a cleat secures vessels to a wharf.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (CLEAT : WHARF)\n\nA purlin provides horizontal structural support across rafters, just as a cleat secures vessels to a wharf.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"PURLIN relates to RAFTER\"; match the exact functional category and direction to lock Option C (CLEAT : WHARF) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -754,7 +754,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (WASHER : SCREW)\n\nA gasket forms a tight mechanical seal between cylinder faces, just as a washer distributes screw load.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (WASHER : SCREW)\n\nA gasket forms a tight mechanical seal between cylinder faces, just as a washer distributes screw load.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"GASKET relates to CYLINDER\"; match the exact functional category and direction to lock Option D (WASHER : SCREW) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -783,7 +783,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (CHOREOGRAPHER : DANCE)\n\nA dramatist creates a play, just as a choreographer creates a dance routine.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (CHOREOGRAPHER : DANCE)\n\nA dramatist creates a play, just as a choreographer creates a dance routine.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"DRAMATIST relates to PLAY\"; match the exact functional category and direction to lock Option E (CHOREOGRAPHER : DANCE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -812,7 +812,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (COTTER PIN : AXLE)\n\nA lug fastens a flange assembly, just as a cotter pin secures an axle.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (COTTER PIN : AXLE)\n\nA lug fastens a flange assembly, just as a cotter pin secures an axle.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"LUG relates to FLANGE\"; match the exact functional category and direction to lock Option A (COTTER PIN : AXLE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -841,7 +841,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (EXERCISE : FATIGUE)\n\nFriction inherently generates heat, just as prolonged exercise generates physical fatigue.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (EXERCISE : FATIGUE)\n\nFriction inherently generates heat, just as prolonged exercise generates physical fatigue.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"FRICTION relates to HEAT\"; match the exact functional category and direction to lock Option B (EXERCISE : FATIGUE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -870,7 +870,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Marathon)\n\nTriathlon, Decathlon, Pentathlon, and Heptathlon are multi-discipline combined events, while a Marathon is a single continuous footrace.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Marathon)\n\nTriathlon, Decathlon, Pentathlon, and Heptathlon are multi-discipline combined events, while a Marathon is a single continuous footrace.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option E (Marathon) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -899,7 +899,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Fossilization)\n\nMitosis, Meiosis, Cytokinesis, and Replication are microscopic cellular biological functions, whereas Fossilization is geological preservation.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Fossilization)\n\nMitosis, Meiosis, Cytokinesis, and Replication are microscopic cellular biological functions, whereas Fossilization is geological preservation.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Fossilization) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -928,7 +928,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Trachea)\n\nCerebrum, Cerebellum, Brainstem, and Hippocampus are anatomical structures of the central brain, while the Trachea is a respiratory windpipe.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Trachea)\n\nCerebrum, Cerebellum, Brainstem, and Hippocampus are anatomical structures of the central brain, while the Trachea is a respiratory windpipe.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Trachea) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -957,7 +957,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (unwavering)\n\nUnwavering indicates firm determination in spite of budget constraints.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (unwavering)\n\nUnwavering indicates firm determination in spite of budget constraints.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option D (unwavering) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -986,7 +986,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Document Delta is not a corporate compliance audit.)\n\nDelta is a draft summary -> does not require verification -> cannot be a compliance audit (which requires verification).\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Document Delta is not a corporate compliance audit.)\n\nDelta is a draft summary -> does not require verification -> cannot be a compliance audit (which requires verification).\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option D in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -1017,7 +1017,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Praise)\n\nCastigate means reprimand severely. Praise means express warm approval or admiration.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Praise)\n\nCastigate means reprimand severely. Praise means express warm approval or admiration.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"CASTIGATE\" (reprimand severely); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Praise) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -1046,7 +1046,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Delight)\n\nChagrin means distress or embarrassment at having failed or been humiliated. Delight is great pleasure.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Delight)\n\nChagrin means distress or embarrassment at having failed or been humiliated. Delight is great pleasure.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"CHAGRIN\" (distress or embarrassment at having failed or been humiliated); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Delight) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -1075,7 +1075,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Overt)\n\nClandestine means kept secret or done secretively. Overt means done or shown openly.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Overt)\n\nClandestine means kept secret or done secretively. Overt means done or shown openly.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"CLANDESTINE\" (kept secret or done secretively); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Overt) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -1104,7 +1104,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Summary)\n\nA compendium is a collection of concise but detailed information about a particular subject; a summary.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Summary)\n\nA compendium is a collection of concise but detailed information about a particular subject; a summary.\n\n\ud83d\udca1 **Speed Tip:** Eliminate mismatched categories rapidly to verify Option A in <8s.",
       "category": "verbal",
       "subType": "synonym"
     },
@@ -1133,7 +1133,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Thorough)\n\nCursory means hasty and therefore not thorough or detailed. Thorough is complete with attention to detail.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Thorough)\n\nCursory means hasty and therefore not thorough or detailed. Thorough is complete with attention to detail.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"CURSORY\" (hasty and therefore not thorough or detailed); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Thorough) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -1162,7 +1162,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Strength)\n\nDebility means physical weakness, especially as a result of illness. Strength is power and vigor.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Strength)\n\nDebility means physical weakness, especially as a result of illness. Strength is power and vigor.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"DEBILITY\" (physical weakness, especially as a result of illness); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Strength) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -1191,7 +1191,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (PYCNOMETER : SPECIFIC GRAVITY)\n\nA manometer specifically measures fluid pressure, just as a pycnometer measures specific gravity.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (PYCNOMETER : SPECIFIC GRAVITY)\n\nA manometer specifically measures fluid pressure, just as a pycnometer measures specific gravity.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"MANOMETER relates to FLUID\"; match the exact functional category and direction to lock Option C (PYCNOMETER : SPECIFIC GRAVITY) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -1220,7 +1220,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (FEDERATION : PROVINCE)\n\nA conglomerate is an overarching entity composed of subsidiary companies, just as a federation is composed of constituent provinces.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (FEDERATION : PROVINCE)\n\nA conglomerate is an overarching entity composed of subsidiary companies, just as a federation is composed of constituent provinces.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"CONGLOMERATE relates to SUBSIDIARY\"; match the exact functional category and direction to lock Option D (FEDERATION : PROVINCE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -1249,7 +1249,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (SKETCH : PAINT)\n\nTo scrutinize is to look with extreme depth compared to a glance, just as perusing is deep reading compared to skimming.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (SKETCH : PAINT)\n\nTo scrutinize is to look with extreme depth compared to a glance, just as perusing is deep reading compared to skimming.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"GLANCE relates to SCRUTINIZE\"; match the exact functional category and direction to lock Option E (SKETCH : PAINT) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -1278,7 +1278,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (PALEONTOLOGIST : FOSSIL)\n\nAn archeologist unearths and examines artifacts, just as a paleontologist unearths and examines fossils.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (PALEONTOLOGIST : FOSSIL)\n\nAn archeologist unearths and examines artifacts, just as a paleontologist unearths and examines fossils.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"ARCHEOLOGIST relates to ARTIFACT\"; match the exact functional category and direction to lock Option A (PALEONTOLOGIST : FOSSIL) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -1307,7 +1307,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (VAULT : CURRENCY)\n\nA silo stores bulk grain, just as a secure bank vault stores currency reserves.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (VAULT : CURRENCY)\n\nA silo stores bulk grain, just as a secure bank vault stores currency reserves.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"SILO relates to GRAIN\"; match the exact functional category and direction to lock Option B (VAULT : CURRENCY) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -1336,7 +1336,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (INFECTION : FEVER)\n\nA drought causes famine through agricultural failure, just as a bacterial infection causes fever.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (INFECTION : FEVER)\n\nA drought causes famine through agricultural failure, just as a bacterial infection causes fever.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"DROUGHT relates to FAMINE\"; match the exact functional category and direction to lock Option C (INFECTION : FEVER) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -1365,7 +1365,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Treatise)\n\nSonnet, Haiku, Limerick, and Villanelle are poetic verse structures, while a Treatise is a systematic scholarly prose composition.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Treatise)\n\nSonnet, Haiku, Limerick, and Villanelle are poetic verse structures, while a Treatise is a systematic scholarly prose composition.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option E (Treatise) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -1394,7 +1394,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Tetrahedron)\n\nParallelogram, Trapezoid, Rhombus, and Rectangle are two-dimensional planar quadrilaterals, while a Tetrahedron is a three-dimensional polyhedron.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Tetrahedron)\n\nParallelogram, Trapezoid, Rhombus, and Rectangle are two-dimensional planar quadrilaterals, while a Tetrahedron is a three-dimensional polyhedron.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Tetrahedron) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -1423,7 +1423,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Syllogism)\n\nMetaphor, Simile, Personification, and Hyperbole are figures of figurative speech, whereas a Syllogism is a formal logical deductive argument.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Syllogism)\n\nMetaphor, Simile, Personification, and Hyperbole are figures of figurative speech, whereas a Syllogism is a formal logical deductive argument.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Syllogism) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -1452,7 +1452,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (candid)\n\nCandid means straightforward, open, and frank, fitting the illumination of secret talks.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (candid)\n\nCandid means straightforward, open, and frank, fitting the illumination of secret talks.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option E (candid) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -1481,7 +1481,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Milestone Gamma)\n\nStrict chronological pipeline: Gamma \u2192 Alpha \u2192 Beta \u2192 Delta. Milestone Gamma must complete first.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Milestone Gamma)\n\nStrict chronological pipeline: Gamma \u2192 Alpha \u2192 Beta \u2192 Delta. Milestone Gamma must complete first.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option C in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -1512,7 +1512,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Disrespect)\n\nDeference means polite submission and respect. Disrespect is lack of respect or courtesy.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Disrespect)\n\nDeference means polite submission and respect. Disrespect is lack of respect or courtesy.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"DEFERENCE\" (polite submission and respect); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Disrespect) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -1541,7 +1541,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Depict)\n\nDelineate means to describe or portray something precisely; depict.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Depict)\n\nDelineate means to describe or portray something precisely; depict.\n\n\ud83d\udca1 **Speed Tip:** Eliminate mismatched categories rapidly to verify Option B in <8s.",
       "category": "verbal",
       "subType": "synonym"
     },
@@ -1570,7 +1570,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Democratic)\n\nDespotic means tyrannical or authoritarian. Democratic is governed by popular choice.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Democratic)\n\nDespotic means tyrannical or authoritarian. Democratic is governed by popular choice.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"DESPOTIC\" (tyrannical or authoritarian); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Democratic) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -1599,7 +1599,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Uninformative)\n\nDidactic means intended to teach, particularly in having moral instruction. Uninformative provides no instruction.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Uninformative)\n\nDidactic means intended to teach, particularly in having moral instruction. Uninformative provides no instruction.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"DIDACTIC\" (intended to teach, particularly in having moral instruction); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Uninformative) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -1628,7 +1628,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Harmonious)\n\nDiscordant means disagreeing or incongruous; harsh and jarring in sound. Harmonious is pleasingly consistent.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Harmonious)\n\nDiscordant means disagreeing or incongruous; harsh and jarring in sound. Harmonious is pleasingly consistent.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"DISCORDANT\" (disagreeing or incongruous; harsh and jarring in sound); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Harmonious) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -1657,7 +1657,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Compliment)\n\nDisparage means regard or represent as being of little worth. Compliment is praise.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Compliment)\n\nDisparage means regard or represent as being of little worth. Compliment is praise.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"DISPARAGE\" (regard or represent as being of little worth); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Compliment) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -1686,7 +1686,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (DENSITOMETER : OPTICAL DENSITY)\n\nA viscometer measures fluid viscosity, just as a densitometer measures optical density.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (DENSITOMETER : OPTICAL DENSITY)\n\nA viscometer measures fluid viscosity, just as a densitometer measures optical density.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"VISCOMETER relates to VISCOSITY\"; match the exact functional category and direction to lock Option D (DENSITOMETER : OPTICAL DENSITY) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -1715,7 +1715,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (SPAR : WING)\n\nA strut provides vital diagonal bracing to a vehicle chassis, just as a spar reinforces an aircraft wing.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (SPAR : WING)\n\nA strut provides vital diagonal bracing to a vehicle chassis, just as a spar reinforces an aircraft wing.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"STRUT relates to CHASSIS\"; match the exact functional category and direction to lock Option E (SPAR : WING) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -1744,7 +1744,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (SIP : GULP)\n\nNibbling is consuming in minimal quantities compared to devouring, just as sipping is to gulping.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (SIP : GULP)\n\nNibbling is consuming in minimal quantities compared to devouring, just as sipping is to gulping.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"NIBBLE relates to DEVOUR\"; match the exact functional category and direction to lock Option A (SIP : GULP) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -1773,7 +1773,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (VINTNER : WINE)\n\nA miller processes grain to produce flour, just as a vintner processes grapes to produce wine.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (VINTNER : WINE)\n\nA miller processes grain to produce flour, just as a vintner processes grapes to produce wine.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"MILLER relates to FLOUR\"; match the exact functional category and direction to lock Option B (VINTNER : WINE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -1802,7 +1802,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (CHOCK : WHEEL)\n\nA cleat anchors a mooring hauser line, just as a chock stabilizes a vehicle wheel.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (CHOCK : WHEEL)\n\nA cleat anchors a mooring hauser line, just as a chock stabilizes a vehicle wheel.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"CLEAT relates to HAUSER\"; match the exact functional category and direction to lock Option C (CHOCK : WHEEL) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -1831,7 +1831,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (TINKLE : PEAL)\n\nTo murmur is a soft vocalization whereas to bellow is loud, just as a tinkle is faint compared to a resonant peal.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (TINKLE : PEAL)\n\nTo murmur is a soft vocalization whereas to bellow is loud, just as a tinkle is faint compared to a resonant peal.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"MURMUR relates to BELLOW\"; match the exact functional category and direction to lock Option D (TINKLE : PEAL) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -1860,7 +1860,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Photosynthetic)\n\nSedimentary, Metamorphic, Igneous, and Volcanic describe geological rock origins, while Photosynthetic describes botanical energy conversion.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Photosynthetic)\n\nSedimentary, Metamorphic, Igneous, and Volcanic describe geological rock origins, while Photosynthetic describes botanical energy conversion.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option E (Photosynthetic) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -1889,7 +1889,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Monopoly)\n\nMonarchy, Oligarchy, Democracy, and Plutocracy are systems of political government, whereas a Monopoly is an economic market structure.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Monopoly)\n\nMonarchy, Oligarchy, Democracy, and Plutocracy are systems of political government, whereas a Monopoly is an economic market structure.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Monopoly) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -1918,7 +1918,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Mass)\n\nVelocity, Acceleration, Displacement, and Momentum are vector quantities with magnitude and direction, while Mass is a pure scalar.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Mass)\n\nVelocity, Acceleration, Displacement, and Momentum are vector quantities with magnitude and direction, while Mass is a pure scalar.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Mass) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -1947,7 +1947,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (corroborating)\n\nCorroborating means confirming or giving support to evidence.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (corroborating)\n\nCorroborating means confirming or giving support to evidence.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option C (corroborating) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -1976,7 +1976,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Definitively False)\n\nBy transitivity, Yield(K) > Yield(L) and Yield(L) > Yield(M) means Yield(K) > Yield(M). Therefore, Asset M > Asset K is definitively False.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Definitively False)\n\nBy transitivity, Yield(K) > Yield(L) and Yield(L) > Yield(M) means Yield(K) > Yield(M). Therefore, Asset M > Asset K is definitively False.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option C in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -2007,7 +2007,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Gather)\n\nDisseminate means spread or disperse something widely. Gather means collect together.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Gather)\n\nDisseminate means spread or disperse something widely. Gather means collect together.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"DISSEMINATE\" (spread or disperse something widely); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Gather) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -2036,7 +2036,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Accumulate)\n\nDissipate means disperse or scatter, or waste resources. Accumulate means gather together or acquire.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Accumulate)\n\nDissipate means disperse or scatter, or waste resources. Accumulate means gather together or acquire.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"DISSIPATE\" (disperse or scatter, or waste resources); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Accumulate) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -2065,7 +2065,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Invest)\n\nDivest means deprive someone of power, rights, or possessions, or rid oneself of an asset. Invest is opposite.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Invest)\n\nDivest means deprive someone of power, rights, or possessions, or rid oneself of an asset. Invest is opposite.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"DIVEST\" (deprive someone of power, rights, or possessions, or rid oneself of an asset); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Invest) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -2094,7 +2094,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Honesty)\n\nDuplicity means deceitfulness; double-dealing. Honesty is truthfulness.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Honesty)\n\nDuplicity means deceitfulness; double-dealing. Honesty is truthfulness.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"DUPLICITY\" (deceitfulness; double-dealing); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Honesty) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -2123,7 +2123,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Uniform)\n\nEclectic means deriving ideas, style, or taste from a broad and diverse range of sources. Uniform is unvarying.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Uniform)\n\nEclectic means deriving ideas, style, or taste from a broad and diverse range of sources. Uniform is unvarying.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"ECLECTIC\" (deriving ideas, style, or taste from a broad and diverse range of sources); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Uniform) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -2152,7 +2152,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Ineffectiveness)\n\nEfficacy is the ability to produce a desired or intended result. Ineffectiveness produces no result.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Ineffectiveness)\n\nEfficacy is the ability to produce a desired or intended result. Ineffectiveness produces no result.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"EFFICACY\"'s polarity; 4 choices cluster together as distractors. Lock opposite Option C (Ineffectiveness) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -2181,7 +2181,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (GLASSBLOWER : BLOWPIPE)\n\nA potter shapes clay upon a potter's wheel, just as a glassblower shapes molten glass with a blowpipe.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (GLASSBLOWER : BLOWPIPE)\n\nA potter shapes clay upon a potter's wheel, just as a glassblower shapes molten glass with a blowpipe.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"POTTER relates to WHEEL\"; match the exact functional category and direction to lock Option E (GLASSBLOWER : BLOWPIPE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -2210,7 +2210,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (DRIZZLE : MONSOON)\n\nA glimmer is a faint burst of light compared to a blaze, just as a drizzle is minor compared to a monsoon.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (DRIZZLE : MONSOON)\n\nA glimmer is a faint burst of light compared to a blaze, just as a drizzle is minor compared to a monsoon.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"GLIMMER relates to BLAZE\"; match the exact functional category and direction to lock Option A (DRIZZLE : MONSOON) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -2239,7 +2239,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (SIMMER : BOIL)\n\nJogging is running at moderate intensity compared to a sprint, just as simmering is low heat compared to boiling.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (SIMMER : BOIL)\n\nJogging is running at moderate intensity compared to a sprint, just as simmering is low heat compared to boiling.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"JOG relates to SPRINT\"; match the exact functional category and direction to lock Option B (SIMMER : BOIL) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -2268,7 +2268,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (ENTOMOLOGIST : INSECTS)\n\nAn agronomist scientific studies crops, just as an entomologist studies insects.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (ENTOMOLOGIST : INSECTS)\n\nAn agronomist scientific studies crops, just as an entomologist studies insects.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"AGRONOMIST relates to CROPS\"; match the exact functional category and direction to lock Option C (ENTOMOLOGIST : INSECTS) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -2297,7 +2297,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (NUDGE : THRUST)\n\nA ripple is a mild aquatic disturbance compared to a tidal wave, just as a nudge is gentle compared to a thrust.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (NUDGE : THRUST)\n\nA ripple is a mild aquatic disturbance compared to a tidal wave, just as a nudge is gentle compared to a thrust.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"RIPPLE relates to TIDAL\"; match the exact functional category and direction to lock Option D (NUDGE : THRUST) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -2326,7 +2326,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (SHIVER : CONVULSION)\n\nA breeze is a gentle current compared to a typhoon, just as a shiver is minor compared to a convulsion.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (SHIVER : CONVULSION)\n\nA breeze is a gentle current compared to a typhoon, just as a shiver is minor compared to a convulsion.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"BREEZE relates to TYPHOON\"; match the exact functional category and direction to lock Option E (SHIVER : CONVULSION) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -2355,7 +2355,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Cellulose)\n\nDolomite, Quartz, Feldspar, and Mica are naturally occurring inorganic minerals, while Cellulose is an organic biological polymer.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Cellulose)\n\nDolomite, Quartz, Feldspar, and Mica are naturally occurring inorganic minerals, while Cellulose is an organic biological polymer.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option E (Cellulose) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -2384,7 +2384,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Cartographer)\n\nPianist, Violinist, Cellist, and Flautist are instrumental musical performers, while a Cartographer is a mapmaker.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Cartographer)\n\nPianist, Violinist, Cellist, and Flautist are instrumental musical performers, while a Cartographer is a mapmaker.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Cartographer) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -2413,7 +2413,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Dogma)\n\nHypothesis, Experiment, Observation, and Theory are components of empirical science, while Dogma is unquestioned authoritative doctrine.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Dogma)\n\nHypothesis, Experiment, Observation, and Theory are components of empirical science, while Dogma is unquestioned authoritative doctrine.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Dogma) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -2442,7 +2442,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (resilient)\n\nResilient means able to withstand or recover quickly from difficult conditions, bending without breaking.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (resilient)\n\nResilient means able to withstand or recover quickly from difficult conditions, bending without breaking.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option A (resilient) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -2471,7 +2471,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Compound Q is not certified for pediatric distribution.)\n\nModus tollens: Certified -> Passed screen. Not passed screen -> Not certified.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Compound Q is not certified for pediatric distribution.)\n\nModus tollens: Certified -> Passed screen. Not passed screen -> Not certified.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option E in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -2502,7 +2502,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Obscure)\n\nElucidate means make something clear; explain. Obscure means make unclear or difficult to understand.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Obscure)\n\nElucidate means make something clear; explain. Obscure means make unclear or difficult to understand.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"ELUCIDATE\" (make something clear; explain); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Obscure) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -2531,7 +2531,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Diminish)\n\nEnhance means intensify, increase, or further improve the quality or value of something. Diminish means make smaller.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Diminish)\n\nEnhance means intensify, increase, or further improve the quality or value of something. Diminish means make smaller.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"ENHANCE\" (intensify, increase, or further improve the quality or value of something); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Diminish) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -2560,7 +2560,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Mature)\n\nInchoate means just begun and so not fully formed or developed; rudimentary. Mature means fully developed and formed.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Mature)\n\nInchoate means just begun and so not fully formed or developed; rudimentary. Mature means fully developed and formed.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"INCHOATE\" (just begun and so not fully formed or developed; rudimentary); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Mature) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -2589,7 +2589,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Opaque)\n\nPellucid means translucently clear or easily understood. Opaque is murky.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Opaque)\n\nPellucid means translucently clear or easily understood. Opaque is murky.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PELLUCID\" (translucently clear or easily understood); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Opaque) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -2618,7 +2618,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Inadvisable)\n\nExpedient means convenient and practical although possibly improper or immoral. Inadvisable is unwise.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Inadvisable)\n\nExpedient means convenient and practical although possibly improper or immoral. Inadvisable is unwise.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"EXPEDIENT\" (convenient and practical although possibly improper or immoral); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Inadvisable) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -2647,7 +2647,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Essential)\n\nExtraneous means irrelevant or unrelated to the subject. Essential is fundamental.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Essential)\n\nExtraneous means irrelevant or unrelated to the subject. Essential is fundamental.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"EXTRANEOUS\" (irrelevant or unrelated to the subject); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Essential) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -2676,7 +2676,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (OTODCOPE : AUDIOLOGIST)\n\nAn ophthalmoscope is an inspection instrument of an optometrist, just as an otoscope is of an audiologist.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (OTODCOPE : AUDIOLOGIST)\n\nAn ophthalmoscope is an inspection instrument of an optometrist, just as an otoscope is of an audiologist.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"OPHTHALMOSCOPE relates to OPTOMETRIST\"; match the exact functional category and direction to lock Option A (OTODCOPE : AUDIOLOGIST) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -2705,7 +2705,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (STEP : STAIRCASE)\n\nA rung is a single structural unit of a ladder, just as a step is of a staircase.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (STEP : STAIRCASE)\n\nA rung is a single structural unit of a ladder, just as a step is of a staircase.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"RUNG relates to LADDER\"; match the exact functional category and direction to lock Option B (STEP : STAIRCASE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -2734,7 +2734,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (PUDDLE : OCEAN)\n\nA pebble is a miniature rock compared to a boulder, just as a puddle is minuscule compared to an ocean.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (PUDDLE : OCEAN)\n\nA pebble is a miniature rock compared to a boulder, just as a puddle is minuscule compared to an ocean.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"PEBBLE relates to BOULDER\"; match the exact functional category and direction to lock Option C (PUDDLE : OCEAN) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -2763,7 +2763,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (METEOROLOGIST : WEATHER)\n\nAn epidemiologist studies disease patterns, just as a meteorologist studies weather.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (METEOROLOGIST : WEATHER)\n\nAn epidemiologist studies disease patterns, just as a meteorologist studies weather.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"EPIDEMIOLOGIST relates to DISEASES\"; match the exact functional category and direction to lock Option D (METEOROLOGIST : WEATHER) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -2792,7 +2792,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (PANTRY : PROVISIONS)\n\nAn armory stores weapons, just as a pantry stores food provisions.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (PANTRY : PROVISIONS)\n\nAn armory stores weapons, just as a pantry stores food provisions.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"ARMORY relates to WEAPONS\"; match the exact functional category and direction to lock Option E (PANTRY : PROVISIONS) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -2821,7 +2821,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (UMBRELLA : MOISTURE)\n\nInsulation prevents the loss of heat, just as an umbrella prevents contact with rain moisture.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (UMBRELLA : MOISTURE)\n\nInsulation prevents the loss of heat, just as an umbrella prevents contact with rain moisture.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"INSULATION relates to HEAT\"; match the exact functional category and direction to lock Option A (UMBRELLA : MOISTURE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -2850,7 +2850,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Lithosphere)\n\nTroposphere, Stratosphere, Mesosphere, and Thermosphere are atmospheric gaseous strata, while the Lithosphere is the solid terrestrial crust.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Lithosphere)\n\nTroposphere, Stratosphere, Mesosphere, and Thermosphere are atmospheric gaseous strata, while the Lithosphere is the solid terrestrial crust.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Lithosphere) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -2879,7 +2879,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Granite)\n\nEnzyme, Hormone, Antibody, and Hemoglobin are biological proteins and compounds, while Granite is an inorganic silicate rock.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Granite)\n\nEnzyme, Hormone, Antibody, and Hemoglobin are biological proteins and compounds, while Granite is an inorganic silicate rock.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Granite) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -2908,7 +2908,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Grammar)\n\nDecibel, Pascal, Joule, and Newton are physical scientific measurement units, while Grammar is a structural linguistic framework.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Grammar)\n\nDecibel, Pascal, Joule, and Newton are physical scientific measurement units, while Grammar is a structural linguistic framework.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Grammar) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -2937,7 +2937,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (succinct)\n\nSuccinct means brief and clearly expressed.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (succinct)\n\nSuccinct means brief and clearly expressed.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option E (succinct) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -2966,7 +2966,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Office Y)\n\nChronological sequence: Y submits before X, X submits before V, V submits before W. Therefore Y \u2794 X \u2794 V \u2794 W. Office Y is first.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Office Y)\n\nChronological sequence: Y submits before X, X submits before V, V submits before W. Therefore Y \u2794 X \u2794 V \u2794 W. Office Y is first.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option D in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -2997,7 +2997,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Valid)\n\nFallacious means based on a mistaken belief or unsound reasoning. Valid is logically sound.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Valid)\n\nFallacious means based on a mistaken belief or unsound reasoning. Valid is logically sound.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"FALLACIOUS\" (based on a mistaken belief or unsound reasoning); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Valid) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -3026,7 +3026,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Insignificant)\n\nFormidable means inspiring fear or respect through being impressively large or powerful. Insignificant is minor.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Insignificant)\n\nFormidable means inspiring fear or respect through being impressively large or powerful. Insignificant is minor.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"FORMIDABLE\" (inspiring fear or respect through being impressively large or powerful); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Insignificant) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -3055,7 +3055,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Deliberate)\n\nFortuitous means happening by accident or chance rather than design. Deliberate is planned.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Deliberate)\n\nFortuitous means happening by accident or chance rather than design. Deliberate is planned.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"FORTUITOUS\" (happening by accident or chance rather than design); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Deliberate) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -3084,7 +3084,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Malleable)\n\nObdurate means stubbornly refusing to change one opinion. Malleable is adaptable.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Malleable)\n\nObdurate means stubbornly refusing to change one opinion. Malleable is adaptable.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"OBDURATE\" (stubbornly refusing to change one opinion); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Malleable) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -3113,7 +3113,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Heterogeneous)\n\nHomogeneous means of the same kind; alike. Heterogeneous means diverse in character.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Heterogeneous)\n\nHomogeneous means of the same kind; alike. Heterogeneous means diverse in character.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"HOMOGENEOUS\" (of the same kind; alike); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Heterogeneous) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -3142,7 +3142,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Understatement)\n\nHyperbole is exaggerated statements or claims not meant to be taken literally. Understatement is opposite.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Understatement)\n\nHyperbole is exaggerated statements or claims not meant to be taken literally. Understatement is opposite.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"HYPERBOLE\"'s polarity; 4 choices cluster together as distractors. Lock opposite Option C (Understatement) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -3171,7 +3171,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (LOOM : WEAVER)\n\nA kiln is the primary thermal processing apparatus of a ceramist, just as a loom is for a weaver.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (LOOM : WEAVER)\n\nA kiln is the primary thermal processing apparatus of a ceramist, just as a loom is for a weaver.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"KILN relates to CERAMIST\"; match the exact functional category and direction to lock Option B (LOOM : WEAVER) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -3200,7 +3200,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (QUILL : PORCUPINE)\n\nA scale is an individual epidermal covering unit of a reptile, just as a quill is of a porcupine.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (QUILL : PORCUPINE)\n\nA scale is an individual epidermal covering unit of a reptile, just as a quill is of a porcupine.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"SCALE relates to REPTILE\"; match the exact functional category and direction to lock Option C (QUILL : PORCUPINE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -3229,7 +3229,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (DISLIKE : DETEST)\n\nPondering is gentle reflection while obsessing is extreme, just as disliking is mild compared to detesting.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (DISLIKE : DETEST)\n\nPondering is gentle reflection while obsessing is extreme, just as disliking is mild compared to detesting.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"PONDER relates to OBSESS\"; match the exact functional category and direction to lock Option D (DISLIKE : DETEST) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -3258,7 +3258,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (PINPRICK : LACERATION)\n\nA tap is a gentle impact compared to a heavy slam, just as a pinprick is mild compared to a deep laceration.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (PINPRICK : LACERATION)\n\nA tap is a gentle impact compared to a heavy slam, just as a pinprick is mild compared to a deep laceration.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"TAP relates to SLAM\"; match the exact functional category and direction to lock Option E (PINPRICK : LACERATION) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -3287,7 +3287,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (HERBARIUM : BOTANICAL SPECIMENS)\n\nA humidor is a climate-controlled repository for cigars, just as a herbarium preserves botanical specimens.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (HERBARIUM : BOTANICAL SPECIMENS)\n\nA humidor is a climate-controlled repository for cigars, just as a herbarium preserves botanical specimens.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"HUMIDOR relates to CIGARS\"; match the exact functional category and direction to lock Option A (HERBARIUM : BOTANICAL SPECIMENS) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -3316,7 +3316,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (SUNSCREEN : SUNBURN)\n\nA lubricant mitigates mechanical abrasion, just as sunscreen mitigates sunburn.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (SUNSCREEN : SUNBURN)\n\nA lubricant mitigates mechanical abrasion, just as sunscreen mitigates sunburn.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"LUBRICANT relates to ABRASION\"; match the exact functional category and direction to lock Option B (SUNSCREEN : SUNBURN) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -3345,7 +3345,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Light-year)\n\nKilowatt, Megawatt, Gigawatt, and Horsepower are units of power, while a Light-year is a unit of astronomical distance.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Light-year)\n\nKilowatt, Megawatt, Gigawatt, and Horsepower are units of power, while a Light-year is a unit of astronomical distance.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Light-year) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -3374,7 +3374,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Monopoly)\n\nMonarchy, Oligarchy, Democracy, and Plutocracy are systems of political government, whereas a Monopoly is an economic market structure.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Monopoly)\n\nMonarchy, Oligarchy, Democracy, and Plutocracy are systems of political government, whereas a Monopoly is an economic market structure.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Monopoly) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -3403,7 +3403,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Mass)\n\nVelocity, Acceleration, Displacement, and Momentum are vector quantities with magnitude and direction, while Mass is a pure scalar.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Mass)\n\nVelocity, Acceleration, Displacement, and Momentum are vector quantities with magnitude and direction, while Mass is a pure scalar.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option B (Mass) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -3432,7 +3432,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (transient)\n\nTransient contrasts with permanent barrier, denoting temporary duration.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (transient)\n\nTransient contrasts with permanent barrier, denoting temporary duration.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option A (transient) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -3461,7 +3461,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Captain Larson is not a licensed commercial marine pilot.)\n\nCommercial marine pilot -> radar certification. Captain Larson lacks radar cert -> cannot be licensed commercial marine pilot.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Captain Larson is not a licensed commercial marine pilot.)\n\nCommercial marine pilot -> radar certification. Captain Larson lacks radar cert -> cannot be licensed commercial marine pilot.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option A in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -3492,7 +3492,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Lawful)\n\nIllicit means forbidden by law, rules, or custom. Lawful means conforming to permitted law.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Lawful)\n\nIllicit means forbidden by law, rules, or custom. Lawful means conforming to permitted law.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"ILLICIT\" (forbidden by law, rules, or custom); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Lawful) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -3521,7 +3521,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Deadlock)\n\nAn impasse is a situation in which no progress is possible, especially because of disagreement; a deadlock.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Deadlock)\n\nAn impasse is a situation in which no progress is possible, especially because of disagreement; a deadlock.\n\n\ud83d\udca1 **Speed Tip:** Eliminate mismatched categories rapidly to verify Option B in <8s.",
       "category": "verbal",
       "subType": "synonym"
     },
@@ -3550,7 +3550,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Conspicuous)\n\nImperceptible means so slight, gradual, or subtle as not to be perceived. Conspicuous is clearly visible.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Conspicuous)\n\nImperceptible means so slight, gradual, or subtle as not to be perceived. Conspicuous is clearly visible.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"IMPERCEPTIBLE\" (so slight, gradual, or subtle as not to be perceived); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Conspicuous) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -3579,7 +3579,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Peaceable)\n\nPugnacious means eager or quick to argue or fight. Peaceable is calm.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Peaceable)\n\nPugnacious means eager or quick to argue or fight. Peaceable is calm.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PUGNACIOUS\" (eager or quick to argue or fight); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Peaceable) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -3608,7 +3608,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Liability)\n\nImpunity means exemption from punishment or freedom from the injurious consequences of an action. Liability is accountability.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Liability)\n\nImpunity means exemption from punishment or freedom from the injurious consequences of an action. Liability is accountability.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"IMPUNITY\" (exemption from punishment or freedom from the injurious consequences of an action); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Liability) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -3637,7 +3637,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Compatible)\n\nIncongruous means not in harmony or keeping with the surroundings or other aspects. Compatible is harmoniously suited.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Compatible)\n\nIncongruous means not in harmony or keeping with the surroundings or other aspects. Compatible is harmoniously suited.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"INCONGRUOUS\" (not in harmony or keeping with the surroundings or other aspects); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Compatible) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -3666,7 +3666,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (ARCHIVE : CODICES)\n\nAn ossiary is a repository specifically for skeletons, just as an archive preserves ancient codices.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (ARCHIVE : CODICES)\n\nAn ossiary is a repository specifically for skeletons, just as an archive preserves ancient codices.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"OSSIARY relates to SKELETONS\"; match the exact functional category and direction to lock Option C (ARCHIVE : CODICES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -3695,7 +3695,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (SCENE : FILM)\n\nA verse is an integral segment of a song, just as a scene is of a film.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (SCENE : FILM)\n\nA verse is an integral segment of a song, just as a scene is of a film.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"VERSE relates to SONG\"; match the exact functional category and direction to lock Option D (SCENE : FILM) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -3724,7 +3724,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (SNICKER : CHORTLE)\n\nA smile is a subdued reaction compared to a loud guffaw, just as a snicker is subdued compared to a chortle.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (SNICKER : CHORTLE)\n\nA smile is a subdued reaction compared to a loud guffaw, just as a snicker is subdued compared to a chortle.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"SMILE relates to GUFFAW\"; match the exact functional category and direction to lock Option E (SNICKER : CHORTLE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -3753,7 +3753,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (MINERALOGIST : CRYSTALS)\n\nA paleontologist studies fossils, just as a mineralogist studies crystal structures.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (MINERALOGIST : CRYSTALS)\n\nA paleontologist studies fossils, just as a mineralogist studies crystal structures.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"PALEONTOLOGIST relates to FOSSILS\"; match the exact functional category and direction to lock Option A (MINERALOGIST : CRYSTALS) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -3782,7 +3782,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (TERRARIUM : REPTILES)\n\nAn aviary is an enclosure for birds, just as a terrarium is for reptiles.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (TERRARIUM : REPTILES)\n\nAn aviary is an enclosure for birds, just as a terrarium is for reptiles.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"AVIARY relates to BIRDS\"; match the exact functional category and direction to lock Option B (TERRARIUM : REPTILES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -3811,7 +3811,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (OENOTHEQUE : VINTAGES)\n\nA reliquary is an ornate receptacle holding sacred relics, just as an oenotheque houses choice wine vintages.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (OENOTHEQUE : VINTAGES)\n\nA reliquary is an ornate receptacle holding sacred relics, just as an oenotheque houses choice wine vintages.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"RELIQUARY relates to RELICS\"; match the exact functional category and direction to lock Option C (OENOTHEQUE : VINTAGES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -3840,7 +3840,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Cellulose)\n\nDolomite, Quartz, Feldspar, and Mica are naturally occurring inorganic minerals, while Cellulose is an organic biological polymer.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Cellulose)\n\nDolomite, Quartz, Feldspar, and Mica are naturally occurring inorganic minerals, while Cellulose is an organic biological polymer.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Cellulose) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -3869,7 +3869,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Cartographer)\n\nPianist, Violinist, Cellist, and Flautist are instrumental musical performers, while a Cartographer is a mapmaker.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Cartographer)\n\nPianist, Violinist, Cellist, and Flautist are instrumental musical performers, while a Cartographer is a mapmaker.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option E (Cartographer) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -3898,7 +3898,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Dogma)\n\nHypothesis, Experiment, Observation, and Theory are components of empirical science, while Dogma is unquestioned authoritative doctrine.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Dogma)\n\nHypothesis, Experiment, Observation, and Theory are components of empirical science, while Dogma is unquestioned authoritative doctrine.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Dogma) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -3927,7 +3927,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (equity)\n\nEquity means the quality of being fair and impartial.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (equity)\n\nEquity means the quality of being fair and impartial.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option B (equity) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -3956,7 +3956,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (True)\n\nBy transitivity: Height(Blue) > Height(Red) > Height(Green). Blue > Green is definitively True.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (True)\n\nBy transitivity: Height(Blue) > Height(Red) > Height(Green). Blue > Green is definitively True.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option B in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -3987,7 +3987,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Frugal)\n\nProdigal means wastefully extravagant or spending resources recklessly. Frugal means sparing or economical with regard to money or food.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Frugal)\n\nProdigal means wastefully extravagant or spending resources recklessly. Frugal means sparing or economical with regard to money or food.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PRODIGAL\" (wastefully extravagant or spending resources recklessly); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Frugal) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -4016,7 +4016,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Duplicitous)\n\nIngenuous means innocent and unsuspecting. Duplicitous is deceitful.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Duplicitous)\n\nIngenuous means innocent and unsuspecting. Duplicitous is deceitful.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"INGENUOUS\" (innocent and unsuspecting); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Duplicitous) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -4045,7 +4045,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Harmful)\n\nInnocuous means not harmful or offensive. Harmful causes injury or damage.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Harmful)\n\nInnocuous means not harmful or offensive. Harmful causes injury or damage.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"INNOCUOUS\" (not harmful or offensive); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Harmful) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -4074,7 +4074,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Expressive)\n\nInscrutable means impossible to understand or interpret. Expressive is clear and communicating openly.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Expressive)\n\nInscrutable means impossible to understand or interpret. Expressive is clear and communicating openly.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"INSCRUTABLE\" (impossible to understand or interpret); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Expressive) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -4103,7 +4103,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Straightforward)\n\nInsidious means proceeding in a gradual, subtle way, but with harmful effects. Straightforward is open and honest.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Straightforward)\n\nInsidious means proceeding in a gradual, subtle way, but with harmful effects. Straightforward is open and honest.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"INSIDIOUS\" (proceeding in a gradual, subtle way, but with harmful effects); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Straightforward) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -4132,7 +4132,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Cowardly)\n\nIntrepid means fearless; adventurous. Cowardly is lacking courage.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Cowardly)\n\nIntrepid means fearless; adventurous. Cowardly is lacking courage.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"INTREPID\" (fearless; adventurous); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Cowardly) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -4161,7 +4161,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (NUMISMATARIUM : MEDALS)\n\nA columbarium is a structure designed to house funerary urns, just as a numismatarium holds rare medals.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (NUMISMATARIUM : MEDALS)\n\nA columbarium is a structure designed to house funerary urns, just as a numismatarium holds rare medals.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"COLUMBARIUM relates to URNS\"; match the exact functional category and direction to lock Option D (NUMISMATARIUM : MEDALS) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -4190,7 +4190,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (FIBER : ROPE)\n\nA link is an individual unit comprising a chain, just as a fiber comprises a rope.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (FIBER : ROPE)\n\nA link is an individual unit comprising a chain, just as a fiber comprises a rope.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"LINK relates to CHAIN\"; match the exact functional category and direction to lock Option E (FIBER : ROPE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -4219,7 +4219,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (ANGER : RAGE)\n\nTerror is an escalated, extreme state of fear, just as rage is extreme anger.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (ANGER : RAGE)\n\nTerror is an escalated, extreme state of fear, just as rage is extreme anger.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"FEAR relates to TERROR\"; match the exact functional category and direction to lock Option A (ANGER : RAGE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -4248,7 +4248,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (APIARY : HIVES)\n\nA vivarium houses living amphibians in simulated habitats, just as an apiary accommodates managed bee colonies.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (APIARY : HIVES)\n\nA vivarium houses living amphibians in simulated habitats, just as an apiary accommodates managed bee colonies.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"VIVARIUM relates to AMPHIBIANS\"; match the exact functional category and direction to lock Option B (APIARY : HIVES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -4277,7 +4277,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (CELLAR : WINE)\n\nA granary stores harvested wheat, just as a cellar stores wine.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (CELLAR : WINE)\n\nA granary stores harvested wheat, just as a cellar stores wine.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"GRANARY relates to WHEAT\"; match the exact functional category and direction to lock Option C (CELLAR : WINE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -4306,7 +4306,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (BRAKE : DECELERATION)\n\nA catalyst causes acceleration in a process, just as a brake causes deceleration.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (BRAKE : DECELERATION)\n\nA catalyst causes acceleration in a process, just as a brake causes deceleration.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"CATALYST relates to ACCELERATION\"; match the exact functional category and direction to lock Option D (BRAKE : DECELERATION) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -4335,7 +4335,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Lithosphere)\n\nTroposphere, Stratosphere, Mesosphere, and Thermosphere are atmospheric gaseous strata, while the Lithosphere is the solid terrestrial crust.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Lithosphere)\n\nTroposphere, Stratosphere, Mesosphere, and Thermosphere are atmospheric gaseous strata, while the Lithosphere is the solid terrestrial crust.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option B (Lithosphere) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -4364,7 +4364,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Granite)\n\nEnzyme, Hormone, Antibody, and Hemoglobin are biological proteins and compounds, while Granite is an inorganic silicate rock.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Granite)\n\nEnzyme, Hormone, Antibody, and Hemoglobin are biological proteins and compounds, while Granite is an inorganic silicate rock.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option E (Granite) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -4393,7 +4393,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Grammar)\n\nDecibel, Pascal, Joule, and Newton are physical scientific measurement units, while Grammar is a structural linguistic framework.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Grammar)\n\nDecibel, Pascal, Joule, and Newton are physical scientific measurement units, while Grammar is a structural linguistic framework.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Grammar) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -4422,7 +4422,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (vigilance)\n\nVigilance denotes keeping careful, sustained watch.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (vigilance)\n\nVigilance denotes keeping careful, sustained watch.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option E (vigilance) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -4451,7 +4451,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (David does not have access to the executive financial database.)\n\nDavid is seasonal -> lacks tokens -> cannot have access to database which requires tokens.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (David does not have access to the executive financial database.)\n\nDavid is seasonal -> lacks tokens -> cannot have access to database which requires tokens.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option A in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -4482,7 +4482,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Drain)\n\nInundate means overwhelm with things or flood with water. Drain means empty or remove liquid.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Drain)\n\nInundate means overwhelm with things or flood with water. Drain means empty or remove liquid.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"INUNDATE\" (overwhelm with things or flood with water); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Drain) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -4511,7 +4511,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Placid)\n\nIrascible means having or showing a tendency to be easily angered. Placid is calm and tranquil.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Placid)\n\nIrascible means having or showing a tendency to be easily angered. Placid is calm and tranquil.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"IRASCIBLE\" (having or showing a tendency to be easily angered); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Placid) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -4540,7 +4540,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Foolhardy)\n\nJudicious means having, showing, or done with good judgment or sense. Foolhardy is reckless.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Foolhardy)\n\nJudicious means having, showing, or done with good judgment or sense. Foolhardy is reckless.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"JUDICIOUS\" (having, showing, or done with good judgment or sense); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Foolhardy) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -4569,7 +4569,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Gravity)\n\nLevity is the treatment of a serious matter with humor or in a manner lacking due respect. Gravity is seriousness.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Gravity)\n\nLevity is the treatment of a serious matter with humor or in a manner lacking due respect. Gravity is seriousness.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"LEVITY\"'s polarity; 4 choices cluster together as distractors. Lock opposite Option C (Gravity) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -4598,7 +4598,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Loyal)\n\nPerfidious means deceitful and untrustworthy. Loyal is faithful.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Loyal)\n\nPerfidious means deceitful and untrustworthy. Loyal is faithful.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PERFIDIOUS\" (deceitful and untrustworthy); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Loyal) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -4627,7 +4627,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Benevolent)\n\nMalevolent means having or showing a wish to do evil to others. Benevolent is well-meaning and kindly.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Benevolent)\n\nMalevolent means having or showing a wish to do evil to others. Benevolent is well-meaning and kindly.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"MALEVOLENT\" (having or showing a wish to do evil to others); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Benevolent) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -4656,7 +4656,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (NEUTRALIZER : ACIDITY)\n\nA desiccant absorbs ambient moisture, just as a chemical neutralizer mitigates acidity.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (NEUTRALIZER : ACIDITY)\n\nA desiccant absorbs ambient moisture, just as a chemical neutralizer mitigates acidity.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"DESICCANT relates to MOISTURE\"; match the exact functional category and direction to lock Option E (NEUTRALIZER : ACIDITY) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -4685,7 +4685,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (GOVERNOR : OVERSPEED)\n\nA hemostat stops bleeding during surgery, just as a mechanical governor prevents machine overspeed.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (GOVERNOR : OVERSPEED)\n\nA hemostat stops bleeding during surgery, just as a mechanical governor prevents machine overspeed.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"HEMOSTAT relates to HEMORRHAGE\"; match the exact functional category and direction to lock Option A (GOVERNOR : OVERSPEED) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -4714,7 +4714,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (WARM : SCORCHING)\n\nFrigid represents extreme coldness, just as scorching represents extreme warmth.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (WARM : SCORCHING)\n\nFrigid represents extreme coldness, just as scorching represents extreme warmth.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"COOL relates to FRIGID\"; match the exact functional category and direction to lock Option B (WARM : SCORCHING) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -4743,7 +4743,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (FILTER : TURBIDITY)\n\nAn acoustic baffle suppresses unwanted resonance, just as a fluid filter eliminates suspended turbidity.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (FILTER : TURBIDITY)\n\nAn acoustic baffle suppresses unwanted resonance, just as a fluid filter eliminates suspended turbidity.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"BAFFLE relates to RESONANCE\"; match the exact functional category and direction to lock Option C (FILTER : TURBIDITY) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -4772,7 +4772,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (MINE : ORE)\n\nAn aquifer stores natural groundwater, just as a mine holds deposits of unextracted ore.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (MINE : ORE)\n\nAn aquifer stores natural groundwater, just as a mine holds deposits of unextracted ore.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"AQUIFER relates to GROUNDWATER\"; match the exact functional category and direction to lock Option D (MINE : ORE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -4801,7 +4801,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (ALARM : VIGILANCE)\n\nA sedative promotes calmness, just as an alarm promotes vigilance.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (ALARM : VIGILANCE)\n\nA sedative promotes calmness, just as an alarm promotes vigilance.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"SEDATIVE relates to CALMNESS\"; match the exact functional category and direction to lock Option E (ALARM : VIGILANCE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -4830,7 +4830,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Light-year)\n\nKilowatt, Megawatt, Gigawatt, and Horsepower are units of power, while a Light-year is a unit of astronomical distance.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Light-year)\n\nKilowatt, Megawatt, Gigawatt, and Horsepower are units of power, while a Light-year is a unit of astronomical distance.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Light-year) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -4859,7 +4859,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Monopoly)\n\nMonarchy, Oligarchy, Democracy, and Plutocracy are systems of political government, whereas a Monopoly is an economic market structure.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Monopoly)\n\nMonarchy, Oligarchy, Democracy, and Plutocracy are systems of political government, whereas a Monopoly is an economic market structure.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option E (Monopoly) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -4888,7 +4888,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Mass)\n\nVelocity, Acceleration, Displacement, and Momentum are vector quantities with magnitude and direction, while Mass is a pure scalar.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Mass)\n\nVelocity, Acceleration, Displacement, and Momentum are vector quantities with magnitude and direction, while Mass is a pure scalar.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Mass) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -4917,7 +4917,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (austere)\n\nAustere means plain, simple, and unadorned, contrasting with ornate architecture.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (austere)\n\nAustere means plain, simple, and unadorned, contrasting with ornate architecture.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option D (austere) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -4946,7 +4946,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Test 2)\n\nOrder of execution: Test 3 \u2192 Test 1 \u2192 Test 2 \u2192 Test 4. Test 2 is third.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Test 2)\n\nOrder of execution: Test 3 \u2192 Test 1 \u2192 Test 2 \u2192 Test 4. Test 2 is third.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option E in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -4977,7 +4977,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Yielding)\n\nIntransigent means refusing to agree or compromise. Yielding is flexible.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Yielding)\n\nIntransigent means refusing to agree or compromise. Yielding is flexible.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"INTRANSIGENT\" (refusing to agree or compromise); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Yielding) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -5006,7 +5006,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Unhealthful)\n\nSalubrious means health-giving or wholesome. Unhealthful is harmful.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Unhealthful)\n\nSalubrious means health-giving or wholesome. Unhealthful is harmful.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"SALUBRIOUS\" (health-giving or wholesome); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Unhealthful) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -5035,7 +5035,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Exacerbate)\n\nMitigate means make less severe, serious, or painful. Exacerbate means make worse.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Exacerbate)\n\nMitigate means make less severe, serious, or painful. Exacerbate means make worse.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"MITIGATE\" (make less severe, serious, or painful); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Exacerbate) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -5064,7 +5064,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Abundance)\n\nA modicum is a small quantity of a particular thing, especially something considered desirable. Abundance is a surplus.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Abundance)\n\nA modicum is a small quantity of a particular thing, especially something considered desirable. Abundance is a surplus.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"MODICUM\"'s polarity; 4 choices cluster together as distractors. Lock opposite Option A (Abundance) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -5093,7 +5093,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Cheerful)\n\nMorose means sullen and ill-tempered. Cheerful is noticeably happy and optimistic.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Cheerful)\n\nMorose means sullen and ill-tempered. Cheerful is noticeably happy and optimistic.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"MOROSE\" (sullen and ill-tempered); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Cheerful) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -5122,7 +5122,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Paucity)\n\nMyriad means a countless or extremely great number. Paucity is scarcity or small quantity.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Paucity)\n\nMyriad means a countless or extremely great number. Paucity is scarcity or small quantity.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"MYRIAD\" (a countless or extremely great number); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Paucity) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -5151,7 +5151,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (COLLAGEN : CARTILAGE)\n\nLignin provides essential structural stiffness to plant cell walls, just as collagen reinforces cartilage.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (COLLAGEN : CARTILAGE)\n\nLignin provides essential structural stiffness to plant cell walls, just as collagen reinforces cartilage.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"LIGNIN relates to CELL\"; match the exact functional category and direction to lock Option A (COLLAGEN : CARTILAGE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -5180,7 +5180,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (BLADE : PROPELLER)\n\nA cog is a component of a gearbox, just as a blade is of a propeller.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (BLADE : PROPELLER)\n\nA cog is a component of a gearbox, just as a blade is of a propeller.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"COG relates to GEARBOX\"; match the exact functional category and direction to lock Option B (BLADE : PROPELLER) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -5209,7 +5209,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (PALE : ASHEN)\n\nSaturated is completely soaked compared to damp, just as ashen is utterly devoid of color compared to pale.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (PALE : ASHEN)\n\nSaturated is completely soaked compared to damp, just as ashen is utterly devoid of color compared to pale.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"DAMP relates to SATURATED\"; match the exact functional category and direction to lock Option C (PALE : ASHEN) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -5238,7 +5238,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (SOCIOLOGIST : SOCIETIES)\n\nAn anthropologist studies human cultures, just as a sociologist studies societal structures.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (SOCIOLOGIST : SOCIETIES)\n\nAn anthropologist studies human cultures, just as a sociologist studies societal structures.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"ANTHROPOLOGIST relates to CULTURES\"; match the exact functional category and direction to lock Option D (SOCIOLOGIST : SOCIETIES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -5267,7 +5267,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (WARDROBE : APPAREL)\n\nAn arsenal stores ammunition, just as a wardrobe stores apparel.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (WARDROBE : APPAREL)\n\nAn arsenal stores ammunition, just as a wardrobe stores apparel.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"ARSENAL relates to AMMUNITION\"; match the exact functional category and direction to lock Option E (WARDROBE : APPAREL) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -5296,7 +5296,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (CRUST : PLANET)\n\nEnamel forms the protective outer surface layer of a tooth, just as a crust encases a terrestrial planet.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (CRUST : PLANET)\n\nEnamel forms the protective outer surface layer of a tooth, just as a crust encases a terrestrial planet.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"ENAMEL relates to TOOTH\"; match the exact functional category and direction to lock Option A (CRUST : PLANET) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -5325,7 +5325,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Cellulose)\n\nDolomite, Quartz, Feldspar, and Mica are naturally occurring inorganic minerals, while Cellulose is an organic biological polymer.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Cellulose)\n\nDolomite, Quartz, Feldspar, and Mica are naturally occurring inorganic minerals, while Cellulose is an organic biological polymer.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Cellulose) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -5354,7 +5354,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Cartographer)\n\nPianist, Violinist, Cellist, and Flautist are instrumental musical performers, while a Cartographer is a mapmaker.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Cartographer)\n\nPianist, Violinist, Cellist, and Flautist are instrumental musical performers, while a Cartographer is a mapmaker.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option E (Cartographer) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -5383,7 +5383,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Dogma)\n\nHypothesis, Experiment, Observation, and Theory are components of empirical science, while Dogma is unquestioned authoritative doctrine.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Dogma)\n\nHypothesis, Experiment, Observation, and Theory are components of empirical science, while Dogma is unquestioned authoritative doctrine.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option B (Dogma) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -5412,7 +5412,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (compelling)\n\nCompelling describes argument that is convincing and powerful.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (compelling)\n\nCompelling describes argument that is convincing and powerful.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option C (compelling) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -5441,7 +5441,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Satellite Helios is not in geostationary orbit.)\n\nGeostationary -> travels at 3.07 km/s. Helios does not travel at 3.07 km/s -> not geostationary.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Satellite Helios is not in geostationary orbit.)\n\nGeostationary -> travels at 3.07 km/s. Helios does not travel at 3.07 km/s -> not geostationary.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option C in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -5472,7 +5472,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Vigilant)\n\nNegligent means failing to take proper care in doing something. Vigilant means keeping careful watch.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Vigilant)\n\nNegligent means failing to take proper care in doing something. Vigilant means keeping careful watch.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"NEGLIGENT\" (failing to take proper care in doing something); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Vigilant) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -5501,7 +5501,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Anxious)\n\nNonchalant means feeling or appearing casually calm and relaxed. Anxious is worried and uneasy.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Anxious)\n\nNonchalant means feeling or appearing casually calm and relaxed. Anxious is worried and uneasy.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"NONCHALANT\" (feeling or appearing casually calm and relaxed); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Anxious) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -5530,7 +5530,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Reminiscence)\n\nNostalgia is a sentimental longing or wistful affection for the past; reminiscence.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Reminiscence)\n\nNostalgia is a sentimental longing or wistful affection for the past; reminiscence.\n\n\ud83d\udca1 **Speed Tip:** Eliminate mismatched categories rapidly to verify Option C in <8s.",
       "category": "verbal",
       "subType": "synonym"
     },
@@ -5559,7 +5559,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Veteran)\n\nA novice is a person new to or inexperienced in a field. Veteran is a person who has long experience.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Veteran)\n\nA novice is a person new to or inexperienced in a field. Veteran is a person who has long experience.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"NOVICE\"'s polarity; 4 choices cluster together as distractors. Lock opposite Option E (Veteran) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -5588,7 +5588,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Peaceful)\n\nBellicose means demonstrating aggression and willingness to fight. Peaceful is untroubled by conflict.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Peaceful)\n\nBellicose means demonstrating aggression and willingness to fight. Peaceful is untroubled by conflict.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"BELLICOSE\" (demonstrating aggression and willingness to fight); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Peaceful) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -5617,7 +5617,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Humble)\n\nSupercilious means behaving or looking as though one thinks one is superior to others; arrogant or haughty. Humble is its direct opposite.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Humble)\n\nSupercilious means behaving or looking as though one thinks one is superior to others; arrogant or haughty. Humble is its direct opposite.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"SUPERCILIOUS\" (behaving or looking as though one thinks one is superior to others; arrogant or haughty); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Humble) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -5646,7 +5646,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (SHEATH : CABLE)\n\nMyelin insulates neural axons for signal transmission, just as an elastomeric sheath insulates an electrical cable.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (SHEATH : CABLE)\n\nMyelin insulates neural axons for signal transmission, just as an elastomeric sheath insulates an electrical cable.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"MYELIN relates to AXON\"; match the exact functional category and direction to lock Option B (SHEATH : CABLE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -5675,7 +5675,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (THREAD : FABRIC)\n\nMultiple strands form a cable, just as multiple threads form fabric.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (THREAD : FABRIC)\n\nMultiple strands form a cable, just as multiple threads form fabric.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"STRAND relates to CABLE\"; match the exact functional category and direction to lock Option C (THREAD : FABRIC) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -5704,7 +5704,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (COMPLIANT : SUBSERVIENT)\n\nRefractory is an extreme, unyielding degree of reluctance, just as subservient is extreme compliance.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (COMPLIANT : SUBSERVIENT)\n\nRefractory is an extreme, unyielding degree of reluctance, just as subservient is extreme compliance.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"RELUCTANT relates to REFRACTORY\"; match the exact functional category and direction to lock Option D (COMPLIANT : SUBSERVIENT) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -5733,7 +5733,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (ICHTHYOLOGIST : FISH)\n\nAn ornithologist specializes in birds, just as an ichthyologist specializes in fish.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (ICHTHYOLOGIST : FISH)\n\nAn ornithologist specializes in birds, just as an ichthyologist specializes in fish.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"ORNITHOLOGIST relates to BIRDS\"; match the exact functional category and direction to lock Option E (ICHTHYOLOGIST : FISH) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -5762,7 +5762,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (KERATIN : HOOF)\n\nChitin constitutes the primary structural polysaccharide of an arthropod exoskeleton, just as keratin forms hooves.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (KERATIN : HOOF)\n\nChitin constitutes the primary structural polysaccharide of an arthropod exoskeleton, just as keratin forms hooves.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"CHITIN relates to EXOSKELETON\"; match the exact functional category and direction to lock Option A (KERATIN : HOOF) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -5791,7 +5791,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (FILTER : IMPURITIES)\n\nInsulation impedes thermal conduction, just as a filter impedes impurities.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (FILTER : IMPURITIES)\n\nInsulation impedes thermal conduction, just as a filter impedes impurities.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"INSULATION relates to CONDUCTION\"; match the exact functional category and direction to lock Option B (FILTER : IMPURITIES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -5820,7 +5820,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Lithosphere)\n\nTroposphere, Stratosphere, Mesosphere, and Thermosphere are atmospheric gaseous strata, while the Lithosphere is the solid terrestrial crust.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Lithosphere)\n\nTroposphere, Stratosphere, Mesosphere, and Thermosphere are atmospheric gaseous strata, while the Lithosphere is the solid terrestrial crust.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Lithosphere) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -5849,7 +5849,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Granite)\n\nEnzyme, Hormone, Antibody, and Hemoglobin are biological proteins and compounds, while Granite is an inorganic silicate rock.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Granite)\n\nEnzyme, Hormone, Antibody, and Hemoglobin are biological proteins and compounds, while Granite is an inorganic silicate rock.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Granite) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -5878,7 +5878,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Grammar)\n\nDecibel, Pascal, Joule, and Newton are physical scientific measurement units, while Grammar is a structural linguistic framework.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Grammar)\n\nDecibel, Pascal, Joule, and Newton are physical scientific measurement units, while Grammar is a structural linguistic framework.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Grammar) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -5907,7 +5907,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (intricate)\n\nIntricate means very complicated or detailed, contrasting with surface simplicity.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (intricate)\n\nIntricate means very complicated or detailed, contrasting with surface simplicity.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option B (intricate) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -5936,7 +5936,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Definitively False)\n\nBy transitivity: North > South > West. Division West > Division North is directly contradictory (False).\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Definitively False)\n\nBy transitivity: North > South > West. Division West > Division North is directly contradictory (False).\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option B in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -5967,7 +5967,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Auspicious)\n\nOminous means giving the impression that something bad or unpleasant is going to happen. Auspicious is favorable.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Auspicious)\n\nOminous means giving the impression that something bad or unpleasant is going to happen. Auspicious is favorable.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"OMINOUS\" (giving the impression that something bad or unpleasant is going to happen); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Auspicious) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -5996,7 +5996,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Transparent)\n\nOpaque means not able to be seen through; not transparent. Transparent is clear.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Transparent)\n\nOpaque means not able to be seen through; not transparent. Transparent is clear.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"OPAQUE\" (not able to be seen through; not transparent); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Transparent) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -6025,7 +6025,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Pessimistic)\n\nSanguine means optimistic or positive. Pessimistic is gloomy.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Pessimistic)\n\nSanguine means optimistic or positive. Pessimistic is gloomy.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"SANGUINE\" (optimistic or positive); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Pessimistic) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -6054,7 +6054,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Unassuming)\n\nOstentatious means characterized by vulgar or pretentious display. Unassuming is modest and unpretentious.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Unassuming)\n\nOstentatious means characterized by vulgar or pretentious display. Unassuming is modest and unpretentious.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"OSTENTATIOUS\" (characterized by vulgar or pretentious display); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Unassuming) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -6083,7 +6083,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Intangible)\n\nPalpable means able to be touched or felt; so intense as to seem almost tangible. Intangible cannot be touched.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Intangible)\n\nPalpable means able to be touched or felt; so intense as to seem almost tangible. Intangible cannot be touched.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PALPABLE\" (able to be touched or felt; so intense as to seem almost tangible); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Intangible) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -6112,7 +6112,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Serenity)\n\nPandemonium is wild and noisy disorder or confusion; uproar. Serenity is peace and calm.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Serenity)\n\nPandemonium is wild and noisy disorder or confusion; uproar. Serenity is peace and calm.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PANDEMONIUM\"'s polarity; 4 choices cluster together as distractors. Lock opposite Option A (Serenity) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -6141,7 +6141,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (THEODOLITE : ELEVATION)\n\nA micrometer measures minute mechanical tolerance, just as a theodolite measures elevation angles.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (THEODOLITE : ELEVATION)\n\nA micrometer measures minute mechanical tolerance, just as a theodolite measures elevation angles.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"MICROMETER relates to TOLERANCE\"; match the exact functional category and direction to lock Option C (THEODOLITE : ELEVATION) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -6170,7 +6170,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (SEED : CONIFER)\n\nA spore is the basic reproductive dispersion agent of a mushroom, just as a seed is of a conifer.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (SEED : CONIFER)\n\nA spore is the basic reproductive dispersion agent of a mushroom, just as a seed is of a conifer.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"SPORE relates to MUSHROOM\"; match the exact functional category and direction to lock Option D (SEED : CONIFER) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -6199,7 +6199,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (HAPPINESS : ECSTASY)\n\nAstonishment is intense, overwhelming surprise, just as ecstasy is intense happiness.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (HAPPINESS : ECSTASY)\n\nAstonishment is intense, overwhelming surprise, just as ecstasy is intense happiness.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"SURPRISE relates to ASTONISHMENT\"; match the exact functional category and direction to lock Option E (HAPPINESS : ECSTASY) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -6228,7 +6228,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (METALLURGIST : ALLOYS)\n\nA geneticist studies DNA sequences, just as a metallurgist studies metal alloys.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (METALLURGIST : ALLOYS)\n\nA geneticist studies DNA sequences, just as a metallurgist studies metal alloys.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"GENETICIST relates to DNA\"; match the exact functional category and direction to lock Option A (METALLURGIST : ALLOYS) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -6257,7 +6257,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (BIN : RECYCLING)\n\nA bank vault securely stores bullion, just as a recycling bin stores recyclable material.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (BIN : RECYCLING)\n\nA bank vault securely stores bullion, just as a recycling bin stores recyclable material.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"VAULT relates to BULLION\"; match the exact functional category and direction to lock Option B (BIN : RECYCLING) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -6286,7 +6286,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (PESTICIDE : WEEDS)\n\nAn antiseptic neutralizes pathogens, just as a herbicide/pesticide neutralizes agricultural weeds.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (PESTICIDE : WEEDS)\n\nAn antiseptic neutralizes pathogens, just as a herbicide/pesticide neutralizes agricultural weeds.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"ANTISEPTIC relates to PATHOGENS\"; match the exact functional category and direction to lock Option C (PESTICIDE : WEEDS) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -6315,7 +6315,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Light-year)\n\nKilowatt, Megawatt, Gigawatt, and Horsepower are units of power, while a Light-year is a unit of astronomical distance.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Light-year)\n\nKilowatt, Megawatt, Gigawatt, and Horsepower are units of power, while a Light-year is a unit of astronomical distance.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option B (Light-year) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -6344,7 +6344,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Monopoly)\n\nMonarchy, Oligarchy, Democracy, and Plutocracy are systems of political government, whereas a Monopoly is an economic market structure.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Monopoly)\n\nMonarchy, Oligarchy, Democracy, and Plutocracy are systems of political government, whereas a Monopoly is an economic market structure.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Monopoly) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -6373,7 +6373,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Mass)\n\nVelocity, Acceleration, Displacement, and Momentum are vector quantities with magnitude and direction, while Mass is a pure scalar.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Mass)\n\nVelocity, Acceleration, Displacement, and Momentum are vector quantities with magnitude and direction, while Mass is a pure scalar.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Mass) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -6402,7 +6402,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (tranquility)\n\nTranquility denotes peace and calm.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (tranquility)\n\nTranquility denotes peace and calm.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option C (tranquility) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -6431,7 +6431,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Transaction 901 is not a verified corporate transaction above $50,000.)\n\nPetty cash -> no dual signature -> cannot be a verified transaction above $50,000.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Transaction 901 is not a verified corporate transaction above $50,000.)\n\nPetty cash -> no dual signature -> cannot be a verified transaction above $50,000.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option A in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -6462,7 +6462,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Contradiction)\n\nA paradox is a seemingly absurd or self-contradictory statement that when investigated may prove to be well founded.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Contradiction)\n\nA paradox is a seemingly absurd or self-contradictory statement that when investigated may prove to be well founded.\n\n\ud83d\udca1 **Speed Tip:** Eliminate mismatched categories rapidly to verify Option A in <8s.",
       "category": "verbal",
       "subType": "synonym"
     },
@@ -6491,7 +6491,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Secondary)\n\nParamount means more important than anything else; supreme. Secondary is subordinate.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Secondary)\n\nParamount means more important than anything else; supreme. Secondary is subordinate.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PARAMOUNT\" (more important than anything else; supreme); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Secondary) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -6520,7 +6520,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Nonpartisan)\n\nPartisan means a strong supporter of a party, cause, or person, or prejudiced in favor of a cause. Nonpartisan is unbiased.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Nonpartisan)\n\nPartisan means a strong supporter of a party, cause, or person, or prejudiced in favor of a cause. Nonpartisan is unbiased.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PARTISAN\" (a strong supporter of a party, cause, or person, or prejudiced in favor of a cause); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Nonpartisan) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -6549,7 +6549,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Concealed)\n\nPatent means easily recognizable; obvious. Concealed means kept secret or hidden.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Concealed)\n\nPatent means easily recognizable; obvious. Concealed means kept secret or hidden.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PATENT\" (easily recognizable; obvious); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Concealed) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -6578,7 +6578,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Mediocre)\n\nPeerless means unequaled; unrivaled. Mediocre is of moderate or low quality.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Mediocre)\n\nPeerless means unequaled; unrivaled. Mediocre is of moderate or low quality.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PEERLESS\" (unequaled; unrivaled); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Mediocre) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -6607,7 +6607,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Aversion)\n\nA penchant is a strong or habitual liking for something or a tendency to do it. Aversion is a strong dislike.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Aversion)\n\nA penchant is a strong or habitual liking for something or a tendency to do it. Aversion is a strong dislike.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PENCHANT\"'s polarity; 4 choices cluster together as distractors. Lock opposite Option D (Aversion) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -6636,7 +6636,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (ODOMETER : MILEAGE)\n\nA tachometer measures engine RPM, just as an odometer measures cumulative mileage.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (ODOMETER : MILEAGE)\n\nA tachometer measures engine RPM, just as an odometer measures cumulative mileage.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"TACHOMETER relates to RPM\"; match the exact functional category and direction to lock Option D (ODOMETER : MILEAGE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -6665,7 +6665,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (PANE : WINDOW)\n\nA facet is a flat surface plane on a gemstone, just as a pane is a plane in a window frame.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (PANE : WINDOW)\n\nA facet is a flat surface plane on a gemstone, just as a pane is a plane in a window frame.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"FACET relates to GEMSTONE\"; match the exact functional category and direction to lock Option E (PANE : WINDOW) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -6694,7 +6694,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (ILLNESS : INFIRMITY)\n\nDestitution is extreme, absolute poverty, just as infirmity is severe chronic illness.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (ILLNESS : INFIRMITY)\n\nDestitution is extreme, absolute poverty, just as infirmity is severe chronic illness.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"POVERTY relates to DESTITUTION\"; match the exact functional category and direction to lock Option A (ILLNESS : INFIRMITY) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -6723,7 +6723,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (OPTICIAN : VISION)\n\nAn acoustician studies the physics of sound, just as an optician deals with corrective vision.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (OPTICIAN : VISION)\n\nAn acoustician studies the physics of sound, just as an optician deals with corrective vision.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"ACOUSTICIAN relates to SOUND\"; match the exact functional category and direction to lock Option B (OPTICIAN : VISION) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -6752,7 +6752,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (MARINA : YACHTS)\n\nA depot services and houses locomotives, just as a marina houses yachts.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (MARINA : YACHTS)\n\nA depot services and houses locomotives, just as a marina houses yachts.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"DEPOT relates to LOCOMOTIVES\"; match the exact functional category and direction to lock Option C (MARINA : YACHTS) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -6781,7 +6781,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (EULOGY : COMMEMORATION)\n\nAn aphorism is characterized inherently by brevity, just as a eulogy is defined by commemoratory purpose.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (EULOGY : COMMEMORATION)\n\nAn aphorism is characterized inherently by brevity, just as a eulogy is defined by commemoratory purpose.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"APHORISM relates to BREVITY\"; match the exact functional category and direction to lock Option D (EULOGY : COMMEMORATION) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -6810,7 +6810,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Cellulose)\n\nDolomite, Quartz, Feldspar, and Mica are naturally occurring inorganic minerals, while Cellulose is an organic biological polymer.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Cellulose)\n\nDolomite, Quartz, Feldspar, and Mica are naturally occurring inorganic minerals, while Cellulose is an organic biological polymer.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Cellulose) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -6839,7 +6839,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Cartographer)\n\nPianist, Violinist, Cellist, and Flautist are instrumental musical performers, while a Cartographer is a mapmaker.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Cartographer)\n\nPianist, Violinist, Cellist, and Flautist are instrumental musical performers, while a Cartographer is a mapmaker.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Cartographer) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -6868,7 +6868,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Dogma)\n\nHypothesis, Experiment, Observation, and Theory are components of empirical science, while Dogma is unquestioned authoritative doctrine.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Dogma)\n\nHypothesis, Experiment, Observation, and Theory are components of empirical science, while Dogma is unquestioned authoritative doctrine.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option E (Dogma) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -6897,7 +6897,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (prudent)\n\nPrudent means acting with or showing care and thought for the future.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (prudent)\n\nPrudent means acting with or showing care and thought for the future.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option E (prudent) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -6926,7 +6926,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Finalist P)\n\nOrder: S \u2192 R \u2192 Q \u2192 P. Finalist P delivers their presentation last among this group.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Finalist P)\n\nOrder: S \u2192 R \u2192 Q \u2192 P. Finalist P delivers their presentation last among this group.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option E in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -6957,7 +6957,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Central)\n\nPeripheral means relating to or situated on the edge or periphery of something; secondary. Central is core.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Central)\n\nPeripheral means relating to or situated on the edge or periphery of something; secondary. Central is core.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PERIPHERAL\" (relating to or situated on the edge or periphery of something; secondary); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Central) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -6986,7 +6986,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Localized)\n\nPervasive means spreading widely throughout an area or a group of people. Localized is restricted to a small area.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Localized)\n\nPervasive means spreading widely throughout an area or a group of people. Localized is restricted to a small area.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PERVASIVE\" (spreading widely throughout an area or a group of people); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Localized) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -7015,7 +7015,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Implausible)\n\nPlausible means seeming reasonable or probable. Implausible is not believable.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Implausible)\n\nPlausible means seeming reasonable or probable. Implausible is not believable.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PLAUSIBLE\" (seeming reasonable or probable); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Implausible) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -7044,7 +7044,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Tailoring)\n\nSartorial relates to tailoring, clothes, or style of dress.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Tailoring)\n\nSartorial relates to tailoring, clothes, or style of dress.\n\n\ud83d\udca1 **Speed Tip:** Eliminate mismatched categories rapidly to verify Option C in <8s.",
       "category": "verbal",
       "subType": "synonym"
     },
@@ -7073,7 +7073,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Secure)\n\nPrecarious means not securely held or in position; dangerously likely to fall or collapse. Secure is stable.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Secure)\n\nPrecarious means not securely held or in position; dangerously likely to fall or collapse. Secure is stable.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PRECARIOUS\" (not securely held or in position; dangerously likely to fall or collapse); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Secure) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -7102,7 +7102,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Benchmark)\n\nA precedent is an earlier event or action that is regarded as an example or guide; a benchmark.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Benchmark)\n\nA precedent is an earlier event or action that is regarded as an example or guide; a benchmark.\n\n\ud83d\udca1 **Speed Tip:** Eliminate mismatched categories rapidly to verify Option A in <8s.",
       "category": "verbal",
       "subType": "synonym"
     },
@@ -7131,7 +7131,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (INTARSIA : WOOD PIECES)\n\nA mosaic is composed of small inlaid tesserae tiles, just as intarsia is crafted from precisely cut wood pieces.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (INTARSIA : WOOD PIECES)\n\nA mosaic is composed of small inlaid tesserae tiles, just as intarsia is crafted from precisely cut wood pieces.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"MOSAIC relates to TESSERAE\"; match the exact functional category and direction to lock Option E (INTARSIA : WOOD PIECES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -7160,7 +7160,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (STAVE : BARREL)\n\nA pale is an individual upright strip forming a fence, just as a stave forms a wooden barrel.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (STAVE : BARREL)\n\nA pale is an individual upright strip forming a fence, just as a stave forms a wooden barrel.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"PALE relates to FENCE\"; match the exact functional category and direction to lock Option A (STAVE : BARREL) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -7189,7 +7189,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (REQUEST : DEMAND)\n\nA blunder is a gross, consequential mistake, just as a demand is an imperative request.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (REQUEST : DEMAND)\n\nA blunder is a gross, consequential mistake, just as a demand is an imperative request.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"MISTAKE relates to BLUNDER\"; match the exact functional category and direction to lock Option B (REQUEST : DEMAND) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -7218,7 +7218,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (VULCANOLOGIST : MAGMA)\n\nA seismologist investigates plate tectonics, just as a vulcanologist investigates volcanic magma.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (VULCANOLOGIST : MAGMA)\n\nA seismologist investigates plate tectonics, just as a vulcanologist investigates volcanic magma.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"SEISMOLOGIST relates to TECTONICS\"; match the exact functional category and direction to lock Option C (VULCANOLOGIST : MAGMA) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -7247,7 +7247,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (HANGAR : PLANES)\n\nA dock provides a mooring station for ships, just as a hangar houses airplanes.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (HANGAR : PLANES)\n\nA dock provides a mooring station for ships, just as a hangar houses airplanes.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"DOCK relates to SHIPS\"; match the exact functional category and direction to lock Option D (HANGAR : PLANES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -7276,7 +7276,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (NEUTRALIZER : ACID)\n\nAn antidote counteracts venom, just as a chemical neutralizer counteracts acid.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (NEUTRALIZER : ACID)\n\nAn antidote counteracts venom, just as a chemical neutralizer counteracts acid.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"ANTIDOTE relates to VENOM\"; match the exact functional category and direction to lock Option E (NEUTRALIZER : ACID) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -7305,7 +7305,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Lithosphere)\n\nTroposphere, Stratosphere, Mesosphere, and Thermosphere are atmospheric gaseous strata, while the Lithosphere is the solid terrestrial crust.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Lithosphere)\n\nTroposphere, Stratosphere, Mesosphere, and Thermosphere are atmospheric gaseous strata, while the Lithosphere is the solid terrestrial crust.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Lithosphere) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -7334,7 +7334,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Granite)\n\nEnzyme, Hormone, Antibody, and Hemoglobin are biological proteins and compounds, while Granite is an inorganic silicate rock.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Granite)\n\nEnzyme, Hormone, Antibody, and Hemoglobin are biological proteins and compounds, while Granite is an inorganic silicate rock.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Granite) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -7363,7 +7363,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Grammar)\n\nDecibel, Pascal, Joule, and Newton are physical scientific measurement units, while Grammar is a structural linguistic framework.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Grammar)\n\nDecibel, Pascal, Joule, and Newton are physical scientific measurement units, while Grammar is a structural linguistic framework.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option E (Grammar) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -7392,7 +7392,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (magnify)\n\nMagnify means to make greater or intensify confusion.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (magnify)\n\nMagnify means to make greater or intensify confusion.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option C (magnify) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -7421,7 +7421,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Brand Identifier X is not a registered commercial trademark.)\n\nCommercial trademark -> registered with patent office. Not registered -> not a commercial trademark.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Brand Identifier X is not a registered commercial trademark.)\n\nCommercial trademark -> registered with patent office. Not registered -> not a commercial trademark.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option A in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -7452,7 +7452,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Backward)\n\nPrecocious means having developed certain abilities or proclivities at an earlier age than usual. Backward is retarded in development.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Backward)\n\nPrecocious means having developed certain abilities or proclivities at an earlier age than usual. Backward is retarded in development.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PRECOCIOUS\" (having developed certain abilities or proclivities at an earlier age than usual); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Backward) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -7481,7 +7481,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Diminutive)\n\nProdigious means remarkably or impressively great in extent, size, or degree. Diminutive is unusually small.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Diminutive)\n\nProdigious means remarkably or impressively great in extent, size, or degree. Diminutive is unusually small.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PRODIGIOUS\" (remarkably or impressively great in extent, size, or degree); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Diminutive) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -7510,7 +7510,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Unproductive)\n\nProlific means producing much fruit or foliage or many works. Unproductive produces nothing.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Unproductive)\n\nProlific means producing much fruit or foliage or many works. Unproductive produces nothing.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PROLIFIC\" (producing much fruit or foliage or many works); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Unproductive) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -7539,7 +7539,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Disinclination)\n\nA propensity is an inclination or natural tendency to behave in a particular way. Disinclination is unwillingness.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Disinclination)\n\nA propensity is an inclination or natural tendency to behave in a particular way. Disinclination is unwillingness.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PROPENSITY\"'s polarity; 4 choices cluster together as distractors. Lock opposite Option D (Disinclination) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -7568,7 +7568,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Shorten)\n\nProtract means to prolong in time or space. Shorten is to reduce duration.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Shorten)\n\nProtract means to prolong in time or space. Shorten is to reduce duration.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PROTRACT\" (to prolong in time or space); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Shorten) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -7597,7 +7597,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Reckless)\n\nPrudent means acting with or showing care and thought for the future. Reckless is careless of consequences.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Reckless)\n\nPrudent means acting with or showing care and thought for the future. Reckless is careless of consequences.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PRUDENT\" (acting with or showing care and thought for the future); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Reckless) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -7626,7 +7626,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (XYLOGRAPHY : WOODBLOCK)\n\nSerigraphy uses a stencil mesh to apply ink, just as xylography prints from a carved woodblock.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (XYLOGRAPHY : WOODBLOCK)\n\nSerigraphy uses a stencil mesh to apply ink, just as xylography prints from a carved woodblock.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"SERIGRAPHY relates to STENCIL\"; match the exact functional category and direction to lock Option A (XYLOGRAPHY : WOODBLOCK) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -7655,7 +7655,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (PIXEL : DIGITAL IMAGE)\n\nIndividual tiles form a mosaic, just as individual pixels form a digital image.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (PIXEL : DIGITAL IMAGE)\n\nIndividual tiles form a mosaic, just as individual pixels form a digital image.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"TILE relates to MOSAIC\"; match the exact functional category and direction to lock Option B (PIXEL : DIGITAL IMAGE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -7684,7 +7684,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (CLEVER : INGENIOUS)\n\nExhausted is the absolute extreme of tired, just as ingenious is the extreme of clever.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (CLEVER : INGENIOUS)\n\nExhausted is the absolute extreme of tired, just as ingenious is the extreme of clever.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"TIRED relates to EXHAUSTED\"; match the exact functional category and direction to lock Option C (CLEVER : INGENIOUS) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -7713,7 +7713,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (HERPETOLOGIST : REPTILES)\n\nA toxicologist specializes in poisons, just as a herpetologist specializes in reptiles.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (HERPETOLOGIST : REPTILES)\n\nA toxicologist specializes in poisons, just as a herpetologist specializes in reptiles.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"TOXICOLOGIST relates to POISONS\"; match the exact functional category and direction to lock Option D (HERPETOLOGIST : REPTILES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -7742,7 +7742,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (VIVARIUM : FAUNA)\n\nA herbarium preserves and displays specimens of flora, just as a vivarium maintains living specimens of fauna.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (VIVARIUM : FAUNA)\n\nA herbarium preserves and displays specimens of flora, just as a vivarium maintains living specimens of fauna.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"HERBARIUM relates to FLORA\"; match the exact functional category and direction to lock Option E (VIVARIUM : FAUNA) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -7771,7 +7771,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (CRIB : FOUNDATION)\n\nA scaffold provides temporary working access to a building fa\u00e7ade, just as cribbing supports deep foundation work.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (CRIB : FOUNDATION)\n\nA scaffold provides temporary working access to a building fa\u00e7ade, just as cribbing supports deep foundation work.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"SCAFFOLD relates to FA\"; match the exact functional category and direction to lock Option A (CRIB : FOUNDATION) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -7800,7 +7800,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Light-year)\n\nKilowatt, Megawatt, Gigawatt, and Horsepower are units of power, while a Light-year is a unit of astronomical distance.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Light-year)\n\nKilowatt, Megawatt, Gigawatt, and Horsepower are units of power, while a Light-year is a unit of astronomical distance.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Light-year) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -7829,7 +7829,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Monopoly)\n\nMonarchy, Oligarchy, Democracy, and Plutocracy are systems of political government, whereas a Monopoly is an economic market structure.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Monopoly)\n\nMonarchy, Oligarchy, Democracy, and Plutocracy are systems of political government, whereas a Monopoly is an economic market structure.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Monopoly) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -7858,7 +7858,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Mass)\n\nVelocity, Acceleration, Displacement, and Momentum are vector quantities with magnitude and direction, while Mass is a pure scalar.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Mass)\n\nVelocity, Acceleration, Displacement, and Momentum are vector quantities with magnitude and direction, while Mass is a pure scalar.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option E (Mass) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -7887,7 +7887,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (efficacious)\n\nEfficacious means successful in producing a desired result or effective.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (efficacious)\n\nEfficacious means successful in producing a desired result or effective.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option B (efficacious) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -7916,7 +7916,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (True)\n\nBy transitivity: Route 101 < Route 202 < Route 303 in bottlenecks. Route 101 having fewer bottlenecks than Route 303 is True.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (True)\n\nBy transitivity: Route 101 < Route 202 < Route 303 in bottlenecks. Route 101 having fewer bottlenecks than Route 303 is True.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option B in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -7947,7 +7947,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Confident)\n\nDiffident means modest or shy because of a lack of self-confidence. Confident is self-assured.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Confident)\n\nDiffident means modest or shy because of a lack of self-confidence. Confident is self-assured.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"DIFFIDENT\" (modest or shy because of a lack of self-confidence); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Confident) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -7976,7 +7976,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Confidence)\n\nA qualm is an uneasy feeling of doubt, worry, or fear. Confidence is firm trust.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Confidence)\n\nA qualm is an uneasy feeling of doubt, worry, or fear. Confidence is firm trust.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"QUALM\"'s polarity; 4 choices cluster together as distractors. Lock opposite Option E (Confidence) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -8005,7 +8005,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Dilemma)\n\nA quandary is a state of perplexity or uncertainty over what to do in a difficult situation; a dilemma.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Dilemma)\n\nA quandary is a state of perplexity or uncertainty over what to do in a difficult situation; a dilemma.\n\n\ud83d\udca1 **Speed Tip:** Eliminate mismatched categories rapidly to verify Option D in <8s.",
       "category": "verbal",
       "subType": "synonym"
     },
@@ -8034,7 +8034,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Goodwill)\n\nRancor is bitterness or resentfulness, especially when long-standing. Goodwill is friendly disposition.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Goodwill)\n\nRancor is bitterness or resentfulness, especially when long-standing. Goodwill is friendly disposition.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"RANCOR\"'s polarity; 4 choices cluster together as distractors. Lock opposite Option C (Goodwill) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -8063,7 +8063,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Submissive)\n\nRecalcitrant means having an obstinately uncooperative attitude toward authority. Submissive is obedient.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Submissive)\n\nRecalcitrant means having an obstinately uncooperative attitude toward authority. Submissive is obedient.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"RECALCITRANT\" (having an obstinately uncooperative attitude toward authority); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Submissive) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -8092,7 +8092,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Indispensable)\n\nRedundant means not or no longer needed or useful; superfluous. Indispensable is essential.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Indispensable)\n\nRedundant means not or no longer needed or useful; superfluous. Indispensable is essential.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"REDUNDANT\" (not or no longer needed or useful; superfluous); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Indispensable) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -8121,7 +8121,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (OUTRIGGER : CANOE)\n\nBallast maintains rotational stability along a vessel's keel, just as an outrigger stabilizes a slender canoe.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (OUTRIGGER : CANOE)\n\nBallast maintains rotational stability along a vessel's keel, just as an outrigger stabilizes a slender canoe.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"BALLAST relates to KEEL\"; match the exact functional category and direction to lock Option B (OUTRIGGER : CANOE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -8150,7 +8150,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (VENTILATOR : LOUVER)\n\nA turbine houses an impeller to extract fluid kinematic energy, just as a ventilator regulates air flow via louvers.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (VENTILATOR : LOUVER)\n\nA turbine houses an impeller to extract fluid kinematic energy, just as a ventilator regulates air flow via louvers.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"TURBINE relates to IMPELLER\"; match the exact functional category and direction to lock Option C (VENTILATOR : LOUVER) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -8179,7 +8179,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (CLEAN : STERILE)\n\nDestitute is completely devoid of resources (extreme poor), just as sterile is completely germ-free (extreme clean).\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (CLEAN : STERILE)\n\nDestitute is completely devoid of resources (extreme poor), just as sterile is completely germ-free (extreme clean).\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"POOR relates to DESTITUTE\"; match the exact functional category and direction to lock Option D (CLEAN : STERILE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -8208,7 +8208,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (PYROMETER : EXTREME TEMPERATURE)\n\nA hygrometer quantifies ambient relative moisture, just as an optical pyrometer registers extreme temperatures.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (PYROMETER : EXTREME TEMPERATURE)\n\nA hygrometer quantifies ambient relative moisture, just as an optical pyrometer registers extreme temperatures.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"HYGROMETER relates to RELATIVE\"; match the exact functional category and direction to lock Option E (PYROMETER : EXTREME TEMPERATURE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -8237,7 +8237,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (CORRAL : HORSES)\n\nAn apiary is where bee hives are kept, just as a corral is where horses are kept.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (CORRAL : HORSES)\n\nAn apiary is where bee hives are kept, just as a corral is where horses are kept.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"APIARY relates to HIVES\"; match the exact functional category and direction to lock Option A (CORRAL : HORSES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -8266,7 +8266,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (OSTEOCYTE : BONE)\n\nA chondrocyte is a mature cell that forms cartilage, just as an osteocyte maintains bone matrix.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (OSTEOCYTE : BONE)\n\nA chondrocyte is a mature cell that forms cartilage, just as an osteocyte maintains bone matrix.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"CHONDROCYTE relates to CARTILAGE\"; match the exact functional category and direction to lock Option B (OSTEOCYTE : BONE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -8295,7 +8295,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Cellulose)\n\nDolomite, Quartz, Feldspar, and Mica are naturally occurring inorganic minerals, while Cellulose is an organic biological polymer.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Cellulose)\n\nDolomite, Quartz, Feldspar, and Mica are naturally occurring inorganic minerals, while Cellulose is an organic biological polymer.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option B (Cellulose) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -8324,7 +8324,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Cartographer)\n\nPianist, Violinist, Cellist, and Flautist are instrumental musical performers, while a Cartographer is a mapmaker.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Cartographer)\n\nPianist, Violinist, Cellist, and Flautist are instrumental musical performers, while a Cartographer is a mapmaker.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Cartographer) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -8353,7 +8353,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Dogma)\n\nHypothesis, Experiment, Observation, and Theory are components of empirical science, while Dogma is unquestioned authoritative doctrine.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Dogma)\n\nHypothesis, Experiment, Observation, and Theory are components of empirical science, while Dogma is unquestioned authoritative doctrine.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option E (Dogma) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -8382,7 +8382,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (undisclosed)\n\nUndisclosed means not revealed or secret.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (undisclosed)\n\nUndisclosed means not revealed or secret.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option E (undisclosed) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -8411,7 +8411,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Dr. Martinez is not a certified pediatric oncologist.)\n\nDr. Martinez is triage resident -> no neonatal fellowship -> cannot be a certified pediatric oncologist.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Dr. Martinez is not a certified pediatric oncologist.)\n\nDr. Martinez is triage resident -> no neonatal fellowship -> cannot be a certified pediatric oncologist.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option C in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -8442,7 +8442,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Malleable)\n\nRefractory means stubborn or unmanageable. Malleable means easily influenced or bent.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Malleable)\n\nRefractory means stubborn or unmanageable. Malleable means easily influenced or bent.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"REFRACTORY\" (stubborn or unmanageable); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Malleable) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -8471,7 +8471,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Praiseworthy)\n\nReprehensible means deserving censure or condemnation. Praiseworthy is deserving approval.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Praiseworthy)\n\nReprehensible means deserving censure or condemnation. Praiseworthy is deserving approval.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"REPREHENSIBLE\" (deserving censure or condemnation); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Praiseworthy) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -8500,7 +8500,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Vacillating)\n\nResolute means admirably purposeful, determined, and unwavering. Vacillating wavers indecisively.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Vacillating)\n\nResolute means admirably purposeful, determined, and unwavering. Vacillating wavers indecisively.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"RESOLUTE\" (admirably purposeful, determined, and unwavering); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Vacillating) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -8529,7 +8529,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Communicative)\n\nReticent means not revealing one's thoughts or feelings readily. Communicative shares openly.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Communicative)\n\nReticent means not revealing one's thoughts or feelings readily. Communicative shares openly.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"RETICENT\" (not revealing one's thoughts or feelings readily); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Communicative) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -8558,7 +8558,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Fragile)\n\nRobust means strong and healthy; vigorous. Fragile is easily broken or weak.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Fragile)\n\nRobust means strong and healthy; vigorous. Fragile is easily broken or weak.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"ROBUST\" (strong and healthy; vigorous); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Fragile) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -8587,7 +8587,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Inconspicuous)\n\nSalient means most noticeable or important. Inconspicuous is not clearly visible.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Inconspicuous)\n\nSalient means most noticeable or important. Inconspicuous is not clearly visible.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"SALIENT\" (most noticeable or important); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Inconspicuous) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -8616,7 +8616,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (INTERFEROMETER : WAVELENGTH)\n\nA spectrophotometer measures optical absorbance, just as an interferometer measures light wavelength.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (INTERFEROMETER : WAVELENGTH)\n\nA spectrophotometer measures optical absorbance, just as an interferometer measures light wavelength.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"SPECTROPHOTOMETER relates to ABSORBANCE\"; match the exact functional category and direction to lock Option C (INTERFEROMETER : WAVELENGTH) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -8645,7 +8645,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (CLAUSE : COMPLEX SENTENCE)\n\nA hemistich is a distinct half-line division of an alexandrine, just as a clause is a structural division of a complex sentence.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (CLAUSE : COMPLEX SENTENCE)\n\nA hemistich is a distinct half-line division of an alexandrine, just as a clause is a structural division of a complex sentence.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"HEMISTICH relates to ALEXANDRINE\"; match the exact functional category and direction to lock Option D (CLAUSE : COMPLEX SENTENCE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -8674,7 +8674,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (APPRECIATE : VENERATE)\n\nTo abhor is an extreme degree of dislike, just as to venerate is an extreme degree of appreciation.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (APPRECIATE : VENERATE)\n\nTo abhor is an extreme degree of dislike, just as to venerate is an extreme degree of appreciation.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"DISLIKE relates to ABHOR\"; match the exact functional category and direction to lock Option E (APPRECIATE : VENERATE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -8703,7 +8703,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (BRYOLOGIST : MOSSES)\n\nA mycologist studies fungi, just as a bryologist studies mosses.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (BRYOLOGIST : MOSSES)\n\nA mycologist studies fungi, just as a bryologist studies mosses.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"MYCOLOGIST relates to FUNGI\"; match the exact functional category and direction to lock Option A (BRYOLOGIST : MOSSES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -8732,7 +8732,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (ROUNDHOUSE : LOCOMOTIVES)\n\nA depot houses and handles freight shipments, just as a roundhouse houses and services locomotives.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (ROUNDHOUSE : LOCOMOTIVES)\n\nA depot houses and handles freight shipments, just as a roundhouse houses and services locomotives.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"DEPOT relates to FREIGHT\"; match the exact functional category and direction to lock Option B (ROUNDHOUSE : LOCOMOTIVES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -8761,7 +8761,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (VACCINATION : INFECTION)\n\nLubrication prevents mechanical wear, just as vaccination prevents pathological infection.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (VACCINATION : INFECTION)\n\nLubrication prevents mechanical wear, just as vaccination prevents pathological infection.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"LUBRICATION relates to WEAR\"; match the exact functional category and direction to lock Option C (VACCINATION : INFECTION) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -8790,7 +8790,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Lithosphere)\n\nTroposphere, Stratosphere, Mesosphere, and Thermosphere are atmospheric gaseous strata, while the Lithosphere is the solid terrestrial crust.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Lithosphere)\n\nTroposphere, Stratosphere, Mesosphere, and Thermosphere are atmospheric gaseous strata, while the Lithosphere is the solid terrestrial crust.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Lithosphere) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -8819,7 +8819,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Granite)\n\nEnzyme, Hormone, Antibody, and Hemoglobin are biological proteins and compounds, while Granite is an inorganic silicate rock.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Granite)\n\nEnzyme, Hormone, Antibody, and Hemoglobin are biological proteins and compounds, while Granite is an inorganic silicate rock.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Granite) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -8848,7 +8848,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Grammar)\n\nDecibel, Pascal, Joule, and Newton are physical scientific measurement units, while Grammar is a structural linguistic framework.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Grammar)\n\nDecibel, Pascal, Joule, and Newton are physical scientific measurement units, while Grammar is a structural linguistic framework.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Grammar) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -8877,7 +8877,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (balanced)\n\nBalanced indicates fair consideration of all sides.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (balanced)\n\nBalanced indicates fair consideration of all sides.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option D (balanced) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -8906,7 +8906,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Tier 0)\n\nBoot sequence: Tier 0 \u2794 Tier 1 \u2794 Tier 2 \u2794 Tier 3. Tier 0 boots first.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Tier 0)\n\nBoot sequence: Tier 0 \u2794 Tier 1 \u2794 Tier 2 \u2794 Tier 3. Tier 0 boots first.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option D in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -8937,7 +8937,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Prohibition)\n\nA sanction can mean official permission or approval for an action. Prohibition forbids action.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Prohibition)\n\nA sanction can mean official permission or approval for an action. Prohibition forbids action.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"SANCTION\"'s polarity; 4 choices cluster together as distractors. Lock opposite Option D (Prohibition) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -8966,7 +8966,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Unprincipled)\n\nScrupulous means diligent, thorough, and extremely attentive to details or moral standards. Unprincipled lacks morals.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Unprincipled)\n\nScrupulous means diligent, thorough, and extremely attentive to details or moral standards. Unprincipled lacks morals.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"SCRUPULOUS\" (diligent, thorough, and extremely attentive to details or moral standards); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Unprincipled) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -8995,7 +8995,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Law-abiding)\n\nA scofflaw is someone who flaunts the law. Law-abiding respects the law.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Law-abiding)\n\nA scofflaw is someone who flaunts the law. Law-abiding respects the law.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"SCOFFLAW\"'s polarity; 4 choices cluster together as distractors. Lock opposite Option B (Law-abiding) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -9024,7 +9024,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Sterile)\n\nFecund means producing or capable of producing abundant growth or offspring; fertile. Sterile means barren or unproductive.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Sterile)\n\nFecund means producing or capable of producing abundant growth or offspring; fertile. Sterile means barren or unproductive.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"FECUND\" (producing or capable of producing abundant growth or offspring; fertile); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Sterile) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -9053,7 +9053,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Frivolous)\n\nSolemn means formal and dignified; serious. Frivolous is not having any serious purpose.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Frivolous)\n\nSolemn means formal and dignified; serious. Frivolous is not having any serious purpose.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"SOLEMN\" (formal and dignified; serious); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Frivolous) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -9082,7 +9082,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Noble)\n\nSordid means involving ignoble actions and motives; arousing moral distaste and contempt. Noble is having high moral qualities.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Noble)\n\nSordid means involving ignoble actions and motives; arousing moral distaste and contempt. Noble is having high moral qualities.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"SORDID\" (involving ignoble actions and motives; arousing moral distaste and contempt); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Noble) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -9111,7 +9111,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (SEISMOLOGIST : TREMORS)\n\nA hydrologist studies subterranean aquifers, just as a seismologist analyzes tectonic tremors.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (SEISMOLOGIST : TREMORS)\n\nA hydrologist studies subterranean aquifers, just as a seismologist analyzes tectonic tremors.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"HYDROLOGIST relates to AQUIFERS\"; match the exact functional category and direction to lock Option D (SEISMOLOGIST : TREMORS) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -9140,7 +9140,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (RAFTER : ROOF)\n\nA spoke extends to support a wheel rim, just as a rafter supports a roof structure.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (RAFTER : ROOF)\n\nA spoke extends to support a wheel rim, just as a rafter supports a roof structure.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"SPOKE relates to RIM\"; match the exact functional category and direction to lock Option E (RAFTER : ROOF) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -9169,7 +9169,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (THIRSTY : PARCHED)\n\nRavenous is intensely hungry, just as parched is intensely thirsty.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (THIRSTY : PARCHED)\n\nRavenous is intensely hungry, just as parched is intensely thirsty.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"HUNGRY relates to RAVENOUS\"; match the exact functional category and direction to lock Option A (THIRSTY : PARCHED) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -9198,7 +9198,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (SPELEOLOGIST : CAVES)\n\nA limnologist studies freshwater lakes, just as a speleologist studies caves.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (SPELEOLOGIST : CAVES)\n\nA limnologist studies freshwater lakes, just as a speleologist studies caves.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"LIMNOLOGIST relates to LAKES\"; match the exact functional category and direction to lock Option B (SPELEOLOGIST : CAVES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -9227,7 +9227,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (VAULT : SPECIE)\n\nA cellar stores vintage wine, just as a bank vault stores specie (coin bullion).\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (VAULT : SPECIE)\n\nA cellar stores vintage wine, just as a bank vault stores specie (coin bullion).\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"CELLAR relates to VINTAGE\"; match the exact functional category and direction to lock Option C (VAULT : SPECIE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -9256,7 +9256,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (LEVEE : FLOODING)\n\nA dam prevents downstream inundation, just as a levee prevents river flooding.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (LEVEE : FLOODING)\n\nA dam prevents downstream inundation, just as a levee prevents river flooding.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"DAM relates to INUNDATION\"; match the exact functional category and direction to lock Option D (LEVEE : FLOODING) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -9285,7 +9285,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Light-year)\n\nKilowatt, Megawatt, Gigawatt, and Horsepower are units of power, while a Light-year is a unit of astronomical distance.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Light-year)\n\nKilowatt, Megawatt, Gigawatt, and Horsepower are units of power, while a Light-year is a unit of astronomical distance.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Light-year) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -9314,7 +9314,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Monopoly)\n\nMonarchy, Oligarchy, Democracy, and Plutocracy are systems of political government, whereas a Monopoly is an economic market structure.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Monopoly)\n\nMonarchy, Oligarchy, Democracy, and Plutocracy are systems of political government, whereas a Monopoly is an economic market structure.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Monopoly) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -9343,7 +9343,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Mass)\n\nVelocity, Acceleration, Displacement, and Momentum are vector quantities with magnitude and direction, while Mass is a pure scalar.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Mass)\n\nVelocity, Acceleration, Displacement, and Momentum are vector quantities with magnitude and direction, while Mass is a pure scalar.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option B (Mass) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -9372,7 +9372,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (imperceptible)\n\nImperceptible means so slight as to not be noticed.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (imperceptible)\n\nImperceptible means so slight as to not be noticed.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option A (imperceptible) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -9401,7 +9401,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Molecule Z is not classified as a ketone with a carbonyl group.)\n\nKetones have carbonyl groups. Molecule Z has no carbonyl group -> cannot be a ketone with a carbonyl group.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Molecule Z is not classified as a ketone with a carbonyl group.)\n\nKetones have carbonyl groups. Molecule Z has no carbonyl group -> cannot be a ketone with a carbonyl group.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option C in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -9432,7 +9432,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Sound)\n\nSpecious means superficially plausible, but actually wrong. Sound means based on reason or valid logic.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Sound)\n\nSpecious means superficially plausible, but actually wrong. Sound means based on reason or valid logic.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"SPECIOUS\" (superficially plausible, but actually wrong); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Sound) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -9461,7 +9461,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Pristine)\n\nSqualid means extremely dirty and unpleasant, especially as a result of poverty. Pristine is in its original condition; unspoiled.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Pristine)\n\nSqualid means extremely dirty and unpleasant, especially as a result of poverty. Pristine is in its original condition; unspoiled.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"SQUALID\" (extremely dirty and unpleasant, especially as a result of poverty); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Pristine) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -9490,7 +9490,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Fickle)\n\nStaunch means loyal and committed in attitude. Fickle is changing frequently.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Fickle)\n\nStaunch means loyal and committed in attitude. Fickle is changing frequently.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"STAUNCH\" (loyal and committed in attitude); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Fickle) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -9519,7 +9519,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Lenient)\n\nStringent means strict, precise, and exacting. Lenient is permissive or merciful.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Lenient)\n\nStringent means strict, precise, and exacting. Lenient is permissive or merciful.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"STRINGENT\" (strict, precise, and exacting); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Lenient) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -9548,7 +9548,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Disprove)\n\nSubstantiate means provide evidence to support or prove the truth of. Disprove proves false.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Disprove)\n\nSubstantiate means provide evidence to support or prove the truth of. Disprove proves false.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"SUBSTANTIATE\" (provide evidence to support or prove the truth of); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Disprove) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -9577,7 +9577,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Glaring)\n\nSubtle means so delicate or precise as to be difficult to analyze or describe. Glaring is obvious and harsh.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Glaring)\n\nSubtle means so delicate or precise as to be difficult to analyze or describe. Glaring is obvious and harsh.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"SUBTLE\" (so delicate or precise as to be difficult to analyze or describe); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Glaring) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -9606,7 +9606,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (TRIVIA : KNOWLEDGE)\n\nA peccadillo is a trifling, minor offense, just as trivia represents minor, non-essential knowledge.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (TRIVIA : KNOWLEDGE)\n\nA peccadillo is a trifling, minor offense, just as trivia represents minor, non-essential knowledge.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"PECCADILLO relates to OFFENSE\"; match the exact functional category and direction to lock Option E (TRIVIA : KNOWLEDGE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -9635,7 +9635,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (TRENCH : BATTLEFIELD)\n\nA gutter runs along a roofline, just as a trench runs across a battlefield.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (TRENCH : BATTLEFIELD)\n\nA gutter runs along a roofline, just as a trench runs across a battlefield.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"GUTTER relates to ROOFLINE\"; match the exact functional category and direction to lock Option A (TRENCH : BATTLEFIELD) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -9664,7 +9664,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (PLEASED : DELIGHTED)\n\nBewildered is an intensified state of confusion, just as delighted is intensified pleasure.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (PLEASED : DELIGHTED)\n\nBewildered is an intensified state of confusion, just as delighted is intensified pleasure.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"CONFUSED relates to BEWILDERED\"; match the exact functional category and direction to lock Option B (PLEASED : DELIGHTED) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -9693,7 +9693,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (ORNITHOLOGIST : FALCONS)\n\nAn entomologist studies beetles, just as an ornithologist studies falcons.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (ORNITHOLOGIST : FALCONS)\n\nAn entomologist studies beetles, just as an ornithologist studies falcons.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"ENTOMOLOGIST relates to BEETLES\"; match the exact functional category and direction to lock Option C (ORNITHOLOGIST : FALCONS) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -9722,7 +9722,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (HOPPER : GRAIN)\n\nA firearm magazine holds cartridges, just as a grain hopper holds grain.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (HOPPER : GRAIN)\n\nA firearm magazine holds cartridges, just as a grain hopper holds grain.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"MAGAZINE relates to CARTRIDGES\"; match the exact functional category and direction to lock Option D (HOPPER : GRAIN) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -9751,7 +9751,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (PLUMAGE : PEACOCK)\n\nA pelt is the distinctive fur covering of an otter, just as plumage is the feather covering of a peacock.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (PLUMAGE : PEACOCK)\n\nA pelt is the distinctive fur covering of an otter, just as plumage is the feather covering of a peacock.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"PELT relates to OTTER\"; match the exact functional category and direction to lock Option E (PLUMAGE : PEACOCK) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -9780,7 +9780,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Cellulose)\n\nDolomite, Quartz, Feldspar, and Mica are naturally occurring inorganic minerals, while Cellulose is an organic biological polymer.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Cellulose)\n\nDolomite, Quartz, Feldspar, and Mica are naturally occurring inorganic minerals, while Cellulose is an organic biological polymer.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Cellulose) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -9809,7 +9809,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Cartographer)\n\nPianist, Violinist, Cellist, and Flautist are instrumental musical performers, while a Cartographer is a mapmaker.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Cartographer)\n\nPianist, Violinist, Cellist, and Flautist are instrumental musical performers, while a Cartographer is a mapmaker.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option B (Cartographer) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -9838,7 +9838,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Dogma)\n\nHypothesis, Experiment, Observation, and Theory are components of empirical science, while Dogma is unquestioned authoritative doctrine.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Dogma)\n\nHypothesis, Experiment, Observation, and Theory are components of empirical science, while Dogma is unquestioned authoritative doctrine.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Dogma) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -9867,7 +9867,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (burgeon)\n\nBurgeon means to grow or flourish rapidly.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (burgeon)\n\nBurgeon means to grow or flourish rapidly.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option E (burgeon) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -9896,7 +9896,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Definitively False)\n\nTransitivity: FastSort < QuickSort < BubbleSort in cycles. BubbleSort requiring fewer cycles than FastSort is directly False.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Definitively False)\n\nTransitivity: FastSort < QuickSort < BubbleSort in cycles. BubbleSort requiring fewer cycles than FastSort is directly False.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option B in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -9927,7 +9927,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Verbose)\n\nSuccinct means briefly and clearly expressed. Verbose uses more words than needed.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Verbose)\n\nSuccinct means briefly and clearly expressed. Verbose uses more words than needed.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"SUCCINCT\" (briefly and clearly expressed); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Verbose) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -9956,7 +9956,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Essential)\n\nSuperfluous means unnecessary, especially through being more than enough. Essential is necessary.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Essential)\n\nSuperfluous means unnecessary, especially through being more than enough. Essential is necessary.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"SUPERFLUOUS\" (unnecessary, especially through being more than enough); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Essential) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -9985,7 +9985,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Blatant)\n\nSurreptitious means kept secret, especially because it would not be approved of. Blatant is completely obvious.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Blatant)\n\nSurreptitious means kept secret, especially because it would not be approved of. Blatant is completely obvious.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"SURREPTITIOUS\" (kept secret, especially because it would not be approved of); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Blatant) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -10014,7 +10014,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Explicit)\n\nTacit means understood or implied without being stated. Explicit means stated clearly and in detail.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Explicit)\n\nTacit means understood or implied without being stated. Explicit means stated clearly and in detail.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"TACIT\" (understood or implied without being stated); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Explicit) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -10043,7 +10043,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Equivalent)\n\nTantamount means equivalent in seriousness to; virtually the same as.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Equivalent)\n\nTantamount means equivalent in seriousness to; virtually the same as.\n\n\ud83d\udca1 **Speed Tip:** Eliminate mismatched categories rapidly to verify Option B in <8s.",
       "category": "verbal",
       "subType": "synonym"
     },
@@ -10072,7 +10072,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Stimulating)\n\nTedious means too long, slow, or dull; tiresome or monotonous. Stimulating is engaging.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Stimulating)\n\nTedious means too long, slow, or dull; tiresome or monotonous. Stimulating is engaging.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"TEDIOUS\" (too long, slow, or dull; tiresome or monotonous); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Stimulating) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -10101,7 +10101,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (SIEVE : PARTICLES)\n\nA microtome cuts specimens into thin slices, just as a sieve separates particles by size.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (SIEVE : PARTICLES)\n\nA microtome cuts specimens into thin slices, just as a sieve separates particles by size.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"MICROTOME relates to THIN\"; match the exact functional category and direction to lock Option A (SIEVE : PARTICLES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -10130,7 +10130,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (PLANK : SUBFLOOR)\n\nStaves are wooden strips that form a cask, just as planks form a subfloor.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (PLANK : SUBFLOOR)\n\nStaves are wooden strips that form a cask, just as planks form a subfloor.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"STAVE relates to CASK\"; match the exact functional category and direction to lock Option B (PLANK : SUBFLOOR) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -10159,7 +10159,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (CONFIDENT : ARROGANT)\n\nMiserly is the extreme, negative excess of frugality, just as arrogant is the negative excess of confidence.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (CONFIDENT : ARROGANT)\n\nMiserly is the extreme, negative excess of frugality, just as arrogant is the negative excess of confidence.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"FRUGAL relates to MISERLY\"; match the exact functional category and direction to lock Option C (CONFIDENT : ARROGANT) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -10188,7 +10188,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (EGYPTOLOGIST : HIEROGLYPHS)\n\nA paleontologist studies specimens like trilobites, just as an Egyptologist studies hieroglyphs.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (EGYPTOLOGIST : HIEROGLYPHS)\n\nA paleontologist studies specimens like trilobites, just as an Egyptologist studies hieroglyphs.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"PALEONTOLOGIST relates to TRILOBITES\"; match the exact functional category and direction to lock Option D (EGYPTOLOGIST : HIEROGLYPHS) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -10217,7 +10217,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (TROUPE : THEATER)\n\nA crew operates a ship, just as a performance troupe operates in a theater company.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (TROUPE : THEATER)\n\nA crew operates a ship, just as a performance troupe operates in a theater company.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"CREW relates to SHIP\"; match the exact functional category and direction to lock Option E (TROUPE : THEATER) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -10246,7 +10246,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (BERATE : REBUKE)\n\nTo coddle is synonymous in high degree with pampering, just as to berate is to vehemently rebuke.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (BERATE : REBUKE)\n\nTo coddle is synonymous in high degree with pampering, just as to berate is to vehemently rebuke.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"CODDLE relates to PAMPER\"; match the exact functional category and direction to lock Option A (BERATE : REBUKE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -10275,7 +10275,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Lithosphere)\n\nTroposphere, Stratosphere, Mesosphere, and Thermosphere are atmospheric gaseous strata, while the Lithosphere is the solid terrestrial crust.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Lithosphere)\n\nTroposphere, Stratosphere, Mesosphere, and Thermosphere are atmospheric gaseous strata, while the Lithosphere is the solid terrestrial crust.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Lithosphere) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -10304,7 +10304,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Granite)\n\nEnzyme, Hormone, Antibody, and Hemoglobin are biological proteins and compounds, while Granite is an inorganic silicate rock.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Granite)\n\nEnzyme, Hormone, Antibody, and Hemoglobin are biological proteins and compounds, while Granite is an inorganic silicate rock.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Granite) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -10333,7 +10333,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Grammar)\n\nDecibel, Pascal, Joule, and Newton are physical scientific measurement units, while Grammar is a structural linguistic framework.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Grammar)\n\nDecibel, Pascal, Joule, and Newton are physical scientific measurement units, while Grammar is a structural linguistic framework.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Grammar) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -10362,7 +10362,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (tender)\n\nTender years refers to youth, contrasting with mature playing.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (tender)\n\nTender years refers to youth, contrasting with mature playing.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option A (tender) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -10391,7 +10391,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Brian is not an active air traffic controller.)\n\nBrian is a baggage dispatcher -> lacks Class 1 medical cert -> cannot be an active air traffic controller.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Brian is not an active air traffic controller.)\n\nBrian is a baggage dispatcher -> lacks Class 1 medical cert -> cannot be an active air traffic controller.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option A in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -10422,7 +10422,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Extreme)\n\nTemperate means showing moderation or self-restraint; mild. Extreme is reaching a high degree.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Extreme)\n\nTemperate means showing moderation or self-restraint; mild. Extreme is reaching a high degree.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"TEMPERATE\" (showing moderation or self-restraint; mild); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Extreme) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -10451,7 +10451,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Aversion)\n\nProclivity means a natural inclination toward something. Aversion is dislike.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Aversion)\n\nProclivity means a natural inclination toward something. Aversion is dislike.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"PROCLIVITY\" (a natural inclination toward something); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Aversion) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -10480,7 +10480,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Definitive)\n\nTentative means not certain or fixed; provisional. Definitive is decisive and conclusive.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Definitive)\n\nTentative means not certain or fixed; provisional. Definitive is decisive and conclusive.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"TENTATIVE\" (not certain or fixed; provisional); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Definitive) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -10509,7 +10509,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Wordy)\n\nTerse means sparing in the use of words; abrupt. Wordy uses too many words.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Wordy)\n\nTerse means sparing in the use of words; abrupt. Wordy uses too many words.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"TERSE\" (sparing in the use of words; abrupt); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Wordy) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -10538,7 +10538,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Permanent)\n\nTransient means lasting only for a short time; impermanent. Permanent is lasting indefinitely.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Permanent)\n\nTransient means lasting only for a short time; impermanent. Permanent is lasting indefinitely.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"TRANSIENT\" (lasting only for a short time; impermanent); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Permanent) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -10567,7 +10567,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Equanimity)\n\nTrepidation is a feeling of fear or agitation about something that may happen. Equanimity is calmness.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Equanimity)\n\nTrepidation is a feeling of fear or agitation about something that may happen. Equanimity is calmness.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"TREPIDATION\"'s polarity; 4 choices cluster together as distractors. Lock opposite Option D (Equanimity) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -10596,7 +10596,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (RHEOMETER : FLUID DEFORMATION)\n\nA dilatometer measures thermal volume expansion, just as a rheometer measures fluid deformation.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (RHEOMETER : FLUID DEFORMATION)\n\nA dilatometer measures thermal volume expansion, just as a rheometer measures fluid deformation.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"DILATOMETER relates to THERMAL\"; match the exact functional category and direction to lock Option B (RHEOMETER : FLUID DEFORMATION) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -10625,7 +10625,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (INDENTATION : MARGIN)\n\nA crenel is a notched opening along a battlement, just as an indentation is an offset in a page margin.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (INDENTATION : MARGIN)\n\nA crenel is a notched opening along a battlement, just as an indentation is an offset in a page margin.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"CRENEL relates to BATTLEMENT\"; match the exact functional category and direction to lock Option C (INDENTATION : MARGIN) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -10654,7 +10654,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (ENTHUSIASTIC : OBSESSED)\n\nFanatical is the dangerous, extreme excess of being devout, just as obsessed is the excess of being enthusiastic.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (ENTHUSIASTIC : OBSESSED)\n\nFanatical is the dangerous, extreme excess of being devout, just as obsessed is the excess of being enthusiastic.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"DEVOUT relates to FANATICAL\"; match the exact functional category and direction to lock Option D (ENTHUSIASTIC : OBSESSED) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -10683,7 +10683,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (ANEMOMETER : WIND SPEED)\n\nA refractometer measures optical refractive index, just as an anemometer measures wind velocity.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (ANEMOMETER : WIND SPEED)\n\nA refractometer measures optical refractive index, just as an anemometer measures wind velocity.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"REFRACTOMETER relates to INDEX\"; match the exact functional category and direction to lock Option E (ANEMOMETER : WIND SPEED) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -10712,7 +10712,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (CARTRIDGE : TONER)\n\nA canister protects photographic film, just as a cartridge holds printer toner.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (CARTRIDGE : TONER)\n\nA canister protects photographic film, just as a cartridge holds printer toner.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"CANISTER relates to FILM\"; match the exact functional category and direction to lock Option A (CARTRIDGE : TONER) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -10741,7 +10741,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (BAFFLE : FLUID SURGE)\n\nA muffler dampens exhaust noise, just as an internal baffle dampens fluid surges in tanks.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (BAFFLE : FLUID SURGE)\n\nA muffler dampens exhaust noise, just as an internal baffle dampens fluid surges in tanks.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"MUFFLER relates to EXHAUST\"; match the exact functional category and direction to lock Option B (BAFFLE : FLUID SURGE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -10770,7 +10770,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Light-year)\n\nKilowatt, Megawatt, Gigawatt, and Horsepower are units of power, while a Light-year is a unit of astronomical distance.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Light-year)\n\nKilowatt, Megawatt, Gigawatt, and Horsepower are units of power, while a Light-year is a unit of astronomical distance.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option E (Light-year) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -10799,7 +10799,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Monopoly)\n\nMonarchy, Oligarchy, Democracy, and Plutocracy are systems of political government, whereas a Monopoly is an economic market structure.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Monopoly)\n\nMonarchy, Oligarchy, Democracy, and Plutocracy are systems of political government, whereas a Monopoly is an economic market structure.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Monopoly) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -10828,7 +10828,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Mass)\n\nVelocity, Acceleration, Displacement, and Momentum are vector quantities with magnitude and direction, while Mass is a pure scalar.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Mass)\n\nVelocity, Acceleration, Displacement, and Momentum are vector quantities with magnitude and direction, while Mass is a pure scalar.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Mass) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -10857,7 +10857,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (arbitrator)\n\nAn arbitrator is an independent person officially appointed to settle a dispute.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (arbitrator)\n\nAn arbitrator is an independent person officially appointed to settle a dispute.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option D (arbitrator) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -10886,7 +10886,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Lead D)\n\nRelative pitch sequence: D \u2794 C \u2794 A \u2794 B. Lead D pitches first.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Lead D)\n\nRelative pitch sequence: D \u2794 C \u2794 A \u2794 B. Lead D pitches first.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option D in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -10917,7 +10917,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Righteous)\n\nNefarious means wicked or criminal. Righteous is morally upright.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Righteous)\n\nNefarious means wicked or criminal. Righteous is morally upright.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"NEFARIOUS\" (wicked or criminal); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Righteous) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -10946,7 +10946,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Momentous)\n\nTrivial means of little value or importance. Momentous is of great importance or significance.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Momentous)\n\nTrivial means of little value or importance. Momentous is of great importance or significance.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"TRIVIAL\" (of little value or importance); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Momentous) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -10975,7 +10975,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Peaceful)\n\nTurbulent means characterized by conflict, disorder, or confusion; not controlled or calm. Peaceful is untroubled.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Peaceful)\n\nTurbulent means characterized by conflict, disorder, or confusion; not controlled or calm. Peaceful is untroubled.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"TURBULENT\" (characterized by conflict, disorder, or confusion; not controlled or calm); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Peaceful) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -11004,7 +11004,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Depressed)\n\nEbullient means cheerful and full of energy. Depressed is dejected.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Depressed)\n\nEbullient means cheerful and full of energy. Depressed is dejected.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"EBULLIENT\" (cheerful and full of energy); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Depressed) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -11033,7 +11033,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Ordinary)\n\nUncanny means strange or mysterious, especially in an unsettling way. Ordinary is normal.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Ordinary)\n\nUncanny means strange or mysterious, especially in an unsettling way. Ordinary is normal.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"UNCANNY\" (strange or mysterious, especially in an unsettling way); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Ordinary) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -11062,7 +11062,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Refined)\n\nUncouth means lacking good manners, refinement, or grace. Refined is cultured and polite.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Refined)\n\nUncouth means lacking good manners, refinement, or grace. Refined is cultured and polite.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"UNCOUTH\" (lacking good manners, refinement, or grace); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Refined) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -11091,7 +11091,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (ACTINOMETER : PHOTOCHEMICAL RADIATION)\n\nA bolometer measures incident radiant electromagnetic flux, just as an actinometer measures photochemical radiation.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (ACTINOMETER : PHOTOCHEMICAL RADIATION)\n\nA bolometer measures incident radiant electromagnetic flux, just as an actinometer measures photochemical radiation.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"BOLOMETER relates to RADIANT\"; match the exact functional category and direction to lock Option C (ACTINOMETER : PHOTOCHEMICAL RADIATION) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -11120,7 +11120,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (STRINGER : STAIRWAY)\n\nA mullion is a vertical structural divider between casements, just as a stringer supports a stairway.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (STRINGER : STAIRWAY)\n\nA mullion is a vertical structural divider between casements, just as a stringer supports a stairway.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"MULLION relates to CASEMENT\"; match the exact functional category and direction to lock Option D (STRINGER : STAIRWAY) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -11149,7 +11149,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (SHY : RECLUSIVE)\n\nParanoid represents the pathological excess of caution, just as reclusive is the extreme of shyness.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (SHY : RECLUSIVE)\n\nParanoid represents the pathological excess of caution, just as reclusive is the extreme of shyness.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"CAUTIOUS relates to PARANOID\"; match the exact functional category and direction to lock Option E (SHY : RECLUSIVE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -11178,7 +11178,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (ANALYSIS : FORECAST)\n\nA diagnosis identifies current status while prognosis predicts the outcome, just as analysis explains current state and forecast predicts.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (ANALYSIS : FORECAST)\n\nA diagnosis identifies current status while prognosis predicts the outcome, just as analysis explains current state and forecast predicts.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"DIAGNOSIS relates to PROGNOSIS\"; match the exact functional category and direction to lock Option A (ANALYSIS : FORECAST) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -11207,7 +11207,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (HANGAR : DIRIGIBLES)\n\nA depot houses urban trams, just as a specialized hangar houses dirigibles (airships).\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (HANGAR : DIRIGIBLES)\n\nA depot houses urban trams, just as a specialized hangar houses dirigibles (airships).\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"DEPOT relates to TRAMS\"; match the exact functional category and direction to lock Option B (HANGAR : DIRIGIBLES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -11236,7 +11236,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (CORBEL : CORNICE)\n\nA volute is an architectural spiral ornament on a column capital, just as a corbel supports a cornice.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (CORBEL : CORNICE)\n\nA volute is an architectural spiral ornament on a column capital, just as a corbel supports a cornice.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"VOLUTE relates to CAPITAL\"; match the exact functional category and direction to lock Option C (CORBEL : CORNICE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -11265,7 +11265,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Cellulose)\n\nDolomite, Quartz, Feldspar, and Mica are naturally occurring inorganic minerals, while Cellulose is an organic biological polymer.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Cellulose)\n\nDolomite, Quartz, Feldspar, and Mica are naturally occurring inorganic minerals, while Cellulose is an organic biological polymer.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option E (Cellulose) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -11294,7 +11294,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Cartographer)\n\nPianist, Violinist, Cellist, and Flautist are instrumental musical performers, while a Cartographer is a mapmaker.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Cartographer)\n\nPianist, Violinist, Cellist, and Flautist are instrumental musical performers, while a Cartographer is a mapmaker.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Cartographer) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -11323,7 +11323,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Dogma)\n\nHypothesis, Experiment, Observation, and Theory are components of empirical science, while Dogma is unquestioned authoritative doctrine.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Dogma)\n\nHypothesis, Experiment, Observation, and Theory are components of empirical science, while Dogma is unquestioned authoritative doctrine.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option B (Dogma) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -11352,7 +11352,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (catalyst)\n\nA catalyst is an event or person that causes change or stimulates growth.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (catalyst)\n\nA catalyst is an event or person that causes change or stimulates growth.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option A (catalyst) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -11381,7 +11381,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Storage Platform K is not an enterprise relational DBMS supporting ACID compliance.)\n\nEnterprise relational DBMS -> ACID compliance. Platform K lacks ACID -> cannot be such a relational DBMS.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Storage Platform K is not an enterprise relational DBMS supporting ACID compliance.)\n\nEnterprise relational DBMS -> ACID compliance. Platform K lacks ACID -> cannot be such a relational DBMS.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option E in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -11412,7 +11412,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Tirade)\n\nA harangue is a lengthy and aggressive speech; a tirade.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Tirade)\n\nA harangue is a lengthy and aggressive speech; a tirade.\n\n\ud83d\udca1 **Speed Tip:** Eliminate mismatched categories rapidly to verify Option A in <8s.",
       "category": "verbal",
       "subType": "synonym"
     },
@@ -11441,7 +11441,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Tidy)\n\nUnkempt means having an untidy or disheveled appearance. Tidy is neat and in order.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Tidy)\n\nUnkempt means having an untidy or disheveled appearance. Tidy is neat and in order.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"UNKEMPT\" (having an untidy or disheveled appearance); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Tidy) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -11470,7 +11470,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Compliant)\n\nUnruly means disorderly and disruptive and not amenable to discipline or control. Compliant is obedient.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Compliant)\n\nUnruly means disorderly and disruptive and not amenable to discipline or control. Compliant is obedient.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"UNRULY\" (disorderly and disruptive and not amenable to discipline or control); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Compliant) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -11499,7 +11499,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Thoughtful)\n\nVacuous means having or showing a lack of thought or intelligence; mindless. Thoughtful is reflective.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Thoughtful)\n\nVacuous means having or showing a lack of thought or intelligence; mindless. Thoughtful is reflective.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"VACUOUS\" (having or showing a lack of thought or intelligence; mindless); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Thoughtful) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -11528,7 +11528,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Engaging)\n\nVapid means offering nothing that is stimulating or challenging. Engaging is charming and interesting.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Engaging)\n\nVapid means offering nothing that is stimulating or challenging. Engaging is charming and interesting.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"VAPID\" (offering nothing that is stimulating or challenging); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Engaging) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -11557,7 +11557,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Apathetic)\n\nVehement means showing strong feeling; forceful, passionate, or intense. Apathetic shows no interest.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Apathetic)\n\nVehement means showing strong feeling; forceful, passionate, or intense. Apathetic shows no interest.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"VEHEMENT\" (showing strong feeling; forceful, passionate, or intense); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Apathetic) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -11586,7 +11586,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (SACCHAROMETER : SYRUP)\n\nA salinometer measures salinity in brine, just as a saccharometer measures sugar concentration in syrup.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (SACCHAROMETER : SYRUP)\n\nA salinometer measures salinity in brine, just as a saccharometer measures sugar concentration in syrup.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"SALINOMETER relates to BRINE\"; match the exact functional category and direction to lock Option D (SACCHAROMETER : SYRUP) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -11615,7 +11615,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (SLAT : BLIND)\n\nA louver is an angled slat in a shutter, just as a slat is an angled component of a window blind.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (SLAT : BLIND)\n\nA louver is an angled slat in a shutter, just as a slat is an angled component of a window blind.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"LOUVER relates to SHUTTER\"; match the exact functional category and direction to lock Option E (SLAT : BLIND) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -11644,7 +11644,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (THRIFTY : PARSIMONIOUS)\n\nHubristic is pride taken to an arrogant extreme, just as parsimonious is thrift taken to a stingy extreme.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (THRIFTY : PARSIMONIOUS)\n\nHubristic is pride taken to an arrogant extreme, just as parsimonious is thrift taken to a stingy extreme.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"PROUD relates to HUBRISTIC\"; match the exact functional category and direction to lock Option A (THRIFTY : PARSIMONIOUS) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -11673,7 +11673,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (ORNITHOLOGIST : WATERFOWL)\n\nA herpetologist studies amphibians and reptiles, just as an ornithologist studies waterfowl.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (ORNITHOLOGIST : WATERFOWL)\n\nA herpetologist studies amphibians and reptiles, just as an ornithologist studies waterfowl.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"HERPETOLOGIST relates to AMPHIBIANS\"; match the exact functional category and direction to lock Option B (ORNITHOLOGIST : WATERFOWL) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -11702,7 +11702,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (FLUTING : COLUMN)\n\nCoffering is a series of sunken panels decorating a ceiling, just as fluting comprises vertical decorative grooves along a column.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (FLUTING : COLUMN)\n\nCoffering is a series of sunken panels decorating a ceiling, just as fluting comprises vertical decorative grooves along a column.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"COFFER relates to CEILING\"; match the exact functional category and direction to lock Option C (FLUTING : COLUMN) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -11731,7 +11731,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (RESISTOR : CURRENT)\n\nA catalyst regulates chemical reaction kinetics, just as an electrical resistor regulates current.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (RESISTOR : CURRENT)\n\nA catalyst regulates chemical reaction kinetics, just as an electrical resistor regulates current.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"CATALYST relates to KINETICS\"; match the exact functional category and direction to lock Option D (RESISTOR : CURRENT) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -11760,7 +11760,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Lithosphere)\n\nTroposphere, Stratosphere, Mesosphere, and Thermosphere are atmospheric gaseous strata, while the Lithosphere is the solid terrestrial crust.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Lithosphere)\n\nTroposphere, Stratosphere, Mesosphere, and Thermosphere are atmospheric gaseous strata, while the Lithosphere is the solid terrestrial crust.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option E (Lithosphere) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -11789,7 +11789,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Granite)\n\nEnzyme, Hormone, Antibody, and Hemoglobin are biological proteins and compounds, while Granite is an inorganic silicate rock.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Granite)\n\nEnzyme, Hormone, Antibody, and Hemoglobin are biological proteins and compounds, while Granite is an inorganic silicate rock.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option B (Granite) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -11818,7 +11818,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Grammar)\n\nDecibel, Pascal, Joule, and Newton are physical scientific measurement units, while Grammar is a structural linguistic framework.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Grammar)\n\nDecibel, Pascal, Joule, and Newton are physical scientific measurement units, while Grammar is a structural linguistic framework.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Grammar) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -11847,7 +11847,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (delicacy)\n\nDelicacy denotes gentle, careful precision.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (delicacy)\n\nDelicacy denotes gentle, careful precision.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option C (delicacy) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -11876,7 +11876,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (True)\n\nTransitivity: Life(P) > Life(Q) > Life(R). Product P having longer battery life than Product R is definitively True.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (True)\n\nTransitivity: Life(P) > Life(Q) > Life(R). Product P having longer battery life than Product R is definitively True.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option B in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -11907,7 +11907,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Incorruptible)\n\nVenal means motivated by susceptibility to bribery; corrupt. Incorruptible cannot be corrupted.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Incorruptible)\n\nVenal means motivated by susceptibility to bribery; corrupt. Incorruptible cannot be corrupted.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"VENAL\" (motivated by susceptibility to bribery; corrupt); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Incorruptible) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -11936,7 +11936,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Mendacious)\n\nVeracious means speaking or representing the truth. Mendacious is telling lies.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Mendacious)\n\nVeracious means speaking or representing the truth. Mendacious is telling lies.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"VERACIOUS\" (speaking or representing the truth); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Mendacious) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -11965,7 +11965,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Succinct)\n\nVerbose means using or expressed in more words than are needed. Succinct is brief and clear.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Succinct)\n\nVerbose means using or expressed in more words than are needed. Succinct is brief and clear.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"VERBOSE\" (using or expressed in more words than are needed); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Succinct) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -11994,7 +11994,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Inflexible)\n\nVersatile means able to adapt or be adapted to many different functions or activities. Inflexible is rigid.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Inflexible)\n\nVersatile means able to adapt or be adapted to many different functions or activities. Inflexible is rigid.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"VERSATILE\" (able to adapt or be adapted to many different functions or activities); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Inflexible) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -12023,7 +12023,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Soothe)\n\nVex means make someone feel annoyed, frustrated, or worried. Soothe is make calm or relieve.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Soothe)\n\nVex means make someone feel annoyed, frustrated, or worried. Soothe is make calm or relieve.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"VEX\" (make someone feel annoyed, frustrated, or worried); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Soothe) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -12052,7 +12052,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Feasible)\n\nViable means capable of working successfully; feasible.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Feasible)\n\nViable means capable of working successfully; feasible.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"VIABLE\" (capable of working successfully; feasible); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Feasible) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -12081,7 +12081,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (CURVIMETER : MAP DISTANCES)\n\nA planimeter measures enclosed planar area on drawings, just as a curvimeter measures winding map distances.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (CURVIMETER : MAP DISTANCES)\n\nA planimeter measures enclosed planar area on drawings, just as a curvimeter measures winding map distances.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"PLANIMETER relates to PLANAR\"; match the exact functional category and direction to lock Option E (CURVIMETER : MAP DISTANCES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -12110,7 +12110,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (LINTEL : PORTICO)\n\nA transom is a crosspiece or window above a doorway, just as a lintel spans a portico.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (LINTEL : PORTICO)\n\nA transom is a crosspiece or window above a doorway, just as a lintel spans a portico.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"TRANSOM relates to DOORWAY\"; match the exact functional category and direction to lock Option A (LINTEL : PORTICO) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -12139,7 +12139,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (ATTENTIVE : MEDDLESOME)\n\nAggressive is an intrusive and overbearing excess of assertiveness, just as meddlesome is of attentiveness.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (ATTENTIVE : MEDDLESOME)\n\nAggressive is an intrusive and overbearing excess of assertiveness, just as meddlesome is of attentiveness.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"ASSERTIVE relates to AGGRESSIVE\"; match the exact functional category and direction to lock Option B (ATTENTIVE : MEDDLESOME) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -12168,7 +12168,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (GENEALOGIST : PEDIGREES)\n\nAn ethnographer documents living cultural customs, just as a genealogist traces family pedigrees.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (GENEALOGIST : PEDIGREES)\n\nAn ethnographer documents living cultural customs, just as a genealogist traces family pedigrees.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"ETHNOGRAPHER relates to CUSTOMS\"; match the exact functional category and direction to lock Option C (GENEALOGIST : PEDIGREES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -12197,7 +12197,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (RETORT : DISTILLERY)\n\nA crucible holds molten charge in a foundry, just as a retort holds liquid in a chemical distillery.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (RETORT : DISTILLERY)\n\nA crucible holds molten charge in a foundry, just as a retort holds liquid in a chemical distillery.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"CRUCIBLE relates to FOUNDRY\"; match the exact functional category and direction to lock Option D (RETORT : DISTILLERY) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -12226,7 +12226,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (GYROSCOPE : ORIENTATION)\n\nBallast maintains vessel equilibrium, just as a spinning gyroscope maintains spatial orientation.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (GYROSCOPE : ORIENTATION)\n\nBallast maintains vessel equilibrium, just as a spinning gyroscope maintains spatial orientation.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"BALLAST relates to EQUILIBRIUM\"; match the exact functional category and direction to lock Option E (GYROSCOPE : ORIENTATION) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -12255,7 +12255,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Light-year)\n\nKilowatt, Megawatt, Gigawatt, and Horsepower are units of power, while a Light-year is a unit of astronomical distance.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Light-year)\n\nKilowatt, Megawatt, Gigawatt, and Horsepower are units of power, while a Light-year is a unit of astronomical distance.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option E (Light-year) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -12284,7 +12284,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Monopoly)\n\nMonarchy, Oligarchy, Democracy, and Plutocracy are systems of political government, whereas a Monopoly is an economic market structure.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Monopoly)\n\nMonarchy, Oligarchy, Democracy, and Plutocracy are systems of political government, whereas a Monopoly is an economic market structure.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Monopoly) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -12313,7 +12313,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Mass)\n\nVelocity, Acceleration, Displacement, and Momentum are vector quantities with magnitude and direction, while Mass is a pure scalar.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Mass)\n\nVelocity, Acceleration, Displacement, and Momentum are vector quantities with magnitude and direction, while Mass is a pure scalar.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Mass) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -12342,7 +12342,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (integrity)\n\nIntegrity is the quality of being honest and having strong moral principles.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (integrity)\n\nIntegrity is the quality of being honest and having strong moral principles.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option A (integrity) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -12371,7 +12371,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Document Beta is not an audited corporate annual report with an unqualified opinion.)\n\nAudited annual report -> includes opinion. Document Beta lacks opinion -> cannot be such an audited report.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Document Beta is not an audited corporate annual report with an unqualified opinion.)\n\nAudited annual report -> includes opinion. Document Beta lacks opinion -> cannot be such an audited report.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option C in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -12402,7 +12402,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Heedless)\n\nVigilant means keeping careful watch for possible danger or difficulties. Heedless is careless.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Heedless)\n\nVigilant means keeping careful watch for possible danger or difficulties. Heedless is careless.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"VIGILANT\" (keeping careful watch for possible danger or difficulties); eliminate the 4 synonymous/mismatched distractors to lock opposite Option A (Heedless) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -12431,7 +12431,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Condemn)\n\nVindicate means clear someone of blame or suspicion. Condemn means express complete disapproval of.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Condemn)\n\nVindicate means clear someone of blame or suspicion. Condemn means express complete disapproval of.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"VINDICATE\" (clear someone of blame or suspicion); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Condemn) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -12460,7 +12460,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Maestro)\n\nA virtuoso is a person highly skilled in music or another artistic pursuit; a maestro.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Maestro)\n\nA virtuoso is a person highly skilled in music or another artistic pursuit; a maestro.\n\n\ud83d\udca1 **Speed Tip:** Eliminate mismatched categories rapidly to verify Option A in <8s.",
       "category": "verbal",
       "subType": "synonym"
     },
@@ -12489,7 +12489,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Soothing)\n\nVitriolic means filled with bitter criticism or malice. Soothing has a gently calming effect.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Soothing)\n\nVitriolic means filled with bitter criticism or malice. Soothing has a gently calming effect.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"VITRIOLIC\" (filled with bitter criticism or malice); eliminate the 4 synonymous/mismatched distractors to lock opposite Option B (Soothing) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -12518,7 +12518,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Languid)\n\nVivacious means attractively lively and animated. Languid is slow and relaxed.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Languid)\n\nVivacious means attractively lively and animated. Languid is slow and relaxed.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"VIVACIOUS\" (attractively lively and animated); eliminate the 4 synonymous/mismatched distractors to lock opposite Option E (Languid) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -12547,7 +12547,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Stable)\n\nVolatile means liable to change rapidly and unpredictably. Stable is firmly established.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Stable)\n\nVolatile means liable to change rapidly and unpredictably. Stable is firmly established.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"VOLATILE\" (liable to change rapidly and unpredictably); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Stable) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -12576,7 +12576,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (DECIBEL METER : SOUND LEVEL)\n\nA luxmeter measures ambient illuminance, just as a decibel meter measures acoustic sound level.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (DECIBEL METER : SOUND LEVEL)\n\nA luxmeter measures ambient illuminance, just as a decibel meter measures acoustic sound level.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"LUXMETER relates to ILLUMINANCE\"; match the exact functional category and direction to lock Option A (DECIBEL METER : SOUND LEVEL) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -12605,7 +12605,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (PALISADE : STOCKADE)\n\nA baluster is an upright post supporting a balustrade, just as a palisade stake forms a stockade.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (PALISADE : STOCKADE)\n\nA baluster is an upright post supporting a balustrade, just as a palisade stake forms a stockade.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"BALUSTER relates to BALUSTRADE\"; match the exact functional category and direction to lock Option B (PALISADE : STOCKADE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -12634,7 +12634,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (PRUDENT : TIMOROUS)\n\nTemerarious is rash, reckless excess of confidence, just as timorous is fearful excess of prudence.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (PRUDENT : TIMOROUS)\n\nTemerarious is rash, reckless excess of confidence, just as timorous is fearful excess of prudence.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"CONFIDENT relates to TEMERARIOUS\"; match the exact functional category and direction to lock Option C (PRUDENT : TIMOROUS) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -12663,7 +12663,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (GLACIOLOGIST : ICE CORES)\n\nA dendrochronologist dates historical time via tree rings, just as a glaciologist does via ice cores.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (GLACIOLOGIST : ICE CORES)\n\nA dendrochronologist dates historical time via tree rings, just as a glaciologist does via ice cores.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"DENDROCHRONOLOGIST relates to TREE\"; match the exact functional category and direction to lock Option D (GLACIOLOGIST : ICE CORES) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -12692,7 +12692,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (HOLSTER : DERRINGER)\n\nA quiver holds crossbow bolts, just as a small holster holds a derringer.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (HOLSTER : DERRINGER)\n\nA quiver holds crossbow bolts, just as a small holster holds a derringer.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"QUIVER relates to BOLTS\"; match the exact functional category and direction to lock Option E (HOLSTER : DERRINGER) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -12721,7 +12721,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (SURGE PROTECTOR : VOLTAGE SPIKE)\n\nA shock absorber dampens mechanical oscillation, just as a surge protector dampens a voltage spike.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (SURGE PROTECTOR : VOLTAGE SPIKE)\n\nA shock absorber dampens mechanical oscillation, just as a surge protector dampens a voltage spike.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"ABSORBER relates to OSCILLATION\"; match the exact functional category and direction to lock Option A (SURGE PROTECTOR : VOLTAGE SPIKE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -12750,7 +12750,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Cellulose)\n\nDolomite, Quartz, Feldspar, and Mica are naturally occurring inorganic minerals, while Cellulose is an organic biological polymer.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Cellulose)\n\nDolomite, Quartz, Feldspar, and Mica are naturally occurring inorganic minerals, while Cellulose is an organic biological polymer.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Cellulose) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -12779,7 +12779,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Cartographer)\n\nPianist, Violinist, Cellist, and Flautist are instrumental musical performers, while a Cartographer is a mapmaker.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Cartographer)\n\nPianist, Violinist, Cellist, and Flautist are instrumental musical performers, while a Cartographer is a mapmaker.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Cartographer) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -12808,7 +12808,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Dogma)\n\nHypothesis, Experiment, Observation, and Theory are components of empirical science, while Dogma is unquestioned authoritative doctrine.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Dogma)\n\nHypothesis, Experiment, Observation, and Theory are components of empirical science, while Dogma is unquestioned authoritative doctrine.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option C (Dogma) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -12837,7 +12837,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (joint)\n\nJoint means shared or agreed upon by all parties.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (joint)\n\nJoint means shared or agreed upon by all parties.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option D (joint) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -12866,7 +12866,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Step L (Lint))\n\nPipeline sequence: Step C (1st) \u2794 Step L (2nd) \u2794 Step B (3rd) \u2794 Step D (4th). Step L executes second.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Step L (Lint))\n\nPipeline sequence: Step C (1st) \u2794 Step L (2nd) \u2794 Step B (3rd) \u2794 Step D (4th). Step L executes second.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option D in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }
@@ -12897,7 +12897,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Moderate)\n\nA zealot is a person who is fanatical and uncompromising in pursuit of their ideals. A moderate holds intermediate views.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Moderate)\n\nA zealot is a person who is fanatical and uncompromising in pursuit of their ideals. A moderate holds intermediate views.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"ZEALOT\"'s polarity; 4 choices cluster together as distractors. Lock opposite Option E (Moderate) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -12926,7 +12926,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Flavorful)\n\nInsipid means lacking flavor or vigor. Flavorful is full of taste.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Flavorful)\n\nInsipid means lacking flavor or vigor. Flavorful is full of taste.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"INSIPID\" (lacking flavor or vigor); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Flavorful) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -12955,7 +12955,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Silent)\n\nGarrulous means excessively talkative. Silent is quiet.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Silent)\n\nGarrulous means excessively talkative. Silent is quiet.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"GARRULOUS\" (excessively talkative); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Silent) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -12984,7 +12984,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Abstemious)\n\nVoracious means having a very eager approach to an activity or food. Abstemious means indulging only moderately.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Abstemious)\n\nVoracious means having a very eager approach to an activity or food. Abstemious means indulging only moderately.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"VORACIOUS\" (having a very eager approach to an activity or food); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Abstemious) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -13013,7 +13013,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Criticism)\n\nKudos means praise and honor received for an achievement. Criticism is disapproval.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Criticism)\n\nKudos means praise and honor received for an achievement. Criticism is disapproval.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"KUDOS\" (praise and honor received for an achievement); eliminate the 4 synonymous/mismatched distractors to lock opposite Option D (Criticism) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -13042,7 +13042,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (Solemn)\n\nWhimsical means playfully quaint or fanciful. Solemn means formal and dignified.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (Solemn)\n\nWhimsical means playfully quaint or fanciful. Solemn means formal and dignified.\n\n\ud83d\udca1 **Speed Tip:** Tag stem \"WHIMSICAL\" (playfully quaint or fanciful); eliminate the 4 synonymous/mismatched distractors to lock opposite Option C (Solemn) in <6s.",
       "category": "verbal",
       "subType": "antonym"
     },
@@ -13071,7 +13071,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (LUXMETER : ILLUMINANCE)\n\nA refractometer measures sugar concentration (Brix rating), just as a luxmeter quantifies light illuminance.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (LUXMETER : ILLUMINANCE)\n\nA refractometer measures sugar concentration (Brix rating), just as a luxmeter quantifies light illuminance.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"REFRACTOMETER relates to BRIX\"; match the exact functional category and direction to lock Option B (LUXMETER : ILLUMINANCE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -13100,7 +13100,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "C",
-      "explanation": "**Correct Answer: C** (CREST : HELMET)\n\nA fret is an embedded metal ridge along a fingerboard, just as a crest runs along a helmet.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: C** (CREST : HELMET)\n\nA fret is an embedded metal ridge along a fingerboard, just as a crest runs along a helmet.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"FRET relates to FINGERBOARD\"; match the exact functional category and direction to lock Option C (CREST : HELMET) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -13129,7 +13129,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (GENEROUS : PRODIGAL)\n\nPedantic is a rigid, annoying excess of being meticulous, just as prodigal is wasteful excess of generosity.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (GENEROUS : PRODIGAL)\n\nPedantic is a rigid, annoying excess of being meticulous, just as prodigal is wasteful excess of generosity.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"METICULOUS relates to PEDANTIC\"; match the exact functional category and direction to lock Option D (GENEROUS : PRODIGAL) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -13158,7 +13158,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (ICONOGRAPHER : SYMBOLS)\n\nA bioarchaeologist studies excavated human skeletons, just as an iconographer studies religious symbols.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (ICONOGRAPHER : SYMBOLS)\n\nA bioarchaeologist studies excavated human skeletons, just as an iconographer studies religious symbols.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"BIOARCHAEOLOGIST relates to SKELETONS\"; match the exact functional category and direction to lock Option E (ICONOGRAPHER : SYMBOLS) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -13187,7 +13187,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (GRANARY : SILAGE)\n\nAn arsenal stores military ordnance, just as a granary stores agricultural silage.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (GRANARY : SILAGE)\n\nAn arsenal stores military ordnance, just as a granary stores agricultural silage.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"ARSENAL relates to ORDNANCE\"; match the exact functional category and direction to lock Option A (GRANARY : SILAGE) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -13216,7 +13216,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (RESTRICTOR : FLUID FLOW)\n\nA mechanical governor limits maximum revolutions, just as a flow restrictor limits fluid flow.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (RESTRICTOR : FLUID FLOW)\n\nA mechanical governor limits maximum revolutions, just as a flow restrictor limits fluid flow.\n\n\ud83d\udca1 **Speed Tip:** Build precise bridge: \"GOVERNOR relates to REVOLUTIONS\"; match the exact functional category and direction to lock Option B (RESTRICTOR : FLUID FLOW) in <7s.",
       "category": "verbal",
       "subType": "analogy"
     },
@@ -13245,7 +13245,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "D",
-      "explanation": "**Correct Answer: D** (Lithosphere)\n\nTroposphere, Stratosphere, Mesosphere, and Thermosphere are atmospheric gaseous strata, while the Lithosphere is the solid terrestrial crust.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: D** (Lithosphere)\n\nTroposphere, Stratosphere, Mesosphere, and Thermosphere are atmospheric gaseous strata, while the Lithosphere is the solid terrestrial crust.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option D (Lithosphere) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -13274,7 +13274,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (Granite)\n\nEnzyme, Hormone, Antibody, and Hemoglobin are biological proteins and compounds, while Granite is an inorganic silicate rock.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (Granite)\n\nEnzyme, Hormone, Antibody, and Hemoglobin are biological proteins and compounds, while Granite is an inorganic silicate rock.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option A (Granite) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -13303,7 +13303,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "B",
-      "explanation": "**Correct Answer: B** (Grammar)\n\nDecibel, Pascal, Joule, and Newton are physical scientific measurement units, while Grammar is a structural linguistic framework.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: B** (Grammar)\n\nDecibel, Pascal, Joule, and Newton are physical scientific measurement units, while Grammar is a structural linguistic framework.\n\n\ud83d\udca1 **Speed Tip:** Find the common attribute shared by 4 choices; isolate outlier Option B (Grammar) in <6s without over-analyzing.",
       "category": "verbal",
       "subType": "odd_word"
     },
@@ -13332,7 +13332,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "A",
-      "explanation": "**Correct Answer: A** (stability)\n\nStability denotes resistance to change and reliable performance.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: A** (stability)\n\nStability denotes resistance to change and reliable performance.\n\n\ud83d\udca1 **Speed Tip:** Scan the sentence for contextual transition indicators; predict connotation before reading options to lock Option A (stability) in <7s.",
       "category": "verbal",
       "subType": "sentence_completion"
     },
@@ -13361,7 +13361,7 @@ export const NEW_SUITE_VERBAL = {
         }
       ],
       "correctOption": "E",
-      "explanation": "**Correct Answer: E** (Marcus is not a member of the cybersecurity response team.)\n\nMarcus is an intern -> lacks CISSP -> cannot be a member of the cybersecurity response team.\n\n\ud83d\udca1 **Speed Tip:** Rapidly isolate target clues and eliminate mismatched categories in <8s.",
+      "explanation": "**Correct Answer: E** (Marcus is not a member of the cybersecurity response team.)\n\nMarcus is an intern -> lacks CISSP -> cannot be a member of the cybersecurity response team.\n\n\ud83d\udca1 **Speed Tip:** Trace the strict premise arrow chain; eliminate invalid converse traps to secure Option E in <8s.",
       "category": "verbal",
       "subType": "syllogism"
     }

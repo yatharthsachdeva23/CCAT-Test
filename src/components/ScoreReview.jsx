@@ -480,7 +480,10 @@ export default function ScoreReview({ attempt, onBackToDashboard, onRetakeTest, 
                       {(() => {
                         const targetSec = getSubjectTargetTime(q.category, q.timeLimitSec);
                         const qId = q.id ?? q.questionId;
-                        const trickText = speedTricks[qId];
+                        const trickItem = speedTricks[qId];
+                        const trickText = typeof trickItem === 'string' ? trickItem : trickItem?.text;
+                        const trickModel = typeof trickItem === 'object' ? trickItem?.model : 'local-ccat-engine';
+                        const isGemini = trickModel && trickModel.startsWith('gemini');
                         
                         // Auto-trigger fetch if missing and not currently loading
                         if (!trickText && !loadingTricks[qId]) {
@@ -495,12 +498,16 @@ export default function ScoreReview({ attempt, onBackToDashboard, onRetakeTest, 
                                   <Zap className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
                                 </div>
                                 <span className="text-xs sm:text-sm font-black text-amber-300 tracking-wide uppercase">
-                                  ⚡ Gemini {targetSec}-Second Mental Shortcut
+                                  {isGemini ? `⚡ Gemini ${targetSec}-Sec AI Mental Shortcut` : `⚡ ${targetSec}-Second Mental Shortcut & Elimination Trick`}
                                 </span>
                               </div>
                               {trickText && (
-                                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
-                                  AI Accelerated
+                                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${
+                                  isGemini
+                                    ? 'bg-purple-500/20 text-purple-300 border-purple-500/30'
+                                    : 'bg-amber-500/20 text-amber-300 border-amber-500/30'
+                                }`}>
+                                  {isGemini ? 'Gemini AI 🟢' : 'Tactical Engine ⚡'}
                                 </span>
                               )}
                             </div>
@@ -508,11 +515,17 @@ export default function ScoreReview({ attempt, onBackToDashboard, onRetakeTest, 
                             {trickText ? (
                               <div className="text-slate-200 leading-relaxed pt-1">
                                 <MarkdownView content={trickText} />
+                                {!isGemini && (
+                                  <div className="mt-2 pt-2 border-t border-slate-800/60 flex items-center justify-between text-[11px] text-slate-400">
+                                    <span className="italic">Question-Specific CCAT Speed Strategy</span>
+                                    <span className="text-slate-500 text-[10px]">Add Gemini API key in Settings for cloud AI</span>
+                                  </div>
+                                )}
                               </div>
                             ) : (
                               <div className="flex items-center gap-2.5 text-xs text-amber-300/90 py-2">
                                 <Sparkles className="w-4 h-4 animate-spin text-amber-400" />
-                                <span>Consulting Gemini for instant {targetSec}-second shortcut...</span>
+                                <span>Synthesizing instant {targetSec}-second shortcut...</span>
                               </div>
                             )}
                           </div>
